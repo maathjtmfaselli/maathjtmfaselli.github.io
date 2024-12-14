@@ -1,0 +1,86 @@
+.team-list {
+  margin-top: 20px;
+}
+
+.team {
+  margin-bottom: 30px;
+  text-align: left;
+  padding: 15px;
+  background: #2a2a40;
+  border-radius: 10px;
+}
+
+.team h4 {
+  color: #b39ddb;
+  margin-bottom: 10px;
+}
+
+.team .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+.team img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #673ab7;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(150px, 1fr));
+  gap: 10px;
+  justify-content: center;
+}
+
+.character {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.character img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #673ab7;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.mods {
+  font-size: 14px;
+  color: #ffab91;
+  margin-top: 5px;
+}
+
+.synergy img {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  border-radius: 50%;
+}
+
+.requirements-section {
+  background: #1e1e2e;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 8px;
+  color: #90caf9;
+}
+
+.priority {
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+.strategy {
+  font-style: italic;
+  color: #b0e0e6;
+}
