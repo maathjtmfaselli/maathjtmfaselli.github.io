@@ -48,6 +48,10 @@
       color: #b0bec5;
     }
 
+.relic-upgraded-required {
+  color: #ffab40;
+  text-align: center;
+}
     .alzamiento-section ul li img {
       width: 50px;
       height: 50px;
@@ -135,8 +139,19 @@
         background-color: green;
     }
 
+    .dark-blue {
+        background-color: darkblue;
+        position: relative;
+        cursor: pointer;
+    }
+    .blue {
+        background-color: blue;
+        position: relative;
+        cursor: pointer;
+    }
+
     /* Estilo del hover */
-    .yellow:hover::after {
+    .yellow:hover::after, .dark-blue:hover::after, .blue:hover::after {
         content: attr(data-hover);
         position: absolute;
         background-color: rgba(0, 0, 0, 0.8);
