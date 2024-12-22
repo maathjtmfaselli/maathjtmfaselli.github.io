@@ -1,9 +1,9 @@
 .team-list {
-  margin-top: 20px;
+
 }
 
 .team {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-align: left;
   padding: 15px;
   background: #2a2a40;
@@ -11,15 +11,9 @@
 }
 
 .team h4 {
+  font-size: 1.5rem;
   color: #b39ddb;
   margin-bottom: 10px;
-}
-
-.team .grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  text-align: center;
 }
 
 .team img {
@@ -31,9 +25,9 @@
   object-fit: cover;
 }
 
-.grid {
+.team-characters-list {
   display: grid;
-  grid-template-columns: repeat(5, minmax(150px, 1fr));
+  grid-template-columns: repeat(5, minmax(100px, 1fr));
   gap: 10px;
   justify-content: center;
 }
@@ -51,13 +45,25 @@
   border-radius: 50%;
   border: 2px solid #673ab7;
   object-fit: cover;
-  margin-bottom: 10px;
+}
+
+.relic-required {
+  font-size: 14px;
+  color: #ffab40;
+  margin-bottom: 8px;
+  text-align: center;
 }
 
 .mods {
-  font-size: 14px;
-  color: #ffab91;
-  margin-top: 5px;
+  font-size: 12px;
+  color: #81d4fa;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.synergy {
+  display: flex;
+  justify-content: center;
 }
 
 .synergy img {
@@ -80,7 +86,21 @@
   color: #ffcc00;
 }
 
-.strategy {
+.score-expected {
   font-style: italic;
   color: #b0e0e6;
+}
+
+@media (max-width: 768px) {
+
+  .character img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .synergy img {
+    width: 20px;
+    height: 20px;
+  }
+
 }
