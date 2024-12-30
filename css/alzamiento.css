@@ -131,6 +131,16 @@
 .green {
     background-color: green !important;
 }
+.special {
+    position: relative; /* Asegura que el contenido de la celda se posicione correctamente */
+    background-image: repeating-linear-gradient(
+        135deg,           /* Ángulo de las rayas */
+        rgba(255, 255, 255, 0.5) 0%,  /* Raya clara */
+        rgba(255, 255, 255, 0.5) 10%, /* Fin de la raya clara */
+        rgba(0, 0, 0, 0) 10%,         /* Transparencia para el color base */
+        rgba(0, 0, 0, 0) 20%          /* Espaciado entre rayas */
+    );
+}
 
 .dark-blue {
     background-color: darkblue !important;
@@ -140,7 +150,7 @@
 }
 
 /* Estilo del hover */
-.yellow:hover::after, .dark-blue:hover::after, .blue:hover::after {
+.yellow:hover::after, .dark-blue:hover::after, .blue:hover::after, .special:hover::after {
     content: attr(data-hover);
     position: absolute;
     background-color: rgba(0, 0, 0, 0.8);
