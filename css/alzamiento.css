@@ -18,9 +18,36 @@
 }
 
 .alzamiento-section h3 {
+  cursor: pointer;
+  margin: 0;
   font-size: 20px;
   color: #81d4fa;
   margin-bottom: 10px;
+  padding: 10px;
+  background-color: #2a2a40;
+  color: #81d4fa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.alzamiento-section h3::after {
+  content: "▼"; /* Arrow down by default */
+  font-size: 14px;
+  transition: transform 0.2s ease;
+}
+.alzamiento-section.collapsed h3::after {
+  content: "▶"; /* Arrow pointing right when collapsed */
+  transform: rotate(0);
+}
+
+.alzamiento-section-content {
+  padding: 10px;
+  background-color: #1e1e2e;
+  display: none; /* Hide content by default */
+}
+
+.alzamiento-section:not(.collapsed) .alzamiento-section-content {
+  display: block; /* Show content when not collapsed */
 }
 
 .alzamiento-section ul {

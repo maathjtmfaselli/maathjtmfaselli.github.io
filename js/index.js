@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(response => response.text())
             .then(data => {
                 document.getElementById(containerId).outerHTML = data;
+                initializeCollapsibleSections();
             })
             .catch(error => console.error('Error loading fragment:', error));
     }
@@ -30,3 +31,15 @@ function showSection(sectionId) {
 document.addEventListener('DOMContentLoaded', () => {
     showSection('reglas');
 });
+
+function initializeCollapsibleSections() {
+    const headers = document.querySelectorAll('.alzamiento-section h3');
+
+    headers.forEach(header => {
+        header.addEventListener('click', () => {
+            const section = header.parentElement;
+            section.classList.toggle('collapsed');
+        });
+    });
+}
+
