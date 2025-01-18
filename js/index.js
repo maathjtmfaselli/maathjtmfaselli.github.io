@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Load sections
+    loadFragment('index-dynamic-header', 'index-header.html');
+    loadFragment('index-dynamic-footer', 'index-footer.html');
     loadFragment('naboo-dynamic-section', 'index-naboo.html');
     loadFragment('alzamiento-dynamic-section', 'index-rote.html');
 });

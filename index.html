@@ -12,16 +12,10 @@
     <link rel="icon" href="https://assets.swgoh.gg/files/ui/tex.guild_icon_oldrepublic_tint.00b15b7f62455726b72d.webp" type="image/x-icon">
 </head>
 <body>
-<header>
-    <h1>Bienvenidos al Gremio Spain Space de SWGoH</h1>
-    <nav>
-        <ul>
-            <li><a href="#" onclick="showSection('reglas')">Reglas del Gremio</a></li>
-            <li><a href="#" onclick="showSection('guerras-territoriales')">Guerras Territoriales</a></li>
-            <li><a href="#" onclick="showSection('naboo')">Naboo</a></li>
-            <li><a href="#" onclick="showSection('alzamiento')">Alzamiento</a></li>
-        </ul>
-    </nav>
+
+<header id="index-dynamic-header">
+    <!-- Si falla la carga, este mensaje será visible -->
+    <p>Cargando la cabecera...</p>
 </header>
 
 <main>
@@ -48,8 +42,9 @@
     <section id="alzamiento-dynamic-section"></section>
 </main>
 
-<footer>
-    <p>© 2024 Spain Space SWGoH</p>
+<footer id="index-dynamic-footer">
+    <!-- Si falla la carga, este mensaje será visible -->
+    <p>Cargando el pie...</p>
 </footer>
 </body>
 </html>
