@@ -1,29 +1,66 @@
-    /*
-    // Asegurar que el script se ejecute después de cargar el DOM
-    document.addEventListener("DOMContentLoaded", () => {
-        const row = document.querySelector(".plan-table tbody tr");
+const charactersToUpgrade = [
+  {
+    name: "Ima-Gun Di",
+    image: "https://game-assets.swgoh.gg/textures/tex.charui_imagundi.png",
+    relic: "Reliquia 5",
+    assignedTo: "Maath"
+  },
+  {
+    name: "Pao",
+    image: "https://game-assets.swgoh.gg/textures/tex.charui_pao.png",
+    relic: "Reliquia 6",
+    assignedTo: "Gita"
+  },
+  {
+    name: "Logray",
+    image: "https://game-assets.swgoh.gg/textures/tex.charui_ewok_logray.png",
+    relic: "Reliquia 7",
+    assignedTo: ""
+  },
+  {
+    name: "Kuiil",
+    image: "https://game-assets.swgoh.gg/textures/tex.charui_kuiil.png",
+    relic: "Reliquia 6",
+    assignedTo: "Mik Bat"
+  },
+  {
+    name: "Kanan Jarrus",
+    image: "https://game-assets.swgoh.gg/textures/tex.charui_kanan_s3.png",
+    relic: "Reliquia 6",
+    assignedTo: ""
+  },
+  {
+    name: "Greef Karga",
+    image: "https://game-assets.swgoh.gg/textures/tex.charui_greefkarga.png",
+    relic: "Reliquia 7",
+    assignedTo: "Maath"
+  },
+  {
+    name: "Sargento Clon",
+    image: "https://game-assets.swgoh.gg/textures/tex.charui_trooperclonegreen.png",
+    relic: "Reliquia 7",
+    assignedTo: ""
+  }
+];
 
-        if (row) {
-            const sumCell = row.querySelector(".sum-cell"); // Celda donde se muestra la suma
-            const inputs = row.querySelectorAll("input[type='number']"); // Inputs de la fila
+// Función para renderizar la lista
+function renderCharacterList(characters) {
+  const listElement = document.getElementById("characters-to-upgrade-list");
+  listElement.innerHTML = ""; // Limpia la lista antes de renderizar
 
-            // Función para calcular y actualizar la suma
-            function updateSum() {
-                // Actualizar el valor en la celda de suma
-                sumCell.textContent = Array.from(inputs)
-                          .reduce((acc, cell) => acc + parseFloat(cell.textContent || 0), 0);
-              console.log("Suma = " + sumCell.textContent);
-            }
+  characters.forEach(character => {
+    const listItem = document.createElement("li");
 
-            // Calcular la suma inicial al cargar la página
-            updateSum();
+    listItem.innerHTML = `
+      <img src="${character.image}" alt="${character.name}">
+      <span class="character-name">${character.name}</span>
+      <span class="relic-upgraded-required">${character.relic}</span>
+      <span class="player-name">Asignado a: ${character.assignedTo || "Sin asignar"}</span>
+    `;
 
-            // Escuchar cambios en los inputs y actualizar la suma
-            inputs.forEach(input => {
-                input.addEventListener("input", updateSum);
-            });
-        } else {
-            console.error("No se encontró la fila en la tabla.");
-        }
-    });
-    */
+    listElement.appendChild(listItem);
+  });
+}
+
+// Renderiza la lista al cargar la página
+document.addEventListener("DOMContentLoaded", () => renderCharacterList(charactersToUpgrade));
