@@ -29,4 +29,18 @@ async function loadCharacterData() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", loadCharacterData);
+function initializeCollapsibleSections() {
+    const headers = document.querySelectorAll('.alzamiento-section h3');
+
+    headers.forEach(header => {
+        header.addEventListener('click', () => {
+            const section = header.parentElement;
+            section.classList.toggle('collapsed');
+        });
+    });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  loadCharacterData();
+  initializeCollapsibleSections();
+});
