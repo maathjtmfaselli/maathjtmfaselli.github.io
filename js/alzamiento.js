@@ -1,3 +1,12 @@
+const topPriorityCharacters = [
+  {
+    name: "Ewok Scout",
+    image: "https://game-assets.swgoh.gg/textures/tex.charui_ewok_scout.png",
+    relic: "Reliquia 7",
+    assignedTo: "Viula"
+  }
+];
+
 const charactersToUpgrade = [
   {
     name: "Ima-Gun Di",
@@ -43,10 +52,9 @@ const charactersToUpgrade = [
   }
 ];
 
-// Función para renderizar la lista
-function renderCharacterList(characters) {
-  const listElement = document.getElementById("characters-to-upgrade-list");
-  listElement.innerHTML = ""; // Limpia la lista antes de renderizar
+function renderCharacterList(characters, listElementId) {
+  const listElement = document.getElementById(listElementId);
+  listElement.innerHTML = "";
 
   characters.forEach(character => {
     const listItem = document.createElement("li");
@@ -62,5 +70,8 @@ function renderCharacterList(characters) {
   });
 }
 
-// Renderiza la lista al cargar la página
-document.addEventListener("DOMContentLoaded", () => renderCharacterList(charactersToUpgrade));
+document.addEventListener("DOMContentLoaded", () => {
+  renderCharacterList(topPriorityCharacters, "top-characters-to-upgrade-list");
+  renderCharacterList(charactersToUpgrade, "characters-to-upgrade-list");
+//  renderCharacterList(upgradedCharacters);
+});
