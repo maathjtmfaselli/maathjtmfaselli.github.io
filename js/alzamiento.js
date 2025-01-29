@@ -29,6 +29,36 @@ async function loadCharacterData() {
   }
 }
 
+async function loadHistoricalResults() {
+  try {
+    const response = await fetch('../json/rote-historical-results.json');
+    const data = await response.json();
+
+    const tableBody = document.querySelector("#resultados-table tbody");
+    tableBody.innerHTML = "";
+
+    data.historicalResults.forEach(result => {
+      const row = document.createElement("tr");
+
+      row.innerHTML = `
+        <td>${result.fecha}</td>
+        <td>${result.pg}</td>
+        <td>${result.noDesplegados}</td>
+        <td>${result.estrellas}</td>
+        <td>${result.pelotones}</td>
+        <td>${result.zeffo}</td>
+        <td>${result.mandalor}</td>
+        <td>${result.reva}</td>
+      `;
+
+      tableBody.appendChild(row);
+    });
+
+  } catch (error) {
+    console.error("Error loading historical results:", error);
+  }
+}
+
 function initializeCollapsibleSections() {
     const headers = document.querySelectorAll('.alzamiento-section h3');
 
@@ -42,5 +72,6 @@ function initializeCollapsibleSections() {
 
 document.addEventListener("DOMContentLoaded", () => {
   loadCharacterData();
+  loadHistoricalResults();
   initializeCollapsibleSections();
 });

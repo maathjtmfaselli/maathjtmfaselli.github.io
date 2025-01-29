@@ -1,0 +1,34 @@
+{
+  "historicalResults": [
+    {
+      "fecha": "20/01/2025",
+      "pg": "432M",
+      "noDesplegados": "94/54/69/101/129/123",
+      "estrellas": "21",
+      "pelotones": "20/26",
+      "zeffo": "1/3/4",
+      "mandalor": "0/0/1",
+      "reva": "3/9/15"
+    },
+    {
+      "fecha": "06/01/2025",
+      "pg": "440M",
+      "noDesplegados": "100/76/93/71/107/103",
+      "estrellas": "24",
+      "pelotones": "22/24",
+      "zeffo": "1/4/4",
+      "mandalor": "0/0/1",
+      "reva": "3/10/15"
+    },
+    {
+      "fecha": "23/12/2024",
+      "pg": "435M",
+      "noDesplegados": "78/114/106/60/102/66",
+      "estrellas": "23",
+      "pelotones": "20/22",
+      "zeffo": "1/4/4",
+      "mandalor": "0/1/1",
+      "reva": "2/9/13"
+    }
+  ]
+}
