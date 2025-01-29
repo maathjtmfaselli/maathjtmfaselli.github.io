@@ -1,3 +1,9 @@
+const CharacterStatus = Object.freeze({
+  TODO: "TODO",
+  IN_PROGRESS: "IN_PROGRESS",
+  DONE: "DONE"
+});
+
 function renderCharacterList(characters, listElementId) {
   const listElement = document.getElementById(listElementId);
   listElement.innerHTML = "";
@@ -5,6 +11,20 @@ function renderCharacterList(characters, listElementId) {
   characters.forEach(character => {
     const listItem = document.createElement("li");
 
+    let statusClass = "";
+    switch (character.status) {
+      case "TODO":
+        statusClass = "todo";
+        break;
+      case "IN_PROGRESS":
+        statusClass = "in-progress";
+        break;
+      case "DONE":
+        statusClass = "done";
+        break;
+    }
+
+    listItem.classList.add("character-item", character.status.toLowerCase());
     listItem.innerHTML = `
       <img src="${character.image}" alt="${character.name}">
       <span class="character-name">${character.name}</span>
@@ -21,9 +41,29 @@ async function loadCharacterData() {
     const response = await fetch('../json/rote-characters.json');
     const data = await response.json();
 
-    renderCharacterList(data.topPriorityCharacters, "top-priority-characters-list");
-    renderCharacterList(data.charactersToUpgrade, "characters-to-upgrade-list");
-    renderCharacterList(data.upgradedCharacters, "upgraded-characters-list");
+    // Asignar estado a cada personaje según su categoría
+    const topPriorityCharacters = data.topPriorityCharacters.map(character => ({
+      ...character,
+        status: character.assignedTo && character.assignedTo.trim() !== ""
+          ? CharacterStatus.IN_PROGRESS
+          : CharacterStatus.TODO
+    }));
+
+    const charactersToUpgrade = data.charactersToUpgrade.map(character => ({
+      ...character,
+        status: character.assignedTo && character.assignedTo.trim() !== ""
+          ? CharacterStatus.IN_PROGRESS
+          : CharacterStatus.TODO
+    }));
+
+    const upgradedCharacters = data.upgradedCharacters.map(character => ({
+      ...character,
+      status: CharacterStatus.DONE
+    }));
+
+    renderCharacterList(topPriorityCharacters, "top-priority-characters-list");
+    renderCharacterList(charactersToUpgrade, "characters-to-upgrade-list");
+    renderCharacterList(upgradedCharacters, "upgraded-characters-list");
   } catch (error) {
     console.error("Error cargando los datos del JSON:", error);
   }

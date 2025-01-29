@@ -36,7 +36,7 @@
       "name": "Kanan Jarrus",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_kanan_s3.png",
       "relic": "Reliquia 6",
-      "assignedTo": ""
+      "assignedTo": "Darksneer"
     },
     {
       "name": "Greef Karga",
@@ -48,7 +48,7 @@
       "name": "Sargento Clon",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_trooperclonegreen.png",
       "relic": "Reliquia 7",
-      "assignedTo": ""
+      "assignedTo": "Maath"
     }
   ],
   "upgradedCharacters": [

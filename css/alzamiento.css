@@ -100,6 +100,21 @@
   text-align: center;
 }
 
+.character-item {
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.character-item.in_progress {
+    background-color: #aaaa66;
+}
+
+.character-item.done {
+    background-color: #3ba55d;
+}
+
 .alzamiento-table {
   width: 100%;
   border-collapse: collapse;
