@@ -46,6 +46,19 @@
   display: none; /* Hide content by default */
 }
 
+.subsection {
+    margin-top: 10px;
+    border-left: 4px solid #555;
+    padding-left: 10px;
+}
+
+.subsection-content {
+    padding: 10px;
+    background-color: #2a2a2a;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
 .alzamiento-section:not(.collapsed) .alzamiento-section-content {
   display: block; /* Show content when not collapsed */
 }
