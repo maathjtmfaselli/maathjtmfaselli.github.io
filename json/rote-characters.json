@@ -15,16 +15,10 @@
       "assignedTo": "Maath"
     },
     {
-      "name": "Pao",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_pao.png",
-      "relic": "Reliquia 6",
-      "assignedTo": "Gita"
-    },
-    {
       "name": "Logray",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_ewok_logray.png",
       "relic": "Reliquia 7",
-      "assignedTo": ""
+      "assignedTo": "R3C0"
     },
     {
       "name": "Kuiil",
@@ -49,9 +43,27 @@
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_trooperclonegreen.png",
       "relic": "Reliquia 7",
       "assignedTo": "Maath"
+    },
+    {
+      "name": "Old Boba",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "Temnyy"
+    },
+    {
+      "name": "Old Boba",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
+      "relic": "Reliquia 7",
+      "assignedTo": ""
     }
   ],
   "upgradedCharacters": [
+    {
+      "name": "Pao",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_pao.png",
+      "relic": "Reliquia 6",
+      "assignedTo": "Gita"
+    },
     {
       "name": "Vandor Chewbacca",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_chewbacca_vandor.png",
