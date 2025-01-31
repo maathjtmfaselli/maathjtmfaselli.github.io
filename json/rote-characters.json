@@ -9,12 +9,6 @@
   ],
   "charactersToUpgrade": [
     {
-      "name": "Ima-Gun Di",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_imagundi.png",
-      "relic": "Reliquia 5",
-      "assignedTo": "Maath"
-    },
-    {
       "name": "Logray",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_ewok_logray.png",
       "relic": "Reliquia 7",
@@ -58,6 +52,12 @@
     }
   ],
   "upgradedCharacters": [
+    {
+      "name": "Ima-Gun Di",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_imagundi.png",
+      "relic": "Reliquia 5",
+      "assignedTo": "Maath"
+    },
     {
       "name": "Pao",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_pao.png",
