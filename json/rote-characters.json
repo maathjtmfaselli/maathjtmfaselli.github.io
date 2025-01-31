@@ -15,6 +15,12 @@
       "assignedTo": "R3C0"
     },
     {
+      "name": "Logray",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_ewok_logray.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "Lucas"
+    },
+    {
       "name": "Kuiil",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_kuiil.png",
       "relic": "Reliquia 6",
@@ -36,7 +42,7 @@
       "name": "Sargento Clon",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_trooperclonegreen.png",
       "relic": "Reliquia 7",
-      "assignedTo": "Maath"
+      "assignedTo": "R3C0"
     },
     {
       "name": "Old Boba",
@@ -48,7 +54,7 @@
       "name": "Old Boba",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
       "relic": "Reliquia 7",
-      "assignedTo": ""
+      "assignedTo": "Cente"
     }
   ],
   "upgradedCharacters": [
