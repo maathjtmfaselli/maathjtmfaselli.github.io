@@ -15,6 +15,12 @@
       "assignedTo": "R3C0"
     },
     {
+      "name": "Enfys Nest",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_enfys.png",
+      "relic": "Reliquia 6",
+      "assignedTo": ""
+    },
+    {
       "name": "Logray",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_ewok_logray.png",
       "relic": "Reliquia 7",
@@ -39,12 +45,6 @@
       "assignedTo": "Maath"
     },
     {
-      "name": "Sargento Clon",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_trooperclonegreen.png",
-      "relic": "Reliquia 7",
-      "assignedTo": "R3C0"
-    },
-    {
       "name": "Old Boba",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
       "relic": "Reliquia 7",
@@ -58,6 +58,12 @@
     }
   ],
   "upgradedCharacters": [
+    {
+      "name": "Sargento Clon",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_trooperclonegreen.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "R3C0"
+    },
     {
       "name": "Ima-Gun Di",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_imagundi.png",
