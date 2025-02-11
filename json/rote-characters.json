@@ -9,12 +9,6 @@
   ],
   "charactersToUpgrade": [
     {
-      "name": "Logray",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_ewok_logray.png",
-      "relic": "Reliquia 7",
-      "assignedTo": "R3C0"
-    },
-    {
       "name": "Enfys Nest",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_enfys.png",
       "relic": "Reliquia 6",
@@ -58,6 +52,12 @@
     }
   ],
   "upgradedCharacters": [
+    {
+      "name": "Logray",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_ewok_logray.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "R3C0"
+    },
     {
       "name": "Sargento Clon",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_trooperclonegreen.png",
