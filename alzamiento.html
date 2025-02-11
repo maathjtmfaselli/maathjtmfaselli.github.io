@@ -21,558 +21,565 @@
     <section id="alzamiento">
         <h2>Alzamiento</h2>
 
-        <div class="alzamiento-section collapsed">
-            <h3>Puntos por Planeta</h3>
-            <div class="alzamiento-section-content">
-                <table id="planet-table" class="alzamiento-table">
-                    <thead>
-                    <tr>
-                        <th colspan="3">Dark</th>
-                        <th colspan="3">Neutral</th>
-                        <th colspan="3">Light</th>
-                    </tr>
-                    <tr>
-                        <th class="bronze">1</th>
-                        <th class="silver">2</th>
-                        <th class="gold">3</th>
-                        <th class="bronze">1</th>
-                        <th class="silver">2</th>
-                        <th class="gold">3</th>
-                        <th class="bronze">1</th>
-                        <th class="silver">2</th>
-                        <th class="gold">3</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>116</td>
-                        <td>186</td>
-                        <td>248</td>
-                        <td>112</td>
-                        <td>179</td>
-                        <td>238</td>
-                        <td>116</td>
-                        <td>186</td>
-                        <td>248</td>
-                    </tr>
-                    <tr>
-                        <td>148</td>
-                        <td>237</td>
-                        <td>316</td>
-                        <td>148</td>
-                        <td>237</td>
-                        <td>316</td>
-                        <td>142</td>
-                        <td>228</td>
-                        <td>304</td>
-                    </tr>
-                    <tr>
-                        <td>159</td>
-                        <td>251</td>
-                        <td>339</td>
-                        <td>191</td>
-                        <td>306</td>
-                        <td>407</td>
-                        <td>191</td>
-                        <td>306</td>
-                        <td>407</td>
-                    </tr>
-                    <tr>
-                        <td>235</td>
-                        <td>400</td>
-                        <td>500</td>
-                        <td>235</td>
-                        <td>400</td>
-                        <td>500</td>
-                        <td>247</td>
-                        <td>420</td>
-                        <td>525</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
+        <nav class="tab">
+            <button class="tab-button" onclick="openTab('generalData')">📊 Datos</button>
+            <button class="tab-button active" onclick="openTab('planning')">🚀 Plan</button>
+            <button class="tab-button" onclick="openTab('archive')">👥 Archivo</button>
+        </nav>
 
-        <div class="alzamiento-section collapsed">
-            <h3>Alzamiento - Plan 350M</h3>
-            <div class="alzamiento-section-content">
-                <table id="plan-table" class="alzamiento-table">
-                    <thead>
-                    <tr>
-                        <th>Missions</th>
-                        <th>Ops</th>
-                        <th>Deploy</th>
-                        <th>Points</th>
-                        <th>Phase</th>
-                        <th colspan="3">HECHO</th>
-                        <th>*</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>15</td>
-                        <td>60</td>
-                        <td>350</td>
-                        <td class="sum-cell">425</td>
-                        <td>1</td>
-                        <td><input type="number" value="105" class="editable-input" readonly /></td>
-                        <td><input type="number" value="238" class="gold editable-input" readonly /></td>
-                        <td><input type="number" value="82" class="editable-input" readonly /></td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>15</td>
-                        <td>110</td>
-                        <td>350</td>
-                        <td>475</td>
-                        <td>2</td>
-                        <td><input type="number" value="143" class="gold editable-input" readonly /></td>
-                        <td><input type="number" value="138" class="red editable-input" readonly /></td>
-                        <td><input type="number" value="166" class="gold editable-input" readonly /></td>
-                        <td>6</td>
-                    </tr>
-                    <tr>
-                        <td>15</td>
-                        <td>33</td>
-                        <td>350</td>
-                        <td>398</td>
-                        <td>3</td>
-                        <td><input type="number" value="135" class="editable-input" readonly /></td>
-                        <td><input type="number" value="178" class="gold editable-input" readonly /></td>
-                        <td><input type="number" value="85" class="editable-input" readonly /></td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>15</td>
-                        <td>44</td>
-                        <td>350</td>
-                        <td>398</td>
-                        <td>4</td>
-                        <td><input type="number" value="181" class="gold editable-input" readonly /></td>
-                        <td><input type="number" value="178" class="editable-input" readonly /></td>
-                        <td><input type="number" value="50" class="editable-input" readonly /></td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>15</td>
-                        <td>33</td>
-                        <td>350</td>
-                        <td>387</td>
-                        <td>5</td>
-                        <td><input type="number" value="148" class="editable-input" readonly /></td>
-                        <td><input type="number" value="10" class="red editable-input red" readonly /></td>
-                        <td><input type="number" value="169" class="gold editable-input" readonly /></td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>15</td>
-                        <td>65</td>
-                        <td>350</td>
-                        <td>430</td>
-                        <td>6</td>
-                        <td><input type="number" value="191" class="gold editable-input" readonly /></td>
-                        <td><input type="number" value="219" class="gold editable-input" readonly /></td>
-                        <td><input type="number" value="20" class="red editable-input" readonly /></td>
-                        <td>6</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>2416</td>
-                        <td></td>
-                        <td colspan="6">24</td>
-                    </tr>
-                    </tbody>
-                </table>
+        <div id="generalData" class="tab-content">
+            <div id="pointsPerPlanet" class="alzamiento-section collapsed">
+                <h3>Puntos por Planeta</h3>
+                <div class="alzamiento-section-content">
+                    <table id="planet-table" class="alzamiento-table">
+                        <thead>
+                        <tr>
+                            <th colspan="3">Dark</th>
+                            <th colspan="3">Neutral</th>
+                            <th colspan="3">Light</th>
+                        </tr>
+                        <tr>
+                            <th class="bronze">1</th>
+                            <th class="silver">2</th>
+                            <th class="gold">3</th>
+                            <th class="bronze">1</th>
+                            <th class="silver">2</th>
+                            <th class="gold">3</th>
+                            <th class="bronze">1</th>
+                            <th class="silver">2</th>
+                            <th class="gold">3</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>116</td>
+                            <td>186</td>
+                            <td>248</td>
+                            <td>112</td>
+                            <td>179</td>
+                            <td>238</td>
+                            <td>116</td>
+                            <td>186</td>
+                            <td>248</td>
+                        </tr>
+                        <tr>
+                            <td>148</td>
+                            <td>237</td>
+                            <td>316</td>
+                            <td>148</td>
+                            <td>237</td>
+                            <td>316</td>
+                            <td>142</td>
+                            <td>228</td>
+                            <td>304</td>
+                        </tr>
+                        <tr>
+                            <td>159</td>
+                            <td>251</td>
+                            <td>339</td>
+                            <td>191</td>
+                            <td>306</td>
+                            <td>407</td>
+                            <td>191</td>
+                            <td>306</td>
+                            <td>407</td>
+                        </tr>
+                        <tr>
+                            <td>235</td>
+                            <td>400</td>
+                            <td>500</td>
+                            <td>235</td>
+                            <td>400</td>
+                            <td>500</td>
+                            <td>247</td>
+                            <td>420</td>
+                            <td>525</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        </div>
+            <div id="misiones" class="alzamiento-section collapsed">
+                <h3>Misiones</h3>
+                <div class="alzamiento-section-content">
+                    <div class="subsection">
+                        <h4>Misiones Generales</h4>
+                        <div class="subsection-content">
+                            <p>Misiones en RotE: <a href="https://swgoh4.life/territory-battles/">videos por SWGOH4Life</a>.</p>
+                        </div>
+                    </div>
+                    <div class="subsection">
+                        <h4>Reva</h4>
+                        <div class="subsection-content">
+                            <p><a href="https://www.youtube.com/watch?v=sI8t5Pg3NX8">video por SWGOH4Life</a> para Reva (y Tatooine)</p>
+                            <ul>
+                                <li>Primera fase: Usar la 3ª habilidad de Gran Inquisidor contra 6 acumulaciones de purga para elevar la tenacidad de todos los inquisidores (y parar las bombas).</li>
+                                <li>Segunda fase: Ability block en JMK.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="subsection">
+                        <h4>Zeffo</h4>
+                        <div class="subsection-content">
+                            <ul>
+                                <li>
+                                    <span>Zeffo es importante porque podemos conseguir más kyrotechs, que es uno de los principales cuellos de botella en este juego.</span>
+                                </li>
+                                <li>
+                                    <img src="https://game-assets.swgoh.gg/textures/tex.charui_cerejunda.png" alt="Cere Junda">
+                                    <span class="character-name">Cere Junda</span>
+                                    <span>Resistir golpes</span>
+                                    <span>&nbsp;</span>
+                                    <span>&nbsp;</span>
+                                </li>
+                                <li>
+                                    <img src="https://game-assets.swgoh.gg/textures/tex.charui_jediknightcal.png" alt="Jedi Knight Cal Kestis">
+                                    <span class="character-name">Jedi Knight Cal Kestis</span>
+                                    <span>Velocidad Sobrevivir y Potencia</span>
+                                    <span>Aplicar reducción de velocidad</span>
+                                    <span><ul><li>Fase 1: Muerte instantánea</li><li>Fase 2: Muerte instantánea</li></ul></span>
+                                </li>
+                            </ul>
+                            <table class="alzamiento-table">
+                                <thead>
+                                <tr>
+                                    <th>Autor</th>
+                                    <th>Cere</th>
+                                    <th>Jedi Knight Cal Kestis</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><a href="https://www.youtube.com/watch?v=gxeGiS7gJvQ&pp=ygUTc3dnb2ggemVmZm8gbWlzc2lvbg%3D%3D">Scrybe Gaming</a></td>
+                                    <td>Defense</td>
+                                    <td>Speed and Potency</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://www.youtube.com/watch?v=jj8Z-69ecMY">Ahnald</a></td>
+                                    <td>Health</td>
+                                    <td>302 Speed, 127k Health</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://www.youtube.com/watch?v=EURedAd6R4I">Xaereth</a></td>
+                                    <td>Health, Defense</td>
+                                    <td>317 Speed, 116k Health</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://www.youtube.com/watch?v=PhNNcRweKpY">Lolindir</a></td>
+                                    <td>Velocidad, Vida, Protección</td>
+                                    <td>Vida, Vida, Potencia, 301 Speed, 115k Health, 78% Potencia</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://swgoh.gg/p/637461253/characters/">Maath</a></td>
+                                    <td>(Defensa, Defensa, Vida), 160 Velocidad, 66k Vida, 94k Protección, 72% Blindaje</td>
+                                    <td>(Vida, Vida, Potencia), 282 Speed, 95k Health, 91% Potencia</td>
+                                </tr>
+                                </tbody>
+                            </table>
 
-        <div class="alzamiento-section">
-            <h3>Alzamiento - Plan 376M</h3>
-            <div class="alzamiento-section-content">
-                <table id="next-plan-table" class="alzamiento-table">
-                    <thead>
-                    <tr>
-                        <th>Misiones</th>
-                        <th>Ops</th>
-                        <th>Deploy</th>
-                        <th>Points</th>
-                        <th>Phase</th>
-                        <th colspan="3">HECHO</th>
-                        <th>*</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>20</td>
-                        <td>120</td>
-                        <td>376</td>
-                        <td class="sum-cell">516</td>
-                        <td>1</td>
-                        <td><input type="number" value="30" class="editable-input" readonly /></td>
-                        <td><input type="number" value="238" class="gold editable-input" readonly /></td>
-                        <td><input type="number" value="248" class="gold editable-input" readonly /></td>
-                        <td>6</td>
-                    </tr>
-                    <tr>
-                        <td>20</td>
-                        <td>50</td>
-                        <td>376</td>
-                        <td>446</td>
-                        <td>2</td>
-                        <td><input type="number" value="218" class="gold editable-input" readonly /></td>
-                        <td><input type="number" value="138" class="editable-input" readonly /></td>
-                        <td><input type="number" value="90" class="editable-input" readonly /></td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>20</td>
-                        <td>77</td>
-                        <td>376</td>
-                        <td>462</td>
-                        <td>3</td>
-                        <td><input type="number" value="81" class="editable-input" readonly /></td>
-                        <td><input type="number" value="178" class="gold editable-input" readonly /></td>
-                        <td><input type="number" value="214" class="gold editable-input" readonly /></td>
-                        <td>6</td>
-                    </tr>
-                    <tr>
-                        <td>20</td>
-                        <td>44</td>
-                        <td>376</td>
-                        <td>440</td>
-                        <td>4</td>
-                        <td><input type="number" value="235" class="gold editable-input" readonly /></td>
-                        <td><input type="number" value="70" class="editable-input" readonly /></td>
-                        <td><input type="number" value="135" class="editable-input" readonly /></td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>20</td>
-                        <td>13</td>
-                        <td>376</td>
-                        <td>396</td>
-                        <td>5</td>
-                        <td><input type="number" value="117" class="editable-input" readonly /></td>
-                        <td><input type="number" value="20" class="editable-input" readonly /></td>
-                        <td><input type="number" value="272" class="gold editable-input" readonly /></td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>20</td>
-                        <td>65</td>
-                        <td>376</td>
-                        <td>462</td>
-                        <td>6</td>
-                        <td><input type="number" value="222" class="gold editable-input" readonly /></td>
-                        <td><input type="number" value="216" class="silver editable-input" readonly /></td>
-                        <td><input type="number" value="23" class="red editable-input" readonly /></td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>2722</td>
-                        <td></td>
-                        <td colspan="6">26</td>
-                    </tr>
-                    </tbody>
-                </table>
-                <div class="subsection">
-                    <div class="subsection-content">
-                        <p>Prioridad:</p>
-                        <ol>
-                            <li>Pelotones</li>
-                            <li>Misiones</li>
-                            <li>Despliegue (No conseguir 3* hasta completar pelotones si es posible)</li>
-                        </ol>
-                    </div>
-                    <div class="subsection-content">
-                        <p>Fase1: 0ops 0* dark | 6ops 3* neutral | 6ops 3* lumi</p>
-                        <p> -> ⚠️ Máxima participación. Es la que más justos andamos.</p>
-                        <p> -> ⚠️ Completar pelotones ANTES de conseguir 3*. Hacer naves. Primero neutral, luego lumi</p>
-                    </div>
-                    <div class="subsection-content">
-                        <p>Fase2: 5ops 3* dark | 0ops 0* neutral | Zeffo 0ops 0* lumi</p>
-                    </div>
-                    <div class="subsection-content">
-                        <p>Fase3: 0ops 0* dark | 3ops 3* neutral | Zeffo 3ops 3* lumi</p>
-                        <p> -> Primero neutral, luego lumi</p>
-                    </div>
-                    <div class="subsection-content">
-                        <p>Fase4: 4ops 3* dark | 0ops 0* neutral | 0ops 0* lumi</p>
-                    </div>
-                    <div class="subsection-content">
-                        <p>Fase5: 0ops 0* dark | 0ops 0* neutral | 0ops 3* lumi</p>
-                    </div>
-                    <div class="subsection-content">
-                        <p>Fase6: 2ops 3* dark | Reva Mandalor 3ops 2* neutral | NADA lumi</p>
-                        <p> -> ⚠️ Máxima participación. Hacer naves. Primero dark, luego neutral</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="alzamiento-section">
-            <h3>Pelotones</h3>
-            <div class="alzamiento-section-content">
-                <table id="pelotones-table" class="alzamiento-table">
-                    <thead>
-                    <tr>
-                        <th colspan="6">Dark</th>
-                        <th colspan="6">Neutral</th>
-                        <th colspan="6">Lumi</th>
-                    </tr>
-                    <tr>
-                        <th>1</th>
-                        <th>2</th>
-                        <th>3</th>
-                        <th>4</th>
-                        <th>5</th>
-                        <th>6</th>
-                        <th>1</th>
-                        <th>2</th>
-                        <th>3</th>
-                        <th>4</th>
-                        <th>5</th>
-                        <th>6</th>
-                        <th>1</th>
-                        <th>2</th>
-                        <th>3</th>
-                        <th>4</th>
-                        <th>5</th>
-                        <th>6</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <!-- Dark -->
-                        <td class="green special" data-hover="Se requieren 2 ugnaut y solo tenemos 1"></td>
-                        <td class="green special" data-hover="Se requieren 2 ugnaut y solo tenemos 1"></td>
-                        <td class="green"></td>
-                        <td class="red"></td>
-                        <td class="green"></td>
-                        <td class="green"></td>
-                        <!-- Neutral -->
-                        <td class="green"></td>
-                        <td class="green"></td>
-                        <td class="green"></td>
-                        <td class="green"></td>
-                        <td class="green"></td>
-                        <td class="green"></td>
-                        <!-- Lumi -->
-                        <td class="green"></td>
-                        <td class="green"></td>
-                        <td class="green"></td>
-                        <td class="green"></td>
-                        <td class="green"></td>
-                        <td class="green"></td>
-                    </tr>
-                    <tr>
-                        <!-- Dark -->
-                        <td class="red"></td>
-                        <td class="green special" data-hover="Se necesitan 5 old bobas en neutral 2 y tenemos 3"></td>
-                        <td class="green special" data-hover="Se necesitan 5 old bobas en neutral 2 y tenemos 3"></td>
-                        <td class="red"></td>
-                        <td class="green"></td>
-                        <td class="green special" data-hover="Se necesitan 2 death trooper (Neutral2-5) y tenemos 1"></td>
-                        <!-- Neutral -->
-                        <td class="green special" data-hover="Se necesitan 2 Aayla (neutral 2-1) y tenemos 1. Se necesitan 5 old bobas en neutral 2 y tenemos 3"></td>
-                        <td class="yellow" data-hover="Personajes: The mandalorian, jawa, zaalbar, embo"></td>
-                        <td class="red"></td>
-                        <td class="blue" data-hover="Personajes: kuiil"></td>
-                        <td class="green special" data-hover="Se necesitan 4 old bobas en neutral 2 y tenemos 3. Se necesitan 2 death trooper (Dark2-6) y tenemos 1"></td>
-                        <td class="green special" data-hover="Se necesitan 4 old bobas en neutral 2 y tenemos 3"></td>
-                        <!-- Lumi -->
-                        <td class="green"></td>
-                        <td class="green special" data-hover="Se necesitan 2 Aayla (neutral 2-1) y tenemos 1"></td>
-                        <td class="blue" data-hover="Personajes: Enfys"></td>
-                        <td class="red"></td>
-                        <td class="green special" data-hover="Se necesitan 2 Kanan y tenemos 1"></td>
-                        <td class="green"></td>
-                    </tr>
-                    <tr>
-                        <!-- Dark -->
-                        <td class="green"></td>
-                        <td class="red"></td>
-                        <td class="red"></td>
-                        <td class="green"></td>
-                        <td class="yellow" data-hover="Personajes: 0-0-0, Gar Saxon, First Order SF"></td>
-                        <td class="yellow" data-hover="Personajes: Embo, Director Krennic, Aurra, Tusken Raider"></td>
-                        <!-- Neutral -->
-                        <td class="green special" data-hover="Se necesitan 4 old bobas y tenemos 3"></td>
-                        <td class="green special" data-hover="Se necesitan 4 old bobas y tenemos 3"></td>
-                        <td class="dark-blue" data-hover="Personajes: Ewok Scout"></td>
-                        <td class="yellow" data-hover="Personajes: Young Han Solo, Coruscant Underworld Police, Ewok Elder"></td>
-                        <td class="yellow" data-hover="Personajes: B1, Hoth Rebel Scout, Bodhi Rook"></td>
-                        <td class="green special" data-hover="Se necesitan 4 old bobas y tenemos 3"></td>
-                        <!-- Lumi -->
-                        <td class="green"></td>
-                        <td class="blue" data-hover="Personajes: Logray y Logray"></td>
-                        <td class="blue" data-hover="Personajes: Greef Karga"></td>
-                        <td class="red"></td>
-                        <td class="red"></td>
-                        <td class="red"></td>
-                    </tr>
-                    </tbody>
-                </table>
-
-                <table class="alzamiento-table">
-                    <thead>
-                    <tr>
-                        <th colspan="3">Pincha o pasa el cursor por encima en la celda para ver los personajes que faltan</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td class="green">Completo</td>
-                        <td class="green special">Completo, pero se necesita más de una fase</td>
-                        <td class="dark-blue">Prioridad TOP</td>
-                    </tr>
-                    <tr>
-                        <td class="blue">Prioridad Alta</td>
-                        <td class="yellow">Prioridad Baja</td>
-                        <td class="red">No todavía</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-        <div class="alzamiento-section">
-            <h3>Misiones</h3>
-            <div class="alzamiento-section-content">
-                <div class="subsection">
-                    <h4>Misiones Generales</h4>
-                    <div class="subsection-content">
-                        <p>Misiones en RotE: <a href="https://swgoh4.life/territory-battles/">videos por SWGOH4Life</a>.</p>
-                    </div>
-                </div>
-                <div class="subsection">
-                    <h4>Reva</h4>
-                    <div class="subsection-content">
-                        <p><a href="https://www.youtube.com/watch?v=sI8t5Pg3NX8">video por SWGOH4Life</a> para Reva (y Tatooine)</p>
-                        <ul>
-                            <li>Primera fase: Usar la 3ª habilidad de Gran Inquisidor contra 6 acumulaciones de purga para elevar la tenacidad de todos los inquisidores (y parar las bombas).</li>
-                            <li>Segunda fase: Ability block en JMK.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="subsection">
-                    <h4>Zeffo</h4>
-                    <div class="subsection-content">
-                        <ul>
-                            <li>
-                                <span>Zeffo es importante porque podemos conseguir más kyrotechs, que es uno de los principales cuellos de botella en este juego.</span>
-                            </li>
-                            <li>
-                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_cerejunda.png" alt="Cere Junda">
-                                <span class="character-name">Cere Junda</span>
-                                <span>Resistir golpes</span>
-                                <span>&nbsp;</span>
-                                <span>&nbsp;</span>
-                            </li>
-                            <li>
-                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_jediknightcal.png" alt="Jedi Knight Cal Kestis">
-                                <span class="character-name">Jedi Knight Cal Kestis</span>
-                                <span>Velocidad Sobrevivir y Potencia</span>
-                                <span>Aplicar reducción de velocidad</span>
-                                <span><ul><li>Fase 1: Muerte instantánea</li><li>Fase 2: Muerte instantánea</li></ul></span>
-                            </li>
-                        </ul>
-                        <table class="alzamiento-table">
-                            <thead>
-                            <tr>
-                                <th>Autor</th>
-                                <th>Cere</th>
-                                <th>Jedi Knight Cal Kestis</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td><a href="https://www.youtube.com/watch?v=gxeGiS7gJvQ&pp=ygUTc3dnb2ggemVmZm8gbWlzc2lvbg%3D%3D">Scrybe Gaming</a></td>
-                                <td>Defense</td>
-                                <td>Speed and Potency</td>
-                            </tr>
-                            <tr>
-                                <td><a href="https://www.youtube.com/watch?v=jj8Z-69ecMY">Ahnald</a></td>
-                                <td>Health</td>
-                                <td>302 Speed, 127k Health</td>
-                            </tr>
-                            <tr>
-                                <td><a href="https://www.youtube.com/watch?v=EURedAd6R4I">Xaereth</a></td>
-                                <td>Health, Defense</td>
-                                <td>317 Speed, 116k Health</td>
-                            </tr>
-                            <tr>
-                                <td><a href="https://www.youtube.com/watch?v=PhNNcRweKpY">Lolindir</a></td>
-                                <td>Velocidad, Vida, Protección</td>
-                                <td>Vida, Vida, Potencia, 301 Speed, 115k Health, 78% Potencia</td>
-                            </tr>
-                            <tr>
-                                <td><a href="https://swgoh.gg/p/637461253/characters/">Maath</a></td>
-                                <td>(Defensa, Defensa, Vida), 160 Velocidad, 66k Vida, 94k Protección, 72% Blindaje</td>
-                                <td>(Vida, Vida, Potencia), 282 Speed, 95k Health, 91% Potencia</td>
-                            </tr>
-                            </tbody>
-                        </table>
-
+        <div id="planning" class="tab-content active">
+            <div id="plan376M" class="alzamiento-section">
+                <h3>Alzamiento - Plan 376M</h3>
+                <div class="alzamiento-section-content">
+                    <table id="next-plan-table" class="alzamiento-table">
+                        <thead>
+                        <tr>
+                            <th>Misiones</th>
+                            <th>Ops</th>
+                            <th>Deploy</th>
+                            <th>Points</th>
+                            <th>Phase</th>
+                            <th colspan="3">HECHO</th>
+                            <th>*</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>20</td>
+                            <td>120</td>
+                            <td>376</td>
+                            <td class="sum-cell">516</td>
+                            <td>1</td>
+                            <td><input type="number" value="30" class="editable-input" readonly /></td>
+                            <td><input type="number" value="238" class="gold editable-input" readonly /></td>
+                            <td><input type="number" value="248" class="gold editable-input" readonly /></td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>50</td>
+                            <td>376</td>
+                            <td>446</td>
+                            <td>2</td>
+                            <td><input type="number" value="218" class="gold editable-input" readonly /></td>
+                            <td><input type="number" value="138" class="editable-input" readonly /></td>
+                            <td><input type="number" value="90" class="editable-input" readonly /></td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>77</td>
+                            <td>376</td>
+                            <td>462</td>
+                            <td>3</td>
+                            <td><input type="number" value="81" class="editable-input" readonly /></td>
+                            <td><input type="number" value="178" class="gold editable-input" readonly /></td>
+                            <td><input type="number" value="214" class="gold editable-input" readonly /></td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>44</td>
+                            <td>376</td>
+                            <td>440</td>
+                            <td>4</td>
+                            <td><input type="number" value="235" class="gold editable-input" readonly /></td>
+                            <td><input type="number" value="70" class="editable-input" readonly /></td>
+                            <td><input type="number" value="135" class="editable-input" readonly /></td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>13</td>
+                            <td>376</td>
+                            <td>396</td>
+                            <td>5</td>
+                            <td><input type="number" value="117" class="editable-input" readonly /></td>
+                            <td><input type="number" value="20" class="editable-input" readonly /></td>
+                            <td><input type="number" value="272" class="gold editable-input" readonly /></td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>65</td>
+                            <td>376</td>
+                            <td>462</td>
+                            <td>6</td>
+                            <td><input type="number" value="222" class="gold editable-input" readonly /></td>
+                            <td><input type="number" value="216" class="silver editable-input" readonly /></td>
+                            <td><input type="number" value="23" class="red editable-input" readonly /></td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>2722</td>
+                            <td></td>
+                            <td colspan="6">26</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="subsection">
+                        <div class="subsection-content">
+                            <p>Prioridad:</p>
+                            <ol>
+                                <li>Pelotones</li>
+                                <li>Misiones</li>
+                                <li>Despliegue (No conseguir 3* hasta completar pelotones si es posible)</li>
+                            </ol>
+                        </div>
+                        <div class="subsection-content">
+                            <p>Fase1: 0ops 0* dark | 6ops 3* neutral | 6ops 3* lumi</p>
+                            <p> -> ⚠️ Máxima participación. Es la que más justos andamos.</p>
+                            <p> -> ⚠️ Completar pelotones ANTES de conseguir 3*. Hacer naves. Primero neutral, luego lumi</p>
+                        </div>
+                        <div class="subsection-content">
+                            <p>Fase2: 5ops 3* dark | 0ops 0* neutral | Zeffo 0ops 0* lumi</p>
+                        </div>
+                        <div class="subsection-content">
+                            <p>Fase3: 0ops 0* dark | 3ops 3* neutral | Zeffo 3ops 3* lumi</p>
+                            <p> -> Primero neutral, luego lumi</p>
+                        </div>
+                        <div class="subsection-content">
+                            <p>Fase4: 4ops 3* dark | 0ops 0* neutral | 0ops 0* lumi</p>
+                        </div>
+                        <div class="subsection-content">
+                            <p>Fase5: 0ops 0* dark | 0ops 0* neutral | 0ops 3* lumi</p>
+                        </div>
+                        <div class="subsection-content">
+                            <p>Fase6: 2ops 3* dark | Reva Mandalor 3ops 2* neutral | NADA lumi</p>
+                            <p> -> ⚠️ Máxima participación. Hacer naves. Primero dark, luego neutral</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <div id="pelotones" class="alzamiento-section">
+                <h3>Pelotones</h3>
+                <div class="alzamiento-section-content">
+                    <table id="pelotones-table" class="alzamiento-table">
+                        <thead>
+                        <tr>
+                            <th colspan="6">Dark</th>
+                            <th colspan="6">Neutral</th>
+                            <th colspan="6">Lumi</th>
+                        </tr>
+                        <tr>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <!-- Dark -->
+                            <td class="green special" data-hover="Se requieren 2 ugnaut y solo tenemos 1"></td>
+                            <td class="green special" data-hover="Se requieren 2 ugnaut y solo tenemos 1"></td>
+                            <td class="green"></td>
+                            <td class="red"></td>
+                            <td class="green"></td>
+                            <td class="green"></td>
+                            <!-- Neutral -->
+                            <td class="green"></td>
+                            <td class="green"></td>
+                            <td class="green"></td>
+                            <td class="green"></td>
+                            <td class="green"></td>
+                            <td class="green"></td>
+                            <!-- Lumi -->
+                            <td class="green"></td>
+                            <td class="green"></td>
+                            <td class="green"></td>
+                            <td class="green"></td>
+                            <td class="green"></td>
+                            <td class="green"></td>
+                        </tr>
+                        <tr>
+                            <!-- Dark -->
+                            <td class="red"></td>
+                            <td class="green special" data-hover="Se necesitan 5 old bobas en neutral 2 y tenemos 3"></td>
+                            <td class="green special" data-hover="Se necesitan 5 old bobas en neutral 2 y tenemos 3"></td>
+                            <td class="red"></td>
+                            <td class="green"></td>
+                            <td class="green special" data-hover="Se necesitan 2 death trooper (Neutral2-5) y tenemos 1"></td>
+                            <!-- Neutral -->
+                            <td class="green special" data-hover="Se necesitan 2 Aayla (neutral 2-1) y tenemos 1. Se necesitan 5 old bobas en neutral 2 y tenemos 3"></td>
+                            <td class="yellow" data-hover="Personajes: The mandalorian, jawa, zaalbar, embo"></td>
+                            <td class="red"></td>
+                            <td class="blue" data-hover="Personajes: kuiil"></td>
+                            <td class="green special" data-hover="Se necesitan 4 old bobas en neutral 2 y tenemos 3. Se necesitan 2 death trooper (Dark2-6) y tenemos 1"></td>
+                            <td class="green special" data-hover="Se necesitan 4 old bobas en neutral 2 y tenemos 3"></td>
+                            <!-- Lumi -->
+                            <td class="green"></td>
+                            <td class="green special" data-hover="Se necesitan 2 Aayla (neutral 2-1) y tenemos 1"></td>
+                            <td class="blue" data-hover="Personajes: Enfys"></td>
+                            <td class="red"></td>
+                            <td class="green special" data-hover="Se necesitan 2 Kanan y tenemos 1"></td>
+                            <td class="green"></td>
+                        </tr>
+                        <tr>
+                            <!-- Dark -->
+                            <td class="green"></td>
+                            <td class="red"></td>
+                            <td class="red"></td>
+                            <td class="green"></td>
+                            <td class="yellow" data-hover="Personajes: 0-0-0, Gar Saxon, First Order SF"></td>
+                            <td class="yellow" data-hover="Personajes: Embo, Director Krennic, Aurra, Tusken Raider"></td>
+                            <!-- Neutral -->
+                            <td class="green special" data-hover="Se necesitan 4 old bobas y tenemos 3"></td>
+                            <td class="green special" data-hover="Se necesitan 4 old bobas y tenemos 3"></td>
+                            <td class="dark-blue" data-hover="Personajes: Ewok Scout"></td>
+                            <td class="yellow" data-hover="Personajes: Young Han Solo, Coruscant Underworld Police, Ewok Elder"></td>
+                            <td class="yellow" data-hover="Personajes: B1, Hoth Rebel Scout, Bodhi Rook"></td>
+                            <td class="green special" data-hover="Se necesitan 4 old bobas y tenemos 3"></td>
+                            <!-- Lumi -->
+                            <td class="green"></td>
+                            <td class="blue" data-hover="Personajes: Logray y Logray"></td>
+                            <td class="blue" data-hover="Personajes: Greef Karga"></td>
+                            <td class="red"></td>
+                            <td class="red"></td>
+                            <td class="red"></td>
+                        </tr>
+                        </tbody>
+                    </table>
 
-        <div id="top-characters-to-upgrade-section" class="alzamiento-section">
-            <h3>Personajes a Subir - TOP prioridad</h3>
-            <div class="alzamiento-section-content">
-                <p>TOP Priority: 4 pelotones en Tatooine para aumentar fragmentos de Reva</p>
-                <ul id="top-priority-characters-list">
-                    <li>No hay personajes para subir</li>
-                </ul>
+                    <table class="alzamiento-table">
+                        <thead>
+                        <tr>
+                            <th colspan="3">Pincha o pasa el cursor por encima en la celda para ver los personajes que faltan</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="green">Completo</td>
+                            <td class="green special">Completo, pero se necesita más de una fase</td>
+                            <td class="dark-blue">Prioridad TOP</td>
+                        </tr>
+                        <tr>
+                            <td class="blue">Prioridad Alta</td>
+                            <td class="yellow">Prioridad Baja</td>
+                            <td class="red">No todavía</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="top-characters-to-upgrade-section" class="alzamiento-section">
+                <h3>Personajes a Subir - TOP prioridad</h3>
+                <div class="alzamiento-section-content">
+                    <p>TOP Priority: 4 pelotones en Tatooine para aumentar fragmentos de Reva</p>
+                    <ul id="top-priority-characters-list">
+                        <li>No hay personajes para subir</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="characters-to-upgrade-section" class="alzamiento-section">
+                <h3>Personajes a Subir</h3>
+                <div class="alzamiento-section-content">
+                    <p>Subir personajes de poco esfuerzo para conseguir completar pelotones</p>
+                    <ul id="characters-to-upgrade-list">
+                        <li>No hay personajes para subir</li>
+                    </ul>
+                </div>
             </div>
         </div>
 
-        <div id="characters-to-upgrade-section" class="alzamiento-section">
-            <h3>Personajes a Subir</h3>
-            <div class="alzamiento-section-content">
-                <p>Subir personajes de poco esfuerzo para conseguir completar pelotones</p>
-                <ul id="characters-to-upgrade-list">
-                    <li>No hay personajes para subir</li>
-                </ul>
+        <div id="archive" class="tab-content">
+            <div id="plan350M" class="alzamiento-section collapsed">
+                <h3>Alzamiento - Plan 350M</h3>
+                <div class="alzamiento-section-content">
+                    <table id="plan-table" class="alzamiento-table">
+                        <thead>
+                        <tr>
+                            <th>Missions</th>
+                            <th>Ops</th>
+                            <th>Deploy</th>
+                            <th>Points</th>
+                            <th>Phase</th>
+                            <th colspan="3">HECHO</th>
+                            <th>*</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>15</td>
+                            <td>60</td>
+                            <td>350</td>
+                            <td class="sum-cell">425</td>
+                            <td>1</td>
+                            <td><input type="number" value="105" class="editable-input" readonly /></td>
+                            <td><input type="number" value="238" class="gold editable-input" readonly /></td>
+                            <td><input type="number" value="82" class="editable-input" readonly /></td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>110</td>
+                            <td>350</td>
+                            <td>475</td>
+                            <td>2</td>
+                            <td><input type="number" value="143" class="gold editable-input" readonly /></td>
+                            <td><input type="number" value="138" class="red editable-input" readonly /></td>
+                            <td><input type="number" value="166" class="gold editable-input" readonly /></td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>33</td>
+                            <td>350</td>
+                            <td>398</td>
+                            <td>3</td>
+                            <td><input type="number" value="135" class="editable-input" readonly /></td>
+                            <td><input type="number" value="178" class="gold editable-input" readonly /></td>
+                            <td><input type="number" value="85" class="editable-input" readonly /></td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>44</td>
+                            <td>350</td>
+                            <td>398</td>
+                            <td>4</td>
+                            <td><input type="number" value="181" class="gold editable-input" readonly /></td>
+                            <td><input type="number" value="178" class="editable-input" readonly /></td>
+                            <td><input type="number" value="50" class="editable-input" readonly /></td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>33</td>
+                            <td>350</td>
+                            <td>387</td>
+                            <td>5</td>
+                            <td><input type="number" value="148" class="editable-input" readonly /></td>
+                            <td><input type="number" value="10" class="red editable-input red" readonly /></td>
+                            <td><input type="number" value="169" class="gold editable-input" readonly /></td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>65</td>
+                            <td>350</td>
+                            <td>430</td>
+                            <td>6</td>
+                            <td><input type="number" value="191" class="gold editable-input" readonly /></td>
+                            <td><input type="number" value="219" class="gold editable-input" readonly /></td>
+                            <td><input type="number" value="20" class="red editable-input" readonly /></td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>2416</td>
+                            <td></td>
+                            <td colspan="6">24</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="upgraded-characters-section" class="alzamiento-section collapsed">
+                <h3>Personajes Subidos</h3>
+                <div class="alzamiento-section-content">
+                    <ul id="upgraded-characters-list">
+                        <li>No hay personajes para subir</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="historicalResults" class="alzamiento-section collapsed">
+                <h3>Histórico de Resultados</h3>
+                <div class="alzamiento-section-content">
+                    <table id="resultados-table" class="alzamiento-table">
+                        <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>PG</th>
+                            <th>No Desplegados</th>
+                            <th>*</th>
+                            <th>Pelotones</th>
+                            <th>Zeffo</th>
+                            <th>Mandalor</th>
+                            <th>Reva</th>
+                        </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
             </div>
         </div>
 
-        <div id="upgraded-characters-section" class="alzamiento-section collapsed">
-            <h3>Personajes Subidos</h3>
-            <div class="alzamiento-section-content">
-                <ul id="upgraded-characters-list">
-                    <li>No hay personajes para subir</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="alzamiento-section collapsed">
-            <h3>Histórico de Resultados</h3>
-            <div class="alzamiento-section-content">
-                <table id="resultados-table" class="alzamiento-table">
-                    <thead>
-                    <tr>
-                        <th>Fecha</th>
-                        <th>PG</th>
-                        <th>No Desplegados</th>
-                        <th>*</th>
-                        <th>Pelotones</th>
-                        <th>Zeffo</th>
-                        <th>Mandalor</th>
-                        <th>Reva</th>
-                    </tr>
-                    </thead>
-                    <tbody></tbody>
-                </table>
-            </div>
-        </div>
     </section>
 </main>
 

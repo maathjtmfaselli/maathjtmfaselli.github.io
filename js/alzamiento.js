@@ -110,6 +110,14 @@ function initializeCollapsibleSections() {
     });
 }
 
+function openTab(tabName) {
+  document.querySelectorAll(".tab-content").forEach(tab => tab.classList.remove("active"));
+  document.querySelectorAll(".tab-button").forEach(btn => btn.classList.remove("active"));
+
+  document.getElementById(tabName).classList.add("active");
+  event.currentTarget.classList.add("active");
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   loadCharacterData();
   loadHistoricalResults();
