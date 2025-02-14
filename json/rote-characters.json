@@ -39,20 +39,25 @@
       "assignedTo": "Temnyy"
     },
     {
-      "name": "Old Boba",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
-      "relic": "Reliquia 7",
-      "assignedTo": "Dark Lestat"
-    },
-    {
       "name": "Lando Calrissian",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_landobespin.png",
       "relic": "Reliquia 6",
+      "assignedTo": ""
+    },
+    {
+      "name": "Ki-Adi-Mundi",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_kiadimundi.png",
+      "relic": "Reliquia 7",
       "assignedTo": ""
     }
   ],
   "upgradedCharacters": [
     {
+      "name": "Old Boba",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "Dark Lestat"
+    },{
       "name": "Logray",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_ewok_logray.png",
       "relic": "Reliquia 7",
@@ -111,6 +116,12 @@
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_sabine_s3.png",
       "relic": "Reliquia 5",
       "assignedTo": "GRANJEDI Tito1"
+    },
+    {
+      "name": "Ki-Adi-Mundi",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_kiadimundi.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "Maath"
     },
     {
       "name": "BT-1",
