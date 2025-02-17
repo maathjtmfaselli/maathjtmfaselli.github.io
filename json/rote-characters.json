@@ -21,12 +21,6 @@
       "assignedTo": "Mik Bat"
     },
     {
-      "name": "Old Boba",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
-      "relic": "Reliquia 7",
-      "assignedTo": "Temnyy"
-    },
-    {
       "name": "Lando Calrissian",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_landobespin.png",
       "relic": "Reliquia 6",
@@ -40,6 +34,12 @@
     }
   ],
   "upgradedCharacters": [
+    {
+      "name": "Old Boba",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "Temnyy"
+    },
     {
       "name": "Greef Karga",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_greefkarga.png",
