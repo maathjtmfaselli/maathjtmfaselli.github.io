@@ -9,12 +9,6 @@
   ],
   "charactersToUpgrade": [
     {
-      "name": "Enfys Nest",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_enfys.png",
-      "relic": "Reliquia 6",
-      "assignedTo": "Dark Lestat"
-    },
-    {
       "name": "Logray",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_ewok_logray.png",
       "relic": "Reliquia 7",
@@ -42,7 +36,7 @@
       "name": "Lando Calrissian",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_landobespin.png",
       "relic": "Reliquia 6",
-      "assignedTo": ""
+      "assignedTo": "Cente"
     },
     {
       "name": "Ki-Adi-Mundi",
@@ -52,6 +46,12 @@
     }
   ],
   "upgradedCharacters": [
+    {
+      "name": "Enfys Nest",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_enfys.png",
+      "relic": "Reliquia 6",
+      "assignedTo": "Dark Lestat"
+    },
     {
       "name": "Old Boba",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
