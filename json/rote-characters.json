@@ -21,12 +21,6 @@
       "assignedTo": "Mik Bat"
     },
     {
-      "name": "Greef Karga",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_greefkarga.png",
-      "relic": "Reliquia 7",
-      "assignedTo": "Maath"
-    },
-    {
       "name": "Old Boba",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
       "relic": "Reliquia 7",
@@ -46,6 +40,12 @@
     }
   ],
   "upgradedCharacters": [
+    {
+      "name": "Greef Karga",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_greefkarga.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "Maath"
+    },
     {
       "name": "Enfys Nest",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_enfys.png",
