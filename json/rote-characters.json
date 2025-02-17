@@ -13,23 +13,55 @@
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_ewok_logray.png",
       "relic": "Reliquia 7",
       "assignedTo": "Lucas"
-    },
-    {
+    },{
       "name": "Kuiil",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_kuiil.png",
       "relic": "Reliquia 6",
       "assignedTo": "Mik Bat"
-    },
-    {
+    },{
+      "name": "Jawa",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_jawa_jawa.png",
+      "relic": "Reliquia 6",
+      "assignedTo": ""
+    },{
+      "name": "Zaalbar",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_zaalbar.png",
+      "relic": "Reliquia 6",
+      "assignedTo": ""
+    },{
+      "name": "Mandaloriano",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_mandalorian.png",
+      "relic": "Reliquia 6",
+      "assignedTo": ""
+    },{
+      "name": "Embo",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_embo.png",
+      "relic": "Reliquia 7",
+      "assignedTo": ""
+    },{
       "name": "Lando Calrissian",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_landobespin.png",
       "relic": "Reliquia 6",
       "assignedTo": "Cente"
-    },
-    {
+    },{
       "name": "Ki-Adi-Mundi",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_kiadimundi.png",
       "relic": "Reliquia 7",
+      "assignedTo": ""
+    },{
+      "name": "Embo",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_embo.png",
+      "relic": "Reliquia 6",
+      "assignedTo": ""
+    },{
+      "name": "Ezra Bridger",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_ezra_s3.png",
+      "relic": "Reliquia 6",
+      "assignedTo": ""
+    },{
+      "name": "Kanan Jarrus",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_kanan_s3.png",
+      "relic": "Reliquia 6",
       "assignedTo": ""
     }
   ],
