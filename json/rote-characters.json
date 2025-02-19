@@ -38,6 +38,11 @@
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_embo.png",
       "relic": "Reliquia 6",
       "assignedTo": ""
+    },{
+      "name": "Enfys Nest",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_enfys.png",
+      "relic": "Reliquia 6",
+      "assignedTo": ""
     }
   ],
   "upgradedCharacters": [
@@ -61,12 +66,6 @@
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_greefkarga.png",
       "relic": "Reliquia 7",
       "assignedTo": "Maath"
-    },
-    {
-      "name": "Enfys Nest",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_enfys.png",
-      "relic": "Reliquia 6",
-      "assignedTo": "Dark Lestat"
     },
     {
       "name": "Old Boba",
