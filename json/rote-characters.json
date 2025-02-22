@@ -1,11 +1,6 @@
 {
   "topPriorityCharacters": [
-    {
-      "name": "Ewok Scout",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_ewok_scout.png",
-      "relic": "Reliquia 7",
-      "assignedTo": "Viula"
-    }
+
   ],
   "charactersToUpgrade": [
     {
@@ -47,6 +42,11 @@
   ],
   "upgradedCharacters": [
     {
+      "name": "Ewok Scout",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_ewok_scout.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "Viula"
+    },{
       "name": "Lando Calrissian",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_landobespin.png",
       "relic": "Reliquia 6",
