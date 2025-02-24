@@ -14,6 +14,11 @@
       "relic": "Reliquia 7",
       "assignedTo": "Maath"
     },{
+      "name": "Imperial Probe Droid",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_probedroid.png",
+      "relic": "Reliquia 5",
+      "assignedTo": ""
+    },{
       "name": "Kuiil",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_kuiil.png",
       "relic": "Reliquia 6",
@@ -32,6 +37,36 @@
       "name": "Embo",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_embo.png",
       "relic": "Reliquia 6",
+      "assignedTo": "josmartini"
+    },{
+      "name": "Gamorrean Guard",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_gamorreanguard.png",
+      "relic": "Reliquia 5",
+      "assignedTo": "Maath"
+    },{
+      "name": "Canderous Ordo",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_canderous.png",
+      "relic": "Reliquia 5",
+      "assignedTo": ""
+    },{
+      "name": "Old Boba",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
+      "relic": "Reliquia 7",
+      "assignedTo": ""
+    },{
+      "name": "Mother Talzin",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_nightsisters_talzin.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "Maath"
+    },{
+      "name": "Mara Jade",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_marajade.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "Maath"
+    },{
+      "name": "Nightsiter Initiate",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_nightsister_initiate.png",
+      "relic": "Reliquia 5",
       "assignedTo": ""
     },{
       "name": "Enfys Nest",
