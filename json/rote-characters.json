@@ -1,26 +1,28 @@
 {
   "topPriorityCharacters": [
-
-  ],
-  "charactersToUpgrade": [
     {
       "name": "Logray",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_ewok_logray.png",
       "relic": "Reliquia 7",
-      "assignedTo": "Lucas"
+      "assignedTo": "josmartini"
+    },{
+      "name": "Ki-Adi-Mundi",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_kiadimundi.png",
+      "relic": "Reliquia 7",
+      "assignedTo": ""
     },{
       "name": "Kuiil",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_kuiil.png",
       "relic": "Reliquia 6",
-      "assignedTo": "Mik Bat"
-    },{
-      "name": "Old Boba",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
-      "relic": "Reliquia 7",
       "assignedTo": ""
     },{
-      "name": "Enfys Nest",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_enfys.png",
+      "name": "El Mandaloriano",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_mandalorian.png",
+      "relic": "Reliquia 6",
+      "assignedTo": ""
+    },{
+      "name": "Jawa",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_jawa_jawa.png",
       "relic": "Reliquia 6",
       "assignedTo": ""
     },{
@@ -29,9 +31,9 @@
       "relic": "Reliquia 7",
       "assignedTo": "Maath"
     },{
-      "name": "Imperial Probe Droid",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_probedroid.png",
-      "relic": "Reliquia 5",
+      "name": "Enfys Nest",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_enfys.png",
+      "relic": "Reliquia 6",
       "assignedTo": ""
     },{
       "name": "Embo",
@@ -39,8 +41,41 @@
       "relic": "Reliquia 7",
       "assignedTo": ""
     },{
-      "name": "Ki-Adi-Mundi",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_kiadimundi.png",
+      "name": "Aurra Sing",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_aurrasing.png",
+      "relic": "Reliquia 7",
+      "assignedTo": ""
+    },{
+      "name": "Tusken Raider",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_tuskenraider.png",
+      "relic": "Reliquia 7",
+      "assignedTo": ""
+    },{
+      "name": "Director Krennic",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_krennic.png",
+      "relic": "Reliquia 7",
+      "assignedTo": ""
+    }
+  ],
+  "charactersToUpgrade": [
+    {
+      "name": "Logray",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_ewok_logray.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "Lucas"
+    },{
+      "name": "Old Boba",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
+      "relic": "Reliquia 7",
+      "assignedTo": ""
+    },{
+      "name": "Imperial Probe Droid",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_probedroid.png",
+      "relic": "Reliquia 5",
+      "assignedTo": ""
+    },{
+      "name": "Mace Windu",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_macewindu.png",
       "relic": "Reliquia 7",
       "assignedTo": ""
     },{
@@ -49,6 +84,34 @@
       "relic": "Reliquia 5",
       "assignedTo": ""
     },{
+      "name": "Nightsiter Initiate",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_nightsister_initiate.png",
+      "relic": "Reliquia 5",
+      "assignedTo": ""
+    },{
+      "name": "Death Trooper",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_trooperdeath.png",
+      "relic": "Reliquia 6",
+      "assignedTo": ""
+    },{
+      "name": "Mon Mothma",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_monmothma.png",
+      "relic": "Reliquia 6",
+      "assignedTo": ""
+    },{
+      "name": "Greef Karga",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_greefkarga.png",
+      "relic": "Reliquia 7",
+      "assignedTo": ""
+    },{
+      "name": "Ezra Bridger",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_greefkarga.png",
+      "relic": "Reliquia 6",
+      "assignedTo": ""
+    }
+  ],
+  "upgradedCharacters": [
+    {
       "name": "Mother Talzin",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_nightsisters_talzin.png",
       "relic": "Reliquia 7",
@@ -59,14 +122,6 @@
       "relic": "Reliquia 7",
       "assignedTo": "Maath"
     },{
-      "name": "Nightsiter Initiate",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_nightsister_initiate.png",
-      "relic": "Reliquia 5",
-      "assignedTo": ""
-    }
-  ],
-  "upgradedCharacters": [
-    {
       "name": "Embo",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_embo.png",
       "relic": "Reliquia 6",
