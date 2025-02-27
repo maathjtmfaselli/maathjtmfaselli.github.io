@@ -287,3 +287,42 @@
 .tab-content.active {
   display: block;
 }
+
+#missions-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.mission-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.mission-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffcc80;
+}
+
+.mission-character {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    color: #ffcc80;
+}
+
+.mission-character img {
+    width: 50px; / Ajusta el tamaño de la imagen /
+    height: auto;
+    margin-right: 10px;
+}
+
+.mission-players {
+    font-size: 1em;
+    color: #ffcc80;
+}
