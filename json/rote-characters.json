@@ -122,6 +122,11 @@
   ],
   "upgradedCharacters": [
     {
+      "name": "B2",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_b2.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "Maath"
+    },{
       "name": "Mara Jade",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_marajade.png",
       "relic": "Reliquia 7",
