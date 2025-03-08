@@ -99,6 +99,92 @@ async function loadHistoricalResults() {
   }
 }
 
+async function loadOperationsGuildData() {
+  try {
+    const response = await fetch('../csv/rote-pelotones.csv');
+    const csvText = await response.text();
+
+    // Convertir CSV a JSON usando PapaParse
+    const parsedData = Papa.parse(csvText, {
+      header: true,  // Utiliza la primera fila como claves
+      skipEmptyLines: true, // Omitir líneas vacías
+    });
+
+    const data = parsedData.data; // Los datos convertidos en JSON
+    const pelotonesConConteoCero = new Set();
+    // Paso 1: Identificar los pelotones con conteo 0
+    data.forEach(row => {
+      let conteo = row.Conteo ? row.Conteo.trim() : '';  // Verificamos si Conteo existe, y le quitamos espacios
+      if (conteo === '0') {
+        // Si el conteo es 0, agregamos el pelotón (Side + Phase + Op) a nuestro Set
+        pelotonesConConteoCero.add(`${row.Side}-${row.Phase}-${row.Op}`);
+        console.log("pelotonesConConteoCero - Side " + row.Side + " Phase " + row.Phase + " Op " + row.Op)
+      }
+    });
+
+    // Obtener el cuerpo de la tabla donde insertaremos los datos
+    const tableBody = document.querySelector("#operations-guild-table tbody");
+    tableBody.innerHTML = "";  // Limpiar la tabla antes de agregar las filas
+
+    // Iterar sobre los datos y crear las filas correspondientes
+    data.forEach(row => {
+      // Concatenar las columnas de jugadores
+      let jugadores = [];
+      for (let i = 1; i <= 4; i++) {  // Suponiendo que los jugadores están en columnas Jugador1, Jugador2, Jugador3, Jugador4
+        const jugador = row[`Jugador${i}`]?.trim();
+        if (jugador) {
+          jugadores.push(jugador);  // Si hay un jugador, lo agregamos al arreglo
+        }
+      }
+
+      // Si hay jugadores, los unimos por coma. Si no, mostramos un espacio vacío.
+      jugadores = jugadores.length > 0 ? jugadores.join(', ') : '&nbsp;';
+
+      const tableRow = document.createElement("tr");
+
+      let conteo = row.Conteo ? row.Conteo.trim() : '';
+      let rowClass = '';
+
+      // Verificar si el conteo está vacío o nulo, y asignar verde
+      if (conteo === '') {
+        rowClass = 'green';  // Consideramos vacío como suficiente
+        conteo = '';  // Lo dejamos vacío en la tabla
+      } else {
+        conteo = parseInt(conteo, 10);
+
+        // Asignar clases según el valor de conteo
+        if (conteo === 0) {
+          rowClass = 'row-red';
+        } else if (conteo >= 1 && conteo <= 9) {
+          rowClass = 'row-yellow';
+        } else if (conteo >= 10) {
+          rowClass = 'row-green';
+        }
+      }
+
+      const peloton = `${row.Side}-${row.Phase}-${row.Op}`;
+
+      // Asignar la clase de color a la fila
+      tableRow.classList.add(rowClass);
+      tableRow.innerHTML = `
+        <td>${row.Planeta}</td>
+        <td>${row.Side}</td>
+        <td>${row.Phase}</td>
+        <td class="${pelotonesConConteoCero.has(peloton) ? 'row-red' : ''}">${row.Op}</td>
+        <td>${row.Character}</td>
+        <td>${conteo}</td>
+        <td>${jugadores}</td>
+      `;
+
+      // Agregar la fila al cuerpo de la tabla
+      tableBody.appendChild(tableRow);
+    });
+
+  } catch (error) {
+    console.error("Error loading rote-pelotones data:", error);
+  }
+}
+
 function initializeCollapsibleSections() {
     const headers = document.querySelectorAll('.alzamiento-section h3');
 
@@ -121,5 +207,6 @@ function openTab(tabName) {
 document.addEventListener("DOMContentLoaded", () => {
   loadCharacterData();
   loadHistoricalResults();
+  loadOperationsGuildData();
   initializeCollapsibleSections();
 });

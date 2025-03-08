@@ -138,6 +138,31 @@
   color: #e0e0e0;
 }
 
+#operations-guild-table {
+  width: 100%;
+}
+
+#operations-guild-table tr {
+  border: 1px solid #ccc;
+}
+
+.row-red {
+  background-color: red !important;
+}
+
+.row-yellow {
+  background-color: #ff9800 !important;
+}
+
+.row-green {
+  background-color: green !important;
+}
+
+td {
+  text-align: center;
+  padding: 8px;
+}
+
 .gold {
   background-color: #FFD700; !important; /* Color oro */
 }

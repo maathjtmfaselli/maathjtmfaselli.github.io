@@ -59,10 +59,10 @@
   ],
   "charactersToUpgrade": [
     {
-      "name": "Logray",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_ewok_logray.png",
-      "relic": "Reliquia 7",
-      "assignedTo": "Lucas"
+      "name": "Jawa engineer",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_jawa_engineer.png",
+      "relic": "Reliquia 5",
+      "assignedTo": ""
     },{
       "name": "Old Boba",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
