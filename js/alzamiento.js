@@ -114,6 +114,7 @@ async function loadOperationsGuildData() {
     const pelotonesConConteoCero = new Set();
     let planets = new Set();
     let players = new Set();
+    let characters = new Set();
     data.forEach(row => {
         // Paso 1: Identificar los pelotones con conteo 0
       let conteo = row.Conteo ? row.Conteo.trim() : '';  // Verificamos si Conteo existe, y le quitamos espacios
@@ -126,12 +127,17 @@ async function loadOperationsGuildData() {
     // Paso 2: Identificar los planetas
       planets.add(row.Planeta);
 
-      // Paso 2: Identificar los jugadores
+      // Paso 3: Identificar los jugadores
       for (let i = 1; i <= 4; i++) {
           const jugador = row[`Jugador${i}`]?.trim();
           if (jugador) {
               players.add(jugador);
           }
+      }
+
+      // Paso 4: Identificar los personajes
+      if (row.Character) {
+          characters.add(row.Character.trim());
       }
     });
 
@@ -149,6 +155,14 @@ async function loadOperationsGuildData() {
             option.value = player;
             option.textContent = player;
             playerSelect.appendChild(option);
+        });
+
+        const characterSelect = document.querySelector("#character-filter");
+        characters.forEach(character => {
+            const option = document.createElement("option");
+            option.value = character;
+            option.textContent = character;
+            characterSelect.appendChild(option);
         });
 
     // Obtener el cuerpo de la tabla donde insertaremos los datos
@@ -217,6 +231,7 @@ async function loadOperationsGuildData() {
 function filterTable() {
     const planetFilterValue = document.querySelector("#planet-filter").value.trim();
     const playerFilterValue = document.querySelector("#player-filter").value.trim();
+    const characterFilterValue = document.querySelector("#character-filter").value.trim();
 
     const tableRows = document.querySelectorAll("#operations-guild-table tbody tr");
 
@@ -227,6 +242,9 @@ function filterTable() {
         const playersCell = row.cells[6];  // La celda que contiene los jugadores
         const playersText = playersCell.textContent.trim(); // Los jugadores en la celda
 
+        const characterCell = row.cells[4];  // La celda que contiene el personaje
+        const character = characterCell.textContent.trim(); // El valor del personaje
+
         let showRow = true;
 
         // Filtro por planeta
@@ -236,6 +254,11 @@ function filterTable() {
 
         // Filtro por jugador
         if (playerFilterValue && !playersText.includes(playerFilterValue)) {
+            showRow = false;
+        }
+
+        // Filtro por personaje
+        if (characterFilterValue && character !== characterFilterValue) {
             showRow = false;
         }
 
