@@ -112,15 +112,27 @@ async function loadOperationsGuildData() {
 
     const data = parsedData.data; // Los datos convertidos en JSON
     const pelotonesConConteoCero = new Set();
-    // Paso 1: Identificar los pelotones con conteo 0
+    let planets = new Set();
     data.forEach(row => {
+        // Paso 1: Identificar los pelotones con conteo 0
       let conteo = row.Conteo ? row.Conteo.trim() : '';  // Verificamos si Conteo existe, y le quitamos espacios
       if (conteo === '0') {
         // Si el conteo es 0, agregamos el pelotón (Side + Phase + Op) a nuestro Set
         pelotonesConConteoCero.add(`${row.Side}-${row.Phase}-${row.Op}`);
-        console.log("pelotonesConConteoCero - Side " + row.Side + " Phase " + row.Phase + " Op " + row.Op)
+//        console.log("pelotonesConConteoCero - Side " + row.Side + " Phase " + row.Phase + " Op " + row.Op)
       }
+
+    // Paso 2: Identificar los planetas
+      planets.add(row.Planeta);
     });
+
+        const planetSelect = document.querySelector("#planet-filter");
+        planets.forEach(planet => {
+            const option = document.createElement("option");
+            option.value = planet;
+            option.textContent = planet;
+            planetSelect.appendChild(option);
+        });
 
     // Obtener el cuerpo de la tabla donde insertaremos los datos
     const tableBody = document.querySelector("#operations-guild-table tbody");
@@ -183,6 +195,23 @@ async function loadOperationsGuildData() {
   } catch (error) {
     console.error("Error loading rote-pelotones data:", error);
   }
+}
+
+function filterTableByPlanet() {
+    const filterValue = document.querySelector("#planet-filter").value.trim().toLowerCase(); // Obtener el valor del filtro
+
+    const tableRows = document.querySelectorAll("#operations-guild-table tbody tr");
+
+    tableRows.forEach(row => {
+        const planetCell = row.cells[0];  // La celda que contiene el planeta
+        const planet = planetCell.textContent.trim().toLowerCase(); // El valor del planeta
+
+        if (filterValue && !planet.includes(filterValue)) {
+            row.style.display = "none";  // Ocultar la fila si no coincide con el filtro
+        } else {
+            row.style.display = "";  // Mostrar la fila si coincide con el filtro
+        }
+    });
 }
 
 function initializeCollapsibleSections() {

@@ -130,6 +130,12 @@
             <div id="rote-operations" class="alzamiento-section collapsed">
                 <h3>Pelotones</h3>
                 <div class="alzamiento-section-content">
+                    <label for="planet-filter">Filtrar por Planeta:</label>
+                    <select id="planet-filter" onchange="filterTableByPlanet()">
+                        <option value="">Todos los planetas</option>
+                    </select>
+                </div>
+                <div class="alzamiento-section-content">
                     <table id="operations-guild-table">
                         <thead>
                         <tr>
