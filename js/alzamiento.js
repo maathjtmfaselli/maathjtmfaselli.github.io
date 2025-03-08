@@ -113,6 +113,7 @@ async function loadOperationsGuildData() {
     const data = parsedData.data; // Los datos convertidos en JSON
     const pelotonesConConteoCero = new Set();
     let planets = new Set();
+    let players = new Set();
     data.forEach(row => {
         // Paso 1: Identificar los pelotones con conteo 0
       let conteo = row.Conteo ? row.Conteo.trim() : '';  // Verificamos si Conteo existe, y le quitamos espacios
@@ -124,6 +125,14 @@ async function loadOperationsGuildData() {
 
     // Paso 2: Identificar los planetas
       planets.add(row.Planeta);
+
+      // Paso 2: Identificar los jugadores
+      for (let i = 1; i <= 4; i++) {
+          const jugador = row[`Jugador${i}`]?.trim();
+          if (jugador) {
+              players.add(jugador);
+          }
+      }
     });
 
         const planetSelect = document.querySelector("#planet-filter");
@@ -132,6 +141,14 @@ async function loadOperationsGuildData() {
             option.value = planet;
             option.textContent = planet;
             planetSelect.appendChild(option);
+        });
+
+        const playerSelect = document.querySelector("#player-filter");
+        players.forEach(player => {
+            const option = document.createElement("option");
+            option.value = player;
+            option.textContent = player;
+            playerSelect.appendChild(option);
         });
 
     // Obtener el cuerpo de la tabla donde insertaremos los datos
@@ -197,20 +214,33 @@ async function loadOperationsGuildData() {
   }
 }
 
-function filterTableByPlanet() {
-    const filterValue = document.querySelector("#planet-filter").value.trim().toLowerCase(); // Obtener el valor del filtro
+function filterTable() {
+    const planetFilterValue = document.querySelector("#planet-filter").value.trim();
+    const playerFilterValue = document.querySelector("#player-filter").value.trim();
 
     const tableRows = document.querySelectorAll("#operations-guild-table tbody tr");
 
     tableRows.forEach(row => {
         const planetCell = row.cells[0];  // La celda que contiene el planeta
-        const planet = planetCell.textContent.trim().toLowerCase(); // El valor del planeta
+        const planet = planetCell.textContent.trim(); // El valor del planeta
 
-        if (filterValue && !planet.includes(filterValue)) {
-            row.style.display = "none";  // Ocultar la fila si no coincide con el filtro
-        } else {
-            row.style.display = "";  // Mostrar la fila si coincide con el filtro
+        const playersCell = row.cells[6];  // La celda que contiene los jugadores
+        const playersText = playersCell.textContent.trim(); // Los jugadores en la celda
+
+        let showRow = true;
+
+        // Filtro por planeta
+        if (planetFilterValue && planet !== planetFilterValue) {
+            showRow = false;
         }
+
+        // Filtro por jugador
+        if (playerFilterValue && !playersText.includes(playerFilterValue)) {
+            showRow = false;
+        }
+
+        // Mostrar u ocultar la fila según los filtros aplicados
+        row.style.display = showRow ? "" : "none";
     });
 }
 
