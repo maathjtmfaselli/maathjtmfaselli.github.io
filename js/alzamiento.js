@@ -112,9 +112,9 @@ async function loadOperationsGuildData() {
 
     const data = parsedData.data; // Los datos convertidos en JSON
     const pelotonesConConteoCero = new Set();
-    let planets = new Set();
-    let players = new Set();
-    let characters = new Set();
+    let planets = new Map();
+    let players = new Map();
+    let characters = new Map();
     data.forEach(row => {
         // Paso 1: Identificar los pelotones con conteo 0
       let conteo = row.Conteo ? row.Conteo.trim() : '';  // Verificamos si Conteo existe, y le quitamos espacios
@@ -125,43 +125,44 @@ async function loadOperationsGuildData() {
       }
 
     // Paso 2: Identificar los planetas
-      planets.add(row.Planeta);
+      planets.set(row.Planeta, `${row.Side} - ${row.Phase} - ${row.Planeta}`)
 
       // Paso 3: Identificar los jugadores
       for (let i = 1; i <= 4; i++) {
           const jugador = row[`Jugador${i}`]?.trim();
           if (jugador) {
-              players.add(jugador);
+              players.set(jugador, (players.get(jugador) || 0) + 1);
           }
       }
 
       // Paso 4: Identificar los personajes
       if (row.Character) {
-          characters.add(row.Character.trim());
+      const character = row.Character.trim();
+          characters.set(character, (characters.get(character) || 0) + 1);
       }
     });
 
         const planetSelect = document.querySelector("#planet-filter");
-        planets.forEach(planet => {
+        planets.forEach((label, value) => {
             const option = document.createElement("option");
-            option.value = planet;
-            option.textContent = planet;
+            option.value = value;
+            option.textContent = label;
             planetSelect.appendChild(option);
         });
 
         const playerSelect = document.querySelector("#player-filter");
-        players.forEach(player => {
+        Array.from(players.entries()).sort((a, b) => a[0].localeCompare(b[0])).forEach(([player, count]) => {
             const option = document.createElement("option");
             option.value = player;
-            option.textContent = player;
+            option.textContent = `(${count}) ${player}`;
             playerSelect.appendChild(option);
         });
 
         const characterSelect = document.querySelector("#character-filter");
-        characters.forEach(character => {
+        Array.from(characters.entries()).sort((a, b) => a[0].localeCompare(b[0])).forEach(([character, count]) => {
             const option = document.createElement("option");
             option.value = character;
-            option.textContent = character;
+            option.textContent = `(${count}) ${character}`;
             characterSelect.appendChild(option);
         });
 
@@ -211,8 +212,8 @@ async function loadOperationsGuildData() {
       tableRow.classList.add(rowClass);
       tableRow.innerHTML = `
         <td>${row.Planeta}</td>
-        <td>${row.Side}</td>
         <td>${row.Phase}</td>
+        <td>${row.Side}</td>
         <td class="${pelotonesConConteoCero.has(peloton) ? 'row-red' : ''}">${row.Op}</td>
         <td>${row.Character}</td>
         <td>${conteo}</td>

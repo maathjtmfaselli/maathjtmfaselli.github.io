@@ -109,11 +109,6 @@
       "relic": "Reliquia 7",
       "assignedTo": ""
     },{
-      "name": "Mother Talzin",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_nightsisters_talzin.png",
-      "relic": "Reliquia 7",
-      "assignedTo": "Maath"
-    },{
       "name": "Ezra Bridger",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_ezra_s3.png",
       "relic": "Reliquia 6",
@@ -122,6 +117,11 @@
   ],
   "upgradedCharacters": [
     {
+      "name": "Mother Talzin",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_nightsisters_talzin.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "Maath"
+    },{
       "name": "B2",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_b2.png",
       "relic": "Reliquia 7",
