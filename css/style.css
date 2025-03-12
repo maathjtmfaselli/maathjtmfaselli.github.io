@@ -13,6 +13,21 @@ header {
     text-align: center;
 }
 
+h2 {
+  color: #00e5ff;
+  font-size: 28px;
+}
+
+h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #81d4fa;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #2a2a40;
+  color: #81d4fa;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -33,11 +48,13 @@ main {
 }
 
 section {
-    padding: 20px;
-    margin: 10px 0;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   padding: 20px;
+   background-color: #1e1e2e;
+   border: 2px solid #00bcd4;
+   border-radius: 10px;
+   max-width: 900px;
+   margin: 20px auto;
+   color: #ffffff;
 }
 
 section.active {
