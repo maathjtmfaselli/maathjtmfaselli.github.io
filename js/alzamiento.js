@@ -119,13 +119,13 @@ async function loadOperationsGuildData() {
         // Paso 1: Identificar los pelotones con conteo 0
       let conteo = row.Conteo ? row.Conteo.trim() : '';  // Verificamos si Conteo existe, y le quitamos espacios
       if (conteo === '0') {
-        // Si el conteo es 0, agregamos el pelotón (Side + Phase + Op) a nuestro Set
-        pelotonesConConteoCero.add(`${row.Side}-${row.Phase}-${row.Op}`);
-//        console.log("pelotonesConConteoCero - Side " + row.Side + " Phase " + row.Phase + " Op " + row.Op)
+        // Si el conteo es 0, agregamos el pelotón (Side + Oleada + Op) a nuestro Set
+        pelotonesConConteoCero.add(`${row.Side}-${row.Oleada}-${row.Op}`);
+//        console.log("pelotonesConConteoCero - Side " + row.Side + " Oleada " + row.Oleada + " Op " + row.Op)
       }
 
     // Paso 2: Identificar los planetas
-      planets.set(row.Planeta, `${row.Side} - ${row.Phase} - ${row.Planeta}`)
+      planets.set(row.Planeta, `${row.Side} - ${row.Oleada} - ${row.Planeta}`)
 
       // Paso 3: Identificar los jugadores
       for (let i = 1; i <= 4; i++) {
@@ -206,13 +206,13 @@ async function loadOperationsGuildData() {
         }
       }
 
-      const peloton = `${row.Side}-${row.Phase}-${row.Op}`;
+      const peloton = `${row.Side}-${row.Oleada}-${row.Op}`;
 
       // Asignar la clase de color a la fila
       tableRow.classList.add(rowClass);
       tableRow.innerHTML = `
         <td>${row.Planeta}</td>
-        <td>${row.Phase}</td>
+        <td>${row.Oleada}</td>
         <td>${row.Side}</td>
         <td class="${pelotonesConConteoCero.has(peloton) ? 'row-red' : ''}">${row.Op}</td>
         <td>${row.Character}</td>
