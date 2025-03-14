@@ -62,7 +62,7 @@
       "name": "Jawa engineer",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_jawa_engineer.png",
       "relic": "Reliquia 5",
-      "assignedTo": ""
+      "assignedTo": "Cal Kestis"
     },{
       "name": "Old Boba",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
@@ -102,7 +102,7 @@
       "name": "Mon Mothma",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_monmothma.png",
       "relic": "Reliquia 6",
-      "assignedTo": ""
+      "assignedTo": "GRANJEDI Tito1"
     },{
       "name": "Greef Karga",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_greefkarga.png",
@@ -112,11 +112,16 @@
       "name": "Ezra Bridger",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_ezra_s3.png",
       "relic": "Reliquia 6",
-      "assignedTo": ""
+      "assignedTo": "Ben"
     }
   ],
   "upgradedCharacters": [
     {
+      "name": "Kanan Jarrus",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_kanan_s3.png",
+      "relic": "Reliquia 6",
+      "assignedTo": "josmartini"
+    },{
       "name": "Mother Talzin",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_nightsisters_talzin.png",
       "relic": "Reliquia 7",
