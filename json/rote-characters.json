@@ -99,11 +99,6 @@
       "relic": "Reliquia 6",
       "assignedTo": ""
     },{
-      "name": "Mon Mothma",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_monmothma.png",
-      "relic": "Reliquia 6",
-      "assignedTo": "GRANJEDI Tito1"
-    },{
       "name": "Greef Karga",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_greefkarga.png",
       "relic": "Reliquia 7",
@@ -117,6 +112,11 @@
   ],
   "upgradedCharacters": [
     {
+      "name": "Mon Mothma",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_monmothma.png",
+      "relic": "Reliquia 6",
+      "assignedTo": "GRANJEDI Tito1"
+    },{
       "name": "Kanan Jarrus",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_kanan_s3.png",
       "relic": "Reliquia 6",
