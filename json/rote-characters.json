@@ -1,16 +1,6 @@
 {
   "topPriorityCharacters": [
     {
-      "name": "Logray",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_ewok_logray.png",
-      "relic": "Reliquia 7",
-      "assignedTo": "josmartini"
-    },{
-      "name": "Ki-Adi-Mundi",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_kiadimundi.png",
-      "relic": "Reliquia 7",
-      "assignedTo": ""
-    },{
       "name": "Kuiil",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_kuiil.png",
       "relic": "Reliquia 6",
@@ -24,6 +14,36 @@
       "name": "Jawa",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_jawa_jawa.png",
       "relic": "Reliquia 6",
+      "assignedTo": "maath"
+    },{
+      "name": "Enfys Nest",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_enfys.png",
+      "relic": "Reliquia 6",
+      "assignedTo": ""
+    },{
+      "name": "Snowtrooper",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_troopersnow.png",
+      "relic": "Reliquia 6",
+      "assignedTo": ""
+    },{
+      "name": "Veteran Smuggler Chew",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_tfa_chewbacca.png",
+      "relic": "Reliquia 6",
+      "assignedTo": ""
+    },{
+      "name": "Omega",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_badbatchomega.png",
+      "relic": "Reliquia 6",
+      "assignedTo": ""
+    },{
+      "name": "Logray",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_ewok_logray.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "josmartini"
+    },{
+      "name": "Ki-Adi-Mundi",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_kiadimundi.png",
+      "relic": "Reliquia 7",
       "assignedTo": ""
     },{
       "name": "Imperial Probe Droid",
@@ -31,9 +51,9 @@
       "relic": "Reliquia 7",
       "assignedTo": "Maath"
     },{
-      "name": "Enfys Nest",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_enfys.png",
-      "relic": "Reliquia 6",
+      "name": "Dark Trooper",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_darktrooper.png",
+      "relic": "Reliquia 7",
       "assignedTo": ""
     },{
       "name": "Embo",
@@ -59,10 +79,10 @@
   ],
   "charactersToUpgrade": [
     {
-      "name": "Jawa engineer",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_jawa_engineer.png",
-      "relic": "Reliquia 5",
-      "assignedTo": "Cal Kestis"
+      "name": "Old Boba",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
+      "relic": "Reliquia 7",
+      "assignedTo": ""
     },{
       "name": "Old Boba",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
@@ -71,7 +91,7 @@
     },{
       "name": "Imperial Probe Droid",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_probedroid.png",
-      "relic": "Reliquia 5",
+      "relic": "Reliquia 6",
       "assignedTo": ""
     },{
       "name": "Ugnaut",
@@ -112,6 +132,16 @@
   ],
   "upgradedCharacters": [
     {
+      "name": "Imperial Probe Droid",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_probedroid.png",
+      "relic": "Reliquia 6",
+      "assignedTo": "Maath"
+    },{
+      "name": "Jawa engineer",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_jawa_engineer.png",
+      "relic": "Reliquia 5",
+      "assignedTo": "Cal Kestis"
+    },{
       "name": "Mon Mothma",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_monmothma.png",
       "relic": "Reliquia 6",
