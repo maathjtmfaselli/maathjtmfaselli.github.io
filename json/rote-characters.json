@@ -1,20 +1,10 @@
 {
   "topPriorityCharacters": [
     {
-      "name": "Kuiil",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_kuiil.png",
-      "relic": "Reliquia 6",
-      "assignedTo": "josmartini"
-    },{
-      "name": "El Mandaloriano",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_mandalorian.png",
-      "relic": "Reliquia 6",
-      "assignedTo": ""
-    },{
       "name": "Enfys Nest",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_enfys.png",
       "relic": "Reliquia 6",
-      "assignedTo": ""
+      "assignedTo": "maath"
     },{
       "name": "Snowtrooper",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_troopersnow.png",
@@ -127,6 +117,16 @@
   ],
   "upgradedCharacters": [
     {
+      "name": "Kuiil",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_kuiil.png",
+      "relic": "Reliquia 6",
+      "assignedTo": "josmartini"
+    },{
+      "name": "El Mandaloriano",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_mandalorian.png",
+      "relic": "Reliquia 6",
+      "assignedTo": "maath"
+    },{
       "name": "Jawa",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_jawa_jawa.png",
       "relic": "Reliquia 6",
