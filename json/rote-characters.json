@@ -11,11 +11,6 @@
       "relic": "Reliquia 6",
       "assignedTo": ""
     },{
-      "name": "Jawa",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_jawa_jawa.png",
-      "relic": "Reliquia 6",
-      "assignedTo": "maath"
-    },{
       "name": "Enfys Nest",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_enfys.png",
       "relic": "Reliquia 6",
@@ -132,6 +127,11 @@
   ],
   "upgradedCharacters": [
     {
+      "name": "Jawa",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_jawa_jawa.png",
+      "relic": "Reliquia 6",
+      "assignedTo": "maath"
+    },{
       "name": "Imperial Probe Droid",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_probedroid.png",
       "relic": "Reliquia 6",
