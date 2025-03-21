@@ -121,13 +121,6 @@ ol {
     margin-right: 10px;
 }
 
-.relic-upgraded-required {
-    font-size: 0.9rem;
-    background-color: #e0e0e0;
-    padding: 2px 5px;
-    border-radius: 5px;
-}
-
 .priority-players {
     font-weight: bold;
     margin-top: 10px;
