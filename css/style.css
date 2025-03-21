@@ -67,3 +67,83 @@ footer {
     background-color: #333;
     color: white;
 }
+
+ol {
+    padding-left: 20px;
+    list-style-type: decimal;
+    font-family: Arial, sans-serif;
+}
+
+.priority-item {
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.priority-item a {
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.priority-item a:hover {
+    color: #005fa3;
+}
+
+.priority-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffcc80;
+}
+
+.priority-goal {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffcc80;
+}
+
+.priority-character {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.priority-character img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.relic-upgraded-required {
+    font-size: 0.9rem;
+    background-color: #e0e0e0;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+.priority-players {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1em;
+    color: #ffcc80;
+}
+
+.priority-item::before {
+    content: counter(item) ". "; /* Esto agrega el número antes de cada item */
+    counter-increment: item; /* Incrementa el contador */
+    font-size: 1.5rem; /* Tamaño grande para el número de prioridad */
+    color: #0077cc; /* Color del número */
+    font-weight: bold;
+    margin-right: 10px; /* Espacio entre el número y el contenido */
+}
+
+ol {
+    counter-reset: item; /* Resetea el contador para la lista */
+}
