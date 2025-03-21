@@ -129,7 +129,7 @@ ol {
 }
 
 .priority-item::before {
-    content: counter(item) ". "; /* Esto agrega el número antes de cada item */
+    content: "# " counter(item) " "; /* Esto agrega el número antes de cada item */
     counter-increment: item; /* Incrementa el contador */
     font-size: 1.5rem; /* Tamaño grande para el número de prioridad */
     color: #0077cc; /* Color del número */
