@@ -1,4 +1,4 @@
-Planeta	Oleada	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
+Planeta	Sector	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 Mustafar	1	Dark	1	Emperador Palpatine	44
 Mustafar	1	Dark	1	BT-1	10
 Mustafar	1	Dark	1	General Grievous	36
@@ -92,7 +92,7 @@ Mustafar	1	Dark	6	Count Dooku	38
 Corellia	1	Neutral	1	Commander Ahsoka Tano	19
 Corellia	1	Neutral	1	Chewbacca	36
 Corellia	1	Neutral	1	Jedi Knight Revan	28
-Corellia	1	Neutral	1	Eeth Koth	4	Darksneer	Mik Bat	Mhann Uhdea	Cal Kestis
+Corellia	1	Neutral	1	Eeth Koth	3		Mik Bat	Mhann Uhdea	Cal Kestis
 Corellia	1	Neutral	1	Darth Traya	12
 Corellia	1	Neutral	1	Boba Fett, Scion of Jango	6
 Corellia	1	Neutral	1	Grand Admiral Thrawn	38
@@ -178,7 +178,7 @@ Corellia	1	Neutral	6	TIE/IN Interceptor Prototype	24
 Corellia	1	Neutral	6	Darth Revan	28
 Corellia	1	Neutral	6	General Kenobi	40
 Corellia	1	Neutral	6	Sana Starros	11
-Corellia	1	Neutral	6	Jawa Engineer	2	Darksneer	Cal Kestis
+Corellia	1	Neutral	6	Jawa Engineer	1		Cal Kestis
 Coruscant	1	Luminoso	1	General Skywalker	32
 Coruscant	1	Luminoso	1	The Mandalorian (Beskar Armor)	10
 Coruscant	1	Luminoso	1	Rey (Jedi Training)	35
@@ -293,12 +293,12 @@ Geonosis	2	Dark	2	Boba Fett, Scion of Jango	4
 Geonosis	2	Dark	2	Darth Malgus	10
 Geonosis	2	Dark	2	Grand Admiral Thrawn
 Geonosis	2	Dark	2	Dengar	3	maath	lucas	xacuariox
-Geonosis	2	Dark	2	Droideka	3	Darksneer	GRANJedi Tito1	wSS DE
+Geonosis	2	Dark	2	Droideka	2		GRANJedi Tito1	wSS DE
 Geonosis	2	Dark	2	Supreme Leader Kylo Ren
 Geonosis	2	Dark	2	Boba Fett, Scion of Jango	4
 Geonosis	2	Dark	2	Malak
 Geonosis	2	Dark	2	Kylo Ren (Unmasked)
-Geonosis	2	Dark	2	B2	3	GRANJedi Tito1	Darksneer	maath
+Geonosis	2	Dark	2	B2	2	GRANJedi Tito1		maath
 Geonosis	2	Dark	3	Darth Malgus	10
 Geonosis	2	Dark	3	Boba Fett, Scion of Jango	4
 Geonosis	2	Dark	3	Chimaera	44
@@ -337,7 +337,7 @@ Geonosis	2	Dark	5	Malevolence
 Geonosis	2	Dark	5	Starkiller	9
 Geonosis	2	Dark	5	Maul	9
 Geonosis	2	Dark	5	Grand Admiral Thrawn
-Geonosis	2	Dark	5	B2	3	GRANJedi Tito1	Darksneer	maath
+Geonosis	2	Dark	5	B2	2	GRANJedi Tito1		maath
 Geonosis	2	Dark	5	Magmatrooper	1	Blas
 Geonosis	2	Dark	5	Sith Eternal Emperor
 Geonosis	2	Dark	5	Darth Malgus	10
@@ -486,7 +486,7 @@ Bracca	2	Luminoso	3	Grand Master Yoda
 Bracca	2	Luminoso	3	Ebon Hawk
 Bracca	2	Luminoso	3	Greef Karga	1	maath
 Bracca	2	Luminoso	3	Ben Solo	7
-Bracca	2	Luminoso	3	Kanan Jarrus	2	Darksneer	josmartini
+Bracca	2	Luminoso	3	Kanan Jarrus	1		josmartini
 Bracca	2	Luminoso	3	BB-8
 Bracca	2	Luminoso	3	Rey (Jedi Training)
 Bracca	2	Luminoso	3	Jedi Master Kenobi
@@ -523,7 +523,7 @@ Bracca	2	Luminoso	5	Jedi Master Kenobi
 Bracca	2	Luminoso	5	Razor Crest
 Bracca	2	Luminoso	5	Ben Solo	8
 Bracca	2	Luminoso	5	Han's Millennium Falcon
-Bracca	2	Luminoso	5	Kanan Jarrus	2	Darksneer	josmartini
+Bracca	2	Luminoso	5	Kanan Jarrus	1		josmartini
 Bracca	2	Luminoso	6	CT-7567 "Rex"	10
 Bracca	2	Luminoso	6	Ben Solo	8
 Bracca	2	Luminoso	6	Razor Crest
@@ -809,6 +809,96 @@ Kashyyyk	3	Luminoso	6	Padmé Amidala
 Kashyyyk	3	Luminoso	6	Ben Solo	5
 Kashyyyk	3	Luminoso	6	Ewok Scout	2	Viula	josmartini
 Kashyyyk	3	Luminoso	6	Hoth Rebel Soldier	0
+Haven-class	4	Dark	1	Sith Eternal Emperor
+Haven-class	4	Dark	1	Starkiller
+Haven-class	4	Dark	1	Scythe
+Haven-class	4	Dark	1	Nightsister Spirit
+Haven-class	4	Dark	1	Range Trooper
+Haven-class	4	Dark	1	Lord Vader
+Haven-class	4	Dark	1	Starkiller
+Haven-class	4	Dark	1	Maul
+Haven-class	4	Dark	1	Bastila Shan (Fallen)
+Haven-class	4	Dark	1	Darth Vader
+Haven-class	4	Dark	1	Ejecutor
+Haven-class	4	Dark	1	Darth Malak
+Haven-class	4	Dark	1	Scythe
+Haven-class	4	Dark	1	Embo
+Haven-class	4	Dark	1	BT-1
+Haven-class	4	Dark	2	Sith Eternal Emperor
+Haven-class	4	Dark	2	Darth Malak
+Haven-class	4	Dark	2	TIE/IN Interceptor Prototype
+Haven-class	4	Dark	2	Iden Versio
+Haven-class	4	Dark	2	Snowtrooper
+Haven-class	4	Dark	2	Sith Eternal Emperor
+Haven-class	4	Dark	2	Starkiller
+Haven-class	4	Dark	2	TIE/IN Interceptor Prototype
+Haven-class	4	Dark	2	Cad Bane
+Haven-class	4	Dark	2	First Order Stormtrooper
+Haven-class	4	Dark	2	Supreme Leader Kylo Ren
+Haven-class	4	Dark	2	Starkiller
+Haven-class	4	Dark	2	Boba Fett, Scion of Jango
+Haven-class	4	Dark	2	Nightsister Zombie
+Haven-class	4	Dark	2	Aurra Sing
+Haven-class	4	Dark	3	Supreme Leader Kylo Ren
+Haven-class	4	Dark	3	Starkiller
+Haven-class	4	Dark	3	Darth Malgus
+Haven-class	4	Dark	3	Dengar
+Haven-class	4	Dark	3	Hyena Bomber
+Haven-class	4	Dark	3	Lord Vader
+Haven-class	4	Dark	3	Darth Malak
+Haven-class	4	Dark	3	Darh Malgus
+Haven-class	4	Dark	3	Nightsister Initiate
+Haven-class	4	Dark	3	Darth Maul
+Haven-class	4	Dark	3	Ejecutor
+Haven-class	4	Dark	3	Starkiller
+Haven-class	4	Dark	3	TIE/IN Interceptor Prototype
+Haven-class	4	Dark	3	TIE silencer
+Haven-class	4	Dark	3	Snowtrooper
+Haven-class	4	Dark	4	Supreme Leader Kylo Ren
+Haven-class	4	Dark	4	Boba Fett, Scion of Jango
+Haven-class	4	Dark	4	Director Krennic
+Haven-class	4	Dark	4	Eight brother
+Haven-class	4	Dark	4	IG-88
+Haven-class	4	Dark	4	Lord Vader
+Haven-class	4	Dark	4	Scythe
+Haven-class	4	Dark	4	HK-47
+Haven-class	4	Dark	4	Nightsister Acolyte
+Haven-class	4	Dark	4	Wampa
+Haven-class	4	Dark	4	Lord Vader
+Haven-class	4	Dark	4	Boba Fett, Scion of Jango
+Haven-class	4	Dark	4	Krrsantan
+Haven-class	4	Dark	4	Asajj Ventres
+Haven-class	4	Dark	4	TIE/IN Interceptor Prototype
+Haven-class	4	Dark	5	Ejecutor
+Haven-class	4	Dark	5	Maul
+Haven-class	4	Dark	5	Hyena Bomber
+Haven-class	4	Dark	5	Asajj Ventres
+Haven-class	4	Dark	5	Savage Opress
+Haven-class	4	Dark	5	Sith Eternal Emperor
+Haven-class	4	Dark	5	TIE/IN Interceptor Prototype
+Haven-class	4	Dark	5	Seventh Sister
+Haven-class	4	Dark	5	General Veers
+Haven-class	4	Dark	5	Second Sister
+Haven-class	4	Dark	5	Supreme Leader Kylo Ren
+Haven-class	4	Dark	5	Maul
+Haven-class	4	Dark	5	Aurra Sing
+Haven-class	4	Dark	5	Mara Jade
+Haven-class	4	Dark	5	Scythe
+Haven-class	4	Dark	6	Ejecutor
+Haven-class	4	Dark	6	TIE/IN Interceptor Prototype
+Haven-class	4	Dark	6	Hondo Ohnaka
+Haven-class	4	Dark	6	Emperor's Shuttle
+Haven-class	4	Dark	6	TIE Fighter Pilot
+Haven-class	4	Dark	6	Lord Vader
+Haven-class	4	Dark	6	Scythe
+Haven-class	4	Dark	6	B2
+Haven-class	4	Dark	6	Malevolence
+Haven-class	4	Dark	6	Emperor's Shuttle
+Haven-class	4	Dark	6	Supreme Leader Kylo Ren
+Haven-class	4	Dark	6	TIE/IN Interceptor Prototype
+Haven-class	4	Dark	6	First Order TIE figher pilot
+Haven-class	4	Dark	6	Dathcha
+Haven-class	4	Dark	6	Boba Fett, Scion of Jango
 Lothal	4	Luminoso	1	Jedi Master Luke Skywalker	17
 Lothal	4	Luminoso	1	Hermit Yoda	0
 Lothal	4	Luminoso	1	Ben Solo	0
