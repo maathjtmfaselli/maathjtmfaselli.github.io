@@ -1,13 +1,13 @@
 {
   "topPriorityCharacters": [
     {
-      "name": "Enfys Nest",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_enfys.png",
+      "name": "Snowtrooper",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_troopersnow.png",
       "relic": "Reliquia 6",
       "assignedTo": "maath"
     },{
-      "name": "Snowtrooper",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_troopersnow.png",
+      "name": "Enfys Nest",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_enfys.png",
       "relic": "Reliquia 6",
       "assignedTo": "maath"
     },{
@@ -84,11 +84,6 @@
       "relic": "Reliquia 6",
       "assignedTo": ""
     },{
-      "name": "Mace Windu",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_macewindu.png",
-      "relic": "Reliquia 7",
-      "assignedTo": "maath"
-    },{
       "name": "Canderous Ordo",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_canderous.png",
       "relic": "Reliquia 5",
@@ -117,6 +112,11 @@
   ],
   "upgradedCharacters": [
     {
+      "name": "Mace Windu",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_macewindu.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "maath"
+    },{
       "name": "Kuiil",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_kuiil.png",
       "relic": "Reliquia 6",

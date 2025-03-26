@@ -107,7 +107,7 @@ async function loadOperationsGuildData() {
     // Convertir CSV a JSON usando PapaParse
     const parsedData = Papa.parse(csvText, {
       header: true,  // Utiliza la primera fila como claves
-      skipEmptyLines: true, // Omitir líneas vacías
+      skipEmptyLines: true,
     });
 
     const data = parsedData.data; // Los datos convertidos en JSON
@@ -119,13 +119,13 @@ async function loadOperationsGuildData() {
         // Paso 1: Identificar los pelotones con conteo 0
       let conteo = row.Conteo ? row.Conteo.trim() : '';  // Verificamos si Conteo existe, y le quitamos espacios
       if (conteo === '0') {
-        // Si el conteo es 0, agregamos el pelotón (Side + Secotr + Op) a nuestro Set
-        pelotonesConConteoCero.add(`${row.Side}-${row.Secotr}-${row.Op}`);
-//        console.log("pelotonesConConteoCero - Side " + row.Side + " Secotr " + row.Secotr + " Op " + row.Op)
+        // Si el conteo es 0, agregamos el pelotón (Side + Sector + Op) a nuestro Set
+        pelotonesConConteoCero.add(`${row.Side}-${row.Sector}-${row.Op}`);
+//        console.log("pelotonesConConteoCero - Side " + row.Side + " Sector " + row.Sector + " Op " + row.Op)
       }
 
     // Paso 2: Identificar los planetas
-      planets.set(row.Planeta, `${row.Side} - ${row.Secotr} - ${row.Planeta}`)
+      planets.set(row.Planeta, `${row.Side} - ${row.Sector} - ${row.Planeta}`)
 
       // Paso 3: Identificar los jugadores
       for (let i = 1; i <= 4; i++) {
@@ -206,13 +206,13 @@ async function loadOperationsGuildData() {
         }
       }
 
-      const peloton = `${row.Side}-${row.Secotr}-${row.Op}`;
+      const peloton = `${row.Side}-${row.Sector}-${row.Op}`;
 
       // Asignar la clase de color a la fila
       tableRow.classList.add(rowClass);
       tableRow.innerHTML = `
         <td>${row.Planeta}</td>
-        <td>${row.Secotr}</td>
+        <td>${row.Sector}</td>
         <td>${row.Side}</td>
         <td class="${pelotonesConConteoCero.has(peloton) ? 'row-red' : ''}">${row.Op}</td>
         <td>${row.Character}</td>
