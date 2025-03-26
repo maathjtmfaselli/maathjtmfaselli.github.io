@@ -26,11 +26,6 @@
       "relic": "Reliquia 5",
       "assignedTo": ""
     },{
-      "name": "Logray",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_ewok_logray.png",
-      "relic": "Reliquia 7",
-      "assignedTo": "josmartini"
-    },{
       "name": "Old Boba",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
       "relic": "Reliquia 7",
@@ -112,6 +107,11 @@
   ],
   "upgradedCharacters": [
     {
+      "name": "Logray",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_ewok_logray.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "josmartini"
+    },{
       "name": "Mace Windu",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_macewindu.png",
       "relic": "Reliquia 7",
