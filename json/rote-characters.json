@@ -98,19 +98,19 @@
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_greefkarga.png",
       "relic": "Reliquia 7",
       "assignedTo": ""
-    },{
-      "name": "Ezra Bridger",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_ezra_s3.png",
-      "relic": "Reliquia 6",
-      "assignedTo": "Ben"
     }
   ],
   "upgradedCharacters": [
     {
+      "name": "Ezra Bridger",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_ezra_s3.png",
+      "relic": "Reliquia 6",
+      "assignedTo": "R3C0"
+    },{
       "name": "Logray",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_ewok_logray.png",
       "relic": "Reliquia 7",
-      "assignedTo": "josmartini"
+      "assignedTo": "josmartini",
     },{
       "name": "Mace Windu",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_macewindu.png",
