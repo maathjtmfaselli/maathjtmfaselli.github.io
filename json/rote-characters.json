@@ -26,16 +26,6 @@
       "relic": "Reliquia 5",
       "assignedTo": ""
     },{
-      "name": "Old Boba",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
-      "relic": "Reliquia 7",
-      "assignedTo": ""
-    },{
-      "name": "Old Boba",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
-      "relic": "Reliquia 7",
-      "assignedTo": ""
-    },{
       "name": "Ki-Adi-Mundi",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_kiadimundi.png",
       "relic": "Reliquia 7",
@@ -54,7 +44,7 @@
       "name": "Embo",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_embo.png",
       "relic": "Reliquia 7",
-      "assignedTo": ""
+      "assignedTo": "Viula"
     },{
       "name": "Aurra Sing",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_aurrasing.png",
@@ -74,6 +64,16 @@
   ],
   "charactersToUpgrade": [
     {
+      "name": "Old Boba",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
+      "relic": "Reliquia 7",
+      "assignedTo": ""
+    },{
+      "name": "Old Boba",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
+      "relic": "Reliquia 7",
+      "assignedTo": ""
+    },{
       "name": "Imperial Probe Droid",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_probedroid.png",
       "relic": "Reliquia 6",
