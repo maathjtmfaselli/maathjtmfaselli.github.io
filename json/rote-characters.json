@@ -1,15 +1,20 @@
 {
   "topPriorityCharacters": [
     {
-      "name": "Snowtrooper",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_troopersnow.png",
-      "relic": "Reliquia 6",
-      "assignedTo": "maath"
+      "name": "Ki-Adi-Mundi",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_kiadimundi.png",
+      "relic": "Reliquia 7",
+      "assignedTo": ""
     },{
       "name": "Enfys Nest",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_enfys.png",
       "relic": "Reliquia 6",
-      "assignedTo": "maath"
+      "assignedTo": ""
+    },{
+      "name": "Ugnaut",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_ugnaught.png",
+      "relic": "Reliquia 5",
+      "assignedTo": ""
     },{
       "name": "Veteran Smuggler Chew",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_tfa_chewbacca.png",
@@ -21,25 +26,20 @@
       "relic": "Reliquia 6",
       "assignedTo": ""
     },{
-      "name": "Ugnaut",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_ugnaught.png",
-      "relic": "Reliquia 5",
+      "name": "Snowtrooper",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_troopersnow.png",
+      "relic": "Reliquia 6",
       "assignedTo": ""
     },{
-      "name": "Ki-Adi-Mundi",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_kiadimundi.png",
-      "relic": "Reliquia 7",
+      "name": "Imperial Probe Droid",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_probedroid.png",
+      "relic": "Reliquia 6",
       "assignedTo": ""
     },{
       "name": "Imperial Probe Droid",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_probedroid.png",
       "relic": "Reliquia 7",
       "assignedTo": "Maath"
-    },{
-      "name": "Dark Trooper",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_darktrooper.png",
-      "relic": "Reliquia 7",
-      "assignedTo": ""
     },{
       "name": "Embo",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_embo.png",

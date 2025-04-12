@@ -140,3 +140,27 @@ ol {
 ol {
     counter-reset: item; /* Resetea el contador para la lista */
 }
+
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.data-table th, .data-table td {
+  border: 1px solid #00bcd4;
+  text-align: center;
+  padding: 8px;
+}
+
+.data-table th {
+  background-color: #2a2a40;
+  color: #00e5ff;
+  font-size: 18px;
+}
+
+.data-table td {
+  background-color: #1e1e2e;
+  color: #e0e0e0;
+}
