@@ -1,8 +1,8 @@
-.team-list {
+.squad-list {
 
 }
 
-.team {
+.squad {
   margin-bottom: 20px;
   text-align: left;
   padding: 15px;
@@ -10,13 +10,13 @@
   border-radius: 10px;
 }
 
-.team h4 {
+.squad h4 {
   font-size: 1.5rem;
   color: #b39ddb;
   margin-bottom: 10px;
 }
 
-.team img {
+.squad img {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -25,7 +25,7 @@
   object-fit: cover;
 }
 
-.team-characters-list {
+.squad-characters-list {
   display: grid;
   grid-template-columns: repeat(5, minmax(100px, 1fr));
   gap: 10px;
