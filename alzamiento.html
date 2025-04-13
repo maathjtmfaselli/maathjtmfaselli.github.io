@@ -23,12 +23,13 @@
         <h2>Alzamiento</h2>
 
         <nav class="tab">
-            <button class="tab-button" onclick="openTab('generalData')">📊 Datos</button>
-            <button class="tab-button active" onclick="openTab('planning')">🚀 Plan</button>
-            <button class="tab-button" onclick="openTab('archive')">👥 Archivo</button>
+            <button class="tab-button" onclick="openTab('rote-generalData')">📊 Datos</button>
+            <button class="tab-button" onclick="openTab('rote-goals')">🎯 Objetivos</button>
+            <button class="tab-button active" onclick="openTab('rote-planning')">🚀 Plan</button>
+            <button class="tab-button" onclick="openTab('rote-archive')">👥 Archivo</button>
         </nav>
 
-        <div id="generalData" class="tab-content">
+        <div id="rote-generalData" class="tab-content">
             <div id="pointsPerPlanet" class="alzamiento-section collapsed">
                 <h3>Puntos por Planeta</h3>
                 <div class="alzamiento-section-content">
@@ -247,7 +248,68 @@
             </div>
         </div>
 
-        <div id="planning" class="tab-content active">
+        <div id="rote-goals" class="tab-content">
+            <ol>
+                <li class="priority-item">
+                    <span class="priority-name">Estrellas</span>
+                    <span class="priority-name"><img src="https://swgoh.wiki/images/f/fd/Game-Icon-Star.png" /></span>
+                    <span class="priority-goal">24-27 <img src="https://swgoh.wiki/images/f/fd/Game-Icon-Star.png" /></span>
+                    <span class="priority-players">26 (+3)</span>
+                </li>
+                <li class="priority-item">
+                    <span class="priority-name">Reva <img class="character-portrait" src="https://game-assets.swgoh.gg/textures/tex.charui_thirdsister.png" alt="Reva"></span>
+                    <span class="priority-name"><img class="character-portrait" src="https://game-assets.swgoh.gg/textures/tex.charui_grandinquisitor.png" alt="Gran Inquisidor"></span>
+                    <span class="priority-goal">12</span>
+                    <span class="priority-players">2 (==)</span>
+                </li>
+                <li class="priority-item">
+                    <span class="priority-name">Zeffo</span>
+                    <span class="priority-name mission-character">
+                         <img class="character-portrait" src="https://game-assets.swgoh.gg/textures/tex.charui_cerejunda.png" alt="Cere Junda">
+                         <img class="character-portrait" src="https://game-assets.swgoh.gg/textures/tex.charui_jediknightcal.png" alt="Jedi Knight Cal Kestis">
+                    </span>
+                    <span class="priority-goal">5</span>
+                    <span class="priority-players">0 (-2)</span>
+                </li>
+                <li class="priority-item">
+                    <span class="priority-name">Mand'alor</span>
+                    <span class="priority-name mission-character">
+                         <img class="character-portrait" src="https://game-assets.swgoh.gg/textures/tex.charui_mandalorbokatan.png" alt="Bo Katan Mand'alor">
+                         <img class="character-portrait" src="https://game-assets.swgoh.gg/textures/tex.charui_mandobeskar.png" alt="Mando Beskar">
+                         <img class="character-portrait" src="https://game-assets.swgoh.gg/textures/tex.charui_ig12.png" alt="IG 12 & Grogu">
+                    </span>
+                    <span class="priority-goal">3</span>
+                    <span class="priority-players">3 (+3)</span>
+                </li>
+                <li class="priority-item">
+                    <span class="priority-name">Corellia</span>
+                    <span class="priority-name mission-character">
+                         <img class="character-portrait" src="https://game-assets.swgoh.gg/textures/tex.charui_qira.png" alt="Qi'ra">
+                         <img class="character-portrait" src="https://game-assets.swgoh.gg/textures/tex.charui_han_young.png" alt="Young Han Solo">
+                    </span>
+                    <span class="priority-goal">2</span>
+                    <span class="priority-players">1 (==)</span>
+                </li>
+                <li class="priority-item">
+                    <span class="priority-name">Dathomir</span>
+                    <span class="priority-name mission-character">
+                         <img class="character-portrait" src="https://game-assets.swgoh.gg/textures/tex.charui_merrin.png" alt="Merrin">
+                    </span>
+                    <span class="priority-goal">1</span>
+                    <span class="priority-players">0 (==)</span>
+                </li>
+                <li class="priority-item">
+                    <span class="priority-name">Kashyyyk</span>
+                    <span class="priority-name mission-character">
+                         <img class="character-portrait" src="https://game-assets.swgoh.gg/textures/tex.charui_sawgerrera.png" alt="Saw Guerrera">
+                    </span>
+                    <span class="priority-goal">1</span>
+                    <span class="priority-players">0 (==)</span>
+                </li>
+            </ol>
+        </div>
+
+        <div id="rote-planning" class="tab-content active">
             <div id="plan26" class="alzamiento-section">
                 <h3>Alzamiento - Plan 27*</h3>
                 <div class="alzamiento-section-content">
@@ -508,7 +570,7 @@
                                 <img src="https://game-assets.swgoh.gg/textures/tex.charui_jediknightcal.png" alt="Jedi Knight Cal Kestis">
                                 <span class="relic-upgraded-required">Reliquia 7</span>
                             </div>
-                            <span class="mission-players">Contador: 4</span>
+                            <span class="mission-players">Contador: 6</span>
                         </li>
                         <li class="mission-item">
                             <span class="mission-name"><a href="https://www.youtube.com/watch?v=1ENfddA1z2M">Mand'alor</a></span>
@@ -524,7 +586,7 @@
                                 <img src="https://game-assets.swgoh.gg/textures/tex.charui_ig12.png" alt="IG 12 & Grogu">
                                 <span class="relic-upgraded-required">Reliquia 7</span>
                             </div>
-                            <span class="mission-players">Contador: 6</span>
+                            <span class="mission-players">Contador: 7</span>
                         </li>
                         <li class="mission-item">
                             <span class="mission-name">Corellia</span>
@@ -575,8 +637,8 @@
             </div>
         </div>
 
-        <div id="archive" class="tab-content">
-            <div id="plan25" class="alzamiento-section">
+        <div id="rote-archive" class="tab-content">
+            <div id="plan25" class="alzamiento-section collapsed">
                 <h3>Alzamiento - Plan 25*</h3>
                 <div class="alzamiento-section-content">
                     <table id="plan-25-table" class="alzamiento-table">

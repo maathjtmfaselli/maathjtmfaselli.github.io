@@ -164,3 +164,10 @@ ol {
   background-color: #1e1e2e;
   color: #e0e0e0;
 }
+
+.character-portrait {
+  width: 50px;
+  margin-right: 10px;
+  border-radius:50%;
+  border:2px solid #00bcd4;
+}
