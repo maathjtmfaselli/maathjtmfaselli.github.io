@@ -107,18 +107,21 @@ ol {
     color: #ffcc80;
 }
 
-.priority-character {
+.priority-pnj {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 10px;
 }
 
-.priority-character img {
+.priority-pnj img {
     width: 50px;
     height: 50px;
-    border-radius: 50%;
-    margin-right: 10px;
+}
+
+.pnj-portrait {
+  border-radius:50%;
+  border:2px solid #00bcd4;
 }
 
 .priority-players {
@@ -131,16 +134,15 @@ ol {
 .priority-item::before {
     content: "# " counter(item) " "; /* Esto agrega el número antes de cada item */
     counter-increment: item; /* Incrementa el contador */
-    font-size: 1.5rem; /* Tamaño grande para el número de prioridad */
-    color: #0077cc; /* Color del número */
+    font-size: 1.5rem;
+    color: #0077cc;
     font-weight: bold;
-    margin-right: 10px; /* Espacio entre el número y el contenido */
+    margin-right: 10px;
 }
 
 ol {
     counter-reset: item; /* Resetea el contador para la lista */
 }
-
 
 .data-table {
   width: 100%;
@@ -163,11 +165,4 @@ ol {
 .data-table td {
   background-color: #1e1e2e;
   color: #e0e0e0;
-}
-
-.character-portrait {
-  width: 50px;
-  margin-right: 10px;
-  border-radius:50%;
-  border:2px solid #00bcd4;
 }
