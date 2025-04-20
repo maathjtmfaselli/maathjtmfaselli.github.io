@@ -268,28 +268,8 @@ function filterTable() {
     });
 }
 
-function initializeCollapsibleSections() {
-    const headers = document.querySelectorAll('.alzamiento-section h3');
-
-    headers.forEach(header => {
-        header.addEventListener('click', () => {
-            const section = header.parentElement;
-            section.classList.toggle('collapsed');
-        });
-    });
-}
-
-function openTab(tabName) {
-  document.querySelectorAll(".tab-content").forEach(tab => tab.classList.remove("active"));
-  document.querySelectorAll(".tab-button").forEach(btn => btn.classList.remove("active"));
-
-  document.getElementById(tabName).classList.add("active");
-  event.currentTarget.classList.add("active");
-}
-
 document.addEventListener("DOMContentLoaded", () => {
   loadCharacterData();
   loadHistoricalResults();
   loadOperationsGuildData();
-  initializeCollapsibleSections();
 });

@@ -230,46 +230,6 @@ td {
     z-index: 10;
 }
 
-.tabs {
-  display: flex;
-  gap: 8px;
-  padding: 10px;
-  background: #282838; /* Un tono más claro para el fondo de las pestañas */
-  border-radius: 8px;
-}
-
-.tab-button {
-  padding: 12px 20px;
-  border: none;
-  cursor: pointer;
-  background: #2e2e4e; /* Un tono más claro que #1e1e2e */
-  color: white;
-  font-weight: bold;
-  border-radius: 6px 6px 0 0; /* Redondeado en la parte superior */
-  transition: background 0.3s, transform 0.2s;
-}
-
-.tab-button:hover {
-  background: #3a3a5a; /* Un poco más brillante al pasar el cursor */
-  transform: translateY(-2px); /* Efecto de elevación sutil */
-}
-
-.tab-button.active {
-  background: #1e1e2e; /* Mantiene el color oscuro para la pestaña activa */
-  border-bottom: 3px solid #7dd87d; /* Línea verde suave para indicar selección */
-}
-
-.tab-content {
-  display: none;
-  padding: 20px;
-  background: #2e2e3e;
-  color: white;
-}
-
-.tab-content.active {
-  display: block;
-}
-
 #missions-list {
     list-style-type: none;
     padding: 0;
