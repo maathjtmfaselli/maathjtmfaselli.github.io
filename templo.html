@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spain Space SWGoH</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/naboo.css">
+    <script src="js/dynamic-loader.js" defer></script>
+    <script src="js/templo.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <link rel="icon" href="https://assets.swgoh.gg/files/ui/tex.guild_icon_oldrepublic_tint.00b15b7f62455726b72d.webp" type="image/x-icon">
+</head>
+<body>
+
+<header id="index-dynamic-header">
+    <!-- Si falla la carga, este mensaje será visible -->
+    <p>Cargando la cabecera...</p>
+</header>
+
+<main>
+
+    <section id="templo">
+        <h2>Templo</h2>
+
+        <nav class="tab">
+            <button class="tab-button" onclick="openTab('templo-generalData')">📊 Datos</button>
+            <button class="tab-button" onclick="openTab('templo-goals')">🎯 Objetivos</button>
+            <button class="tab-button active" onclick="openTab('templo-planning')">🚀 Plan</button>
+            <button class="tab-button" onclick="openTab('templo-archive')">👥 Archivo</button>
+        </nav>
+
+        <div id="templo-generalData" class="tab-content">
+            <div class="alzamiento-section-content">
+                <select id="pnj-filter" onchange="filtertemploPnjSynergiesTable()">
+                    <option value="">Todos los personajes</option>
+                </select>
+                <select id="relic-required-filter" onchange="filtertemploPnjSynergiesTable()">
+                    <option value="">Todas las reliquias requeridas</option>
+                </select>
+                <select id="synergy-filter" onchange="filtertemploPnjSynergiesTable()">
+                    <option value="">Todas las sinergias</option>
+                </select>
+            </div>
+            <div class="alzamiento-section-content">
+                <table id="templo-pnj-synergies" class="data-table">
+                <thead>
+                <tr>
+                    <th>Personaje</th>
+                    <th>Reliquia</th>
+                    <th>Sinergia</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="templo-goals" class="tab-content">
+            <a href="https://swgoh.gg/raids/naboo/naboo/rewards"><img src="img/naboo-reward-box6.png"/></a>
+        </div>
+
+        <div id="templo-planning" class="tab-content">
+            <div class="squad-list">
+                <div class="squad">
+                    <h4>Equipo Padawan: Gran Moff Tarking y soldados clon</h4>
+                    <p class="score-expected">Puntos esperados: 450k</p>
+                    <div class="squad-characters-list">
+                        <div class="character">
+                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_tarkinadmiral.png" alt="Gran Moff Tarkin">
+                            <div class="relic-required">Reliquia 3</div>
+                            <div class="synergy">
+                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_espalpatine_pre.png" alt="EES">
+                                <img src="https://swgoh.wiki/images/thumb/6/66/Event-Territory_Battle-Rise_of_the_Empire.png/435px-Event-Territory_Battle-Rise_of_the_Empire.png" alt="Alzamiento" data-hover="Pelotón Tatooine">
+                            </div>
+                        </div>
+                        <div class="character">
+                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_appo.png" alt="Appo">
+<!--                            <div class="relic-required">Reliquia 5</div>-->
+<!--                            <div class="synergy">-->
+<!--                                <img src="https://swgoh.wiki/images/thumb/6/66/Event-Territory_Battle-Rise_of_the_Empire.png/435px-Event-Territory_Battle-Rise_of_the_Empire.png" alt="Alzamiento" data-hover="Misión">-->
+<!--                            </div>-->
+                        </div>
+                        <div class="character">
+                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_operative.png" alt="CX-2">
+<!--                            <div class="relic-required">Reliquia 5</div>-->
+<!--                            <div class="synergy">-->
+<!--                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_globiwan.png" alt="Jedi Master Kenobi">-->
+<!--                                <img src="https://swgoh.wiki/images/thumb/6/66/Event-Territory_Battle-Rise_of_the_Empire.png/435px-Event-Territory_Battle-Rise_of_the_Empire.png" alt="Alzamiento" data-hover="Misión">-->
+<!--                            </div>-->
+                        </div>
+<!--                        <div class="character">-->
+<!--                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_aaylasecura.png" alt="Aayla Secura">-->
+<!--                            <div class="relic-required">Reliquia 6</div>-->
+<!--                            <div class="mods">&nbsp;</div>-->
+<!--                            <div class="synergy">-->
+<!--                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_globiwan.png" alt="Jedi Master Kenobi">-->
+<!--                                <img src="https://swgoh.wiki/images/thumb/6/66/Event-Territory_Battle-Rise_of_the_Empire.png/435px-Event-Territory_Battle-Rise_of_the_Empire.png" alt="Alzamiento" data-hover="Pelotón">-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="character">-->
+<!--                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_shaakti.png" alt="Shaak Ti">-->
+<!--                            <div class="relic-required">Reliquia 7</div>-->
+<!--                            <div class="mods">&nbsp;</div>-->
+<!--                            <div class="synergy">-->
+<!--                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_globiwan.png" alt="Jedi Master Kenobi">-->
+<!--                            </div>-->
+<!--                        </div>-->
+                    </div>
+<!--                    <div>-->
+<!--                        <label>Estrategia: </label>-->
+<!--                        <ul>-->
+<!--                            <li>Maximizar el tiempo que los aliados tienen Potencia Y Curación continuada simultántemente.</li>-->
+<!--                            <li>Velocidad en Kit Fisto</li>-->
+<!--                            <li>Daño (no daño crítico)</li>-->
+<!--                            <li>Maximizar las asistencias (por ejemplo, Mace Windu, Aayala, Shaak)</li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                    <div>-->
+<!--                        <label>Explicación: </label>-->
+<!--                        <ul>-->
+<!--                            <li>Cuando un aliado tiene potenciadores de Potencia Y Curación continuada simultántemente, entonces hace <b>DAÑO VERDADERO a TODOS los enemigos</b> e incrementa su posibilidad de contrataque.</li>-->
+<!--                            <li>Daño Verdadero no hace críticos.</li>-->
+<!--                            <li>Subir a Luminara y Kit Fisto a Equipo 12 transforma moneda mk1 en moneda mk3.</li>-->
+<!--                            <li>En el nivel de dificultad 0 y 1, el droide líder no disipa potenciadores, por lo que es un paseo.</li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+                </div>
+
+<!--                <div class="squad">-->
+<!--                    <h4>Equipo Caballero Jedi: Darth Maul, Darth Sidious y Nute Gunray</h4>-->
+<!--                    <p class="score-expected">Puntos esperados: 1.2M</p>-->
+<!--                    <div class="squad-characters-list">-->
+<!--                        <div class="character">-->
+<!--                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_maul.png" alt="Darth Maul">-->
+<!--                            <div class="relic-required">Reliquia 7</div>-->
+<!--                            <div class="mods">Velocidad, Daño, %Crítico</div>-->
+<!--                            <div class="synergy">-->
+<!--                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_leviathan.png" alt="Leviathan">-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="character">-->
+<!--                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_sidious.png" alt="Darth Sidious">-->
+<!--                            <div class="relic-required">Reliquia 7</div>-->
+<!--                            <div class="mods">Velocidad, Daño, %Crítico</div>-->
+<!--                            <div class="synergy">-->
+<!--                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_espalpatine_pre.png" alt="SEE">-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="character">-->
+<!--                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_nutegunray.png" alt="Nute Gunray">-->
+<!--                            <div class="relic-required">Reliquia 7</div>-->
+<!--                            <div class="mods">&nbsp;</div>-->
+<!--                            <div class="synergy">-->
+<!--                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_lordvader.png" alt="Lord Vader">-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div>-->
+<!--                        <label>Estrategia: </label>-->
+<!--                        <ul>-->
+<!--                            <li>Maximizar el número de golpes críticos dados, en especial con Darth Maul. Para ello, utiliza los ataques de área cuando tengas Ventaja.</li>-->
+<!--                            <li>Cuando sepas que la próxima ronda va a ser de rivales enfurecidos, trata de no matar rivales en la ronda actual para maximizar el número de críticos.</li>-->
+<!--                            <li>R2-D2 más un personaje de República Galáctica ayuda (al dar incremento de probabilidad de crítico)</li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                    <div>-->
+<!--                        <label>Explicación: </label>-->
+<!--                        <ul>-->
+<!--                            <li>Si Darth Sidious no es lider, da su habilidad de líder a nivel máximo a todos los sith y separatistas: Incremento 2% de daño por cada crítico.</li>-->
+<!--                            <li>Darth Maul con su habilidad de líder da Ventaja (+200% de probabilidad de crítico) a siths al perder sigilo.</li>-->
+<!--                            <li>Darth Maul tiene sus estadísticas muy mejoradas en este evento.</li>-->
+<!--                            <li>Darth Maul puede por si solo tirar una o con mucha suerte dos rondas de rivales enfurecidos.</li>-->
+<!--                            <li>Los tres personajes son necesarios a Reliquia 7 para otros personajes básicos.</li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="squad">-->
+<!--                    <h4>Equipo Gran Maestro: Reina Amidala, Maestro Qui-Gon y Padawan Obi-Wan</h4>-->
+<!--                    <p class="score-expected">Puntos esperados: 3.6M</p>-->
+<!--                    <div class="squad-characters-list">-->
+<!--                        <div class="character">-->
+<!--                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_queenamidala.png" alt="Reina Amidala">-->
+<!--                            <div class="relic-required">Reliquia 9</div>-->
+<!--                            <div class="mods">Velocidad (350) Daño (9500)</div>-->
+<!--                        </div>-->
+<!--                        <div class="character">-->
+<!--                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_padawanobiwan.png" alt="Padawan Obi-Wan">-->
+<!--                            <div class="relic-required">Reliquia 9</div>-->
+<!--                            <div class="mods">Velocidad (310) Daño (11000)</div>-->
+<!--                        </div>-->
+<!--                        <div class="character">-->
+<!--                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_masterquigon.png" alt="Maestro Qui-Gon">-->
+<!--                            <div class="relic-required">Reliquia 9</div>-->
+<!--                            <div class="mods">Velocidad (311) Daño (9000)</div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div>-->
+<!--                        <label>Estrategia: </label>-->
+<!--                        <ul>-->
+<!--                            <li>Mods de velocidad y daño.</li>-->
+<!--                            <li>Obtener los 10 potenciadores únicos de la reina en la PRIMERA ronda.</li>-->
+<!--                            <li>Reservar el ataque de área de Obi-Wan cuando tenga Ventaja (+200% probabilidad crítico), que la obtiene cuando el Maestro Qui-Gon es dañado.</li>-->
+<!--                            <li>Aumentar el número de potenciadores que tiene cada aliado.</li>-->
+<!--                            <li><a href="https://www.youtube.com/watch?v=w1G4A8aZk9E">Video</a> : </li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                    <div>-->
+<!--                        <label>Explicación: </label>-->
+<!--                        <ul>-->
+<!--                            <li>La penetración defensiva aumenta por cada potenciador.</li>-->
+<!--                            <li>El ataque de área de Obi-Wan acaba con toda la oleada si consigue crítico.</li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+                <div class="squad">
+                    <h4>Equipo 4: Remesa Mala Mercenarios</h4>
+                    <p class="score-expected">Puntos esperados: 1.2M</p>
+                    <div>
+                        <img src="https://game-assets.swgoh.gg/textures/tex.charui_omegas3.png" alt="Omega Fugitiva">
+                        <img src="https://game-assets.swgoh.gg/textures/tex.charui_wreckers3.png" alt="Wrecker Mercenario">
+                        <img src="https://game-assets.swgoh.gg/textures/tex.charui_hunters3.png" alt="Hunter Mercenario">
+                        <img src="https://game-assets.swgoh.gg/textures/tex.charui_crosshair_scarred.png" alt="Crosshair">
+                        <img src="https://game-assets.swgoh.gg/textures/tex.charui_batcher.png" alt="Batcher">
+                    </div>
+                </div>
+
+                <div class="squad">
+                    <h4>Equipo 5: Jedi</h4>
+                    <p class="score-expected">Puntos esperados: 1.8M</p>
+                    <div class="squad-characters-list">
+                        <div class="character">
+                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_kelleranbeq.png" alt="Kelleran Beq">
+                            <div class="relic-required">Reliquia 7</div>
+                            <div class="synergy">
+                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_mandalorbokatan.png" alt="Bo-Katan (Mand'alor)">
+                            </div>
+                        </div>
+                        <div class="character">
+                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_jocastanu_blaster.png" alt="Jocasta Nu">
+                        </div>
+<!--                        <div class="character">-->
+<!--                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_plokoon.png" alt="Plo Koon">-->
+<!--                            <div class="relic-required">Reliquia 8</div>-->
+<!--                            <div class="synergy">-->
+<!--                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_ahsokatanogray.png" alt="Ahsoka Tano">-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="character">-->
+<!--                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_quigon.png" alt="Qui-Gon Jinn">-->
+<!--                            <div class="relic-required">Reliquia 7</div>-->
+<!--                            <div class="synergy">-->
+<!--                                <img src="https://swgoh.wiki/images/thumb/6/66/Event-Territory_Battle-Rise_of_the_Empire.png/435px-Event-Territory_Battle-Rise_of_the_Empire.png" alt="Alzamiento" data-hover="Pelotón">-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="character">-->
+<!--                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_kiadimundi.png" alt="Ki-Adi-Mundi">-->
+<!--                            <div class="relic-required">Reliquia 7</div>-->
+<!--                            <div class="synergy">-->
+<!--                                <img src="https://swgoh.wiki/images/thumb/6/66/Event-Territory_Battle-Rise_of_the_Empire.png/435px-Event-Territory_Battle-Rise_of_the_Empire.png" alt="Alzamiento" data-hover="Pelotón">-->
+<!--                            </div>-->
+<!--                        </div>-->
+                    </div>
+<!--                    <div>-->
+<!--                        <label>Estrategia: </label>-->
+<!--                        <ul>-->
+<!--                            <li>EN AUTO</li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                    <div>-->
+<!--                        <label>Explicación: </label>-->
+<!--                        <ul>-->
+<!--                            <li>en este nivel el ataque especial del lider reduce en 1% el enfurecido</li>-->
+<!--                        </ul>-->
+                    </div>
+                </div>
+
+<!--                <div class="squad">-->
+<!--                    <h4>Equipo 6: Sith + Separatistas con B2 de líder</h4>-->
+<!--                    <p class="score-expected">Puntos esperados: 2.7M</p>-->
+<!--                    <div class="squad-characters-list">-->
+<!--                        <div class="character">-->
+<!--                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_b2.png" alt="B2">-->
+<!--                            <div class="relic-required">Reliquia 8</div>-->
+<!--                            <div class="synergy">-->
+<!--                                <img src="https://swgoh.wiki/images/thumb/6/66/Event-Territory_Battle-Rise_of_the_Empire.png/435px-Event-Territory_Battle-Rise_of_the_Empire.png" alt="Alzamiento" data-hover="Pelotón Tatooine">-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="character">-->
+<!--                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_maul.png" alt="Darth Maul">-->
+<!--                            <div class="relic-required">Reliquia 8</div>-->
+<!--                            <div class="synergy">-->
+<!--                                <img src="https://swgoh.wiki/images/thumb/6/66/Event-Territory_Battle-Rise_of_the_Empire.png/435px-Event-Territory_Battle-Rise_of_the_Empire.png" alt="Alzamiento" data-hover="Pelotón Tatooine">-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="character">-->
+<!--                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_sidious.png" alt="Darth Sidious">-->
+<!--                            <div class="relic-required">Reliquia 8</div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div>-->
+<!--                        <label>Estrategia: </label>-->
+<!--                        <ul>-->
+<!--                            <li>EN AUTO</li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                    <div>-->
+<!--                        <label>Explicación: </label>-->
+<!--                        <ul>-->
+<!--                            <li>en este nivel el ataque especial del lider reduce en 1% el enfurecido</li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+        </div>
+
+        <div id="templo-archive" class="tab-content">
+            <div id="templo-historicalResults" class="alzamiento-section collapsed">
+                <table class="data-table">
+                    <thead>
+                    <tr>
+                        <th>templo</th>
+                        <th>Puntos</th>
+                        <th>NO (8)</th>
+                        <th>Padawan (16)</th>
+                        <th>Caballero Jedi (22)</th>
+                        <th>Gran Maestro Jedi (4)</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><span class="priority-goal">19/04/2025</span></td>
+                        <td><span class="priority-goal">78M (-2)</span></td>
+                        <td><span class="priority-goal">(8) (==)</span></td>
+                        <td><span class="priority-goal">450k (21) (+5)</span></td>
+                        <td><span class="priority-goal">1.2M (17) (-5)</span></td>
+                        <td><span class="priority-goal">3.6M (4)</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="priority-goal">12/04/2025</span></td>
+                        <td><span class="priority-goal">80M</span></td>
+                        <td><span class="priority-goal">(8) (-4)</span></td>
+                        <td><span class="priority-goal">450k (16) (+1)</span></td>
+                        <td><span class="priority-goal">1.2M (22) (+3)</span></td>
+                        <td><span class="priority-goal">3.6M (4)</span></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer id="index-dynamic-footer">
+    <!-- Si falla la carga, este mensaje será visible -->
+    <p>Cargando el pie...</p>
+</footer>
+</body>
+</html>
