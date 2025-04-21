@@ -1,10 +1,20 @@
 {
   "historicalResults": [
     {
+      "fecha": "28/04/2025",
+      "pg": "465M",
+      "noDesplegados": "x/x/x/x/x/x",
+      "estrellas": "0",
+      "pelotones": "0/40",
+      "reva": "0/0/19",
+      "zeffo": "0/0/6",
+      "mandalor": "0/0/7",
+      "corellia": "0/0/2"
+    },{
       "fecha": "14/04/2025",
       "pg": "465M",
-      "noDesplegados": "155/89/128/93/87/x",
-      "estrellas": "20",
+      "noDesplegados": "155/89/128/93/87/86",
+      "estrellas": "23",
       "pelotones": "35/40",
       "reva": "2/12/19",
       "zeffo": "2/5/6",
