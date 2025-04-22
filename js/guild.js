@@ -1,3 +1,4 @@
+
 const ActivityLevel = Object.freeze({
   INACTIVO:   { key: "inactivo",   score: 0, className: "player-activity-inactivo" },
   NO_CUMPLE:  { key: "no-cumple",  score: 1, className: "player-activity-no-cumple" },
@@ -30,49 +31,17 @@ const levels = {
   ]
 };
 
-function getActivityLevel(category, value) {
-  const parsed = parseFloat(value.toString().replace(",", "."));
-  if (isNaN(parsed)) return null;
-
-  const categoryLevels = levels[category];
-  return categoryLevels.find(l => l.condition(parsed))?.level || null;
-}
-
-function getGlobalActivityLevel(category, values) {
-  const validValues = values
-    .map(v => parseFloat((v ?? "").toString().replace(",", ".")))
-    .filter(v => !isNaN(v));
-
-  if (validValues.length === 0) return null;
-
-  const scores = validValues.map(v => getActivityLevel(category, v)?.score ?? 0);
-  const avgScore = scores.reduce((a, b) => a + b, 0) / scores.length;
-
-  // Redondeamos hacia el nivel más cercano
-  const nearestLevel = levels[category].reduce((best, level) => {
-    return Math.abs(avgScore - level.score) < Math.abs(avgScore - best.score) ? level : best;
-  });
-
-  return nearestLevel;
-}
-
-function formatCell(td, value, category) {
-  const level = getActivityLevel(category, value);
-  if (level) {
-    td.classList.add(level.className);
-    td.title = level.key;
-  }
-}
-
 async function loadGuildActivityData() {
   const files = [
-    { file: '../csv/guild-pg.csv', containerId: 'guild-pg', title: '🧠 Poder Galáctico Semanal', formatter: null },
-    { file: '../csv/guild-raid-tokens.csv', containerId: 'guild-raid-tokens', title: '🎫 Tokens de Raid', formatter: formatRaidTokensCell },
-    { file: '../csv/guild-raid.csv', containerId: 'guild-raids', title: '🐲 Raid Participación', formatter: formatRaidCell },
-    { file: '../csv/guild-rote.csv', containerId: 'guild-rote', title: '🌌 ROTE Actividad', formatter: formatRoteCell },
+    { file: '../csv/guild-pg.csv', key: 'PG' },
+    { file: '../csv/guild-raid-tokens.csv', key: 'Raid Tokens' },
+    { file: '../csv/guild-raid.csv', key: 'Raid' },
+    { file: '../csv/guild-rote.csv', key: 'ROTE' },
   ];
 
-  for (const { file, containerId, title, formatter } of files) {
+  const playerData = new Map();
+
+  for (const { file, key } of files) {
     try {
       const response = await fetch(file);
       const csvText = await response.text();
@@ -80,118 +49,242 @@ async function loadGuildActivityData() {
       const parsed = Papa.parse(csvText, {
         header: true,
         skipEmptyLines: true,
-        delimiter: "\t", // Cambia si el CSV es por comas
+        delimiter: "\t",
       });
 
-      const data = parsed.data;
       const headers = parsed.meta.fields;
-      const table = createActivityTable(data, headers, formatter);
+      const dateCols = headers.filter(h => h.match(/\d{2}\/\d{2}\/\d{4}/));
 
-      const container = document.getElementById(containerId);
-      container.innerHTML = `<h3>${title}</h3>`;
-      container.appendChild(table);
+      parsed.data.forEach(row => {
+        const name = row["Jugador"]?.trim();
+        if (!name) return;
 
-    } catch (error) {
-      console.error(`Error cargando el archivo ${file}:`, error);
-      const container = document.getElementById(containerId);
-      container.innerHTML = `<p style="color:red;">Error cargando ${title}</p>`;
+        if (!playerData.has(name)) {
+          playerData.set(name, {
+            PG: [],
+            "Raid": [],
+            "Raid Tokens": [],
+            "ROTE": []
+          });
+        }
+
+        const entry = playerData.get(name);
+
+        if (key === "PG") {
+          const values = dateCols.map(date => parseFloat(row[date]?.replace(",", ".")) || null);
+          entry.PG = values;
+        } else if (key === "Raid Tokens") {
+          const cumulative = dateCols.map(date => parseFloat(row[date]?.replace(",", ".")) || null);
+          const tokensGenerated = [];
+
+          for (let i = 0; i < cumulative.length - 1; i++) {
+            const current = cumulative[i];
+            const next = cumulative[i + 1];
+            tokensGenerated.push(
+              current != null && next != null ? current - next : null
+            );
+          }
+
+          entry["Raid Tokens"] = tokensGenerated;
+        } else if (key === "ROTE") {
+          const roteRaw = dateCols.map(date => parseFloat(row[date]?.replace(",", ".")) || null);
+          const latestPG = entry.PG?.[0];
+
+          const normalized = roteRaw.map(v => (v != null && latestPG ? v / latestPG : null));
+          entry["ROTE"] = normalized;
+        } else if (key === "Raid") {
+          const values = dateCols.map(date => parseFloat(row[date]?.replace(",", ".")) || null);
+          entry["Raid"] = values;
+        }
+      });
+    } catch (err) {
+      console.error(`Error cargando ${file}:`, err);
     }
   }
+
+  return playerData;
 }
 
-function createActivityTable(data, headers, formatCellCallback) {
+function getActivityLevel(category, value) {
+  if (value == null) return null;
+
+  const strValue = typeof value === "string" ? value : value.toString();
+  const parsed = parseFloat(strValue.replace(",", "."));
+  if (isNaN(parsed)) return null;
+
+  const categoryLevels = levels[category];
+  if (!categoryLevels) return null; // <- solución
+
+  return categoryLevels.find(l => l.condition(parsed))?.level || null;
+}
+
+function renderActivityTable(playerData, category, containerId, title) {
   const table = document.createElement("table");
   table.classList.add("data-table");
 
-  const thead = document.createElement("thead");
-  const headRow = document.createElement("tr");
+  const headerRow = document.createElement("tr");
+  const thName = document.createElement("th");
+  thName.textContent = "Jugador";
+  headerRow.appendChild(thName);
 
-  headers.forEach(header => {
+  const examplePlayer = [...playerData.values()][0];
+  const weeks = examplePlayer[category]?.length || 0;
+
+  for (let i = 0; i < weeks; i++) {
     const th = document.createElement("th");
-    th.textContent = header;
-    headRow.appendChild(th);
-  });
+    th.textContent = `Semana ${i + 1}`;
+    headerRow.appendChild(th);
+  }
 
-  thead.appendChild(headRow);
+  const thead = document.createElement("thead");
+  thead.appendChild(headerRow);
   table.appendChild(thead);
 
   const tbody = document.createElement("tbody");
 
-  data.forEach(row => {
+  for (const [name, data] of playerData.entries()) {
     const tr = document.createElement("tr");
 
-    headers.forEach((header, index) => {
+    const tdName = document.createElement("td");
+    tdName.textContent = name;
+    tr.appendChild(tdName);
+
+    const values = data[category] || [];
+    values.forEach(val => {
       const td = document.createElement("td");
-      const value = row[header] || '';
-      td.textContent = value;
-
-      if (index > 0 && formatCellCallback) {
-        formatCellCallback(td, value, row, headers, index);
+      td.textContent = val != null ? val.toFixed(2) : "";
+      const level = getActivityLevel(category, val);
+      if (level) {
+        td.classList.add(level.className);
+        td.title = level.key;
       }
-
       tr.appendChild(td);
     });
 
     tbody.appendChild(tr);
-  });
+  }
 
   table.appendChild(tbody);
-  return table;
+
+  const container = document.getElementById(containerId);
+  container.innerHTML = `<h3>${title}</h3>`;
+  container.appendChild(table);
 }
 
-function formatRaidCell(td, value) {
-  const level = getActivityLevel("Raid", value);
-  if (level) {
-    td.classList.add(level.className);
-    td.title = level.key;
+function computePlayerRanks(playerData) {
+  for (const [name, data] of playerData.entries()) {
+    for (const category of ["Raid", "Raid Tokens", "ROTE"]) {
+      const values = data[category] || [];
+      const validValues = values.filter(v => v != null && !isNaN(v));
+      if (validValues.length === 0) continue;
+
+      const avg = validValues.reduce((a, b) => a + b, 0) / validValues.length;
+      const level = getActivityLevel(category, avg);
+      if (level) {
+        // Guardamos el rango global por categoría
+        data[`rango${category.replace(" ", "")}`] = level;
+      }
+    }
   }
 }
 
-function formatRaidTokensCell(td, value, row, headers, index) {
-  if (index < 1 || index >= headers.length - 1) return;
+function renderGlobalActivityTable(playerData, containerId, title) {
+  const table = document.createElement("table");
+  table.classList.add("data-table");
 
-  const currentDate = headers[index];
-  const prevDate = headers[index + 1];
+  // Crear cabecera de la tabla
+  const headerRow = document.createElement("tr");
+  const thName = document.createElement("th");
+  thName.textContent = "Jugador";
+  headerRow.appendChild(thName);
 
-  const currentRaw = row[currentDate];
-  const previousRaw = row[prevDate];
+  const thPG = document.createElement("th");
+  thPG.textContent = "PG";
+  headerRow.appendChild(thPG);
 
-  if (!currentRaw || !previousRaw) return;
+  const thRaid = document.createElement("th");
+  thRaid.textContent = "Raid";
+  headerRow.appendChild(thRaid);
 
-  const current = parseInt(currentRaw.replace(',', '').trim(), 10);
-  const previous = parseInt(previousRaw.replace(',', '').trim(), 10);
+  const thTokens = document.createElement("th");
+  thTokens.textContent = "Raid Tokens";
+  headerRow.appendChild(thTokens);
 
-  if (isNaN(current) || isNaN(previous)) return;
+  const thRote = document.createElement("th");
+  thRote.textContent = "RotE";
+  headerRow.appendChild(thRote);
 
-  const tokensGenerated = current - previous;
+  const thead = document.createElement("thead");
+  thead.appendChild(headerRow);
+  table.appendChild(thead);
 
-  const level = getActivityLevel("Raid Tokens", tokensGenerated);
-  if (level) {
-    td.classList.add(level.className);
-    td.title = `${level.key} +${tokensGenerated} tokens generados`;
+  // Crear cuerpo de la tabla
+  const tbody = document.createElement("tbody");
+
+  for (const [name, data] of playerData.entries()) {
+    const tr = document.createElement("tr");
+
+    // Nombre del jugador
+    const tdName = document.createElement("td");
+    tdName.textContent = name;
+    tr.appendChild(tdName);
+
+    // PG del jugador (solo el valor numérico de la primera semana)
+    const tdPG = document.createElement("td");
+    tdPG.textContent = data.PG?.[0]?.toFixed(2) || "N/A";
+    tr.appendChild(tdPG);
+
+    // Rango Raid
+    const tdRaid = document.createElement("td");
+    const rangoRaid = data.rangoRaid || null;
+    if (rangoRaid) {
+      tdRaid.classList.add(rangoRaid.className);  // Aplicamos la clase del rango de Raid
+      tdRaid.title = rangoRaid.key;               // Opcional: para mostrar el tooltip del rango
+    }
+    tr.appendChild(tdRaid);
+
+    // Rango Tokens
+    const tdTokens = document.createElement("td");
+    const rangoTokens = data.rangoRaidTokens || null;
+    if (rangoTokens) {
+      tdTokens.classList.add(rangoTokens.className);  // Aplicamos la clase del rango de Tokens
+      tdTokens.title = rangoTokens.key;               // Opcional: para mostrar el tooltip del rango
+    }
+    tr.appendChild(tdTokens);
+
+    // Rango ROTE
+    const tdRote = document.createElement("td");
+    const rangoRote = data.rangoROTE || null;
+    if (rangoRote) {
+      tdRote.classList.add(rangoRote.className);  // Aplicamos la clase del rango de ROTE
+      tdRote.title = rangoRote.key;               // Opcional: para mostrar el tooltip del rango
+    }
+    tr.appendChild(tdRote);
+
+    tbody.appendChild(tr);
   }
+
+  table.appendChild(tbody);
+
+  // Agregar la tabla al contenedor
+  const container = document.getElementById(containerId);
+  container.innerHTML = `<h3>${title}</h3>`;
+  container.appendChild(table);
 }
 
-function formatRoteCell(td, value, row) {
-  if (!value) return;
 
-  const rote = parseFloat(value.replace(',', '.'));
-  const pgRaw = row["PG"];
-  if (!pgRaw) return;
+document.addEventListener("DOMContentLoaded", async () => {
+  const playerData = await loadGuildActivityData();
+console.log("📊 playerData generado:", playerData);
 
-  const pg = parseFloat(pgRaw.replace(',', '.'));
-  if (isNaN(rote) || isNaN(pg) || pg === 0) return;
+  renderActivityTable(playerData, "PG", "guild-pg", "🧠 Poder Galáctico Semanal");
+  renderActivityTable(playerData, "Raid", "guild-raids", "🐲 Raid Participación");
+  renderActivityTable(playerData, "Raid Tokens", "guild-raid-tokens", "🎫 Tokens de Raid");
+  renderActivityTable(playerData, "ROTE", "guild-rote", "🌌 ROTE Actividad");
 
-  const despliegues = rote / pg;
+    computePlayerRanks(playerData);
+console.log("📊 playerData rangos:", playerData);
 
-  const level = getActivityLevel("ROTE", despliegues);
-  if (level) {
-    td.classList.add(level.className);
-    td.title = `${level.key} ≈ ${despliegues.toFixed(2)} despliegues`;
-  }
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  loadGuildActivityData();
-  openTab('guild-pg');
+  renderGlobalActivityTable(playerData, "guild-global", "🌍 Resumen Global de Jugadores");
+  openTab('guild-global');
 });
