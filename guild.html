@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spain Space SWGoH</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/guild.css">
+    <script src="js/dynamic-loader.js" defer></script>
+    <script src="js/guild.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <link rel="icon" href="https://assets.swgoh.gg/files/ui/tex.guild_icon_oldrepublic_tint.00b15b7f62455726b72d.webp" type="image/x-icon">
+</head>
+
+<body>
+
+<header id="index-dynamic-header">
+    <!-- Si falla la carga, este mensaje será visible -->
+    <p>Cargando la cabecera...</p>
+</header>
+
+<main>
+    <section id="guild">
+        <h2>Gremio</h2>
+
+        <nav class="tab">
+            <button class="tab-button" onclick="openTab('guild-pg')">🧠 PG</button>
+            <button class="tab-button" onclick="openTab('guild-raid-tokens')">🎫 Raid Tokens</button>
+            <button class="tab-button" onclick="openTab('guild-raids')">🐲 Raid</button>
+            <button class="tab-button" onclick="openTab('guild-rote')">🌌 RotE</button>
+        </nav>
+
+        <div id="guild-global" class="tab-content">
+        </div>
+
+        <div id="guild-pg" class="tab-content">
+        </div>
+
+        <div id="guild-raid-tokens" class="tab-content">
+        </div>
+
+        <div id="guild-raids" class="tab-content">
+        </div>
+
+        <div id="guild-rote" class="tab-content">
+        </div>
+    </section>
+</main>
+
+<footer id="index-dynamic-footer">
+    <!-- Si falla la carga, este mensaje será visible -->
+    <p>Cargando el pie...</p>
+</footer>
+</body>
+</html>

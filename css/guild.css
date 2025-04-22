@@ -1,0 +1,5 @@
+.player-activity-inactivo { background-color: #f44336 !important; }       /* rojo */
+.player-activity-no-cumple { background-color: #ffcc80 !important; }      /* naranja claro */
+.player-activity-padawan { background-color: #fff59d !important; }        /* amarillo claro */
+.player-activity-caballero { background-color: #90caf9 !important; }      /* azul claro */
+.player-activity-maestro { background-color: #a5d6a7 !important; }        /* verde claro */
