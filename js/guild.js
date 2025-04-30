@@ -17,19 +17,24 @@ const levels = {
   ],
   "Raid Tokens": [
     { level: ActivityLevel.INACTIVO,   condition: v => v === 0 },
-    { level: ActivityLevel.NO_CUMPLE,  condition: v => v > 0 && v < 450 },
-    { level: ActivityLevel.PADAWAN,    condition: v => v >= 450 && v < 1200 },
-    { level: ActivityLevel.CABALLERO,  condition: v => v >= 1200 && v < 3600 },
-    { level: ActivityLevel.MAESTRO,    condition: v => v >= 3600 }
+    { level: ActivityLevel.NO_CUMPLE,  condition: v => v > 0 && v < 300*7 },
+    { level: ActivityLevel.PADAWAN,    condition: v => v >= 300*7 && v < 450*7 },
+    { level: ActivityLevel.CABALLERO,  condition: v => v >= 450*7 && v < 550*7 },
+    { level: ActivityLevel.MAESTRO,    condition: v => v >= 550*7 }
   ],
   "ROTE": [
     { level: ActivityLevel.INACTIVO,   condition: v => v === 0 },
     { level: ActivityLevel.NO_CUMPLE,  condition: v => v > 0 && v < 2 },
-    { level: ActivityLevel.PADAWAN,    condition: v => v >= 2 && v < 3 },
-    { level: ActivityLevel.CABALLERO,  condition: v => v >= 3 && v < 5 },
-    { level: ActivityLevel.MAESTRO,    condition: v => v >= 5 }
+    { level: ActivityLevel.PADAWAN,    condition: v => v >= 2 && v < 4 },
+    { level: ActivityLevel.CABALLERO,  condition: v => v >= 4 && v < 6 },
+    { level: ActivityLevel.MAESTRO,    condition: v => v >= 6 }
   ]
 };
+
+function parseCsvValue(raw) {
+  const value = parseFloat(raw?.replace(",", "."));
+  return isNaN(value) ? null : value;
+}
 
 async function loadGuildActivityData() {
   const files = [
@@ -71,10 +76,10 @@ async function loadGuildActivityData() {
         const entry = playerData.get(name);
 
         if (key === "PG") {
-          const values = dateCols.map(date => parseFloat(row[date]?.replace(",", ".")) || null);
+          const values = dateCols.map(date => parseCsvValue(row[date]));
           entry.PG = values;
         } else if (key === "Raid Tokens") {
-          const cumulative = dateCols.map(date => parseFloat(row[date]?.replace(",", ".")) || null);
+          const cumulative = dateCols.map(date => parseCsvValue(row[date]));
           const tokensGenerated = [];
 
           for (let i = 0; i < cumulative.length - 1; i++) {
@@ -87,13 +92,13 @@ async function loadGuildActivityData() {
 
           entry["Raid Tokens"] = tokensGenerated;
         } else if (key === "ROTE") {
-          const roteRaw = dateCols.map(date => parseFloat(row[date]?.replace(",", ".")) || null);
+          const roteRaw = dateCols.map(date => parseCsvValue(row[date]));
           const latestPG = entry.PG?.[0];
 
           const normalized = roteRaw.map(v => (v != null && latestPG ? v / latestPG : null));
           entry["ROTE"] = normalized;
         } else if (key === "Raid") {
-          const values = dateCols.map(date => parseFloat(row[date]?.replace(",", ".")) || null);
+          const values = dateCols.map(date => parseCsvValue(row[date]));
           entry["Raid"] = values;
         }
       });
@@ -116,6 +121,16 @@ function getActivityLevel(category, value) {
   if (!categoryLevels) return null; // <- solución
 
   return categoryLevels.find(l => l.condition(parsed))?.level || null;
+}
+
+function getClassAndValue(valor, rango) {
+    if (valor === 0) {
+        return `<td class="inactivo">0.00</td>`;
+    } else if (valor === null || valor === undefined || valor === '') {
+        return `<td></td>`;
+    } else {
+        return `<td class="player-activity-${rango.toLowerCase()}" title="${rango.toLowerCase()}">${valor.toFixed(2)}</td>`;
+    }
 }
 
 function renderActivityTable(playerData, category, containerId, title) {
@@ -152,14 +167,22 @@ function renderActivityTable(playerData, category, containerId, title) {
     const values = data[category] || [];
     values.forEach(val => {
       const td = document.createElement("td");
-      td.textContent = val != null ? val.toFixed(2) : "";
-      const level = getActivityLevel(category, val);
-      if (level) {
-        td.classList.add(level.className);
-        td.title = level.key;
-      }
+
+      if (val === 0) {
+        td.textContent = "0";
+        td.classList.add(ActivityLevel.INACTIVO.className);
+      } else if (val != null && !isNaN(val)) {
+        td.textContent = val.toFixed(2);
+        const level = getActivityLevel(category, val);
+        if (level) {
+          td.classList.add(level.className);
+          td.title = level.key;
+        }
+      } // Si es null o NaN, no mostramos nada en la celda
+
       tr.appendChild(td);
     });
+
 
     tbody.appendChild(tr);
   }
@@ -188,7 +211,7 @@ function computePlayerRanks(playerData) {
   }
 }
 
-function renderGlobalActivityTable(playerData, containerId, title) {
+function renderGlobalActivityTable(playerData, containerId) {
   const table = document.createElement("table");
   table.classList.add("data-table");
 
@@ -268,7 +291,7 @@ function renderGlobalActivityTable(playerData, containerId, title) {
 
   // Agregar la tabla al contenedor
   const container = document.getElementById(containerId);
-  container.innerHTML = `<h3>${title}</h3>`;
+//  container.innerHTML = `<h3>${title}</h3>`;
   container.appendChild(table);
 }
 
@@ -285,6 +308,6 @@ console.log("📊 playerData generado:", playerData);
     computePlayerRanks(playerData);
 console.log("📊 playerData rangos:", playerData);
 
-  renderGlobalActivityTable(playerData, "guild-global", "🌍 Resumen Global de Jugadores");
+  renderGlobalActivityTable(playerData, "guild-global");
   openTab('guild-global');
 });
