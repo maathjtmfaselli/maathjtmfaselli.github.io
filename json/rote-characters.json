@@ -1,19 +1,19 @@
 {
   "topPriorityCharacters": [
     {
-      "name": "Ki-Adi-Mundi",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_kiadimundi.png",
-      "relic": "Reliquia 7",
-      "assignedTo": ""
+      "name": "Ugnaut",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_ugnaught.png",
+      "relic": "Reliquia 5",
+      "assignedTo": "josmartini"
+    },{
+      "name": "Snowtrooper",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_troopersnow.png",
+      "relic": "Reliquia 6",
+      "assignedTo": "josmartini"
     },{
       "name": "Enfys Nest",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_enfys.png",
       "relic": "Reliquia 6",
-      "assignedTo": ""
-    },{
-      "name": "Ugnaut",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_ugnaught.png",
-      "relic": "Reliquia 5",
       "assignedTo": ""
     },{
       "name": "Veteran Smuggler Chew",
@@ -23,11 +23,6 @@
     },{
       "name": "Omega",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_badbatchomega.png",
-      "relic": "Reliquia 6",
-      "assignedTo": ""
-    },{
-      "name": "Snowtrooper",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_troopersnow.png",
       "relic": "Reliquia 6",
       "assignedTo": ""
     },{
@@ -102,6 +97,11 @@
   ],
   "upgradedCharacters": [
     {
+      "name": "Ki-Adi-Mundi",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_kiadimundi.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "Mik Bat"
+    },{
       "name": "Ezra Bridger",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_ezra_s3.png",
       "relic": "Reliquia 6",
