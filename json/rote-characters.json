@@ -1,11 +1,6 @@
 {
   "topPriorityCharacters": [
     {
-      "name": "Snowtrooper",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_troopersnow.png",
-      "relic": "Reliquia 6",
-      "assignedTo": "josmartini, Temnyy"
-    },{
       "name": "Enfys Nest",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_enfys.png",
       "relic": "Reliquia 6",
@@ -87,6 +82,11 @@
   ],
   "upgradedCharacters": [
     {
+      "name": "Snowtrooper",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_troopersnow.png",
+      "relic": "Reliquia 6",
+      "assignedTo": "Temnyy"
+    },{
       "name": "Ugnaut",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_ugnaught.png",
       "relic": "Reliquia 5",
