@@ -1,0 +1,29 @@
+Equipo Defensa	Omi Defensa	PG Defensa	Counter	Omi Counter	PG Counter	Puntos	OK KO	Observaciones
+Phasma	SI		Talzin	NO			OK
+Phasma	SI		CLS	NO			OK
+Phasma	SI		Rex (normal)	NO			OK
+Phasma	SI		Padme	NO			OK
+Phasma	SI		Reina	NO			OK
+Phasma	SI		Bane	NO			OK
+Phasma	SI		Drevan	NO			OK
+Phasma	SI		Maul	NO			OK
+Phasma	SI		Grievous	NO			OK
+Phasma	SI		CLS	NO			OK
+Phasma	SI		Gungan	NO			OK
+Phasma	SI		Traya	NO			KO
+Phasma	SI		Wrevan	NO			KO
+Malgus			GAS				OK
+Boba	3	138	Veers		122	20	OK
+Geo	SI		GAS	NO			OK
+Geo	SI		Traya	NO			ZERO
+Geo	SI		Talzin	NO			ZERO	A veces timeout
+Geo	SI		Rogue One				OK	A veces timeout
+Geo	SI	120	GAS		140	19	OK
+Geo	SI	104	Traya		142	20	OK	Anda más justo de lo que parece
+Geo	NO	140	Talzin		140	20	OK
+Geo	SI	113	CLS		163	0	NO
+Geo	SI		Starkiller			20	OK
+Geo	SI	113	Rogue One		138	19	OK	A veces timeout
+Geo	SI	100	Jawa				KO	Solo un Jawa a reliquia
+Geo	SI		Iden				KO	Totalmente inútil
+Geo	SI		Darth Vader				KO	Imperio, Wat para que no revivan

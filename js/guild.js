@@ -298,15 +298,15 @@ function renderGlobalActivityTable(playerData, containerId) {
 
 document.addEventListener("DOMContentLoaded", async () => {
   const playerData = await loadGuildActivityData();
-console.log("📊 playerData generado:", playerData);
+//console.log("📊 playerData generado:", playerData);
 
   renderActivityTable(playerData, "PG", "guild-pg", "🧠 Poder Galáctico Semanal");
   renderActivityTable(playerData, "Raid", "guild-raids", "🐲 Raid Participación");
   renderActivityTable(playerData, "Raid Tokens", "guild-raid-tokens", "🎫 Tokens de Raid");
   renderActivityTable(playerData, "ROTE", "guild-rote", "🌌 ROTE Actividad");
 
-    computePlayerRanks(playerData);
-console.log("📊 playerData rangos:", playerData);
+  computePlayerRanks(playerData);
+//console.log("📊 playerData rangos:", playerData);
 
   renderGlobalActivityTable(playerData, "guild-global");
   openTab('guild-global');
