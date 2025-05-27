@@ -57,7 +57,12 @@
   ],
   "upgradedCharacters": [
     {
-      "name": "Enfys Nest",
+      "name": "50r-t",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_50rt.png",
+      "relic": "Reliquia 76",
+      "assignedTo": "Gita"
+    },{
+      "name": "50r-t",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_enfys.png",
       "relic": "Reliquia 6",
       "assignedTo": "Viula"

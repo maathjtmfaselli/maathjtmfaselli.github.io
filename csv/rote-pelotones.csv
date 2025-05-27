@@ -1,3 +1,4 @@
+Planeta	Sector	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 Mustafar	1	Dark	1	Emperador Palpatine	44
 Mustafar	1	Dark	1	BT-1	10
 Mustafar	1	Dark	1	General Grievous	36
@@ -294,7 +295,7 @@ Geonosis	2	Dark	2	Grand Admiral Thrawn
 Geonosis	2	Dark	2	Dengar	2	maath	lucas
 Geonosis	2	Dark	2	Droideka	2	GRANJEDI Tito1	wSS DE
 Geonosis	2	Dark	2	Supreme Leader Kylo Ren
-Geonosis	2	Dark	2	Boba Fett, Scion of Jango	5
+Geonosis	2	Dark	2	Boba Fett, Scion of Jango	6
 Geonosis	2	Dark	2	Malak
 Geonosis	2	Dark	2	Kylo Ren (Unmasked)
 Geonosis	2	Dark	2	B2	2	GRANJEDI Tito1	maath
@@ -806,5 +807,5 @@ Kashyyyk	3	Luminoso	6	Han's Millennium Falcon
 Kashyyyk	3	Luminoso	6	Jedi Master Luke Skywalker
 Kashyyyk	3	Luminoso	6	Padmé Amidala
 Kashyyyk	3	Luminoso	6	Ben Solo	8
-Kashyyyk	3	Luminoso	6	Ewok Scout	2	Viula	josmartini		
-Kashyyyk	3	Luminoso	6	Hoth Rebel Soldier	0				
+Kashyyyk	3	Luminoso	6	Ewok Scout	2	Viula	josmartini
+Kashyyyk	3	Luminoso	6	Hoth Rebel Soldier	0
