@@ -1,16 +1,6 @@
 {
   "topPriorityCharacters": [
     {
-      "name": "Veteran Smuggler Chew",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_tfa_chewbacca.png",
-      "relic": "Reliquia 6",
-      "assignedTo": ""
-    },{
-      "name": "Omega",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_badbatchomega.png",
-      "relic": "Reliquia 6",
-      "assignedTo": ""
-    },{
       "name": "Kanan Jarrus",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_kanan_s3.png",
       "relic": "Reliquia 6",
@@ -57,6 +47,21 @@
   ],
   "upgradedCharacters": [
     {
+      "name": "Greef Karga",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_greefkarga.png",
+      "relic": "Reliquia 6",
+      "assignedTo": "Temnyy"
+    },{
+      "name": "Veteran Smuggler Chew",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_tfa_chewbacca.png",
+      "relic": "Reliquia 6",
+      "assignedTo": "josmartini"
+    },{
+      "name": "Omega",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_badbatchomega.png",
+      "relic": "Reliquia 6",
+      "assignedTo": "Cente"
+    },{
       "name": "50r-t",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_50rt.png",
       "relic": "Reliquia 76",
