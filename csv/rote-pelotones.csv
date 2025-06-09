@@ -94,12 +94,12 @@ Corellia	1	Neutral	1	Chewbacca	36
 Corellia	1	Neutral	1	Jedi Knight Revan	28
 Corellia	1	Neutral	1	Eeth Koth	4	PequeñoPadawan	Mik Bat	Mhann Uhdea	Cal Kestis
 Corellia	1	Neutral	1	Darth Traya	12
-Corellia	1	Neutral	1	Boba Fett, Scion of Jango	7
+Corellia	1	Neutral	1	Boba Fett, Scion of Jango	8
 Corellia	1	Neutral	1	Grand Admiral Thrawn	38
 Corellia	1	Neutral	1	C-3P0	34
 Corellia	1	Neutral	1	Ima-Gun Di	4	maath	Mik Bat	Aguilet	Cente
 Corellia	1	Neutral	1	Sith Trooper	32
-Corellia	1	Neutral	1	Boba Fett, Scion of Jango	7
+Corellia	1	Neutral	1	Boba Fett, Scion of Jango	8
 Corellia	1	Neutral	1	R2-D2	33
 Corellia	1	Neutral	1	Darth Revan	28
 Corellia	1	Neutral	1	Hyena Bomber	18
@@ -114,7 +114,7 @@ Corellia	1	Neutral	2	C-3P0	34
 Corellia	1	Neutral	2	Darth Revan	28
 Corellia	1	Neutral	2	Jolee Bindo	16
 Corellia	1	Neutral	2	Poe Dameron	20
-Corellia	1	Neutral	2	Boba Fett, Scion of Jango	7
+Corellia	1	Neutral	2	Boba Fett, Scion of Jango	8
 Corellia	1	Neutral	2	Commander Luke Skywalker	32
 Corellia	1	Neutral	2	The Mandalorian (Beskar Armor)	10
 Corellia	1	Neutral	2	BT-1	10
@@ -129,7 +129,7 @@ Corellia	1	Neutral	3	Commander Luke Skywalker	32
 Corellia	1	Neutral	3	Darth Revan	28
 Corellia	1	Neutral	3	Paploo	2	Mik Bat	Marblagar
 Corellia	1	Neutral	3	Bossk	31
-Corellia	1	Neutral	3	Boba Fett, Scion of Jango	7
+Corellia	1	Neutral	3	Boba Fett, Scion of Jango	8
 Corellia	1	Neutral	3	Chewbacca	36
 Corellia	1	Neutral	3	Rey (Jedi Training)	35
 Corellia	1	Neutral	3	Threepio & Chewie	33
@@ -159,7 +159,7 @@ Corellia	1	Neutral	5	Chimaera	44
 Corellia	1	Neutral	5	Wat Tambor	28
 Corellia	1	Neutral	5	Malevolence	37
 Corellia	1	Neutral	5	Darth Maul	21
-Corellia	1	Neutral	5	Boba Fett, Scion of Jango	7
+Corellia	1	Neutral	5	Boba Fett, Scion of Jango	8
 Corellia	1	Neutral	5	R2-D2	33
 Corellia	1	Neutral	5	Han Solo	35
 Corellia	1	Neutral	5	Geonosian Brood Alpha	13
@@ -412,7 +412,7 @@ Felucia	2	Neutral	4	Count Dooku
 Felucia	2	Neutral	4	Grand Inquisitor
 Felucia	2	Neutral	4	Boba Fett, Scion of Jango	6
 Felucia	2	Neutral	4	Maul	8
-Felucia	2	Neutral	4	Yoda Hermit	4	Gita	Mik Bat	JediSevillano	Cal Kestis
+Felucia	2	Neutral	4	Yoda Hermit	5
 Felucia	2	Neutral	4	Kuiil	1	josmartini
 Felucia	2	Neutral	4	Supreme Leader Kylo Ren
 Felucia	2	Neutral	4	TIE/IN Interceptor Prototype
@@ -422,7 +422,7 @@ Felucia	2	Neutral	4	General Veers	1	maath
 Felucia	2	Neutral	5	Grand Inquisitor
 Felucia	2	Neutral	5	Malgus
 Felucia	2	Neutral	5	Scythe
-Felucia	2	Neutral	5	Embo	2	Cente	josmartini
+Felucia	2	Neutral	5	Embo	7
 Felucia	2	Neutral	5	Ackbar	2	maath	josmartini
 Felucia	2	Neutral	5	General Skywalker
 Felucia	2	Neutral	5	Malgus
@@ -484,7 +484,7 @@ Bracca	2	Luminoso	3	Ben Solo
 Bracca	2	Luminoso	3	CT-21-0408 "Echo"
 Bracca	2	Luminoso	3	Grand Master Yoda
 Bracca	2	Luminoso	3	Ebon Hawk
-Bracca	2	Luminoso	3	Greef Karga	1	maath
+Bracca	2	Luminoso	3	Greef Karga	2	maath	Temnyy
 Bracca	2	Luminoso	3	Ben Solo
 Bracca	2	Luminoso	3	Kanan Jarrus	1	josmartini
 Bracca	2	Luminoso	3	BB-8
@@ -499,7 +499,7 @@ Bracca	2	Luminoso	4	Commander Ahsoka Tano
 Bracca	2	Luminoso	4	Razor Crest
 Bracca	2	Luminoso	4	Bodhi Rook	1	josmartini
 Bracca	2	Luminoso	4	CT-5555 "Fives"
-Bracca	2	Luminoso	4	Greef Karga	1	maath
+Bracca	2	Luminoso	4	Greef Karga	2	maath	Temnyy
 Bracca	2	Luminoso	4	Ben Solo
 Bracca	2	Luminoso	4	Commander Ahsoka Tano
 Bracca	2	Luminoso	4	Ghost
@@ -507,8 +507,8 @@ Bracca	2	Luminoso	4	R2-D2
 Bracca	2	Luminoso	4	Profundidad
 Bracca	2	Luminoso	4	Razor Crest
 Bracca	2	Luminoso	4	Ben Solo
-Bracca	2	Luminoso	4	Veteran Smuggler Chewbacca	0
-Bracca	2	Luminoso	4	Omega	0
+Bracca	2	Luminoso	4	Veteran Smuggler Chewbacca	1	josmartini
+Bracca	2	Luminoso	4	Omega	1	Cente
 Bracca	2	Luminoso	5	Bistan's U-wing
 Bracca	2	Luminoso	5	Razor Crest
 Bracca	2	Luminoso	5	Ben Solo
@@ -523,7 +523,7 @@ Bracca	2	Luminoso	5	Jedi Master Kenobi
 Bracca	2	Luminoso	5	Razor Crest
 Bracca	2	Luminoso	5	Ben Solo
 Bracca	2	Luminoso	5	Han's Millennium Falcon
-Bracca	2	Luminoso	5	Kanan Jarrus	1		josmartini
+Bracca	2	Luminoso	5	Kanan Jarrus	1	josmartini
 Bracca	2	Luminoso	6	CT-7567 "Rex"
 Bracca	2	Luminoso	6	Ben Solo
 Bracca	2	Luminoso	6	Razor Crest
@@ -563,7 +563,7 @@ Dathomir	3	Dark	2	Sith Eternal Emperor
 Dathomir	3	Dark	2	Scythe
 Dathomir	3	Dark	2	Boba Fett, Scion of Jango	4	Viula	Temnyy	Gita	Blas
 Dathomir	3	Dark	2	General Grievous
-Dathomir	3	Dark	2	General Hux	5
+Dathomir	3	Dark	2	General Hux	6
 Dathomir	3	Dark	2	Lord Vader
 Dathomir	3	Dark	2	Maul	5
 Dathomir	3	Dark	2	TIE/IN Interceptor Prototype
