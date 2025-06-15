@@ -1,11 +1,16 @@
 {
   "topPriorityCharacters": [
     {
-      "name": "Kanan Jarrus",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_kanan_s3.png",
-      "relic": "Reliquia 6",
-      "assignedTo": ""
-    },{
+      "name": "Aurra Sing",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_aurrasing.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "Maath"
+    }, {
+      "name": "Director Krennic",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_krennic.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "Maath"
+    }, {
       "name": "Imperial Probe Droid",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_probedroid.png",
       "relic": "Reliquia 7",
@@ -47,6 +52,11 @@
   ],
   "upgradedCharacters": [
     {
+      "name": "Kanan Jarrus",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_kanan_s3.png",
+      "relic": "Reliquia 6",
+      "assignedTo": "PequeñoPadawan"
+    },{
       "name": "Greef Karga",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_greefkarga.png",
       "relic": "Reliquia 6",
