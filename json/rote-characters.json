@@ -15,26 +15,31 @@
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_probedroid.png",
       "relic": "Reliquia 7",
       "assignedTo": "Maath"
+    }, {
+      "name": "Hoth Rebel Soldier",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_rebelhoth.png",
+      "relic": "Reliquia 7",
+      "assignedTo": ""
+    }, {
+      "name": "B1",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_b1.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "Maath"
     }
   ],
   "charactersToUpgrade": [
     {
-      "name": "Old Boba",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
-      "relic": "Reliquia 7",
-      "assignedTo": ""
-    },{
-      "name": "Old Boba",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
-      "relic": "Reliquia 7",
-      "assignedTo": ""
-    },{
       "name": "Imperial Probe Droid",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_probedroid.png",
       "relic": "Reliquia 6",
       "assignedTo": ""
     },{
       "name": "Nightsiter Initiate",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_nightsister_initiate.png",
+      "relic": "Reliquia 5",
+      "assignedTo": ""
+    },{
+      "name": "Paploo",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_nightsister_initiate.png",
       "relic": "Reliquia 5",
       "assignedTo": ""
@@ -52,6 +57,11 @@
   ],
   "upgradedCharacters": [
     {
+      "name": "Old Boba",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "PequeñoPadawan"
+    },{
       "name": "Kanan Jarrus",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_kanan_s3.png",
       "relic": "Reliquia 6",
