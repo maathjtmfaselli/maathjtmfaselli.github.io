@@ -16,15 +16,10 @@
       "relic": "Reliquia 7",
       "assignedTo": "Maath"
     }, {
-      "name": "Hoth Rebel Soldier",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_rebelhoth.png",
+      "name": "Resistance Trooper",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_resistancetrooper.png",
       "relic": "Reliquia 7",
       "assignedTo": ""
-    }, {
-      "name": "B1",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_b1.png",
-      "relic": "Reliquia 7",
-      "assignedTo": "Maath"
     }
   ],
   "charactersToUpgrade": [
@@ -40,7 +35,7 @@
       "assignedTo": ""
     },{
       "name": "Paploo",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_nightsister_initiate.png",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_ewok_paploo.png",
       "relic": "Reliquia 5",
       "assignedTo": ""
     },{
@@ -53,10 +48,30 @@
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_greefkarga.png",
       "relic": "Reliquia 7",
       "assignedTo": ""
+    },{
+      "name": "Logray",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_ewok_logray.png",
+      "relic": "Reliquia 7",
+      "assignedTo": ""
     }
   ],
   "upgradedCharacters": [
     {
+      "name": "Imperial Probe Droid",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_probedroid.png",
+      "relic": "Reliquia 6",
+      "assignedTo": "Garrick"
+    },{
+      "name": "Hoth Rebel Soldier",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_rebelhoth.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "Maath"
+    }, {
+      "name": "B1",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_b1.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "GRANJEDI Tito1"
+    },{
       "name": "Old Boba",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
       "relic": "Reliquia 7",
