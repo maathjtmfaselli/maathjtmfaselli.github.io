@@ -1,47 +1,50 @@
 Equipo Defensa	Omi Defensa	PG Defensa	Counter	Omi Counter	PG Counter	Puntos	OK KO	Multiplicador	Observaciones
 Phasma	SI		Talzin	NO			OK
-Phasma	SI		CLS	NO			OK
+Phasma	SI		Grievous	NO			OK
+Phasma	SI		CLS	NO			OK	2
 Phasma	SI		Rex (normal)	NO			OK
 Phasma	SI		Padme	NO			OK
-Phasma	SI		Reina	NO			OK		
-Phasma	SI		Bane	NO			OK		
-Phasma	SI		Drevan	NO			OK		
 Phasma	SI		Maul	NO		20	OK	2	0
-Phasma	SI		Grievous	NO			OK		
-Phasma	SI		CLS	NO			OK		
-Phasma	SI		Gungan	NO			OK		
-Phasma	SI		Traya	NO			KO		
-Phasma	SI		Wrevan	NO			KO		
-Malgus			GAS				OK		
-Boba	3	138	Veers		122	20	OK		En general, contra todos los cazarrecompensas, solo con 3 reliquias
-Geo	SI		GAS	NO			OK		
-Geo	SI		Gungans	NO	160	20	OK	2	
-Geo	SI		Reina	NO		20	OK		
-Geo	SI		Greivous	SI		20	OK		
-Geo	SI		Traya	NO			ZERO		
-Geo	SI		Talzin	NO			ZERO	2	A veces timeout
-Geo	SI		Rogue One				OK		A veces timeout
-Geo	SI	120	GAS		140	19	OK	2	
-Geo	SI	104	Traya		142	20	OK		Anda más justo de lo que parece
-Geo	NO	140	Talzin		140	20	OK		
-Geo	SI	113	CLS		163	0	NO		
-Geo	SI		Starkiller			20	OK		
+Phasma	SI		Reina	NO			OK
+Phasma	SI		Bane	NO			OK
+Phasma	SI		Drevan	NO			OK
+Phasma	SI		Gungan	NO			OK
+Phasma	SI		Traya	NO			KO
+Phasma	SI		Wrevan	NO			KO
+Geo	SI	120	GAS		140	19	OK	3
+Geo	SI		Gungans	NO	160	20	OK	2
+Geo	SI		Reina	NO		20	OK
+Geo	SI		Greivous	SI		20	OK
+Geo	SI		Starkiller			20	OK
 Geo	SI	113	Rogue One		138	19	OK		A veces timeout
+Geo	SI		Traya	NO			OK		gos 104 vs traya 142; geos r3 vs trio r5
+Geo	SI		Talzin	NO			ZERO	2	A veces timeout
+Geo	SI	113	CLS		163	0	KO
 Geo	SI	100	Jawa				KO		Solo un Jawa a reliquia
-Reina	NO		EES				OK		Con wat
-Reina	NO		501				OK		
-Reva			Bane			19	OK		
+Geo	NO	140	Talzin		140	20	OK
+Grievous	SI	122	Rogue One		132	20	OK
+Grievous	SI		Talzin				OK		Ojo contra el datacron de grievous
+Grievous	SI		Kelleran	SI		20	OK
+Reva			Bane			19	OK
 Reva			Reina			20	OK		Solo trío de la reina
-Reva			Cere				KO		
-Reva			Malgus				OK		
+Reva			Cere				KO
+Reva			Malgus				OK
 Reva			EES				KO		Con wat
 Reva			EES				OK		Con malak
 Reva			Jabba				OK
 Reva			Leia				OK
 Lord Vader			Bo Katan				OK
-Grievous	SI	122	Rogue One		132	20	OK
-Rey			Kenobi				OK		
-Rey			Leia				OK		
+Lord Vader			Bo Katan				OK
+Malgus			GAS				OK
+Imperio sith 			Rogue One				OK
+Grandes Madres			SLKR				OK		Pero justo
+Reina	NO		501				OK
+Boba	3	138	Veers		122	20	OK		En general, contra todos los cazarrecompensas, solo con 3 reliquias
+Kelleran	SI		EES				OK
+Rey			Kenobi				OK
+Rey			Leia				OK
 Rey			JMLS				OK		Con jedi knight cal kestis
 Rey	NO		Starkiller	3			KO		Cayeron 2 enemigos, estaba Ben, no estaba Ezra
 Rey			SLKR				OK		Con rey oscura
+Ahsoka			Leia				OK		No llevaba Ezra
+Jabba			Aphra				OK		Aphra con datacron
