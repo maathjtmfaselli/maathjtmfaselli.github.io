@@ -7,12 +7,12 @@ Mustafar	1	Dark	1	Darth Sion	10
 Mustafar	1	Dark	1	Emperador Palpatine	44
 Mustafar	1	Dark	1	Geonosian Spy's Starfighter	45
 Mustafar	1	Dark	1	General Grievous	36
-Mustafar	1	Dark	1	Gamorrean Guard	8
+Mustafar	1	Dark	1	Gamorrean Guard	9
 Mustafar	1	Dark	1	Darth Maul	21
 Mustafar	1	Dark	1	Chimaera	44
 Mustafar	1	Dark	1	Gauntlet Starfighter	35
 Mustafar	1	Dark	1	Imperial Probe Droid	3	Mik Bat	maath	Garrick
-Mustafar	1	Dark	1	Imperial Super Commando	7
+Mustafar	1	Dark	1	Imperial Super Commando	8
 Mustafar	1	Dark	1	Ugnaught	3	maath	josmartini	Chinapowers
 Mustafar	1	Dark	2	Grand Admiral Thrawn	38
 Mustafar	1	Dark	2	Jango Fett	30
@@ -48,7 +48,7 @@ Mustafar	1	Dark	4	Darth Revan	28
 Mustafar	1	Dark	4	Darth Sion	10
 Mustafar	1	Dark	4	General Grievous	36
 Mustafar	1	Dark	4	Hound's Tooth	43
-Mustafar	1	Dark	4	Dark Trooper	8
+Mustafar	1	Dark	4	Dark Trooper	9
 Mustafar	1	Dark	4	Grand Admiral Thrawn	38
 Mustafar	1	Dark	4	IG-86 Sentinel Droid	1	Mik Bat
 Mustafar	1	Dark	4	General Grievous	36
@@ -60,12 +60,12 @@ Mustafar	1	Dark	4	Darth Traya	12
 Mustafar	1	Dark	4	0-0-0	10
 Mustafar	1	Dark	4	B1 Battle Droid	18
 Mustafar	1	Dark	5	Chimaera	44
-Mustafar	1	Dark	5	Canderous Ordo	7
+Mustafar	1	Dark	5	Canderous Ordo	8
 Mustafar	1	Dark	5	Darth Traya	12
 Mustafar	1	Dark	5	First Order SF TIE Pilot	12
 Mustafar	1	Dark	5	Nightsister Initiate	1	Mik Bat
 Mustafar	1	Dark	5	Emperador Palpatine	44
-Mustafar	1	Dark	5	Tusken Shaman	6
+Mustafar	1	Dark	5	Tusken Shaman	7
 Mustafar	1	Dark	5	Darth Traya	12
 Mustafar	1	Dark	5	Mara Jade	31
 Mustafar	1	Dark	5	0-0-0	10
@@ -75,7 +75,7 @@ Mustafar	1	Dark	5	Darth Traya	12
 Mustafar	1	Dark	5	Boba Fett	35
 Mustafar	1	Dark	5	Droideka	12
 Mustafar	1	Dark	6	Darth Revan	28
-Mustafar	1	Dark	6	Canderous Ordo	7
+Mustafar	1	Dark	6	Canderous Ordo	8
 Mustafar	1	Dark	6	Wat Tambor	28
 Mustafar	1	Dark	6	Imperial TIE Fighter	43
 Mustafar	1	Dark	6	Darth Vader	45
@@ -92,7 +92,7 @@ Mustafar	1	Dark	6	Count Dooku	38
 Corellia	1	Neutral	1	Commander Ahsoka Tano	19
 Corellia	1	Neutral	1	Chewbacca	36
 Corellia	1	Neutral	1	Jedi Knight Revan	28
-Corellia	1	Neutral	1	Eeth Koth	5
+Corellia	1	Neutral	1	Eeth Koth	6
 Corellia	1	Neutral	1	Darth Traya	12
 Corellia	1	Neutral	1	Boba Fett, Scion of Jango	9
 Corellia	1	Neutral	1	Grand Admiral Thrawn	38
@@ -148,7 +148,7 @@ Corellia	1	Neutral	4	Commander Ahsoka Tano	19
 Corellia	1	Neutral	4	C-3P0	34
 Corellia	1	Neutral	4	Darth Traya	12
 Corellia	1	Neutral	4	Plo Koon's Jedi Startfighter	39
-Corellia	1	Neutral	4	T3-M4	8
+Corellia	1	Neutral	4	T3-M4	9
 Corellia	1	Neutral	5	Razor Crest	40
 Corellia	1	Neutral	5	Chewbacca	36
 Corellia	1	Neutral	5	General Kenobi	40
@@ -163,7 +163,7 @@ Corellia	1	Neutral	5	Boba Fett, Scion of Jango	9
 Corellia	1	Neutral	5	R2-D2	33
 Corellia	1	Neutral	5	Han Solo	35
 Corellia	1	Neutral	5	Geonosian Brood Alpha	13
-Corellia	1	Neutral	5	Colonel Starck	9
+Corellia	1	Neutral	5	Colonel Starck	10
 Corellia	1	Neutral	6	TIE/IN Interceptor Prototype	24
 Corellia	1	Neutral	6	The Mandalorian (Beskar Armor)	10
 Corellia	1	Neutral	6	Imperial Probe Droid	3	Mik Bat	maath	Garrick
@@ -248,7 +248,7 @@ Coruscant	1	Luminoso	5	Jedi Knight Luke Skywalker	35
 Coruscant	1	Luminoso	5	Commander Luke Skywalker	32
 Coruscant	1	Luminoso	5	Hermit Yoda	33
 Coruscant	1	Luminoso	5	Teebo	2	maath	Garrick
-Coruscant	1	Luminoso	5	Kuiil	8
+Coruscant	1	Luminoso	5	Kuiil	9
 Coruscant	1	Luminoso	5	Jedi Knight Luke Skywalker	35
 Coruscant	1	Luminoso	5	The Mandalorian (Beskar Armor)	10
 Coruscant	1	Luminoso	5	General Kenobi	40
@@ -263,7 +263,7 @@ Coruscant	1	Luminoso	6	General Skywalker	32
 Coruscant	1	Luminoso	6	Grand Master Yoda	34
 Coruscant	1	Luminoso	6	Hermit Yoda	33
 Coruscant	1	Luminoso	6	Amilyn Holdo	21
-Coruscant	1	Luminoso	6	Zaalbar	3	GRANJEDI Tito1	josmartini	Mou topor
+Coruscant	1	Luminoso	6	Zaalbar	4	GRANJEDI Tito1	josmartini	Mou topor	Daimon Tlan
 Coruscant	1	Luminoso	6	General Skywalker	32
 Coruscant	1	Luminoso	6	Jedi Knight Revan	28
 Coruscant	1	Luminoso	6	Rebel Officer Leia Organa	20
@@ -274,7 +274,7 @@ Geonosis	2	Dark	1	Scythe	17
 Geonosis	2	Dark	1	Darth Revan	23
 Geonosis	2	Dark	1	Imperial Probe Droid	2	maath	Garrick
 Geonosis	2	Dark	1	Scimitar
-Geonosis	2	Dark	1	Maul	8
+Geonosis	2	Dark	1	Maul	9
 Geonosis	2	Dark	1	Boba Fett, Scion of Jango	7
 Geonosis	2	Dark	1	Chimaera	44
 Geonosis	2	Dark	1	Wat Tambor
@@ -284,7 +284,7 @@ Geonosis	2	Dark	1	Scythe	17
 Geonosis	2	Dark	1	Starkiller	10
 Geonosis	2	Dark	1	Imperial Probe Droid	2	maath	Garrick
 Geonosis	2	Dark	1	HK-47	10
-Geonosis	2	Dark	2	Maul	8
+Geonosis	2	Dark	2	Maul	9
 Geonosis	2	Dark	2	Scythe	17
 Geonosis	2	Dark	2	Darth Revan	23
 Geonosis	2	Dark	2	Darth Talon	2	maath	josmartini
@@ -303,7 +303,7 @@ Geonosis	2	Dark	3	Darth Malgus
 Geonosis	2	Dark	3	Boba Fett, Scion of Jango	7
 Geonosis	2	Dark	3	Chimaera
 Geonosis	2	Dark	3	Grand Admiral Thrawn
-Geonosis	2	Dark	3	Asajj Ventress	4	GRANJEDI Tito1	Pas Pain	Chinapowers	Biobof
+Geonosis	2	Dark	3	Asajj Ventress	3	GRANJEDI Tito1	Biobof	Chinapowers
 Geonosis	2	Dark	3	Scythe
 Geonosis	2	Dark	3	TIE/IN Interceptor Prototype
 Geonosis	2	Dark	3	Emperador Palpatine
@@ -313,7 +313,7 @@ Geonosis	2	Dark	3	Supreme Leader Kylo Ren
 Geonosis	2	Dark	3	TIE/IN Interceptor Prototype
 Geonosis	2	Dark	3	Malak
 Geonosis	2	Dark	3	Darth Revan
-Geonosis	2	Dark	3	General Veers	1	maath
+Geonosis	2	Dark	3	General Veers	2	maath	Daimon Tlan
 Geonosis	2	Dark	4	Grand Inquisitor
 Geonosis	2	Dark	4	TIE/IN Interceptor Prototype
 Geonosis	2	Dark	4	Darth Revan
@@ -335,7 +335,7 @@ Geonosis	2	Dark	5	Emperador Palpatine
 Geonosis	2	Dark	5	Colonel Starck	1	maath
 Geonosis	2	Dark	5	Malevolence
 Geonosis	2	Dark	5	Starkiller
-Geonosis	2	Dark	5	Maul	8
+Geonosis	2	Dark	5	Maul	9
 Geonosis	2	Dark	5	Grand Admiral Thrawn
 Geonosis	2	Dark	5	B2	3	GRANJEDI Tito1	maath	Biobof
 Geonosis	2	Dark	5	Magmatrooper	1	Blas
@@ -348,14 +348,14 @@ Geonosis	2	Dark	6	Grand Inquisitor
 Geonosis	2	Dark	6	Darth Malgus
 Geonosis	2	Dark	6	Scythe
 Geonosis	2	Dark	6	Emperador Palpatine
-Geonosis	2	Dark	6	Death Trooper	1	Gita
+Geonosis	2	Dark	6	Death Trooper	2	Gita	Daimon Tlan
 Geonosis	2	Dark	6	Malak
 Geonosis	2	Dark	6	TIE/IN Interceptor Prototype	24
 Geonosis	2	Dark	6	Grand Admiral Thrawn
 Geonosis	2	Dark	6	Chimaera
 Geonosis	2	Dark	6	Hyena Bomber
 Geonosis	2	Dark	6	Executor
-Geonosis	2	Dark	6	Maul	8
+Geonosis	2	Dark	6	Maul	9
 Geonosis	2	Dark	6	Boba Fett, Scion of Jango	7
 Geonosis	2	Dark	6	Darth Revan	23
 Geonosis	2	Dark	6	Kylo Ren's Command Shuttle
@@ -383,14 +383,14 @@ Felucia	2	Neutral	2	Jedi Knight Luke Skywalker	34
 Felucia	2	Neutral	2	TIE/IN Interceptor Prototype	24
 Felucia	2	Neutral	2	Scythe	17
 Felucia	2	Neutral	2	Emperor's Shuttle	17
-Felucia	2	Neutral	2	Embo	8
+Felucia	2	Neutral	2	Embo	9
 Felucia	2	Neutral	2	Jedi Master Luke Skywalker
 Felucia	2	Neutral	2	Commander Ahsoka Tano
-Felucia	2	Neutral	2	Maul	8
+Felucia	2	Neutral	2	Maul	9
 Felucia	2	Neutral	2	Jawa	1	maath
 Felucia	2	Neutral	2	Zaalbar	1	josmartini
 Felucia	2	Neutral	3	Jedi Knight Luke Skywalker
-Felucia	2	Neutral	3	Maul	8
+Felucia	2	Neutral	3	Maul	9
 Felucia	2	Neutral	3	Scythe
 Felucia	2	Neutral	3	Wat Tambor
 Felucia	2	Neutral	3	General Hux
@@ -405,24 +405,24 @@ Felucia	2	Neutral	3	Ben Solo
 Felucia	2	Neutral	3	Rebel Officer Leia Organa	9
 Felucia	2	Neutral	3	Snowtrooper	2	Temnyy	josmartini
 Felucia	2	Neutral	4	General Skywalker
-Felucia	2	Neutral	4	Maul	8
+Felucia	2	Neutral	4	Maul	9
 Felucia	2	Neutral	4	Malgus
 Felucia	2	Neutral	4	Rebel Officer Leia Organa
 Felucia	2	Neutral	4	Count Dooku
 Felucia	2	Neutral	4	Grand Inquisitor
 Felucia	2	Neutral	4	Boba Fett, Scion of Jango	7
-Felucia	2	Neutral	4	Maul	8
+Felucia	2	Neutral	4	Maul	9
 Felucia	2	Neutral	4	Yoda Hermit	7
-Felucia	2	Neutral	4	Kuiil	1	josmartini
+Felucia	2	Neutral	4	Kuiil	2	josmartini	Daimon Tlan
 Felucia	2	Neutral	4	Supreme Leader Kylo Ren
 Felucia	2	Neutral	4	TIE/IN Interceptor Prototype
 Felucia	2	Neutral	4	Scythe
 Felucia	2	Neutral	4	Logray	3	R3C0	JediSevillano	josmartini
-Felucia	2	Neutral	4	General Veers	1	maath
+Felucia	2	Neutral	4	General Veers	2	maath	Daimon Tlan
 Felucia	2	Neutral	5	Grand Inquisitor
 Felucia	2	Neutral	5	Malgus
 Felucia	2	Neutral	5	Scythe
-Felucia	2	Neutral	5	Embo	8
+Felucia	2	Neutral	5	Embo	9
 Felucia	2	Neutral	5	Almirante Ackbar	2	maath	josmartini
 Felucia	2	Neutral	5	General Skywalker
 Felucia	2	Neutral	5	Malgus
@@ -433,7 +433,7 @@ Felucia	2	Neutral	5	Rey
 Felucia	2	Neutral	5	Commander Ahsoka Tano
 Felucia	2	Neutral	5	Razor Crest
 Felucia	2	Neutral	5	Bastila Shan
-Felucia	2	Neutral	5	Death Trooper	1	Gita
+Felucia	2	Neutral	5	Death Trooper	2	Gita	Daimon Tlan
 Felucia	2	Neutral	6	Starkiller
 Felucia	2	Neutral	6	Boba Fett, Scion of Jango	7
 Felucia	2	Neutral	6	Malgus
@@ -468,7 +468,7 @@ Bracca	2	Luminoso	2	Young Han Solo	3	Mik Bat	Garrick	Chinapowers
 Bracca	2	Luminoso	2	Razor Crest
 Bracca	2	Luminoso	2	Pao	1	Gita
 Bracca	2	Luminoso	2	Chewbacca
-Bracca	2	Luminoso	2	Mon Mothma	2	R3C0	GRANJEDI Tito1
+Bracca	2	Luminoso	2	Mon Mothma	3	R3C0	GRANJEDI Tito1	Daimon Tlan
 Bracca	2	Luminoso	2	Aayla Secura	3	maath	GRANJEDI Tito1	Chinapowers
 Bracca	2	Luminoso	2	Ben Solo
 Bracca	2	Luminoso	2	Jedi Consular's Startfighter
@@ -493,7 +493,7 @@ Bracca	2	Luminoso	3	Jedi Master Kenobi
 Bracca	2	Luminoso	3	Ben Solo
 Bracca	2	Luminoso	3	Rose Tico	1	Temnyy
 Bracca	2	Luminoso	3	Grand Master Yoda
-Bracca	2	Luminoso	3	Enfys Nest	4	Viula	GRANJEDI Tito1	Dace Joy	Temnyy
+Bracca	2	Luminoso	3	Enfys Nest	5
 Bracca	2	Luminoso	4	Threepio & Chewie
 Bracca	2	Luminoso	4	Commander Ahsoka Tano
 Bracca	2	Luminoso	4	Razor Crest
@@ -548,7 +548,7 @@ Dathomir	3	Dark	1	Sith Eternal Emperor
 Dathomir	3	Dark	1	Scythe
 Dathomir	3	Dark	1	TIE/IN Interceptor Prototype
 Dathomir	3	Dark	1	Darth Traya	2	maath	Gita
-Dathomir	3	Dark	1	Dengar	3	maath	lucas
+Dathomir	3	Dark	1	Dengar	3	maath	lucas	JediSevillano
 Dathomir	3	Dark	1	Lord Vader
 Dathomir	3	Dark	1	Maul	7
 Dathomir	3	Dark	1	Malgus
@@ -563,12 +563,12 @@ Dathomir	3	Dark	2	Sith Eternal Emperor
 Dathomir	3	Dark	2	Scythe
 Dathomir	3	Dark	2	Boba Fett, Scion of Jango	6
 Dathomir	3	Dark	2	General Grievous
-Dathomir	3	Dark	2	General Hux	6
+Dathomir	3	Dark	2	General Hux	7
 Dathomir	3	Dark	2	Lord Vader
 Dathomir	3	Dark	2	Maul	7
 Dathomir	3	Dark	2	TIE/IN Interceptor Prototype
 Dathomir	3	Dark	2	Imperial Probe Droid	0
-Dathomir	3	Dark	2	Tusken Raider	6
+Dathomir	3	Dark	2	Tusken Raider	7
 Dathomir	3	Dark	3	Maul	7
 Dathomir	3	Dark	3	Malgus
 Dathomir	3	Dark	3	Wat Tambor
@@ -587,7 +587,7 @@ Dathomir	3	Dark	3	Sith Assassin	3	Blas	Mariskal101DA	PequeñoPadawan
 Dathomir	3	Dark	4	Scythe	17
 Dathomir	3	Dark	4	Maul	7
 Dathomir	3	Dark	4	Darth Revan
-Dathomir	3	Dark	4	Dengar	2	maath	lucas
+Dathomir	3	Dark	4	Dengar	3	maath	lucas	JediSevillano
 Dathomir	3	Dark	4	Cad Bane	3	maath	PequeñoPadawan		Mik Bat
 Dathomir	3	Dark	4	Lord Vader
 Dathomir	3	Dark	4	Boba Fett, Scion of Jango	6
@@ -601,7 +601,7 @@ Dathomir	3	Dark	4	Sith Trooper
 Dathomir	3	Dark	4	TIE Advanced x1
 Dathomir	3	Dark	5	TIE/IN Interceptor Prototype
 Dathomir	3	Dark	5	Malgus
-Dathomir	3	Dark	5	Grand Admiral Thrawn	7
+Dathomir	3	Dark	5	Grand Admiral Thrawn	8
 Dathomir	3	Dark	5	Seventh Sister
 Dathomir	3	Dark	5	First Order SF TIE Pilot	0
 Dathomir	3	Dark	5	Sith Eternal Emperor
@@ -622,12 +622,12 @@ Dathomir	3	Dark	6	Imperial TIE Fighter
 Dathomir	3	Dark	6	Supreme Leader Kylo Ren
 Dathomir	3	Dark	6	Malgus
 Dathomir	3	Dark	6	Scythe
-Dathomir	3	Dark	6	Tusken Raider	6
+Dathomir	3	Dark	6	Tusken Raider	7
 Dathomir	3	Dark	6	Aurra Sing	0
 Dathomir	3	Dark	6	Supreme Leader Kylo Ren
 Dathomir	3	Dark	6	Boba Fett, Scion of Jango	6
 Dathomir	3	Dark	6	Malgus
-Dathomir	3	Dark	6	Embo	6
+Dathomir	3	Dark	6	Embo	7
 Dathomir	3	Dark	6	Geonosian Soldier's Starfighter
 Tatooine	3	Neutral	1	TIE/IN Interceptor Prototype
 Tatooine	3	Neutral	1	Razor Crest
@@ -670,9 +670,9 @@ Tatooine	3	Neutral	3	Malgus	10
 Tatooine	3	Neutral	3	Rose Tico	1	Temnyy
 Tatooine	3	Neutral	3	Ewok Scout	2	Viula	josmartini
 Tatooine	3	Neutral	3	Supreme Leader Kylo Ren
-Tatooine	3	Neutral	3	Ben Solo	7
+Tatooine	3	Neutral	3	Ben Solo	8
 Tatooine	3	Neutral	3	Maul	7
-Tatooine	3	Neutral	3	Skiff Guard (Lando Carlissian)	1	maath
+Tatooine	3	Neutral	3	Skiff Guard (Lando Carlissian)	2	maath	Daimon Tlan
 Tatooine	3	Neutral	3	Mara Jade	1	maath
 Tatooine	3	Neutral	4	Jedi Knight Luke Skywalker
 Tatooine	3	Neutral	4	Boba Fett, Scion of Jango	6
@@ -682,7 +682,7 @@ Tatooine	3	Neutral	4	Young Han Solo	1	Chinapowers
 Tatooine	3	Neutral	4	Jedi Master Luke Skywalker
 Tatooine	3	Neutral	4	Starkiller
 Tatooine	3	Neutral	4	Scythe
-Tatooine	3	Neutral	4	Resistance Hero Poe	2	Mik Bat	Hill
+Tatooine	3	Neutral	4	Resistance Hero Poe	3	Mik Bat	Hill	Daimon Tlan
 Tatooine	3	Neutral	4	Coruscant Underworld Police	4	Mik Bat	Cal Kestis	Garrick	Nami88
 Tatooine	3	Neutral	4	Jedi Master Kenobi
 Tatooine	3	Neutral	4	Malak
@@ -708,7 +708,7 @@ Tatooine	3	Neutral	6	Malak
 Tatooine	3	Neutral	6	Boba Fett, Scion of Jango	6
 Tatooine	3	Neutral	6	TIE/IN Interceptor Prototype
 Tatooine	3	Neutral	6	Hondo Ohnaka	6
-Tatooine	3	Neutral	6	Barriss Offee	2	maath	Marblagar
+Tatooine	3	Neutral	6	Barriss Offee	3	maath	Marblagar	GRANJEDI Tito1
 Tatooine	3	Neutral	6	Sith Eternal Emperor
 Tatooine	3	Neutral	6	Jedi Knight Luke Skywalker
 Tatooine	3	Neutral	6	Maul	7
@@ -717,7 +717,7 @@ Tatooine	3	Neutral	6	First Order SF TIE Fighter
 Tatooine	3	Neutral	6	Supreme Leader Kylo Ren
 Tatooine	3	Neutral	6	Jedi Knight Luke Skywalker
 Tatooine	3	Neutral	6	Malgus
-Tatooine	3	Neutral	6	Resistance Hero Finn	4	Biobof	Mik Bat	Mariskal101DA	Hill
+Tatooine	3	Neutral	6	Resistance Hero Finn	5
 Tatooine	3	Neutral	6	Obi-Wan Kenobi (Old Ben)	3	maath		R3C0	Mik Bat
 Kashyyyk	3	Luminoso	1	Commander Ahsoka Tano
 Kashyyyk	3	Luminoso	1	R2-D2
@@ -756,18 +756,18 @@ Kashyyyk	3	Luminoso	3	Clone Sergeant - Phase I	1	R3C0
 Kashyyyk	3	Luminoso	3	General Kenobi
 Kashyyyk	3	Luminoso	3	Jedi Master Luke Skywalker
 Kashyyyk	3	Luminoso	3	Han's Millennium Falcon
-Kashyyyk	3	Luminoso	3	Rebel Officer Leia Organa	4	Chinapowers	Hill	GRANJEDI Tito1	Biobof
+Kashyyyk	3	Luminoso	3	Rebel Officer Leia Organa	5
 Kashyyyk	3	Luminoso	3	Ben Solo	7
 Kashyyyk	3	Luminoso	3	Grand Master Yoda
 Kashyyyk	3	Luminoso	3	Jedi Master Luke Skywalker
 Kashyyyk	3	Luminoso	3	R2-D2
-Kashyyyk	3	Luminoso	3	Rebel Officer Leia Organa	4	Chinapowers	Hill	GRANJEDI Tito1	Biobof
+Kashyyyk	3	Luminoso	3	Rebel Officer Leia Organa	5
 Kashyyyk	3	Luminoso	3	Razor Crest
-Kashyyyk	3	Luminoso	3	Skiff Guard (Lando Carlissian)	1	maath
+Kashyyyk	3	Luminoso	3	Skiff Guard (Lando Carlissian)	2	maath	Daimon Tlan
 Kashyyyk	3	Luminoso	4	Commander Ahsoka Tano	12
 Kashyyyk	3	Luminoso	4	BB-8
 Kashyyyk	3	Luminoso	4	R2-D2
-Kashyyyk	3	Luminoso	4	CT-5555 "Fives"	9
+Kashyyyk	3	Luminoso	4	CT-5555 "Fives"	10
 Kashyyyk	3	Luminoso	4	Logray	2	R3C0	josmartini
 Kashyyyk	3	Luminoso	4	Rey
 Kashyyyk	3	Luminoso	4	C-3P0
@@ -777,7 +777,7 @@ Kashyyyk	3	Luminoso	4	Greef Karga	2	maath	josmartini
 Kashyyyk	3	Luminoso	4	Rey
 Kashyyyk	3	Luminoso	4	Han's Millennium Falcon
 Kashyyyk	3	Luminoso	4	Razor Crest
-Kashyyyk	3	Luminoso	4	Resistance Trooper	0
+Kashyyyk	3	Luminoso	4	Resistance Trooper	1	josmartini
 Kashyyyk	3	Luminoso	4	Hoth Rebel Scout	1	maath
 Kashyyyk	3	Luminoso	5	Ben Solo	7
 Kashyyyk	3	Luminoso	5	C-3P0
@@ -802,7 +802,7 @@ Kashyyyk	3	Luminoso	6	Han Solo
 Kashyyyk	3	Luminoso	6	Rey
 Kashyyyk	3	Luminoso	6	Jedi Knight Revan
 Kashyyyk	3	Luminoso	6	Ben Solo	7
-Kashyyyk	3	Luminoso	6	Resistance Trooper	0
+Kashyyyk	3	Luminoso	6	Resistance Trooper	1	josmartini
 Kashyyyk	3	Luminoso	6	Han's Millennium Falcon
 Kashyyyk	3	Luminoso	6	Jedi Master Luke Skywalker
 Kashyyyk	3	Luminoso	6	Padmé Amidala
