@@ -15,11 +15,6 @@
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_probedroid.png",
       "relic": "Reliquia 7",
       "assignedTo": "Maath"
-    }, {
-      "name": "Resistance Trooper",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_resistancetrooper.png",
-      "relic": "Reliquia 7",
-      "assignedTo": ""
     }
   ],
   "charactersToUpgrade": [
@@ -57,11 +52,16 @@
   ],
   "upgradedCharacters": [
     {
+      "name": "Resistance Trooper",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_resistancetrooper.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "josmartini"
+    },{
       "name": "Imperial Probe Droid",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_probedroid.png",
       "relic": "Reliquia 6",
       "assignedTo": "Garrick"
-    },{
+    }, {
       "name": "Hoth Rebel Soldier",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_rebelhoth.png",
       "relic": "Reliquia 7",
