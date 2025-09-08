@@ -13,17 +13,29 @@
       "zeffo": "x/x/7",
       "corellia": "x/x/3"
     },{
-      "fecha": "01/09/2025",
+      "fecha": "15/09/2025",
       "pg": "483M",
       "estrellas": "",
       "noDesplegados": "/////",
-      "pelotones": "/48",
+      "pelotones": "/49",
       "reva": "x/x/22",
       "mandalor": "x/x/13",
-      "dathomir": "x/x/1",
+      "dathomir": "x/x/2",
       "kashyyyk": "x/x/1",
-      "zeffo": "x/x/7",
+      "zeffo": "x/x/8",
       "corellia": "x/x/3"
+    },{
+      "fecha": "01/09/2025",
+      "pg": "501M",
+      "estrellas": "30",
+      "noDesplegados": "64/78/107/77/75/35",
+      "pelotones": "49/49",
+      "reva": "7/18/22",
+      "mandalor": "8/10/13",
+      "dathomir": "0/2/2",
+      "kashyyyk": "1/1/1",
+      "zeffo": "4/8/8",
+      "corellia": "0/3/3"
     },{
       "fecha": "18/08/2025",
       "pg": "483M",

@@ -11,10 +11,30 @@
       "relic": "Reliquia 7",
       "assignedTo": "Maath"
     }, {
-      "name": "Imperial Probe Droid",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_probedroid.png",
+      "name": "Talia",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_nightsister_talia.png",
       "relic": "Reliquia 7",
-      "assignedTo": "Maath"
+      "assignedTo": ""
+    }, {
+      "name": "Gar Saxon",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_gar_saxon.png",
+      "relic": "Reliquia 7",
+      "assignedTo": ""
+    }, {
+      "name": "First Order SF TIE Pilot",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_firstorder_pilot.png",
+      "relic": "Reliquia 7",
+      "assignedTo": ""
+    }, {
+      "name": "K2SO",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_k2so.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "Viula"
+    }, {
+      "name": "Soldado Rebelde Hoth",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_rebelhoth.png",
+      "relic": "Reliquia 7",
+      "assignedTo": ""
     }
   ],
   "charactersToUpgrade": [
@@ -52,6 +72,11 @@
   ],
   "upgradedCharacters": [
     {
+      "name": "Imperial Probe Droid",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_probedroid.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "Garrick"
+    },{
       "name": "Resistance Trooper",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_resistancetrooper.png",
       "relic": "Reliquia 7",
