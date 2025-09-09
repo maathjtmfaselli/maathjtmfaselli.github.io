@@ -44,30 +44,16 @@
       "relic": "Reliquia 6",
       "assignedTo": ""
     },{
-      "name": "Nightsiter Initiate",
+      "name": "Nightsister Initiate",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_nightsister_initiate.png",
       "relic": "Reliquia 5",
       "assignedTo": ""
     },{
-      "name": "Paploo",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_ewok_paploo.png",
-      "relic": "Reliquia 5",
-      "assignedTo": ""
-    },{
-      "name": "Death Trooper",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_trooperdeath.png",
-      "relic": "Reliquia 6",
-      "assignedTo": ""
-    },{
-      "name": "Greef Karga",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_greefkarga.png",
+      "name": "Old Boba",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
       "relic": "Reliquia 7",
       "assignedTo": ""
     },{
-      "name": "Logray",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_ewok_logray.png",
-      "relic": "Reliquia 7",
-      "assignedTo": ""
     }
   ],
   "upgradedCharacters": [
