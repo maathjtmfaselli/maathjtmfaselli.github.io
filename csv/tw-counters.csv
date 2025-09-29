@@ -1,50 +1,79 @@
-Equipo Defensa	Omi Defensa	PG Defensa	Counter	Omi Counter	PG Counter	Puntos	OK KO	Multiplicador	Observaciones
-Phasma	SI		Talzin	NO			OK
-Phasma	SI		Grievous	NO			OK
-Phasma	SI		CLS	NO			OK	2
-Phasma	SI		Rex (normal)	NO			OK
-Phasma	SI		Padme	NO			OK
-Phasma	SI		Maul	NO		20	OK	2	0
-Phasma	SI		Reina	NO			OK
-Phasma	SI		Bane	NO			OK
-Phasma	SI		Drevan	NO			OK
-Phasma	SI		Gungan	NO			OK
-Phasma	SI		Traya	NO			KO
-Phasma	SI		Wrevan	NO			KO
-Geo	SI	120	GAS		140	19	OK	3
-Geo	SI		Gungans	NO	160	20	OK	2
-Geo	SI		Reina	NO		20	OK
-Geo	SI		Greivous	SI		20	OK
-Geo	SI		Starkiller			20	OK
-Geo	SI	113	Rogue One		138	19	OK		A veces timeout
-Geo	SI		Traya	NO			OK		gos 104 vs traya 142; geos r3 vs trio r5
-Geo	SI		Talzin	NO			ZERO	2	A veces timeout
-Geo	SI	113	CLS		163	0	KO
-Geo	SI	100	Jawa				KO		Solo un Jawa a reliquia
-Geo	NO	140	Talzin		140	20	OK
-Grievous	SI	122	Rogue One		132	20	OK
-Grievous	SI		Talzin				OK		Ojo contra el datacron de grievous
-Grievous	SI		Kelleran	SI		20	OK
-Reva			Bane			19	OK
-Reva			Reina			20	OK		Solo trío de la reina
-Reva			Cere				KO
-Reva			Malgus				OK
-Reva			EES				KO		Con wat
-Reva			EES				OK		Con malak
-Reva			Jabba				OK
-Reva			Leia				OK
-Lord Vader			Bo Katan				OK
-Lord Vader			Bo Katan				OK
-Malgus			GAS				OK
-Imperio sith 			Rogue One				OK
-Grandes Madres			SLKR				OK		Pero justo
-Reina	NO		501				OK
-Boba	3	138	Veers		122	20	OK		En general, contra todos los cazarrecompensas, solo con 3 reliquias
-Kelleran	SI		EES				OK
-Rey			Kenobi				OK
-Rey			Leia				OK
-Rey			JMLS				OK		Con jedi knight cal kestis
-Rey	NO		Starkiller	3			KO		Cayeron 2 enemigos, estaba Ben, no estaba Ezra
-Rey			SLKR				OK		Con rey oscura
-Ahsoka			Leia				OK		No llevaba Ezra
-Jabba			Aphra				OK		Aphra con datacron
+Equipo Defensa	Omi Defensa	Data Defensa	PG Defensa	Counter	Omi Counter	PG Counter	Data Counter	Puntos	OK KO	Multiplicador	Observaciones
+Phasma	SI			Talzin	NO				OK
+Phasma	SI			Grievous	NO				OK
+Phasma	SI			CLS	NO				OK	3
+Phasma	SI			Rex (normal)	NO				OK
+Phasma	SI			Padme	NO				OK
+Phasma	SI			Maul	NO			20	OK	2
+Phasma	SI			Reina	NO				OK
+Phasma	SI			Bane	NO				OK
+Phasma	SI			Drevan	NO				OK
+Phasma	SI			Tusken				20	OK
+Phasma	SI			Gungan	NO				OK
+Phasma	SI			Traya	NO				KO
+Phasma	SI			Wrevan	NO				KO
+Geo	SI		120	GAS		140		19	OK	3
+Geo	SI			Gungans	NO	160		20	OK	2
+Geo	SI			Reina	NO			20	OK
+Geo	SI			Greivous	SI			20	OK
+Geo	SI			Phoenix con Rex					OK	19
+Geo	SI			Starkiller				20	OK
+Geo	SI		113	Rogue One		138		19	OK		A veces timeout
+Geo	SI			Traya	NO				OK		gos 104 vs traya 142; geos r3 vs trio r5
+Geo	SI			Talzin	NO				ZERO	2	A veces timeout
+Geo	SI		100	Jawa					ZERO
+Geo	SI		113	CLS		163		0	KO
+Geo	NO		140	Talzin		140		20	OK
+Grievous	SI		122	Rogue One		132		20	OK
+Grievous	SI			Talzin					OK		Ojo contra el datacron de grievous
+Grievous	SI			Gungans				20	OK		Sin jar jar
+Grievous	SI			Kelleran	SI			20	OK
+Grievous	NO			Wrevan				20	OK
+Reva				Bane				19	OK
+Reva				Reina				20	OK		Solo trío de la reina
+Reva				Bo Katan					OK		A veces time out
+Reva				Malgus					OK
+Reva				EES					OK		Con malak
+Reva				Jabba					OK
+				LV					OK		Con clones
+Reva				Leia					OK
+Reva	NO	NO		GAS					OK
+Reva				Cere					KO
+Reva				EES					KO		Con wat
+Grand Inquisidor	SI			Bo Katan					OK
+Grand Inquisidor	NO			Rogue One					OK
+Lord Vader				Bo Katan					OK
+Lord Vader				Bo Katan					OK
+Malgus				GAS					OK
+Imperio sith 				Rogue One					OK
+Grandes Madres				SLKR					OK		Pero justo
+Reina	2			Talzin+Merrin					OK
+Reina	NO			GAS					OK
+Reina				Gungans	1		1		KO
+Reina				Bo Katan					KO
+Reina				Starkiller					KO
+Reina				Drevan					KO
+Reina				Enoch					KO
+Reina				CLS					KO		Tira a 1
+Reina				Gran Inquisidor	1		1		KO		Tira a 1
+Reina				Cere					KO
+Reina	NO		r9	Bane		r7			KO		Cayó la reina
+Reina	NO			Traya					KO
+Boba old	3		138	Veers		122		20	OK		En general, contra todos los cazarrecompensas, solo con 3 reliquias
+Kelleran	SI			EES					OK
+Kelleran	SI	SI		Malgus					KO
+Kelleran	SI	SI		Bo Katan					KO
+JM Mace Windu				JM Kenobi					OK
+Rey				JM Kenobi					OK
+Rey				Leia					OK
+Rey				JMLS					OK		Con jedi knight cal kestis
+Rey	NO			Cere					KO		Ezra
+Rey			147k	Cere					KO		Sin Ezra, Ben a r5
+Rey			161k	Starkiller					OK		No Ezra, Ben a r1
+Rey	NO			Starkiller	3				KO		Cayeron 2 enemigos, estaba Ben, no estaba Ezra
+Rey				SLKR					OK		Con rey oscura
+JM Kenobi				Leia					OK
+JMLS				EES					OK
+JMLS				Bane					OK		Pero justo
+Ahsoka				Leia					OK		No llevaba Ezra
+Jabba				Aphra					OK		Aphra con datacron
