@@ -1,11 +1,6 @@
 {
   "topPriorityCharacters": [
     {
-      "name": "Imperial Probe Droid",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_probedroid.png",
-      "relic": "Reliquia 7",
-      "assignedTo": "Maath"
-    },{
       "name": "Aurra Sing",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_aurrasing.png",
       "relic": "Reliquia 7",
@@ -15,11 +10,6 @@
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_krennic.png",
       "relic": "Reliquia 7",
       "assignedTo": "Maath"
-    }, {
-      "name": "Talia",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_nightsister_talia.png",
-      "relic": "Reliquia 7",
-      "assignedTo": ""
     }, {
       "name": "Gar Saxon",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_gar_saxon.png",
@@ -49,8 +39,8 @@
       "relic": "Reliquia 6",
       "assignedTo": ""
     },{
-      "name": "Old Boba",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
+      "name": "Imperial Probe Droid",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_probedroid.png",
       "relic": "Reliquia 6",
       "assignedTo": ""
     },{
@@ -68,6 +58,16 @@
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
       "relic": "Reliquia 6",
       "assignedTo": ""
+    },{
+      "name": "Old Boba",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
+      "relic": "Reliquia 6",
+      "assignedTo": ""
+    },{
+      "name": "Imperial Probe Droid",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_probedroid.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "Maath"
     },{
       "name": "Nightsister Initiate",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_nightsister_initiate.png",
@@ -77,10 +77,15 @@
   ],
   "upgradedCharacters": [
     {
+      "name": "Talia",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_nightsister_talia.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "GRANJEDI Tito1"
+    }, {
       "name": "Ki-Adi-Mundi",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_kiadimundi.png",
       "relic": "Reliquia 7",
-      "assignedTo": "Marblagar",
+      "assignedTo": "Marblagar"
     },{
       "name": "Imperial Probe Droid",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_probedroid.png",
