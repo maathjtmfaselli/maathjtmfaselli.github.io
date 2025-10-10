@@ -20,6 +20,11 @@
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_rebelhoth.png",
       "relic": "Reliquia 7",
       "assignedTo": ""
+    }, {
+      "name": "Qi'ra",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_qira.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "maath"
     }
   ],
   "charactersToUpgrade": [
