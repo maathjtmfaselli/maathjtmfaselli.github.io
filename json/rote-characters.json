@@ -5,22 +5,17 @@
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_gar_saxon.png",
       "relic": "Reliquia 7",
       "assignedTo": ""
-    }, {
+    },{
       "name": "First Order SF TIE Pilot",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_firstorder_pilot.png",
       "relic": "Reliquia 7",
       "assignedTo": ""
-    }, {
-      "name": "K2SO",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_k2so.png",
-      "relic": "Reliquia 7",
-      "assignedTo": "Viula, Daimon"
-    }, {
+    },{
       "name": "Soldado Rebelde Hoth",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_rebelhoth.png",
       "relic": "Reliquia 7",
       "assignedTo": ""
-    }, {
+    },{
       "name": "Qi'ra",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_qira.png",
       "relic": "Reliquia 7",
@@ -67,16 +62,26 @@
   ],
   "upgradedCharacters": [
     {
+      "name": "Ki-Adi-Mundi",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_kiadimundi.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "Gita"
+    },{
+      "name": "K2SO",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_k2so.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "Daimon Tlan"
+    },{
       "name": "Aurra Sing",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_aurrasing.png",
       "relic": "Reliquia 7",
       "assignedTo": "Maath"
-    }, {
+    },{
       "name": "Director Krennic",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_krennic.png",
       "relic": "Reliquia 7",
       "assignedTo": "Maath"
-    }, {
+    },{
       "name": "Imperial Probe Droid",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_probedroid.png",
       "relic": "Reliquia 7",
@@ -86,7 +91,7 @@
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_nightsister_talia.png",
       "relic": "Reliquia 7",
       "assignedTo": "GRANJEDI Tito1"
-    }, {
+    },{
       "name": "Ki-Adi-Mundi",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_kiadimundi.png",
       "relic": "Reliquia 7",

@@ -1,17 +1,29 @@
 {
   "historicalResults": [
     {
-      "fecha": "13/10/2025",
-      "pg": "509M",
+      "fecha": "27/10/2025",
+      "pg": "523M",
       "estrellas": "",
       "noDesplegados": "/////",
-      "pelotones": "/49",
-      "reva": "x/x/24",
-      "mandalor": "x/x/13",
+      "pelotones": "/52",
+      "reva": "x/x/25",
+      "mandalor": "x/x/15",
       "dathomir": "x/x/3",
-      "kashyyyk": "x/x/1",
-      "zeffo": "x/x/8",
-      "corellia": "x/x/5"
+      "kashyyyk": "x/x/2",
+      "zeffo": "x/x/13",
+      "corellia": "x/x/4"
+    },{
+      "fecha": "13/10/2025",
+      "pg": "523M",
+      "estrellas": "",
+      "noDesplegados": "/////",
+      "pelotones": "/52",
+      "reva": "x/x/25",
+      "mandalor": "x/x/15",
+      "dathomir": "x/x/3",
+      "kashyyyk": "x/x/2",
+      "zeffo": "x/x/13",
+      "corellia": "x/x/4"
     },{
       "fecha": "29/09/2025",
       "pg": "509M",
