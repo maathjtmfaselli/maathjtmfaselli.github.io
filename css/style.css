@@ -76,10 +76,11 @@ ol {
 
 .priority-item {
     border: 1px solid #ccc;
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
     padding: 10px;
     border-radius: 8px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -95,18 +96,26 @@ ol {
     color: #005fa3;
 }
 
-.priority-name {
+.priority-metric {
     font-size: 1.5em;
     font-weight: bold;
     color: #ffcc80;
+    flex: 1 1 150px;
 }
 
-.priority-goal {
+.priority-target {
     font-size: 1.5em;
     font-weight: bold;
     color: #ffcc80;
+    flex: 1 1 150px;
 }
 
+.priority-progress {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffcc80;
+    flex: 1 1 150px;
+}
 .priority-pnj {
     display: flex;
     flex-direction: column;
@@ -122,13 +131,6 @@ ol {
 .pnj-portrait {
   border-radius:50%;
   border:2px solid #00bcd4;
-}
-
-.priority-players {
-    font-weight: bold;
-    margin-top: 10px;
-    font-size: 1em;
-    color: #ffcc80;
 }
 
 .priority-item::before {

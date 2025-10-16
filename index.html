@@ -8,6 +8,46 @@
     <link rel="stylesheet" href="css/alzamiento.css">
     <script src="js/dynamic-loader.js" defer></script>
     <link rel="icon" href="https://assets.swgoh.gg/files/ui/tex.guild_icon_oldrepublic_tint.00b15b7f62455726b72d.webp" type="image/x-icon">
+
+    <style>
+        .guild-priority-list {
+          max-width: 960px;
+          margin: 2rem auto;
+          padding: 0;
+          list-style: none;
+        }
+
+        /* --- Barra de progreso reutilizable --- */
+        progress::-webkit-progress-value { background:#27ae60; }   /* verde Lumo */
+        progress::-moz-progress-bar     { background:#27ae60; }
+
+        .progress-bar {
+            width: 100%;
+            height: 1.6rem;
+            background: #2c2c2c;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .progress-wrapper {
+          position: relative;
+          width: 100%;
+        }
+        .progress-wrapper progress {
+          width: 100%;
+        }
+        .progress-wrapper .progress-label {
+          position: absolute;
+          inset: 0;                     /* top/right/bottom/left = 0 */
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 0.9rem;
+          font-weight: 600;
+          color: #fff;
+          box-sizing: border-box;
+        }
+    </style>
 </head>
 <body>
 
@@ -22,102 +62,38 @@
         <p>Gremio de buen rollo, gente activa en eventos, 6M PG, 2 Leyendas, leer chat y saludar al unirse</p>
     </section>
 
-<!--    <section id="gremio">-->
-<!--        <h2>Gremio</h2>-->
-<!--        <table class="data-table">-->
-<!--            <thead>-->
-<!--            <tr>-->
-<!--                <th>&nbsp;</th>-->
-<!--                <th>NO (12)</th>-->
-<!--                <th>Padawan (18)</th>-->
-<!--                <th>Caballero Jedi (16)</th>-->
-<!--                <th>Gran Maestro Jedi (4)</th>-->
-<!--            </tr>-->
-<!--            </thead>-->
-<!--            <tbody>-->
-<!--            <tr>-->
-<!--                <td><span class="priority-goal"><a href="naboo.html">Naboo</a></span></td>-->
-<!--                <td><span class="priority-goal">(12) (==)</span></td>-->
-<!--                <td><span class="priority-goal">450k (18) (+3)</span></td>-->
-<!--                <td><span class="priority-goal">1.2M (16) (-2)</span></td>-->
-<!--                <td><span class="priority-goal">3.6M (4)</span></td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td><span class="priority-goal"><a href="guerras.html">Guerra</a></span></td>-->
-<!--                <td><span class="priority-goal">(11)</span></td>-->
-<!--                <td><span class="priority-goal">50 puntos (9)</span></td>-->
-<!--                <td><span class="priority-goal">&nbsp;</span></td>-->
-<!--                <td><span class="priority-goal">&nbsp;</span></td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td><span class="priority-goal"><a href="alzamiento.html">Alzamiento</a></span></td>-->
-<!--                <td><span class="priority-goal">(5)</span></td>-->
-<!--                <td><span class="priority-goal">Desplegar (45)</span></td>-->
-<!--                <td><span class="priority-goal">Pelotones (19)</span></td>-->
-<!--                <td><span class="priority-goal">Misiones Especiales (12)</span></td>-->
-<!--            </tr>-->
-<!--            </tbody>-->
-<!--        </table>-->
-<!--    </section>-->
-
-    <section id="prioridades">
-        <h2>Prioridades</h2>
-        <ol>
+    <section class="guild‑goals">
+        <h2>Prioridades del Gremio</h2>
+        <ol class="guild-priority-list">
             <li class="priority-item">
-                <span class="priority-name"><a href="alzamiento.html">Alzamiento</a></span>
-                <span class="priority-goal">DESPLEGAR</span>
-                <span class="priority-players">Contador: 30*</span>
+                <div class="priority-metric"><a href="templo.html">Orden 66</a></div>
+                <div class="priority-target">Caja 8 (148M)</div>
+                <div class="priority-progress">
+                    <div class="progress-wrapper">
+                        <progress class="progress-bar" value="85" max="148"></progress>
+                        <span class="progress-label">85 / 148</span>
+                    </div>
+                </div>
             </li>
             <li class="priority-item">
-                <span class="priority-name"><a href="guerras.html">Guerra</a></span>
-                <span class="priority-goal">50 puntos</span>
-                <span class="priority-players">Contador: 48</span>
+                <div class="priority-metric"><a href="alzamiento.html">Alzamiento</a></div>
+                <div class="priority-target">Zeffo</div>
+                <div class="priority-progress">
+                    <div class="progress-wrapper">
+                        <progress class="progress-bar" value="3" max="30"></progress>
+                        <span class="progress-label">3 / 30</span>
+                    </div>
+                </div>
             </li>
             <li class="priority-item">
-                <span class="priority-name"><a href="naboo.html">Orden 66</a></span>
-                <span class="priority-goal">900k</span>
-                <div class="priority-pnj">
-                    <img class="pnj-portrait" src="https://game-assets.swgoh.gg/textures/tex.charui_tarkinadmiral.png" alt="Gran Moff Tarkin">
+                <div class="priority-metric"><a href="alzamiento.html">Alzamiento</a></div>
+                <div class="priority-target">Mandalor</div>
+                <div class="priority-progress">
+                    <div class="progress-wrapper">
+                        <progress class="progress-bar" value="12" max="25"></progress>
+                        <span class="progress-label">12 / 25</span>
+                    </div>
                 </div>
-                <div class="priority-pnj">
-                    <img class="pnj-portrait" src="https://game-assets.swgoh.gg/textures/tex.charui_hondoohnaka.png" alt="Hondo Ohnaka">
-                </div>
-                <div class="priority-pnj">
-                    <img class="pnj-portrait" src="https://game-assets.swgoh.gg/textures/tex.charui_enfys.png" alt="Enfys Next">
-                </div>
-                <span class="priority-players">Contador: 35</span>
-            </li>
-            <li class="priority-item">
-                <span class="priority-name"><a href="naboo.html">Orden 66</a></span>
-                <span class="priority-goal">3M</span>
-                <div class="priority-pnj">
-                    <img class="pnj-portrait" src="https://game-assets.swgoh.gg/textures/tex.charui_kelleranbeq.png" alt="Kelleran Beq">
-                </div>
-                <div class="priority-pnj">
-                    <img class="pnj-portrait" src="https://game-assets.swgoh.gg/textures/tex.charui_omegas3.png" alt="Omega Furtiva">
-                </div>
-                <span class="priority-players">Contador: 6</span>
-            </li>
-            <li class="priority-item">
-                <span class="priority-name"><a href=alzamiento.html>Alzamiento</a></span>
-                <div class="priority-pnj">
-                    <img class="pnj-portrait" src="https://game-assets.swgoh.gg/textures/tex.charui_thirdsister.png" alt="Reva">
-                </div>
-                <div class="priority-pnj">
-                    <img class="pnj-portrait" src="https://game-assets.swgoh.gg/textures/tex.charui_mandalorbokatan.png" alt="Bo Katan Mand'alor">
-                </div>
-                <div class="priority-pnj">
-                    <img class="pnj-portrait" src="https://game-assets.swgoh.gg/textures/tex.charui_jediknightcal.png" alt="Jedi Knight Cal Kestis">
-                </div>
-                <span class="priority-players">Contador: 8</span>
-            </li>
-            <li class="priority-item">
-                <span class="priority-name"><a href="naboo.html">Orden 66</a></span>
-                <span class="priority-goal">7.2M</span>
-                <div class="priority-pnj">
-                    <img class="pnj-portrait" src="https://game-assets.swgoh.gg/textures/tex.charui_jedimastermacewindu.png" alt="Jedi Master Mace Windu">
-                </div>
-                <span class="priority-players">Contador: 1</span>
             </li>
         </ol>
     </section>
