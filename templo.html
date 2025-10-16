@@ -26,9 +26,9 @@
 
         <nav class="tab">
             <button class="tab-button" onclick="openTab('templo-generalData')">📊 Datos</button>
-            <button class="tab-button" onclick="openTab('templo-goals')">🎯 Objetivos</button>
+            <button class="tab-button active" onclick="openTab('templo-goals')">🎯 Objetivos</button>
             <button class="tab-button" onclick="openTab('templo-padawan')">🚀 Padawan</button>
-            <button class="tab-button active" onclick="openTab('templo-jedi')">🚀 Caballero Jedi</button>
+            <button class="tab-button" onclick="openTab('templo-jedi')">🚀 Caballero Jedi</button>
             <button class="tab-button" onclick="openTab('templo-master')">🚀 Maestro</button>
             <button class="tab-button" onclick="openTab('templo-maath-archive')">👥 Archivo de Maath</button>
             <button class="tab-button" onclick="openTab('templo-archive')">👥 Archivo de Gremio</button>
@@ -63,7 +63,15 @@
         </div>
 
         <div id="templo-goals" class="tab-content">
-            <a href="https://swgoh.gg/raids/order66/DIFF01/rewards/"><img src="img/order66-reward-box8.png"/></a>
+            <div class="priority-item">
+                <div class="priority-target"><a href="https://swgoh.gg/raids/order66/DIFF01/rewards/"><img src="img/order66-reward-box8.png"/></a></div>
+                <div class="priority-progress">
+                    <div class="progress-wrapper">
+                        <progress class="progress-bar" value="85" max="148"></progress>
+                        <span class="progress-label">85 / 148</span>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div id="templo-padawan" class="tab-content">

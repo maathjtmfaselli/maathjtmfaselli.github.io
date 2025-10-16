@@ -142,6 +142,6 @@ function filterTemploPnjSynergiesTable() {
 
 document.addEventListener("DOMContentLoaded", () => {
   loadTemploPnjSynergies();
-  openTab('templo-jedi');
+  openTab('templo-goals');
 //  loadNabooHistoricalResults();
 });
