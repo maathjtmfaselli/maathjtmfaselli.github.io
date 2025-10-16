@@ -272,4 +272,5 @@ document.addEventListener("DOMContentLoaded", () => {
   loadCharacterData();
   loadHistoricalResults();
   loadOperationsGuildData();
+  openTab('rote-goals');
 });

@@ -74,7 +74,7 @@ ol {
     font-family: Arial, sans-serif;
 }
 
-.guild-priority-list {
+.priority-list {
   max-width: 960px;
   margin: 2rem auto;
   padding: 0;
@@ -146,6 +146,7 @@ progress::-moz-progress-bar     { background:#27ae60; }
     font-weight: bold;
     color: #ffcc80;
     flex: 1 1 150px;
+    text-align: center;
 }
 
 .priority-progress {
