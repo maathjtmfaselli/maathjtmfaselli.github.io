@@ -74,7 +74,7 @@ ol {
     font-family: Arial, sans-serif;
 }
 
-.priority-list {
+.resource-list {
   max-width: 960px;
   margin: 2rem auto;
   padding: 0;
@@ -112,7 +112,7 @@ progress::-moz-progress-bar     { background:#27ae60; }
   box-sizing: border-box;
 }
 
-.priority-item {
+.priority-item, .resource-item {
     border: 1px solid #ccc;
     margin-bottom: 1.5rem;
     padding: 15px;
