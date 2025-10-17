@@ -32,7 +32,7 @@
 
         <div id="rote-generalData" class="tab-content">
             <div id="pointsPerPlanet" class="alzamiento-section collapsed">
-                <h3>Puntos por Planeta</h3>
+                <h3 class="alzamiento-section-header">Puntos por Planeta</h3>
                 <div class="alzamiento-section-content">
                     <table id="planet-table" class="alzamiento-table">
                         <thead>
@@ -103,7 +103,7 @@
                 </div>
             </div>
             <div id="pointsPerOperation" class="alzamiento-section collapsed">
-                <h3>Puntos por Pelotón Completado</h3>
+                <h3 class="alzamiento-section-header">Puntos por Pelotón Completado</h3>
                 <div class="alzamiento-section-content">
                     <table id="operations-table" class="alzamiento-table">
                         <thead>
@@ -134,7 +134,7 @@
                 </div>
             </div>
             <div id="rote-operations" class="alzamiento-section collapsed">
-                <h3>Pelotones</h3>
+                <h3 class="alzamiento-section-header">Pelotones</h3>
                 <div class="alzamiento-section-content">
                     <select id="planet-filter" onchange="filterTable()">
                         <option value="">Todos los planetas</option>
@@ -163,93 +163,6 @@
                         <!-- Filas generadas por JavaScript -->
                         </tbody>
                     </table>
-                </div>
-            </div>
-            <div id="missiones" class="alzamiento-section collapsed">
-                <h3>Misiones</h3>
-                <div class="alzamiento-section-content">
-                    <div class="subsection">
-                        <h4>Misiones Generales</h4>
-                        <div class="subsection-content">
-                            <p>Misiones en RotE: <a href="https://swgoh4.life/territory-battles/">videos de SWGOH4Life</a>.</p>
-                            <ul>
-                                <li><a href="https://www.youtube.com/watch?v=v5AJ8YN5E1o">Flota en Geonosis</a></li>
-                                <li><a href="https://www.youtube.com/watch?v=uHcSSLVyH1E">Flota en Mustafar</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="subsection">
-                        <h4>Reva</h4>
-                        <div class="subsection-content">
-                            <p><a href="https://www.youtube.com/watch?v=eWAIMakyzyY">video de SWGOH4Life</a> para Reva (6 intentos)</p>
-                            <p><a href="https://www.youtube.com/watch?v=sI8t5Pg3NX8">video de SWGOH4Life</a> para Reva (y Tatooine)</p>
-                            <ul>
-                                <li>Mods: Protección en lugar de Salud (porque los detonadores y Daño continuado dañan % salud)</li>
-                                <li>Primera fase: Usar la 3ª habilidad de Gran Inquisidor contra 6 acumulaciones de purga para elevar la tenacidad de todos los inquisidores (y parar las bombas).</li>
-                                <li>Segunda fase: Ability block en JMK.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="subsection">
-                        <h4>Zeffo</h4>
-                        <div class="subsection-content">
-                            <ul>
-                                <li>
-                                    <span>Zeffo es importante porque podemos conseguir más kyrotechs, que es uno de los principales cuellos de botella en este juego.</span>
-                                </li>
-                                <li>
-                                    <img src="https://game-assets.swgoh.gg/textures/tex.charui_cerejunda.png" alt="Cere Junda">
-                                    <span class="character-name">Cere Junda</span>
-                                    <span>Resistir golpes</span>
-                                    <span>&nbsp;</span>
-                                    <span>&nbsp;</span>
-                                </li>
-                                <li>
-                                    <img src="https://game-assets.swgoh.gg/textures/tex.charui_jediknightcal.png" alt="Jedi Knight Cal Kestis">
-                                    <span class="character-name">Jedi Knight Cal Kestis</span>
-                                    <span>Velocidad Sobrevivir y Potencia</span>
-                                    <span>Aplicar reducción de velocidad</span>
-                                    <span><ul><li>Fase 1: Muerte instantánea</li><li>Fase 2: Muerte instantánea</li></ul></span>
-                                </li>
-                            </ul>
-                            <table class="alzamiento-table">
-                                <thead>
-                                <tr>
-                                    <th>Autor</th>
-                                    <th>Cere</th>
-                                    <th>Jedi Knight Cal Kestis</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td><a href="https://www.youtube.com/watch?v=gxeGiS7gJvQ&pp=ygUTc3dnb2ggemVmZm8gbWlzc2lvbg%3D%3D">Scrybe Gaming</a></td>
-                                    <td>Defense</td>
-                                    <td>Speed and Potency</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="https://www.youtube.com/watch?v=jj8Z-69ecMY">Ahnald</a></td>
-                                    <td>Health</td>
-                                    <td>302 Speed, 127k Health</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="https://www.youtube.com/watch?v=EURedAd6R4I">Xaereth</a></td>
-                                    <td>Health, Defense</td>
-                                    <td>317 Speed, 116k Health</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="https://www.youtube.com/watch?v=PhNNcRweKpY">Lolindir</a></td>
-                                    <td>Velocidad, Vida, Protección</td>
-                                    <td>Vida, Vida, Potencia, 301 Speed, 115k Health, 78% Potencia</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="https://swgoh.gg/p/637461253/characters/">Maath</a></td>
-                                    <td>(Defensa, Defensa, Vida), 160 Velocidad, 66k Vida, 94k Protección, 72% Blindaje</td>
-                                    <td>(Vida, Vida, Potencia), 282 Speed, 95k Health, 91% Potencia</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -365,7 +278,7 @@
 
         <div id="rote-planning" class="tab-content active">
             <div id="prioridades" class="alzamiento-section">
-                <h3>Prioridades</h3>
+                <h3 class="alzamiento-section-header">Prioridades</h3>
                 <div class="alzamiento-section-content">
                     <ol>
                         <li>Pelotones</li>
@@ -375,7 +288,7 @@
                 </div>
             </div>
             <div id="plan33" class="alzamiento-section">
-                <h3>Alzamiento - Plan 33*</h3>
+                <h3 class="alzamiento-section-header">Alzamiento - Plan 33*</h3>
                 <div class="alzamiento-section-content">
                     <div class="subsection">
                         <table id="plan-33-table" class="alzamiento-table">
@@ -622,8 +535,191 @@
                     </div>
                 </div>
             </div>
-            <div id="plan30b" class="alzamiento-section">
-                <h3>Alzamiento - Plan 30* - B</h3>
+            <div id="misiones-general" class="alzamiento-section collapsed">
+                <h3 class="alzamiento-section-header">Misiones Generales</h3>
+                <div class="alzamiento-section-content">
+                    <ul class="resource-list">
+                        <li class="resource-item">Planificación RotE: <a href="https://genskaar.github.io/tb_empire/html/main.html" target="_blank" rel="noopener">Mapa en genskaar</a></li>
+                        <li class="resource-item">Misiones en RotE: <a href="https://swgoh4.life/territory-battles/" target="_blank" rel="noopener">videos de SWGOH4Life</a></li>
+                        <li class="resource-item">Misiones en RotE: <a href="https://swgohrote.com/" target="_blank" rel="noopener">swgohrote.com</a></li>
+                        <li class="resource-item"><a href="https://www.youtube.com/watch?v=v5AJ8YN5E1o">Flota en Geonosis</a></li>
+                        <li class="resource-item"><a href="https://www.youtube.com/watch?v=uHcSSLVyH1E">Flota en Mustafar</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="misiones-especiales" class="alzamiento-section collapsed">
+                <h3 class="alzamiento-section-header">Misiones Especiales</h3>
+                <div class="alzamiento-section-content">
+                    <div class="subsection">
+                        <h4>Reva</h4>
+                        <div class="subsection-content">
+                            <p><a href="https://www.youtube.com/watch?v=eWAIMakyzyY">video de SWGOH4Life</a> para Reva (6 intentos)</p>
+                            <p><a href="https://www.youtube.com/watch?v=sI8t5Pg3NX8">video de SWGOH4Life</a> para Reva (y Tatooine)</p>
+                            <ul>
+                                <li>Mods: Protección en lugar de Salud (porque los detonadores y Daño continuado dañan % salud)</li>
+                                <li>Primera fase: Usar la 3ª habilidad de Gran Inquisidor contra 6 acumulaciones de purga para elevar la tenacidad de todos los inquisidores (y parar las bombas).</li>
+                                <li>Segunda fase: Ability block en JMK.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="subsection">
+                        <h4>Zeffo</h4>
+                        <div class="subsection-content">
+                            <ul>
+                                <li>
+                                    <span>Zeffo es importante porque podemos conseguir más kyrotechs, que es uno de los principales cuellos de botella en este juego.</span>
+                                </li>
+                                <li>
+                                    <img src="https://game-assets.swgoh.gg/textures/tex.charui_cerejunda.png" alt="Cere Junda">
+                                    <span class="character-name">Cere Junda</span>
+                                    <span>Resistir golpes</span>
+                                    <span>&nbsp;</span>
+                                    <span>&nbsp;</span>
+                                </li>
+                                <li>
+                                    <img src="https://game-assets.swgoh.gg/textures/tex.charui_jediknightcal.png" alt="Jedi Knight Cal Kestis">
+                                    <span class="character-name">Jedi Knight Cal Kestis</span>
+                                    <span>Velocidad Sobrevivir y Potencia</span>
+                                    <span>Aplicar reducción de velocidad</span>
+                                    <span><ul><li>Fase 1: Muerte instantánea</li><li>Fase 2: Muerte instantánea</li></ul></span>
+                                </li>
+                            </ul>
+                            <table class="alzamiento-table">
+                                <thead>
+                                <tr>
+                                    <th>Autor</th>
+                                    <th>Cere</th>
+                                    <th>Jedi Knight Cal Kestis</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><a href="https://www.youtube.com/watch?v=gxeGiS7gJvQ&pp=ygUTc3dnb2ggemVmZm8gbWlzc2lvbg%3D%3D">Scrybe Gaming</a></td>
+                                    <td>Defense</td>
+                                    <td>Speed and Potency</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://www.youtube.com/watch?v=jj8Z-69ecMY">Ahnald</a></td>
+                                    <td>Health</td>
+                                    <td>302 Speed, 127k Health</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://www.youtube.com/watch?v=EURedAd6R4I">Xaereth</a></td>
+                                    <td>Health, Defense</td>
+                                    <td>317 Speed, 116k Health</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://www.youtube.com/watch?v=PhNNcRweKpY">Lolindir</a></td>
+                                    <td>Velocidad, Vida, Protección</td>
+                                    <td>Vida, Vida, Potencia, 301 Speed, 115k Health, 78% Potencia</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://swgoh.gg/p/637461253/characters/">Maath</a></td>
+                                    <td>(Defensa, Defensa, Vida), 160 Velocidad, 66k Vida, 94k Protección, 72% Blindaje</td>
+                                    <td>(Vida, Vida, Potencia), 282 Speed, 95k Health, 91% Potencia</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--            <div id="misiones-especiales-section" class="alzamiento-section">-->
+<!--                <h3>Prioridad TOP - Misiones especiales</h3>-->
+<!--                <div class="alzamiento-section-content">-->
+<!--                    <p>Una vez hemos alcanzado nuestro objetivo de estrellas conseguidas en cada alzamiento, el nuevo objetivo será crecer en misiones especiales</p>-->
+<!--                    <ul id="missions-list">-->
+<!--                        <li class="mission-item">-->
+<!--                            <span class="mission-name"><a href="https://www.youtube.com/watch?v=1ENfddA1z2M">Reva</a></span>-->
+<!--                            <div class="mission-character">-->
+<!--                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_grandinquisitor.png" alt="Gran Inquisidor">-->
+<!--                                <span class="relic-upgraded-required">Reliquia 7</span>-->
+<!--                            </div>-->
+<!--                            <span class="mission-players">Contador: 17</span>-->
+<!--                        </li>-->
+<!--                        <li class="mission-item">-->
+<!--                            <span class="mission-name"><a href="https://www.youtube.com/watch?v=CmeL_UsIZzM">Zeffo</a></span>-->
+<!--                            <div class="mission-character">-->
+<!--                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_cerejunda.png" alt="Cere Junda">-->
+<!--                                <span class="relic-upgraded-required">Reliquia 7</span>-->
+<!--                            </div>-->
+<!--                            <div class="mission-character">-->
+<!--                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_jediknightcal.png" alt="Jedi Knight Cal Kestis">-->
+<!--                                <span class="relic-upgraded-required">Reliquia 7</span>-->
+<!--                            </div>-->
+<!--                            <span class="mission-players">Contador: 7</span>-->
+<!--                        </li>-->
+<!--                        <li class="mission-item">-->
+<!--                            <span class="mission-name"><a href="https://www.youtube.com/watch?v=1ENfddA1z2M">Mand'alor</a></span>-->
+<!--                            <div class="mission-character">-->
+<!--                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_mandalorbokatan.png" alt="Bo Katan Mand'alor">-->
+<!--                                <span class="relic-upgraded-required">Reliquia 7</span>-->
+<!--                            </div>-->
+<!--                            <div class="mission-character">-->
+<!--                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_mandobeskar.png" alt="Mando Beskar">-->
+<!--                                <span class="relic-upgraded-required">Reliquia 7</span>-->
+<!--                            </div>-->
+<!--                            <div class="mission-character">-->
+<!--                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_ig12.png" alt="IG 12 & Grogu">-->
+<!--                                <span class="relic-upgraded-required">Reliquia 7</span>-->
+<!--                            </div>-->
+<!--                            <span class="mission-players">Contador: 8</span>-->
+<!--                        </li>-->
+<!--                        <li class="mission-item">-->
+<!--                            <span class="mission-name">Corellia</span>-->
+<!--                            <div class="mission-character">-->
+<!--                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_qira.png" alt="Qi'ra">-->
+<!--                                <span class="relic-upgraded-required">Reliquia 5</span>-->
+<!--                            </div>-->
+<!--                            <div class="mission-character">-->
+<!--                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_han_young.png" alt="Young Han Solo">-->
+<!--                                <span class="relic-upgraded-required">Reliquia 5</span>-->
+<!--                            </div>-->
+<!--                            <span class="mission-players">Contador: 2</span>-->
+<!--                        </li>-->
+<!--                        <li class="mission-item">-->
+<!--                            <span class="mission-name">Dathomir</span>-->
+<!--                            <div class="mission-character">-->
+<!--                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_merrin.png" alt="Merrin">-->
+<!--                                <span class="relic-upgraded-required">Reliquia 7</span>-->
+<!--                            </div>-->
+<!--                            <span class="mission-players">Contador: 0</span>-->
+<!--                        </li>-->
+<!--                        <li class="mission-item">-->
+<!--                            <span class="mission-name">Kashyyyk</span>-->
+<!--                            <div class="mission-character">-->
+<!--                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_sawgerrera.png" alt="Saw Guerrera">-->
+<!--                                <span class="relic-upgraded-required">Reliquia 7</span>-->
+<!--                            </div>-->
+<!--                            <span class="mission-players">Contador: 0</span>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </div>-->
+            <div id="top-characters-to-upgrade-section" class="alzamiento-section collapsed">
+                <h3 class="alzamiento-section-header">Nuevos Pelotones</h3>
+                <div class="alzamiento-section-content">
+                    <p>Para seguir completando nuevos pelotones</p>
+                    <ul id="top-priority-characters-list">
+                        <li>No hay personajes para subir</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="characters-to-upgrade-section" class="alzamiento-section collapsed">
+                <h3 class="alzamiento-section-header">Personajes a Duplicar</h3>
+                <div class="alzamiento-section-content">
+                    <p>Subir personajes de poco esfuerzo para facilitar que se completen los pelotones que ya podemos completar</p>
+                    <ul id="characters-to-upgrade-list">
+                        <li>No hay personajes para subir</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="rote-archive" class="tab-content">
+            <div id="plan30b" class="alzamiento-section collapsed">
+                <h3 class="alzamiento-section-header">Alzamiento - Plan 30* - B</h3>
                 <div class="alzamiento-section-content">
                     <div class="subsection">
                         <table id="plan-30b-table" class="alzamiento-table">
@@ -870,101 +966,8 @@
                     </div>
                 </div>
             </div>
-<!--            <div id="misiones-especiales-section" class="alzamiento-section">-->
-<!--                <h3>Prioridad TOP - Misiones especiales</h3>-->
-<!--                <div class="alzamiento-section-content">-->
-<!--                    <p>Una vez hemos alcanzado nuestro objetivo de estrellas conseguidas en cada alzamiento, el nuevo objetivo será crecer en misiones especiales</p>-->
-<!--                    <ul id="missions-list">-->
-<!--                        <li class="mission-item">-->
-<!--                            <span class="mission-name"><a href="https://www.youtube.com/watch?v=1ENfddA1z2M">Reva</a></span>-->
-<!--                            <div class="mission-character">-->
-<!--                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_grandinquisitor.png" alt="Gran Inquisidor">-->
-<!--                                <span class="relic-upgraded-required">Reliquia 7</span>-->
-<!--                            </div>-->
-<!--                            <span class="mission-players">Contador: 17</span>-->
-<!--                        </li>-->
-<!--                        <li class="mission-item">-->
-<!--                            <span class="mission-name"><a href="https://www.youtube.com/watch?v=CmeL_UsIZzM">Zeffo</a></span>-->
-<!--                            <div class="mission-character">-->
-<!--                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_cerejunda.png" alt="Cere Junda">-->
-<!--                                <span class="relic-upgraded-required">Reliquia 7</span>-->
-<!--                            </div>-->
-<!--                            <div class="mission-character">-->
-<!--                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_jediknightcal.png" alt="Jedi Knight Cal Kestis">-->
-<!--                                <span class="relic-upgraded-required">Reliquia 7</span>-->
-<!--                            </div>-->
-<!--                            <span class="mission-players">Contador: 7</span>-->
-<!--                        </li>-->
-<!--                        <li class="mission-item">-->
-<!--                            <span class="mission-name"><a href="https://www.youtube.com/watch?v=1ENfddA1z2M">Mand'alor</a></span>-->
-<!--                            <div class="mission-character">-->
-<!--                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_mandalorbokatan.png" alt="Bo Katan Mand'alor">-->
-<!--                                <span class="relic-upgraded-required">Reliquia 7</span>-->
-<!--                            </div>-->
-<!--                            <div class="mission-character">-->
-<!--                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_mandobeskar.png" alt="Mando Beskar">-->
-<!--                                <span class="relic-upgraded-required">Reliquia 7</span>-->
-<!--                            </div>-->
-<!--                            <div class="mission-character">-->
-<!--                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_ig12.png" alt="IG 12 & Grogu">-->
-<!--                                <span class="relic-upgraded-required">Reliquia 7</span>-->
-<!--                            </div>-->
-<!--                            <span class="mission-players">Contador: 8</span>-->
-<!--                        </li>-->
-<!--                        <li class="mission-item">-->
-<!--                            <span class="mission-name">Corellia</span>-->
-<!--                            <div class="mission-character">-->
-<!--                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_qira.png" alt="Qi'ra">-->
-<!--                                <span class="relic-upgraded-required">Reliquia 5</span>-->
-<!--                            </div>-->
-<!--                            <div class="mission-character">-->
-<!--                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_han_young.png" alt="Young Han Solo">-->
-<!--                                <span class="relic-upgraded-required">Reliquia 5</span>-->
-<!--                            </div>-->
-<!--                            <span class="mission-players">Contador: 2</span>-->
-<!--                        </li>-->
-<!--                        <li class="mission-item">-->
-<!--                            <span class="mission-name">Dathomir</span>-->
-<!--                            <div class="mission-character">-->
-<!--                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_merrin.png" alt="Merrin">-->
-<!--                                <span class="relic-upgraded-required">Reliquia 7</span>-->
-<!--                            </div>-->
-<!--                            <span class="mission-players">Contador: 0</span>-->
-<!--                        </li>-->
-<!--                        <li class="mission-item">-->
-<!--                            <span class="mission-name">Kashyyyk</span>-->
-<!--                            <div class="mission-character">-->
-<!--                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_sawgerrera.png" alt="Saw Guerrera">-->
-<!--                                <span class="relic-upgraded-required">Reliquia 7</span>-->
-<!--                            </div>-->
-<!--                            <span class="mission-players">Contador: 0</span>-->
-<!--                        </li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-<!--            </div>-->
-            <div id="top-characters-to-upgrade-section" class="alzamiento-section collapsed">
-                <h3>Nuevos Pelotones</h3>
-                <div class="alzamiento-section-content">
-                    <p>Para seguir completando nuevos pelotones</p>
-                    <ul id="top-priority-characters-list">
-                        <li>No hay personajes para subir</li>
-                    </ul>
-                </div>
-            </div>
-            <div id="characters-to-upgrade-section" class="alzamiento-section collapsed">
-                <h3>Personajes a Duplicar</h3>
-                <div class="alzamiento-section-content">
-                    <p>Subir personajes de poco esfuerzo para facilitar que se completen los pelotones que ya podemos completar</p>
-                    <ul id="characters-to-upgrade-list">
-                        <li>No hay personajes para subir</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div id="rote-archive" class="tab-content">
             <div id="plan30a" class="alzamiento-section collapsed">
-                <h3>Alzamiento - Plan 30* - A</h3>
+                <h3 class="alzamiento-section-header">Alzamiento - Plan 30* - A</h3>
                 <div class="alzamiento-section-content">
                     <div class="subsection">
                         <table id="plan-30a-table" class="alzamiento-table">
@@ -1212,7 +1215,7 @@
                 </div>
             </div>
             <div id="plan28" class="alzamiento-section collapsed">
-                <h3>Alzamiento - Plan 28*</h3>
+                <h3 class="alzamiento-section-header">Alzamiento - Plan 28*</h3>
                 <div class="alzamiento-section-content">
                     <table id="plan-28-table" class="alzamiento-table">
                         <thead>
@@ -1324,7 +1327,7 @@
                 </div>
             </div>
             <div id="plan27" class="alzamiento-section collapsed">
-                <h3>Alzamiento - Plan 27*</h3>
+                <h3 class="alzamiento-section-header">Alzamiento - Plan 27*</h3>
                 <div class="alzamiento-section-content">
                     <table id="plan-27-table" class="alzamiento-table">
                         <thead>
@@ -1436,7 +1439,7 @@
                 </div>
             </div>
             <div id="plan25" class="alzamiento-section collapsed">
-                <h3>Alzamiento - Plan 25*</h3>
+                <h3 class="alzamiento-section-header">Alzamiento - Plan 25*</h3>
                 <div class="alzamiento-section-content">
                     <table id="plan-25-table" class="alzamiento-table">
                         <thead>
@@ -1548,7 +1551,7 @@
                 </div>
             </div>
             <div id="plan24" class="alzamiento-section collapsed">
-                <h3>Alzamiento - Plan 24*</h3>
+                <h3 class="alzamiento-section-header">Alzamiento - Plan 24*</h3>
                 <div class="alzamiento-section-content">
                     <table id="plan-table" class="alzamiento-table">
                         <thead>
@@ -1642,7 +1645,7 @@
                 </div>
             </div>
             <div id="upgraded-characters-section" class="alzamiento-section collapsed">
-                <h3>Personajes Subidos</h3>
+                <h3 class="alzamiento-section-header">Personajes Subidos</h3>
                 <div class="alzamiento-section-content">
                     <ul id="upgraded-characters-list">
                         <li>No hay personajes para subir</li>
@@ -1650,7 +1653,7 @@
                 </div>
             </div>
             <div id="historicalResults" class="alzamiento-section collapsed">
-                <h3>Histórico de Resultados</h3>
+                <h3 class="alzamiento-section-header">Histórico de Resultados</h3>
                 <div class="alzamiento-section-content">
                     <table id="resultados-table" class="alzamiento-table">
                         <thead>
