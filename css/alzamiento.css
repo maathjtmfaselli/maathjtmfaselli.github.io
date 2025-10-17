@@ -31,10 +31,22 @@
   display: none; /* Hide content by default */
 }
 
+.mission-card-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffcc80;
+}
+
 .subsection {
     margin-top: 10px;
     border-left: 4px solid #555;
     padding-left: 10px;
+}
+
+.subsection-title {
+  font-size: 1em;
+  font-weight: bold;
+  color: #ffcc80;
 }
 
 .subsection-content {
@@ -104,6 +116,12 @@
 
 .character-item.done {
     background-color: #3ba55d;
+}
+
+.character-name {
+  color: rgb(255, 204, 128);
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 .alzamiento-table {
