@@ -66,6 +66,16 @@
         <h2>Tarjetas amarillas</h2>
         <ol class="resource-list">
             <li class="priority-item">
+                <div class="priority-metric">DarkNando97</div>
+                <div class="priority-target">Saludar al entrar</div>
+                <div class="priority-progress">
+                    <div class="progress-wrapper">
+                        <progress class="progress-bar" value="0" max="1"></progress>
+                        <span class="progress-label">0 / 1</span>
+                    </div>
+                </div>
+            </li>
+            <li class="priority-item">
                 <div class="priority-metric">wSS DE</div>
                 <div class="priority-target">Orden66</div>
                 <div class="priority-progress">
@@ -86,23 +96,22 @@
                 </div>
             </li>
             <li class="priority-item">
-                <div class="priority-metric">Cerilio</div>
-                <div class="priority-target">Orden66</div>
-                <div class="priority-progress">
-                    <div class="progress-wrapper">
-                        <progress class="progress-bar" value="475" max="900"></progress>
-                        <span class="progress-label">475k / 900k</span>
-                    </div>
-                </div>
-            </li>
-            <li class="priority-item">
-                <div class="priority-metric">Varon John Eden
-                </div>
+                <div class="priority-metric">Varon John Eden</div>
                 <div class="priority-target">Orden66</div>
                 <div class="priority-progress">
                     <div class="progress-wrapper">
                         <progress class="progress-bar" value="550" max="900"></progress>
                         <span class="progress-label">550k / 900k</span>
+                    </div>
+                </div>
+            </li>
+            <li class="priority-item">
+                <div class="priority-metric">Cerilio</div>
+                <div class="priority-target">Orden66</div>
+                <div class="priority-progress">
+                    <div class="progress-wrapper">
+                        <progress class="progress-bar" value="630" max="900"></progress>
+                        <span class="progress-label">630k / 900k</span>
                     </div>
                 </div>
             </li>
@@ -153,16 +162,6 @@
                     <div class="progress-wrapper">
                         <progress class="progress-bar" value="845" max="900"></progress>
                         <span class="progress-label">845k / 900k</span>
-                    </div>
-                </div>
-            </li>
-            <li class="priority-item">
-                <div class="priority-metric">Oldboy</div>
-                <div class="priority-target">Orden66</div>
-                <div class="priority-progress">
-                    <div class="progress-wrapper">
-                        <progress class="progress-bar" value="848" max="900"></progress>
-                        <span class="progress-label">848k / 900k</span>
                     </div>
                 </div>
             </li>
@@ -221,7 +220,7 @@ console.log("completed [" + completed + "] attempted [" + attempted + "] eligibl
         box.classList.add('not-eligible');
       }
 
-      if (i < target - 1) {
+      if (i < target) {
         box.classList.add('target-box');
       }
       grid.appendChild(box);
