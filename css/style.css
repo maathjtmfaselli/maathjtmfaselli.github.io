@@ -50,8 +50,8 @@ section {
 
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #333;
+    padding: 2px;
+    background-color: var(--bg-header);
     color: white;
 }
 
@@ -219,6 +219,49 @@ ol {
     counter-reset: item; /* Resetea el contador para la lista */
 }
 
+  .priority-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 20px);
+    gap: 4px;
+    margin-bottom: 0.5rem;
+    position: relative;
+  }
+
+  .player-box {
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+  }
+
+.target-box {
+  border: 2px solid red;
+  box-shadow: 0 0 4px red;
+}
+
+  .complete     { background-color: #4caf50; } /* Verde */
+  .failed       { background-color: #ff9800; } /* Naranja */
+  .not-played   { background-color: #ffeb3b; } /* Amarillo */
+  .not-eligible { background-color: #777;     } /* Gris */
+
+  .legend {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .legend-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+  }
 
 .priority-pnj {
     display: flex;

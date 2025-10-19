@@ -19,10 +19,25 @@
     <section id="reglas">
         <h2>Reglas del Gremio</h2>
         <p>Gremio de buen rollo, gente activa en eventos, 6M PG, 2 Leyendas, leer chat y saludar al unirse</p>
+        <ol class="resource-list">
+            <li class="priority-item">Buen rollo</li>
+            <li class="priority-item">Saludar al unirse al gremio</li>
+            <li class="priority-item">Leer el chat</li>
+            <li class="priority-item">Ser activa en eventos</li>
+            <li class="priority-item">Padawans: 900k en Raid</li>
+            <li class="priority-item">Resto: 3M en Raid</li>
+        </ol>
     </section>
 
     <section id="guild‑goals">
         <h2>Prioridades del Gremio</h2>
+        <div class="legend">
+            <div class="legend-item"><div class="legend-color complete"></div> Completaron</div>
+            <div class="legend-item"><div class="legend-color failed"></div> Fallaron</div>
+            <div class="legend-item"><div class="legend-color not-played"></div> No jugaron</div>
+            <div class="legend-item"><div class="legend-color not-eligible"></div> NO cumplen requisitos</div>
+            <div class="legend-item"><div class="legend-color target-box"></div> Necesarias para cumplir objetivo</div>
+        </div>
         <ol class="resource-list">
             <li class="priority-item">
                 <div class="priority-metric"><a href="orden66.html">Orden 66</a></div>
@@ -37,22 +52,12 @@
             <li class="priority-item">
                 <div class="priority-metric"><a href="alzamiento.html">Alzamiento</a></div>
                 <div class="priority-target">Zeffo</div>
-                <div class="priority-progress">
-                    <div class="progress-wrapper">
-                        <progress class="progress-bar" value="3" max="30"></progress>
-                        <span class="progress-label">3 / 30</span>
-                    </div>
-                </div>
+                <div class="priority-progress grid-priority-progress" data-completed="3" data-attempted="11" data-eligible="14" data-target="30" data-total="50"></div>
             </li>
             <li class="priority-item">
                 <div class="priority-metric"><a href="alzamiento.html">Alzamiento</a></div>
                 <div class="priority-target">Mandalor</div>
-                <div class="priority-progress">
-                    <div class="progress-wrapper">
-                        <progress class="progress-bar" value="12" max="25"></progress>
-                        <span class="progress-label">12 / 25</span>
-                    </div>
-                </div>
+                <div class="priority-progress grid-priority-progress" data-completed="12" data-attempted="13" data-eligible="14" data-target="25" data-total="50"></div>
             </li>
         </ol>
     </section>
@@ -189,5 +194,44 @@
     <!-- Si falla la carga, este mensaje será visible -->
     <p>Cargando el pie...</p>
 </footer>
+
+<script>
+  document.querySelectorAll('.grid-priority-progress').forEach(progress => {
+    const completed = parseInt(progress.dataset.completed) || 0;
+    const attempted = parseInt(progress.dataset.attempted) || 0;
+    const eligible = parseInt(progress.dataset.eligible) || 0;
+    const target = parseInt(progress.dataset.target) || 0;
+    const total = parseInt(progress.dataset.total) || 50;
+console.log("completed [" + completed + "] attempted [" + attempted + "] eligible [" + eligible + "] target [" + target + "] total [" + total + "]");
+    // Crear el grid visual
+    const grid = document.createElement('div');
+    grid.classList.add('priority-grid');
+
+    for (let i = 0; i < total; i++) {
+      const box = document.createElement('div');
+      box.classList.add('player-box');
+
+      if (i < completed) {
+        box.classList.add('complete');
+      } else if (i < attempted) {
+        box.classList.add('failed');
+      } else if (i < eligible) {
+        box.classList.add('not-played');
+      } else {
+        box.classList.add('not-eligible');
+      }
+
+      if (i < target - 1) {
+        box.classList.add('target-box');
+      }
+      grid.appendChild(box);
+    }
+
+    // Limpiar contenido previo (si lo hubiera) y añadir el grid
+    progress.innerHTML = '';
+    progress.appendChild(grid);
+  });
+</script>
+
 </body>
 </html>
