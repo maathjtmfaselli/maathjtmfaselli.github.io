@@ -6,6 +6,7 @@
     <title>Spain Space SWGoH</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/dynamic-loader.js" defer></script>
+    <script src="/js/grid-priority-progress.js"></script>
     <link rel="icon" href="https://assets.swgoh.gg/files/ui/tex.guild_icon_oldrepublic_tint.00b15b7f62455726b72d.webp" type="image/x-icon">
 </head>
 <body>
@@ -32,9 +33,9 @@
     <section id="guild‑goals">
         <h2>Prioridades del Gremio</h2>
         <div class="legend">
-            <div class="legend-item"><div class="legend-color complete"></div> Completaron</div>
-            <div class="legend-item"><div class="legend-color failed"></div> Fallaron</div>
-            <div class="legend-item"><div class="legend-color not-played"></div> No jugaron</div>
+            <div class="legend-item"><div class="legend-color complete"></div> Jugaron y Completaron</div>
+            <div class="legend-item"><div class="legend-color failed"></div> Jugaron y Fallaron</div>
+            <div class="legend-item"><div class="legend-color not-played"></div> NO jugaron</div>
             <div class="legend-item"><div class="legend-color not-eligible"></div> NO cumplen requisitos</div>
             <div class="legend-item"><div class="legend-color target-box"></div> Necesarias para cumplir objetivo</div>
         </div>
@@ -57,7 +58,7 @@
             <li class="priority-item">
                 <div class="priority-metric"><a href="alzamiento.html">Alzamiento</a></div>
                 <div class="priority-target">Mandalor</div>
-                <div class="priority-progress grid-priority-progress" data-completed="12" data-attempted="13" data-eligible="14" data-target="25" data-total="50"></div>
+                <div class="priority-progress grid-priority-progress" data-completed="12" data-attempted="13" data-eligible="15" data-target="25" data-total="50"></div>
             </li>
         </ol>
     </section>
@@ -193,44 +194,6 @@
     <!-- Si falla la carga, este mensaje será visible -->
     <p>Cargando el pie...</p>
 </footer>
-
-<script>
-  document.querySelectorAll('.grid-priority-progress').forEach(progress => {
-    const completed = parseInt(progress.dataset.completed) || 0;
-    const attempted = parseInt(progress.dataset.attempted) || 0;
-    const eligible = parseInt(progress.dataset.eligible) || 0;
-    const target = parseInt(progress.dataset.target) || 0;
-    const total = parseInt(progress.dataset.total) || 50;
-console.log("completed [" + completed + "] attempted [" + attempted + "] eligible [" + eligible + "] target [" + target + "] total [" + total + "]");
-    // Crear el grid visual
-    const grid = document.createElement('div');
-    grid.classList.add('priority-grid');
-
-    for (let i = 0; i < total; i++) {
-      const box = document.createElement('div');
-      box.classList.add('player-box');
-
-      if (i < completed) {
-        box.classList.add('complete');
-      } else if (i < attempted) {
-        box.classList.add('failed');
-      } else if (i < eligible) {
-        box.classList.add('not-played');
-      } else {
-        box.classList.add('not-eligible');
-      }
-
-      if (i < target) {
-        box.classList.add('target-box');
-      }
-      grid.appendChild(box);
-    }
-
-    // Limpiar contenido previo (si lo hubiera) y añadir el grid
-    progress.innerHTML = '';
-    progress.appendChild(grid);
-  });
-</script>
 
 </body>
 </html>
