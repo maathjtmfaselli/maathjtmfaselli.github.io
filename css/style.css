@@ -176,8 +176,8 @@ progress::-moz-progress-bar     { background:#27ae60; }
     border-radius: 8px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
+    gap: 1rem;
 }
 
 .priority-item a {
@@ -262,6 +262,20 @@ ol {
     height: 12px;
     border-radius: 2px;
   }
+
+.player-priority-progress {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.player-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 5px;
+}
 
 .priority-pnj {
     display: flex;
