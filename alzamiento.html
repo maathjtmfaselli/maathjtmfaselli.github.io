@@ -9,6 +9,7 @@
     <script src="js/dynamic-loader.js" defer></script>
     <script src="js/tabs.js"></script>
     <script src="js/alzamiento.js"></script>
+    <script src="/js/grid-priority-progress.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
     <link rel="icon" href="https://assets.swgoh.gg/files/ui/tex.guild_icon_oldrepublic_tint.00b15b7f62455726b72d.webp" type="image/x-icon">
 </head>
@@ -188,13 +189,7 @@
                             <span>Zeffo</span>
                         </span>
                     </div>
-                    <div class="priority-target">30</div>
-                    <div class="priority-progress">
-                        <div class="progress-wrapper">
-                            <progress class="progress-bar" value="3" max="30"></progress>
-                            <span class="progress-label">3 / 12</span>
-                        </div>
-                    </div>
+                    <div class="priority-progress grid-priority-progress" data-completed="4" data-attempted="14" data-eligible="15" data-target="30" data-total="50"></div>
                 </li>
                 <li class="priority-item">
                     <div class="priority-metric">
@@ -205,13 +200,7 @@
                             <span>Mand'alor</span>
                         </span>
                     </div>
-                    <div class="priority-target">25</div>
-                    <div class="priority-progress">
-                        <div class="progress-wrapper">
-                            <progress class="progress-bar" value="12" max="25"></progress>
-                            <span class="progress-label">12 / 14</span>
-                        </div>
-                    </div>
+                    <div class="priority-progress grid-priority-progress" data-completed="12" data-attempted="13" data-eligible="15" data-target="25" data-total="50"></div>
                 </li>
                 <li class="priority-item">
                     <div class="priority-metric">
@@ -220,13 +209,7 @@
                             <span>Reva</span>
                         </span>
                     </div>
-                    <div class="priority-target">22</div>
-                    <div class="priority-progress">
-                        <div class="progress-wrapper">
-                            <progress class="progress-bar" value="9" max="22"></progress>
-                            <span class="progress-label">9 / 22</span>
-                        </div>
-                    </div>
+                    <div class="priority-progress grid-priority-progress" data-completed="13" data-attempted="19" data-eligible="25" data-target="" data-total="50"></div>
                 </li>
                 <li class="priority-item">
                     <div class="priority-metric">
@@ -619,7 +602,10 @@
                                     <span>Cada oleada tiene dos enemigos, más una sonda que se autoinvoca</span>
                                 </li>
                                 <li class="resource-item">
-                                    <span>En cada oleada, debemos utilizar la muerte instantánea de Cal.</span>
+                                    <ul>
+                                        <li><span>En cada oleada, debemos utilizar la muerte instantánea de Cal.</span></li>
+                                        <li><span>En la segunda oleada, siempre mato a la inquisidora.</span></li>
+                                    </ul>
                                 </li>
                                 <li class="resource-item">
                                     <span>El otro enemigo lo vamos matando poco a poco.</span>
