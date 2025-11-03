@@ -15,53 +15,53 @@
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_rebelhoth.png",
       "relic": "Reliquia 7",
       "assignedTo": ""
-    },{
-      "name": "Qi'ra",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_qira.png",
-      "relic": "Reliquia 7",
-      "assignedTo": "maath"
     }
   ],
   "charactersToUpgrade": [
     {
-      "name": "Imperial Probe Droid",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_probedroid.png",
+      "name": "Ben Solo",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bensolo.png",
       "relic": "Reliquia 6",
       "assignedTo": ""
     },{
-      "name": "Imperial Probe Droid",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_probedroid.png",
-      "relic": "Reliquia 6",
-      "assignedTo": ""
-    },{
-      "name": "Old Boba",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
-      "relic": "Reliquia 6",
-      "assignedTo": ""
-    },{
-      "name": "Old Boba",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
-      "relic": "Reliquia 6",
-      "assignedTo": ""
-    },{
-      "name": "Old Boba",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
-      "relic": "Reliquia 6",
-      "assignedTo": ""
-    },{
-      "name": "Old Boba",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
-      "relic": "Reliquia 6",
+      "name": "Jawa Ingeniero",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_jawa_engineer.png",
+      "relic": "Reliquia 5",
       "assignedTo": ""
     },{
       "name": "Nightsister Initiate",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_nightsister_initiate.png",
       "relic": "Reliquia 5",
       "assignedTo": ""
+    },{
+      "name": "Imperial Probe Droid",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_probedroid.png",
+      "relic": "Reliquia 6",
+      "assignedTo": ""
+    },{
+      "name": "Imperial Probe Droid",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_probedroid.png",
+      "relic": "Reliquia 6",
+      "assignedTo": ""
+    },{
+      "name": "Old Boba",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
+      "relic": "Reliquia 6",
+      "assignedTo": ""
+    },{
+      "name": "Old Boba",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
+      "relic": "Reliquia 6",
+      "assignedTo": ""
     }
   ],
   "upgradedCharacters": [
     {
+      "name": "Qi'ra",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_qira.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "Gita"
+    },{
       "name": "Ki-Adi-Mundi",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_kiadimundi.png",
       "relic": "Reliquia 7",
