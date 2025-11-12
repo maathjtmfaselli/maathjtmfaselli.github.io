@@ -1,7 +1,7 @@
 {
   "historicalResults": [
     {
-      "fecha": "03/11/2025",
+      "fecha": "17/11/2025",
       "pg": "523M",
       "estrellas": "",
       "noDesplegados": "/////",
@@ -12,6 +12,18 @@
       "kashyyyk": "x/x/2",
       "zeffo": "x/x/14",
       "corellia": "x/x/4"
+    },{
+      "fecha": "03/11/2025",
+      "pg": "527M",
+      "estrellas": "",
+      "noDesplegados": "40/////",
+      "pelotones": "/52",
+      "reva": "x/x/25",
+      "mandalor": "x/x/15",
+      "dathomir": "x/x/3",
+      "kashyyyk": "x/x/2",
+      "zeffo": "x/x/14",
+      "corellia": "2/2/4"
     },{
       "fecha": "27/10/2025",
       "pg": "524M",

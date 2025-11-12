@@ -22,8 +22,6 @@
 <main>
 
     <section id="templo">
-        <h2>Templo</h2>
-
         <nav class="tab">
             <button class="tab-button" onclick="openTab('templo-generalData')">📊 Datos</button>
             <button class="tab-button active" onclick="openTab('templo-goals')">🎯 Objetivos</button>
@@ -75,10 +73,11 @@
         </div>
 
         <div id="templo-padawan" class="tab-content">
-            <h3>
+            <h2>
                 <span>Equipo Padawan</span>
-                <span class="score-expected">Puntos esperados: 900k</span>
-            </h3>
+                <p class="score-expected">Puntos esperados: 900k</p>
+            </h2>
+            <p>A continuación se muestran 5 ejemplos de equipos que cualquier Padawan debería tener o conseguir con relativa facilidad, así como la puntuación que se esperaría. En total, 1.5M.</p>
             <div id="squads-padawan" class="squad-list">
                 <div class="squad">
                     <h4>Equipo 1: Gran Moff Tarkin</h4>
@@ -110,7 +109,7 @@
                     <div class="squad-characters-list">
                         <div class="character">
                             <img src="https://game-assets.swgoh.gg/textures/tex.charui_enfys.png" alt="Enfys Nest">
-                            <div class="mods">Ataque, Evasión de Crítico</div>
+                            <div class="mods">Ataque</div>
                             <div class="relic-required">Reliquia 6</div>
                             <div class="synergy">
                                 <img src="https://swgoh.wiki/images/thumb/6/66/Event-Territory_Battle-Rise_of_the_Empire.png/435px-Event-Territory_Battle-Rise_of_the_Empire.png" alt="Alzamiento" data-hover="Pelotón Tatooine">
@@ -119,6 +118,7 @@
                     </div>
                     <div>
                         <p>Necesita ataque para tumbar rápido a la primera oleada</p>
+                        <p>NO necesita mods de evasión de crítico</p>
                         <p>Utilizar la segunda habilidad sobre Fox, luego tercera.</p>
                     </div>
                 </div>
@@ -231,6 +231,7 @@
                         </div>
                     </div>
                     <div>
+                        <p>Estos jedi son básicos con muchas sinergias</p>
                         <label>Estrategia: </label>
                         <ul>
                             <li>Kelleran asistencia masiva contra Fox: Tiene que tumbarlo</li>
@@ -243,10 +244,11 @@
         </div>
 
         <div id="templo-jedi" class="tab-content">
-            <h3>
+            <h2>
                 <span>Equipo Caballero Jedi</span>
-                <span class="score-expected">Puntos esperados: 3M</span>
-            </h3>
+                <p class="score-expected">Puntos esperados: 3M</p>
+            </h2>
+            <p>Se espera que la mayoría del gremio pueda aportar 3M. A continuación, ejemplos de equipos que hacen puntuación máxima en niveles más altaos.</p>
             <div id="squads-jedi" class="squad-list">
                 <div class="squad">
                     <h4>Jedi Vanguardia</h4>
@@ -301,7 +303,7 @@
                 </div>
                 <div class="squad">
                     <h4>Tarkin y clones</h4>
-                    <p class="score-expected">Puntos esperados: 900k</p>
+                    <p class="score-expected">Puntos esperados: 1.8M</p>
                     <div class="squad-characters-list">
                         <div class="character">
                             <img src="https://game-assets.swgoh.gg/textures/tex.charui_tarkinadmiral.png" alt="Gran Moff Tarkin">
@@ -404,38 +406,15 @@
                         </ul>
                     </div>
                 </div>
-                <div class="squad">
-                    <h4>Equipo 4: Remesa Mala Mercenarios Básica</h4>
-                    <p class="score-expected">Puntos esperados: 300k</p>
-                    <div class="squad-characters-list">
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_omegas3.png" alt="Omega Fugitiva">
-                        </div>
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_wreckers3.png" alt="Wrecker Mercenario">
-                        </div>
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_hunters3.png" alt="Hunter Mercenario">
-                        </div>
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_crosshair_scarred.png" alt="Crosshair">
-                        </div>
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_batcher.png" alt="Batcher">
-                        </div>
-                    </div>
-                    <div>
-                        <p>Sin necesidad de kyrotechs, ni zetas, ni 7*, pueden conseguir puntuación máxima en nivel 0</p>
-                    </div>
-                </div>
             </div>
         </div>
 
         <div id="templo-master" class="tab-content">
-            <h3>
+            <h2>
                 <span>Equipo Maestro Jedi</span>
                 <span class="score-expected">Puntos esperados: 7.2M</span>
-            </h3>
+            </h2>
+            <p>Un verdadero Maestro, aportará en los niveles más altos al gremio.</p>
             <div id="squads-master" class="squad-list">
                 <div class="squad">
                     <h4>Jedi Vanguardia</h4>
@@ -480,7 +459,7 @@
                     </div>
                 </div>
                 <div class="squad">
-                    <h4>Equipo 1: Gran Moff Tarkin y soldados clon</h4>
+                    <h4>Gran Moff Tarkin y Scorch</h4>
                     <p class="score-expected">Puntos esperados: 3.6M</p>
                     <div class="squad-characters-list">
                         <div class="character">
@@ -506,7 +485,7 @@
                     </div>
                 </div>
                 <div class="squad">
-                    <h4>Equipo 2: Jedi Vanguardia</h4>
+                    <h4>Maestro Windu</h4>
                     <p class="score-expected">Puntos esperados: 3.6M</p>
                     <div class="squad-characters-list">
                         <div class="character">
@@ -529,7 +508,7 @@
                     </div>
                 </div>
                 <div class="squad">
-                    <h4>Equipo 3: Sobras soldados clon</h4>
+                    <h4>Sobras soldados clon</h4>
                     <p class="score-expected">Puntos esperados: 3.6M</p>
                     <div class="squad-characters-list">
                         <div class="character">
