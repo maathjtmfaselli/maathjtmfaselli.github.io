@@ -14,16 +14,21 @@
       "name": "Soldado Rebelde Hoth",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_rebelhoth.png",
       "relic": "Reliquia 7",
+      "assignedTo": "josmartini"
+    },{
+      "name": "Resistance Trooper",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_resistancetrooper.png",
+      "relic": "Reliquia 7",
+      "assignedTo": ""
+    },{
+      "name": "Greef Karga",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_greefkarga.png",
+      "relic": "Reliquia 7",
       "assignedTo": ""
     }
   ],
   "charactersToUpgrade": [
     {
-      "name": "Ben Solo",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bensolo.png",
-      "relic": "Reliquia 6",
-      "assignedTo": ""
-    },{
       "name": "Jawa Ingeniero",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_jawa_engineer.png",
       "relic": "Reliquia 5",
@@ -51,6 +56,11 @@
     },{
       "name": "Old Boba",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
+      "relic": "Reliquia 7",
+      "assignedTo": ""
+    },{
+      "name": "Magmatrooper",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_trooperstorm_magma.png",
       "relic": "Reliquia 6",
       "assignedTo": ""
     }
@@ -61,6 +71,11 @@
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_qira.png",
       "relic": "Reliquia 7",
       "assignedTo": "Gita"
+    },{
+      "name": "Greef Karga",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_greefkarga.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "Temnyy"
     },{
       "name": "Ki-Adi-Mundi",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_kiadimundi.png",
