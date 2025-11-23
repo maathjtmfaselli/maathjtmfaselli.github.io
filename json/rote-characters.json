@@ -1,21 +1,6 @@
 {
   "topPriorityCharacters": [
     {
-      "name": "Gar Saxon",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_gar_saxon.png",
-      "relic": "Reliquia 7",
-      "assignedTo": ""
-    },{
-      "name": "First Order SF TIE Pilot",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_firstorder_pilot.png",
-      "relic": "Reliquia 7",
-      "assignedTo": ""
-    },{
-      "name": "Soldado Rebelde Hoth",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_rebelhoth.png",
-      "relic": "Reliquia 7",
-      "assignedTo": "josmartini"
-    },{
       "name": "Resistance Trooper",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_resistancetrooper.png",
       "relic": "Reliquia 7",
@@ -67,6 +52,26 @@
   ],
   "upgradedCharacters": [
     {
+      "name": "Soldado Rebelde Hoth",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_rebelhoth.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "josmartini"
+    },{
+      "name": "Greef Karga",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_greefkarga.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "Temnyy"
+    },{
+      "name": "First Order SF TIE Pilot",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_firstorder_pilot.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "maath"
+    },{
+      "name": "Gar Saxon",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_gar_saxon.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "Daimon Tlan"
+    },{
       "name": "Qi'ra",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_qira.png",
       "relic": "Reliquia 7",
