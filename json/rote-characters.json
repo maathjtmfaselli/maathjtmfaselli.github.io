@@ -4,12 +4,7 @@
       "name": "Resistance Trooper",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_resistancetrooper.png",
       "relic": "Reliquia 7",
-      "assignedTo": ""
-    },{
-      "name": "Greef Karga",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_greefkarga.png",
-      "relic": "Reliquia 7",
-      "assignedTo": ""
+      "assignedTo": "Daimon Tlan"
     }
   ],
   "charactersToUpgrade": [
@@ -52,6 +47,11 @@
   ],
   "upgradedCharacters": [
     {
+      "name": "Greef Karga",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_greefkarga.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "Daimon Tlan"
+    },{
       "name": "Soldado Rebelde Hoth",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_rebelhoth.png",
       "relic": "Reliquia 7",

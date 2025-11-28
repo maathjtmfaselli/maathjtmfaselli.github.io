@@ -1,19 +1,31 @@
 {
   "historicalResults": [
     {
-      "fecha": "17/11/2025",
-      "pg": "523M",
+      "fecha": "08/12/2025",
+      "pg": "529M",
+      "estrellas": "",
+      "noDesplegados": "100/27/10///",
+      "pelotones": "/52",
+      "reva": "x/x/26",
+      "mandalor": "x/x/17",
+      "dathomir": "x/x/3",
+      "kashyyyk": "1/1/2",
+      "zeffo": "7/17/17",
+      "corellia": "2/2/6"
+    },{
+      "fecha": "24/11/2025",
+      "pg": "529M",
       "estrellas": "",
       "noDesplegados": "/////",
       "pelotones": "/52",
-      "reva": "x/x/25",
-      "mandalor": "x/x/15",
+      "reva": "x/x/26",
+      "mandalor": "x/x/17",
       "dathomir": "x/x/3",
       "kashyyyk": "x/x/2",
-      "zeffo": "x/x/14",
-      "corellia": "x/x/4"
+      "zeffo": "x/x/17",
+      "corellia": "x/x/6"
     },{
-      "fecha": "03/11/2025",
+      "fecha": "10/11/2025",
       "pg": "527M",
       "estrellas": "31",
       "noDesplegados": "40/30/46/9/49/24",
