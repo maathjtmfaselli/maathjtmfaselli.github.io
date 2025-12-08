@@ -1,10 +1,15 @@
 {
   "topPriorityCharacters": [
     {
-      "name": "Resistance Trooper",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_resistancetrooper.png",
-      "relic": "Reliquia 7",
-      "assignedTo": "Daimon Tlan"
+      "name": "Dash Rendar",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_dashrendar.png",
+      "relic": "Reliquia 8",
+      "assignedTo": ""
+    },{
+      "name": "Zaalbar",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_zaalbar.png",
+      "relic": "Reliquia 8",
+      "assignedTo": ""
     }
   ],
   "charactersToUpgrade": [
@@ -17,16 +22,6 @@
       "name": "Nightsister Initiate",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_nightsister_initiate.png",
       "relic": "Reliquia 5",
-      "assignedTo": ""
-    },{
-      "name": "Imperial Probe Droid",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_probedroid.png",
-      "relic": "Reliquia 6",
-      "assignedTo": ""
-    },{
-      "name": "Imperial Probe Droid",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_probedroid.png",
-      "relic": "Reliquia 6",
       "assignedTo": ""
     },{
       "name": "Old Boba",
@@ -47,6 +42,11 @@
   ],
   "upgradedCharacters": [
     {
+      "name": "Resistance Trooper",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_resistancetrooper.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "Daimon Tlan"
+    },{
       "name": "Greef Karga",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_greefkarga.png",
       "relic": "Reliquia 7",
