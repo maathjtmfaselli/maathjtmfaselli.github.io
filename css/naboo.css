@@ -32,6 +32,16 @@
   justify-content: center;
 }
 
+.squad-video {
+    margin-top: 1rem;
+}
+
+.squad-video video {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
 .character {
   display: flex;
   flex-direction: column;
