@@ -10,6 +10,36 @@
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_zaalbar.png",
       "relic": "Reliquia 8",
       "assignedTo": ""
+    },{
+      "name": "Starkiller",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_starkiller.png",
+      "relic": "Reliquia 8",
+      "assignedTo": ""
+    },{
+      "name": "Starkiller",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_starkiller.png",
+      "relic": "Reliquia 8",
+      "assignedTo": ""
+    },{
+      "name": "Starkiller",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_starkiller.png",
+      "relic": "Reliquia 8",
+      "assignedTo": ""
+    },{
+      "name": "Maul",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_maul_cyborg.png",
+      "relic": "Reliquia 8",
+      "assignedTo": ""
+    },{
+      "name": "Old Boba",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
+      "relic": "Reliquia 8",
+      "assignedTo": ""
+    },{
+      "name": "Visas Marr",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_visas.png",
+      "relic": "Reliquia 7",
+      "assignedTo": ""
     }
   ],
   "charactersToUpgrade": [
