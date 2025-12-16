@@ -1,3 +1,8 @@
+.score-expected {
+  font-style: italic;
+  color: #b0e0e6;
+}
+
 .squad-list {
 
 }
@@ -16,11 +21,6 @@
   margin-bottom: 10px;
 }
 
-.score-expected {
-  font-style: italic;
-  color: #b0e0e6;
-}
-
 .squad img {
   width: 60px;
   height: 60px;
@@ -35,16 +35,6 @@
   grid-template-columns: repeat(5, minmax(100px, 1fr));
   gap: 10px;
   justify-content: center;
-}
-
-.squad-video {
-    margin-top: 1rem;
-}
-
-.squad-video video {
-    max-width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
 .character {
@@ -99,6 +89,34 @@
 .priority {
   font-weight: bold;
   color: #ffcc00;
+}
+
+.squad-strategy {
+    display: flex;
+    gap: 1rem;
+}
+
+.squad-strategy-media {
+    flex: 0 0 480px;
+    margin-top: 1rem;
+}
+
+.squad-strategy-media video {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+.squad-strategy-media iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.squad-strategy-content {
+    flex: 1;
 }
 
 @media (max-width: 768px) {

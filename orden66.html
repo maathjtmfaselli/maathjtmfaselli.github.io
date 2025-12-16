@@ -26,7 +26,7 @@
             <button class="tab-button" onclick="openTab('templo-generalData')">📊 Datos</button>
             <button class="tab-button active" onclick="openTab('templo-goals')">🎯 Objetivos</button>
             <button class="tab-button" onclick="openTab('templo-padawan')">🚀 Padawan</button>
-            <button class="tab-button" onclick="openTab('templo-jedi')">🚀 Caballero Jedi</button>
+            <button class="tab-button" onclick="openTab('templo-knight')">🚀 Caballero Jedi</button>
             <button class="tab-button" onclick="openTab('templo-master')">🚀 Maestro</button>
             <button class="tab-button" onclick="openTab('templo-archive')">👥 Archivo de Gremio</button>
         </nav>
@@ -79,8 +79,10 @@
             <p>A continuación se muestran 5 ejemplos de equipos que cualquier Padawan debería tener o conseguir con relativa facilidad, así como la puntuación que se esperaría. En total, 1.5M.</p>
             <div id="squads-padawan" class="squad-list">
                 <div class="squad">
-                    <h4>Equipo 1: Gran Moff Tarkin</h4>
-                    <p class="score-expected">Puntos esperados: 300k</p>
+                    <div class="squad-header">
+                        <h4>Equipo 1: Gran Moff Tarkin</h4>
+                        <p class="score-expected">Puntos esperados: 300k</p>
+                    </div>
                     <div class="squad-characters-list">
                         <div class="character">
                             <img src="https://game-assets.swgoh.gg/textures/tex.charui_tarkinadmiral.png" alt="Gran Moff Tarkin">
@@ -96,15 +98,19 @@
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <p>Todo el gremio tiene a Tarkin a reliquia, o lo tiene que tener ya.</p>
-                        <p>Con mods normales, Tarkin puede hacer solo 300k con su ataque de área barre toda la oleada</p>
-                        <p>Con mods muy buenos de ataque, velocidad y potencia, puede hacer 450k</p>
+                    <div class="squad-strategy">
+                        <div class="squad-strategy-content">
+                            <p>Todo el gremio tiene a Tarkin a reliquia, o lo tiene que tener ya.</p>
+                            <p>A reliquia 5, con mods normales, Tarkin puede hacer 300k limpiando la oleada con su ataque de área.</p>
+                            <p>A reliquia 7, con mods óptimos de ataque, velocidad y potencia puede alcanzar los 450k.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="squad">
-                    <h4>Equipo 2: Enfys Nest</h4>
-                    <p class="score-expected">Puntos esperados: 300k</p>
+                    <div class="squad-header">
+                        <h4>Equipo 2: Enfys Nest</h4>
+                        <p class="score-expected">Puntos esperados: 300k</p>
+                    </div>
                     <div class="squad-characters-list">
                         <div class="character">
                             <img src="https://game-assets.swgoh.gg/textures/tex.charui_enfys.png" alt="Enfys Nest">
@@ -115,15 +121,19 @@
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <p>Necesita ataque para tumbar rápido a la primera oleada</p>
-                        <p>NO necesita mods de evasión de crítico</p>
-                        <p>Utilizar la segunda habilidad sobre Fox, luego tercera.</p>
+                    <div class="squad-strategy">
+                        <div class="squad-strategy-content">
+                            <p>Necesita ataque para tumbar rápido a la primera oleada</p>
+                            <p>NO necesita mods de evasión de crítico</p>
+                            <p>Utilizar la segunda habilidad sobre Fox, luego tercera.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="squad">
-                    <h4>Equipo 3: Hondo Ohnaka</h4>
-                    <p class="score-expected">Puntos esperados: 300k</p>
+                    <div class="squad-header">
+                        <h4>Equipo 3: Hondo Ohnaka</h4>
+                        <p class="score-expected">Puntos esperados: 300k</p>
+                    </div>
                     <div class="squad-characters-list">
                         <div class="character">
                             <img src="https://game-assets.swgoh.gg/textures/tex.charui_hondoohnaka.png" alt="Hondo Ohnaka">
@@ -150,13 +160,17 @@
                             </div>
                         </div>
                     </div>
-                    <div>
-                        A reliquia 5 puede conseguir puntuación máxima en nivel 0
+                    <div class="squad-strategy">
+                        <div class="squad-strategy-content">
+                            <p>A reliquia 5 puede conseguir puntuación máxima en nivel 0</p>
+                        </div>
                     </div>
                 </div>
                 <div class="squad">
-                    <h4>Equipo 4: Remesa Mala Mercenarios Básica</h4>
-                    <p class="score-expected">Puntos esperados: 300k</p>
+                    <div class="squad-header">
+                        <h4>Equipo 4: Remesa Mala Mercenarios Básica</h4>
+                        <p class="score-expected">Puntos esperados: 300k</p>
+                    </div>
                     <div class="squad-characters-list">
                         <div class="character">
                             <img src="https://game-assets.swgoh.gg/textures/tex.charui_omegas3.png" alt="Omega Fugitiva">
@@ -174,13 +188,17 @@
                             <img src="https://game-assets.swgoh.gg/textures/tex.charui_batcher.png" alt="Batcher">
                         </div>
                     </div>
-                    <div>
-                        <p>Sin necesidad de kyrotechs, ni zetas, ni 7*, pueden conseguir puntuación máxima en nivel 0</p>
+                    <div class="squad-strategy">
+                        <div class="squad-strategy-content">
+                            <p>Sin necesidad de kyrotechs, ni zetas, ni 7*, pueden conseguir puntuación máxima en nivel 0</p>
+                        </div>
                     </div>
                 </div>
                 <div class="squad">
-                    <h4>Equipo 5: Jedi Vanguardia Básico</h4>
-                    <p class="score-expected">Puntos esperados: 300k</p>
+                    <div class="squad-header">
+                        <h4>Equipo 5: Jedi Vanguardia Básico</h4>
+                        <p class="score-expected">Puntos esperados: 300k</p>
+                    </div>
                     <div class="squad-characters-list">
                         <div class="character">
                             <img src="https://game-assets.swgoh.gg/textures/tex.charui_kelleranbeq.png" alt="Kelleran Beq">
@@ -229,20 +247,21 @@
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <p>Estos jedi son básicos con muchas sinergias</p>
-                        <label>Estrategia: </label>
-                        <ul>
-                            <li>Kelleran asistencia masiva contra Fox: Tiene que tumbarlo</li>
-                            <li>Shaak Ti usa la segunda habilidad sobre Plo Koon para que provoque y obtenga inmunidad al crítico</li>
-                            <li>Plo tiene que resistir el aturdimiento de Appo</li>
-                        </ul>
+                    <div class="squad-strategy">
+                        <div class="squad-strategy-content">
+                            <ul>
+                                <li>Estos jedi son básicos con muchas sinergias</li>
+                                <li>Kelleran asistencia masiva contra Fox: Tiene que tumbarlo</li>
+                                <li>Shaak Ti usa la segunda habilidad sobre Plo Koon para que provoque y obtenga inmunidad al crítico</li>
+                                <li>Plo tiene que resistir el aturdimiento de Appo</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="templo-jedi" class="tab-content">
+        <div id="templo-knight" class="tab-content">
             <h2>
                 <span>Equipo Caballero Jedi</span>
                 <p class="score-expected">Puntos esperados: 3M</p>
@@ -411,10 +430,159 @@
         <div id="templo-master" class="tab-content">
             <h2>
                 <span>Equipo Maestro Jedi</span>
-                <span class="score-expected">Puntos esperados: 7.2M</span>
+                <p class="score-expected">Puntos esperados: 7.2M</p>
             </h2>
             <p>Un verdadero Maestro, aportará en los niveles más altos al gremio.</p>
             <div id="squads-master" class="squad-list">
+                <div class="squad">
+                    <div class="squad-header">
+                        <h4>Gran Moff Tarkin y Scorch</h4>
+                        <p class="score-expected">Puntos esperados: 3.6M</p>
+                    </div>
+                    <div class="squad-characters-list">
+                        <div class="character">
+                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_tarkinadmiral.png" alt="Gran Moff Tarkin">
+                            <div class="mods">Velocidad, Ataque, Potencia</div>
+                            <div class="relic-required">Reliquia 3</div>
+                            <div class="synergy">
+                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_espalpatine_pre.png" alt="EES">
+                            </div>
+                            <div class="relic-required">Reliquia 7</div>
+                            <div class="synergy">
+                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_lordvader.png" alt="Lord Vader">
+                                <img src="https://swgoh.wiki/images/thumb/6/66/Event-Territory_Battle-Rise_of_the_Empire.png/435px-Event-Territory_Battle-Rise_of_the_Empire.png" alt="Alzamiento" data-hover="Pelotón Tatooine">
+                            </div>
+                        </div>
+                        <div class="character">
+                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_scorch.png" alt="Scorch">
+                            <div class="relic-required">Reliquia 5</div>
+                            <div class="synergy">
+                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_jedimastermacewindu.png" alt="Jedi Master Mace Windu" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="squad-strategy">
+                        <div class="squad-strategy-media">
+                            <video controls preload="metadata" width="100%">
+                                <source src="videos/N7-3600k-Tarkin-demo.mp4" type="video/mp4">
+                                Tu navegador no soporta vídeo HTML5.
+                            </video>
+                        </div>
+                        <div class="squad-strategy-content">
+                            <p>Esta es la mejor relación Coste / Beneficio</p>
+                            <ul>
+                                <li>Todo el gremio tiene a Tarkin a reliquia, o lo tiene que tener ya.</li>
+                                <li>Solo se necesitan dos pnjs a r9 para hacer puntuación máxima</li>
+                                <li>Es un equipo muy sólido en GA 3vs3</li>
+                                <li>Gran sinergia con Lord Vader</li>
+                            </ul>
+                            <p>Objetivo: barrer a toda la oleada con el primer ataque de área de Tarkin</p>
+                            <ul>
+                                <li>Utilizar un ataque básico antes de lanzar el ataque de área (velocidad)</li>
+                                <li>Mods suficientemente buenos (ataque, potencia)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="squad">
+                    <div class="squad-header">
+                        <h4>Maestro Windu</h4>
+                        <p class="score-expected">Puntos esperados: 3.6M</p>
+                    </div>
+                    <div class="squad-characters-list">
+                        <div class="character">
+                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_jedimastermacewindu.png" alt="Jedi Master Mace Windu">
+                        </div>
+                        <div class="character">
+                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_depabillaba.png" alt="Depa Billaba">
+                            <div class="relic-required">Reliquia 5</div>
+                            <div class="synergy">
+                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_jedimastermacewindu.png" alt="Jedi Master Mace Windu" >
+                            </div>
+                        </div>
+                        <div class="character">
+                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_vanguardtempleguard.png" alt="Tempe Guard">
+                            <div class="relic-required">Reliquia 5</div>
+                            <div class="synergy">
+                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_jedimastermacewindu.png" alt="Jedi Master Mace Windu" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="squad-strategy">
+                        <div class="squad-strategy-media">
+                            <iframe
+                                    src="https://www.youtube.com/embed/FWO5iCVXmhc"
+                                    title="Order 66: 3 Man the raid with Mace for MAX SCORE at R9."
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="squad-strategy-content">
+                            <p>Gran relación Coste / Beneficio</p>
+                            <ul>
+                                <li>Equipo meta en GA Kyber.</li>
+                                <li>Solo se necesitan tres pnjs a r9 para hacer puntuación máxima</li>
+                                <li>Es un equipo muy sólido en GA 3vs3</li>
+                            </ul>
+                            <p>Objetivo: tumbar a Fox con el primer ataque de Depa (<a href="https://swgoh.gg/units/DEPABILLABA/ability/specialability_depabillaba01/8/">Vaapad Disciple</a>)</p>
+                            <ul>
+                                <li>Mods ataque para Mace y Depa</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="squad">
+                    <div class="squad-header">
+                        <h4>Sobras soldados clon</h4>
+                        <p class="score-expected">Puntos esperados: 3.6M</p>
+                    </div>
+                    <div class="squad-characters-list">
+                        <div class="character">
+                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_appo.png" alt="Appo">
+                            <div class="relic-required">Reliquia 5</div>
+                            <div class="synergy">
+                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_jedimastermacewindu.png" alt="Jedi Master Mace Windu" >
+                            </div>
+                        </div>
+                        <div class="character">
+                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_operative.png" alt="CX-2">
+                            <div class="relic-required">Reliquia 5</div>
+                            <div class="synergy">
+                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_jedimastermacewindu.png" alt="Jedi Master Mace Windu" >
+                            </div>
+                        </div>
+                        <div class="character">
+                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_disguisedclonetrooper.png" alt="Diguised Clone Trooper">
+                            <div class="relic-required">Reliquia 5</div>
+                            <div class="synergy">
+                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_jedimastermacewindu.png" alt="Jedi Master Mace Windu" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="squad-strategy">
+                        <div class="squad-strategy-media">
+                            <iframe width="725" height="407" src="https://www.youtube.com/embed/bGq5jvgTk0U" title="NO LEAD! DS Clones 3-Man Guide! Order 66 Raid 3.6m! Max Raid Run - OFFICIALLY SAFE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="squad-strategy-content">
+                            <p>Imprescindible si ya tienes a Lord Vader</p>
+                            <ul>
+                                <li>Construyes 2 equipos TOP en GA 3vs3</li>
+                                <li>Construyes 1 equipo TOP en GA 5vs5</li>
+                            </ul>
+                            <p>Objetivo: Aplicar Orden66 para conseguir 100% de medidor de turno para todo el equipo</p>
+                            <ul>
+                                <li>Mods ataque para Disfrazado</li>
+                                <li>Mods potencia para Appo, más rápido que Disfrazado</li>
+                                <li>CX ataca 3 veces a Appo (para aplicar Orden66 en su tercer ataque)</li>
+                                <li>Appo ataca a un soldado -> Tiene que APLICAR stun Y también tiene que llamar a Disfrazado para asistir</li>
+                                <li>Disfrazado ataca con la básica al otro soldado</li>
+                                <li>El invocado usa su segunda habilidad sobre un soldado, y TIENE que llamar a asistir a Disfrazado</li>
+                                <li>Tumbar a Appo cuando haya 3 clones con 0% turno</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 <div class="squad">
                     <h4>Jedi Vanguardia</h4>
                     <p class="score-expected">Puntos esperados: 2.7M</p>
@@ -455,88 +623,6 @@
                             <li>Shaak Ti usa la segunda habilidad sobre Plo Koon para que provoque y obtenga inmunidad al crítico</li>
                             <li>Plo necesita ataque</li>
                         </ul>
-                    </div>
-                </div>
-                <div class="squad">
-                    <h4>Gran Moff Tarkin y Scorch</h4>
-                    <p class="score-expected">Puntos esperados: 3.6M</p>
-                    <div class="squad-characters-list">
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_tarkinadmiral.png" alt="Gran Moff Tarkin">
-                            <div class="mods">Velocidad, Ataque, Potencia</div>
-                            <div class="relic-required">Reliquia 3</div>
-                            <div class="synergy">
-                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_espalpatine_pre.png" alt="EES">
-                            </div>
-                            <div class="relic-required">Reliquia 7</div>
-                            <div class="synergy">
-                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_lordvader.png" alt="Lord Vader">
-                                <img src="https://swgoh.wiki/images/thumb/6/66/Event-Territory_Battle-Rise_of_the_Empire.png/435px-Event-Territory_Battle-Rise_of_the_Empire.png" alt="Alzamiento" data-hover="Pelotón Tatooine">
-                            </div>
-                        </div>
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_scorch.png" alt="Scorch">
-                            <div class="relic-required">Reliquia 5</div>
-                            <div class="synergy">
-                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_jedimastermacewindu.png" alt="Jedi Master Mace Windu" >
-                            </div>
-                        </div>
-                    </div>
-                    <div class="squad-video">
-                        <video controls preload="metadata" width="100%">
-                            <source src="videos/N7-3600k-Tarkin-demo.mp4" type="video/mp4">
-                            Tu navegador no soporta vídeo HTML5.
-                        </video>
-                    </div>
-                </div>
-                <div class="squad">
-                    <h4>Maestro Windu</h4>
-                    <p class="score-expected">Puntos esperados: 3.6M</p>
-                    <div class="squad-characters-list">
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_jedimastermacewindu.png" alt="Jedi Master Mace Windu">
-                        </div>
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_depabillaba.png" alt="Depa Billaba">
-                            <div class="relic-required">Reliquia 5</div>
-                            <div class="synergy">
-                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_jedimastermacewindu.png" alt="Jedi Master Mace Windu" >
-                            </div>
-                        </div>
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_vanguardtempleguard.png" alt="Tempe Guard">
-                            <div class="relic-required">Reliquia 5</div>
-                            <div class="synergy">
-                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_jedimastermacewindu.png" alt="Jedi Master Mace Windu" >
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="squad">
-                    <h4>Sobras soldados clon</h4>
-                    <p class="score-expected">Puntos esperados: 3.6M</p>
-                    <div class="squad-characters-list">
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_appo.png" alt="Appo">
-                            <div class="relic-required">Reliquia 5</div>
-                            <div class="synergy">
-                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_jedimastermacewindu.png" alt="Jedi Master Mace Windu" >
-                            </div>
-                        </div>
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_operative.png" alt="CX-2">
-                            <div class="relic-required">Reliquia 5</div>
-                            <div class="synergy">
-                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_jedimastermacewindu.png" alt="Jedi Master Mace Windu" >
-                            </div>
-                        </div>
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_disguisedclonetrooper.png" alt="Diguised Clone Trooper">
-                            <div class="relic-required">Reliquia 5</div>
-                            <div class="synergy">
-                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_jedimastermacewindu.png" alt="Jedi Master Mace Windu" >
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="squad">
