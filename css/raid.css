@@ -16,6 +16,11 @@
   margin-bottom: 10px;
 }
 
+.score-expected {
+  font-style: italic;
+  color: #b0e0e6;
+}
+
 .squad img {
   width: 60px;
   height: 60px;
@@ -94,11 +99,6 @@
 .priority {
   font-weight: bold;
   color: #ffcc00;
-}
-
-.score-expected {
-  font-style: italic;
-  color: #b0e0e6;
 }
 
 @media (max-width: 768px) {
