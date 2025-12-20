@@ -123,6 +123,7 @@
   }
   .squad-strategy-media {
       width: 100%;
+      max-width: 100%;
   }
 
   .character img {
