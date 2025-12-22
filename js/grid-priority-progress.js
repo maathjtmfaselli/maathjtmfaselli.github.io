@@ -1,12 +1,15 @@
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.grid-priority-progress').forEach(progress => {
+function initGridPriorityProgress(root = document) {
+  root.querySelectorAll('.grid-priority-progress').forEach(progress => {
+    // Evitar doble inicialización
+    if (progress.dataset.initialized) return;
+    progress.dataset.initialized = "true";
+
     const completed = parseInt(progress.dataset.completed) || 0;
     const attempted = parseInt(progress.dataset.attempted) || 0;
     const eligible = parseInt(progress.dataset.eligible) || 0;
     const target = parseInt(progress.dataset.target) || 0;
     const total = parseInt(progress.dataset.total) || 50;
 
-    // Crear el grid visual
     const grid = document.createElement('div');
     grid.classList.add('priority-grid');
 
@@ -34,4 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
     progress.innerHTML = '';
     progress.appendChild(grid);
   });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  initGridPriorityProgress();
 });

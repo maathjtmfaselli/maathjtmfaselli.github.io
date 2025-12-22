@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spain Space SWGoH</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/holocrones.css">
+    <script src="js/dynamic-loader.js" defer></script>
+    <script src="js/grid-priority-progress.js" defer></script>
+    <link rel="icon" href="https://assets.swgoh.gg/files/ui/tex.guild_icon_oldrepublic_tint.00b15b7f62455726b72d.webp" type="image/x-icon">
+</head>
+
+<body>
+
+<header id="index-dynamic-header">
+    <!-- Si falla la carga, este mensaje será visible -->
+    <p>Cargando la cabecera...</p>
+</header>
+
+<main>
+    <section id="holocrones-section" class="holocron-layout">
+        <section class="holocron-library">
+            <h2>Biblioteca de Holocrones</h2>
+
+            <div class="bibliotecaria">
+                <figure class="jocasta">
+                    <img src="img/jocasta_nu_library.jpg" alt="Jocasta Nu, bibliotecaria del Templo Jedi">
+                    <figcaption>
+                        <p class="jocasta__frase">
+                            Los archivos del Templo están a tu disposición.<br>
+                            <strong>¿Qué deseas saber?</strong>
+                        </p>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="holocrones-list">
+                <article class="holocron holocron--politica">
+                    <button
+                            class="holocron__action"
+                            data-holocron="holocrones/_guild-rules.html"
+                            data-title="Reglas del Gremio"
+                    >
+                        <img class="holocron__icono" src="img/holocron-blue-light.png" alt="">
+                        <h3 class="holocron__titulo truncate">
+                            ¿Cuáles son las reglas del gremio?
+                        </h3>
+                    </button>
+                </article>
+                <article class="holocron holocron--politica">
+                    <button
+                            class="holocron__action"
+                            data-holocron="holocrones/_guild-goals.html"
+                            data-title="Reglas del Gremio"
+                    >
+                        <img class="holocron__icono" src="img/holocron-blue-light.png" alt="Icono holocron">
+                        <h3 class="holocron__titulo truncate">
+                            ¿Cuáles son las prioridades del gremio?
+                        </h3>
+                    </button>
+                </article>
+                <article class="holocron holocron--politica">
+                    <button
+                        class="holocron__action"
+                        data-holocron="holocrones/_guild-warnings.html"
+                        data-title="Reglas del Gremio"
+                    >
+                        <img class="holocron__icono" src="img/holocron-blue-light.png" alt="Icono holocron">
+                        <h3 class="holocron__titulo truncate">
+                            ¿Qué miembros tienen tarjetas amarillas?
+                        </h3>
+                </button>
+                </article>
+                <article class="holocron holocron--recursos">
+                    <button
+                            class="holocron__action"
+                            data-holocron="holocrones/_resources-mods.html"
+                            data-title="Reglas del Gremio"
+                    >
+                        <img class="holocron__icono" src="img/holocron-blue-light.png" alt="Icono holocron">
+                        <h3 class="holocron__titulo truncate">
+                            ¿Cómo mejoro mis MODS?
+                        </h3>
+                    </button>
+                </article>
+                <article class="holocron holocron--guias">
+                    <button
+                            class="holocron__action"
+                            data-holocron="holocrones/_journey-bo-katan-mandalore-unlock.html"
+                            data-title="Reglas del Gremio"
+                    >
+                        <img class="holocron__icono" src="img/holocron-red.png" alt="Icono holocron">
+                        <h3 class="holocron__titulo truncate">
+                            ¿Cómo desbloqueo Bo Katan Mandalore?
+                        </h3>
+                    </button>
+                </article>
+                <article class="holocron holocron--historia">
+                    <a href="naboo.html" target="_blank" rel="noopener noreferrer">
+                        <img class="holocron__icono" src="img/holocron-green.png" alt="Icono holocron">
+                        <h3 class="holocron__titulo truncate">
+                            ¿Qué hizo el gremio en Naboo?
+                        </h3>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <section class="holocron-viewer">
+            <div id="holocron-viewer-content">
+                <p class="holocron-placeholder">
+                    Selecciona un holocrón para consultarlo
+                </p>
+            </div>
+        </section>
+    </section>
+</main>
+
+<script>
+document.addEventListener("click", (e) => {
+    const btn = e.target.closest(".holocron__action");
+    if (!btn) return;
+
+    const src = btn.dataset.holocron;
+    const viewer = document.getElementById("holocron-viewer-content");
+
+    viewer.innerHTML = "<p>Cargando holocrón...</p>";
+
+    fetch(src)
+        .then(res => res.text())
+        .then(html => {
+            viewer.innerHTML = html;
+            viewer.scrollTop = 0;
+            initGridPriorityProgress(viewer);
+        })
+        .catch(err => console.error(`Error cargando holocron ${src}`, err));
+});
+</script>
+<footer id="index-dynamic-footer">
+    <!-- Si falla la carga, este mensaje será visible -->
+    <p>Cargando el pie...</p>
+</footer>
+</body>
+</html>
