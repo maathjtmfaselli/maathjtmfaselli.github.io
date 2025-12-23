@@ -18,7 +18,7 @@
 .holocron-viewer {
     container-type: inline-size;
     flex: 1;
-    min-width: 0;
+    min-width: 450px;
     padding: 1.5rem;
     overflow-y: auto;
     background: rgba(10,10,20,0.95);
@@ -169,7 +169,7 @@
         flex-direction: column;
     }
 
-    .holocron-library {
+    .holocron-library, .holocron-viewer  {
         min-width: 300px;
     }
     .librarian-section {
@@ -191,7 +191,7 @@
         flex-direction: column;
     }
 
-    .holocron-library {
+    .holocron-library, .holocron-viewer {
         min-width: 300px;
     }
 }
