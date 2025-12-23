@@ -2,32 +2,35 @@
    Layout principal
 ========================= */
 
-#holocrones-section {
+.holocron-layout {
     display: flex;
     align-items: stretch;
     gap: 2rem;
     padding: 2rem;
 }
 
-/* Columna izquierda: bibliotecaria */
-.bibliotecaria {
+.holocron-library {
+    min-width: 450px;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.holocron-viewer {
+    padding: 1.5rem;
+    overflow-y: auto;
+    background: rgba(10,10,20,0.95);
+}
+
+/* =========================
+   Librarian
+========================= */
+
+.librarian-section {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-/* Columna derecha: biblioteca */
-.library {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* =========================
-   Jocasta
-========================= */
 
 .jocasta {
     max-width: 100%;
@@ -53,16 +56,6 @@
 /* =========================
    Holocrones
 ========================= */
-.library {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.library h2 {
-    margin-bottom: 1rem;
-}
 
 .holocrones-list {
     display: flex;
@@ -70,7 +63,6 @@
     gap: 0.75rem;
 }
 
-/* Tarjeta base */
 .holocron {
     background: rgba(20, 20, 30, 0.9);
     border-radius: 10px;
@@ -113,15 +105,9 @@
     text-decoration: none;
 }
 
-/* Hover */
 .holocron:hover {
     transform: translateY(-4px);
     box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-}
-
-.holocron__titulo {
-    font-size: 0.95rem;
-    margin: 0;
 }
 
 .holocron__icono {
@@ -137,6 +123,15 @@
     filter: drop-shadow(0 0 6px rgba(255,255,255,0.3));
 }
 
+.holocron__titulo {
+    font-size: 1rem;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+}
+
 /* =========================
    Categorías (colores)
 ========================= */
@@ -144,66 +139,21 @@
 .holocron--politica {
     border-left: 4px solid #ffcc4a;
 }
-.holocron--politica .holocron__icono {
-    background-image: url("img/holocron-yellow-light.png");
-}
 
 .holocron--guias {
     border-left: 4px solid #34c759; /* verde */
-}
-.holocron--guias .holocron__icono {
-    background-image: url("img/holocron-green-light.png");
 }
 
 .holocron--eventos {
     border-left: 4px solid #ff6b6b; /* rojo */
 }
-.holocron--eventos .holocron__icono {
-    background-image: url("img/holocron-red-light.png");
-}
 
 .holocron--recursos {
     border-left: 4px solid #a34aff; /* morado */
 }
-.holocron--recursos .holocron__icono {
-    background-image: url("img/holocron-purple-light.png");
-}
 
 .holocron--historia {
     border-left: 4px solid #4aa3ff;
-}
-.holocron--historia .holocron__icono {
-    background-image: url("img/holocron-blue-light.png");
-}
-
-/* =========================
-   Título (una sola línea)
-========================= */
-
-.holocron__titulo {
-    font-size: 1rem;
-    font-weight: 600;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.holocron-layout {
-    display: grid;
-    grid-template-columns: 320px 1fr;
-    min-height: calc(100vh - var(--header-height));
-}
-
-.holocron-library {
-    border-right: 1px solid rgba(255,255,255,0.1);
-    padding: 1rem;
-    overflow-y: auto;
-}
-
-.holocron-viewer {
-    padding: 1.5rem;
-    overflow-y: auto;
-    background: rgba(10,10,20,0.95);
 }
 
 /* =========================
@@ -212,12 +162,14 @@
 
 /* Tablets y móviles */
 @media (max-width: 900px) {
-    #holocrones-section {
+    .holocron-layout {
         flex-direction: column;
     }
 
-    .bibliotecaria,
-    .library {
+    .holocron-library {
+        min-width: 300px;
+    }
+    .librarian-section {
         flex: unset;
     }
 
@@ -231,12 +183,12 @@
 }
 
 /* Móviles pequeños */
-@media (max-width: 500px) {
-    .holocrones-grid {
-        grid-template-columns: 1fr;
+@media (max-width: 300px) {
+    .holocron-layout {
+        flex-direction: column;
     }
 
-    .jocasta__frase {
-        font-size: 1rem;
+    .holocron-library {
+        min-width: 300px;
     }
 }
