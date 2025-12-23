@@ -16,6 +16,9 @@
 }
 
 .holocron-viewer {
+    container-type: inline-size;
+    flex: 1;
+    min-width: 0;
     padding: 1.5rem;
     overflow-y: auto;
     background: rgba(10,10,20,0.95);
