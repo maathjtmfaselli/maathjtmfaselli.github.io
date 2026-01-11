@@ -72,6 +72,16 @@
   ],
   "upgradedCharacters": [
     {
+      "name": "Nightsister Initiate",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_nightsister_initiate.png",
+      "relic": "Reliquia 5",
+      "assignedTo": "Garrick"
+    },{
+      "name": "Maul",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_maul_cyborg.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "Hill"
+    },{
       "name": "Resistance Trooper",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_resistancetrooper.png",
       "relic": "Reliquia 7",
