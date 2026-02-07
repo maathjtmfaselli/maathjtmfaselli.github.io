@@ -1,6 +1,30 @@
 {
   "historicalResults": [
     {
+      "fecha": "16/02/2026",
+      "pg": "549M",
+      "estrellas": "",
+      "noDesplegados": "/////",
+      "pelotones": "/54",
+      "reva": "x/x/24",
+      "mandalor": "x/x/23",
+      "dathomir": "x/x/6",
+      "kashyyyk": "x/x/2",
+      "zeffo": "x/x/23",
+      "corellia": "x/x/7"
+    },{
+      "fecha": "02/02/2026",
+      "pg": "549M",
+      "estrellas": "32",
+      "noDesplegados": "-/62/60/51//",
+      "pelotones": "54/54",
+      "reva": "16/22/24",
+      "mandalor": "15/20/23",
+      "dathomir": "1/5/6",
+      "kashyyyk": "1/1/2",
+      "zeffo": "9/17/23",
+      "corellia": "3/4/7"
+    },{
       "fecha": "19/01/2026",
       "pg": "540M",
       "estrellas": "",
