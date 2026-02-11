@@ -26,19 +26,9 @@
       "relic": "Reliquia 8",
       "assignedTo": ""
     },{
-      "name": "Maul",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_maul_cyborg.png",
-      "relic": "Reliquia 8",
-      "assignedTo": ""
-    },{
       "name": "Old Boba",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
       "relic": "Reliquia 8",
-      "assignedTo": ""
-    },{
-      "name": "Visas Marr",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_visas.png",
-      "relic": "Reliquia 7",
       "assignedTo": ""
     }
   ],
@@ -46,11 +36,6 @@
     {
       "name": "Jawa Ingeniero",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_jawa_engineer.png",
-      "relic": "Reliquia 5",
-      "assignedTo": ""
-    },{
-      "name": "Nightsister Initiate",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_nightsister_initiate.png",
       "relic": "Reliquia 5",
       "assignedTo": ""
     },{
@@ -72,6 +57,21 @@
   ],
   "upgradedCharacters": [
     {
+      "name": "Nightsister Initiate",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_nightsister_initiate.png",
+      "relic": "Reliquia 5",
+      "assignedTo": "Garrick"
+    },{
+      "name": "Maul",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_maul_cyborg.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "Hill"
+    },{
+      "name": "Visas Marr",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_visas.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "Last Order"
+    },{
       "name": "Nightsister Initiate",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_nightsister_initiate.png",
       "relic": "Reliquia 5",
