@@ -2,7 +2,7 @@
   "historicalResults": [
     {
       "fecha": "30/03/2026",
-      "pg": "559M",
+      "pg": "563M",
       "estrellas": "",
       "noDesplegados": "/////",
       "pelotones": "/54",
@@ -14,16 +14,16 @@
       "corellia": "x/x/7"
     },{
       "fecha": "16/03/2026",
-      "pg": "559M",
-      "estrellas": "",
-      "noDesplegados": "/////",
-      "pelotones": "/54",
-      "reva": "x/x/24",
-      "mandalor": "x/x/24",
-      "dathomir": "x/x/6",
-      "kashyyyk": "x/x/2",
-      "zeffo": "x/x/22",
-      "corellia": "x/x/7"
+      "pg": "563M",
+      "estrellas": "30",
+      "noDesplegados": "86/104/44/91/77/71",
+      "pelotones": "54/54",
+      "reva": "16/22/24",
+      "mandalor": "14/20/24",
+      "dathomir": "4/6/6",
+      "kashyyyk": "1/1/2",
+      "zeffo": "9/12/22",
+      "corellia": "3/4/7"
     },{
       "fecha": "02/03/2026",
       "pg": "559M",
