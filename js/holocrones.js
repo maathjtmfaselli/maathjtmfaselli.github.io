@@ -4,6 +4,7 @@ document.addEventListener("click", (e) => {
 
     const src = btn.dataset.holocron;
     const viewer = document.getElementById("holocron-viewer-content");
+    const shouldLoadChangelog = btn.dataset.loadChangelog === "true";
 
     viewer.innerHTML = "<p>Cargando holocrón...</p>";
 
@@ -13,6 +14,22 @@ document.addEventListener("click", (e) => {
             viewer.innerHTML = html;
             viewer.scrollTop = 0;
             initGridPriorityProgress(viewer);
+            if (shouldLoadChangelog) {
+                loadChangelog();
+            }
         })
         .catch(err => console.error(`Error cargando holocron ${src}`, err));
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(window.location.search);
+    const target = params.get("open");
+
+    if (!target) return;
+
+    const btn = document.querySelector(`.holocron__action[data-key="${target}"]`);
+
+    if (btn) {
+        btn.click(); // 👈 simula el click
+    }
 });
