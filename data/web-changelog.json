@@ -4,26 +4,27 @@
     "category": "holocron",
     "title": "Nuevo holocron: '<a href=\"holocrones.html?open=holocron__changelog\">Web - Últimas Novedades</a>'",
     "description": "Este nuevo holocron informa de las últimas novedades en esta página web."
-  },
-  {
+  },{
+    "date": "2026-03-28",
+    "category": "holocron",
+    "title": "Nuevo holocron: '<a href=\"holocrones.html?open=holocron__r9\">Prioridad Reliquias 9</a>'",
+    "description": "Este nuevo holocron informa de las últimas novedades en esta página web."
+  },{
     "date": "2026-03-28",
     "category": "holocron",
     "title": "Mejora holocrón: '<a href=\"holocrones.html?open=holocron__mods\">Cómo mejoro mis MODS?</a>'",
     "description": "Se ha añadido nuevo contenido al holocrón dando ejemplos prácticos."
-  },
-  {
+  },{
     "date": "2026-03-28",
     "category": "gremio",
     "title": "Tarjetas amarillas: Darth Sion, Oldboy, Hill",
     "description": "Nuevas tarjetas amarillas a 3 miembros del gremio que cumplen con 0 objetivos del gremio"
-  },
-  {
+  },{
     "date": "2026-03-22",
     "category": "alzamiento",
     "title": "30*",
     "description": "Registrado último alzamiento."
-  },
-  {
+  },{
     "date": "2026-03-22",
     "category": "orden66",
     "title": "Actualización de datos",
