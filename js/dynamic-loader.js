@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch("index-header.html")
         .then(response => response.text())
         .then(data => {
-            document.getElementById("index-dynamic-header").innerHTML = data;
+            document.getElementById("index-dynamic-header").outerHTML = data;
             marcarEnlaceActivoCabecera();
         });
 
@@ -23,6 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch("index-footer.html")
         .then(response => response.text())
         .then(data => {
-            document.getElementById("index-dynamic-footer").innerHTML = data;
+            document.getElementById("index-dynamic-footer").outerHTML = data;
         });
 });
