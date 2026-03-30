@@ -7,7 +7,7 @@
 
 .faq-content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     gap: 20px;
 }
@@ -41,6 +41,7 @@
 .faq-image {
     flex: 1;
     text-align: center;
+    order: -1; /* Opcional: poner la imagen arriba en móviles */
 }
 
 .faq-infografia {
@@ -52,11 +53,14 @@
 
 /* Responsive: móviles y pantallas pequeñas */
 @media (max-width: 768px) {
-    .faq-content {
-        flex-direction: column;
-    }
+  .faq-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 
     .faq-image {
-        order: -1; /* Opcional: poner la imagen arriba en móviles */
+
     }
 }

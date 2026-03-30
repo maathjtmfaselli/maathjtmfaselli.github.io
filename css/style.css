@@ -103,7 +103,9 @@ footer {
     gap: 2rem;
     list-style: none;
 }
-.nav-item {}
+.nav-item {
+
+}
 .nav-link {
     position: relative;
     text-decoration: none;
@@ -377,6 +379,7 @@ ol {
   .nav-list {
     display: flex;
     list-style-type: none;
+    padding-left: 0px;
     gap: 1rem;
     list-style: none;
   }
