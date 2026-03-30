@@ -6,7 +6,6 @@
     display: flex;
     align-items: stretch;
     gap: 2rem;
-    padding: 2rem;
 }
 
 .holocron-library {
@@ -16,12 +15,9 @@
 }
 
 .holocron-viewer {
-    container-type: inline-size;
-    flex: 1;
     min-width: 450px;
-    padding: 1.5rem;
+    padding: 1rem;
     overflow-y: auto;
-    background: rgba(10,10,20,0.95);
 }
 
 /* =========================
@@ -59,7 +55,13 @@
 /* =========================
    Holocrones
 ========================= */
-
+#holocron-viewer-content {
+    container-type: inline-size;
+    flex: 1;
+    overflow-y: auto;
+    min-width: 450px;
+    background: rgba(10,10,20,0.95);
+}
 .holocrones-list {
     display: flex;
     flex-direction: column;
@@ -166,6 +168,9 @@
 /* Tablets y móviles */
 @media (max-width: 900px) {
     .holocron-layout {
+        display: flex;
+        align-items: stretch;
+        gap: 2rem;
         flex-direction: column;
     }
 
@@ -188,6 +193,9 @@
 /* Móviles pequeños */
 @media (max-width: 300px) {
     .holocron-layout {
+        display: flex;
+        align-items: stretch;
+        gap: 2rem;
         flex-direction: column;
     }
 
