@@ -41,7 +41,6 @@
 .faq-image {
     flex: 1;
     text-align: center;
-    order: -1; /* Opcional: poner la imagen arriba en móviles */
 }
 
 .faq-infografia {
