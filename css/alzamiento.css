@@ -31,31 +31,6 @@
   display: none; /* Hide content by default */
 }
 
-.mission-card-title {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #ffcc80;
-}
-
-.subsection {
-    margin-top: 10px;
-    border-left: 4px solid #555;
-    padding-left: 10px;
-}
-
-.subsection-title {
-  font-size: 1em;
-  font-weight: bold;
-  color: #ffcc80;
-}
-
-.subsection-content {
-    padding: 10px;
-    background-color: #2a2a2a;
-    border-radius: 5px;
-    margin-top: 5px;
-}
-
 .alzamiento-section:not(.collapsed) .alzamiento-section-content {
   display: block; /* Show content when not collapsed */
 }
@@ -92,6 +67,12 @@
   border: 2px solid #00bcd4;
 }
 
+.mission-card-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffcc80;
+}
+
 .relic-upgraded-required {
   color: #ffab40;
   text-align: center;
@@ -116,29 +97,6 @@
   color: rgb(255, 204, 128);
   font-size: 1.5em;
   font-weight: bold;
-}
-
-.alzamiento-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 20px;
-}
-
-.alzamiento-table th, .alzamiento-table td {
-  border: 1px solid #00bcd4;
-  text-align: center;
-  padding: 8px;
-}
-
-.alzamiento-table th {
-  background-color: #2a2a40;
-  color: #00e5ff;
-  font-size: 18px;
-}
-
-.alzamiento-table td {
-  background-color: #1e1e2e;
-  color: #e0e0e0;
 }
 
 #operations-guild-table {

@@ -48,6 +48,23 @@ section {
   color: #ffffff;
 }
 
+.subsection {
+    margin-top: 10px;
+    border-left: 4px solid #555;
+    padding-left: 10px;
+}
+.subsection-title {
+  font-size: 1em;
+  font-weight: bold;
+  color: #ffcc80;
+}
+.subsection-content {
+    padding: 10px;
+    background-color: #2a2a2a;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
 footer {
   display: flex;
   justify-content: center;
