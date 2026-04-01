@@ -11,7 +11,7 @@ function openTab(tabId) {
 }
 
 function initializeCollapsibleSections() {
-    const headers = document.querySelectorAll('.alzamiento-section h3');
+    const headers = document.querySelectorAll('.section-collapsable h3');
 
     headers.forEach(header => {
         header.addEventListener('click', () => {
