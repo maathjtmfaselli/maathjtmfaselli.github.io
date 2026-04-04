@@ -21,556 +21,437 @@
 </header>
 
 <main>
+  <section id="templo">
+    <nav class="tab">
+      <button class="tab-button" onclick="openTab('templo-generalData')">📊 Datos</button>
+      <button class="tab-button active" onclick="openTab('templo-goals')">🎯 Objetivos</button>
+      <button class="tab-button" onclick="openTab('templo-padawan')">🚀 Padawan</button>
+      <button class="tab-button" onclick="openTab('templo-knight')">🚀 Caballero Jedi</button>
+      <button class="tab-button" onclick="openTab('templo-master')">🚀 Maestro</button>
+      <button class="tab-button" onclick="openTab('templo-archive')">👥 Archivo de Gremio</button>
+    </nav>
 
-    <section id="templo">
-        <nav class="tab">
-            <button class="tab-button" onclick="openTab('templo-generalData')">📊 Datos</button>
-            <button class="tab-button active" onclick="openTab('templo-goals')">🎯 Objetivos</button>
-            <button class="tab-button" onclick="openTab('templo-padawan')">🚀 Padawan</button>
-            <button class="tab-button" onclick="openTab('templo-knight')">🚀 Caballero Jedi</button>
-            <button class="tab-button" onclick="openTab('templo-master')">🚀 Maestro</button>
-            <button class="tab-button" onclick="openTab('templo-archive')">👥 Archivo de Gremio</button>
-        </nav>
+    <div id="templo-generalData" class="tab-content">
+      <div>
+        <select id="pnj-filter" onchange="filterTemploPnjSynergiesTable()">
+            <option value="">Todos los personajes</option>
+        </select>
+        <select id="relic-required-filter" onchange="filterTemploPnjSynergiesTable()">
+            <option value="">Todas las reliquias requeridas</option>
+        </select>
+        <select id="synergy-filter" onchange="filterTemploPnjSynergiesTable()">
+            <option value="">Todas las sinergias</option>
+        </select>
+      </div>
+      <div>&nbsp;</div>
+      <div>
+        <table id="templo-pnj-synergies" class="data-table">
+        <thead>
+        <tr>
+            <th>Personaje</th>
+            <th>Reliquia</th>
+            <th>Sinergia</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        </table>
+      </div>
+    </div>
 
-        <div id="templo-generalData" class="tab-content">
-            <div>
-                <select id="pnj-filter" onchange="filterTemploPnjSynergiesTable()">
-                    <option value="">Todos los personajes</option>
-                </select>
-                <select id="relic-required-filter" onchange="filterTemploPnjSynergiesTable()">
-                    <option value="">Todas las reliquias requeridas</option>
-                </select>
-                <select id="synergy-filter" onchange="filterTemploPnjSynergiesTable()">
-                    <option value="">Todas las sinergias</option>
-                </select>
-            </div>
-            <div>&nbsp;</div>
-            <div>
-                <table id="templo-pnj-synergies" class="data-table">
-                <thead>
-                <tr>
-                    <th>Personaje</th>
-                    <th>Reliquia</th>
-                    <th>Sinergia</th>
-                </tr>
-                </thead>
-                <tbody>
-                </tbody>
-                </table>
-            </div>
-        </div>
-
-        <div id="templo-goals" class="tab-content">
-            <div class="priority-item">
-                <div class="priority-target"><a href="https://swgoh.gg/raids/order66/DIFF01/rewards/"><img src="img/order66-reward-box9.png"/></a></div>
-                <div class="priority-progress">
-                    <div class="progress-wrapper">
-                        <progress class="progress-bar" value="210" max="245"></progress>
-                        <span class="progress-label">210 / 245</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="templo-padawan" class="tab-content">
-            <h2>
-                <span>Equipo Padawan</span>
-                <p class="score-expected">Puntos esperados: 900k</p>
-            </h2>
-            <p>A continuación se muestran 5 ejemplos de equipos que cualquier Padawan debería tener o conseguir con relativa facilidad, así como la puntuación que se esperaría. En total, 1.5M.</p>
-          <div class="holocrones-list">
-            <article class="holocron holocron--eventos">
-              <button
-                  class="holocron__action"
-                  data-holocron="holocrones/_order66-N0-300k-Tarkin-solo.html"
-              >
-                <img class="holocron__icono" src="img/holocron-red.png" alt="Icono holocron">
-                <h3 class="holocron__titulo truncate">
-                  <a href="holocrones.html?open=holocron__order66-N0-300k-Tarkin-solo">Orden66 - 300k - Tarkin solo</a>
-                </h3>
-              </button>
-            </article>
-            <article class="holocron holocron--eventos">
-              <button
-                  class="holocron__action"
-                  data-holocron="holocrones/_order66-N0-300k-Hondo-solo.html"
-              >
-                <img class="holocron__icono" src="img/holocron-red.png" alt="Icono holocron">
-                <h3 class="holocron__titulo truncate">
-                  <a href="holocrones.html?open=holocron__order66-N0-300k-Hondo-solo">Orden66 - 300k - Hondo solo</a>
-                </h3>
-              </button>
-            </article>
-            <article class="holocron holocron--eventos">
-              <button
-                  class="holocron__action"
-                  data-holocron="holocrones/_order66-N0-300k-Enfys-solo.html"
-              >
-                <img class="holocron__icono" src="img/holocron-red.png" alt="Icono holocron">
-                <h3 class="holocron__titulo truncate">
-                  <a href="holocrones.html?open=holocron__order66-N0-300k-Enfys-solo">Orden66 - 300k - Enfys solo</a>
-                </h3>
-              </button>
-            </article>
-            <article class="holocron holocron--eventos">
-              <button
-                  class="holocron__action"
-                  data-holocron="holocrones/_order66-N0-300k-QuiGon.html"
-              >
-                <img class="holocron__icono" src="img/holocron-red.png" alt="Icono holocron">
-                <h3 class="holocron__titulo truncate">
-                  <a href="holocrones.html?open=holocron__order66-N0-300k-Qui-Gon">Orden66 - 300k - Qui-Gon</a>
-                </h3>
-              </button>
-            </article>
+    <div id="templo-goals" class="tab-content">
+      <div class="priority-item">
+        <div class="priority-target"><a href="https://swgoh.gg/raids/order66/DIFF01/rewards/"><img src="img/order66-reward-box9.png"/></a></div>
+        <div class="priority-progress">
+          <div class="progress-wrapper">
+            <progress class="progress-bar" value="217" max="245"></progress>
+            <span class="progress-label">217 / 245</span>
           </div>
-            <div id="squads-padawan" class="squad-list">
-                <div class="squad">
-                    <div class="squad-header">
-                        <h4>Equipo 4: Remesa Mala Mercenarios Básica</h4>
-                        <p class="score-expected">Puntos esperados: 300k</p>
-                    </div>
-                    <div class="squad-characters-list">
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_omegas3.png" alt="Omega Fugitiva">
-                        </div>
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_wreckers3.png" alt="Wrecker Mercenario">
-                        </div>
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_hunters3.png" alt="Hunter Mercenario">
-                        </div>
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_crosshair_scarred.png" alt="Crosshair">
-                        </div>
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_batcher.png" alt="Batcher">
-                        </div>
-                    </div>
-                    <div class="squad-strategy">
-                        <div class="squad-strategy-content">
-                            <p>Sin necesidad de kyrotechs, ni zetas, ni 7*, pueden conseguir puntuación máxima en nivel 0</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="squad">
-                    <div class="squad-header">
-                        <h4>Equipo 5: Jedi Vanguardia Básico</h4>
-                        <p class="score-expected">Puntos esperados: 300k</p>
-                    </div>
-                    <div class="squad-characters-list">
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_kelleranbeq.png" alt="Kelleran Beq">
-                            <div class="mods">Protección, Velocidad</div>
-                            <div class="relic-required">Reliquia 7</div>
-                            <div class="synergy">
-                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_mandalorbokatan.png" alt="Bo-Katan (Mand'alor)">
-                                <img src="https://swgoh.wiki/images/thumb/6/66/Event-Territory_Battle-Rise_of_the_Empire.png/435px-Event-Territory_Battle-Rise_of_the_Empire.png" alt="Alzamiento" data-hover="Misión Especial (Mandalor)">
-                            </div>
-                        </div>
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_shaakti.png" alt="Shaak Ti">
-                            <div class="relic-required">Reliquia 7</div>
-                            <div class="synergy">
-                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_globiwan.png" alt="Jedi Master Kenobi">
-                            </div>
-                        </div>
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_plokoon.png" alt="Plo Koon">
-                            <div class="mods">Tenacidad</div>
-                            <div class="relic-required">Reliquia 8</div>
-                            <div class="synergy">
-                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_ahsokatanogray.png" alt="Ahsoka Tano">
-                            </div>
-                        </div>
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_aaylasecura.png" alt="Aayla Secura">
-                            <div class="relic-required">Reliquia 3</div>
-                            <div class="synergy">
-                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_globiwan.png" alt="Jedi Master Kenobi">
-                            </div>
-                            <div class="relic-required">Reliquia 6</div>
-                            <div class="synergy">
-                                <img src="https://swgoh.wiki/images/thumb/6/66/Event-Territory_Battle-Rise_of_the_Empire.png/435px-Event-Territory_Battle-Rise_of_the_Empire.png" alt="Alzamiento" data-hover="Pelotón">
-                            </div>
-                        </div>
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_quigon.png" alt="Qui-Gon Jinn">
-                            <div class="relic-required">Reliquia 3</div>
-                            <div class="synergy">
-                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_luke_jml.png" alt="Jedi Master Luke Skywalker">
-                            </div>
-                            <div class="relic-required">Reliquia 7</div>
-                            <div class="synergy">
-                                <img src="https://swgoh.wiki/images/thumb/6/66/Event-Territory_Battle-Rise_of_the_Empire.png/435px-Event-Territory_Battle-Rise_of_the_Empire.png" alt="Alzamiento" data-hover="Pelotón">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="squad-strategy">
-                        <div class="squad-strategy-content">
-                            <ul>
-                                <li>Estos jedi son básicos con muchas sinergias</li>
-                                <li>Kelleran asistencia masiva contra Fox: Tiene que tumbarlo</li>
-                                <li>Shaak Ti usa la segunda habilidad sobre Plo Koon para que provoque y obtenga inmunidad al crítico</li>
-                                <li>Plo tiene que resistir el aturdimiento de Appo</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
+      </div>
+    </div>
 
-        <div id="templo-knight" class="tab-content">
-            <h2>
-                <span>Equipo Caballero Jedi</span>
-                <p class="score-expected">Puntos esperados: 3M</p>
-            </h2>
-            <p>Se espera que la mayoría del gremio pueda aportar 3M. A continuación, ejemplos de equipos que hacen puntuación máxima en niveles más altaos.</p>
-          <div class="holocrones-list">
-            <article class="holocron holocron--eventos">
-              <button
-                  class="holocron__action"
-                  data-holocron="holocrones/_order66-N5-1800k-Kelleran.html"
-              >
-                <img class="holocron__icono" src="img/holocron-red.png" alt="Icono holocron">
-                <h3 class="holocron__titulo truncate">
-                  <a href="holocrones.html?open=holocron__order66-N5-1800k-Kelleran">Orden66 - 1.8M - Kelleran</a>
-                </h3>
-              </button>
-            </article>
-            <article class="holocron holocron--eventos">
-              <button
-                  class="holocron__action"
-                  data-holocron="holocrones/_order66-N5-1800k-BadBatch.html"
-              >
-                <img class="holocron__icono" src="img/holocron-red.png" alt="Icono holocron">
-                <h3 class="holocron__titulo truncate">
-                  <a href="holocrones.html?open=holocron__order66-N5-1800k-BadBatch">Orden66 - 1.8M - Remesa Mala</a>
-                </h3>
-              </button>
-            </article>
+    <div id="templo-padawan" class="tab-content">
+      <h2>
+        <span>Equipo Padawan</span>
+        <p class="score-expected">Puntos esperados: 900k</p>
+      </h2>
+      <p>A continuación se muestran 5 ejemplos de equipos que cualquier Padawan debería tener o conseguir con relativa facilidad, así como la puntuación que se esperaría. En total, 1.5M.</p>
+      <div class="holocrones-list">
+        <article class="holocron holocron--eventos">
+          <button
+              class="holocron__action"
+              data-holocron="holocrones/_order66-N0-300k-Tarkin-solo.html"
+          >
+            <img class="holocron__icono" src="img/holocron-red.png" alt="Icono holocron">
+            <h3 class="holocron__titulo truncate">
+              <a href="holocrones.html?open=holocron__order66-N0-300k-Tarkin-solo">Orden66 - 300k - Tarkin solo</a>
+            </h3>
+          </button>
+        </article>
+        <article class="holocron holocron--eventos">
+          <button
+              class="holocron__action"
+              data-holocron="holocrones/_order66-N0-300k-Hondo-solo.html"
+          >
+            <img class="holocron__icono" src="img/holocron-red.png" alt="Icono holocron">
+            <h3 class="holocron__titulo truncate">
+              <a href="holocrones.html?open=holocron__order66-N0-300k-Hondo-solo">Orden66 - 300k - Hondo solo</a>
+            </h3>
+          </button>
+        </article>
+        <article class="holocron holocron--eventos">
+          <button
+              class="holocron__action"
+              data-holocron="holocrones/_order66-N0-300k-Enfys-solo.html"
+          >
+            <img class="holocron__icono" src="img/holocron-red.png" alt="Icono holocron">
+            <h3 class="holocron__titulo truncate">
+              <a href="holocrones.html?open=holocron__order66-N0-300k-Enfys-solo">Orden66 - 300k - Enfys solo</a>
+            </h3>
+          </button>
+        </article>
+        <article class="holocron holocron--eventos">
+          <button
+              class="holocron__action"
+              data-holocron="holocrones/_order66-N0-300k-QuiGon.html"
+          >
+            <img class="holocron__icono" src="img/holocron-red.png" alt="Icono holocron">
+            <h3 class="holocron__titulo truncate">
+              <a href="holocrones.html?open=holocron__order66-N0-300k-Qui-Gon">Orden66 - 300k - Qui-Gon</a>
+            </h3>
+          </button>
+        </article>
+      </div>
+      <div id="squads-padawan" class="squad-list">
+        <div class="squad">
+          <div class="squad-header">
+            <h4>Remesa Mala Mercenarios Básica</h4>
+            <p class="score-expected">Puntos esperados: 300k</p>
           </div>
-            <div id="squads-jedi" class="squad-list">
-                <div class="squad">
-                    <h4>Tarkin y clones</h4>
-                    <p class="score-expected">Puntos esperados: 1.8M</p>
-                    <div class="squad-characters-list">
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_tarkinadmiral.png" alt="Gran Moff Tarkin">
-                            <div class="mods">Velocidad, Ataque, Potencia</div>
-                            <div class="relic-required">Reliquia 3</div>
-                            <div class="synergy">
-                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_espalpatine_pre.png" alt="EES">
-                            </div>
-                            <div class="relic-required">Reliquia 7</div>
-                            <div class="synergy">
-                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_lordvader.png" alt="Lord Vader">
-                                <img src="https://swgoh.wiki/images/thumb/6/66/Event-Territory_Battle-Rise_of_the_Empire.png/435px-Event-Territory_Battle-Rise_of_the_Empire.png" alt="Alzamiento" data-hover="Pelotón Tatooine">
-                            </div>
-                        </div>
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_scorch.png" alt="Scorch">
-                            <div class="relic-required">Reliquia 5</div>
-                            <div class="synergy">
-                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_jedimastermacewindu.png" alt="Jedi Master Mace Windu" >
-                            </div>
-                        </div>
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_appo.png" alt="Appo">
-                            <div class="relic-required">Reliquia 5</div>
-                            <div class="synergy">
-                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_jedimastermacewindu.png" alt="Jedi Master Mace Windu" >
-                            </div>
-                        </div>
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_disguisedclonetrooper.png" alt="Diguised Clone Trooper">
-                            <div class="relic-required">Reliquia 5</div>
-                            <div class="synergy">
-                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_jedimastermacewindu.png" alt="Jedi Master Mace Windu" >
-                            </div>
-                        </div>
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_operative.png" alt="CX-2">
-                            <div class="relic-required">Reliquia 5</div>
-                            <div class="synergy">
-                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_jedimastermacewindu.png" alt="Jedi Master Mace Windu" >
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <label>Beneficio a largo plazo: </label>
-                        <ul>
-                            <li>Equipo MUY sólido 3vs3 en Gran Arena</li>
-                        </ul>
-                    </div>
+          <div class="squad-characters-list">
+            <div class="character">
+              <img src="https://game-assets.swgoh.gg/textures/tex.charui_omegas3.png" alt="Omega Fugitiva">
+            </div>
+            <div class="character">
+              <img src="https://game-assets.swgoh.gg/textures/tex.charui_wreckers3.png" alt="Wrecker Mercenario">
+            </div>
+            <div class="character">
+              <img src="https://game-assets.swgoh.gg/textures/tex.charui_hunters3.png" alt="Hunter Mercenario">
+            </div>
+            <div class="character">
+              <img src="https://game-assets.swgoh.gg/textures/tex.charui_crosshair_scarred.png" alt="Crosshair">
+            </div>
+            <div class="character">
+              <img src="https://game-assets.swgoh.gg/textures/tex.charui_batcher.png" alt="Batcher">
+            </div>
+          </div>
+          <div class="squad-strategy">
+            <div class="squad-strategy-content">
+              <p>Sin necesidad de kyrotechs, ni zetas, ni 7*, pueden conseguir puntuación máxima en nivel 0</p>
+            </div>
+          </div>
+        </div>
+        <div class="squad">
+          <div class="squad-header">
+            <h4>Jedi Vanguardia Básico</h4>
+            <p class="score-expected">Puntos esperados: 300k</p>
+          </div>
+          <div class="squad-characters-list">
+            <div class="character">
+              <img src="https://game-assets.swgoh.gg/textures/tex.charui_kelleranbeq.png" alt="Kelleran Beq">
+              <div class="mods">Protección, Velocidad</div>
+              <div class="relic-required">Reliquia 7</div>
+              <div class="synergy">
+                <img src="https://game-assets.swgoh.gg/textures/tex.charui_mandalorbokatan.png" alt="Bo-Katan (Mand'alor)">
+                <img src="https://swgoh.wiki/images/thumb/6/66/Event-Territory_Battle-Rise_of_the_Empire.png/435px-Event-Territory_Battle-Rise_of_the_Empire.png" alt="Alzamiento" data-hover="Misión Especial (Mandalor)">
+              </div>
+            </div>
+            <div class="character">
+              <img src="https://game-assets.swgoh.gg/textures/tex.charui_shaakti.png" alt="Shaak Ti">
+              <div class="relic-required">Reliquia 7</div>
+              <div class="synergy">
+                <img src="https://game-assets.swgoh.gg/textures/tex.charui_globiwan.png" alt="Jedi Master Kenobi">
+              </div>
+            </div>
+            <div class="character">
+                <img src="https://game-assets.swgoh.gg/textures/tex.charui_plokoon.png" alt="Plo Koon">
+                <div class="mods">Tenacidad</div>
+                <div class="relic-required">Reliquia 8</div>
+                <div class="synergy">
+                  <img src="https://game-assets.swgoh.gg/textures/tex.charui_ahsokatanogray.png" alt="Ahsoka Tano">
                 </div>
             </div>
+            <div class="character">
+              <img src="https://game-assets.swgoh.gg/textures/tex.charui_aaylasecura.png" alt="Aayla Secura">
+              <div class="relic-required">Reliquia 3</div>
+              <div class="synergy">
+                <img src="https://game-assets.swgoh.gg/textures/tex.charui_globiwan.png" alt="Jedi Master Kenobi">
+              </div>
+              <div class="relic-required">Reliquia 6</div>
+              <div class="synergy">
+                <img src="https://swgoh.wiki/images/thumb/6/66/Event-Territory_Battle-Rise_of_the_Empire.png/435px-Event-Territory_Battle-Rise_of_the_Empire.png" alt="Alzamiento" data-hover="Pelotón">
+              </div>
+            </div>
+            <div class="character">
+              <img src="https://game-assets.swgoh.gg/textures/tex.charui_quigon.png" alt="Qui-Gon Jinn">
+              <div class="relic-required">Reliquia 3</div>
+              <div class="synergy">
+                <img src="https://game-assets.swgoh.gg/textures/tex.charui_luke_jml.png" alt="Jedi Master Luke Skywalker">
+              </div>
+              <div class="relic-required">Reliquia 7</div>
+              <div class="synergy">
+                <img src="https://swgoh.wiki/images/thumb/6/66/Event-Territory_Battle-Rise_of_the_Empire.png/435px-Event-Territory_Battle-Rise_of_the_Empire.png" alt="Alzamiento" data-hover="Pelotón">
+              </div>
+            </div>
+          </div>
+          <div class="squad-strategy">
+            <div class="squad-strategy-content">
+              <ul>
+                <li>Estos jedi son básicos con muchas sinergias</li>
+                <li>Kelleran asistencia masiva contra Fox: Tiene que tumbarlo</li>
+                <li>Shaak Ti usa la segunda habilidad sobre Plo Koon para que provoque y obtenga inmunidad al crítico</li>
+                <li>Plo tiene que resistir el aturdimiento de Appo</li>
+              </ul>
+          </div>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <div id="templo-master" class="tab-content">
-            <h2>
-                <span>Equipo Maestro Jedi</span>
-                <p class="score-expected">Puntos esperados: 7.2M</p>
-            </h2>
-            <p>Un verdadero Maestro, aportará en los niveles más altos al gremio.</p>
-            <div id="squads-master" class="squad-list">
-                <div class="squad">
-                    <div class="squad-header">
-                        <h4>Gran Moff Tarkin y Scorch</h4>
-                        <p class="score-expected">Puntos esperados: 3.6M</p>
-                    </div>
-                    <div class="squad-characters-list">
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_tarkinadmiral.png" alt="Gran Moff Tarkin">
-                            <div class="mods">Velocidad, Ataque, Potencia</div>
-                            <div class="relic-required">Reliquia 3</div>
-                            <div class="synergy">
-                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_espalpatine_pre.png" alt="EES">
-                            </div>
-                            <div class="relic-required">Reliquia 7</div>
-                            <div class="synergy">
-                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_lordvader.png" alt="Lord Vader">
-                                <img src="https://swgoh.wiki/images/thumb/6/66/Event-Territory_Battle-Rise_of_the_Empire.png/435px-Event-Territory_Battle-Rise_of_the_Empire.png" alt="Alzamiento" data-hover="Pelotón Tatooine">
-                            </div>
-                        </div>
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_scorch.png" alt="Scorch">
-                            <div class="relic-required">Reliquia 5</div>
-                            <div class="synergy">
-                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_jedimastermacewindu.png" alt="Jedi Master Mace Windu" >
-                            </div>
-                        </div>
-                    </div>
-                    <div class="squad-strategy">
-                        <div class="squad-strategy-media">
-                            <video controls preload="metadata" width="100%">
-                                <source src="videos/N7-3600k-Tarkin-demo.mp4" type="video/mp4">
-                                Tu navegador no soporta vídeo HTML5.
-                            </video>
-                        </div>
-                        <div class="squad-strategy-content">
-                            <p>Esta es la mejor relación Coste / Beneficio</p>
-                            <ul>
-                                <li>Todo el gremio tiene a Tarkin a reliquia, o lo tiene que tener ya.</li>
-                                <li>Solo se necesitan dos pnjs a r9 para hacer puntuación máxima</li>
-                                <li>Es un equipo muy sólido en GA 3vs3</li>
-                                <li>Gran sinergia con Lord Vader</li>
-                            </ul>
-                            <p>Objetivo: barrer a toda la oleada con el primer ataque de área de Tarkin</p>
-                            <ul>
-                                <li>Utilizar un ataque básico antes de lanzar el ataque de área (velocidad)</li>
-                                <li>Mods suficientemente buenos (ataque, potencia)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="squad">
-                    <div class="squad-header">
-                        <h4>Maestro Windu</h4>
-                        <p class="score-expected">Puntos esperados: 3.6M</p>
-                    </div>
-                    <div class="squad-characters-list">
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_jedimastermacewindu.png" alt="Jedi Master Mace Windu">
-                        </div>
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_depabillaba.png" alt="Depa Billaba">
-                            <div class="relic-required">Reliquia 5</div>
-                            <div class="synergy">
-                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_jedimastermacewindu.png" alt="Jedi Master Mace Windu" >
-                            </div>
-                        </div>
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_vanguardtempleguard.png" alt="Tempe Guard">
-                            <div class="relic-required">Reliquia 5</div>
-                            <div class="synergy">
-                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_jedimastermacewindu.png" alt="Jedi Master Mace Windu" >
-                            </div>
-                        </div>
-                    </div>
-                    <div class="squad-strategy">
-                        <div class="squad-strategy-media">
-                            <video controls preload="metadata" width="100%">
-                                <source src="videos/N7-3600k-Windu-demo.mp4" type="video/mp4">
-                                Tu navegador no soporta vídeo HTML5.
-                            </video>
-                        </div>
-                        <div class="squad-strategy-content">
-                            <p>Gran relación Coste / Beneficio</p>
-                            <ul>
-                                <li>Equipo meta en GA Kyber.</li>
-                                <li>Solo se necesitan tres pnjs a r9 para hacer puntuación máxima</li>
-                                <li>Es un equipo muy sólido en GA 3vs3</li>
-                            </ul>
-                            <p>Primer Objetivo: tumbar a Fox con el primer ataque de Depa (<a href="https://swgoh.gg/units/DEPABILLABA/ability/specialability_depabillaba01/8/">Vaapad Disciple</a>)</p>
-                            <ul>
-                                <li>Mods ataque para Mace y Depa</li>
-                            </ul>
-                            <p>Segundo Objetivo: usar Bandera con Mace Windu</p>
-                            <p>Tercer Objetivo: usar la segunda habilidad del Guardian sobre Depa</p>
-                            <ul>
-                                <li>Mods velocidad suficiente a Guardia para entrar antes que Appo o al menos los clones</li>
-                            </ul>
-                            <p>Seguir normal, Appo, clones...</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="squad">
-                    <div class="squad-header">
-                        <h4>Sobras soldados clon</h4>
-                        <p class="score-expected">Puntos esperados: 3.6M</p>
-                    </div>
-                    <div class="squad-characters-list">
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_appo.png" alt="Appo">
-                            <div class="relic-required">Reliquia 5</div>
-                            <div class="synergy">
-                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_jedimastermacewindu.png" alt="Jedi Master Mace Windu" >
-                            </div>
-                        </div>
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_operative.png" alt="CX-2">
-                            <div class="relic-required">Reliquia 5</div>
-                            <div class="synergy">
-                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_jedimastermacewindu.png" alt="Jedi Master Mace Windu" >
-                            </div>
-                        </div>
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_disguisedclonetrooper.png" alt="Diguised Clone Trooper">
-                            <div class="relic-required">Reliquia 5</div>
-                            <div class="synergy">
-                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_jedimastermacewindu.png" alt="Jedi Master Mace Windu" >
-                            </div>
-                        </div>
-                    </div>
-                    <div class="squad-strategy">
-                        <div class="squad-strategy-media">
-                            <iframe width="725" height="407" src="https://www.youtube.com/embed/bGq5jvgTk0U" title="NO LEAD! DS Clones 3-Man Guide! Order 66 Raid 3.6m! Max Raid Run - OFFICIALLY SAFE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                        <div class="squad-strategy-content">
-                            <p>Imprescindible si ya tienes a Lord Vader</p>
-                            <ul>
-                                <li>Construyes 2 equipos TOP en GA 3vs3</li>
-                                <li>Construyes 1 equipo TOP en GA 5vs5</li>
-                            </ul>
-                            <p>Objetivo: Aplicar Orden66 para conseguir 100% de medidor de turno para todo el equipo</p>
-                            <ul>
-                                <li>Mods ataque para Disfrazado</li>
-                                <li>Mods potencia para Appo, más rápido que Disfrazado</li>
-                                <li>CX ataca 3 veces a Appo (para aplicar Orden66 en su tercer ataque)</li>
-                                <li>Appo ataca a un soldado -> Tiene que APLICAR stun Y también tiene que llamar a Disfrazado para asistir</li>
-                                <li>Disfrazado ataca con la básica al otro soldado</li>
-                                <li>El invocado usa su segunda habilidad sobre un soldado, y TIENE que llamar a asistir a Disfrazado</li>
-                                <li>Tumbar a Appo cuando haya 3 clones con 0% turno</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="squad">
-                    <h4>Jedi Vanguardia</h4>
-                    <p class="score-expected">Puntos esperados: 2.7M</p>
-                    <div class="squad-characters-list">
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_kelleranbeq.png" alt="Kelleran Beq">
-                            <div class="mods">Protección, Velocidad</div>
-                            <div class="relic-required">Reliquia 7</div>
-                            <div class="synergy">
-                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_mandalorbokatan.png" alt="Bo-Katan (Mand'alor)">
-                                <img src="https://swgoh.wiki/images/thumb/6/66/Event-Territory_Battle-Rise_of_the_Empire.png/435px-Event-Territory_Battle-Rise_of_the_Empire.png" alt="Alzamiento" data-hover="Misión Especial (Mandalor)">
-                            </div>
-                        </div>
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_shaakti.png" alt="Shaak Ti">
-                            <div class="relic-required">Reliquia 7</div>
-                            <div class="synergy">
-                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_globiwan.png" alt="Jedi Master Kenobi">
-                            </div>
-                        </div>
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_plokoon.png" alt="Plo Koon">
-                            <div class="mods">Tenacidad</div>
-                            <div class="relic-required">Reliquia 8</div>
-                            <div class="synergy">
-                                <img src="https://game-assets.swgoh.gg/textures/tex.charui_ahsokatanogray.png" alt="Ahsoka Tano">
-                            </div>
-                        </div>
-                        <div class="character">
-                            <img class="pnj-portrait" src="https://game-assets.swgoh.gg/textures/tex.charui_jocastanu_blaster.png" alt="Jocasta Nu">
-                            <div class="relic-required">Reliquia 7</div>
-                        </div>
-                    </div>
-                    <div>
-                        <label>Estrategia: </label>
-                        <ul>
-                            <li>Kelleran asistencia masiva contra APPO: Tiene que tumbarlo</li>
-                            <li>Shaak Ti usa la segunda habilidad sobre Plo Koon para que provoque y obtenga inmunidad al crítico</li>
-                            <li>Plo necesita ataque</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="squad">
-                    <div class="squad-header">
-                        <h4>Remesa Mala Mercenarios</h4>
-                        <p class="score-expected">Puntos esperados: 1.8M</p>
-                    </div>
-                    <div class="squad-characters-list">
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_omegas3.png" alt="Omega Fugitiva">
-                        </div>
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_wreckers3.png" alt="Wrecker Mercenario">
-                        </div>
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_hunters3.png" alt="Hunter Mercenario">
-                        </div>
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_crosshair_scarred.png" alt="Crosshair">
-                        </div>
-                        <div class="character">
-                            <img src="https://game-assets.swgoh.gg/textures/tex.charui_batcher.png" alt="Batcher">
-                        </div>
-                    </div>
-                    <div class="squad-strategy">
-                        <div class="squad-strategy-media">
-                            <video controls preload="metadata" width="100%">
-                                <source src="videos/N5-1800k-BadBatch-demo.mp4" type="video/mp4">
-                                Tu navegador no soporta vídeo HTML5.
-                            </video>
-                        </div>
-                        <div class="squad-strategy-content">
-                            <p>NO es fácil de hacer</p>
-                            <ul>
-                                <li>Aplicar 2 Hemorragias a Fox</li>
-                                <li>Usar Hermana mayor de Omega a Hunter para bajar sus tiempos de carga</li>
-                                <li>Wrecker cautivo (no se puede hacer crítico en aliados con sigilo)</li>
-                                <li>Tumbar a Fox primero</li>
-                                <li>Mods: Maestro Yoda sobre Omega, Darth Revan sobre Hunter, Ataque sobre Crosshair y Batcher (Mace y Depa)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="squad">
-                    <h4>Equipo Piratas</h4>
-                    <div>
-                        <label>NO ACONSEJADO</label>
-                        <ul>
-                            <li>Equipo aún no disponible, no dejará timepo para recuperar la inversión</li>
-                            <li>Será necesario leyenda para conseguir puntuación máxima</li>
-                            <li>La leyenda requiere varios r9, que están mejor invertidos en otros equipos</li>
-                            <li>Hay alternativas con otros equipos YA disponibles</li>
-                            <li>En resumen, CARO, HAY MEJORES ALTERNATIVAS, NO RECUPERAMOS INVERSIÓN</li>
-                        </ul>
-                    </div>
-                </div>
+    <div id="templo-knight" class="tab-content">
+      <h2>
+        <span>Equipo Caballero Jedi</span>
+        <p class="score-expected">Puntos esperados: 3M</p>
+      </h2>
+      <p>Se espera que la mayoría del gremio pueda aportar 3M. A continuación, ejemplos de equipos que hacen puntuación máxima en niveles más altaos.</p>
+      <div class="holocrones-list">
+        <article class="holocron holocron--eventos">
+          <button
+              class="holocron__action"
+              data-holocron="holocrones/_order66-N5-1800k-Kelleran.html"
+          >
+            <img class="holocron__icono" src="img/holocron-red.png" alt="Icono holocron">
+            <h3 class="holocron__titulo truncate">
+              <a href="holocrones.html?open=holocron__order66-N5-1800k-Kelleran">Orden66 - 1.8M - Kelleran</a>
+            </h3>
+          </button>
+        </article>
+        <article class="holocron holocron--eventos">
+          <button
+              class="holocron__action"
+              data-holocron="holocrones/_order66-N5-1800k-BadBatch.html"
+          >
+            <img class="holocron__icono" src="img/holocron-red.png" alt="Icono holocron">
+            <h3 class="holocron__titulo truncate">
+              <a href="holocrones.html?open=holocron__order66-N5-1800k-BadBatch">Orden66 - 1.8M - Remesa Mala</a>
+            </h3>
+          </button>
+        </article>
+      </div>
+      <div id="squads-jedi" class="squad-list">
+        <div class="squad">
+          <h4>Tarkin y clones</h4>
+          <p class="score-expected">Puntos esperados: 1.8M</p>
+          <div class="squad-characters-list">
+            <div class="character">
+              <img src="https://game-assets.swgoh.gg/textures/tex.charui_tarkinadmiral.png" alt="Gran Moff Tarkin">
+              <div class="mods">Velocidad, Ataque, Potencia</div>
+              <div class="relic-required">Reliquia 3</div>
+              <div class="synergy">
+                <img src="https://game-assets.swgoh.gg/textures/tex.charui_espalpatine_pre.png" alt="EES">
+              </div>
+              <div class="relic-required">Reliquia 7</div>
+              <div class="synergy">
+                <img src="https://game-assets.swgoh.gg/textures/tex.charui_lordvader.png" alt="Lord Vader">
+                <img src="https://swgoh.wiki/images/thumb/6/66/Event-Territory_Battle-Rise_of_the_Empire.png/435px-Event-Territory_Battle-Rise_of_the_Empire.png" alt="Alzamiento" data-hover="Pelotón Tatooine">
+              </div>
             </div>
+            <div class="character">
+              <img src="https://game-assets.swgoh.gg/textures/tex.charui_scorch.png" alt="Scorch">
+              <div class="relic-required">Reliquia 5</div>
+              <div class="synergy">
+                <img src="https://game-assets.swgoh.gg/textures/tex.charui_jedimastermacewindu.png" alt="Jedi Master Mace Windu" >
+              </div>
+            </div>
+            <div class="character">
+              <img src="https://game-assets.swgoh.gg/textures/tex.charui_appo.png" alt="Appo">
+              <div class="relic-required">Reliquia 5</div>
+              <div class="synergy">
+                <img src="https://game-assets.swgoh.gg/textures/tex.charui_jedimastermacewindu.png" alt="Jedi Master Mace Windu" >
+              </div>
+            </div>
+            <div class="character">
+              <img src="https://game-assets.swgoh.gg/textures/tex.charui_disguisedclonetrooper.png" alt="Diguised Clone Trooper">
+              <div class="relic-required">Reliquia 5</div>
+              <div class="synergy">
+                <img src="https://game-assets.swgoh.gg/textures/tex.charui_jedimastermacewindu.png" alt="Jedi Master Mace Windu" >
+              </div>
+            </div>
+            <div class="character">
+                <img src="https://game-assets.swgoh.gg/textures/tex.charui_operative.png" alt="CX-2">
+                <div class="relic-required">Reliquia 5</div>
+                <div class="synergy">
+                  <img src="https://game-assets.swgoh.gg/textures/tex.charui_jedimastermacewindu.png" alt="Jedi Master Mace Windu" >
+                </div>
+              </div>
+          </div>
+          <div>
+            <label>Beneficio a largo plazo: </label>
+            <ul>
+              <li>Equipo MUY sólido 3vs3 en Gran Arena</li>
+            </ul>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <div id="templo-archive" class="tab-content">
-            <div id="templo-historicalResults">
-                <img src="./img/order66-historical-data.png" alt="Order 66 Guild overview"/>
+    <div id="templo-master" class="tab-content">
+      <h2>
+        <span>Equipo Maestro Jedi</span>
+        <p class="score-expected">Puntos esperados: 7.2M</p>
+      </h2>
+      <p>Un verdadero Maestro, aportará en los niveles más altos al gremio.</p>
+      <div class="holocrones-list">
+        <article class="holocron holocron--eventos">
+          <button
+              class="holocron__action"
+              data-holocron="holocrones/_order66-N7-3600k-Tarkin-Scorch.html"
+          >
+            <img class="holocron__icono" src="img/holocron-red.png" alt="Icono holocron">
+            <h3 class="holocron__titulo truncate">
+              <a href="holocrones.html?open=holocron__order66-N7-3600k-Tarkin-Scorch">Orden66 - 3.6M - Tarkin + Scorch</a>
+            </h3>
+          </button>
+        </article>
+        <article class="holocron holocron--eventos">
+          <button
+              class="holocron__action"
+              data-holocron="holocrones/_order66-N7-3600k-Windu.html"
+          >
+            <img class="holocron__icono" src="img/holocron-red.png" alt="Icono holocron">
+            <h3 class="holocron__titulo truncate">
+              <a href="holocrones.html?open=holocron__order66-N7-3600k-Windu">Orden66 - 3.6M - Maestro Windu</a>
+            </h3>
+          </button>
+        </article>
+      </div>
+      <div id="squads-master" class="squad-list">
+        <div class="squad">
+          <div class="squad-header">
+            <h4>Sobras soldados clon</h4>
+            <p class="score-expected">Puntos esperados: 3.6M</p>
+          </div>
+            <div class="squad-characters-list">
+            <div class="character">
+              <img src="https://game-assets.swgoh.gg/textures/tex.charui_appo.png" alt="Appo">
+              <div class="relic-required">Reliquia 5</div>
+              <div class="synergy">
+                <img src="https://game-assets.swgoh.gg/textures/tex.charui_jedimastermacewindu.png" alt="Jedi Master Mace Windu" >
+              </div>
+            </div>
+              <div class="character">
+                <img src="https://game-assets.swgoh.gg/textures/tex.charui_operative.png" alt="CX-2">
+                <div class="relic-required">Reliquia 5</div>
+                <div class="synergy">
+                  <img src="https://game-assets.swgoh.gg/textures/tex.charui_jedimastermacewindu.png" alt="Jedi Master Mace Windu" >
+                </div>
+              </div>
+              <div class="character">
+                <img src="https://game-assets.swgoh.gg/textures/tex.charui_disguisedclonetrooper.png" alt="Diguised Clone Trooper">
+                <div class="relic-required">Reliquia 5</div>
+                <div class="synergy">
+                  <img src="https://game-assets.swgoh.gg/textures/tex.charui_jedimastermacewindu.png" alt="Jedi Master Mace Windu" >
+                </div>
+              </div>
+            </div>
+            <div class="squad-strategy">
+              <div class="squad-strategy-media">
+                <iframe width="725" height="407" src="https://www.youtube.com/embed/bGq5jvgTk0U" title="NO LEAD! DS Clones 3-Man Guide! Order 66 Raid 3.6m! Max Raid Run - OFFICIALLY SAFE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="squad-strategy-content">
+                <p>Imprescindible si ya tienes a Lord Vader</p>
+                <ul>
+                  <li>Construyes 2 equipos TOP en GA 3vs3</li>
+                  <li>Construyes 1 equipo TOP en GA 5vs5</li>
+                </ul>
+                <p>Objetivo: Aplicar Orden66 para conseguir 100% de medidor de turno para todo el equipo</p>
+                <ul>
+                  <li>Mods ataque para Disfrazado</li>
+                  <li>Mods potencia para Appo, más rápido que Disfrazado</li>
+                  <li>CX ataca 3 veces a Appo (para aplicar Orden66 en su tercer ataque)</li>
+                  <li>Appo ataca a un soldado -> Tiene que APLICAR stun Y también tiene que llamar a Disfrazado para asistir</li>
+                  <li>Disfrazado ataca con la básica al otro soldado</li>
+                  <li>El invocado usa su segunda habilidad sobre un soldado, y TIENE que llamar a asistir a Disfrazado</li>
+                  <li>Tumbar a Appo cuando haya 3 clones con 0% turno</li>
+                </ul>
+              </div>
             </div>
         </div>
-    </section>
+        <div class="squad">
+          <h4>Jedi Vanguardia</h4>
+          <p class="score-expected">Puntos esperados: 2.7M</p>
+          <div class="squad-characters-list">
+            <div class="character">
+              <img src="https://game-assets.swgoh.gg/textures/tex.charui_kelleranbeq.png" alt="Kelleran Beq">
+              <div class="mods">Protección, Velocidad</div>
+              <div class="relic-required">Reliquia 7</div>
+              <div class="synergy">
+                <img src="https://game-assets.swgoh.gg/textures/tex.charui_mandalorbokatan.png" alt="Bo-Katan (Mand'alor)">
+                <img src="https://swgoh.wiki/images/thumb/6/66/Event-Territory_Battle-Rise_of_the_Empire.png/435px-Event-Territory_Battle-Rise_of_the_Empire.png" alt="Alzamiento" data-hover="Misión Especial (Mandalor)">
+              </div>
+            </div>
+            <div class="character">
+              <img src="https://game-assets.swgoh.gg/textures/tex.charui_shaakti.png" alt="Shaak Ti">
+              <div class="relic-required">Reliquia 7</div>
+              <div class="synergy">
+                <img src="https://game-assets.swgoh.gg/textures/tex.charui_globiwan.png" alt="Jedi Master Kenobi">
+              </div>
+            </div>
+            <div class="character">
+              <img src="https://game-assets.swgoh.gg/textures/tex.charui_plokoon.png" alt="Plo Koon">
+              <div class="mods">Tenacidad</div>
+              <div class="relic-required">Reliquia 8</div>
+              <div class="synergy">
+                <img src="https://game-assets.swgoh.gg/textures/tex.charui_ahsokatanogray.png" alt="Ahsoka Tano">
+              </div>
+            </div>
+            <div class="character">
+              <img class="pnj-portrait" src="https://game-assets.swgoh.gg/textures/tex.charui_jocastanu_blaster.png" alt="Jocasta Nu">
+              <div class="relic-required">Reliquia 7</div>
+            </div>
+          </div>
+          <div>
+            <label>Estrategia: </label>
+            <ul>
+              <li>Kelleran asistencia masiva contra APPO: Tiene que tumbarlo</li>
+              <li>Shaak Ti usa la segunda habilidad sobre Plo Koon para que provoque y obtenga inmunidad al crítico</li>
+              <li>Plo necesita ataque</li>
+            </ul>
+          </div>
+        </div>
+        <div class="squad">
+          <h4>Equipo Piratas</h4>
+          <div>
+            <label>NO ACONSEJADO</label>
+            <ul>
+              <li>Equipo aún no disponible, no dejará timepo para recuperar la inversión</li>
+              <li>Será necesario leyenda para conseguir puntuación máxima</li>
+              <li>La leyenda requiere varios r9, que están mejor invertidos en otros equipos</li>
+              <li>Hay alternativas con otros equipos YA disponibles</li>
+              <li>En resumen, CARO, HAY MEJORES ALTERNATIVAS, NO RECUPERAMOS INVERSIÓN</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="templo-archive" class="tab-content">
+      <div id="templo-historicalResults">
+        <img src="./img/order66-historical-data.png" alt="Order 66 Guild overview"/>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer id="index-dynamic-footer">
