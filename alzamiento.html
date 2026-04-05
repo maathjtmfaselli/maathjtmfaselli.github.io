@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spain Space SWGoH</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/alzamiento.css">
-    <script src="js/dynamic-loader.js" defer></script>
-    <script src="js/tabs.js"></script>
-    <script src="js/alzamiento.js"></script>
-    <script src="/js/grid-priority-progress.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
-    <link rel="icon" href="img/swgoh-spain-space-favicon.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spain Space SWGoH</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/alzamiento.css">
+  <link rel="stylesheet" href="css/holocrones.css">
+  <script src="js/dynamic-loader.js" defer></script>
+  <script src="js/tabs.js"></script>
+  <script src="js/alzamiento.js"></script>
+  <script src="/js/grid-priority-progress.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+  <link rel="icon" href="img/swgoh-spain-space-favicon.png" type="image/png">
 </head>
 <body>
 
@@ -22,88 +23,88 @@
 
 <main>
     <section id="alzamiento">
-        <h2>Alzamiento</h2>
+      <h2>Alzamiento</h2>
 
-        <nav class="tab">
-            <button class="tab-button" onclick="openTab('rote-generalData')">📊 Datos</button>
-            <button class="tab-button active" onclick="openTab('rote-goals')">🎯 Objetivos</button>
-            <button class="tab-button" onclick="openTab('rote-planning')">🚀 Plan</button>
-            <button class="tab-button" onclick="openTab('rote-misiones')">🚀 Misiones</button>
-            <button class="tab-button" onclick="openTab('rote-archive')">👥 Archivo</button>
-        </nav>
+      <nav class="tab">
+        <button class="tab-button" onclick="openTab('rote-generalData')">📊 Datos</button>
+        <button class="tab-button active" onclick="openTab('rote-goals')">🎯 Objetivos</button>
+        <button class="tab-button" onclick="openTab('rote-planning')">🚀 Plan</button>
+        <button class="tab-button" onclick="openTab('rote-misiones')">🚀 Misiones</button>
+        <button class="tab-button" onclick="openTab('rote-archive')">👥 Archivo</button>
+      </nav>
 
         <div id="rote-generalData" class="tab-content">
-            <div id="pointsPerPlanet" class="section-collapsable collapsed">
-                <h3 class="section-collapsable-header">Puntos por Planeta</h3>
-                <div class="section-collapsable-content">
-                    <table id="planet-table" class="data-table">
-                        <thead>
-                        <tr>
-                            <th colspan="3">Dark</th>
-                            <th colspan="3">Neutral</th>
-                            <th colspan="3">Light</th>
-                        </tr>
-                        <tr>
-                            <th class="bronze">1</th>
-                            <th class="silver">2</th>
-                            <th class="gold">3</th>
-                            <th class="bronze">1</th>
-                            <th class="silver">2</th>
-                            <th class="gold">3</th>
-                            <th class="bronze">1</th>
-                            <th class="silver">2</th>
-                            <th class="gold">3</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>116</td>
-                            <td>186</td>
-                            <td>248</td>
-                            <td>112</td>
-                            <td>179</td>
-                            <td>238</td>
-                            <td>116</td>
-                            <td>186</td>
-                            <td>248</td>
-                        </tr>
-                        <tr>
-                            <td>148</td>
-                            <td>237</td>
-                            <td>316</td>
-                            <td>148</td>
-                            <td>237</td>
-                            <td>316</td>
-                            <td>142</td>
-                            <td>228</td>
-                            <td>304</td>
-                        </tr>
-                        <tr>
-                            <td>159</td>
-                            <td>251</td>
-                            <td>339</td>
-                            <td>191</td>
-                            <td>306</td>
-                            <td>407</td>
-                            <td>191</td>
-                            <td>306</td>
-                            <td>407</td>
-                        </tr>
-                        <tr>
-                            <td>235</td>
-                            <td>400</td>
-                            <td>500</td>
-                            <td>235</td>
-                            <td>400</td>
-                            <td>500</td>
-                            <td>247</td>
-                            <td>420</td>
-                            <td>525</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
+          <div id="pointsPerPlanet" class="section-collapsable collapsed">
+            <h3 class="section-collapsable-header">Puntos por Planeta</h3>
+            <div class="section-collapsable-content">
+              <table id="planet-table" class="data-table">
+                <thead>
+                <tr>
+                  <th colspan="3">Dark</th>
+                  <th colspan="3">Neutral</th>
+                  <th colspan="3">Light</th>
+                </tr>
+                <tr>
+                  <th class="bronze">1</th>
+                  <th class="silver">2</th>
+                  <th class="gold">3</th>
+                  <th class="bronze">1</th>
+                  <th class="silver">2</th>
+                  <th class="gold">3</th>
+                  <th class="bronze">1</th>
+                  <th class="silver">2</th>
+                  <th class="gold">3</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>116</td>
+                  <td>186</td>
+                  <td>248</td>
+                  <td>112</td>
+                  <td>179</td>
+                  <td>238</td>
+                  <td>116</td>
+                  <td>186</td>
+                  <td>248</td>
+                </tr>
+                <tr>
+                  <td>148</td>
+                  <td>237</td>
+                  <td>316</td>
+                  <td>148</td>
+                  <td>237</td>
+                  <td>316</td>
+                  <td>142</td>
+                  <td>228</td>
+                  <td>304</td>
+                </tr>
+                <tr>
+                  <td>159</td>
+                  <td>251</td>
+                  <td>339</td>
+                  <td>191</td>
+                  <td>306</td>
+                  <td>407</td>
+                  <td>191</td>
+                  <td>306</td>
+                  <td>407</td>
+                </tr>
+                <tr>
+                  <td>235</td>
+                  <td>400</td>
+                  <td>500</td>
+                  <td>235</td>
+                  <td>400</td>
+                  <td>500</td>
+                  <td>247</td>
+                  <td>420</td>
+                  <td>525</td>
+                </tr>
+                </tbody>
+              </table>
             </div>
+          </div>
             <div id="pointsPerOperation" class="section-collapsable collapsed">
                 <h3 class="section-collapsable-header">Puntos por Pelotón Completado</h3>
                 <div class="section-collapsable-content">
@@ -552,98 +553,44 @@
             <div id="misiones-especiales" class="section-collapsable">
                 <h3 class="section-collapsable-header">Misiones Especiales</h3>
                 <div class="section-collapsable-content">
-                    <section class="mission-card">
-                        <h4 class="mission-card-title">Zeffo</h4>
-                        <div class="subsection mission-rewards">
-                            <h4 class="subsection-title">Recompensas</h4>
-                            <ul class="resource-list reward-list">
-                                <li class="resource-item">
-                                    <span>50</span>
-                                    <img src="https://genskaar.github.io/tb_empire/media/mission_special2.png" />
-                                </li>
-                                <li class="resource-item">
-                                    <span>20</span>
-                                    <img src="./img/Mk-7-Kyrotech-Shock-Prod-Prototype-Salvage.png" />
-                                </li>
-                                <li class="resource-item">
-                                    <span>20</span>
-                                    <img src="./img/Mk-9-Kyrotech-Battle-Computer-Prototype-Salvage.png" />
-                                </li>
-                                <li class="resource-item">
-                                    1 <img src="https://swgoh.wiki/images/f/fd/Game-Icon-Star.png" />
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="subsection mission-pnjs">
-                            <h4 class="subsection-title">PNJs requeridos</h4>
-                            <ul class="resource-list">
-                                <li class="resource-item">
-                                    <div class="mission-character">
-                                        <img src="https://game-assets.swgoh.gg/textures/tex.charui_cerejunda.png" alt="Cere Junda">
-                                        <span class="character-name">Cere Junda</span>
-                                    </div>
-                                    <div>
-                                        <span>Resistir golpes</span>
-                                    </div>
-                                </li>
-                                <li class="resource-item">
-                                    <div class="mission-character">
-                                        <img src="https://game-assets.swgoh.gg/textures/tex.charui_jediknightcal.png" alt="Jedi Knight Cal Kestis">
-                                        <span class="character-name">Jedi Knight Cal Kestis</span>
-                                    </div>
-                                    <div>
-                                        <span>Velocidad Sobrevivir y Potencia</span>
-                                    </div>
-                                    <div>
-                                        <span><ul><li>Fase 1: Muerte instantánea</li><li>Fase 2: Muerte instantánea</li></ul></span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="subsection mission-strategy">
-                            <h4 class="subsection-title">Estrategia</h4>
-                            <ul class="resource-list">
-                                <li class="resource-item">
-                                    <span>Hay dos oleadas</span>
-                                </li>
-                                <li class="resource-item">
-                                    <span>Cada oleada tiene dos enemigos, más una sonda que se autoinvoca</span>
-                                </li>
-                                <li class="resource-item">
-                                    <ul>
-                                        <li><span>En cada oleada, debemos utilizar la muerte instantánea de Cal.</span></li>
-                                        <li><span>En la segunda oleada, siempre mato a la inquisidora.</span></li>
-                                    </ul>
-                                </li>
-                                <li class="resource-item">
-                                    <span>El otro enemigo lo vamos matando poco a poco.</span>
-                                </li>
-                                <li class="resource-item">
-                                    <div>
-                                        <p>El reto es que <b>Caballero Jedi Cal sobreviva</b> lo suficiente. Para ello:</p>
-                                        <ul>
-                                            <li><span>Los mods a VI y deben priorizar <b>velocidad, salud y potencia</b> (Aplicar reducción de velocidad).</span></li>
-                                            <li><span>Estrategia <a href="https://www.youtube.com/watch?v=EURedAd6R4I">TORTUGA</a>: en cada fase, Cal usa su primera habilidad (<b>Golpazo de torbellino</b>), luego la segunda siempre (<b>Defensa de molino</b>), hasta que puede usar la tercera que causa muerte instantánea (<b>Asalto impetuoso</b>) y luego vuelves todo el rato a la segunda (<b>Defensa de molino</b>), para así NO ACTIVAR la autodestrucción de la sonda y aumentar la protección.</span></li>
-                                            <li><span>Si por cualquier razón aplicas la Estrategia TORTUGA y sigue sin salirte, sube a Cal a r8</span></li>
-                                            <li><span>Si todavía no te sale consistentemente, pon omicrón a Cal en <b>Golpazo de torbellino</b></span></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
-                    <section class="mission-card">
-                        <h4 class="mission-card-title">Reva</h4>
-                        <div class="subsection">
-                            <ul>
-                                <li class="resource-item">Reva (6 intentos) <a href="https://www.youtube.com/watch?v=eWAIMakyzyY">video de SWGOH4Life</a></li>
-                                <li class="resource-item">Reva (y Tatooine) <a href="https://www.youtube.com/watch?v=sI8t5Pg3NX8">video de SWGOH4Life</a></li>
-                                <li class="resource-item">Mods: Protección en lugar de Salud (porque los detonadores y Daño continuado dañan % salud)</li>
-                                <li class="resource-item">Primera fase: Usar la 3ª habilidad de Gran Inquisidor contra 6 acumulaciones de purga para elevar la tenacidad de todos los inquisidores (y parar las bombas).</li>
-                                <li class="resource-item">Segunda fase: Ability block en JMK.</li>
-                            </ul>
-                        </div>
-                    </section>
+                  <div class="holocrones-list">
+                    <article class="holocron holocron--eventos">
+                      <button
+                          class="holocron__action"
+                          data-holocron="holocrones/_rote-zeffo.html"
+                          data-key="holocron__zeffo"
+                      >
+                        <img class="holocron__icono" src="img/holocron-red.png" alt="Icono holocron">
+                        <h4 class="holocron__titulo truncate">
+                          <a href="holocrones.html?open=holocron__zeffo">Alzamiento - Misión Especial: Zeffo</a>
+                        </h4>
+                      </button>
+                    </article>
+                    <article class="holocron holocron--eventos">
+                      <button
+                          class="holocron__action"
+                          data-holocron="holocrones/_rote-mandalore.html"
+                          data-key="holocron__mandalore"
+                      >
+                        <img class="holocron__icono" src="img/holocron-red.png" alt="Icono holocron">
+                        <h4 class="holocron__titulo truncate">
+                          <a href="holocrones.html?open=holocron__mandalore">Alzamiento - Misión Especial: Mand'alor</a>
+                        </h4>
+                      </button>
+                    </article>
+                    <article class="holocron holocron--eventos">
+                      <button
+                          class="holocron__action"
+                          data-holocron="holocrones/_rote-reva.html"
+                          data-key="holocron__reva"
+                      >
+                        <img class="holocron__icono" src="img/holocron-red.png" alt="Icono holocron">
+                        <h4 class="holocron__titulo truncate">
+                          <a href="holocrones.html?open=holocron__reva">Alzamiento - Misión Especial: Reva</a>
+                        </h4>
+                      </button>
+                    </article>
+                  </div>
                 </div>
             </div>
             <div id="misiones-general" class="section-collapsable collapsed">
