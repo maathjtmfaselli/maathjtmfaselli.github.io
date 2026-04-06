@@ -1,14 +1,24 @@
 [
   {
-    "date": "01-04-2026",
+    "date": "28-03-2026",
     "category": "gremio",
-    "title": "Tarjetas amarillas retirada a Oldboy",
-    "description": "Al cumplir requisitos para Zeffo y preguntar en chat."
+    "title": "Expulsiones: Alvader, Ivix",
+    "description": "No participación en los eventos"
+  },{
+    "date": "06-04-2026",
+    "category": "orden66",
+    "title": "Actualización de datos",
+    "description": "Máximo posible = 222M con 3 compis que aportan 0 al máximo. Sin cambios de rangos."
+  },{
+    "date": "05-04-2026",
+    "category": "alzamiento",
+    "title": "31*",
+    "description": "No llegamos a objetivo de 33*. Zeffo y Mandalore más cerca."
   },{
     "date": "30-03-2026",
     "category": "web",
     "title": "Mejoras Holocrones",
-    "description": "Mejoras visuales en la biblioteca de holocrones. Añadido filtrado"
+    "description": "Mejoras visuales en la biblioteca de holocrones. Añadido filtrado. Colores holocrones. Holocrones Orden66."
   },{
     "date": "28-03-2026",
     "category": "holocron",
@@ -27,17 +37,7 @@
   },{
     "date": "28-03-2026",
     "category": "gremio",
-    "title": "Tarjetas amarillas: Darth Sion, Oldboy, Hill",
-    "description": "Nuevas tarjetas amarillas a 3 miembros del gremio que cumplen con 0 objetivos del gremio"
-  },{
-    "date": "22-03-2026",
-    "category": "alzamiento",
-    "title": "30*",
-    "description": "Registrado último alzamiento."
-  },{
-    "date": "22-03-2026",
-    "category": "orden66",
-    "title": "Actualización de datos",
-    "description": "Se han actualizado los datos de los miembros del gremio."
+    "title": "Tarjetas amarillas: Darth Sion, Hill",
+    "description": "Nuevas tarjetas amarillas a 2 miembros del gremio que cumplen con 0 objetivos del gremio"
   }
 ]
