@@ -1,5 +1,10 @@
 [
   {
+    "date": "09-04-2026",
+    "category": "alzamiento",
+    "title": "Nuevos holocrones: Misiones Alzamiento",
+    "description": "<ul><li><a href=\"holocrones.html?open=holocron__rote-coruscant\">Sector 1 - Coruscant</a></li><li><a href=\"holocrones.html?open=holocron__rote-corellia\">Sector 1 - Corellia</a></li><li><a href=\"holocrones.html?open=holocron__rote-mustafar\">Sector 1 - Mustafar</a></li></ul>"
+  },{
     "date": "28-03-2026",
     "category": "gremio",
     "title": "Expulsiones: Alvader, Ivix",
