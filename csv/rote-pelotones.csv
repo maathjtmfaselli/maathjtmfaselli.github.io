@@ -807,7 +807,7 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 3	Kashyyyk	Luminoso	6	Jedi Master Luke Skywalker
 3	Kashyyyk	Luminoso	6	Padmé Amidala
 3	Kashyyyk	Luminoso	6	Ben Solo
-3	Kashyyyk	Luminoso	6	Ewok Scout	4	Viula	josmartini	Mik Bar	Cal Kestis
+3	Kashyyyk	Luminoso	6	Ewok Scout	4	Viula	josmartini	Mik Bat	Cal Kestis
 3	Kashyyyk	Luminoso	6	Hoth Rebel Soldier	1	josmartini
 3	Zeffo			General Skywalker
 3	Zeffo			General Skywalker
@@ -900,62 +900,62 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 3	Zeffo			Visas Marr	1	Last Order
 3	Zeffo			Wrecker	0
 4	Haven-class	Dark	1	Sith Eternal Emperor
-4	Haven-class	Dark	1	Starkiller
+4	Haven-class	Dark	1	Starkiller	0
 4	Haven-class	Dark	1	Scythe
-4	Haven-class	Dark	1	Nightsister Spirit
-4	Haven-class	Dark	1	Range Trooper
+4	Haven-class	Dark	1	Nightsister Spirit	0
+4	Haven-class	Dark	1	Range Trooper	0
 4	Haven-class	Dark	1	Lord Vader	14
 4	Haven-class	Dark	1	Starkiller
 4	Haven-class	Dark	1	Maul	1	Hill
-4	Haven-class	Dark	1	Bastila Shan (Fallen)
+4	Haven-class	Dark	1	Bastila Shan (Fallen)	0
 4	Haven-class	Dark	1	Darth Vader	4	Kaneris	Bald dart	Was	Hill
 4	Haven-class	Dark	1	Ejecutor
 4	Haven-class	Dark	1	Darth Malak	16
 4	Haven-class	Dark	1	Scythe
-4	Haven-class	Dark	1	Embo
-4	Haven-class	Dark	1	BT-1
+4	Haven-class	Dark	1	Embo	0
+4	Haven-class	Dark	1	BT-1	0
 4	Haven-class	Dark	2	Sith Eternal Emperor
 4	Haven-class	Dark	2	Darth Malak	16
 4	Haven-class	Dark	2	TIE/IN Interceptor Prototype
-4	Haven-class	Dark	2	Iden Versio
-4	Haven-class	Dark	2	Snowtrooper
+4	Haven-class	Dark	2	Iden Versio	0
+4	Haven-class	Dark	2	Snowtrooper	0
 4	Haven-class	Dark	2	Sith Eternal Emperor
-4	Haven-class	Dark	2	Starkiller
+4	Haven-class	Dark	2	Starkiller	0
 4	Haven-class	Dark	2	TIE/IN Interceptor Prototype
-4	Haven-class	Dark	2	Cad Bane
-4	Haven-class	Dark	2	First Order Stormtrooper
+4	Haven-class	Dark	2	Cad Bane	0
+4	Haven-class	Dark	2	First Order Stormtrooper	0
 4	Haven-class	Dark	2	Supreme Leader Kylo Ren	14
-4	Haven-class	Dark	2	Starkiller
-4	Haven-class	Dark	2	Boba Fett, Scion of Jango
-4	Haven-class	Dark	2	Nightsister Zombie
-4	Haven-class	Dark	2	Aurra Sing
+4	Haven-class	Dark	2	Starkiller	0
+4	Haven-class	Dark	2	Boba Fett, Scion of Jango	0
+4	Haven-class	Dark	2	Nightsister Zombie	0
+4	Haven-class	Dark	2	Aurra Sing	0
 4	Haven-class	Dark	3	Supreme Leader Kylo Ren
-4	Haven-class	Dark	3	Starkiller
+4	Haven-class	Dark	3	Starkiller	0
 4	Haven-class	Dark	3	Darth Malgus	2	Blas	YEPISTARS
 4	Haven-class	Dark	3	Dengar	1	YEPISTARS
 4	Haven-class	Dark	3	Hyena Bomber
 4	Haven-class	Dark	3	Lord Vader
 4	Haven-class	Dark	3	Darth Malak	16
 4	Haven-class	Dark	3	Darth Malgus	2	Blas	YEPISTARS
-4	Haven-class	Dark	3	Nightsister Initiate
+4	Haven-class	Dark	3	Nightsister Initiate	0
 4	Haven-class	Dark	3	Darth Maul	1	YEPISTARS
 4	Haven-class	Dark	3	Ejecutor
-4	Haven-class	Dark	3	Starkiller
+4	Haven-class	Dark	3	Starkiller	0
 4	Haven-class	Dark	3	TIE/IN Interceptor Prototype
 4	Haven-class	Dark	3	TIE Silencer
-4	Haven-class	Dark	3	Snowtrooper
+4	Haven-class	Dark	3	Snowtrooper	0
 4	Haven-class	Dark	4	Supreme Leader Kylo Ren
-4	Haven-class	Dark	4	Boba Fett, Scion of Jango
+4	Haven-class	Dark	4	Boba Fett, Scion of Jango	0
 4	Haven-class	Dark	4	Director Krennic	0
 4	Haven-class	Dark	4	Eight brother	2	Chinadapowers	Kaneris
-4	Haven-class	Dark	4	IG-88
+4	Haven-class	Dark	4	IG-88	0
 4	Haven-class	Dark	4	Lord Vader
 4	Haven-class	Dark	4	Scythe
-4	Haven-class	Dark	4	HK-47
-4	Haven-class	Dark	4	Nightsister Acolyte
+4	Haven-class	Dark	4	HK-47	0
+4	Haven-class	Dark	4	Nightsister Acolyte	0
 4	Haven-class	Dark	4	Wampa	1	VIRUS
 4	Haven-class	Dark	4	Lord Vader
-4	Haven-class	Dark	4	Boba Fett, Scion of Jango
+4	Haven-class	Dark	4	Boba Fett, Scion of Jango	0
 4	Haven-class	Dark	4	Krrsantan	2	Was	Dark Iskender
 4	Haven-class	Dark	4	Asajj Ventress	1	Chinadapowers
 4	Haven-class	Dark	4	TIE/IN Interceptor Prototype
@@ -963,15 +963,15 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 4	Haven-class	Dark	5	Maul	1	Hill
 4	Haven-class	Dark	5	Hyena Bomber
 4	Haven-class	Dark	5	Asajj Ventress	1	Chinadapowers
-4	Haven-class	Dark	5	Savage Opress
+4	Haven-class	Dark	5	Savage Opress	0
 4	Haven-class	Dark	5	Sith Eternal Emperor
 4	Haven-class	Dark	5	TIE/IN Interceptor Prototype
 4	Haven-class	Dark	5	Seventh Sister	1	Dark Iskender
-4	Haven-class	Dark	5	General Veers
+4	Haven-class	Dark	5	General Veers	0
 4	Haven-class	Dark	5	Second Sister	1	GRANJEDI Tito1
 4	Haven-class	Dark	5	Supreme Leader Kylo Ren
 4	Haven-class	Dark	5	Maul	1	Hill
-4	Haven-class	Dark	5	Aurra Sing
+4	Haven-class	Dark	5	Aurra Sing	0
 4	Haven-class	Dark	5	Mara Jade	1	Hill
 4	Haven-class	Dark	5	Scythe
 4	Haven-class	Dark	6	Ejecutor
@@ -981,14 +981,14 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 4	Haven-class	Dark	6	TIE Fighter Pilot
 4	Haven-class	Dark	6	Lord Vader
 4	Haven-class	Dark	6	Scythe
-4	Haven-class	Dark	6	B2
+4	Haven-class	Dark	6	B2	0
 4	Haven-class	Dark	6	Malevolence
 4	Haven-class	Dark	6	Emperor's Shuttle
 4	Haven-class	Dark	6	Supreme Leader Kylo Ren
 4	Haven-class	Dark	6	TIE/IN Interceptor Prototype
-4	Haven-class	Dark	6	First Order TIE pilot
-4	Haven-class	Dark	6	Dathcha
-4	Haven-class	Dark	6	Boba Fett, Scion of Jango
+4	Haven-class	Dark	6	First Order TIE pilot	0
+4	Haven-class	Dark	6	Dathcha	0
+4	Haven-class	Dark	6	Boba Fett, Scion of Jango	0
 4	Lothal	Luminoso	1	Jedi Master Luke Skywalker	17
 4	Lothal	Luminoso	1	Hermit Yoda	1	Chinadapowers
 4	Lothal	Luminoso	1	Ben Solo	1	Was
@@ -1081,22 +1081,22 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 4	Lothal	Luminoso	6	50R-T	0
 4	Lothal	Luminoso	6	Hondo Ohnaka	9
 4	Kessel	Neutral	1	Ejecutor
-4	Kessel	Neutral	1	Starkiller
+4	Kessel	Neutral	1	Starkiller	0
 4	Kessel	Neutral	1	TIE/IN Interceptor Prototype
 4	Kessel	Neutral	1	Coruscant Underworld Police	8
-4	Kessel	Neutral	1	Poggle
+4	Kessel	Neutral	1	Poggle	0
 4	Kessel	Neutral	1	Lord Vader
 4	Kessel	Neutral	1	General Skywalker
 4	Kessel	Neutral	1	TIE/IN Interceptor Prototype
 4	Kessel	Neutral	1	Halcón de Ébano
-4	Kessel	Neutral	1	Boba Fett, Scion of Jango
+4	Kessel	Neutral	1	Boba Fett, Scion of Jango	0
 4	Kessel	Neutral	1	Rey
 4	Kessel	Neutral	1	Caballero Jedi Luke Skywalker	7
 4	Kessel	Neutral	1	TIE/IN Interceptor Prototype
 4	Kessel	Neutral	1	Caza estelar del Jedi Consul
 4	Kessel	Neutral	1	Outrider
 4	Kessel	Neutral	2	Jedi Master Kenobi
-4	Kessel	Neutral	2	Starkiller
+4	Kessel	Neutral	2	Starkiller	0
 4	Kessel	Neutral	2	Maul	1	Hill
 4	Kessel	Neutral	2	Gamorrean Guard
 4	Kessel	Neutral	2	Caza Sith
@@ -1106,19 +1106,19 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 4	Kessel	Neutral	2	ARC-170 de Rex
 4	Kessel	Neutral	2	Ben Solo	1		Was
 4	Kessel	Neutral	2	Sith Eternal Emperor
-4	Kessel	Neutral	2	Starkiller
+4	Kessel	Neutral	2	Starkiller	0
 4	Kessel	Neutral	2	Darth Malgus	2	Blas	YEPISTARS
-4	Kessel	Neutral	2	Echo
-4	Kessel	Neutral	2	Aurra Sing
+4	Kessel	Neutral	2	Echo	0
+4	Kessel	Neutral	2	Aurra Sing	0
 4	Kessel	Neutral	3	Sith Eternal Emperor
-4	Kessel	Neutral	3	Starkiller
+4	Kessel	Neutral	3	Starkiller	0
 4	Kessel	Neutral	3	Scythe
 4	Kessel	Neutral	3	Séptima Hermana	1	Dark Iskender
-4	Kessel	Neutral	3	Nightsister Initiate
+4	Kessel	Neutral	3	Nightsister Initiate	0
 4	Kessel	Neutral	3	Supreme Leader Kylo Ren
-4	Kessel	Neutral	3	Starkiller
+4	Kessel	Neutral	3	Starkiller	0
 4	Kessel	Neutral	3	Razor Crest
-4	Kessel	Neutral	3	Nightsister Initiate
+4	Kessel	Neutral	3	Nightsister Initiate	0
 4	Kessel	Neutral	3	TIE/IN Interceptor Prototype
 4	Kessel	Neutral	3	Sith Eternal Emperor
 4	Kessel	Neutral	3	General Skywalker
@@ -1128,18 +1128,18 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 4	Kessel	Neutral	4	Lord Vader
 4	Kessel	Neutral	4	General Skywalker
 4	Kessel	Neutral	4	Ben Solo	1		Was
-4	Kessel	Neutral	4	Baze Malbus
-4	Kessel	Neutral	4	General Veers
+4	Kessel	Neutral	4	Baze Malbus	0
+4	Kessel	Neutral	4	General Veers	0
 4	Kessel	Neutral	4	Rey
 4	Kessel	Neutral	4	Caballero Jedi Luke Skywalker	7
 4	Kessel	Neutral	4	Maul	1	Hill
-4	Kessel	Neutral	4	Soldado Rebelde de Hoth
+4	Kessel	Neutral	4	Soldado Rebelde de Hoth	0
 4	Kessel	Neutral	4	Scythe
 4	Kessel	Neutral	4	Rey
-4	Kessel	Neutral	4	Starkiller
+4	Kessel	Neutral	4	Starkiller	0
 4	Kessel	Neutral	4	Darth Malgus	2	Blas	YEPISTARS
-4	Kessel	Neutral	4	Bo-Katan Kryze
-4	Kessel	Neutral	4	Bistan
+4	Kessel	Neutral	4	Bo-Katan Kryze	0
+4	Kessel	Neutral	4	Bistan	0
 4	Kessel	Neutral	5	Sith Eternal Emperor
 4	Kessel	Neutral	5	General Skywalker
 4	Kessel	Neutral	5	Scythe
@@ -1148,12 +1148,12 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 4	Kessel	Neutral	5	Ejecutor
 4	Kessel	Neutral	5	Caballero Jedi Luke Skywalker	7
 4	Kessel	Neutral	5	Maul	1	Hill
-4	Kessel	Neutral	5	IG-88
+4	Kessel	Neutral	5	IG-88	0
 4	Kessel	Neutral	5	Razor Crest
 4	Kessel	Neutral	5	Rey
 4	Kessel	Neutral	5	Caballero Jedi Luke Skywalker	7
-4	Kessel	Neutral	5	Boba Fett, Scion of Jango
-4	Kessel	Neutral	5	50R-T
+4	Kessel	Neutral	5	Boba Fett, Scion of Jango	0
+4	Kessel	Neutral	5	50R-T	0
 4	Kessel	Neutral	5	Y-Wing rebelde
 4	Kessel	Neutral	6	Sith Eternal Emperor
 4	Kessel	Neutral	6	Darth Malak	16
@@ -1163,13 +1163,13 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 4	Kessel	Neutral	6	Rey
 4	Kessel	Neutral	6	Darth Malak	16
 4	Kessel	Neutral	6	Ben Solo	1		Was
-4	Kessel	Neutral	6	Almirante Ackbar
+4	Kessel	Neutral	6	Almirante Ackbar	0
 4	Kessel	Neutral	6	Commander Ahsoka Tano
 4	Kessel	Neutral	6	Supreme Leader Kylo Ren
-4	Kessel	Neutral	6	Starkiller
+4	Kessel	Neutral	6	Starkiller	0
 4	Kessel	Neutral	6	Commander Ahsoka Tano
-4	Kessel	Neutral	6	Dark Trooper
-4	Kessel	Neutral	6	Kylo Ren
+4	Kessel	Neutral	6	Dark Trooper	0
+4	Kessel	Neutral	6	Kylo Ren	0
 4	Mandalore			Doctor Aphra	1	Tantema
 4	Mandalore			Doctor Aphra	1	Tantema
 4	Mandalore			Doctor Aphra	1	Tantema
@@ -1209,9 +1209,9 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 4	Mandalore			Sith Eternal Emperor
 4	Mandalore			Sith Eternal Emperor
 4	Mandalore			Sith Eternal Emperor
-4	Mandalore			Starkiller
-4	Mandalore			Starkiller
-4	Mandalore			Starkiller
+4	Mandalore			Starkiller	0
+4	Mandalore			Starkiller	0
+4	Mandalore			Starkiller	0
 4	Mandalore			TIE Dagger
 4	Mandalore			TIE Dagger
 4	Mandalore			TIE Dagger
@@ -1229,124 +1229,124 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 4	Mandalore			Captain Rex	1	Was
 4	Mandalore			Darth Bane	8
 4	Mandalore			Darth Bane	8
-4	Mandalore			Jedi Knight Luke Skywalker	7				
-4	Mandalore			Jedi Knight Luke Skywalker	7				
-4	Mandalore			Kelleran Beq	11				
-4	Mandalore			Kelleran Beq	11				
-4	Mandalore			Ki-Adi-Mundi	0				
-4	Mandalore			Ki-Adi-Mundi	0				
-4	Mandalore			Mark VI Interceptor					
-4	Mandalore			Mark VI Interceptor					
-4	Mandalore			Merrin	0				
-4	Mandalore			Merrin	0				
-4	Mandalore			Princess Kneesaa	0				
-4	Mandalore			Princess Kneesaa	0				
-4	Mandalore			Rey					
-4	Mandalore			Rey					
-4	Mandalore			STAP	0				
-4	Mandalore			STAP	0				
-4	Mandalore			Tarfful	0				
-4	Mandalore			Tarfful	0				
-4	Mandalore			Tusken Warrior	0				
-4	Mandalore			Tusken Warrior	0				
-4	Mandalore			Boba Fett, Scion of Jango	0				
-4	Mandalore			Coruscant Underworld Police	8				
-4	Mandalore			Darth Malak					
-4	Mandalore			Darth Malgus	2	Blas	YEPISTARS		
-4	Mandalore			Jedi Master Kenobi					
-4	Mandalore			Profundity					
-4	Mandalore			Razor Crest					
-4	Mandalore			Scythe					
-4	Mandalore			Supreme Leader Kylo Ren					
-4	Mandalore			TIE/IN Interceptor Prototype					
-4	Mandalore			Tusken Chieftain	0				
-5	Anillo de Kafrene	Luminoso	1	Jedi Master Luke Skywalker	7				
-5	Anillo de Kafrene	Luminoso	1	Grand Master Yoda					
-5	Anillo de Kafrene	Luminoso	1	Caballero Jedi Luke Skywalker					
-5	Anillo de Kafrene	Luminoso	1	50R-T					
-5	Anillo de Kafrene	Luminoso	1	Zaalbar					
-5	Anillo de Kafrene	Luminoso	1	Jedi Master Luke Skywalker	7				
-5	Anillo de Kafrene	Luminoso	1	Commander Luke Skywalker					
-5	Anillo de Kafrene	Luminoso	1	Caballero Jedi Luke Skywalker					
-5	Anillo de Kafrene	Luminoso	1	Wedge Antilles X-Wing					
-5	Anillo de Kafrene	Luminoso	1	Boushh	1	Was			
-5	Anillo de Kafrene	Luminoso	1	Jedi Master Kenobi	10				
-5	Anillo de Kafrene	Luminoso	1	Jedi Knight Revan					
-5	Anillo de Kafrene	Luminoso	1	General Skywalker	6				
-5	Anillo de Kafrene	Luminoso	1	Bastila Shan					
-5	Anillo de Kafrene	Luminoso	1	Eeth Koth					
-5	Anillo de Kafrene	Luminoso	2	Rey	6				
-5	Anillo de Kafrene	Luminoso	2	Padme Amidala	1	YEPISTARS			
-5	Anillo de Kafrene	Luminoso	2	Caballero Jedi Luke Skywalker					
-5	Anillo de Kafrene	Luminoso	2	Grand Master Yoda					
-5	Anillo de Kafrene	Luminoso	2	Lobot					
-5	Anillo de Kafrene	Luminoso	2	Rey	6				
-5	Anillo de Kafrene	Luminoso	2	Grand Master Yoda					
-5	Anillo de Kafrene	Luminoso	2	General Skywalker	6				
-5	Anillo de Kafrene	Luminoso	2	Han's Millennium Falcon					
-5	Anillo de Kafrene	Luminoso	2	CT-7567 "Rex"					
-5	Anillo de Kafrene	Luminoso	2	Jedi Master Kenobi	10				
-5	Anillo de Kafrene	Luminoso	2	Grand Master Yoda					
-5	Anillo de Kafrene	Luminoso	2	Caballero Jedi Luke Skywalker					
-5	Anillo de Kafrene	Luminoso	2	Commander Luke Skywalker					
-5	Anillo de Kafrene	Luminoso	2	Eeth Koth					
-5	Anillo de Kafrene	Luminoso	3	Jedi Master Kenobi	10				
-5	Anillo de Kafrene	Luminoso	3	Jedi Knight Revan					
-5	Anillo de Kafrene	Luminoso	3	Caballero Jedi Luke Skywalker					
-5	Anillo de Kafrene	Luminoso	3	Clone Sergeant's ARC-170					
-5	Anillo de Kafrene	Luminoso	3	T3-M4					
-5	Anillo de Kafrene	Luminoso	3	Rey	6				
-5	Anillo de Kafrene	Luminoso	3	C-3PO					
-5	Anillo de Kafrene	Luminoso	3	General Skywalker	6				
-5	Anillo de Kafrene	Luminoso	3	The Armorer					
-5	Anillo de Kafrene	Luminoso	3	Tech					
-5	Anillo de Kafrene	Luminoso	3	Jedi Master Luke Skywalker	7				
-5	Anillo de Kafrene	Luminoso	3	R2-D2	1	Was			
-5	Anillo de Kafrene	Luminoso	3	Caballero Jedi Luke Skywalker					
-5	Anillo de Kafrene	Luminoso	3	Wedge Antilles X-Wing					
-5	Anillo de Kafrene	Luminoso	3	Echo					
-5	Anillo de Kafrene	Luminoso	4	Profundity					
-5	Anillo de Kafrene	Luminoso	4	Caballero Jedi Luke Skywalker					
-5	Anillo de Kafrene	Luminoso	4	Barriss Office					
-5	Anillo de Kafrene	Luminoso	4	Mon Mothma					
-5	Anillo de Kafrene	Luminoso	4	Baze Malbus					
-5	Anillo de Kafrene	Luminoso	4	Jedi Master Kenobi	10				
-5	Anillo de Kafrene	Luminoso	4	General Skywalker	6				
-5	Anillo de Kafrene	Luminoso	4	Negociador					
-5	Anillo de Kafrene	Luminoso	4	Chopper					
-5	Anillo de Kafrene	Luminoso	4	Chewbacca, guerra de los clones	6				
-5	Anillo de Kafrene	Luminoso	4	Rey	6				
-5	Anillo de Kafrene	Luminoso	4	General Skywalker	6				
-5	Anillo de Kafrene	Luminoso	4	Amilyn Hondo					
-5	Anillo de Kafrene	Luminoso	4	Resistance Trooper					
-5	Anillo de Kafrene	Luminoso	4	C-3PO					
-5	Anillo de Kafrene	Luminoso	5	Jedi Master Kenobi	10				
-5	Anillo de Kafrene	Luminoso	5	Caballero Jedi Luke Skywalker					
-5	Anillo de Kafrene	Luminoso	5	Veteran Smuggler Chewbacca					
-5	Anillo de Kafrene	Luminoso	5	Grand Master Yoda					
-5	Anillo de Kafrene	Luminoso	5	50R-T					
-5	Anillo de Kafrene	Luminoso	5	Profundity					
-5	Anillo de Kafrene	Luminoso	5	General Skywalker	6				
-5	Anillo de Kafrene	Luminoso	5	Baze Malbus					
-5	Anillo de Kafrene	Luminoso	5	R2-D2	1	Was			
-5	Anillo de Kafrene	Luminoso	5	Bodhi Rook					
-5	Anillo de Kafrene	Luminoso	5	Jedi Master Luke Skywalker	7				
-5	Anillo de Kafrene	Luminoso	5	Caballero Jedi Luke Skywalker					
-5	Anillo de Kafrene	Luminoso	5	Hoth Rebel Soldier					
-5	Anillo de Kafrene	Luminoso	5	Jedi Knight Revan					
-5	Anillo de Kafrene	Luminoso	5	Chewbacca					
-5	Anillo de Kafrene	Luminoso	6	Jedi Master Luke Skywalker	7				
-5	Anillo de Kafrene	Luminoso	6	Caballero Jedi Luke Skywalker					
-5	Anillo de Kafrene	Luminoso	6	Omega					
-5	Anillo de Kafrene	Luminoso	6	Ima-Gun Di					
-5	Anillo de Kafrene	Luminoso	6	Chirrut Imwe					
-5	Anillo de Kafrene	Luminoso	6	Jedi Master Kenobi	10				
-5	Anillo de Kafrene	Luminoso	6	General Skywalker	6				
-5	Anillo de Kafrene	Luminoso	6	Lando Carlrissian					
-5	Anillo de Kafrene	Luminoso	6	Tech					
-5	Anillo de Kafrene	Luminoso	6	Ghost					
-5	Anillo de Kafrene	Luminoso	6	Jedi Master Luke Skywalker	7				
-5	Anillo de Kafrene	Luminoso	6	Caballero Jedi Luke Skywalker					
-5	Anillo de Kafrene	Luminoso	6	Umbaran Starfighter					
-5	Anillo de Kafrene	Luminoso	6	Rose Tico					
-5	Anillo de Kafrene	Luminoso	6	Commander Luke Skywalker					
+4	Mandalore			Jedi Knight Luke Skywalker	7
+4	Mandalore			Jedi Knight Luke Skywalker	7
+4	Mandalore			Kelleran Beq	11
+4	Mandalore			Kelleran Beq	11
+4	Mandalore			Ki-Adi-Mundi	0
+4	Mandalore			Ki-Adi-Mundi	0
+4	Mandalore			Mark VI Interceptor
+4	Mandalore			Mark VI Interceptor
+4	Mandalore			Merrin	0
+4	Mandalore			Merrin	0
+4	Mandalore			Princess Kneesaa	0
+4	Mandalore			Princess Kneesaa	0
+4	Mandalore			Rey
+4	Mandalore			Rey
+4	Mandalore			STAP	0
+4	Mandalore			STAP	0
+4	Mandalore			Tarfful	0
+4	Mandalore			Tarfful	0
+4	Mandalore			Tusken Warrior	0
+4	Mandalore			Tusken Warrior	0
+4	Mandalore			Boba Fett, Scion of Jango	0
+4	Mandalore			Coruscant Underworld Police	8
+4	Mandalore			Darth Malak
+4	Mandalore			Darth Malgus	2	Blas	YEPISTARS
+4	Mandalore			Jedi Master Kenobi
+4	Mandalore			Profundity
+4	Mandalore			Razor Crest
+4	Mandalore			Scythe
+4	Mandalore			Supreme Leader Kylo Ren
+4	Mandalore			TIE/IN Interceptor Prototype
+4	Mandalore			Tusken Chieftain	0
+5	Anillo de Kafrene	Luminoso	1	Jedi Master Luke Skywalker	7
+5	Anillo de Kafrene	Luminoso	1	Grand Master Yoda	0
+5	Anillo de Kafrene	Luminoso	1	Caballero Jedi Luke Skywalker	0
+5	Anillo de Kafrene	Luminoso	1	50R-T	0
+5	Anillo de Kafrene	Luminoso	1	Zaalbar	0
+5	Anillo de Kafrene	Luminoso	1	Jedi Master Luke Skywalker	7
+5	Anillo de Kafrene	Luminoso	1	Commander Luke Skywalker	0
+5	Anillo de Kafrene	Luminoso	1	Caballero Jedi Luke Skywalker	0
+5	Anillo de Kafrene	Luminoso	1	Wedge Antilles X-Wing
+5	Anillo de Kafrene	Luminoso	1	Boushh	1	Was
+5	Anillo de Kafrene	Luminoso	1	Jedi Master Kenobi	10
+5	Anillo de Kafrene	Luminoso	1	Jedi Knight Revan	0
+5	Anillo de Kafrene	Luminoso	1	General Skywalker	6
+5	Anillo de Kafrene	Luminoso	1	Bastila Shan	0
+5	Anillo de Kafrene	Luminoso	1	Eeth Koth	0
+5	Anillo de Kafrene	Luminoso	2	Rey	6
+5	Anillo de Kafrene	Luminoso	2	Padme Amidala	1	YEPISTARS
+5	Anillo de Kafrene	Luminoso	2	Caballero Jedi Luke Skywalker	0
+5	Anillo de Kafrene	Luminoso	2	Grand Master Yoda	0
+5	Anillo de Kafrene	Luminoso	2	Lobot	0
+5	Anillo de Kafrene	Luminoso	2	Rey	6
+5	Anillo de Kafrene	Luminoso	2	Grand Master Yoda	0
+5	Anillo de Kafrene	Luminoso	2	General Skywalker	6
+5	Anillo de Kafrene	Luminoso	2	Han's Millennium Falcon
+5	Anillo de Kafrene	Luminoso	2	CT-7567 "Rex"	0
+5	Anillo de Kafrene	Luminoso	2	Jedi Master Kenobi	10
+5	Anillo de Kafrene	Luminoso	2	Grand Master Yoda	0
+5	Anillo de Kafrene	Luminoso	2	Caballero Jedi Luke Skywalker	0
+5	Anillo de Kafrene	Luminoso	2	Commander Luke Skywalker	0
+5	Anillo de Kafrene	Luminoso	2	Eeth Koth	0
+5	Anillo de Kafrene	Luminoso	3	Jedi Master Kenobi	10
+5	Anillo de Kafrene	Luminoso	3	Jedi Knight Revan	0
+5	Anillo de Kafrene	Luminoso	3	Caballero Jedi Luke Skywalker	0
+5	Anillo de Kafrene	Luminoso	3	Clone Sergeant's ARC-170
+5	Anillo de Kafrene	Luminoso	3	T3-M4	0
+5	Anillo de Kafrene	Luminoso	3	Rey	6
+5	Anillo de Kafrene	Luminoso	3	C-3PO	0
+5	Anillo de Kafrene	Luminoso	3	General Skywalker	6
+5	Anillo de Kafrene	Luminoso	3	The Armorer	0
+5	Anillo de Kafrene	Luminoso	3	Tech	0
+5	Anillo de Kafrene	Luminoso	3	Jedi Master Luke Skywalker	7
+5	Anillo de Kafrene	Luminoso	3	R2-D2	1	Was
+5	Anillo de Kafrene	Luminoso	3	Caballero Jedi Luke Skywalker	0
+5	Anillo de Kafrene	Luminoso	3	Wedge Antilles X-Wing
+5	Anillo de Kafrene	Luminoso	3	Echo	0
+5	Anillo de Kafrene	Luminoso	4	Profundity
+5	Anillo de Kafrene	Luminoso	4	Caballero Jedi Luke Skywalker	0
+5	Anillo de Kafrene	Luminoso	4	Barriss Office	0
+5	Anillo de Kafrene	Luminoso	4	Mon Mothma	0
+5	Anillo de Kafrene	Luminoso	4	Baze Malbus	0
+5	Anillo de Kafrene	Luminoso	4	Jedi Master Kenobi	10
+5	Anillo de Kafrene	Luminoso	4	General Skywalker	6
+5	Anillo de Kafrene	Luminoso	4	Negociador
+5	Anillo de Kafrene	Luminoso	4	Chopper	0
+5	Anillo de Kafrene	Luminoso	4	Chewbacca, guerra de los clones	6
+5	Anillo de Kafrene	Luminoso	4	Rey	6
+5	Anillo de Kafrene	Luminoso	4	General Skywalker	6
+5	Anillo de Kafrene	Luminoso	4	Amilyn Hondo	0
+5	Anillo de Kafrene	Luminoso	4	Resistance Trooper	0
+5	Anillo de Kafrene	Luminoso	4	C-3PO	0
+5	Anillo de Kafrene	Luminoso	5	Jedi Master Kenobi	10
+5	Anillo de Kafrene	Luminoso	5	Caballero Jedi Luke Skywalker	0
+5	Anillo de Kafrene	Luminoso	5	Veteran Smuggler Chewbacca	0
+5	Anillo de Kafrene	Luminoso	5	Grand Master Yoda	0
+5	Anillo de Kafrene	Luminoso	5	50R-T	0
+5	Anillo de Kafrene	Luminoso	5	Profundity
+5	Anillo de Kafrene	Luminoso	5	General Skywalker	6
+5	Anillo de Kafrene	Luminoso	5	Baze Malbus	0
+5	Anillo de Kafrene	Luminoso	5	R2-D2	1	Was
+5	Anillo de Kafrene	Luminoso	5	Bodhi Rook	0
+5	Anillo de Kafrene	Luminoso	5	Jedi Master Luke Skywalker	7
+5	Anillo de Kafrene	Luminoso	5	Caballero Jedi Luke Skywalker	0
+5	Anillo de Kafrene	Luminoso	5	Hoth Rebel Soldier	0
+5	Anillo de Kafrene	Luminoso	5	Jedi Knight Revan	0
+5	Anillo de Kafrene	Luminoso	5	Chewbacca	0
+5	Anillo de Kafrene	Luminoso	6	Jedi Master Luke Skywalker	7
+5	Anillo de Kafrene	Luminoso	6	Caballero Jedi Luke Skywalker	0
+5	Anillo de Kafrene	Luminoso	6	Omega	0
+5	Anillo de Kafrene	Luminoso	6	Ima-Gun Di	0
+5	Anillo de Kafrene	Luminoso	6	Chirrut Imwe	0
+5	Anillo de Kafrene	Luminoso	6	Jedi Master Kenobi	10
+5	Anillo de Kafrene	Luminoso	6	General Skywalker	6
+5	Anillo de Kafrene	Luminoso	6	Lando Carlrissian	0
+5	Anillo de Kafrene	Luminoso	6	Tech	0
+5	Anillo de Kafrene	Luminoso	6	Ghost
+5	Anillo de Kafrene	Luminoso	6	Jedi Master Luke Skywalker	7
+5	Anillo de Kafrene	Luminoso	6	Caballero Jedi Luke Skywalker	0
+5	Anillo de Kafrene	Luminoso	6	Umbaran Starfighter
+5	Anillo de Kafrene	Luminoso	6	Rose Tico	0
+5	Anillo de Kafrene	Luminoso	6	Commander Luke Skywalker	0
