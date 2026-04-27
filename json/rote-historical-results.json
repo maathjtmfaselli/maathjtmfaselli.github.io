@@ -1,17 +1,41 @@
 {
   "historicalResults": [
     {
-      "fecha": "30/03/2026",
-      "pg": "563M",
+      "fecha": "11/05/2026",
+      "pg": "577M",
       "estrellas": "",
       "noDesplegados": "/////",
       "pelotones": "/54",
-      "reva": "x/x/24",
-      "mandalor": "x/x/25",
-      "dathomir": "x/x/6",
-      "kashyyyk": "x/x/2",
-      "zeffo": "x/x/28",
-      "corellia": "x/x/7"
+      "reva": "x/x/25",
+      "mandalor": "x/x/28",
+      "dathomir": "x/x/9",
+      "kashyyyk": "x/x/3",
+      "zeffo": "x/x/35",
+      "corellia": "x/x/9"
+    },{
+      "fecha": "27/04/2026",
+      "pg": "577M",
+      "estrellas": "",
+      "noDesplegados": "/////",
+      "pelotones": "/54",
+      "reva": "x/x/25",
+      "mandalor": "x/x/28",
+      "dathomir": "x/x/9",
+      "kashyyyk": "x/x/3",
+      "zeffo": "x/x/35",
+      "corellia": "x/x/9"
+    },{
+      "fecha": "13/04/2026",
+      "pg": "563M",
+      "estrellas": "34",
+      "noDesplegados": "-/43////",
+      "pelotones": "/54",
+      "reva": "x/x/25",
+      "mandalor": "x/x/27",
+      "dathomir": "6/6/9",
+      "kashyyyk": "1/2/3",
+      "zeffo": "20/31/33",
+      "corellia": "8/9/9"
     },{
       "fecha": "30/03/2026",
       "pg": "556M",
