@@ -4,68 +4,100 @@
 
 ## ✨ Principios del proyecto
 
-Este proyecto sigue una filosofía **frontend-first** y **ia-first**. Está diseñado para funcionar completamente sobre **GitHub Pages**, sin backend propio.
+Este proyecto sigue una filosofía **frontend-first** e **ia-first**. Está diseñado para funcionar completamente sobre **GitHub Pages**, sin backend propio.
 
-Decisiones de arquitectura
+### Decisiones de Arquitectura
 
-- Proyecto alojado en github, y servido desde github pages.
-- Tecnologías web nativas sin frameworks pesados ni librerías externas.
-- Estructura de código limpia y mantenible
-- Separación clara entre lógica, datos y presentación
-  - Presentación - Diseño responsive para todos los dispositivos
-  - Lógica - reutilización de componentes autocontenidos (holocrones)
-  - Datos - frontend first approach sin backend, los datos se mantienen en la carpeta `data`
+Nuestras decisiones arquitectónicas están documentadas en [Architecture Decision Records (ADRs)](/docs/adr/):
+
+1. **[ADR-0001: Static GitHub Pages Hosting](/docs/adr/0001-static-github-pages.md)** - Arquitectura frontend-only sin infraestructura backend
+2. **[ADR-0002: Vanilla Web Stack](/docs/adr/0002-vanilla-web-stack.md)** - Tecnologías web nativas (HTML, CSS, JavaScript)
+3. **[ADR-0003: No Framework Policy](/docs/adr/0003-no-framework-policy.md)** - Sin frameworks pesados ni librerías externas
+4. **[ADR-0005: Presentation Layer - Responsive Design](/docs/adr/0005-presentation-layer-responsive-design.md)** - Diseño responsive para todos los dispositivos
+5. **[ADR-0006: Holocron Component Architecture](/docs/adr/0006-holocron-architecture.md)** - Componentes autocontenidos reutilizables
 
 ## 🛠️ Stack Tecnológico
 
-Mantenemos este proyecto lo más **nativo posible**, utilizando solo tecnologías web fundamentales:
+Utilizamos solo tecnologías web fundamentales, tal como se define en [ADR-0002](/docs/adr/0002-vanilla-web-stack.md):
 
-- **HTML**
-- **JavaScript**
-- **CSS**
+- **HTML** - Marcado semántico
+- **JavaScript** - Lógica interactiva nativa
+- **CSS** - Estilos y diseño responsive
 
 ## 📁 Estructura del Proyecto
 
 ```
-├── index.html          # Página principal
-├── css/                # Hojas de estilos
-├── js/                 # Scripts de JavaScript
-├── data/               # Datos del gremio y usuarios
-│   ├── master/         # Datos maestros (estáticos)
-│   └── guild/          # Datos del gremio (dinámicos)
-│   └── ...
-├── holocrones/         # Holocrones autocontenidos
+├── index.html              # Página principal
+├── css/                    # Hojas de estilos
+├── js/                     # Scripts de JavaScript
+├── data/                   # Datos del gremio y maestros
+│   ├── master/             # Datos maestros (estáticos)
+│   └── guild/              # Datos del gremio (dinámicos)
+├── holocrones/             # Componentes autocontenidos
 │   ├── guide-1.html
 │   ├── guide-2.html
 │   └── ...
-├── images/             # Recursos gráficos
-└── README.md           # Este archivo
+├── docs/
+│   └── adr/                # Architecture Decision Records
+├── images/                 # Recursos gráficos
+└── README.md               # Este archivo
 ```
+
 ## 🎓 Holocrones
 
-Los **holocrones** son piezas autocontenidas de información que pueden:
+Los **holocrones** son componentes autocontenidos que implementan la [Arquitectura de Holocrones (ADR-0006)](/docs/adr/0006-holocron-architecture.md):
 
-- 📚 **Consultarse individualmente** en la biblioteca de holocrones
-- 🔗 **Incrustarse en otras páginas** mediante iframes o componentes
-
-Cada holocrón contiene una guía, estrategia o recurso específico para el gremio.
+- 📚 Consultables individualmente en la biblioteca de holocrones
+- 🔗 Incrustables en otras páginas mediante iframes
+- 📖 Autocontenidos con su propia lógica y estilos
+- 🔄 Dinámicos con datos de las carpetas `/data/`
 
 ## 📊 Datos
 
-### Master Data (`/data/master/`)
+El proyecto mantiene una **separación clara entre datos maestros y datos del gremio**:
 
-Datos que **no varían** o cambian muy raramente. Estos datos se actualizan ocasionalmente cuando hay cambios importantes en SWGOH.
+### Master Data (`/data/master/`)
+Datos estáticos que cambian raramente. Se actualizan cuando hay cambios importantes en SWGOH.
 
 ### Guild Data (`/data/guild/`)
-
-Datos que **varían con el tiempo** y reflejan el estado actual del gremio:
+Datos dinámicos que reflejan el estado actual del gremio:
 - Información de miembros
-- Progreso y estadísticas del gremio
+- Progreso y estadísticas
 - Objetivos y logros
+
+## 🚀 Empezar
+
+### Requisitos
+- Navegador web moderno
+- (Opcional) Servidor web local para desarrollo
+
+### Pasos
+
+1. Clona el repositorio:
+```bash
+git clone https://github.com/maathjtmfaselli/maathjtmfaselli.github.io.git
+cd maathjtmfaselli.github.io
+```
+
+2. Inicia un servidor local:
+```bash
+# Con Python 3
+python -m http.server 8000
+
+# Con Node.js
+npx http-server
+```
+
+3. Abre tu navegador en `http://localhost:8000`
 
 ## 🤝 Cómo Contribuir
 
-Ver CONTRIBUTING.md
+Ver [CONTRIBUTING.md](CONTRIBUTING.md)
+
+## 📚 Documentación
+
+- **[Architecture Decision Records](/docs/adr/)** - Decisiones arquitectónicas documentadas
+- **[Contributing Guidelines](CONTRIBUTING.md)** - Guía para contribuir
 
 ## 🔗 Enlaces
 
