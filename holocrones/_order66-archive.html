@@ -1,14 +1,351 @@
-<section class="holocron-card">
+<section class="holocron-card order66-archive">
   <header class="holocron-header">
     <h2>¿Qué hizo el gremio en Orden66?</h2>
-    <div class="holocron-meta">
-      <img src="https://img.shields.io/badge/Gran%20Maestro-7-blue" alt="Grandes Maestros"/>
-      <img src="https://img.shields.io/badge/Caballero-34-yellow" alt="Caballeros"/>
-      <img src="https://img.shields.io/badge/Padawan-9-orange" alt="Padawan"/>
+    <div class="holocron-meta" id="badges-container">
+      <!-- Se generarán dinámicamente -->
     </div>
   </header>
-  <section class="holocron-card">
+  
+  <section class="holocron-content">
     <h3>Datos históricos</h3>
-    <img src="./img/order66-historical-data.png" alt="Order 66 Guild overview"/>
+    <div class="table-container">
+      <table id="order66-table" class="order66-table">
+        <thead>
+          <tr>
+            <th>Jugador</th>
+            <th>Puntuación Máxima</th>
+            <th>Rango</th>
+            <th id="latest-date"></th>
+            <!-- Más columnas de fechas se generarán dinámicamente -->
+          </tr>
+        </thead>
+        <tbody id="table-body">
+          <!-- Se generarán dinámicamente -->
+        </tbody>
+      </table>
+    </div>
   </section>
+
+  <style>
+    .holocron.order66-archive {
+      font-family: 'Arial', sans-serif;
+      padding: 1rem;
+    }
+
+    .holocron-header {
+      margin-bottom: 2rem;
+    }
+
+    .holocron-header h2 {
+      margin: 0 0 1rem 0;
+      color: #333;
+      font-size: 1.8rem;
+    }
+
+    .holocron-meta {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    .badge.gran-maestro {
+      background-color: #4a90e2;
+    }
+
+    .badge.caballero {
+      background-color: #f5a623;
+    }
+
+    .badge.padawan {
+      background-color: #ff6b6b;
+    }
+
+    .holocron-content h3 {
+      margin-top: 0;
+      color: #333;
+      font-size: 1.3rem;
+    }
+
+    .table-container {
+      overflow-x: auto;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin-top: 1rem;
+    }
+
+    .order66-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+
+    .order66-table thead {
+      background-color: #f5f5f5;
+      position: sticky;
+      top: 0;
+    }
+
+    .order66-table th {
+      padding: 0.75rem;
+      text-align: left;
+      font-weight: bold;
+      border-bottom: 2px solid #ddd;
+      color: #333;
+      white-space: nowrap;
+    }
+
+    .order66-table td {
+      padding: 0.75rem;
+      border-bottom: 1px solid #eee;
+    }
+
+    .order66-table tbody tr:nth-child(odd) {
+      background-color: #fafafa;
+    }
+
+    .order66-table tbody tr:hover {
+      background-color: #f0f0f0;
+    }
+
+    .max-score {
+      font-weight: bold;
+      color: #4a90e2;
+      text-align: center;
+      min-width: 80px;
+    }
+
+    .player-name {
+      font-weight: 500;
+      color: #333;
+    }
+
+    .rank-badge {
+      display: inline-block;
+      padding: 0.25rem 0.5rem;
+      border-radius: 3px;
+      font-size: 0.8rem;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+      min-width: 60px;
+    }
+
+    .rank-badge.gran-maestro-rank {
+      background-color: #4a90e2;
+    }
+
+    .rank-badge.caballero-rank {
+      background-color: #f5a623;
+    }
+
+    .rank-badge.padawan-rank {
+      background-color: #ff6b6b;
+    }
+
+    .score {
+      text-align: center;
+      color: #666;
+    }
+
+    .score:empty::after {
+      content: '—';
+      color: #ccc;
+    }
+
+    @media (max-width: 768px) {
+      .order66-table {
+        font-size: 0.8rem;
+      }
+
+      .order66-table th,
+      .order66-table td {
+        padding: 0.5rem;
+      }
+
+      .holocron-header h2 {
+        font-size: 1.5rem;
+      }
+
+      .holocron-meta {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .badge {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+
+  <script>
+    class Order66Archive {
+      constructor(element) {
+        this.element = element;
+        this.csvPath = '/data/guild/order66-historical.csv';
+        this.data = null;
+        this.ranks = {
+          'gran-maestro': { label: 'Gran Maestro', minScore: 13000, color: '#4a90e2' },
+          'caballero': { label: 'Caballero', minScore: 6000, color: '#f5a623' },
+          'padawan': { label: 'Padawan', minScore: 0, color: '#ff6b6b' }
+        };
+      }
+
+      async init() {
+        try {
+          await this.loadCSV();
+          this.renderBadges();
+          this.renderTable();
+        } catch (error) {
+          console.error('Error loading Order 66 data:', error);
+          this.element.innerHTML = '<p style="color: red;">Error al cargar los datos</p>';
+        }
+      }
+
+      async loadCSV() {
+        const response = await fetch(this.csvPath);
+        const text = await response.text();
+        this.parseCSV(text);
+      }
+
+      parseCSV(text) {
+        const lines = text.trim().split('\n');
+        const headers = lines[0].split('\t');
+        
+        this.data = {
+          dates: headers.slice(1),
+          players: []
+        };
+
+        for (let i = 1; i < lines.length; i++) {
+          const line = lines[i];
+          if (!line.trim()) continue;
+          
+          const values = line.split('\t');
+          const playerName = values[0];
+          const scores = values.slice(1).map(v => v ? parseInt(v) : null);
+          
+          const maxScore = Math.max(...scores.filter(s => s !== null));
+          
+          this.data.players.push({
+            name: playerName,
+            maxScore: isFinite(maxScore) ? maxScore : 0,
+            scores: scores
+          });
+        }
+
+        // Ordenar por puntuación máxima descendente
+        this.data.players.sort((a, b) => b.maxScore - a.maxScore);
+      }
+
+      getRank(maxScore) {
+        for (const [key, rank] of Object.entries(this.ranks)) {
+          if (maxScore >= rank.minScore) {
+            return { key, ...rank };
+          }
+        }
+        return this.ranks['padawan'];
+      }
+
+      countRanks() {
+        const counts = {
+          'gran-maestro': 0,
+          'caballero': 0,
+          'padawan': 0
+        };
+
+        this.data.players.forEach(player => {
+          const rank = this.getRank(player.maxScore);
+          counts[rank.key]++;
+        });
+
+        return counts;
+      }
+
+      renderBadges() {
+        const counts = this.countRanks();
+        const container = this.element.querySelector('#badges-container');
+        
+        const badges = [
+          { key: 'gran-maestro', count: counts['gran-maestro'] },
+          { key: 'caballero', count: counts['caballero'] },
+          { key: 'padawan', count: counts['padawan'] }
+        ];
+
+        container.innerHTML = badges.map(badge => {
+          const rank = this.ranks[badge.key];
+          return `<img src="https://img.shields.io/badge/${encodeURIComponent(rank.label)}-${badge.count}-blue?style=flat-square&color=${encodeURIComponent(rank.color.substring(1))}" alt="${rank.label}"/>`;
+        }).join('');
+      }
+
+      renderTable() {
+        const latestDateEl = this.element.querySelector('#latest-date');
+        const tableHead = this.element.querySelector('thead tr');
+        const tbody = this.element.querySelector('#table-body');
+
+        // Mostrar la fecha más reciente
+        if (this.data.dates.length > 0) {
+          latestDateEl.textContent = this.data.dates[0];
+        }
+
+        // Añadir cabeceras de fechas (mostrar solo cada 3 fechas para no abarrotar)
+        const step = Math.max(1, Math.floor(this.data.dates.length / 10));
+        for (let i = step; i < this.data.dates.length; i += step) {
+          const th = document.createElement('th');
+          th.textContent = this.data.dates[i];
+          th.style.whiteSpace = 'nowrap';
+          tableHead.appendChild(th);
+        }
+
+        // Poblar tabla con datos
+        this.data.players.forEach(player => {
+          const row = document.createElement('tr');
+          const rank = this.getRank(player.maxScore);
+
+          let html = `
+            <td class="player-name">${this.escapeHtml(player.name)}</td>
+            <td class="max-score">${player.maxScore.toLocaleString()}</td>
+            <td><span class="rank-badge ${rank.key}-rank">${rank.label}</span></td>
+            <td class="score">${player.scores[0] ? player.scores[0].toLocaleString() : '—'}</td>
+          `;
+
+          // Añadir celdas de fechas (cada 3)
+          for (let i = step; i < player.scores.length; i += step) {
+            const score = player.scores[i];
+            html += `<td class="score">${score ? score.toLocaleString() : '—'}</td>`;
+          }
+
+          row.innerHTML = html;
+          tbody.appendChild(row);
+        });
+      }
+
+      escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+      }
+    }
+
+    // Inicializar cuando el DOM esté listo
+    document.addEventListener('DOMContentLoaded', () => {
+      const section = document.querySelector('.holocron.order66-archive');
+      if (section) {
+        const archive = new Order66Archive(section);
+        archive.init();
+      }
+    });
+  </script>
 </section>
