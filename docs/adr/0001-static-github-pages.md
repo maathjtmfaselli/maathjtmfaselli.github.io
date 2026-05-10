@@ -7,7 +7,8 @@ Accepted
 El proyecto debe funcionar sin infraestructura backend propia.
 
 ## Decision
-La aplicación se desplegará completamente sobre GitHub Pages.
+- El repositorio de código fuente se alojará en GitHub.
+- La aplicación se desplegará completamente sobre GitHub Pages.
 
 ## Consequences
 - arquitectura frontend-only

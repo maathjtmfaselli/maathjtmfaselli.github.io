@@ -1,4 +1,4 @@
-# ADR-0005 - Presentation Layer -Responsive Design
+# ADR-0005 - Presentation Layer - Responsive Design
 
 ## Status
 Accepted

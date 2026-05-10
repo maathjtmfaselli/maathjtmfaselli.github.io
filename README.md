@@ -13,6 +13,7 @@ Nuestras decisiones arquitectónicas están documentadas en [Architecture Decisi
 1. **[ADR-0001: Static GitHub Pages Hosting](/docs/adr/0001-static-github-pages.md)** - Arquitectura frontend-only sin infraestructura backend
 2. **[ADR-0002: Vanilla Web Stack](/docs/adr/0002-vanilla-web-stack.md)** - Tecnologías web nativas (HTML, CSS, JavaScript)
 3. **[ADR-0003: No Framework Policy](/docs/adr/0003-no-framework-policy.md)** - Sin frameworks pesados ni librerías externas
+3. **[ADR-0004: Frontend Data Layer](/docs/adr/0004-data-layer-frontendfirst.md)** - 
 4. **[ADR-0005: Presentation Layer - Responsive Design](/docs/adr/0005-presentation-layer-responsive-design.md)** - Diseño responsive para todos los dispositivos
 5. **[ADR-0006: Holocron Component Architecture](/docs/adr/0006-holocron-architecture.md)** - Componentes autocontenidos reutilizables
 
