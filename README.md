@@ -12,6 +12,14 @@ Mantenemos este proyecto lo más **nativo posible**, utilizando solo tecnología
 
 **Sin frameworks ni librerías externas** - Todo código vanilla para máximo rendimiento y mantenibilidad.
 
+### ✨ Características
+
+- Diseño responsive para todos los dispositivos
+- Carga rápida sin dependencias externas
+- Estructura de código limpia y mantenible
+- Holocrones autocontenidos e incrustables
+- Separación clara entre datos maestros y datos dinámicos
+
 ## 📁 Estructura del Proyecto
 
 ```
@@ -19,29 +27,37 @@ Mantenemos este proyecto lo más **nativo posible**, utilizando solo tecnología
 ├── css/                # Hojas de estilos
 ├── js/                 # Scripts de JavaScript
 ├── data/               # Datos del gremio y usuarios
-│   ├── members.json
-│   ├── stats.json
+│   ├── master/         # Datos maestros (estáticos)
+│   └── guild/          # Datos del gremio (dinámicos)
+│   └── ...
+├── holocrones/         # Holocrones autocontenidos
+│   ├── guide-1.html
+│   ├── guide-2.html
 │   └── ...
 ├── images/             # Recursos gráficos
 └── README.md           # Este archivo
 ```
+## 🎓 Holocrones
 
-## ✨ Características
+Los **holocrones** son piezas autocontenidas de información que pueden:
 
-- Diseño responsive para todos los dispositivos
-- Carga rápida sin dependencias externas
-- Estructura de código limpia y mantenible
-- Datos centralizados en formato JSON
+- 📚 **Consultarse individualmente** en la biblioteca de holocrones
+- 🔗 **Incrustarse en otras páginas** mediante iframes o componentes
 
-## 📊 Data
+Cada holocrón contiene una guía, estrategia o recurso específico para el gremio.
 
-Todos los datos del gremio se encuentran en la carpeta `/data/`. Estos archivos JSON contienen:
+## 📊 Datos
 
-- **Información de miembros** - Perfiles y datos de jugadores
-- **Estadísticas del gremio** - Progreso y logros colectivos
-- **Recursos** - Guías, estrategias y otros contenidos
+### Master Data (`/data/master/`)
 
-Los datos se cargan dinámicamente mediante JavaScript vanilla para mantener la página ligera y rápida.
+Datos que **no varían** o cambian muy raramente. Estos datos se actualizan ocasionalmente cuando hay cambios importantes en SWGOH.
+
+### Guild Data (`/data/guild/`)
+
+Datos que **varían con el tiempo** y reflejan el estado actual del gremio:
+- Información de miembros
+- Progreso y estadísticas del gremio
+- Objetivos y logros
 
 ## 🤝 Cómo Contribuir
 
@@ -55,6 +71,7 @@ Los datos se encuentran en la carpeta `/data/`. Puedes:
 ### Otras Contribuciones
 
 - Reportar bugs o problemas
+- Sugerir nuevos holocrones
 - Sugerir nuevas funcionalidades
 - Mejorar el diseño y la experiencia de usuario
 - Optimizar el código HTML, CSS o JavaScript
@@ -71,6 +88,7 @@ Los datos se encuentran en la carpeta `/data/`. Puedes:
 ## 🔗 Enlaces
 
 - **Sitio Web**: https://maathjtmfaselli.github.io
+- **Últimas novedades**: https://maathjtmfaselli.github.io/holocrones.html?open=holocron__changelog
 - **GitHub**: [@maathjtmfaselli](https://github.com/maathjtmfaselli)
 - **Star Wars: Galaxy of Heroes**: [swgoh.gg](https://swgoh.gg)
 
