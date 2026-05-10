@@ -38,7 +38,7 @@ function renderCharacterList(characters, listElementId) {
 
 async function loadCharacterData() {
   try {
-    const response = await fetch('../json/rote-characters.json');
+    const response = await fetch('../data/guild/rote-characters-to-upgrade.json');
     const data = await response.json();
 
     // Asignar estado a cada personaje según su categoría
@@ -71,7 +71,7 @@ async function loadCharacterData() {
 
 async function loadHistoricalResults() {
   try {
-    const response = await fetch('../json/rote-historical-results.json');
+    const response = await fetch('../data/guild/rote-historical-results.json');
     const data = await response.json();
 
     const tableBody = document.querySelector("#resultados-table tbody");

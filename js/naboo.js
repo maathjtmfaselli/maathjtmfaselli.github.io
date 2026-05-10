@@ -1,33 +1,3 @@
-async function loadNabooHistoricalResults() {
-//  try {
-//    const response = await fetch('../json/rote-historical-results.json');
-//    const data = await response.json();
-//
-//    const tableBody = document.querySelector("#resultados-table tbody");
-//    tableBody.innerHTML = "";
-//
-//    data.historicalResults.forEach(result => {
-//      const row = document.createElement("tr");
-//
-//      row.innerHTML = `
-//        <td>${result.fecha}</td>
-//        <td>${result.pg}</td>
-//        <td>${result.noDesplegados}</td>
-//        <td>${result.estrellas}</td>
-//        <td>${result.pelotones}</td>
-//        <td>${result.zeffo}</td>
-//        <td>${result.mandalor}</td>
-//        <td>${result.reva}</td>
-//      `;
-//
-//      tableBody.appendChild(row);
-//    });
-//
-//  } catch (error) {
-//    console.error("Error loading historical results:", error);
-//  }
-}
-
 async function loadNabooPnjSynergies() {
   try {
     const response = await fetch('../data/master/naboo-pnj-synergies.csv');
@@ -143,5 +113,4 @@ function filterNabooPnjSynergiesTable() {
 document.addEventListener("DOMContentLoaded", () => {
   loadNabooPnjSynergies();
   openTab('naboo-goals');
-//  loadNabooHistoricalResults();
 });

@@ -1,6 +1,6 @@
 async function loadTwData() {
   try {
-    const response = await fetch('../csv/tw-counters.csv');
+    const response = await fetch('../data/guild/tw-counters.csv');
     const csvText = await response.text();
 
     // Convertir CSV a JSON usando PapaParse

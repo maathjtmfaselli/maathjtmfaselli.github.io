@@ -38,10 +38,10 @@ function parseCsvValue(raw) {
 
 async function loadGuildActivityData() {
   const files = [
-    { file: '../csv/guild-pg.csv', key: 'PG' },
-    { file: '../csv/guild-raid-tokens.csv', key: 'Raid Tokens' },
-    { file: '../csv/guild-raid.csv', key: 'Raid' },
-    { file: '../csv/guild-rote.csv', key: 'ROTE' },
+    { file: '../data/guild/guild-pg.csv', key: 'PG' },
+    { file: '../data/guild/guild-raid-tokens.csv', key: 'Raid Tokens' },
+    { file: '../data/guild/guild-raid.csv', key: 'Raid' },
+    { file: '../data/guild/guild-rote.csv', key: 'ROTE' },
   ];
 
   const playerData = new Map();
