@@ -13,8 +13,4 @@ These documents are the single source of truth for how to work with this project
 
 - Read the ADRs first
 - Follow the Contributing Guidelines
-- One source of truth: don't duplicate information across documentation
-
----
-
-*Last updated: May 2026*
+- One source of truth: Do not repeat yourself, don't duplicate information across documentation
