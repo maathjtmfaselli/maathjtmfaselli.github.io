@@ -1,90 +1,132 @@
-# maathjtmfaselli.github.io
+# Spain Space Guild - SWGOH
 
-Welcome to my personal website repository! This is a static site hosted on GitHub Pages, showcasing my projects, skills, and professional background.
+¡Bienvenido al repositorio oficial del sitio web de la Spain Space Guild en Star Wars: Galaxy of Heroes!
 
-## 📋 About
+Este es el sitio web de la **Spain Space Guild**, un gremio dedicado a Star Wars: Galaxy of Heroes. Nuestro objetivo es proporcionar una plataforma información y recursos para los miembros de nuestra comunidad.
 
-This repository contains the source code for my personal portfolio website. It's built with modern web technologies and designed to be responsive and user-friendly.
+## 🛠️ Stack Tecnológico
 
-## 🛠️ Tech Stack
+Mantenemos este proyecto lo más **nativo posible**, utilizando solo tecnologías web fundamentales:
 
-- **HTML** (79.8%) - Semantic markup and page structure
-- **JavaScript** (13%) - Interactive features and functionality
-- **CSS** (7.2%) - Styling and responsive design
+- **HTML** (79.8%) - Marcado semántico y estructura de páginas
+- **JavaScript** (13%) - Funcionalidades interactivas sin dependencias externas
+- **CSS** (7.2%) - Estilos y diseño responsive
 
-## 📁 Project Structure
+**Sin frameworks ni librerías externas** - Todo código vanilla para máximo rendimiento y mantenibilidad.
+
+## 📁 Estructura del Proyecto
 
 ```
-├── index.html          # Main landing page
-├── css/                # Stylesheets
-├── js/                 # JavaScript files
-├── images/             # Image assets
-└── README.md           # This file
+├── index.html          # Página principal
+├── css/                # Hojas de estilos
+├── js/                 # Scripts de JavaScript
+├── data/               # Datos del gremio y usuarios
+│   ├── members.json
+│   ├── stats.json
+│   └── ...
+├── images/             # Recursos gráficos
+└── README.md           # Este archivo
 ```
 
-## 🚀 Getting Started
+## 📊 Carpeta Data
 
-### Prerequisites
-- A modern web browser
-- (Optional) A local web server for development
+Todos los datos del gremio se encuentran en la carpeta `/data/`. Estos archivos JSON contienen:
 
-### Local Development
+- **Información de miembros** - Perfiles y datos de jugadores
+- **Estadísticas del gremio** - Progreso y logros colectivos
+- **Recursos** - Guías, estrategias y otros contenidos
 
-1. Clone the repository:
+Los datos se cargan dinámicamente mediante JavaScript vanilla para mantener la página ligera y rápida.
+
+## 🚀 Instalación Local
+
+### Requisitos
+- Un navegador web moderno
+- (Opcional) Un servidor web local para desarrollo
+
+### Pasos
+
+1. Clona el repositorio:
 ```bash
 git clone https://github.com/maathjtmfaselli/maathjtmfaselli.github.io.git
 cd maathjtmfaselli.github.io
 ```
 
-2. Open `index.html` in your browser, or use a local server:
+2. Inicia un servidor local:
 ```bash
-# Using Python 3
+# Con Python 3
 python -m http.server 8000
 
-# Using Python 2
+# Con Python 2
 python -m SimpleHTTPServer 8000
 
-# Using Node.js with http-server
+# Con Node.js
 npx http-server
 ```
 
-3. Visit `http://localhost:8000` in your browser
+3. Abre tu navegador en `http://localhost:8000`
 
-## ✨ Features
+## ✨ Características
 
-- Responsive design for mobile, tablet, and desktop
-- Interactive elements and smooth animations
-- Clean and maintainable code structure
-- Fast loading times with optimized assets
+- Diseño responsive para todos los dispositivos
+- Carga rápida sin dependencias externas
+- Estructura de código limpia y mantenible
+- Datos centralizados en formato JSON
 
-## 📝 Pages
+## 🤝 Cómo Contribuir
 
-- **Home** - Introduction and welcome message
-- **Projects** - Portfolio of completed projects
-- **Skills** - Technical and professional skills
-- **Contact** - Ways to get in touch
+¡Agradecemos las contribuciones a nuestro proyecto! Aquí hay algunas formas de ayudar:
 
-## 🔗 Live Site
+### Actualizar Datos del Gremio
 
-Visit my website: https://maathjtmfaselli.github.io
+Los datos se encuentran en la carpeta `/data/`. Puedes:
 
-## 📧 Contact
+1. **Actualizar archivos JSON** - Modifica los archivos existentes con nueva información
+2. **Agregar nuevos datos** - Crea nuevos archivos JSON para nuevas funcionalidades
+3. **Verificar la integridad** - Asegúrate de que los JSON sean válidos
 
-- **Email**: [Add your email]
+Ejemplo de estructura de datos:
+```json
+{
+  "members": [
+    {
+      "id": 1,
+      "name": "Miembro",
+      "rank": "Oficial",
+      "joinDate": "2024-01-01"
+    }
+  ]
+}
+```
+
+### Otras Contribuciones
+
+- Reportar bugs o problemas
+- Sugerir nuevas funcionalidades
+- Mejorar el diseño y la experiencia de usuario
+- Optimizar el código HTML, CSS o JavaScript
+
+### Proceso de Contribución
+
+1. Fork el repositorio
+2. Crea una rama para tu feature (`git checkout -b feature/nombre`)
+3. Realiza tus cambios
+4. Haz commit (`git commit -m 'Descripción del cambio'`)
+5. Push a tu rama (`git push origin feature/nombre`)
+6. Abre un Pull Request
+
+## 🔗 Enlaces
+
+- **Sitio Web**: https://maathjtmfaselli.github.io
 - **GitHub**: [@maathjtmfaselli](https://github.com/maathjtmfaselli)
-- **LinkedIn**: [Add your LinkedIn]
-- **Twitter**: [Add your Twitter]
+- **Star Wars: Galaxy of Heroes**: [swgoh.gg](https://swgoh.gg)
 
-## 📄 License
+## 📄 Licencia
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🤝 Contributing
-
-While this is a personal portfolio, feedback and suggestions are always welcome! Feel free to open an issue or contact me directly.
+Este proyecto está bajo la licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
 
 ---
 
-**Last Updated**: May 2026
+**Última actualización**: Mayo 2026
 
-Thank you for visiting my repository! 👋
+¡Gracias por visitar el repositorio de Spain Space Guild! May the Force be with you! 🌌
