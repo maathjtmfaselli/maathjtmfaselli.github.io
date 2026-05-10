@@ -30,7 +30,7 @@
 
 async function loadTemploPnjSynergies() {
   try {
-    const response = await fetch('../master-data/templo-pnj-synergies.csv');
+    const response = await fetch('../data/master/order66-pnj-synergies.csv');
     const csvText = await response.text();
 
     // Convertir CSV a JSON usando PapaParse

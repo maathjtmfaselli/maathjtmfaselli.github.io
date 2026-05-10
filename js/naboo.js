@@ -30,7 +30,7 @@ async function loadNabooHistoricalResults() {
 
 async function loadNabooPnjSynergies() {
   try {
-    const response = await fetch('../master-data/naboo-pnj-synergies.csv');
+    const response = await fetch('../data/master/naboo-pnj-synergies.csv');
     const csvText = await response.text();
 
     // Convertir CSV a JSON usando PapaParse
