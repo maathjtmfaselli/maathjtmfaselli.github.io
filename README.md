@@ -2,23 +2,27 @@
 
 ¡Bienvenido al repositorio oficial del sitio web de la **Spain Space** Guild en Star Wars: Galaxy of Heroes!
 
+## ✨ Principios del proyecto
+
+Este proyecto sigue una filosofía **frontend-first** y **ia-first**. Está diseñado para funcionar completamente sobre **GitHub Pages**, sin backend propio.
+
+Decisiones de arquitectura
+
+- Proyecto alojado en github, y servido desde github pages.
+- Tecnologías web nativas sin frameworks pesados ni librerías externas.
+- Estructura de código limpia y mantenible
+- Separación clara entre lógica, datos y presentación
+  - Presentación - Diseño responsive para todos los dispositivos
+  - Lógica - reutilización de componentes autocontenidos (holocrones)
+  - Datos - frontend first approach sin backend, los datos se mantienen en la carpeta `data`
+
 ## 🛠️ Stack Tecnológico
 
 Mantenemos este proyecto lo más **nativo posible**, utilizando solo tecnologías web fundamentales:
 
-- **HTML** (79.8%) - Marcado semántico y estructura de páginas
-- **JavaScript** (13%) - Funcionalidades interactivas sin dependencias externas
-- **CSS** (7.2%) - Estilos y diseño responsive
-
-**Sin frameworks ni librerías externas** - Todo código vanilla para máximo rendimiento y mantenibilidad.
-
-### ✨ Características
-
-- Diseño responsive para todos los dispositivos
-- Carga rápida sin dependencias externas
-- Estructura de código limpia y mantenible
-- Holocrones autocontenidos e incrustables
-- Separación clara entre datos maestros y datos dinámicos
+- **HTML**
+- **JavaScript**
+- **CSS**
 
 ## 📁 Estructura del Proyecto
 
@@ -61,29 +65,7 @@ Datos que **varían con el tiempo** y reflejan el estado actual del gremio:
 
 ## 🤝 Cómo Contribuir
 
-### Actualizar Datos del Gremio
-
-Los datos se encuentran en la carpeta `/data/`. Puedes:
-
-1. **Actualizar archivos JSON** - Modifica los archivos existentes con nueva información
-2. **Verificar la integridad** - Asegúrate de que los JSON sean válidos
-
-### Otras Contribuciones
-
-- Reportar bugs o problemas
-- Sugerir nuevos holocrones
-- Sugerir nuevas funcionalidades
-- Mejorar el diseño y la experiencia de usuario
-- Optimizar el código HTML, CSS o JavaScript
-
-### Proceso de Contribución
-
-1. Fork el repositorio
-2. Crea una rama para tu feature (`git checkout -b feature/nombre`)
-3. Realiza tus cambios
-4. Haz commit (`git commit -m 'Descripción del cambio'`)
-5. Push a tu rama (`git push origin feature/nombre`)
-6. Abre un Pull Request
+Ver CONTRIBUTING.md
 
 ## 🔗 Enlaces
 
