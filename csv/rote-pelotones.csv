@@ -11,9 +11,9 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 1	Mustafar	Dark	1	Darth Maul	21				
 1	Mustafar	Dark	1	Chimaera	44				
 1	Mustafar	Dark	1	Gauntlet Starfighter	35				
-1	Mustafar	Dark	1	Imperial Probe Droid	5				
-1	Mustafar	Dark	1	Imperial Super Commando	8				
-1	Mustafar	Dark	1	Ugnaught	5
+1	Mustafar	Dark	1	Imperial Probe Droid	6
+1	Mustafar	Dark	1	Imperial Super Commando	9
+1	Mustafar	Dark	1	Ugnaught	6
 1	Mustafar	Dark	2	Grand Admiral Thrawn	38
 1	Mustafar	Dark	2	Jango Fett	30
 1	Mustafar	Dark	2	Wat Tambor	28
@@ -23,7 +23,7 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 1	Mustafar	Dark	2	Dengar	28
 1	Mustafar	Dark	2	Wat Tambor	28
 1	Mustafar	Dark	2	Asajj Ventress	16
-1	Mustafar	Dark	2	Ugnaught	5
+1	Mustafar	Dark	2	Ugnaught	6
 1	Mustafar	Dark	2	Emperador Palpatine	44
 1	Mustafar	Dark	2	Nute Gunray	13
 1	Mustafar	Dark	2	Darth Traya	16
@@ -55,7 +55,7 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 1	Mustafar	Dark	4	Embo	14
 1	Mustafar	Dark	4	Sith Trooper	32
 1	Mustafar	Dark	4	Darth Revan	28
-1	Mustafar	Dark	4	Ugnaught	5
+1	Mustafar	Dark	4	Ugnaught	6
 1	Mustafar	Dark	4	Darth Traya	16
 1	Mustafar	Dark	4	0-0-0	13
 1	Mustafar	Dark	4	B1 Battle Droid	18
@@ -81,7 +81,7 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 1	Mustafar	Dark	6	Darth Vader	45
 1	Mustafar	Dark	6	Chimaera	44
 1	Mustafar	Dark	6	Darth Sidious	36
-1	Mustafar	Dark	6	Imperial Probe Droid	5
+1	Mustafar	Dark	6	Imperial Probe Droid	6
 1	Mustafar	Dark	6	Fith Brother	21
 1	Mustafar	Dark	6	First Order Officer	29
 1	Mustafar	Dark	6	Darth Revan	28
@@ -97,7 +97,7 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 1	Corellia	Neutral	1	Boba Fett, Scion of Jango	12
 1	Corellia	Neutral	1	Grand Admiral Thrawn	38
 1	Corellia	Neutral	1	C-3P0	34
-1	Corellia	Neutral	1	Ima-Gun Di	9
+1	Corellia	Neutral	1	Ima-Gun Di	10
 1	Corellia	Neutral	1	Sith Trooper	32
 1	Corellia	Neutral	1	Boba Fett, Scion of Jango	12
 1	Corellia	Neutral	1	R2-D2	33
@@ -166,8 +166,8 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 1	Corellia	Neutral	5	Colonel Starck	10
 1	Corellia	Neutral	6	TIE/IN Interceptor Prototype	24
 1	Corellia	Neutral	6	The Mandalorian (Beskar Armor)	26
-1	Corellia	Neutral	6	Imperial Probe Droid	5
-1	Corellia	Neutral	6	Talia	2	Mik Bat	GRANJEDI Tito1
+1	Corellia	Neutral	6	Imperial Probe Droid	6
+1	Corellia	Neutral	6	Talia	4	Mik Bat	GRANJEDI Tito1	josmartini	Dark Iskender
 1	Corellia	Neutral	6	Ki-Adi-Mundi	12
 1	Corellia	Neutral	6	TIE/IN Interceptor Prototype	24
 1	Corellia	Neutral	6	Emperador Palpatine	44
@@ -233,7 +233,7 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 1	Coruscant	Luminoso	4	The Mandalorian (Beskar Armor)	26
 1	Coruscant	Luminoso	4	Logray	10
 1	Coruscant	Luminoso	4	Plo Koon's Jedi Startfighter	39
-1	Coruscant	Luminoso	4	Visas Marr	8
+1	Coruscant	Luminoso	4	Visas Marr	12
 1	Coruscant	Luminoso	4	General Skywalker	32
 1	Coruscant	Luminoso	4	C-3P0	34
 1	Coruscant	Luminoso	4	Han Solo	35
@@ -257,13 +257,13 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 1	Coruscant	Luminoso	5	General Skywalker	32
 1	Coruscant	Luminoso	6	C-3P0	34
 1	Coruscant	Luminoso	6	Ki-Adi-Mundi	12
-1	Coruscant	Luminoso	6	Sabine Wren	8
+1	Coruscant	Luminoso	6	Sabine Wren	9
 1	Coruscant	Luminoso	6	Hermit Yoda	33
 1	Coruscant	Luminoso	6	General Skywalker	32
 1	Coruscant	Luminoso	6	Grand Master Yoda	34
 1	Coruscant	Luminoso	6	Hermit Yoda	33
 1	Coruscant	Luminoso	6	Amilyn Holdo	21
-1	Coruscant	Luminoso	6	Zaalbar	5
+1	Coruscant	Luminoso	6	Zaalbar	6
 1	Coruscant	Luminoso	6	General Skywalker	32
 1	Coruscant	Luminoso	6	Jedi Knight Revan	28
 1	Coruscant	Luminoso	6	Rebel Officer Leia Organa	20
@@ -272,7 +272,7 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 2	Geonosis	Dark	1	Boba Fett, Scion of Jango	10
 2	Geonosis	Dark	1	Scythe	17
 2	Geonosis	Dark	1	Darth Revan	23
-2	Geonosis	Dark	1	Imperial Probe Droid	3	maath	Garrick	PequeñoPadawan
+2	Geonosis	Dark	1	Imperial Probe Droid	5
 2	Geonosis	Dark	1	Scimitar
 2	Geonosis	Dark	1	Maul	10
 2	Geonosis	Dark	1	Boba Fett, Scion of Jango	10
@@ -282,28 +282,28 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 2	Geonosis	Dark	1	Sith Eternal Emperor
 2	Geonosis	Dark	1	Scythe
 2	Geonosis	Dark	1	Starkiller	10
-2	Geonosis	Dark	1	Imperial Probe Droid	3	maath	Garrick	PequeñoPadawan
+2	Geonosis	Dark	1	Imperial Probe Droid	5
 2	Geonosis	Dark	1	HK-47	19
 2	Geonosis	Dark	2	Maul	10
 2	Geonosis	Dark	2	Scythe
 2	Geonosis	Dark	2	Darth Revan	23
-2	Geonosis	Dark	2	Darth Talon	4	maath	josmartini	YEPISTARS	Bald dart
+2	Geonosis	Dark	2	Darth Talon	5
 2	Geonosis	Dark	2	TIE Reaper
 2	Geonosis	Dark	2	Boba Fett, Scion of Jango	10
 2	Geonosis	Dark	2	Darth Malgus	13
 2	Geonosis	Dark	2	Grand Admiral Thrawn
-2	Geonosis	Dark	2	Dengar	5
-2	Geonosis	Dark	2	Droideka	3	GRANJEDI Tito1	Biobof	Nami88
+2	Geonosis	Dark	2	Dengar	6
+2	Geonosis	Dark	2	Droideka	5
 2	Geonosis	Dark	2	Supreme Leader Kylo Ren
 2	Geonosis	Dark	2	Boba Fett, Scion of Jango	10
 2	Geonosis	Dark	2	Darth Malak
 2	Geonosis	Dark	2	Kylo Ren (Unmasked)
-2	Geonosis	Dark	2	B2	3	GRANJEDI Tito1	maath	Biobof
+2	Geonosis	Dark	2	B2	5
 2	Geonosis	Dark	3	Darth Malgus	13
 2	Geonosis	Dark	3	Boba Fett, Scion of Jango	10
 2	Geonosis	Dark	3	Chimaera
 2	Geonosis	Dark	3	Grand Admiral Thrawn
-2	Geonosis	Dark	3	Asajj Ventress	5
+2	Geonosis	Dark	3	Asajj Ventress	6
 2	Geonosis	Dark	3	Scythe
 2	Geonosis	Dark	3	TIE/IN Interceptor Prototype
 2	Geonosis	Dark	3	Emperador Palpatine
@@ -322,7 +322,7 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 2	Geonosis	Dark	4	Grand Inquisitor
 2	Geonosis	Dark	4	Darth Malgus	13
 2	Geonosis	Dark	4	Chimaera
-2	Geonosis	Dark	4	Imperial Probe Droid	3	maath	Garrick	PequeñoPadawan
+2	Geonosis	Dark	4	Imperial Probe Droid	5
 2	Geonosis	Dark	4	First Order Officer	6
 2	Geonosis	Dark	4	Executor
 2	Geonosis	Dark	4	TIE/IN Interceptor Prototype
@@ -337,13 +337,13 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 2	Geonosis	Dark	5	Starkiller	10
 2	Geonosis	Dark	5	Maul	10
 2	Geonosis	Dark	5	Grand Admiral Thrawn
-2	Geonosis	Dark	5	B2	3	GRANJEDI Tito1	maath	Biobof
+2	Geonosis	Dark	5	B2	5
 2	Geonosis	Dark	5	Magmatrooper	1	Blas
 2	Geonosis	Dark	5	Sith Eternal Emperor
 2	Geonosis	Dark	5	Darth Malgus	13
 2	Geonosis	Dark	5	Emperador Palpatine
 2	Geonosis	Dark	5	Kylo Ren (Unmasked)
-2	Geonosis	Dark	5	Cad Bane	5
+2	Geonosis	Dark	5	Cad Bane	6
 2	Geonosis	Dark	6	Grand Inquisitor
 2	Geonosis	Dark	6	Darth Malgus	13
 2	Geonosis	Dark	6	Scythe
@@ -397,7 +397,7 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 2	Felucia	Neutral	3	Jedi Knight Luke Skywalker
 2	Felucia	Neutral	3	Razor Crest
 2	Felucia	Neutral	3	Commander Ahsoka Tano
-2	Felucia	Neutral	3	Imperial Probe Droid	3	maath	Garrick	PequeñoPadawan
+2	Felucia	Neutral	3	Imperial Probe Droid	5
 2	Felucia	Neutral	3	Sana Starros	10
 2	Felucia	Neutral	3	Lord Vader
 2	Felucia	Neutral	3	Scythe
@@ -443,15 +443,15 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 2	Felucia	Neutral	6	Ben Solo	20
 2	Felucia	Neutral	6	Boba Fett, Scion of Jango	10
 2	Felucia	Neutral	6	Rebel Officer Leia Organa
-2	Felucia	Neutral	6	BT-1	5
+2	Felucia	Neutral	6	BT-1	6
 2	Felucia	Neutral	6	Sith Eternal Emperor
 2	Felucia	Neutral	6	Commander Ahsoka Tano
 2	Felucia	Neutral	6	Scythe
 2	Felucia	Neutral	6	Han Solo
-2	Felucia	Neutral	6	L3-37	5
+2	Felucia	Neutral	6	L3-37	4	Cal Kestis	Kaneris	Mik Bat	Darkguderian
 2	Bracca	Luminoso	1	Boushh
 2	Bracca	Luminoso	1	Razor Crest
-2	Bracca	Luminoso	1	Wedge Antilles	2	GRANJEDI Tito1	Biobof
+2	Bracca	Luminoso	1	Wedge Antilles	3	GRANJEDI Tito1	Biobof	Mik Bat
 2	Bracca	Luminoso	1	L3-37	4	Cal Kestis	Kaneris	Mik Bat	Darkguderian
 2	Bracca	Luminoso	1	Ghost
 2	Bracca	Luminoso	1	Admiral Raddus
@@ -462,13 +462,13 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 2	Bracca	Luminoso	1	Rey
 2	Bracca	Luminoso	1	Razor Crest
 2	Bracca	Luminoso	1	BTL-B Y-wing Startfighter
-2	Bracca	Luminoso	1	Juhani	4	GRANJEDI Tito1	Hill	PequeñoPadawan	Mik Bat
+2	Bracca	Luminoso	1	Juhani	5
 2	Bracca	Luminoso	1	Outrider
 2	Bracca	Luminoso	2	Young Han Solo	6
 2	Bracca	Luminoso	2	Razor Crest
 2	Bracca	Luminoso	2	Pao	1	Gita
 2	Bracca	Luminoso	2	Chewbacca
-2	Bracca	Luminoso	2	Mon Mothma	8
+2	Bracca	Luminoso	2	Mon Mothma	9
 2	Bracca	Luminoso	2	Aayla Secura	10
 2	Bracca	Luminoso	2	Ben Solo	20
 2	Bracca	Luminoso	2	Jedi Consular's Startfighter
@@ -507,7 +507,7 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 2	Bracca	Luminoso	4	Profundidad
 2	Bracca	Luminoso	4	Razor Crest
 2	Bracca	Luminoso	4	Ben Solo	20
-2	Bracca	Luminoso	4	Veteran Smuggler Chewbacca	8
+2	Bracca	Luminoso	4	Veteran Smuggler Chewbacca
 2	Bracca	Luminoso	4	Omega	3	Cente	Nami88	Chinadapowers
 2	Bracca	Luminoso	5	Bistan's U-wing
 2	Bracca	Luminoso	5	Razor Crest
@@ -538,7 +538,7 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 2	Bracca	Luminoso	6	Ben Solo	20
 2	Bracca	Luminoso	6	Razor Crest
 2	Bracca	Luminoso	6	Padmé Amidala
-2	Bracca	Luminoso	6	Teebo	7
+2	Bracca	Luminoso	6	Teebo	6
 3	Dathomir	Dark	1	TIE/IN Interceptor Prototype
 3	Dathomir	Dark	1	Darth Malgus	10
 3	Dathomir	Dark	1	General Grievous
@@ -548,7 +548,7 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 3	Dathomir	Dark	1	Scythe
 3	Dathomir	Dark	1	TIE/IN Interceptor Prototype
 3	Dathomir	Dark	1	Darth Traya	4	maath	Gita	Bald dart	Daimon Tlan
-3	Dathomir	Dark	1	Dengar	5
+3	Dathomir	Dark	1	Dengar	6
 3	Dathomir	Dark	1	Lord Vader
 3	Dathomir	Dark	1	Maul	11
 3	Dathomir	Dark	1	Darth Malgus	10
@@ -561,13 +561,13 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 3	Dathomir	Dark	2	Savage Opress	3	Gita	maath	Bald dart
 3	Dathomir	Dark	2	Sith Eternal Emperor
 3	Dathomir	Dark	2	Scythe
-3	Dathomir	Dark	2	Boba Fett, Scion of Jango	8
+3	Dathomir	Dark	2	Boba Fett, Scion of Jango	9
 3	Dathomir	Dark	2	General Grievous
 3	Dathomir	Dark	2	General Hux
 3	Dathomir	Dark	2	Lord Vader
 3	Dathomir	Dark	2	Maul	11
 3	Dathomir	Dark	2	TIE/IN Interceptor Prototype
-3	Dathomir	Dark	2	Imperial Probe Droid	2	Garrick	maath
+3	Dathomir	Dark	2	Imperial Probe Droid	4	Garrick	maath	Mik Bat	Linde Forklift
 3	Dathomir	Dark	2	Tusken Raider	7
 3	Dathomir	Dark	3	Maul	11
 3	Dathomir	Dark	3	Darth Malgus	10
@@ -582,15 +582,15 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 3	Dathomir	Dark	3	Lord Vader
 3	Dathomir	Dark	3	Maul	11
 3	Dathomir	Dark	3	Scythe
-3	Dathomir	Dark	3	Imperial Probe Droid	2	Garrick	maath
+3	Dathomir	Dark	3	Imperial Probe Droid	4	Garrick	maath	Mik Bat	Linde Forklift
 3	Dathomir	Dark	3	Sith Assassin	5
 3	Dathomir	Dark	4	Scythe	17
 3	Dathomir	Dark	4	Maul	11
 3	Dathomir	Dark	4	Darth Revan
-3	Dathomir	Dark	4	Dengar	5
-3	Dathomir	Dark	4	Cad Bane	5
+3	Dathomir	Dark	4	Dengar	6
+3	Dathomir	Dark	4	Cad Bane	6
 3	Dathomir	Dark	4	Lord Vader
-3	Dathomir	Dark	4	Boba Fett, Scion of Jango	8
+3	Dathomir	Dark	4	Boba Fett, Scion of Jango	9
 3	Dathomir	Dark	4	Darth Malgus	10
 3	Dathomir	Dark	4	IG-88	2	Viula	Céfiro
 3	Dathomir	Dark	4	Mother Talzin	3	GRANJEDI Tito1	maath	Kaneris
@@ -607,44 +607,44 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 3	Dathomir	Dark	5	Sith Eternal Emperor
 3	Dathomir	Dark	5	Darth Malgus	10
 3	Dathomir	Dark	5	TIE/IN Interceptor Prototype	24
-3	Dathomir	Dark	5	0-0-0	2	Chinadapowers	maath
+3	Dathomir	Dark	5	0-0-0	3	Chinadapowers	maath	Kaneris
 3	Dathomir	Dark	5	Gar Saxon	1	Daimon Tlan
 3	Dathomir	Dark	5	Lord Vader
 3	Dathomir	Dark	5	TIE/IN Interceptor Prototype	24
 3	Dathomir	Dark	5	Scythe	17
 3	Dathomir	Dark	5	Grand Moff Tarkin
 3	Dathomir	Dark	5	Emperor's Shuttle
-3	Dathomir	Dark	6	Boba Fett, Scion of Jango	8
+3	Dathomir	Dark	6	Boba Fett, Scion of Jango	9
 3	Dathomir	Dark	6	Maul	11
 3	Dathomir	Dark	6	Chimaera
-3	Dathomir	Dark	6	Director Krennic	1	maath
+3	Dathomir	Dark	6	Director Krennic	3	maath	Mik Bat	Linde Forklift
 3	Dathomir	Dark	6	Imperial TIE Fighter
 3	Dathomir	Dark	6	Supreme Leader Kylo Ren
-3	Dathomir	Dark	6	Darth Malgus	10
+3	Dathomir	Dark	6	Darth Malgus
 3	Dathomir	Dark	6	Scythe
 3	Dathomir	Dark	6	Tusken Raider	7
 3	Dathomir	Dark	6	Aurra Sing	3	maath	Was	Bald dart
 3	Dathomir	Dark	6	Supreme Leader Kylo Ren
-3	Dathomir	Dark	6	Boba Fett, Scion of Jango	8
-3	Dathomir	Dark	6	Darth Malgus	10
+3	Dathomir	Dark	6	Boba Fett, Scion of Jango	9
+3	Dathomir	Dark	6	Darth Malgus
 3	Dathomir	Dark	6	Embo
 3	Dathomir	Dark	6	Geonosian Soldier's Starfighter
 3	Tatooine	Neutral	1	TIE/IN Interceptor Prototype
 3	Tatooine	Neutral	1	Razor Crest
-3	Tatooine	Neutral	1	Boba Fett, Scion of Jango	8
+3	Tatooine	Neutral	1	Boba Fett, Scion of Jango	9
 3	Tatooine	Neutral	1	Cara Dune	2	Gita	josmartini
-3	Tatooine	Neutral	1	Bastila Shan (Fallen)	6
+3	Tatooine	Neutral	1	Bastila Shan (Fallen)	7
 3	Tatooine	Neutral	1	Rey
 3	Tatooine	Neutral	1	Commander Ahsoka Tano
-3	Tatooine	Neutral	1	Darth Malgus	10
+3	Tatooine	Neutral	1	Darth Malgus
 3	Tatooine	Neutral	1	Geonosian Spy	3	Viula	Nami88	Céfiro
 3	Tatooine	Neutral	1	Chirrut Imwe	2	Temnyy	josmartini
 3	Tatooine	Neutral	1	Sith Eternal Emperor
 3	Tatooine	Neutral	1	Maul	11
-3	Tatooine	Neutral	1	Boba Fett, Scion of Jango	8
-3	Tatooine	Neutral	1	Tusken Chieftain	1	Mou topor
+3	Tatooine	Neutral	1	Boba Fett, Scion of Jango	9
+3	Tatooine	Neutral	1	Tusken Chieftain	2	Mou topor	Kaneris
 3	Tatooine	Neutral	1	Gauntlet Starfighter
-3	Tatooine	Neutral	2	Boba Fett, Scion of Jango	8
+3	Tatooine	Neutral	2	Boba Fett, Scion of Jango	9
 3	Tatooine	Neutral	2	Scythe
 3	Tatooine	Neutral	2	TIE/IN Interceptor Prototype
 3	Tatooine	Neutral	2	Outrider
@@ -658,9 +658,9 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 3	Tatooine	Neutral	2	Maul	11
 3	Tatooine	Neutral	2	Commander Ahsoka Tano
 3	Tatooine	Neutral	2	Nightsister Acolyte	1	Cente
-3	Tatooine	Neutral	2	Bastila Shan (Fallen)	6
-3	Tatooine	Neutral	3	Darth Malgus	10
-3	Tatooine	Neutral	3	Boba Fett, Scion of Jango	8
+3	Tatooine	Neutral	2	Bastila Shan (Fallen)	7
+3	Tatooine	Neutral	3	Darth Malgus
+3	Tatooine	Neutral	3	Boba Fett, Scion of Jango	9
 3	Tatooine	Neutral	3	Scythe
 3	Tatooine	Neutral	3	Luminara Unduli	6
 3	Tatooine	Neutral	3	Hunter	1	Cente
@@ -668,22 +668,22 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 3	Tatooine	Neutral	3	Razor Crest	40
 3	Tatooine	Neutral	3	Darth Malgus	10
 3	Tatooine	Neutral	3	Rose Tico	1	Temnyy
-3	Tatooine	Neutral	3	Ewok Scout	4	Viula	josmartini	Mik Bat	Cal Kestis
+3	Tatooine	Neutral	3	Ewok Scout	5
 3	Tatooine	Neutral	3	Supreme Leader Kylo Ren
 3	Tatooine	Neutral	3	Ben Solo
 3	Tatooine	Neutral	3	Maul	11
-3	Tatooine	Neutral	3	Skiff Guard (Lando Carlissian)	4	maath	Daimon Tlan	Mariskal101DA	Bald dart
+3	Tatooine	Neutral	3	Skiff Guard (Lando Carlissian)	5
 3	Tatooine	Neutral	3	Mara Jade	3	maath	Last Order	Hill
 3	Tatooine	Neutral	4	Jedi Knight Luke Skywalker
-3	Tatooine	Neutral	4	Boba Fett, Scion of Jango	8
+3	Tatooine	Neutral	4	Boba Fett, Scion of Jango	9
 3	Tatooine	Neutral	4	Commander Ahsoka Tano
 3	Tatooine	Neutral	4	TIE Reaper
 3	Tatooine	Neutral	4	Young Han Solo	2	Chinadapowers	maath
 3	Tatooine	Neutral	4	Jedi Master Luke Skywalker
-3	Tatooine	Neutral	4	Starkiller	8
+3	Tatooine	Neutral	4	Starkiller	9
 3	Tatooine	Neutral	4	Scythe
 3	Tatooine	Neutral	4	Resistance Hero Poe	5
-3	Tatooine	Neutral	4	Coruscant Underworld Police	7
+3	Tatooine	Neutral	4	Coruscant Underworld Police	8
 3	Tatooine	Neutral	4	Jedi Master Kenobi
 3	Tatooine	Neutral	4	Darth Malak
 3	Tatooine	Neutral	4	Razor Crest
@@ -692,7 +692,7 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 3	Tatooine	Neutral	5	Jedi Knight Luke Skywalker
 3	Tatooine	Neutral	5	Maul	11
 3	Tatooine	Neutral	5	Darth Malgus	10
-3	Tatooine	Neutral	5	B1 Battle Droid	1	GRANJEDI Tito1
+3	Tatooine	Neutral	5	B1 Battle Droid	3	GRANJEDI Tito1	castortroy	Mik Bat
 3	Tatooine	Neutral	5	Hoth Rebel Scout	1	maath
 3	Tatooine	Neutral	5	Rey
 3	Tatooine	Neutral	5	General Skywalker
@@ -700,14 +700,14 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 3	Tatooine	Neutral	5	Finalizer
 3	Tatooine	Neutral	5	Bodhi Rook	1	josmartini
 3	Tatooine	Neutral	5	Jedi Master Luke Skywalker
-3	Tatooine	Neutral	5	Starkiller	8
+3	Tatooine	Neutral	5	Starkiller	9
 3	Tatooine	Neutral	5	TIE/IN Interceptor Prototype
-3	Tatooine	Neutral	5	Teebo	7
+3	Tatooine	Neutral	5	Teebo	6
 3	Tatooine	Neutral	5	HK-47
 3	Tatooine	Neutral	6	Darth Malak
-3	Tatooine	Neutral	6	Boba Fett, Scion of Jango	8
+3	Tatooine	Neutral	6	Boba Fett, Scion of Jango	9
 3	Tatooine	Neutral	6	TIE/IN Interceptor Prototype
-3	Tatooine	Neutral	6	Hondo Ohnaka	12
+3	Tatooine	Neutral	6	Hondo Ohnaka
 3	Tatooine	Neutral	6	Barriss Offee	12
 3	Tatooine	Neutral	6	Sith Eternal Emperor
 3	Tatooine	Neutral	6	Jedi Knight Luke Skywalker
@@ -716,13 +716,13 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 3	Tatooine	Neutral	6	First Order SF TIE Fighter
 3	Tatooine	Neutral	6	Supreme Leader Kylo Ren
 3	Tatooine	Neutral	6	Jedi Knight Luke Skywalker
-3	Tatooine	Neutral	6	Darth Malgus	10
+3	Tatooine	Neutral	6	Darth Malgus
 3	Tatooine	Neutral	6	Resistance Hero Finn	8
 3	Tatooine	Neutral	6	Obi-Wan Kenobi (Old Ben)	4	maath	Was	Mik Bat	R3C0
 3	Kashyyyk	Luminoso	1	Commander Ahsoka Tano
 3	Kashyyyk	Luminoso	1	R2-D2
 3	Kashyyyk	Luminoso	1	Logray	8
-3	Kashyyyk	Luminoso	1	Mace Windu	4	Mik Bat	maath	Remus	GRANJEDI Tito1
+3	Kashyyyk	Luminoso	1	Mace Windu	5
 3	Kashyyyk	Luminoso	1	Han Solo
 3	Kashyyyk	Luminoso	1	Jedi Master Luke Skywalker
 3	Kashyyyk	Luminoso	1	Padmé Amidala
@@ -752,22 +752,22 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 3	Kashyyyk	Luminoso	3	Commander Ahsoka Tano
 3	Kashyyyk	Luminoso	3	Greef Karga	6
 3	Kashyyyk	Luminoso	3	Ki-Adi-Mundi	4	maath	Mik Bat	Dark Iskender	Gita
-3	Kashyyyk	Luminoso	3	Clone Sergeant - Phase I	1	R3C0
+3	Kashyyyk	Luminoso	3	Clone Sergeant - Phase I	2	R3C0	josmartini
 3	Kashyyyk	Luminoso	3	General Kenobi
 3	Kashyyyk	Luminoso	3	Jedi Master Luke Skywalker
 3	Kashyyyk	Luminoso	3	Han's Millennium Falcon
-3	Kashyyyk	Luminoso	3	Rebel Officer Leia Organa	9
+3	Kashyyyk	Luminoso	3	Rebel Officer Leia Organa	10
 3	Kashyyyk	Luminoso	3	Ben Solo
 3	Kashyyyk	Luminoso	3	Grand Master Yoda
 3	Kashyyyk	Luminoso	3	Jedi Master Luke Skywalker
 3	Kashyyyk	Luminoso	3	R2-D2
-3	Kashyyyk	Luminoso	3	Rebel Officer Leia Organa	9
+3	Kashyyyk	Luminoso	3	Rebel Officer Leia Organa	10
 3	Kashyyyk	Luminoso	3	Razor Crest
-3	Kashyyyk	Luminoso	3	Skiff Guard (Lando Carlissian)	4	maath	Daimon Tlan	Mariskal101DA	Bald dart
-3	Kashyyyk	Luminoso	4	Commander Ahsoka Tano	12
+3	Kashyyyk	Luminoso	3	Skiff Guard (Lando Carlissian)	5
+3	Kashyyyk	Luminoso	4	Commander Ahsoka Tano
 3	Kashyyyk	Luminoso	4	BB-8
 3	Kashyyyk	Luminoso	4	R2-D2
-3	Kashyyyk	Luminoso	4	CT-5555 "Fives"	10
+3	Kashyyyk	Luminoso	4	CT-5555 "Fives"
 3	Kashyyyk	Luminoso	4	Logray	8
 3	Kashyyyk	Luminoso	4	Rey
 3	Kashyyyk	Luminoso	4	C-3P0
@@ -786,14 +786,14 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 3	Kashyyyk	Luminoso	5	Logray	8
 3	Kashyyyk	Luminoso	5	Rey
 3	Kashyyyk	Luminoso	5	Greef Karga	6
-3	Kashyyyk	Luminoso	5	Commander Ahsoka Tano	12
+3	Kashyyyk	Luminoso	5	Commander Ahsoka Tano
 3	Kashyyyk	Luminoso	5	Padmé Amidala
 3	Kashyyyk	Luminoso	5	Commander Luke Skywalker
 3	Kashyyyk	Luminoso	5	Jedi Master Luke Skywalker
 3	Kashyyyk	Luminoso	5	Grand Master Yoda
 3	Kashyyyk	Luminoso	5	Ben Solo
 3	Kashyyyk	Luminoso	5	Greef Karga	6
-3	Kashyyyk	Luminoso	5	K-2SO	1	Daimon Tlan
+3	Kashyyyk	Luminoso	5	K-2SO	3	Daimon Tlan	Mik Bat	Linde Forklift
 3	Kashyyyk	Luminoso	6	Razor Crest
 3	Kashyyyk	Luminoso	6	Commander Luke Skywalker
 3	Kashyyyk	Luminoso	6	Han's Millennium Falcon
@@ -807,7 +807,7 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 3	Kashyyyk	Luminoso	6	Jedi Master Luke Skywalker
 3	Kashyyyk	Luminoso	6	Padmé Amidala
 3	Kashyyyk	Luminoso	6	Ben Solo
-3	Kashyyyk	Luminoso	6	Ewok Scout	4	Viula	josmartini	Mik Bat	Cal Kestis
+3	Kashyyyk	Luminoso	6	Ewok Scout	5
 3	Kashyyyk	Luminoso	6	Hoth Rebel Soldier	1	josmartini
 3	Zeffo			General Skywalker
 3	Zeffo			General Skywalker
@@ -845,18 +845,18 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 3	Zeffo			Han Solo
 3	Zeffo			Han Solo
 3	Zeffo			Han Solo
-3	Zeffo			Jedi Consul	1	GRANJEDI Tito1
-3	Zeffo			Jedi Consul	1	GRANJEDI Tito1
-3	Zeffo			Jedi Consul	1	GRANJEDI Tito1
+3	Zeffo			Jedi Consul	2	GRANJEDI Tito1	Temnyy
+3	Zeffo			Jedi Consul	2	GRANJEDI Tito1	Temnyy
+3	Zeffo			Jedi Consul	2	GRANJEDI Tito1	Temnyy
 3	Zeffo			Jedi Knight Guardian	1	Mou topor
 3	Zeffo			Jedi Knight Guardian	1	Mou topor
 3	Zeffo			Jedi Knight Guardian	1	Mou topor
 3	Zeffo			Jolee Bindo	8
 3	Zeffo			Jolee Bindo	8
 3	Zeffo			Jolee Bindo	8
-3	Zeffo			Kyle Katarn	1	Mik Bat
-3	Zeffo			Kyle Katarn	1	Mik Bat
-3	Zeffo			Kyle Katarn	1	Mik Bat
+3	Zeffo			Kyle Katarn	2	Mik Bat	maath
+3	Zeffo			Kyle Katarn	2	Mik Bat	maath
+3	Zeffo			Kyle Katarn	2	Mik Bat	maath
 3	Zeffo			Rey
 3	Zeffo			Rey
 3	Zeffo			Rey
@@ -867,12 +867,12 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 3	Zeffo			Chief Chirpa	6
 3	Zeffo			Chirrut Imwe	2	Temnyy	josmartini
 3	Zeffo			Chirrut Imwe	2	Temnyy	josmartini
-3	Zeffo			Clone Sergeant - Phase I	1	R3C0
-3	Zeffo			Clone Sergeant - Phase I	1	R3C0
+3	Zeffo			Clone Sergeant - Phase I	2	R3C0	josmartini
+3	Zeffo			Clone Sergeant - Phase I	2	R3C0	josmartini
 3	Zeffo			General Kenobi
 3	Zeffo			General Kenobi
-3	Zeffo			Luke Skywalker (Farmboy)	0
-3	Zeffo			Luke Skywalker (Farmboy)	0
+3	Zeffo			Luke Skywalker (Farmboy)	1	maath
+3	Zeffo			Luke Skywalker (Farmboy)	1	maath
 3	Zeffo			MG-100 StarFortress SF-17
 3	Zeffo			MG-100 StarFortress SF-17
 3	Zeffo			Razor Crest
@@ -884,20 +884,20 @@ Sector	Planeta	Side	Op	Character	Conteo	Jugador1	Jugador2	Jugador3	Jugador4
 3	Zeffo			Commander Ahsoka Tano
 3	Zeffo			Enfys Nest
 3	Zeffo			Garazeb Zeb Orrelios	0
-3	Zeffo			Hermit Yoda	8
+3	Zeffo			Hermit Yoda
 3	Zeffo			Home One
 3	Zeffo			Jedi Consular's Starfighter
 3	Zeffo			Jedi Knight Revan
-3	Zeffo			Juhani	2	Hill	Mik Bat
+3	Zeffo			Juhani	3	Hill	Mik Bat	Gita
 3	Zeffo			Kit Fisto	7
-3	Zeffo			Mission Vao	0
+3	Zeffo			Mission Vao	2	Gita	GRANJEDI Tito1
 3	Zeffo			Padme Amidala
 3	Zeffo			Plo Koon
-3	Zeffo			Qi'ra	2	Gita	Remus
+3	Zeffo			Qi'ra	3	Gita	Remus	maath
 3	Zeffo			R2-D2
 3	Zeffo			Raddus
 3	Zeffo			Rex's ARC-170
-3	Zeffo			Visas Marr	1	Last Order
+3	Zeffo			Visas Marr	2	Last Order	Gita
 3	Zeffo			Wrecker	0
 4	Haven-class	Dark	1	Sith Eternal Emperor
 4	Haven-class	Dark	1	Starkiller	0
