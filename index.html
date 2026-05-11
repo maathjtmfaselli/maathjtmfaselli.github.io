@@ -18,6 +18,7 @@
 
 <main>
   <holocron-guild-rules></holocron-guild-rules>
+  <holocron-guild-goals></holocron-guild-goals>
     <div id="holocron-prioridades"></div>
     <div id="holocron-warnings"></div>
     <div id="guild-players-data"></div>
@@ -34,12 +35,15 @@
     type="module"
     src="/holocrones/guild/rules/component.js">
 </script>
+<script
+    type="module"
+    src="/holocrones/guild/goals/component.js">
+</script>
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
 
     const sections = [
-        { id: "holocron-prioridades", url: "holocrones/fragment-guild-goals.html" },
         { id: "holocron-warnings", url: "holocrones/fragment-guild-warnings.html" },
         { id: "guild-players-data", url: "holocrones/fragment-guild-players-data.html" }
     ];
