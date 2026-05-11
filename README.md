@@ -11,7 +11,7 @@ Este proyecto [sigue una filosofía](/docs/adr/) **frontend-first** e **ia-first
 3. **[ADR-0003: No Framework Policy](/docs/adr/0003-no-framework-policy.md)** - Sin frameworks pesados ni librerías externas
 4. **[ADR-0004: Frontend Data Layer](/docs/adr/0004-data-layer-frontendfirst.md)** - Toda la información consumida por la aplicación debe obtenerse desde una capa de datos estática servida por GitHub Pages.
 5. **[ADR-0005: Presentation Layer - Responsive Design](/docs/adr/0005-presentation-layer-responsive-design.md)** - Diseño responsive para todos los dispositivos
-6. **[ADR-0006: Holocron Component Architecture](/docs/adr/0006-holocron-architecture.md)** - Componentes autocontenidos reutilizables
+6. **[ADR-0006: Architecture - Holocron module as reusable Component](/docs/adr/0006-architecture-holocron-as-module.md)** - Componentes autocontenidos reutilizables
 
 ## 🛠️ Stack Tecnológico
 
@@ -42,7 +42,7 @@ Utilizamos solo tecnologías web fundamentales, tal como se define en [ADR-0002]
 
 ## 🎓 Holocrones
 
-Los **holocrones** son componentes autocontenidos que implementan la [Arquitectura de Holocrones (ADR-0006)](/docs/adr/0006-holocron-architecture.md):
+Los **holocrones** son componentes autocontenidos que implementan la [Arquitectura de Holocrones (ADR-0006)](/docs/adr/0006-holocron-architecture-single.md):
 
 - 📚 Consultables individualmente en la biblioteca de holocrones
 - 🔗 Incrustables en otras páginas mediante iframes
