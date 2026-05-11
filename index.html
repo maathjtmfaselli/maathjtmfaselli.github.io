@@ -19,7 +19,6 @@
 <main>
   <holocron-guild-rules></holocron-guild-rules>
   <holocron-guild-goals></holocron-guild-goals>
-    <div id="holocron-prioridades"></div>
     <div id="holocron-warnings"></div>
     <div id="guild-players-data"></div>
 </main>
@@ -40,23 +39,4 @@
     src="/holocrones/guild/goals/component.js">
 </script>
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-
-    const sections = [
-        { id: "holocron-warnings", url: "holocrones/fragment-guild-warnings.html" },
-        { id: "guild-players-data", url: "holocrones/fragment-guild-players-data.html" }
-    ];
-
-    sections.forEach(sec => {
-        fetch(sec.url)
-            .then(res => res.text())
-            .then(html => {
-                document.getElementById(sec.id).innerHTML = html;
-                initGridPriorityProgress(document.getElementById(sec.id));
-            })
-            .catch(err => console.error(`Error cargando ${sec.url}`, err));
-    });
-});
-</script>
 </html>

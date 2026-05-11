@@ -39,6 +39,47 @@ function initGridPriorityProgress(root = document) {
   });
 }
 
+function initGridGuildRanksProgress(root = document) {
+  root.querySelectorAll(".grid-ranks-progress").forEach(container => {
+    // Evitar doble inicialización
+    if (container.dataset.initialized) return;
+    container.dataset.initialized = "true";
+
+    const grandMasters = Number(container.dataset.grandMaster || 0);
+    const knights = Number(container.dataset.knight || 0);
+    const padawan = Number(container.dataset.padawan || 0);
+    const target = parseInt(container.dataset.target) || 0;
+    const total = Number(container.dataset.total || 50);
+
+    const grid = document.createElement('div');
+    grid.classList.add('priority-grid');
+
+    for (let i = 0; i < total; i++) {
+      const box = document.createElement('div');
+      box.classList.add('player-box');
+
+      if (i < grandMasters) {
+        box.classList.add('grand-master');
+      } else if (i < knights + grandMasters) {
+        box.classList.add('complete');
+      } else if (i < padawan + knights + grandMasters) {
+        box.classList.add('failed');
+      } else {
+        box.classList.add('not-eligible');
+      }
+
+      if (i < target) {
+        box.classList.add('target-box');
+      }
+
+      grid.appendChild(box);
+    }
+
+    container.innerHTML = '';
+    container.appendChild(grid);
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   initGridPriorityProgress();
 });

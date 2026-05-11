@@ -253,6 +253,7 @@ ol {
   box-shadow: 0 0 4px red;
 }
 
+.grand-master { background-color: #3b82f6; }
 .complete     { background-color: #4caf50; } /* Verde */
 .failed       { background-color: #ff9800; } /* Naranja */
 .not-played   { background-color: #ffeb3b; } /* Amarillo */
