@@ -1,4 +1,4 @@
-import { loadCsv } from "/maathjtmfaselli.github.io/parser/csv.parser.js";
+import { loadCsv } from "../parser/csv.parser.js";
 
 export class Order66Service {
 

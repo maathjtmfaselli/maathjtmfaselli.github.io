@@ -1,4 +1,4 @@
-import { Order66Service } from "/maathjtmfaselli.github.io/services/order66.service.js";
+import { Order66Service } from "../../../services/order66.service.js";
 
 class GuildPrioritiesHolocron extends HTMLElement {
 
