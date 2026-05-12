@@ -2,7 +2,8 @@
   "historicalResults": [
     {
       "fecha": "25/05/2026",
-      "pg": "577M",
+      "status": "planned",
+      "pg": "588M",
       "estrellas": "",
       "noDesplegados": "/////",
       "pelotones": "/54",
@@ -14,6 +15,7 @@
       "corellia": "x/x/11"
     },{
       "fecha": "11/05/2026",
+      "status": "in progress",
       "pg": "588M",
       "estrellas": "",
       "noDesplegados": "/////",
@@ -26,6 +28,7 @@
       "corellia": "x/x/11"
     },{
       "fecha": "27/04/2026",
+      "status": "complete",
       "pg": "577M",
       "estrellas": "34",
       "noDesplegados": "-/////",
@@ -38,6 +41,7 @@
       "corellia": "8/11/11"
     },{
       "fecha": "13/04/2026",
+      "status": "complete",
       "pg": "563M",
       "estrellas": "34",
       "noDesplegados": "-/43////",
