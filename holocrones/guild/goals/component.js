@@ -1,10 +1,12 @@
 import { Order66Service } from "../../../services/order66.service.js";
+import { RoteService } from "../../../services/rote.service.js";
 
 class GuildPrioritiesHolocron extends HTMLElement {
 
   constructor() {
     super();
     this.order66Service = new Order66Service();
+    this.roteService = new RoteService();
   }
 
   async connectedCallback() {
@@ -19,11 +21,13 @@ class GuildPrioritiesHolocron extends HTMLElement {
   }
 
   async loadData() {
-    const rows = await this.order66Service.loadHistoricalData();
-    const guildTheoreticalMaxScore = this.order66Service.getGuildTheoreticalMaxScore(rows);
-    const rankCounts = this.order66Service.getRankCounts(rows);
-    this.renderGuildTheoreticalMaxScore(guildTheoreticalMaxScore);
-    this.renderRankCounts(rankCounts);
+    const order66Rows = await this.order66Service.loadHistoricalData();
+    const roteMetrics = await this.roteService.getLatestMetrics();
+
+    this.renderGuildTheoreticalMaxScore(this.order66Service.getGuildTheoreticalMaxScore(order66Rows));
+    this.renderGuildRankProgress(this.order66Service.getRankCounts(order66Rows));
+    this.renderPriority("zeffo", roteMetrics.zeffo);
+    this.renderPriority("mandalor", roteMetrics.mandalor);
   }
 
   renderGuildTheoreticalMaxScore(guildTheoreticalMaxScore) {
@@ -41,7 +45,7 @@ class GuildPrioritiesHolocron extends HTMLElement {
     label.textContent = `${scoreM} / 245`;
   }
 
-  renderRankCounts(rankCounts) {
+  renderGuildRankProgress(rankCounts) {
     const progress = this.querySelector("#guild-raid-progress");
 
     if (!progress) {
@@ -51,6 +55,19 @@ class GuildPrioritiesHolocron extends HTMLElement {
     progress.dataset.grandMaster = rankCounts.grandMaster;
     progress.dataset.knight = rankCounts.knight;
     progress.dataset.padawan = rankCounts.padawan;
+  }
+
+  renderPriority(target, data) {
+    const el = document.getElementById(`guild-rote-progress-${target}`);
+
+    if (!el || !data) return;
+
+    el.dataset.completed = data.completed;
+    el.dataset.attempted = data.attempted;
+    el.dataset.eligible = data.eligible;
+
+    // regla de negocio UI (si existe)
+    el.dataset.target = data.eligible;
   }
 
   afterRender() {

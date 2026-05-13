@@ -19,22 +19,22 @@ export class Order66Service {
     );
   }
 
-  getGuildMaxScore(rows) {
-    const dates = this.getDateColumns(rows);
-
-    return Math.max(
-
-      ...dates.map(date => {
-
-        return rows.reduce((sum, player) => {
-
-          return sum + (Number(player[date]) || 0);
-
-        }, 0);
-
-      })
-    );
-  }
+//  getGuildMaxScore(rows) {
+//    const dates = this.getDateColumns(rows);
+//
+//    return Math.max(
+//
+//      ...dates.map(date => {
+//
+//        return rows.reduce((sum, player) => {
+//
+//          return sum + (Number(player[date]) || 0);
+//
+//        }, 0);
+//
+//      })
+//    );
+//  }
 
   getGuildTheoreticalMaxScore(rows) {
     const dates = this.getDateColumns(rows);
@@ -65,7 +65,6 @@ export class Order66Service {
   }
 
   getRankCounts(guild) {
-
      const counts = {
        grandMaster: 0,
        knight: 0,

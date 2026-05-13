@@ -1,10 +1,10 @@
 {
   "historicalResults": [
     {
-      "fecha": "25/05/2026",
+      "date": "25/05/2026",
       "status": "planned",
       "pg": "588M",
-      "estrellas": "",
+      "stars": "",
       "noDesplegados": "/////",
       "pelotones": "/54",
       "reva": "x/x/25",
@@ -14,10 +14,10 @@
       "zeffo": "x/x/35",
       "corellia": "x/x/11"
     },{
-      "fecha": "11/05/2026",
+      "date": "11/05/2026",
       "status": "in progress",
       "pg": "588M",
-      "estrellas": "",
+      "stars": "",
       "noDesplegados": "/////",
       "pelotones": "/54",
       "reva": "x/x/25",
@@ -27,10 +27,10 @@
       "zeffo": "x/x/35",
       "corellia": "x/x/11"
     },{
-      "fecha": "27/04/2026",
-      "status": "complete",
+      "date": "27/04/2026",
+      "status": "completed",
       "pg": "577M",
-      "estrellas": "34",
+      "stars": "34",
       "noDesplegados": "-/////",
       "pelotones": "54/54",
       "reva": "16/18/25",
@@ -40,10 +40,10 @@
       "zeffo": "15/33/35",
       "corellia": "8/11/11"
     },{
-      "fecha": "13/04/2026",
-      "status": "complete",
+      "date": "13/04/2026",
+      "status": "completed",
       "pg": "563M",
-      "estrellas": "34",
+      "stars": "34",
       "noDesplegados": "-/43////",
       "pelotones": "/54",
       "reva": "x/x/25",
@@ -53,9 +53,9 @@
       "zeffo": "20/31/33",
       "corellia": "8/9/9"
     },{
-      "fecha": "30/03/2026",
+      "date": "30/03/2026",
       "pg": "556M",
-      "estrellas": "31",
+      "stars": "31",
       "noDesplegados": "53/54/86/103/61/",
       "pelotones": "52/54",
       "reva": "19/22/24",
@@ -65,9 +65,9 @@
       "zeffo": "15/26/28",
       "corellia": "3/5/7"
     },{
-      "fecha": "16/03/2026",
+      "date": "16/03/2026",
       "pg": "563M",
-      "estrellas": "30",
+      "stars": "30",
       "noDesplegados": "86/104/44/91/77/71",
       "pelotones": "54/54",
       "reva": "16/22/24",
@@ -77,9 +77,9 @@
       "zeffo": "9/12/22",
       "corellia": "3/4/7"
     },{
-      "fecha": "02/03/2026",
+      "date": "02/03/2026",
       "pg": "559M",
-      "estrellas": "33",
+      "stars": "33",
       "noDesplegados": "-/41/26/21/64/",
       "pelotones": "54/54",
       "reva": "20/23/25",
@@ -89,9 +89,9 @@
       "zeffo": "14/20/21",
       "corellia": "4/6/7"
     },{
-      "fecha": "16/02/2026",
+      "date": "16/02/2026",
       "pg": "553M",
-      "estrellas": "32",
+      "stars": "32",
       "noDesplegados": "74/53/30/41/61/54",
       "pelotones": "54/54",
       "reva": "17/23/24",
@@ -101,9 +101,9 @@
       "zeffo": "5/19/21",
       "corellia": "3/4/7"
     },{
-      "fecha": "02/02/2026",
+      "date": "02/02/2026",
       "pg": "549M",
-      "estrellas": "32",
+      "stars": "32",
       "noDesplegados": "-/62/60/51/52/70",
       "pelotones": "54/54",
       "reva": "16/22/24",
@@ -113,9 +113,9 @@
       "zeffo": "9/17/23",
       "corellia": "3/4/7"
     },{
-      "fecha": "19/01/2026",
+      "date": "19/01/2026",
       "pg": "540M",
-      "estrellas": "",
+      "stars": "",
       "noDesplegados": "/////",
       "pelotones": "/54",
       "reva": "x/x/26",
@@ -125,9 +125,9 @@
       "zeffo": "x/x/17",
       "corellia": "x/x/6"
     },{
-      "fecha": "05/01/2026",
+      "date": "05/01/2026",
       "pg": "540M",
-      "estrellas": "32",
+      "stars": "32",
       "noDesplegados": "41/41/11/21/70/",
       "pelotones": "53/54",
       "reva": "12/22/26",
@@ -137,9 +137,9 @@
       "zeffo": "10/15/17",
       "corellia": "2/3/6"
     },{
-      "fecha": "22/12/2025",
+      "date": "22/12/2025",
       "pg": "534M",
-      "estrellas": "32",
+      "stars": "32",
       "noDesplegados": "-/31/72/64/68/39",
       "pelotones": "54/54",
       "reva": "14/20/26",
@@ -149,9 +149,9 @@
       "zeffo": "9/14/17",
       "corellia": "3/3/6"
     },{
-      "fecha": "08/12/2025",
+      "date": "08/12/2025",
       "pg": "533M",
-      "estrellas": "32",
+      "stars": "32",
       "noDesplegados": "-/42/52/70/19/",
       "pelotones": "54/54",
       "reva": "12/15/26",
@@ -161,9 +161,9 @@
       "zeffo": "7/16/18",
       "corellia": "2/3/6"
     },{
-      "fecha": "24/11/2025",
+      "date": "24/11/2025",
       "pg": "529M",
-      "estrellas": "31",
+      "stars": "31",
       "noDesplegados": "100/28/11/11/22/35",
       "pelotones": "51/52",
       "reva": "20/24/26",
@@ -173,9 +173,9 @@
       "zeffo": "7/17/17",
       "corellia": "2/2/6"
     },{
-      "fecha": "10/11/2025",
+      "date": "10/11/2025",
       "pg": "527M",
-      "estrellas": "31",
+      "stars": "31",
       "noDesplegados": "40/30/46/9/49/24",
       "pelotones": "50/52",
       "reva": "5/14/25",
@@ -185,9 +185,9 @@
       "zeffo": "6/15/15",
       "corellia": "2/2/4"
     },{
-      "fecha": "27/10/2025",
+      "date": "27/10/2025",
       "pg": "524M",
-      "estrellas": "",
+      "stars": "",
       "noDesplegados": "71/75/37/47/61/",
       "pelotones": "51/52",
       "reva": "16/22/25",
@@ -197,9 +197,9 @@
       "zeffo": "4/14/15",
       "corellia": "1/2/4"
     },{
-      "fecha": "13/10/2025",
+      "date": "13/10/2025",
       "pg": "513M",
-      "estrellas": "29",
+      "stars": "29",
       "noDesplegados": "70/60/38/46/65/62",
       "pelotones": "50/52",
       "reva": "17/19/25",
@@ -209,9 +209,9 @@
       "zeffo": "3/11/13",
       "corellia": "2/3/4"
     },{
-      "fecha": "29/09/2025",
+      "date": "29/09/2025",
       "pg": "509M",
-      "estrellas": "",
+      "stars": "",
       "noDesplegados": "/////",
       "pelotones": "/48",
       "reva": "x/x/24",
@@ -221,9 +221,9 @@
       "zeffo": "x/x/8",
       "corellia": "x/x/5"
     },{
-      "fecha": "15/09/2025",
+      "date": "15/09/2025",
       "pg": "503M",
-      "estrellas": "29",
+      "stars": "29",
       "noDesplegados": "87*/79*/79*/79/79/69",
       "pelotones": "48/49",
       "reva": "16/22/22",
@@ -233,9 +233,9 @@
       "zeffo": "4/8/8",
       "corellia": "2/2/4"
     },{
-      "fecha": "01/09/2025",
+      "date": "01/09/2025",
       "pg": "501M",
-      "estrellas": "30",
+      "stars": "30",
       "noDesplegados": "64/78/107/77/75/35",
       "pelotones": "49/49",
       "reva": "7/18/22",
@@ -245,9 +245,9 @@
       "zeffo": "4/8/8",
       "corellia": "0/3/3"
     },{
-      "fecha": "18/08/2025",
+      "date": "18/08/2025",
       "pg": "483M",
-      "estrellas": "28",
+      "stars": "28",
       "noDesplegados": "84/62/93/78/108/",
       "pelotones": "45/48",
       "reva": "9/18/22",
@@ -257,9 +257,9 @@
       "zeffo": "4/7/7",
       "corellia": "0/1/3"
     },{
-      "fecha": "04/08/2025",
+      "date": "04/08/2025",
       "pg": "492M",
-      "estrellas": "27",
+      "stars": "27",
       "noDesplegados": "82/100/100/110/110/130",
       "pelotones": "47/48",
       "reva": "7/20/22",
@@ -269,9 +269,9 @@
       "zeffo": "4/5/7",
       "corellia": "1/2/3"
     },{
-      "fecha": "21/07/2025",
+      "date": "21/07/2025",
       "pg": "483M",
-      "estrellas": "26",
+      "stars": "26",
       "noDesplegados": "115/104/121/84/93/100",
       "pelotones": "43/46",
       "reva": "4/7/21",
@@ -281,9 +281,9 @@
       "dathomir": "0/1/1",
       "corellia": "0/3/3"
     },{
-      "fecha": "07/07/2025",
+      "date": "07/07/2025",
       "pg": "472M",
-      "estrellas": "x",
+      "stars": "x",
       "noDesplegados": "/////",
       "pelotones": "x/43",
       "reva": "x/x/18",
@@ -293,9 +293,9 @@
       "dathomir": "1/1/1",
       "corellia": "0/1/2"
     },{
-      "fecha": "07/07/2025",
+      "date": "07/07/2025",
       "pg": "466M",
-      "estrellas": "x",
+      "stars": "x",
       "noDesplegados": "/////",
       "pelotones": "x/43",
       "reva": "x/x/18",
@@ -304,9 +304,9 @@
       "kashyyyk": "1/1/1",
       "corellia": "x/x/2"
     },{
-      "fecha": "23/06/2025",
+      "date": "23/06/2025",
       "pg": "465M",
-      "estrellas": "27",
+      "stars": "27",
       "noDesplegados": "120/87/113/85/121/138",
       "pelotones": "42/43",
       "reva": "3/15/18",
@@ -315,10 +315,10 @@
       "kashyyyk": "1/1/1",
       "corellia": "1/1/2"
     },{
-      "fecha": "09/06/2025",
+      "date": "09/06/2025",
       "pg": "471M",
       "noDesplegados": "94/109/89/99/108/97",
-      "estrellas": "26",
+      "stars": "26",
       "pelotones": "39/44",
       "kashyyyk": "1/1/1",
       "reva": "5/15/18",
@@ -326,10 +326,10 @@
       "zeffo": "2/8/9",
       "corellia": "1/1/2"
     },{
-      "fecha": "26/05/2025",
+      "date": "26/05/2025",
       "pg": "469M",
       "noDesplegados": "55/74/69/59/92/",
-      "estrellas": "26",
+      "stars": "26",
       "pelotones": "38/43",
       "reva": "5/9/18",
       "kashyyyk": "1/1/1",
@@ -337,108 +337,108 @@
       "zeffo": "3/9/9",
       "corellia": "0/1/2"
     },{
-      "fecha": "12/05/2025",
+      "date": "12/05/2025",
       "pg": "472M",
       "noDesplegados": "14/79/56/107/91/56",
-      "estrellas": "27",
+      "stars": "27",
       "pelotones": "42/42",
       "reva": "5/16/17",
       "mandalor": "5/6/8",
       "zeffo": "5/7/7",
       "corellia": "0/1/2"
     },{
-      "fecha": "28/04/2025",
+      "date": "28/04/2025",
       "pg": "467M",
       "noDesplegados": "98/75/113/120/87/95",
-      "estrellas": "26",
+      "stars": "26",
       "pelotones": "39/40",
       "reva": "4/13/17",
       "mandalor": "3/5/8",
       "zeffo": "3/7/7",
       "corellia": "0/1/2"
     },{
-      "fecha": "14/04/2025",
+      "date": "14/04/2025",
       "pg": "465M",
       "noDesplegados": "155/89/128/93/87/86",
-      "estrellas": "23",
+      "stars": "23",
       "pelotones": "35/40",
       "reva": "2/12/19",
       "zeffo": "2/5/6",
       "mandalor": "5/6/7",
       "corellia": "0/1/2"
     },{
-      "fecha": "31/03/2025",
+      "date": "31/03/2025",
       "pg": "463M",
       "noDesplegados": "76/76/82/110/110/110",
-      "estrellas": "26",
+      "stars": "26",
       "pelotones": "36/40",
       "reva": "2/12/19",
       "zeffo": "0/5/4",
       "mandalor": "3/4/4",
       "corellia": "1/2/2"
     },{
-      "fecha": "17/03/2025",
+      "date": "17/03/2025",
       "pg": "451M",
       "noDesplegados": "113/103/117/115/124/94",
-      "estrellas": "23",
+      "stars": "23",
       "pelotones": "27/37",
       "zeffo": "1/3/4",
       "mandalor": "0/3/4",
       "reva": "2/12/19",
       "corellia": "1/2/2"
     },{
-      "fecha": "03/03/2025",
+      "date": "03/03/2025",
       "pg": "456M",
       "noDesplegados": "108/91/113/113/113/100",
-      "estrellas": "22",
+      "stars": "22",
       "pelotones": "31/36",
       "zeffo": "2/3/4",
       "mandalor": "0/2/4",
       "reva": "2/8/17"
     },{
-      "fecha": "17/02/2025",
+      "date": "17/02/2025",
       "pg": "422M",
       "noDesplegados": "120/108/112/98/101/96",
-      "estrellas": "23",
+      "stars": "23",
       "pelotones": "27/37",
       "zeffo": "2/3/4",
       "mandalor": "1/2/2",
       "reva": "2/7/14"
     },{
-      "fecha": "03/02/2025",
+      "date": "03/02/2025",
       "pg": "442M",
       "noDesplegados": "79/107/117/139/92/114",
-      "estrellas": "23",
+      "stars": "23",
       "pelotones": "29/31",
       "zeffo": "2/3/4",
       "mandalor": "0/1/1",
       "reva": "2/8/15"
     },
     {
-      "fecha": "20/01/2025",
+      "date": "20/01/2025",
       "pg": "432M",
       "noDesplegados": "94/54/69/101/129/123",
-      "estrellas": "21",
+      "stars": "21",
       "pelotones": "20/26",
       "zeffo": "1/3/4",
       "mandalor": "0/0/1",
       "reva": "3/9/15"
     },
     {
-      "fecha": "06/01/2025",
+      "date": "06/01/2025",
       "pg": "440M",
       "noDesplegados": "100/76/93/71/107/103",
-      "estrellas": "24",
+      "stars": "24",
       "pelotones": "22/24",
       "zeffo": "1/4/4",
       "mandalor": "0/0/1",
       "reva": "3/10/15"
     },
     {
-      "fecha": "23/12/2024",
+      "date": "23/12/2024",
       "pg": "435M",
       "noDesplegados": "78/114/106/60/102/66",
-      "estrellas": "23",
+      "stars": "23",
       "pelotones": "20/22",
       "zeffo": "1/4/4",
       "mandalor": "0/1/1",
