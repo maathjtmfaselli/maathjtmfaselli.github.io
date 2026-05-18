@@ -1,7 +1,8 @@
 import fs from "fs/promises";
 
+const FETCH_PLAYER_DELAY_MS = 1000;
 const INPUT_CSV = "./data/guild/guild-members.csv";
-const RAW_OUTPUT = "./data/guild/guild-members-rad-data.json";
+const RAW_OUTPUT = "./data/guild/guild-members-raw-data.json";
 const PROCESSED_OUTPUT = "./data/guild/guild-members-processed-data.json";
 
 async function loadCsv(path) {
@@ -10,7 +11,7 @@ async function loadCsv(path) {
   const rows = text
     .trim()
     .split("\n")
-    .map(r => r.split(","));
+    .map(r => r.split(",").map(x => x.trim()));
 
   const headers = rows[0];
 
@@ -40,7 +41,7 @@ function extractUnits(playerData) {
   const units = {};
 
   for (const unit of playerData.units) {
-    units[unit.name] = unit.relic_tier || "";
+    units[unit.name] = Number(unit.relic_tier ?? -1);
   }
 
   return units;
@@ -58,6 +59,7 @@ function processPlayer(rawPlayer) {
 }
 
 async function update() {
+  const timestamp = new Date().toISOString();
   const guildMembers = await loadCsv(INPUT_CSV);
   const rawPlayers = [];
 
@@ -65,6 +67,7 @@ async function update() {
     console.log(`Fetching ${member.name}`);
 
     try {
+      await new Promise(r => setTimeout(r, FETCH_PLAYER_DELAY_MS));
       const data = await fetchPlayer(member.allyCode);
 
       rawPlayers.push({
@@ -80,11 +83,11 @@ async function update() {
   }
 
   const rawOutput = {
-    updated: new Date().toISOString(),
+    updated: timestamp,
     players: rawPlayers
   };
 
-  fs.writeFileSync(
+  await fs.writeFile(
     RAW_OUTPUT,
     JSON.stringify(rawOutput, null, 2)
   );
@@ -94,11 +97,11 @@ async function update() {
   const processedPlayers = rawPlayers.map(processPlayer);
 
   const processedOutput = {
-    updated: new Date().toISOString(),
+    updated: timestamp,
     players: processedPlayers
   };
 
-  fs.writeFileSync(
+  await fs.writeFile(
     PROCESSED_OUTPUT,
     JSON.stringify(
       processedOutput,
@@ -110,4 +113,4 @@ async function update() {
   console.log("Processed data generated", processedOutput);
 }
 
-update();
+update().catch(console.error);
