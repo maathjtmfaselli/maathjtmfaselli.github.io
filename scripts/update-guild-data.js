@@ -1,5 +1,4 @@
 import fs from "fs/promises";
-import { processPlayer } from "../services/guild.service.js";
 import {
   fetchPlayer,
   extractUnits,
