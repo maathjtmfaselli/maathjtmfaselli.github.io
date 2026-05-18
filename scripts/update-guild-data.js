@@ -1,4 +1,9 @@
 import fs from "fs/promises";
+import {
+  fetchPlayer,
+  extractUnits,
+  processPlayer
+} from "../services/swgoh.service.js";
 
 const FETCH_PLAYER_DELAY_MS = 1000;
 const INPUT_CSV = "./data/guild/guild-members.csv";
@@ -27,36 +32,6 @@ async function loadCsv(path) {
   });
 }
 
-async function fetchPlayer(allyCode) {
-  const response = await fetch(`https://swgoh.gg/api/player/${allyCode}/`);
-
-  if (!response.ok) {
-    throw new Error(`HTTP ${response.status}`);
-  }
-
-  return await response.json();
-}
-
-function extractUnits(playerData) {
-  const units = {};
-
-  for (const unit of playerData.units) {
-    units[unit.name] = Number(unit.relic_tier ?? -1);
-  }
-
-  return units;
-}
-
-function processPlayer(rawPlayer) {
-  const units = rawPlayer.units;
-
-  return {
-    name: rawPlayer.name,
-    allyCode: rawPlayer.allyCode,
-    canDoBracca: (units["Cere Junda"] || 0) >= 7 && (units["Jedi Cal Kestis"] || 0) >= 7,
-    canDoTatooine: (units["Bo-Katan (Mand'alor)"] || 0) >= 7
-  };
-}
 
 async function update() {
   const timestamp = new Date().toISOString();
@@ -92,7 +67,7 @@ async function update() {
     JSON.stringify(rawOutput, null, 2)
   );
 
-  console.log("Raw data generated", rawOutput);
+  console.log("Raw data generated");
 
   const processedPlayers = rawPlayers.map(processPlayer);
 
@@ -103,14 +78,10 @@ async function update() {
 
   await fs.writeFile(
     PROCESSED_OUTPUT,
-    JSON.stringify(
-      processedOutput,
-      null,
-      2
-    )
+    JSON.stringify(processedOutput, null, 2)
   );
 
-  console.log("Processed data generated", processedOutput);
+  console.log("Processed data generated");
 }
 
 update().catch(console.error);
