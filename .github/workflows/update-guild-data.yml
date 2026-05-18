@@ -17,8 +17,6 @@ jobs:
         with:
           node-version: 20
 
-      - run: npm install
-
       - run: node scripts/update-guild-data.js
 
       - run: |
