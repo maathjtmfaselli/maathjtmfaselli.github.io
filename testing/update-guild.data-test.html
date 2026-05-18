@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Testing</title>
+</head>
+<body>
+
+<h1>Testing Page</h1>
+
+<button id="runBtn">
+  Run Test
+</button>
+
+<pre id="output"></pre>
+
+<script type="module">
+  import {
+    loadCsv
+  } from "./services/csv.service.js";
+
+  import {
+    fetchPlayer,
+    extractUnits,
+    processPlayer
+  } from "./services/swgoh.service.js";
+
+  const output = document.getElementById("output");
+
+  function log(message) {
+    output.textContent += `${message}\n`;
+  }
+
+  async function run() {
+    output.textContent = "";
+    const rawPlayers = [];
+    const guildMembers = await loadCsv( "./data/guild/guild-members.csv");
+
+    for (const member of guildMembers) {
+      log(`Fetching ${member.name}`);
+
+      try {
+        const data = await fetchPlayer(member.allyCode);
+
+        rawPlayers.push({
+          name: member.name,
+          allyCode: member.allyCode,
+          units:
+            extractUnits(data)
+        });
+
+        log(`OK ${member.name}`);
+
+      } catch (error) {
+
+        log(
+          `ERROR ${member.name}: ${error.message}`
+        );
+      }
+    }
+
+    const processed = rawPlayers.map( processPlayer);
+
+    log("");
+    log("PROCESSED DATA:");
+    log(JSON.stringify(processed, null, 2));
+  }
+
+  document
+    .getElementById("runBtn")
+    .addEventListener("click", run);
+
+</script>
+
+</body>
+</html>
