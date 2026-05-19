@@ -1,4 +1,305 @@
 {
-  "updated": "2026-05-19T08:20:09.904Z",
-  "players": []
+  "updated": "2026-05-19T13:53:26.921Z",
+  "members": [
+    {
+      "name": "Maath JTM Faselli",
+      "allyCode": "637461253",
+      "canDoBracca": true,
+      "canDoTatooine": true
+    },
+    {
+      "name": "Garrick",
+      "allyCode": "585371488",
+      "canDoBracca": true,
+      "canDoTatooine": true
+    },
+    {
+      "name": "PequeñoPadawan",
+      "allyCode": "985613157",
+      "canDoBracca": true,
+      "canDoTatooine": true
+    },
+    {
+      "name": "Gita",
+      "allyCode": "227523555",
+      "canDoBracca": true,
+      "canDoTatooine": true
+    },
+    {
+      "name": "Viula Dourshe",
+      "allyCode": "342742489",
+      "canDoBracca": true,
+      "canDoTatooine": true
+    },
+    {
+      "name": "GRANJEDI Tito1",
+      "allyCode": "724823392",
+      "canDoBracca": true,
+      "canDoTatooine": false
+    },
+    {
+      "name": "Ben",
+      "allyCode": "522319923",
+      "canDoBracca": true,
+      "canDoTatooine": true
+    },
+    {
+      "name": "Temnyy",
+      "allyCode": "946866486",
+      "canDoBracca": true,
+      "canDoTatooine": true
+    },
+    {
+      "name": "VIRUS",
+      "allyCode": "264973279",
+      "canDoBracca": true,
+      "canDoTatooine": false
+    },
+    {
+      "name": "Kid Danger",
+      "allyCode": "837885513",
+      "canDoBracca": true,
+      "canDoTatooine": true
+    },
+    {
+      "name": "Mik Bat",
+      "allyCode": "861756984",
+      "canDoBracca": false,
+      "canDoTatooine": false
+    },
+    {
+      "name": "Mou topor",
+      "allyCode": "299287414",
+      "canDoBracca": true,
+      "canDoTatooine": true
+    },
+    {
+      "name": "JediSevillano",
+      "allyCode": "774372824",
+      "canDoBracca": true,
+      "canDoTatooine": false
+    },
+    {
+      "name": "R3CO",
+      "allyCode": "715639263",
+      "canDoBracca": true,
+      "canDoTatooine": true
+    },
+    {
+      "name": "Mhann Uhdea",
+      "allyCode": "835432121",
+      "canDoBracca": true,
+      "canDoTatooine": true
+    },
+    {
+      "name": "castortroy",
+      "allyCode": "885444487",
+      "canDoBracca": true,
+      "canDoTatooine": true
+    },
+    {
+      "name": "Kaneris",
+      "allyCode": "667229831",
+      "canDoBracca": false,
+      "canDoTatooine": false
+    },
+    {
+      "name": "Cente",
+      "allyCode": "771367346",
+      "canDoBracca": true,
+      "canDoTatooine": true
+    },
+    {
+      "name": "Last Order",
+      "allyCode": "996165918",
+      "canDoBracca": true,
+      "canDoTatooine": true
+    },
+    {
+      "name": "YEPISTARS",
+      "allyCode": "979175733",
+      "canDoBracca": true,
+      "canDoTatooine": true
+    },
+    {
+      "name": "Blas",
+      "allyCode": "276973635",
+      "canDoBracca": true,
+      "canDoTatooine": false
+    },
+    {
+      "name": "Was",
+      "allyCode": "766931712",
+      "canDoBracca": true,
+      "canDoTatooine": true
+    },
+    {
+      "name": "Linde Forklift",
+      "allyCode": "371172439",
+      "canDoBracca": true,
+      "canDoTatooine": true
+    },
+    {
+      "name": "josmartini",
+      "allyCode": "585371488",
+      "canDoBracca": true,
+      "canDoTatooine": true
+    },
+    {
+      "name": "Cal Kestis",
+      "allyCode": "629978971",
+      "canDoBracca": true,
+      "canDoTatooine": false
+    },
+    {
+      "name": "Dark Iskender",
+      "allyCode": "375932863",
+      "canDoBracca": false,
+      "canDoTatooine": true
+    },
+    {
+      "name": "Remus",
+      "allyCode": "162716757",
+      "canDoBracca": true,
+      "canDoTatooine": false
+    },
+    {
+      "name": "Nakillo",
+      "allyCode": "181362821",
+      "canDoBracca": false,
+      "canDoTatooine": true
+    },
+    {
+      "name": "Nami88",
+      "allyCode": "796419292",
+      "canDoBracca": true,
+      "canDoTatooine": false
+    },
+    {
+      "name": "Mariskal101DA",
+      "allyCode": "555458622",
+      "canDoBracca": false,
+      "canDoTatooine": false
+    },
+    {
+      "name": "Peleas",
+      "allyCode": "557222937",
+      "canDoBracca": true,
+      "canDoTatooine": false
+    },
+    {
+      "name": "Daimon Tlan",
+      "allyCode": "876927223",
+      "canDoBracca": true,
+      "canDoTatooine": true
+    },
+    {
+      "name": "ALEX TANO",
+      "allyCode": "155938157",
+      "canDoBracca": true,
+      "canDoTatooine": true
+    },
+    {
+      "name": "Biobof",
+      "allyCode": "348274113",
+      "canDoBracca": true,
+      "canDoTatooine": true
+    },
+    {
+      "name": "Chinadapowers",
+      "allyCode": "386519315",
+      "canDoBracca": false,
+      "canDoTatooine": true
+    },
+    {
+      "name": "technochurchill",
+      "allyCode": "371714953",
+      "canDoBracca": false,
+      "canDoTatooine": true
+    },
+    {
+      "name": "Yoryino",
+      "allyCode": "715772752",
+      "canDoBracca": true,
+      "canDoTatooine": true
+    },
+    {
+      "name": "Oldboy",
+      "allyCode": "351267229",
+      "canDoBracca": true,
+      "canDoTatooine": true
+    },
+    {
+      "name": "Dace Joy",
+      "allyCode": "584966117",
+      "canDoBracca": true,
+      "canDoTatooine": false
+    },
+    {
+      "name": "Darkguderian",
+      "allyCode": "434428673",
+      "canDoBracca": false,
+      "canDoTatooine": true
+    },
+    {
+      "name": "in flames / Almax",
+      "allyCode": "756338725",
+      "canDoBracca": true,
+      "canDoTatooine": true
+    },
+    {
+      "name": "Tantema RayGarnik",
+      "allyCode": "167323714",
+      "canDoBracca": false,
+      "canDoTatooine": false
+    },
+    {
+      "name": "Dass Jenir",
+      "allyCode": "184286541",
+      "canDoBracca": false,
+      "canDoTatooine": true
+    },
+    {
+      "name": "Bald Dart",
+      "allyCode": "558963774",
+      "canDoBracca": true,
+      "canDoTatooine": false
+    },
+    {
+      "name": "Destroner",
+      "allyCode": "524982934",
+      "canDoBracca": false,
+      "canDoTatooine": false
+    },
+    {
+      "name": "Kairas",
+      "allyCode": "798865183",
+      "canDoBracca": false,
+      "canDoTatooine": true
+    },
+    {
+      "name": "Hill",
+      "allyCode": "162461313",
+      "canDoBracca": false,
+      "canDoTatooine": false
+    },
+    {
+      "name": "JokerVerde",
+      "allyCode": "793179493",
+      "canDoBracca": false,
+      "canDoTatooine": true
+    },
+    {
+      "name": "Céfiro",
+      "allyCode": "726289933",
+      "canDoBracca": false,
+      "canDoTatooine": false
+    },
+    {
+      "name": "Wasnapido SeaWalker",
+      "allyCode": "493362915",
+      "canDoBracca": false,
+      "canDoTatooine": false
+    }
+  ]
 }
