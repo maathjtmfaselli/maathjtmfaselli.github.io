@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spain Space SWGoH</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/dynamic-loader.js" defer></script>
-    <script src="js/grid-priority-progress.js" defer></script>
-    <link rel="icon" href="img/swgoh-spain-space-favicon.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spain Space SWGoH</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/dynamic-loader.js" defer></script>
+  <script src="js/grid-priority-progress.js" defer></script>
+  <link rel="icon" href="img/swgoh-spain-space-favicon.png" type="image/png">
+
+  <script type="module" src="./holocrones/guild/rules/component.js"></script>
+  <script type="module" src="./holocrones/guild/goals/component.js"></script>
+  <script type="module" src="./holocrones/guild/warnings/component.js"></script>
 </head>
+
 <body>
 
 <header id="index-dynamic-header">
@@ -19,7 +24,7 @@
 <main>
   <holocron-guild-rules></holocron-guild-rules>
   <holocron-guild-goals></holocron-guild-goals>
-    <div id="holocron-warnings"></div>
+  <holocron-guild-warnings></holocron-guild-warnings>
     <div id="guild-players-data"></div>
 </main>
 
@@ -29,14 +34,5 @@
 </footer>
 
 </body>
-
-<script
-    type="module"
-    src="./holocrones/guild/rules/component.js">
-</script>
-<script
-    type="module"
-    src="./holocrones/guild/goals/component.js">
-</script>
 
 </html>

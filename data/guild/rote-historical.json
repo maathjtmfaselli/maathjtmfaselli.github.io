@@ -7,25 +7,25 @@
       "stars": "",
       "noDesplegados": "/////",
       "pelotones": "/54",
-      "reva": "x/x/25",
-      "mandalor": "x/x/28",
       "dathomir": "x/x/9",
+      "reva": "x/x/25",
+      "mandalor": "x/x/33",
       "kashyyyk": "x/x/3",
       "zeffo": "x/x/35",
-      "corellia": "x/x/11"
+      "corellia": "x/x/13"
     },{
       "date": "11/05/2026",
-      "status": "in progress",
+      "status": "completed",
       "pg": "588M",
-      "stars": "",
-      "noDesplegados": "/////",
-      "pelotones": "/54",
-      "reva": "x/x/25",
-      "mandalor": "x/x/28",
-      "dathomir": "x/x/9",
-      "kashyyyk": "x/x/3",
-      "zeffo": "x/x/35",
-      "corellia": "x/x/11"
+      "stars": "33",
+      "noDesplegados": "-/92/11/79/68/-",
+      "pelotones": "54/54",
+      "dathomir": "3/6/9",
+      "reva": "19/24/25",
+      "mandalor": "21/31/33",
+      "kashyyyk": "1/1/3",
+      "zeffo": "16/29/35",
+      "corellia": "9/12/13"
     },{
       "date": "27/04/2026",
       "status": "completed",

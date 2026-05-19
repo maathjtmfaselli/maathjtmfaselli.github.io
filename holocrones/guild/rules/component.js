@@ -40,7 +40,4 @@ class GuildRulesHolocron extends HTMLElement {
   }
 }
 
-customElements.define(
-  "holocron-guild-rules",
-  GuildRulesHolocron
-);
+customElements.define("holocron-guild-rules", GuildRulesHolocron);

@@ -2,8 +2,27 @@ import { loadCsv } from "./csv.service.js";
 
 export class Order66Service {
 
+  constructor() {
+    this._cache = null;
+    this._promise = null;
+  }
+
   async loadHistoricalData() {
-    return await loadCsv("/data/guild/order66-historical.csv");
+    if (this._cache) {
+      return this._cache;
+    }
+    if (this._promise) {
+      return this._promise;
+    }
+
+    this._promise = loadCsv("/data/guild/order66-historical.csv")
+      .then(data => {
+        this._cache = data;
+        this._promise = null;
+        return data;
+      });
+
+    return this._promise;
   }
 
   getDateColumns(rows) {
@@ -11,13 +30,28 @@ export class Order66Service {
       .filter(k => k !== "Jugador");
   }
 
-  getPlayerMaxScore(player) {
-    return Math.max(
-      ...Object.entries(player)
-        .filter(([k]) => k !== "Jugador")
-        .map(([, v]) => Number(v) || 0)
-    );
+  getMemberMaxScore(playerName) {
+    if (!playerName || !Object.entries(playerName)) {
+      return 0;
+    }
+    const values = Object.entries(playerName)
+        .filter(([key]) =>
+          key !== "Jugador"
+        )
+        .map(([, value]) =>
+          Number(value) || 0
+        );
+
+    return Math.max(...values);
   }
+
+//  getMemberMaxScore(playerName) {
+//    return Math.max(
+//      ...Object.entries(playerName)
+//        .filter(([k]) => k !== "Jugador")
+//        .map(([, v]) => Number(v) || 0)
+//    );
+//  }
 
 //  getGuildMaxScore(rows) {
 //    const dates = this.getDateColumns(rows);
@@ -41,7 +75,7 @@ export class Order66Service {
 
     // 1. calcular máximo individual de cada jugador
     const playerMaxes = rows.map(player =>
-      this.getPlayerMaxScore(player)
+      this.getMemberMaxScore(player)
     );
 
     // 2. suma total del mejor caso
@@ -54,7 +88,7 @@ export class Order66Service {
   }
 
   getPlayerRank(player) {
-    const maxScore = this.getPlayerMaxScore(player);
+    const maxScore = this.getMemberMaxScore(player);
     if (maxScore >= 7200) {
       return "grand-master";
     } else if (maxScore >= 3000) {

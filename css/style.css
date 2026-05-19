@@ -157,7 +157,7 @@ progress::-moz-progress-bar     { background:#27ae60; }
 .progress-wrapper {
   position: relative;
   font-size: 1.5em;
-  flex: 1 1 150px;
+/*  flex: 1 1 150px; */
 }
 .progress-wrapper .progress-bar {
   width: 100%;
@@ -282,7 +282,6 @@ ol {
   width: 90%;
 }
 .player-badges {
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 0.5rem;
