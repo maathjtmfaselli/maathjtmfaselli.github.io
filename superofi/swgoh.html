@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>SWGOH Admin</title>
+  <style>
+
+    body {
+      background: #111827;
+      color: white;
+      font-family: Arial;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 24px;
+    }
+
+    button {
+      padding: 10px 16px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      border: none;
+      border-radius: 6px;
+      background: #2563eb;
+      color: white;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    .console {
+      background: #0f172a;
+      border-radius: 8px;
+      padding: 16px;
+      height: 300px;
+      overflow: auto;
+      margin-top: 20px;
+      font-family: monospace;
+      white-space: pre-wrap;
+    }
+
+    .success {
+      color: #22c55e;
+    }
+
+    .error {
+      color: #ef4444;
+    }
+
+    .info {
+      color: #93c5fd;
+    }
+
+  </style>
+</head>
+<body>
+<h1>SWGOH Guild Admin</h1>
+
+<button id="generateBtn">Generate Guild Data</button>
+<button id="downloadRawBtn" disabled>Download Raw JSON</button>
+<button id="downloadProcessedBtn" disabled>Download Processed JSON</button>
+
+<div id="console" class="console"></div>
+
+<script type="module">
+  import {
+    loadCsv
+  } from "../services/csv.service.js";
+  import {
+    fetchPlayer,
+    extractUnits,
+    processPlayer
+  } from "../services/swgoh.service.js";
+
+  const consoleEl = document.getElementById("console");
+  const generateBtn = document.getElementById("generateBtn");
+  const downloadRawBtn = document.getElementById("downloadRawBtn");
+  const downloadProcessedBtn = document.getElementById("downloadProcessedBtn");
+
+  let rawOutput = null;
+  let processedOutput = null;
+
+  function log(message, type = "info") {
+    const line = document.createElement("div");
+    line.className = type;
+    line.textContent = `[${type.toUpperCase()}] ${message}`;
+
+    consoleEl.appendChild(line);
+    consoleEl.scrollTop = consoleEl.scrollHeight;
+  }
+
+  function downloadFile(filename,data) {
+    const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = filename;
+    a.click();
+
+    URL.revokeObjectURL(url);
+  }
+
+  async function generateGuildData() {
+    consoleEl.innerHTML = "";
+
+    log("Loading guild members CSV...");
+
+    const guildMembers = await loadCsv("../data/guild/guild-members.csv");
+
+    log(
+      `${guildMembers.length} guild members loaded`,
+      "success"
+    );
+
+    const rawPlayers = [];
+
+    for (const member of guildMembers) {
+      try {
+        log(`Fetching ${member.name}...`);
+
+        const playerData = await fetchPlayer(member.allyCode);
+
+        rawPlayers.push({
+          name: member.name,
+          allyCode: member.allyCode,
+          units: extractUnits(playerData)
+        });
+
+        log(
+          `${member.name} fetched successfully`,
+          "success"
+        );
+
+      } catch (error) {
+        log(
+          `${member.name} failed: ${error.message}`,
+          "error"
+        );
+      }
+    }
+
+    rawOutput = {
+      updated: new Date().toISOString(),
+      members: rawPlayers
+    };
+
+    processedOutput = {
+      updated: new Date().toISOString(),
+      members: rawPlayers.map(processPlayer)
+    };
+
+    log(
+      `Generated ${rawPlayers.length} players`,
+      "success"
+    );
+
+    downloadRawBtn.disabled = false;
+    downloadProcessedBtn.disabled = false;
+  }
+
+  generateBtn.addEventListener(
+    "click",
+    generateGuildData
+  );
+
+  downloadRawBtn.addEventListener(
+    "click",
+    () => {
+      downloadFile(
+        "guild-members-raw-data.json",
+        rawOutput
+      );
+    }
+  );
+
+  downloadProcessedBtn.addEventListener(
+    "click",
+    () => {
+      downloadFile(
+        "guild-members-processed-data.json",
+        processedOutput
+      );
+    }
+  );
+</script>
+
+</body>
+</html>

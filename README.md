@@ -62,13 +62,25 @@ Datos dinámicos que reflejan el estado actual del gremio:
 - Progreso y estadísticas
 - Objetivos y logros
 
+## 📚 Documentación
+
+- **[Architecture Decision Records](/docs/adr/)** - Decisiones arquitectónicas documentadas
+
 ## 🤝 Cómo Contribuir
 
 Ver [CONTRIBUTING.md](CONTRIBUTING.md)
 
-## 📚 Documentación
+## Guild Data update workflow
 
-- **[Architecture Decision Records](/docs/adr/)** - Decisiones arquitectónicas documentadas
+This project originally included an automated GitHub Actions workflow (see `.github/workflows/update-guild-data.yml.disabled`) to periodically use a JS script (see `scripts/update-guild-data.js.disabled`) to fetch guild player data directly from the SWGOH.GG API and generate the JSON data files used by the site.
+
+However, SWGOH.GG currently blocks requests coming from GitHub Actions runners with HTTP 403 responses, even though the same requests work correctly from a regular browser session.
+
+Because of this limitation:
+
+* The GitHub Actions workflow has been intentionally disabled.
+* The JS update script is currently kept for reference purposes only.
+* Guild data is currently generated manually through the browser-based `superofi/swgoh.html` tool which reads the list of ally codes of guild members from `data/guild/guild-members.csv`.
 
 ## 🔗 Enlaces
 
