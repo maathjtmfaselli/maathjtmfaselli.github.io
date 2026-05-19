@@ -1,16 +1,26 @@
 export class RoteService {
 
-  async loadData() {
+  async loadGuildHistoricalData() {
     const res = await fetch("../data/guild/rote-historical.json");
 
     if (!res.ok) {
-      throw new Error("Failed to load data");
+      throw new Error("Failed to load guild historical data");
     }
 
     return res.json();
   }
 
-  validate(data) {
+  async loadProcessedGuildData() {
+    const res = await fetch("../data/guild/guild-members-processed-data.json");
+
+    if (!res.ok) {
+      throw new Error("Failed to load processed guild data");
+    }
+
+    return res.json();
+  }
+
+  validateGuildHistorical(data) {
     if (!data?.historicalResults || !Array.isArray(data.historicalResults)) {
       throw new Error("Invalid structure");
     }
@@ -51,11 +61,11 @@ export class RoteService {
   };
 
   async getLatestMetrics() {
-    const data = await this.loadData();
+    const guildHistoricalData = await this.loadGuildHistoricalData();
+    this.validateGuildHistorical(guildHistoricalData);
+    const latest = this.getLatestCompletedEvent(guildHistoricalData);
 
-    this.validate(data);
-
-    const latest = this.getLatestCompletedEvent(data);
+    const processedGuildData = await this.loadProcessedGuildData();
 
     return {
       date: latest.date,
@@ -64,11 +74,19 @@ export class RoteService {
 //      pgUndeployed: latest.pgUndeployed,
 //      ops: latest.ops,
       corellia: this.safeParse(latest.corellia),
-      zeffo: this.safeParse(latest.zeffo),
       kashyyyk: this.safeParse(latest.kashyyyk),
       dathomir: this.safeParse(latest.dathomir),
-      mandalor: this.safeParse(latest.mandalor),
       reva: this.safeParse(latest.reva),
+      zeffo: {
+        attempted: this.safeParse(latest.zeffo).attempted,
+        completed: this.safeParse(latest.zeffo).completed,
+        eligible: processedGuildData.members.filter( p => p.canDoBracca ).length
+      },
+      mandalor: {
+        attempted: this.safeParse(latest.mandalor).attempted,
+        completed: this.safeParse(latest.mandalor).completed,
+        eligible: processedGuildData.members.filter( p => p.canDoTatooine ).length
+      },
     };
   }
 }

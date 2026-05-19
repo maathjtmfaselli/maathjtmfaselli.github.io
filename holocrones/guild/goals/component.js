@@ -65,9 +65,6 @@ class GuildPrioritiesHolocron extends HTMLElement {
     el.dataset.completed = data.completed;
     el.dataset.attempted = data.attempted;
     el.dataset.eligible = data.eligible;
-
-    // regla de negocio UI (si existe)
-    el.dataset.target = data.eligible;
   }
 
   afterRender() {
