@@ -1,17 +1,19 @@
-# ADR-0001 — Static GitHub Pages Hosting
+# ADR-0001 — Hosting en GitHub Pages (Datos Estáticos)
 
-## Status
-Accepted
+## Estado
+Aceptado
 
-## Context
-El proyecto debe funcionar sin infraestructura backend propia.
+## Contexto
+- La aplicación no tiene un servidor propio (backend)
+- GitHub Pages es un servicio gratuito de GitHub
+- GitHub Pages solo puede mostrar archivos estáticos (HTML, CSS, JavaScript, JSON)
 
-## Decision
+## Decisión
 - El repositorio de código fuente se alojará en GitHub.
 - La aplicación se desplegará completamente sobre GitHub Pages.
 
-## Consequences
-- arquitectura frontend-only
+## Consecuencias
 - hosting gratuito
-- sin lógica server-side
-- limitaciones de autenticación y persistencia
+- arquitectura frontend-only: sin lógica server-side
+- limitaciones de autenticación y persistencia de datos
+- arquitectura frontend-only

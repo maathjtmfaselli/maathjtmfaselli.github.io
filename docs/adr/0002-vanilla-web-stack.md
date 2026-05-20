@@ -1,12 +1,13 @@
-# ADR-0002 — Vanilla Web Stack
+# ADR-0002 — Vanilla Web Stack (No Framework Policy)
 
-## Status
-Accepted
+## Estado
+Aceptado
 
-## Context
-Se busca simplicidad, mantenibilidad y bajo peso.
+## Contexto
+- Se prioriza la simplicidad, mantenibilidad y bajo peso.
+- Los frameworks introducen complejidad y acoplamiento innecesario.
 
-## Decision
+## Decisión
 El proyecto usará exclusivamente:
 - HTML
 - CSS
@@ -14,7 +15,8 @@ El proyecto usará exclusivamente:
 
 Sin frameworks pesados ni librerías externas.
 
-## Consequences
+## Consecuencias
 - menor complejidad
 - bundle mínimo
+- menor lock-in tecnológico
 - dependencia de APIs web estándar

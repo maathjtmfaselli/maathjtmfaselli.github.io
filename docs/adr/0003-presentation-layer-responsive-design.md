@@ -1,14 +1,14 @@
-# ADR-0005 - Presentation Layer - Responsive Design
+# ADR-0003 - Presentation Layer - Responsive Design
 
-## Status
-Accepted
+## Estado
+Aceptado
 
-## Context
+## Contexto
 La aplicación se utilizará frecuentemente desde móviles.
 
-## Decision
+## Decisión
 Diseño responsive obligatorio.
 
-## Consequences
+## Consecuencias
 - mejor experiencia móvil
 - necesidad de testing multidispositivo

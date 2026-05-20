@@ -1,11 +1,9 @@
-# ADR-0006 — Architecture - Holocron module as reusable Web Component
+# ADR-0004 — Architecture - Holocron module as reusable Web Component
 
-## Status
-Accepted
+## Estado
+Aceptado
 
----
-
-# Context
+## Contexto
 
 La aplicación requiere reutilizar funcionalidad entre múltiples páginas dentro de una arquitectura frontend-first sin backend propio.
 
@@ -32,9 +30,7 @@ Sin embargo, esta aproximación generó problemas de:
 
 La evolución natural del proyecto llevó a adoptar el modelo de **Web Components nativos** como mecanismo de componentización.
 
----
-
-# Decision
+## Decisión
 
 La funcionalidad se implementará mediante componentes reutilizables llamados **holocrones**.
 
@@ -45,9 +41,9 @@ Cada holocrón será un **Web Component nativo** basado en:
 
 Los holocrones se organizarán como módulos autocontenidos independientes.
 
----
+## Arquitectura Base
 
-# Definición de Holocrón
+### Definición de Holocrón
 
 Un holocrón es un componente web reutilizable que encapsula:
 
@@ -67,11 +63,7 @@ Cada holocrón debe:
 - minimizar dependencias externas
 - mantener aislamiento funcional y visual
 
----
-
-# Arquitectura Base
-
-## Estructura estándar
+### Estructura estándar
 
 ```text
 /holocrones/

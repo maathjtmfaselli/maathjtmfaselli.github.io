@@ -6,12 +6,12 @@
 
 Este proyecto [sigue una filosofía](/docs/adr/) **frontend-first** e **ia-first**. Está diseñado para funcionar completamente sobre **GitHub Pages**, sin backend propio.
 
-1. **[ADR-0001: Static GitHub Pages Hosting](/docs/adr/0001-static-github-pages.md)** - Arquitectura frontend-only sin infraestructura backend
-2. **[ADR-0002: Vanilla Web Stack](/docs/adr/0002-vanilla-web-stack.md)** - Tecnologías web nativas (HTML, CSS, JavaScript)
-3. **[ADR-0003: No Framework Policy](/docs/adr/0003-no-framework-policy.md)** - Sin frameworks pesados ni librerías externas
-4. **[ADR-0004: Frontend Data Layer](/docs/adr/0004-data-layer-frontendfirst.md)** - Toda la información consumida por la aplicación debe obtenerse desde una capa de datos estática servida por GitHub Pages.
-5. **[ADR-0005: Presentation Layer - Responsive Design](/docs/adr/0005-presentation-layer-responsive-design.md)** - Diseño responsive para todos los dispositivos
-6. **[ADR-0006: Architecture - Holocron module as reusable Component](/docs/adr/0006-architecture-holocron-as-module.md)** - Componentes autocontenidos reutilizables
+1. **[ADR-0001: Hosting en GitHub Pages (Datos Estáticos)](/docs/adr/0001-static-github-pages.md)** - Arquitectura frontend-only sin infraestructura backend
+2. **[ADR-0002: Vanilla Web Stack (No Framework Policy)](/docs/adr/0002-vanilla-web-stack.md)** - Tecnologías web nativas (HTML, CSS, JavaScript). Sin frameworks pesados ni librerías externas
+3. **[ADR-0003: Presentation Layer - Responsive Design](/docs/adr/0003-presentation-layer-responsive-design.md)** - Diseño responsive para todos los dispositivos
+4. **[ADR-0004: Holocron module as reusable Component](/docs/adr/0004-holocron-as-module.md)** - Componentes autocontenidos reutilizables
+5. **[ADR-0005: Data Layer - Static data](/docs/adr/0005-data-layer-static.md)** - Toda la información consumida por la aplicación debe obtenerse desde una capa de datos estática servida por GitHub Pages.
+6. **[ADR-0006: Data Layer - DAO con Cache](/docs/adr/0006-data-layer-dao-cache.md)** - Acceso a Datos a través de un DAO y Cacheo de datos
 
 ## 🛠️ Stack Tecnológico
 
@@ -24,19 +24,19 @@ Utilizamos solo tecnologías web fundamentales, tal como se define en [ADR-0002]
 ## 📁 Estructura del Proyecto
 
 ```
-├── index.html              # Página principal
 ├── css/                    # Hojas de estilos
 ├── js/                     # Scripts de JavaScript
 ├── data/                   # Datos del gremio y maestros
 │   ├── master/             # Datos maestros (estáticos)
 │   └── guild/              # Datos del gremio (dinámicos)
+├── services/               # Servicios de JavaScript
 ├── holocrones/             # Componentes autocontenidos
-│   ├── guide-1.html
-│   ├── guide-2.html
+│   ├── rules
+│   ├── goals
 │   └── ...
 ├── docs/
 │   └── adr/                # Architecture Decision Records
-├── images/                 # Recursos gráficos
+├── index.html              # Página principal
 └── README.md               # Este archivo
 ```
 
