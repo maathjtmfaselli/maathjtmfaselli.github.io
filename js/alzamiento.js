@@ -71,7 +71,7 @@ async function loadCharacterData() {
 
 async function loadHistoricalResults() {
   try {
-    const response = await fetch('../data/guild/rote-historical-results.json');
+    const response = await fetch('../data/guild/guild-rote-historical-results.json');
     const data = await response.json();
 
     const tableBody = document.querySelector("#resultados-table tbody");

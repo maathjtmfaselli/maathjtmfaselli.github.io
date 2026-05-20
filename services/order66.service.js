@@ -15,7 +15,7 @@ export class Order66Service {
       return this._promise;
     }
 
-    this._promise = loadCsv("/data/guild/order66-historical.csv")
+    this._promise = loadCsv("/data/guild/guild-raid-order66-historical.csv")
       .then(data => {
         this._cache = data;
         this._promise = null;

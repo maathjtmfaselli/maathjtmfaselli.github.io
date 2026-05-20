@@ -42,7 +42,7 @@ Utilizamos solo tecnologías web fundamentales, tal como se define en [ADR-0002]
 
 ## 🎓 Holocrones
 
-Los **holocrones** son componentes autocontenidos que implementan la [Arquitectura de Holocrones (ADR-0006)](/docs/adr/0006-holocron-architecture-single.md):
+Los **holocrones** son componentes autocontenidos que implementan la [Arquitectura de Holocrones (ADR-0004)](/docs/adr/0006-holocron-architecture-single.md):
 
 - 📚 Consultables individualmente en la biblioteca de holocrones
 - 🔗 Incrustables en otras páginas mediante iframes

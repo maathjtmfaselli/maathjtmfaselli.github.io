@@ -1,7 +1,7 @@
 export class RoteService {
 
   async loadGuildHistoricalData() {
-    const res = await fetch("../data/guild/rote-historical.json");
+    const res = await fetch("../data/guild/guild-rote-historical.json");
 
     if (!res.ok) {
       throw new Error("Failed to load guild historical data");

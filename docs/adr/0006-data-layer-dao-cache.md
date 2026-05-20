@@ -40,7 +40,7 @@ class RoteHistoricalService {
     if (this._loadingPromise) return this._loadingPromise;
 
     // 3. Primera carga
-    this._loadingPromise = fetch("../data/guild/rote-historical.json")
+    this._loadingPromise = fetch("../data/guild/guild-rote-historical.json")
       .then(res => {
         if (!res.ok) throw new Error("Failed to load data");
         return res.json();

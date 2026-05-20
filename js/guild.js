@@ -40,7 +40,7 @@ async function loadGuildActivityData() {
   const files = [
     { file: '../data/guild/guild-pg.csv', key: 'PG' },
     { file: '../data/guild/guild-raid-tokens.csv', key: 'Raid Tokens' },
-    { file: '../data/guild/guild-raid.csv', key: 'Raid' },
+    { file: '../data/guild/guild-naboo-historical.csv', key: 'Raid' },
     { file: '../data/guild/guild-rote.csv', key: 'ROTE' },
   ];
 
