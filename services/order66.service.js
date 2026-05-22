@@ -19,24 +19,11 @@ export class Order66Service {
     if (!memberName || !Object.entries(memberName)) {
       return 0;
     }
-    const values = Object.entries(memberName)
-        .filter(([key]) =>
-          key !== "Jugador"
-        )
-        .map(([, value]) =>
-          Number(value) || 0
-        );
-
-    return Math.max(...values);
+    return Math.max(
+      ...Object.entries(memberName)
+          .filter(([key]) => key !== "Jugador")
+          .map(([, value]) => Number(value) || 0));
   }
-
-//  getMaxScoreByMemberName(playerName) {
-//    return Math.max(
-//      ...Object.entries(playerName)
-//        .filter(([k]) => k !== "Jugador")
-//        .map(([, v]) => Number(v) || 0)
-//    );
-//  }
 
 //  getGuildMaxScore(rows) {
 //    const dates = this.getDateColumns(rows);

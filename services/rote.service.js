@@ -1,19 +1,11 @@
 import { GuildRoteHistoricalDao } from "./dao/guild-rote-historical.dao.js";
+import { GuildMembersProcessedDataDao } from "./dao/guild-members-processed-data.dao.js";
 
 export class RoteService {
 
   constructor() {
     this.guildRoteHistoricalDao = new GuildRoteHistoricalDao();
-  }
-
-  async loadProcessedGuildData() {
-    const res = await fetch("../data/guild/guild-members-processed-data.json");
-
-    if (!res.ok) {
-      throw new Error("Failed to load processed guild data");
-    }
-
-    return res.json();
+    this.guildMembersProcessedDataDao = new GuildMembersProcessedDataDao();
   }
 
   validateGuildHistorical(data) {
@@ -61,7 +53,7 @@ export class RoteService {
     this.validateGuildHistorical(guildHistoricalData);
     const latest = this.getLatestCompletedEvent(guildHistoricalData);
 
-    const processedGuildData = await this.loadProcessedGuildData();
+    const processedGuildData = await this.guildMembersProcessedDataDao.loadGuildMembersProcessedData();
 
     return {
       date: latest.date,

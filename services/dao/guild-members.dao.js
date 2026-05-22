@@ -1,7 +1,7 @@
 import { BaseDao } from "./base.dao.js";
 import { loadCsv } from "../csv.service.js";
 
-export class GuildOrder66HistoricalDao extends BaseDao {
+export class GuildMembersDao extends BaseDao {
   constructor() {
     super(
       "/data/guild/guild-members.csv",
@@ -9,7 +9,7 @@ export class GuildOrder66HistoricalDao extends BaseDao {
     );
   }
 
-  async loadHistoricalData() {
+  async loadMembers() {
     return this.loadData();
   }
 }

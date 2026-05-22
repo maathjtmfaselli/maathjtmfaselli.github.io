@@ -1,24 +1,16 @@
 import { Order66Service } from "./order66.service.js";
+import { GuildMembersProcessedDataDao } from "./dao/guild-members-processed-data.dao.js";
 
 export class GuildWarningsService {
 
   constructor() {
     this.order66Service = new Order66Service();
-  }
-
-  async loadProcessedGuildData() {
-    const res = await fetch("../data/guild/guild-members-processed-data.json");
-
-    if (!res.ok) {
-      throw new Error("Failed to load processed guild data");
-    }
-
-    return res.json();
+    this.guildMembersProcessedDataDao = new GuildMembersProcessedDataDao();
   }
 
   async getWarnings() {
     const order66HistoricalData = await this.order66Service.loadHistoricalData();
-    const processedGuildData = await this.loadProcessedGuildData();
+    const processedGuildData = await this.guildMembersProcessedDataDao.loadGuildMembersProcessedData();
 
     return processedGuildData.members
       .map(member => {
