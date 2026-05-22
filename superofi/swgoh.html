@@ -71,7 +71,8 @@
   import {
     fetchPlayer,
     extractUnits,
-    processPlayer
+    processPlayer,
+    aggregateGuildStats
   } from "../services/swgoh.service.js";
 
   const guildMembersDao = new GuildMembersDao();
@@ -148,9 +149,13 @@
       members: rawPlayers
     };
 
+    const processedPlayers = rawPlayers.map(processPlayer);
+    const processedGuild = aggregateGuildStats(processedPlayers);
+
     processedOutput = {
       updated: new Date().toISOString(),
-      members: rawPlayers.map(processPlayer)
+      ...processedGuild,
+      members: processedPlayers
     };
 
     log(

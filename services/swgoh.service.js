@@ -19,6 +19,38 @@ export function extractUnits(playerData) {
   return units;
 }
 
+export function aggregateGuildStats(members) {
+  const stats = {
+    countCanDoCorellia: 0,
+    countCanDoBracca: 0,
+    countCanDoDathomir: 0,
+    countCanDoReva: 0,
+    countCanDoMandalor: 0,
+    countCanDoKashyyyk: 0,
+    countCanDoZeffo: 0,
+    countCanDoTatooine: 0,
+    countCanDoHaven: 0,
+    countCanDoKessel: 0,
+    totalMembers: members.length,
+    members: members
+  };
+
+  members.forEach(member => {
+    if (member.canDoCorellia) stats.countCanDoCorellia++;
+    if (member.canDoBracca) stats.countCanDoBracca++;
+    if (member.canDoDathomir) stats.countCanDoDathomir++;
+    if (member.canDoReva) stats.countCanDoReva++;
+    if (member.canDoMandalor) stats.countCanDoMandalor++;
+    if (member.canDoKashyyyk) stats.countCanDoKashyyyk++;
+    if (member.canDoZeffo) stats.countCanDoZeffo++;
+    if (member.canDoTatooine) stats.countCanDoTatooine++;
+    if (member.canDoHaven) stats.countCanDoHaven++;
+    if (member.canDoKessel) stats.countCanDoKessel++;
+  });
+
+  return stats;
+}
+
 export function processPlayer(rawPlayer) {
   const units = rawPlayer.units;
   return {
