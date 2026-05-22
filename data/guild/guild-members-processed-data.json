@@ -1,305 +1,605 @@
 {
-  "updated": "2026-05-19T13:53:26.921Z",
+  "updated": "2026-05-22T18:22:21.116Z",
   "members": [
     {
       "name": "Maath JTM Faselli",
       "allyCode": "637461253",
+      "canDoCorellia": true,
       "canDoBracca": true,
-      "canDoTatooine": true
+      "canDoDathomir": true,
+      "canDoKashyyyk": true,
+      "canDoTatooine": true,
+      "canDoReva": true,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "Garrick",
       "allyCode": "585371488",
+      "canDoCorellia": false,
       "canDoBracca": true,
-      "canDoTatooine": true
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": true,
+      "canDoReva": true,
+      "canDoHaven": true,
+      "canDoKessel": false
     },
     {
       "name": "PequeñoPadawan",
       "allyCode": "985613157",
+      "canDoCorellia": true,
       "canDoBracca": true,
-      "canDoTatooine": true
+      "canDoDathomir": true,
+      "canDoKashyyyk": false,
+      "canDoTatooine": true,
+      "canDoReva": false,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "Gita",
       "allyCode": "227523555",
+      "canDoCorellia": true,
       "canDoBracca": true,
-      "canDoTatooine": true
+      "canDoDathomir": true,
+      "canDoKashyyyk": true,
+      "canDoTatooine": true,
+      "canDoReva": true,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "Viula Dourshe",
       "allyCode": "342742489",
+      "canDoCorellia": false,
       "canDoBracca": true,
-      "canDoTatooine": true
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": true,
+      "canDoReva": true,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "GRANJEDI Tito1",
       "allyCode": "724823392",
+      "canDoCorellia": false,
       "canDoBracca": true,
-      "canDoTatooine": false
+      "canDoDathomir": true,
+      "canDoKashyyyk": false,
+      "canDoTatooine": false,
+      "canDoReva": true,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "Ben",
       "allyCode": "522319923",
+      "canDoCorellia": false,
       "canDoBracca": true,
-      "canDoTatooine": true
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": true,
+      "canDoReva": false,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "Temnyy",
       "allyCode": "946866486",
+      "canDoCorellia": false,
       "canDoBracca": true,
-      "canDoTatooine": true
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": true,
+      "canDoReva": false,
+      "canDoHaven": true,
+      "canDoKessel": false
     },
     {
       "name": "VIRUS",
       "allyCode": "264973279",
+      "canDoCorellia": false,
       "canDoBracca": true,
-      "canDoTatooine": false
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": false,
+      "canDoReva": false,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "Kid Danger",
       "allyCode": "837885513",
+      "canDoCorellia": false,
       "canDoBracca": true,
-      "canDoTatooine": true
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": true,
+      "canDoReva": false,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "Mik Bat",
       "allyCode": "861756984",
+      "canDoCorellia": true,
       "canDoBracca": false,
-      "canDoTatooine": false
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": false,
+      "canDoReva": true,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "Mou topor",
       "allyCode": "299287414",
+      "canDoCorellia": false,
       "canDoBracca": true,
-      "canDoTatooine": true
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": true,
+      "canDoReva": true,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "JediSevillano",
       "allyCode": "774372824",
+      "canDoCorellia": false,
       "canDoBracca": true,
-      "canDoTatooine": false
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": false,
+      "canDoReva": false,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "R3CO",
       "allyCode": "715639263",
+      "canDoCorellia": false,
       "canDoBracca": true,
-      "canDoTatooine": true
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": true,
+      "canDoReva": false,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "Mhann Uhdea",
       "allyCode": "835432121",
+      "canDoCorellia": true,
       "canDoBracca": true,
-      "canDoTatooine": true
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": true,
+      "canDoReva": true,
+      "canDoHaven": true,
+      "canDoKessel": false
     },
     {
       "name": "castortroy",
       "allyCode": "885444487",
+      "canDoCorellia": false,
       "canDoBracca": true,
-      "canDoTatooine": true
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": true,
+      "canDoReva": true,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "Kaneris",
       "allyCode": "667229831",
+      "canDoCorellia": true,
       "canDoBracca": false,
-      "canDoTatooine": false
+      "canDoDathomir": true,
+      "canDoKashyyyk": false,
+      "canDoTatooine": false,
+      "canDoReva": true,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "Cente",
       "allyCode": "771367346",
+      "canDoCorellia": true,
       "canDoBracca": true,
-      "canDoTatooine": true
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": true,
+      "canDoReva": true,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "Last Order",
       "allyCode": "996165918",
+      "canDoCorellia": true,
       "canDoBracca": true,
-      "canDoTatooine": true
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": true,
+      "canDoReva": true,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "YEPISTARS",
       "allyCode": "979175733",
+      "canDoCorellia": false,
       "canDoBracca": true,
-      "canDoTatooine": true
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": true,
+      "canDoReva": true,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "Blas",
       "allyCode": "276973635",
+      "canDoCorellia": false,
       "canDoBracca": true,
-      "canDoTatooine": false
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": false,
+      "canDoReva": true,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "Was",
       "allyCode": "766931712",
+      "canDoCorellia": false,
       "canDoBracca": true,
-      "canDoTatooine": true
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": true,
+      "canDoReva": false,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "Linde Forklift",
       "allyCode": "371172439",
+      "canDoCorellia": true,
       "canDoBracca": true,
-      "canDoTatooine": true
+      "canDoDathomir": false,
+      "canDoKashyyyk": true,
+      "canDoTatooine": true,
+      "canDoReva": false,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "josmartini",
       "allyCode": "585371488",
+      "canDoCorellia": false,
       "canDoBracca": true,
-      "canDoTatooine": true
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": true,
+      "canDoReva": true,
+      "canDoHaven": true,
+      "canDoKessel": false
     },
     {
       "name": "Cal Kestis",
       "allyCode": "629978971",
+      "canDoCorellia": true,
       "canDoBracca": true,
-      "canDoTatooine": false
+      "canDoDathomir": true,
+      "canDoKashyyyk": false,
+      "canDoTatooine": false,
+      "canDoReva": true,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "Dark Iskender",
       "allyCode": "375932863",
+      "canDoCorellia": true,
       "canDoBracca": false,
-      "canDoTatooine": true
+      "canDoDathomir": true,
+      "canDoKashyyyk": false,
+      "canDoTatooine": true,
+      "canDoReva": true,
+      "canDoHaven": true,
+      "canDoKessel": false
     },
     {
       "name": "Remus",
       "allyCode": "162716757",
+      "canDoCorellia": true,
       "canDoBracca": true,
-      "canDoTatooine": false
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": false,
+      "canDoReva": true,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "Nakillo",
       "allyCode": "181362821",
+      "canDoCorellia": false,
       "canDoBracca": false,
-      "canDoTatooine": true
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": true,
+      "canDoReva": false,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "Nami88",
       "allyCode": "796419292",
+      "canDoCorellia": false,
       "canDoBracca": true,
-      "canDoTatooine": false
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": true,
+      "canDoReva": true,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "Mariskal101DA",
       "allyCode": "555458622",
+      "canDoCorellia": false,
       "canDoBracca": false,
-      "canDoTatooine": false
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": false,
+      "canDoReva": true,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "Peleas",
       "allyCode": "557222937",
+      "canDoCorellia": false,
       "canDoBracca": true,
-      "canDoTatooine": false
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": false,
+      "canDoReva": false,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "Daimon Tlan",
       "allyCode": "876927223",
+      "canDoCorellia": false,
       "canDoBracca": true,
-      "canDoTatooine": true
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": true,
+      "canDoReva": false,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "ALEX TANO",
       "allyCode": "155938157",
+      "canDoCorellia": false,
       "canDoBracca": true,
-      "canDoTatooine": true
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": true,
+      "canDoReva": false,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "Biobof",
       "allyCode": "348274113",
+      "canDoCorellia": true,
       "canDoBracca": true,
-      "canDoTatooine": true
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": true,
+      "canDoReva": true,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "Chinadapowers",
       "allyCode": "386519315",
+      "canDoCorellia": false,
       "canDoBracca": false,
-      "canDoTatooine": true
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": true,
+      "canDoReva": true,
+      "canDoHaven": true,
+      "canDoKessel": false
     },
     {
       "name": "technochurchill",
       "allyCode": "371714953",
+      "canDoCorellia": false,
       "canDoBracca": false,
-      "canDoTatooine": true
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": true,
+      "canDoReva": false,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "Yoryino",
       "allyCode": "715772752",
+      "canDoCorellia": false,
       "canDoBracca": true,
-      "canDoTatooine": true
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": true,
+      "canDoReva": false,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "Oldboy",
       "allyCode": "351267229",
+      "canDoCorellia": false,
       "canDoBracca": true,
-      "canDoTatooine": true
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": true,
+      "canDoReva": true,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "Dace Joy",
       "allyCode": "584966117",
+      "canDoCorellia": false,
       "canDoBracca": true,
-      "canDoTatooine": false
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": false,
+      "canDoReva": true,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "Darkguderian",
       "allyCode": "434428673",
+      "canDoCorellia": false,
       "canDoBracca": false,
-      "canDoTatooine": true
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": true,
+      "canDoReva": false,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "in flames / Almax",
       "allyCode": "756338725",
+      "canDoCorellia": false,
       "canDoBracca": true,
-      "canDoTatooine": true
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": true,
+      "canDoReva": false,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "Tantema RayGarnik",
       "allyCode": "167323714",
+      "canDoCorellia": false,
       "canDoBracca": false,
-      "canDoTatooine": false
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": false,
+      "canDoReva": true,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "Dass Jenir",
       "allyCode": "184286541",
+      "canDoCorellia": false,
       "canDoBracca": false,
-      "canDoTatooine": true
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": true,
+      "canDoReva": false,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "Bald Dart",
       "allyCode": "558963774",
+      "canDoCorellia": false,
       "canDoBracca": true,
-      "canDoTatooine": false
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": false,
+      "canDoReva": false,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "Destroner",
       "allyCode": "524982934",
+      "canDoCorellia": false,
       "canDoBracca": false,
-      "canDoTatooine": false
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": false,
+      "canDoReva": false,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "Kairas",
       "allyCode": "798865183",
+      "canDoCorellia": false,
       "canDoBracca": false,
-      "canDoTatooine": true
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": true,
+      "canDoReva": false,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "Hill",
       "allyCode": "162461313",
+      "canDoCorellia": false,
       "canDoBracca": false,
-      "canDoTatooine": false
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": false,
+      "canDoReva": false,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "JokerVerde",
       "allyCode": "793179493",
+      "canDoCorellia": false,
       "canDoBracca": false,
-      "canDoTatooine": true
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": true,
+      "canDoReva": true,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "Céfiro",
       "allyCode": "726289933",
+      "canDoCorellia": false,
       "canDoBracca": false,
-      "canDoTatooine": false
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": false,
+      "canDoReva": true,
+      "canDoHaven": false,
+      "canDoKessel": false
     },
     {
       "name": "Wasnapido SeaWalker",
       "allyCode": "493362915",
+      "canDoCorellia": false,
       "canDoBracca": false,
-      "canDoTatooine": false
+      "canDoDathomir": false,
+      "canDoKashyyyk": false,
+      "canDoTatooine": false,
+      "canDoReva": false,
+      "canDoHaven": false,
+      "canDoKessel": false
     }
   ]
 }

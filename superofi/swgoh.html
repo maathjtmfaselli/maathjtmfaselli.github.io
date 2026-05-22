@@ -109,7 +109,7 @@
 
     log("Loading guild members CSV...");
 
-    const guildMembers = await guildMembersDao.loadGuildMembers();
+    const guildMembers = await guildMembersDao.loadMembers();
 
     log(
       `${guildMembers.length} guild members loaded`,

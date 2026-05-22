@@ -24,7 +24,13 @@ export function processPlayer(rawPlayer) {
   return {
     name: rawPlayer.name,
     allyCode: rawPlayer.allyCode,
+    canDoCorellia: (units["Qi'ra"] || 0) >= 5 && (units["Young Han Solo"] || 0) >= 5,
     canDoBracca: (units["Cere Junda"] || 0) >= 7 && (units["Jedi Knight Cal Kestis"] || 0) >= 7,
-    canDoTatooine: (units["Bo-Katan (Mand'alor)"] || 0) >= 7
+    canDoDathomir: (units["Merrin"] || 0) >= 7,
+    canDoKashyyyk: (units["Saw Gerrera"] || 0) >= 7,
+    canDoTatooine: (units["Bo-Katan (Mand'alor)"] || 0) >= 7,
+    canDoReva: (units["Grand Inquisitor"] || 0) >= 7,
+    canDoHaven: (units["Third Sister"] || 0) >= 8,
+    canDoKessel: (units["Qi'ra"] || 0) >= 8 && (units["L3-37"] || 0) >= 8
   };
 }
