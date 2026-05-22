@@ -1,13 +1,9 @@
+import { GuildRoteHistoricalDao } from "./dao/guild-rote-historical.dao.js";
+
 export class RoteService {
 
-  async loadGuildHistoricalData() {
-    const res = await fetch("../data/guild/guild-rote-historical.json");
-
-    if (!res.ok) {
-      throw new Error("Failed to load guild historical data");
-    }
-
-    return res.json();
+  constructor() {
+    this.guildRoteHistoricalDao = new GuildRoteHistoricalDao();
   }
 
   async loadProcessedGuildData() {
@@ -61,7 +57,7 @@ export class RoteService {
   };
 
   async getLatestMetrics() {
-    const guildHistoricalData = await this.loadGuildHistoricalData();
+    const guildHistoricalData = await this.guildRoteHistoricalDao.loadGuildRoteHistoricalData();
     this.validateGuildHistorical(guildHistoricalData);
     const latest = this.getLatestCompletedEvent(guildHistoricalData);
 

@@ -1,28 +1,13 @@
-import { loadCsv } from "./csv.service.js";
+import { GuildOrder66HistoricalDao } from "./dao/guild-raid-order66-historical.dao.js";
 
 export class Order66Service {
 
   constructor() {
-    this._cache = null;
-    this._promise = null;
+    this.guildOrder66HistoricalDao = new GuildOrder66HistoricalDao();
   }
 
-  async loadHistoricalData() {
-    if (this._cache) {
-      return this._cache;
-    }
-    if (this._promise) {
-      return this._promise;
-    }
-
-    this._promise = loadCsv("/data/guild/guild-raid-order66-historical.csv")
-      .then(data => {
-        this._cache = data;
-        this._promise = null;
-        return data;
-      });
-
-    return this._promise;
+  loadHistoricalData() {
+    return this.guildOrder66HistoricalDao.loadHistoricalData();
   }
 
   getDateColumns(rows) {
@@ -30,11 +15,11 @@ export class Order66Service {
       .filter(k => k !== "Jugador");
   }
 
-  getMemberMaxScore(playerName) {
-    if (!playerName || !Object.entries(playerName)) {
+  getMaxScoreByMemberName(memberName) {
+    if (!memberName || !Object.entries(memberName)) {
       return 0;
     }
-    const values = Object.entries(playerName)
+    const values = Object.entries(memberName)
         .filter(([key]) =>
           key !== "Jugador"
         )
@@ -45,7 +30,7 @@ export class Order66Service {
     return Math.max(...values);
   }
 
-//  getMemberMaxScore(playerName) {
+//  getMaxScoreByMemberName(playerName) {
 //    return Math.max(
 //      ...Object.entries(playerName)
 //        .filter(([k]) => k !== "Jugador")
@@ -75,7 +60,7 @@ export class Order66Service {
 
     // 1. calcular máximo individual de cada jugador
     const playerMaxes = rows.map(player =>
-      this.getMemberMaxScore(player)
+      this.getMaxScoreByMemberName(player)
     );
 
     // 2. suma total del mejor caso
@@ -88,7 +73,7 @@ export class Order66Service {
   }
 
   getPlayerRank(player) {
-    const maxScore = this.getMemberMaxScore(player);
+    const maxScore = this.getMaxScoreByMemberName(player);
     if (maxScore >= 7200) {
       return "grand-master";
     } else if (maxScore >= 3000) {

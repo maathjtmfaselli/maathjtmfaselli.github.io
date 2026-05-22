@@ -22,7 +22,7 @@ export class GuildWarningsService {
 
     return processedGuildData.members
       .map(member => {
-        const order66MaxScore = this.order66Service.getMemberMaxScore(order66HistoricalData.find( row => row.Jugador === member.name ));
+        const order66MaxScore = this.order66Service.getMaxScoreByMemberName(order66HistoricalData.find( row => row.Jugador === member.name ));
         const warning =
           order66MaxScore < 3000
           && !member.canDoBracca
