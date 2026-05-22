@@ -1,33 +1,17 @@
-export class GuildRoteHistoricalDao {
+import { BaseDao } from "./base.dao.js";
 
+export class GuildRoteHistoricalDao extends BaseDao {
   constructor() {
-    this._cache = null;
-    this._promise = null;
+    super(
+      "/data/guild/guild-rote-historical.json",
+      (url) => fetch(url).then(res => {
+        if (!res.ok) throw new Error(`Failed to load ROTE data: ${res.status}`);
+        return res.json();
+      })
+    );
   }
 
   async loadGuildRoteHistoricalData() {
-    if (this._cache) {
-      return this._cache;
-    }
-    if (this._promise) {
-      return this._promise;
-    }
-
-    this._promise = fetch("../data/guild/guild-rote-historical.json")
-      .then(response => {
-        if (!response.ok) {
-          throw new Error("Failed to load guild historical data");
-        }
-
-        return response.json();
-      })
-      .then(data => {
-        this._cache = data;
-        this._promise = null;
-        return data;
-      });
-
-    return this._promise;
+    return this.loadData();
   }
-
 }

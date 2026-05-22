@@ -1,28 +1,15 @@
+import { BaseDao } from "./base.dao.js";
 import { loadCsv } from "../csv.service.js";
 
-export class GuildMembersDao {
-
+export class GuildOrder66HistoricalDao extends BaseDao {
   constructor() {
-    this._cache = null;
-    this._promise = null;
+    super(
+      "/data/guild/guild-members.csv",
+      (url) => loadCsv(url)
+    );
   }
 
-  async loadGuildMembers() {
-    if (this._cache) {
-      return this._cache;
-    }
-    if (this._promise) {
-      return this._promise;
-    }
-
-    this._promise = loadCsv("/data/guild/guild-members.csv")
-      .then(data => {
-        this._cache = data;
-        this._promise = null;
-        return data;
-      });
-
-    return this._promise;
+  async loadHistoricalData() {
+    return this.loadData();
   }
-
 }
