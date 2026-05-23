@@ -1,9 +1,9 @@
-import { GuildOrder66HistoricalDao } from "./dao/guild-raid-order66-historical.dao.js";
+import { RegistryDao } from "./dao/registry.dao.js";
 
 export class Order66Service {
 
   constructor() {
-    this.guildOrder66HistoricalDao = new GuildOrder66HistoricalDao();
+    this.guildOrder66HistoricalDao = RegistryDao.getOrder66();
   }
 
   loadHistoricalData() {

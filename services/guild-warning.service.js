@@ -1,11 +1,11 @@
 import { Order66Service } from "./order66.service.js";
-import { GuildMembersProcessedDataDao } from "./dao/guild-members-processed-data.dao.js";
+import { RegistryDao } from "./dao/registry.dao.js";
 
 export class GuildWarningsService {
 
   constructor() {
     this.order66Service = new Order66Service();
-    this.guildMembersProcessedDataDao = new GuildMembersProcessedDataDao();
+    this.guildMembersProcessedDataDao = RegistryDao.getMembersProcessed();
   }
 
   async getWarnings() {

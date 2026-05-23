@@ -1,7 +1,7 @@
-import { GuildMembersProcessedDataDao } from "./dao/guild-members-processed-data.dao.js";
+import { RegistryDao } from "./dao/registry.dao.js";
 
 export class GuildMembersService {
   constructor() {
-    this.guildMembersProcessedDataDao = new GuildMembersProcessedDataDao();
+    this.guildMembersProcessedDataDao = RegistryDao.getMembersProcessed();
   }
 }

@@ -30,6 +30,7 @@ Utilizamos solo tecnologías web fundamentales, tal como se define en [ADR-0002]
 │   ├── master/             # Datos maestros (estáticos)
 │   └── guild/              # Datos del gremio (dinámicos)
 ├── services/               # Servicios de JavaScript
+│   └── dao/                # Acceso a Datos
 ├── holocrones/             # Componentes autocontenidos
 │   ├── rules
 │   ├── goals

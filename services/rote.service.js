@@ -1,11 +1,10 @@
-import { GuildRoteHistoricalDao } from "./dao/guild-rote-historical.dao.js";
-import { GuildMembersProcessedDataDao } from "./dao/guild-members-processed-data.dao.js";
+import { RegistryDao } from "./dao/registry.dao.js";
 
 export class RoteService {
 
   constructor() {
-    this.guildRoteHistoricalDao = new GuildRoteHistoricalDao();
-    this.guildMembersProcessedDataDao = new GuildMembersProcessedDataDao();
+    this.guildRoteHistoricalDao = RegistryDao.getRote();
+    this.guildMembersProcessedDataDao = RegistryDao.getMembersProcessed();
   }
 
   validateGuildHistorical(data) {
