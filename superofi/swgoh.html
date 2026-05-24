@@ -58,6 +58,7 @@
 <body>
 <h1>SWGOH Guild Admin</h1>
 
+<button id="fetchGuildRawDataBtn">Fetch Guild Raw Data</button>
 <button id="generateBtn">Generate Guild Data</button>
 <button id="downloadRawBtn" disabled>Download Raw JSON</button>
 <button id="downloadProcessedBtn" disabled>Download Processed JSON</button>
@@ -66,16 +67,12 @@
 
 <script type="module">
   import {
-    GuildMembersDao
-  } from "../services/dao/guild-members.dao.js";
-  import {
-    fetchPlayer,
-    extractUnits,
+    SwgohService,
     processPlayer,
     aggregateGuildStats
   } from "../services/swgoh.service.js";
 
-  const guildMembersDao = new GuildMembersDao();
+  const swgohService = new SwgohService();
 
   const consoleEl = document.getElementById("console");
   const generateBtn = document.getElementById("generateBtn");
@@ -110,44 +107,7 @@
 
     log("Loading guild members CSV...");
 
-    const guildMembers = await guildMembersDao.loadMembers();
-
-    log(
-      `${guildMembers.length} guild members loaded`,
-      "success"
-    );
-
-    const rawPlayers = [];
-
-    for (const member of guildMembers) {
-      try {
-        log(`Fetching ${member.name}...`);
-
-        const playerData = await fetchPlayer(member.allyCode);
-
-        rawPlayers.push({
-          name: member.name,
-          allyCode: member.allyCode,
-          units: extractUnits(playerData)
-        });
-
-        log(
-          `${member.name} fetched successfully`,
-          "success"
-        );
-
-      } catch (error) {
-        log(
-          `${member.name} failed: ${error.message}`,
-          "error"
-        );
-      }
-    }
-
-    rawOutput = {
-      updated: new Date().toISOString(),
-      members: rawPlayers
-    };
+    rawOutput = swgohService.fetchGuildRawData();
 
     const processedPlayers = rawPlayers.map(processPlayer);
     const processedGuild = aggregateGuildStats(processedPlayers);
@@ -167,28 +127,23 @@
     downloadProcessedBtn.disabled = false;
   }
 
-  generateBtn.addEventListener(
-    "click",
-    generateGuildData
-  );
+  fetchGuildRawDataBtn.addEventListener("click", async () => {
+      await swgohService.fetchGuildRawData();
+    });
+
+  generateBtn.addEventListener("click", generateGuildData);
 
   downloadRawBtn.addEventListener(
     "click",
     () => {
-      downloadFile(
-        "guild-members-raw-data.json",
-        rawOutput
-      );
+      downloadFile("guild-members-raw-data.json", rawOutput);
     }
   );
 
   downloadProcessedBtn.addEventListener(
     "click",
     () => {
-      downloadFile(
-        "guild-members-processed-data.json",
-        processedOutput
-      );
+      downloadFile("guild-members-processed-data.json", processedOutput);
     }
   );
 </script>

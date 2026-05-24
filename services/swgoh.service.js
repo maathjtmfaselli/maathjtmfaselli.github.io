@@ -1,22 +1,54 @@
-export async function fetchPlayer(allyCode) {
-  const response = await fetch(`https://swgoh.gg/api/player/${allyCode}/`);
+import { GuildMembersService } from "./guild-members.service.js";
 
-  if (!response.ok) {
-    throw new Error(`HTTP ${response.status}`);
+export class SwgohService {
+
+  constructor() {
+    this.membersService = new GuildMembersService();
   }
 
-  const data = await response.json();
-  return await data;
-}
+  async fetchGuildRawData() {
+    const guildMembers = await this.membersService.loadMembers();
+    const rawPlayers = [];
+    for (const member of guildMembers) {
+      try {
+        const memberData = await this.fetchPlayer(member.allyCode);
+        rawPlayers.push({
+          name: member.name,
+          allyCode: member.allyCode,
+          units: this.extractUnits(memberData)
+        });
+      } catch (error) {
+        console.log(`${member.name} failed: ${error.message}`);
+      }
+    }
 
-export function extractUnits(playerData) {
-  const units = {};
+    const rawOutput = {
+      updated: new Date().toISOString(),
+      members: rawPlayers
+    };
 
-  for (const unit of playerData.units) {
-    units[unit.data.name] = Math.max(0, unit.data.relic_tier - 2);
+    return rawOutput;
   }
 
-  return units;
+  async fetchPlayer(allyCode) {
+    const response = await fetch(`https://swgoh.gg/api/player/${allyCode}/`);
+
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}`);
+    }
+
+    return await response.json();
+  }
+
+  extractUnits(memberData) {
+    const units = {};
+
+    for (const unit of memberData.units) {
+      units[unit.data.name] = Math.max(0, unit.data.relic_tier - 2);
+    }
+
+    return units;
+  }
 }
 
 export function aggregateGuildStats(members) {
