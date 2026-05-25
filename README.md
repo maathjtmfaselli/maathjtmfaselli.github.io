@@ -46,6 +46,13 @@ Datos dinámicos que reflejan el estado actual y presente del gremio:
 - Puntuación en Raid: Orden66 (`/data/guild/guild-raid-order66-historical.csv`), Naboo (`/data/guild/guild-raid-naboo-historical.csv`).
 - Objetivos y logros en Alzamiento (`guild-rote-historical.json`)
 
+### Datos generados (`/data/generated/`)
+
+Estos datos se calculan a partir de los datos maestros y los datos del gremio.
+
+- Guild Members Raw Data (`/data/generated/guild-members-raw-data.json`). Información descargada de swgoh.gg a partir de la lista de miembros activos (`/data/guild/guild-members.csv`).
+- Guild Members Processed Data (`/data/generated/guild-members-processed-data.json`). Datos calculados a partir de los datos descargados de swgoh (`/data/generated/guild-members-raw-data.json`).
+
 #### Cómo actualizar los datos del gremio
 
 Ver [aquí](CONTRIBUTING.md#actualizar-datos-del-gremio).
