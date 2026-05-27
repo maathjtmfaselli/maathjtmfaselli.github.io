@@ -1,4 +1,4 @@
-function initGridPriorityProgress(root = document) {
+export function initGridPriorityProgress(root = document) {
   root.querySelectorAll('.grid-priority-progress').forEach(progress => {
     // Evitar doble inicialización
     if (progress.dataset.initialized) return;
@@ -39,7 +39,7 @@ function initGridPriorityProgress(root = document) {
   });
 }
 
-function initGridGuildRanksProgress(root = document) {
+export function initGridGuildRanksProgress(root = document) {
   root.querySelectorAll(".grid-ranks-progress").forEach(container => {
     // Evitar doble inicialización
     if (container.dataset.initialized) return;
@@ -79,7 +79,3 @@ function initGridGuildRanksProgress(root = document) {
     container.appendChild(grid);
   });
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-  initGridPriorityProgress();
-});

@@ -1,5 +1,6 @@
 import { Order66Service } from "../../../services/order66.service.js";
 import { RoteService } from "../../../services/rote.service.js";
+import { initGridPriorityProgress, initGridGuildRanksProgress } from "/js/grid-priority-progress.js";
 
 class GuildPrioritiesHolocron extends HTMLElement {
 
