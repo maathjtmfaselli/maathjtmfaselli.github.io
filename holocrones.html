@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="css/raid.css">
   <script src="js/holocrones.js" defer></script>
   <script src="js/dynamic-loader.js" defer></script>
-  <script src="js/grid-priority-progress.js" defer></script>
   <script src="js/web-changelog.js" defer></script>
   <link rel="icon" href="img/swgoh-spain-space-favicon.png" type="image/png">
 </head>
@@ -22,7 +21,7 @@
 </header>
 
 <main id="holocrones-section" class="holocron-layout">
-  <section class="holocron-library">
+  <aside class="holocron-library">
     <h2>Biblioteca de Holocrones</h2>
 
     <div class="librarian-section">
@@ -42,11 +41,11 @@
       </figure>
     </div>
 
-    <div class="holocrones-list">
+    <nav class="holocrones-list" aria-label="Lista de holocrones">
       <article class="holocron holocron--politica">
         <button
             class="holocron__action"
-            data-holocron="holocrones/fragment-guild-rules.html"
+            data-holocron="holocrones/guild/rules/template.html"
         >
           <img class="holocron__icono" src="img/holocron-yellow.png" alt="">
           <h3 class="holocron__titulo truncate">
@@ -57,7 +56,7 @@
       <article class="holocron holocron--politica">
         <button
             class="holocron__action"
-            data-holocron="holocrones/fragment-guild-goals.html"
+            data-holocron="holocrones/guild/goals/template.html"
         >
           <img class="holocron__icono" src="img/holocron-yellow.png" alt="Icono holocron">
           <h3 class="holocron__titulo truncate">
@@ -79,7 +78,7 @@
       <article class="holocron holocron--politica">
         <button
             class="holocron__action"
-            data-holocron="holocrones/fragment-guild-warnings.html"
+            data-holocron="holocrones/guild/warnings/template.html"
         >
           <img class="holocron__icono" src="img/holocron-yellow.png" alt="Icono holocron">
           <h3 class="holocron__titulo truncate">
@@ -406,8 +405,8 @@
           </h3>
         </a>
       </article>
-    </div>
-  </section>
+    </nav>
+  </aside>
 
   <section id="holocron-viewer-content" class="holocron-viewer">
     <p class="holocron-placeholder">
