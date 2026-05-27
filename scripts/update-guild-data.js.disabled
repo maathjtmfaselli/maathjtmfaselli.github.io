@@ -7,8 +7,8 @@ import {
 
 const FETCH_PLAYER_DELAY_MS = 1000;
 const INPUT_CSV = "./data/guild/guild-members.csv";
-const RAW_OUTPUT = "./data/guild/guild-members-raw-data.json";
-const PROCESSED_OUTPUT = "./data/guild/guild-members-processed-data.json";
+const RAW_OUTPUT = "./data/generated/guild-members-raw-data.json";
+const PROCESSED_OUTPUT = "./data/generated/guild-members-processed-data.json";
 
 async function loadCsv(path) {
   const text = await fs.readFile(path, "utf-8");

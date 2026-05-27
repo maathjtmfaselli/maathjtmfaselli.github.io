@@ -60,7 +60,7 @@ Ver [aquí](CONTRIBUTING.md#actualizar-datos-del-gremio).
 ## 🎓 Holocrones
 
 Los **holocrones** son componentes autocontenidos que explican un aspecto del juego o del gremio:
-{Revisar aquí cómo explicar los holocrones de esta página web a personas no técnicas, que además incluya la explicación funcional}
+
 - 📚 Consultables individualmente en la biblioteca de holocrones
 - 🔗 Incrustables en otras páginas
 - 📖 Autocontenidos con su propia lógica y estilos
@@ -74,8 +74,8 @@ Los **holocrones** son componentes autocontenidos que explican un aspecto del ju
 Este proyecto [sigue una filosofía](#-principios-del-proyecto)
 
 - **frontend-first**. Está diseñado para funcionar completamente sobre **GitHub Pages**, sin backend propio.
-- **data-oriented**
-- **ia-first**, para que la documentación se convierta en ejecutable y sea una ayuda para que cualquier persona pueda contribuir al proyecto.
+- **data-oriented**. Esta diseñado para actualizarse cuando los datos se actualizan.
+- **ia-first**, para que cualquier persona pueda contribuir al proyecto lo más fácilmente posible apoyándose en herramientas IA, la documentación está pensada para conviertase en ejecutable y guiar estas herramientas.
 
 Cómo lo conseguimos?
 
@@ -101,7 +101,8 @@ Utilizamos solo tecnologías web fundamentales, tal como se define en [ADR-0002]
 ├── js/                     # Scripts de JavaScript
 ├── data/                   # Datos del gremio y maestros
 │   ├── master/             # Datos maestros (estáticos)
-│   └── guild/              # Datos del gremio (dinámicos)
+│   ├── guild/              # Datos del gremio (dinámicos)
+│   └── generated/          # Datos generados a partir de los datos maestros y de gremio
 ├── services/               # Servicios de JavaScript
 │   └── dao/                # Acceso a Datos
 ├── holocrones/             # Componentes autocontenidos

@@ -59,25 +59,16 @@
 <h1>SWGOH Guild Admin</h1>
 
 <button id="fetchGuildRawDataBtn">Fetch Guild Raw Data</button>
-<button id="generateBtn">Generate Guild Data</button>
-<button id="downloadRawBtn" disabled>Download Raw JSON</button>
-<button id="downloadProcessedBtn" disabled>Download Processed JSON</button>
+<button id="processGuildRawDataBtn">Process Guild Raw Data</button>
 
 <div id="console" class="console"></div>
 
 <script type="module">
-  import {
-    SwgohService,
-    processPlayer,
-    aggregateGuildStats
-  } from "../services/swgoh.service.js";
+  import { SwgohService } from "../services/swgoh.service.js";
 
   const swgohService = new SwgohService();
 
   const consoleEl = document.getElementById("console");
-  const generateBtn = document.getElementById("generateBtn");
-  const downloadRawBtn = document.getElementById("downloadRawBtn");
-  const downloadProcessedBtn = document.getElementById("downloadProcessedBtn");
 
   let rawOutput = null;
   let processedOutput = null;
@@ -91,7 +82,7 @@
     consoleEl.scrollTop = consoleEl.scrollHeight;
   }
 
-  function downloadFile(filename,data) {
+  function downloadFile(filename, data) {
     const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
@@ -102,50 +93,19 @@
     URL.revokeObjectURL(url);
   }
 
-  async function generateGuildData() {
-    consoleEl.innerHTML = "";
+  document.getElementById("fetchGuildRawDataBtn").addEventListener("click", async () => {
+    log("Fetching Guild Raw data from swgoh", "info");
+    const data = await swgohService.fetchGuildRawData();
+    downloadFile("guild-members-raw-data.json", data);
+    log(`Generated ${data.members.length} players`, "success");
+  });
 
-    log("Loading guild members CSV...");
-
-    rawOutput = swgohService.fetchGuildRawData();
-
-    const processedPlayers = rawPlayers.map(processPlayer);
-    const processedGuild = aggregateGuildStats(processedPlayers);
-
-    processedOutput = {
-      updated: new Date().toISOString(),
-      ...processedGuild,
-      members: processedPlayers
-    };
-
-    log(
-      `Generated ${rawPlayers.length} players`,
-      "success"
-    );
-
-    downloadRawBtn.disabled = false;
-    downloadProcessedBtn.disabled = false;
-  }
-
-  fetchGuildRawDataBtn.addEventListener("click", async () => {
-      await swgohService.fetchGuildRawData();
-    });
-
-  generateBtn.addEventListener("click", generateGuildData);
-
-  downloadRawBtn.addEventListener(
-    "click",
-    () => {
-      downloadFile("guild-members-raw-data.json", rawOutput);
-    }
-  );
-
-  downloadProcessedBtn.addEventListener(
-    "click",
-    () => {
-      downloadFile("guild-members-processed-data.json", processedOutput);
-    }
-  );
+  document.getElementById("processGuildRawDataBtn").addEventListener("click", async () => {
+    log("Processing Guild Raw data", "info");
+    const data = await swgohService.processGuildRawData();
+    downloadFile("guild-members-processed-data.json", data);
+    log("Generated processed file", "success");
+  });
 </script>
 
 </body>
