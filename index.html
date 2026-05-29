@@ -1,37 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spain Space SWGoH</title>
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/dynamic-loader.js" defer></script>
   <link rel="icon" href="img/swgoh-spain-space-favicon.png" type="image/png">
+  <script src="js/dynamic-loader.js" defer></script>
 
-  <script type="module" src="./holocrones/guild/rules/component.js"></script>
-  <script type="module" src="./holocrones/guild/goals/component.js"></script>
-  <script type="module" src="./holocrones/guild/warnings/component.js"></script>
+  <script type="module" src="services/holocron.service.js"></script>
 </head>
 
 <body>
 
 <header id="index-dynamic-header">
-    <!-- Si falla la carga, este mensaje será visible -->
-    <p>Cargando la cabecera...</p>
+  <p>Cargando la cabecera...</p>
 </header>
 
-<main>
-  <holocron-guild-rules></holocron-guild-rules>
-  <holocron-guild-goals></holocron-guild-goals>
-  <holocron-guild-warnings></holocron-guild-warnings>
-    <div id="guild-players-data"></div>
+<main class="page-layout">
+
+  <section class="holocron-page">
+    <holocron-slot data-holocron="guild/rules"></holocron-slot>
+    <holocron-slot data-holocron="guild/goals"></holocron-slot>
+    <holocron-slot data-holocron="guild/warnings"></holocron-slot>
+  </section>
+
 </main>
 
 <footer id="index-dynamic-footer">
-    <!-- Si falla la carga, este mensaje será visible -->
-    <p>Cargando el pie...</p>
+  <p>Cargando el pie...</p>
 </footer>
 
 </body>
-
 </html>
