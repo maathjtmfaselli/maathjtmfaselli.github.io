@@ -1,0 +1,11 @@
+{
+  "holocrons": [
+    {
+      "path": "holocrones/guild/rules"
+    },{
+      "path": "holocrones/guild/goals"
+    },{
+      "path": "holocrones/guild/warnings"
+    }
+  ]
+}

@@ -1,7 +1,6 @@
 {
-  "id": "guild-goals",
-  "tag": "holocron-guild-goals",
-  "title": "Objetivos del Gremio",
   "category": "guild",
+  "id": "goals",
+  "title": "¿Cuáles son los Objetivos del Gremio?",
   "description": "Objetivos del gremio"
 }

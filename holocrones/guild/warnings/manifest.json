@@ -1,7 +1,6 @@
 {
-  "id": "guild-warnings",
-  "tag": "holocron-guild-warnings",
-  "title": "Gremio Warnings",
   "category": "guild",
+  "id": "warnings",
+  "title": "¿Qué miembros tienen tarjetas amarillas?",
   "description": "Tarjetas amarillas a miembros del gremio para cumplir con un determinado objetivo"
 }

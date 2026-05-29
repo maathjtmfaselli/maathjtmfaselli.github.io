@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/holocrones.css">
   <link rel="stylesheet" href="css/raid.css">
+  <script src="services/holocron.service.js" defer></script>
   <script src="js/holocrones.js" defer></script>
   <script src="js/dynamic-loader.js" defer></script>
   <script src="js/web-changelog.js" defer></script>
@@ -21,7 +22,7 @@
 </header>
 
 <main id="holocrones-section" class="holocron-layout">
-  <aside class="holocron-library">
+  <section class="holocron-library">
     <h2>Biblioteca de Holocrones</h2>
 
     <div class="librarian-section">
@@ -41,7 +42,8 @@
       </figure>
     </div>
 
-    <nav class="holocrones-list" aria-label="Lista de holocrones">
+    <nav id="holocrones-list" class="holocrones-list" aria-label="Lista de holocrones">
+<!--
       <article class="holocron holocron--politica">
         <button
             class="holocron__action"
@@ -75,7 +77,7 @@
           </h3>
         </button>
       </article>
-      <article class="holocron holocron--politica">
+      <article class="holocron holocron&#45;&#45;politica">
         <button
             class="holocron__action"
             data-holocron="holocrones/guild/warnings/template.html"
@@ -86,7 +88,7 @@
           </h3>
         </button>
       </article>
-      <article class="holocron holocron--politica">
+      <article class="holocron holocron&#45;&#45;politica">
         <button
             class="holocron__action"
             data-holocron="holocrones/fragment-web-latest-news.html"
@@ -99,7 +101,7 @@
           </h3>
         </button>
       </article>
-      <article class="holocron holocron--recursos">
+      <article class="holocron holocron&#45;&#45;recursos">
         <button
             class="holocron__action"
             data-holocron="holocrones/_resources-mods.html"
@@ -111,7 +113,7 @@
           </h3>
         </button>
       </article>
-      <article class="holocron holocron--recursos">
+      <article class="holocron holocron&#45;&#45;recursos">
         <button
             class="holocron__action"
             data-holocron="holocrones/_resources-r9.html"
@@ -123,7 +125,7 @@
           </h3>
         </button>
       </article>
-      <article class="holocron holocron--eventos">
+      <article class="holocron holocron&#45;&#45;eventos">
         <button
             class="holocron__action"
             data-holocron="holocrones/_order66-N7-3600k-Tarkin-Scorch.html"
@@ -135,7 +137,7 @@
           </h3>
         </button>
       </article>
-      <article class="holocron holocron--eventos">
+      <article class="holocron holocron&#45;&#45;eventos">
         <button
             class="holocron__action"
             data-holocron="holocrones/_order66-N7-3600k-sobras-clones.html"
@@ -147,7 +149,7 @@
           </h3>
         </button>
       </article>
-      <article class="holocron holocron--eventos">
+      <article class="holocron holocron&#45;&#45;eventos">
         <button
             class="holocron__action"
             data-holocron="holocrones/_order66-N7-3600k-Windu.html"
@@ -159,7 +161,7 @@
           </h3>
         </button>
       </article>
-      <article class="holocron holocron--eventos">
+      <article class="holocron holocron&#45;&#45;eventos">
         <button
             class="holocron__action"
             data-holocron="holocrones/_order66-N5-1800k-Kelleran.html"
@@ -171,7 +173,7 @@
           </h3>
         </button>
       </article>
-      <article class="holocron holocron--eventos">
+      <article class="holocron holocron&#45;&#45;eventos">
         <button
             class="holocron__action"
             data-holocron="holocrones/_order66-N5-1800k-BadBatch.html"
@@ -183,7 +185,7 @@
           </h3>
         </button>
       </article>
-      <article class="holocron holocron--eventos">
+      <article class="holocron holocron&#45;&#45;eventos">
         <button
           class="holocron__action"
           data-holocron="holocrones/_order66-N0-300k-Tarkin-solo.html"
@@ -195,7 +197,7 @@
           </h3>
         </button>
       </article>
-      <article class="holocron holocron--eventos">
+      <article class="holocron holocron&#45;&#45;eventos">
         <button
             class="holocron__action"
             data-holocron="holocrones/_order66-N0-300k-Hondo-solo.html"
@@ -207,7 +209,7 @@
           </h3>
         </button>
       </article>
-      <article class="holocron holocron--eventos">
+      <article class="holocron holocron&#45;&#45;eventos">
         <button
             class="holocron__action"
             data-holocron="holocrones/_order66-N0-300k-Enfys-solo.html"
@@ -219,7 +221,7 @@
           </h3>
         </button>
       </article>
-      <article class="holocron holocron--eventos">
+      <article class="holocron holocron&#45;&#45;eventos">
         <button
             class="holocron__action"
             data-holocron="holocrones/_order66-N0-300k-QuiGon.html"
@@ -231,7 +233,7 @@
           </h3>
         </button>
       </article>
-      <article class="holocron holocron--eventos">
+      <article class="holocron holocron&#45;&#45;eventos">
         <button
             class="holocron__action"
             data-holocron="holocrones/_conquest-win-with-xy-alive.html"
@@ -243,7 +245,7 @@
           </h3>
         </button>
       </article>
-      <article class="holocron holocron--eventos">
+      <article class="holocron holocron&#45;&#45;eventos">
         <button
             class="holocron__action"
             data-holocron="holocrones/_rote-zeffo.html"
@@ -255,7 +257,7 @@
           </h3>
         </button>
       </article>
-      <article class="holocron holocron--eventos">
+      <article class="holocron holocron&#45;&#45;eventos">
         <button
             class="holocron__action"
             data-holocron="holocrones/_rote-mandalore.html"
@@ -267,7 +269,7 @@
           </h3>
         </button>
       </article>
-      <article class="holocron holocron--eventos">
+      <article class="holocron holocron&#45;&#45;eventos">
         <button
             class="holocron__action"
             data-holocron="holocrones/_rote-reva.html"
@@ -279,7 +281,7 @@
           </h3>
         </button>
       </article>
-      <article class="holocron holocron--eventos">
+      <article class="holocron holocron&#45;&#45;eventos">
         <button
             class="holocron__action"
             data-holocron="holocrones/_rote-masterdata.html"
@@ -291,7 +293,7 @@
           </h3>
         </button>
       </article>
-      <article class="holocron holocron--eventos">
+      <article class="holocron holocron&#45;&#45;eventos">
         <button
             class="holocron__action"
             data-holocron="holocrones/_rote-s2-bracca.html"
@@ -303,7 +305,7 @@
           </h3>
         </button>
       </article>
-      <article class="holocron holocron--eventos">
+      <article class="holocron holocron&#45;&#45;eventos">
         <button
             class="holocron__action"
             data-holocron="holocrones/_rote-s2-felucia.html"
@@ -315,7 +317,7 @@
           </h3>
         </button>
       </article>
-      <article class="holocron holocron--eventos">
+      <article class="holocron holocron&#45;&#45;eventos">
         <button
             class="holocron__action"
             data-holocron="holocrones/_rote-s2-geonosis.html"
@@ -327,7 +329,7 @@
           </h3>
         </button>
       </article>
-      <article class="holocron holocron--eventos">
+      <article class="holocron holocron&#45;&#45;eventos">
         <button
             class="holocron__action"
             data-holocron="holocrones/_rote-s1-coruscant.html"
@@ -339,7 +341,7 @@
           </h3>
         </button>
       </article>
-      <article class="holocron holocron--eventos">
+      <article class="holocron holocron&#45;&#45;eventos">
         <button
             class="holocron__action"
             data-holocron="holocrones/_rote-s1-corellia.html"
@@ -351,7 +353,7 @@
           </h3>
         </button>
       </article>
-      <article class="holocron holocron--eventos">
+      <article class="holocron holocron&#45;&#45;eventos">
         <button
             class="holocron__action"
             data-holocron="holocrones/_rote-s1-mustafar.html"
@@ -363,7 +365,7 @@
           </h3>
         </button>
       </article>
-      <article class="holocron holocron--guias">
+      <article class="holocron holocron&#45;&#45;guias">
         <button
             class="holocron__action"
             data-holocron="holocrones/_journey-bo-katan-mandalore-unlock.html"
@@ -374,7 +376,7 @@
           </h3>
         </button>
       </article>
-      <article class="holocron holocron--guias">
+      <article class="holocron holocron&#45;&#45;guias">
         <button
             class="holocron__action"
             data-holocron="holocrones/_journey-leia-unlock.html"
@@ -385,7 +387,7 @@
           </h3>
         </button>
       </article>
-      <article class="holocron holocron--historia">
+      <article class="holocron holocron&#45;&#45;historia">
         <button
             class="holocron__action"
             data-holocron="holocrones/_order66-archive.html"
@@ -397,7 +399,7 @@
           </h3>
         </button>
       </article>
-      <article class="holocron holocron--historia">
+      <article class="holocron holocron&#45;&#45;historia">
         <a href="naboo.html" target="_blank" rel="noopener noreferrer">
           <img class="holocron__icono" src="img/holocron-blue-light.png" alt="Icono holocron">
           <h3 class="holocron__titulo truncate">
@@ -405,8 +407,9 @@
           </h3>
         </a>
       </article>
+-->
     </nav>
-  </aside>
+  </section>
 
   <section id="holocron-viewer-content" class="holocron-viewer">
     <p class="holocron-placeholder">

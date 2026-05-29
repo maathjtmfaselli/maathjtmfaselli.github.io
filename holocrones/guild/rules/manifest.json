@@ -1,7 +1,6 @@
 {
-  "id": "guild-rules",
-  "tag": "holocron-guild-rules",
-  "title": "Reglas del Gremio",
   "category": "guild",
+  "id": "rules",
+  "title": "¿Cuáles son las Reglas del Gremio?",
   "description": "Normas básicas del gremio"
 }
