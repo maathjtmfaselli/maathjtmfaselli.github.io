@@ -72,28 +72,9 @@ async function renderLibrarySection(listContainer, holocronViewer) {
     })
   );
 
-  listContainer.innerHTML = manifests.map( (holocron) => {
-    const icon = HOLOCRON_ICONS_BY_CATEGORY[holocron.category] || HOLOCRON_ICONS_BY_CATEGORY.default;
-    return `
-        <article class="holocron holocron--${holocron.category}">
-          <button
-            class="holocron__action"
-            data-holocron="${holocron.category}/${holocron.id}"
-          >
-            <img
-              class="holocron__icono"
-              src="${icon}"
-              alt=""
-            >
-
-            <h3 class="holocron__titulo truncate">
-              ${holocron.title}
-            </h3>
-          </button>
-        </article>
-      `;
-    })
-    .join("");
+  listContainer.replaceChildren(
+    ...manifests.map(createHolocronCard)
+  );
 
   listContainer.addEventListener("click", async (e) => {
     const btn = e.target.closest(".holocron__action");
@@ -101,6 +82,31 @@ async function renderLibrarySection(listContainer, holocronViewer) {
 
     await renderHolocron(holocronViewer, btn.dataset.holocron);
   });
+}
+
+function createHolocronCard(holocron) {
+  const article = document.createElement("article");
+  article.className = `holocron holocron--${holocron.category}`;
+
+  const button = document.createElement("button");
+  button.className = "holocron__action";
+  button.dataset.holocron = `${holocron.category}/${holocron.id}`;
+
+  const icon = document.createElement("img");
+  icon.className = "holocron__icono";
+  icon.alt = "";
+  icon.src =
+    HOLOCRON_ICONS_BY_CATEGORY[holocron.category] ||
+    HOLOCRON_ICONS_BY_CATEGORY.default;
+
+  const title = document.createElement("h3");
+  title.className = "holocron__titulo truncate";
+  title.textContent = holocron.title;
+
+  button.append(icon, title);
+  article.appendChild(button);
+
+  return article;
 }
 
 document.addEventListener('DOMContentLoaded', () => {

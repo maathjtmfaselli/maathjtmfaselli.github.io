@@ -135,6 +135,10 @@
     filter: drop-shadow(0 0 6px rgba(255,255,255,0.3));
 }
 
+.holocron__action {
+  width: 100%;
+}
+
 .holocron__titulo {
     font-size: 1rem;
     font-weight: 600;
@@ -142,6 +146,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     margin: 0;
+    width: 100%;
 }
 
 /* =========================
