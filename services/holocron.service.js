@@ -121,6 +121,18 @@ function filtrarListaHolocrones(input, listadoHolocrones) {
   });
 }
 
+function openHolocronRequested() {
+  const targetHolocron = new URLSearchParams(window.location.search).get("open");
+
+  if (!targetHolocron) return;
+
+  const btn = document.querySelector(`.holocron__action[data-holocron="${targetHolocron}"]`);
+
+  if (btn) {
+    btn.click(); // 👈 simula el click
+  }
+}
+
 document.addEventListener('DOMContentLoaded', async () => {
   const holocronList = document.getElementById("holocrones-list");
   const holocronViewer = document.getElementById("holocron-viewer-content");
@@ -133,6 +145,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       filtrarListaHolocrones(input, holocrones)
     );
     filtrarListaHolocrones(input, holocrones);
+    openHolocronRequested()
   }
   renderHolocrons();
 });

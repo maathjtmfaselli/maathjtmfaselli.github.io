@@ -6,6 +6,8 @@
       "path": "holocrones/guild/goals"
     },{
       "path": "holocrones/guild/warnings"
+    },{
+      "path": "holocrones/web/changelog"
     }
   ]
 }

@@ -1,15 +1,32 @@
-// Colores por categoría
-const categoryColors = {
-  'web': '#3498db',       // Azul
-  'gremio': '#e67e22',    // Naranja
-  'holocron': '#27ae60',  // Verde
-  'alzamiento': '#e74c3c', // Rojo
-  'orden66': '#9b59b6',   // Morado
-  'otras': '#7f8c8d'      // Gris
-};
+class WebChangelogHolocron extends HTMLElement {
 
-async function loadChangelog() {
-  try {
+  constructor() {
+    super();
+  }
+
+  async connectedCallback() {
+    const template = await fetch("/holocrones/web/changelog/template.html")
+      .then(r => r.text());
+
+    this.innerHTML = template;
+
+    await this.loadData();
+
+    this.afterRender();
+  }
+
+  async loadData() {
+    // Colores por categoría
+    const categoryColors = {
+      'web': '#3498db',       // Azul
+      'gremio': '#e67e22',    // Naranja
+      'holocron': '#27ae60',  // Verde
+      'alzamiento': '#e74c3c', // Rojo
+      'orden66': '#9b59b6',   // Morado
+      'otras': '#7f8c8d'      // Gris
+    };
+
+    try {
       const response = await fetch('../data/web-changelog.json');
       const data = await response.json();
 
@@ -31,9 +48,15 @@ async function loadChangelog() {
 
           container.appendChild(card);
       });
-  } catch (error) {
+    } catch (error) {
       console.error('Error cargando el changelog:', error);
       document.getElementById('changelog-container').innerHTML =
         '<p>Error al cargar las actualizaciones. Inténtalo más tarde.</p>';
+    }
+  }
+
+  afterRender() {
   }
 }
+
+customElements.define("holocron-web-changelog", WebChangelogHolocron);
