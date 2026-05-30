@@ -109,11 +109,30 @@ function createHolocronCard(holocron) {
   return article;
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+function filtrarListaHolocrones(input, listadoHolocrones) {
+  const search = input.value.toLowerCase();
+
+  listadoHolocrones.forEach(h => {
+    if (h.textContent.toLowerCase().includes(search)) {
+      h.style.display = "";
+    } else {
+      h.style.display = "none";
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', async () => {
   const holocronList = document.getElementById("holocrones-list");
   const holocronViewer = document.getElementById("holocron-viewer-content");
   if (holocronList && holocronViewer) {
-    renderLibrarySection(holocronList, holocronViewer);
+    await renderLibrarySection(holocronList, holocronViewer);
+    const input = document.getElementById("holocron-search");
+    const holocrones = document.querySelectorAll(".holocron");
+
+    input.addEventListener("input", () =>
+      filtrarListaHolocrones(input, holocrones)
+    );
+    filtrarListaHolocrones(input, holocrones);
   }
   renderHolocrons();
 });
