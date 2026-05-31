@@ -1,4 +1,4 @@
-# ADR-0004 — Architecture - Holocron module as reusable Web Component
+# ADR-0004: Holocrones como Web Components Reutilizables
 
 ## Estado
 Aceptado
@@ -8,58 +8,89 @@ Aceptado
 La aplicación requiere reutilizar funcionalidad entre múltiples páginas dentro de una arquitectura frontend-first sin backend propio.
 
 El proyecto busca:
-- minimizar dependencias externas
-- mantener compatibilidad total con GitHub Pages
-- utilizar tecnologías web estándar
-- permitir evolución incremental de la arquitectura
+- Minimizar dependencias externas
+- Mantener compatibilidad total con GitHub Pages
+- Utilizar tecnologías web estándar
+- Permitir evolución incremental de la arquitectura
 
 ## Decisión
 
-La funcionalidad se implementará mediante componentes reutilizables llamados **holocrones**, que son **Web Components nativos** como mecanismo de componentización.
+La funcionalidad se implementará mediante módulos autocontenidos e independientes que a partir de ahora llamaremos **holocrones**, que en realidad son [Web Components](https://developer.mozilla.org/en-US/docs/Web/API/Web_components) nativos basados en:
+- [Custom Elements](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_custom_elements)
+- [ES Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
 
-Cada holocrón será un **Web Component nativo** basado en:
-- Custom Elements
-- Shadow DOM
-- ES Modules
+Opcionalmente:
+- [Shadow DOM](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_shadow_DOM) en caso de necesitar estilos encapsulados propios.
 
-Los holocrones se organizarán como módulos autocontenidos independientes.
-
-## Arquitectura Base
-
-### Definición de Holocrón
+## Definición de Holocrón
 
 Un holocrón es un componente web reutilizable que encapsula:
 
-- estructura HTML
-- estilos propios
-- lógica JavaScript
-- acceso a datasets
-- assets asociados
-- metadata declarativa
-- lifecycle independiente
+- Estructura HTML
+- Estilos propios
+- Lógica JavaScript
+- Acceso a datasets
+- Assets asociados
+- Metadata declarativa
+- Lifecycle independiente
+
+### Requisitos
 
 Cada holocrón debe:
-- poder renderizarse mediante una etiqueta HTML propia
-- inicializarse automáticamente al insertarse en el DOM
-- reutilizarse en distintas páginas
-- soportar carga dinámica
-- minimizar dependencias externas
-- mantener aislamiento funcional y visual
+- Renderizarse mediante una etiqueta HTML propia
+- Inicializarse automáticamente al insertarse en el DOM
+- Reutilizarse en distintas páginas
+- Soportar carga dinámica
+- Minimizar dependencias externas
+- Mantener aislamiento funcional y visual
 
-### Estructura estándar
+## Estructura Estándar
 
-```text
-/holocrones/
-  nombre-del-holocron/
-    component.js
-    template.html
-    style.css
-    manifest.json
+```
+├── /holocrones/
+│   ├── category-del-holocron/
+│       ├── id-del-holocron/
+│           ├── component.js
+│           ├── template.html
+│           ├── style.css            # (Opcional)
+│           └── manifest.json
+└────── holocron-registry.json
 ```
 
-#### Manifest
+### Convención de nombres
 
-Cada holocrón incluye un archivo declarativo `manifest.json`. Ejemplo:
+Todo holocrón debe registrar un Custom Element siguiendo la nomenclatura:
+
+```
+holocron-{category}-{id}
+```
+
+Ejemplos:
+
+- holocron-guild-goals
+- holocron-guild-rules
+- holocron-web-changelog
+
+### Registro de Holocrones
+
+El archivo holocron-registry.json mantiene el catálogo disponible de holocrones.
+
+Ejemplo:
+
+```json
+{
+  "holocrons": [
+    {
+      "path": "holocrones/guild/goals"
+    }
+  ]
+}
+```
+
+
+### Manifest
+
+Cada holocrón incluye un archivo declarativo `manifest.json`.
 
 ```json
 {
@@ -70,7 +101,7 @@ Cada holocrón incluye un archivo declarativo `manifest.json`. Ejemplo:
 }
 ```
 
-#### `component.js`
+### `component.js`
 
 Contiene:
 
@@ -84,68 +115,53 @@ Contiene:
 Cada holocrón define un Custom Element:
 
 ```
-customElements.define(
-  "holocron-order66-archive",
-  Order66Archive
-);
+customElements.define("holocron-guild-goals", GuildPrioritiesHolocron);
 ```
 
-#### `template.html`
+### `template.html`
 
 Contiene estructura HTML.
 
-#### `style.css`
+### `style.css` (Opcional)
 
-Contiene estilos encapsulados del componente
-
-### Datos
-
-Los holocrones consumen datos exclusivamente desde `/data/` a la que se accede únicamente desde DAOS (`/services/dao`) a través de un servicio js (`/services`)
-
-No deben:
-
-- depender de backend
-- realizar mutaciones persistentes
-- depender de APIs privadas
-
-### Uso Declarativo
-
-Los holocrones se utilizan directamente como etiquetas HTML:
-
-```
-<holocron-slot data-holocron="guild/rules"></holocron-slot>
-```
-
-### Shadow DOM
-
-Cada holocrón debe utilizar Shadow DOM para:
+En caso de que el holocron requiera estilos encapsulados propios, se cargarán utilizando Shadow DOM
 
 - encapsular estilos
 - evitar colisiones CSS
 - aislar estructura interna
 
-Ejemplo:
+## Datos
 
-```
-this.attachShadow({
-  mode: "open"
-});
-```
+Los holocrones consumen datos exclusivamente desde `/data/`
+- Se accede únicamente desde DAOs (`/services/dao`)
+- A través de un servicio JavaScript  (`/services`)
 
-### Lifecycle
+Restricciones:
+
+- No dependen de backend
+- No realizan mutaciones persistentes
+- No dependen de APIs privadas
+
+## Lifecycle
 
 Los holocrones utilizan lifecycle nativo del navegador:
 
-| Callback                     | Responsabilidad      |
-|------------------------------|----------------------|
-| `connectedCallback()`        | Inicialización       |
-| `disconnectedCallback()`     | Limpieza             |
-| `attributeChangedCallback()` | Reacción a cambios   |
-| `adoptedCallback()`          | Migración de documento |
+| Callback                     | Responsabilidad        | Obligatorio |
+|------------------------------|------------------------|-------------|
+| `connectedCallback()`        | Inicialización         | Sí          |
+| `disconnectedCallback()`     | Limpieza               | No          |
+| `attributeChangedCallback()` | Reacción a cambios     | No          |
+| `adoptedCallback()`          | Migración de documento | No          |
 
-## Casos de Uso
+## Uso
 
 ### 1. Composición de páginas
+
+Los holocrones se pueden utilizar directamente como etiquetas HTML:
+
+```
+<holocron-slot data-holocron="guild/rules"></holocron-slot>
+```
 
 Los holocrones permiten construir páginas mediante composición declarativa:
 
@@ -161,38 +177,28 @@ Las páginas actúan únicamente como contenedores compositivos.
 
 ### 2. Biblioteca de holocrones
 
-La aplicación incluye una página de biblioteca:
+La aplicación incluye una página de biblioteca en /holocrones.html que permite:
 
-```
-/holocrones.html
-```
-
-La biblioteca permite:
-
-- visualizar catálogo
-- filtrar holocrones
-- cargar dinámicamente un holocrón en un visor
-- documentar funcionalidades
-- facilitar testing individual
-
-El visor renderiza dinámicamente el Web Component seleccionado.
+- Visualizar catálogo
+- Filtrar holocrones
+- Cargar dinámicamente un holocrón en un visor
+- Documentar funcionalidades
+- Facilitar testing individual
 
 ### 3. Apertura directa mediante URL
 
-Los holocrones pueden abrirse directamente mediante parámetros URL:
+Los holocrones pueden abrirse en la biblioteca directamente mediante parámetro en la URL. La biblioteca debe resolver automáticamente el parámetro `open` y renderizar el holocrón correspondiente (`category/id`).
 
 ```
-/holocrones.html?open=holocron__changelog
+/holocrones.html?open=web/changelog
 ```
 
 Esto permite:
 
-- deep linking
-- compartición directa
-- navegación persistente
-- acceso rápido desde documentación o notificaciones
-
-La biblioteca debe resolver automáticamente el parámetro open y renderizar el holocrón correspondiente.
+- Deep linking
+- Compartición directa
+- Navegación persistente
+- Acceso rápido desde documentación o notificaciones
 
 ## Consecuencias
 
