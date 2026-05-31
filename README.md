@@ -53,19 +53,17 @@ Estos datos se calculan a partir de los datos maestros y los datos del gremio.
 - Guild Members Raw Data (`/data/generated/guild-members-raw-data.json`). Información descargada de swgoh.gg a partir de la lista de miembros activos (`/data/guild/guild-members.csv`).
 - Guild Members Processed Data (`/data/generated/guild-members-processed-data.json`). Datos calculados a partir de los datos descargados de swgoh (`/data/generated/guild-members-raw-data.json`).
 
-#### Cómo actualizar los datos del gremio
-
-Ver [aquí](CONTRIBUTING.md#actualizar-datos-del-gremio).
+#### [Cómo actualizar los datos del gremio]()
 
 ## 🎓 Holocrones
 
-Los **holocrones** son componentes autocontenidos que explican un aspecto del juego o del gremio:
+Los **holocrones** son componentes reutilizables y autocontenidos que explican un aspecto del juego o del gremio:
 
 - 📚 Consultables individualmente en la biblioteca de holocrones
 - 🔗 Incrustables en otras páginas
 - 📖 Autocontenidos con su propia lógica y estilos
 - 🔄 Dinámicos con datos de las carpetas `/data/`
-- Ver [Arquitectura de Holocrones (ADR-0004)](/docs/adr/0006-holocron-architecture-single.md)
+- Ver [Arquitectura de Holocrones (ADR-0004)](/docs/adr/0004-holocron-as-module.md)
 
 ## 🛠️ Información técnica solo para desarrolladores...
 
@@ -97,8 +95,8 @@ Utilizamos solo tecnologías web fundamentales, tal como se define en [ADR-0002]
 ### Estructura del Proyecto
 
 ```
-├── css/                    # Hojas de estilos
-├── js/                     # Scripts de JavaScript
+├── css/                    # Hojas de estilos globales
+├── js/                     # Scripts globales de JavaScript
 ├── data/                   # Datos del gremio y maestros
 │   ├── master/             # Datos maestros (estáticos)
 │   ├── guild/              # Datos del gremio (dinámicos)
