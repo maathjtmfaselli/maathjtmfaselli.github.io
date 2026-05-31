@@ -15,65 +15,38 @@ El proyecto busca:
 
 ## Decisión
 
-La funcionalidad se implementará mediante módulos autocontenidos e independientes que a partir de ahora llamaremos **holocrones**, que en realidad son [Web Components](https://developer.mozilla.org/en-US/docs/Web/API/Web_components) nativos basados en:
-- [Custom Elements](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_custom_elements)
-- [ES Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
-
-Opcionalmente:
-- [Shadow DOM](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_shadow_DOM) en caso de necesitar estilos encapsulados propios.
+La funcionalidad se implementará mediante módulos autocontenidos e independientes que a partir de ahora llamaremos **holocrones**, que en realidad son [Web Components](https://developer.mozilla.org/en-US/docs/Web/API/Web_components) nativos basados en [ES Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules).
+- En caso de necesitar estilos encapsulados propios, es obligatorio utilizar [Shadow DOM](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_shadow_DOM).
 
 ## Definición de Holocrón
 
 Un holocrón es un componente web reutilizable que encapsula:
 
-- Estructura HTML
-- Estilos propios
-- Lógica JavaScript
-- Acceso a datasets
-- Assets asociados
-- Metadata declarativa
-- Lifecycle independiente
+```
+├── /holocrones/
+│   └── categoria-del-holocron/
+│       └── id-del-holocron/
+│           ├── component.js         # Lógica JavaScript, Acceso a datasets, Lifecycle independiente
+│           ├── template.html        # Estructura HTML
+│           ├── style.css            # (Opcional) Estilos propios si fueran necesarios
+│           └── manifest.json        # Metadata declarativa
+└────── holocron-registry.json
+```
 
-### Requisitos
+## Requisitos
 
 Cada holocrón debe:
+- [ ] Declararse en el [Catálogo de Holocrones](#catálogo-de-holocrones)
+- [ ] Alojare `manifest.json`, `template.html` y `component.js` en `/holocrones/categoría/id`. En caso de necesitar usar estilos CSS propíos, tb su `sytle.css`.
+- [ ] Mantener aislamiento funcional y visual
 - Renderizarse mediante una etiqueta HTML propia
 - Inicializarse automáticamente al insertarse en el DOM
 - Reutilizarse en distintas páginas
 - Soportar carga dinámica
-- Minimizar dependencias externas
-- Mantener aislamiento funcional y visual
 
-## Estructura Estándar
+### Catálogo de Holocrones
 
-```
-├── /holocrones/
-│   ├── category-del-holocron/
-│       ├── id-del-holocron/
-│           ├── component.js
-│           ├── template.html
-│           ├── style.css            # (Opcional)
-│           └── manifest.json
-└────── holocron-registry.json
-```
-
-### Convención de nombres
-
-Todo holocrón debe registrar un Custom Element siguiendo la nomenclatura:
-
-```
-holocron-{category}-{id}
-```
-
-Ejemplos:
-
-- holocron-guild-goals
-- holocron-guild-rules
-- holocron-web-changelog
-
-### Registro de Holocrones
-
-El archivo holocron-registry.json mantiene el catálogo disponible de holocrones.
+El archivo `/holocrones/holocron-registry.json` mantiene el catálogo disponible de holocrones.
 
 Ejemplo:
 
@@ -87,7 +60,6 @@ Ejemplo:
 }
 ```
 
-
 ### Manifest
 
 Cada holocrón incluye un archivo declarativo `manifest.json`.
@@ -100,6 +72,10 @@ Cada holocrón incluye un archivo declarativo `manifest.json`.
   "description": "Objetivos del gremio"
 }
 ```
+
+### `template.html`
+
+Contiene estructura HTML.
 
 ### `component.js`
 
@@ -118,10 +94,6 @@ Cada holocrón define un Custom Element:
 customElements.define("holocron-guild-goals", GuildPrioritiesHolocron);
 ```
 
-### `template.html`
-
-Contiene estructura HTML.
-
 ### `style.css` (Opcional)
 
 En caso de que el holocron requiera estilos encapsulados propios, se cargarán utilizando Shadow DOM
@@ -135,6 +107,7 @@ En caso de que el holocron requiera estilos encapsulados propios, se cargarán u
 Los holocrones consumen datos exclusivamente desde `/data/`
 - Se accede únicamente desde DAOs (`/services/dao`)
 - A través de un servicio JavaScript  (`/services`)
+- Los datos son estáticos y no cambian.
 
 Restricciones:
 
@@ -157,15 +130,11 @@ Los holocrones utilizan lifecycle nativo del navegador:
 
 ### 1. Composición de páginas
 
-Los holocrones se pueden utilizar directamente como etiquetas HTML:
-
-```
-<holocron-slot data-holocron="guild/rules"></holocron-slot>
-```
-
 Los holocrones permiten construir páginas mediante composición declarativa:
 
 ```html
+  <script type="module" src="services/holocron.service.js"></script>
+
   <section class="holocron-page">
     <holocron-slot data-holocron="guild/rules"></holocron-slot>
     <holocron-slot data-holocron="guild/goals"></holocron-slot>
@@ -173,32 +142,21 @@ Los holocrones permiten construir páginas mediante composición declarativa:
   </section>
 ```
 
-Las páginas actúan únicamente como contenedores compositivos.
-
 ### 2. Biblioteca de holocrones
 
-La aplicación incluye una página de biblioteca en /holocrones.html que permite:
+La aplicación incluye una página de biblioteca en `/holocrones.html` que permite:
 
-- Visualizar catálogo
+- Visualizar catálogo de holocrones
 - Filtrar holocrones
-- Cargar dinámicamente un holocrón en un visor
-- Documentar funcionalidades
-- Facilitar testing individual
+- Cargar un holocrón en el visor
 
-### 3. Apertura directa mediante URL
+### 3. Apertura directa en la Biblioteca mediante URL
 
 Los holocrones pueden abrirse en la biblioteca directamente mediante parámetro en la URL. La biblioteca debe resolver automáticamente el parámetro `open` y renderizar el holocrón correspondiente (`category/id`).
 
 ```
 /holocrones.html?open=web/changelog
 ```
-
-Esto permite:
-
-- Deep linking
-- Compartición directa
-- Navegación persistente
-- Acceso rápido desde documentación o notificaciones
 
 ## Consecuencias
 
@@ -214,7 +172,6 @@ Esto permite:
 - ✅ compatibilidad github.io
 - ✅ reducción de código boilerplate
 - ✅ arquitectura altamente modular
-- ✅ estructura AI-friendly
 - ✅ facilidad de testing individual
 - ✅ deep linking de holocrones
 
