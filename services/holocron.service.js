@@ -1,10 +1,40 @@
+export class HolocronBase extends HTMLElement {
+
+  async connectedCallback() {
+    await this.renderTemplate();
+    await this.loadData();
+    this.afterRender();
+  }
+
+  async renderTemplate() {
+    const template = await fetch(`/holocrones/${this.getHolocronCategory()}/${this.getHolocronId()}/template.html`)
+        .then(r => r.text());
+
+    this.innerHTML = template;
+  }
+
+  getHolocronCategory() {
+    throw new Error("getHolocronCategory() debe implementarse");
+  }
+  getHolocronId() {
+    throw new Error("getHolocronId() debe implementarse");
+  }
+  async loadData() {
+    throw new Error("loadData() debe implementarse");
+  }
+
+  afterRender() {
+    throw new Error("afterRender() debe implementarse");
+  }
+}
+
 const HOLOCRON_ICONS_BY_CATEGORY = {
   guild: "img/holocron-yellow.png",
   resources: "img/holocron-blue-dark.png",
   events: "img/holocron-red.png",
-  howto: "img/holocron-green.png",
-  archive: "img/holocron-blue-dark.png",
-  default: "img/holocron-blue-dark.png"
+  journey: "img/holocron-green.png",
+  archive: "img/holocron-blue-light.png",
+  default: "img/holocron-blue-light.png"
 };
 
 async function renderHolocron(target, holocronPath) {

@@ -1,8 +1,9 @@
+import { HolocronBase } from "../../../services/holocron.service.js";
 import { Order66Service } from "../../../services/order66.service.js";
 import { RoteService } from "../../../services/rote.service.js";
 import { initGridPriorityProgress, initGridGuildRanksProgress } from "../../../js/grid-priority-progress.js";
 
-class GuildPrioritiesHolocron extends HTMLElement {
+class GuildPrioritiesHolocron extends HolocronBase {
 
   constructor() {
     super();
@@ -10,15 +11,11 @@ class GuildPrioritiesHolocron extends HTMLElement {
     this.roteService = new RoteService();
   }
 
-  async connectedCallback() {
-    const template = await fetch("/holocrones/guild/goals/template.html")
-      .then(r => r.text());
-
-    this.innerHTML = template;
-
-    await this.loadData();
-
-    this.afterRender();
+  getHolocronCategory() {
+    return "guild";
+  }
+  getHolocronId() {
+    return "goals";
   }
 
   async loadData() {

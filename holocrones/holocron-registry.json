@@ -8,6 +8,14 @@
       "path": "holocrones/guild/warnings"
     },{
       "path": "holocrones/web/changelog"
+    },{
+      "path": "holocrones/resources/mods"
+    },{
+      "path": "holocrones/resources/r9"
+    },{
+      "path": "holocrones/journey/bkm"
+    },{
+      "path": "holocrones/journey/leia"
     }
   ]
 }

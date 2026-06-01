@@ -2,7 +2,7 @@
    Layout principal
 ========================= */
 
-.holocron-layout {
+.holocron-library-layout {
     display: flex;
     align-items: stretch;
     gap: 2rem;
@@ -153,23 +153,23 @@
    Categorías (colores)
 ========================= */
 
-.holocron--politica {
+.holocron--guild {
     border-left: 4px solid #ffcc4a;
 }
 
-.holocron--guias {
+.holocron--journey {
     border-left: 4px solid #34c759; /* verde */
 }
 
-.holocron--eventos {
+.holocron--events {
     border-left: 4px solid #ff6b6b; /* rojo */
 }
 
-.holocron--recursos {
+.holocron--resources {
     border-left: 4px solid #a34aff; /* morado */
 }
 
-.holocron--historia {
+.holocron--archive {
     border-left: 4px solid #4aa3ff;
 }
 
@@ -179,7 +179,7 @@
 
 /* Tablets y móviles */
 @media (max-width: 900px) {
-    .holocron-layout {
+    .holocron-library-layout {
         display: flex;
         align-items: stretch;
         gap: 2rem;
@@ -204,7 +204,7 @@
 
 /* Móviles pequeños */
 @media (max-width: 300px) {
-    .holocron-layout {
+    .holocron-library-layout {
         display: flex;
         align-items: stretch;
         gap: 2rem;
