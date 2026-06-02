@@ -3,6 +3,9 @@ import { Order66Service } from "../../../services/order66.service.js";
 import { RoteService } from "../../../services/rote.service.js";
 import { initGridPriorityProgress, initGridGuildRanksProgress } from "../../../js/grid-priority-progress.js";
 
+const ORDEN66_GUILD_TOTAL_TARGET = 245;
+const ORDEN66_GUILD_PADAWAN_TARGET = 5;
+
 class GuildPrioritiesHolocron extends HolocronBase {
 
   constructor() {
@@ -40,7 +43,12 @@ class GuildPrioritiesHolocron extends HolocronBase {
 
     progress.value = scoreM;
 
-    label.textContent = `${scoreM} / 245`;
+    label.textContent = `${scoreM} / ${ORDEN66_GUILD_TOTAL_TARGET}`;
+
+    this.querySelector("#order66-goal-total")?.classList.toggle(
+      "goal-completed",
+      scoreM >= ORDEN66_GUILD_TOTAL_TARGET
+    );
   }
 
   renderGuildRankProgress(rankCounts) {
@@ -53,6 +61,11 @@ class GuildPrioritiesHolocron extends HolocronBase {
     progress.dataset.grandMaster = rankCounts.grandMaster;
     progress.dataset.knight = rankCounts.knight;
     progress.dataset.padawan = rankCounts.padawan;
+
+    this.querySelector("#order66-goal-padawan")?.classList.toggle(
+      "goal-completed",
+      rankCounts.padawan <= ORDEN66_GUILD_PADAWAN_TARGET
+    );
   }
 
   renderPriority(target, data) {
@@ -63,6 +76,11 @@ class GuildPrioritiesHolocron extends HolocronBase {
     el.dataset.completed = data.completed;
     el.dataset.attempted = data.attempted;
     el.dataset.eligible = data.eligible;
+
+    this.querySelector(`#rote-goal-${target}`)?.classList.toggle(
+      "goal-completed",
+      Number(el.dataset.completed) >= Number(el.dataset.target)
+    );
   }
 
   afterRender() {
