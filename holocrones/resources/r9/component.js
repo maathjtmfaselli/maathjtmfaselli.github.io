@@ -16,4 +16,4 @@ class ResourcesR9Holocron extends HolocronBase {
   }
 }
 
-customElements.define("holocron-resources-r9", GuildPrioritiesHolocron);
+customElements.define("holocron-resources-r9", ResourcesR9Holocron);

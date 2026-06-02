@@ -16,4 +16,4 @@ class JourneyBoKatanMandalorHolocron extends HolocronBase {
   }
 }
 
-customElements.define("holocron-journey-bkm", GuildPrioritiesHolocron);
+customElements.define("holocron-journey-bkm", JourneyBoKatanMandalorHolocron);

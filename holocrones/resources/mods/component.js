@@ -16,4 +16,4 @@ class ResourcesModsHolocron extends HolocronBase {
   }
 }
 
-customElements.define("holocron-resources-mods", GuildPrioritiesHolocron);
+customElements.define("holocron-resources-mods", ResourcesModsHolocron);

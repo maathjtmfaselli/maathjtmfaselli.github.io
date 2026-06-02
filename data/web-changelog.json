@@ -37,17 +37,17 @@
   },{
     "date": "28-03-2026",
     "category": "holocron",
-    "title": "Nuevo holocron: '<a href=\"holocrones.html?open=holocron__changelog\">Web - Últimas Novedades</a>'",
+    "title": "Nuevo holocron: '<a href=\"holocrones.html?open=web/changelog\">Web - Últimas Novedades</a>'",
     "description": "Este nuevo holocron informa de las últimas novedades en esta página web."
   },{
     "date": "28-03-2026",
     "category": "holocron",
-    "title": "Nuevo holocron: '<a href=\"holocrones.html?open=holocron__r9\">Prioridad Reliquias 9</a>'",
+    "title": "Nuevo holocron: '<a href=\"holocrones.html?open=resources/r9\">Prioridad Reliquias 9</a>'",
     "description": "Este nuevo holocron informa de las últimas novedades en esta página web."
   },{
     "date": "28-03-2026",
     "category": "holocron",
-    "title": "Mejora holocrón: '<a href=\"holocrones.html?open=holocron__mods\">Cómo mejoro mis MODS?</a>'",
+    "title": "Mejora holocrón: '<a href=\"holocrones.html?open=resources/mods\">Cómo mejoro mis MODS?</a>'",
     "description": "Se ha añadido nuevo contenido al holocrón dando ejemplos prácticos."
   },{
     "date": "28-03-2026",
