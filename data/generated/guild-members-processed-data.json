@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-27T06:38:06.357Z",
+  "updated": "2026-06-02T13:36:21.815Z",
   "countCanDoCorellia": 13,
   "countCanDoBracca": 34,
   "countCanDoDathomir": 8,
@@ -7,8 +7,8 @@
   "countCanDoMandalor": 0,
   "countCanDoKashyyyk": 3,
   "countCanDoZeffo": 0,
-  "countCanDoTatooine": 34,
-  "countCanDoHaven": 6,
+  "countCanDoTatooine": 35,
+  "countCanDoHaven": 8,
   "countCanDoKessel": 0,
   "totalMembers": 50,
   "members": [
@@ -249,7 +249,7 @@
       "canDoKashyyyk": false,
       "canDoTatooine": true,
       "canDoReva": true,
-      "canDoHaven": false,
+      "canDoHaven": true,
       "canDoKessel": false
     },
     {
@@ -331,7 +331,7 @@
       "canDoBracca": true,
       "canDoDathomir": false,
       "canDoKashyyyk": false,
-      "canDoTatooine": false,
+      "canDoTatooine": true,
       "canDoReva": true,
       "canDoHaven": false,
       "canDoKessel": false
@@ -369,7 +369,7 @@
       "canDoKashyyyk": false,
       "canDoTatooine": false,
       "canDoReva": true,
-      "canDoHaven": false,
+      "canDoHaven": true,
       "canDoKessel": false
     },
     {
