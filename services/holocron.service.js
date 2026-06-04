@@ -31,7 +31,7 @@ export class HolocronBase extends HTMLElement {
 const HOLOCRON_ICONS_BY_CATEGORY = {
   guild: "img/holocron-yellow.png",
   resources: "img/holocron-blue-dark.png",
-  events: "img/holocron-red.png",
+  rote: "img/holocron-red.png",
   journey: "img/holocron-green.png",
   archive: "img/holocron-blue-light.png",
   default: "img/holocron-blue-light.png"
