@@ -1,4 +1,19 @@
-class RoteSmRevaHolocron extends HTMLElement {
+import { HolocronBase } from "../../../services/holocron.service.js";
+
+class RoteSmRevaHolocron extends HolocronBase {
+
+  getHolocronCategory() {
+    return "rote";
+  }
+  getHolocronId() {
+    return "sm-reva";
+  }
+  async loadData() {
+  }
+
+  afterRender() {
+  }
+
   static get observedAttributes() {
     return [];
   }

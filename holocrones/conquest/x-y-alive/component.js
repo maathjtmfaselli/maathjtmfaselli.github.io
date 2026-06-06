@@ -3,10 +3,10 @@ import { HolocronBase } from "../../../services/holocron.service.js";
 class ConquestXYAliveHolocron extends HolocronBase {
 
   getHolocronCategory() {
-    return "journey";
+    return "conquest";
   }
   getHolocronId() {
-    return "bkm";
+    return "x-y-alive";
   }
 
   async loadData() {

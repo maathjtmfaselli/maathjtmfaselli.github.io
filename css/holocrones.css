@@ -154,12 +154,23 @@
 ========================= */
 
 .holocron--guild {
-    border-left: 4px solid #ffcc4a;
+    border-left: 4px solid #ffcc4a; /* amarillo */
 }
 
 .holocron--journey {
     border-left: 4px solid #34c759; /* verde */
 }
+
+.holocron--raid-padawan {
+    border-left: 4px solid #ffcc4a; /* amarillo */
+}
+.holocron--raid-knight {
+    border-left: 4px solid #34c759; /* verde */
+}
+.holocron--raid-grandmaster {
+    border-left: 4px solid #4aa3ff; /* azul */
+}
+
 
 .holocron--rote {
     border-left: 4px solid #ff6b6b; /* rojo */
@@ -173,7 +184,7 @@
 }
 
 .holocron--archive {
-    border-left: 4px solid #4aa3ff;
+    border-left: 4px solid #4aa3ff;  /* azul */
 }
 
 /* =========================
