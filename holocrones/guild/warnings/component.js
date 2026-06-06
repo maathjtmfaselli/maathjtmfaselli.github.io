@@ -42,7 +42,7 @@ class GuildWarningsHolocron extends HTMLElement {
 
   renderWarningItem(warning) {
     return `
-      <li class="priority-item">
+      <li class="priority-item guild-warning">
         <div class="priority-progress-player">
           <div class="priority-metric">
             ${warning.name}
