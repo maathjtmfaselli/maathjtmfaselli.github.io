@@ -3,8 +3,13 @@ import { RegistryDao } from "./dao/registry.dao.js";
 export class RoteService {
 
   constructor() {
-    this.guildRoteHistoricalDao = RegistryDao.getRote();
+    this.masterRoteOpsDao = RegistryDao.getMasterRoteOps();
+    this.guildRoteHistoricalDao = RegistryDao.getGuildRoteHistorical();
     this.guildMembersProcessedDataDao = RegistryDao.getMembersProcessed();
+  }
+
+  getMasterDataPnjsByOps() {
+    return this.masterRoteOpsDao.loadPnjsByOps();
   }
 
   validateGuildHistorical(data) {
