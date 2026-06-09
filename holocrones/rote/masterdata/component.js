@@ -13,7 +13,7 @@ class RotePlanningMasterDataHolocron extends HolocronBase {
     return "rote";
   }
   getHolocronId() {
-    return "planning-masterdata";
+    return "masterdata";
   }
 
   async loadData() {
@@ -47,4 +47,4 @@ class RotePlanningMasterDataHolocron extends HolocronBase {
   }
 }
 
-customElements.define("holocron-rote-planning-masterdata", RotePlanningMasterDataHolocron);
+customElements.define("holocron-rote-masterdata", RotePlanningMasterDataHolocron);
