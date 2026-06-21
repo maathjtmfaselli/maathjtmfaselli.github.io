@@ -59,7 +59,7 @@ export class SwgohService {
   async processGuildRawData() {
     const rawData = await this.guildMembersRawDataDao.loadGuildMembersRawData();
     const processedPlayers = rawData.members.map(this.processPlayer);
-    const processedGuild = this.aggregateGuildStats(processedPlayers);
+    const processedGuild = this.aggregateGuildStats(processedPlayers, rawData);
 
     const processedOutput = {
       updated: new Date().toISOString(),
@@ -76,7 +76,8 @@ export class SwgohService {
       name: rawPlayer.name,
       allyCode: rawPlayer.allyCode,
       canDoCorellia: (units["Qi'ra"] || 0) >= 5 && (units["Young Han Solo"] || 0) >= 5,
-      canDoBracca: (units["Cere Junda"] || 0) >= 7 && (units["Jedi Knight Cal Kestis"] || 0) >= 7,
+      canDoBracca: ((units["Cere Junda"] || 0) >= 7 && (units["Jedi Knight Cal Kestis"] || 0) >= 7)
+          || ((units["Cere Junda"] || 0) >= 7 && (units["Cal Kestis"] || 0) >= 7),
       canDoDathomir: (units["Merrin"] || 0) >= 7,
       canDoKashyyyk: (units["Saw Gerrera"] || 0) >= 7,
       canDoTatooine: (units["Bo-Katan (Mand'alor)"] || 0) >= 7,
@@ -85,33 +86,67 @@ export class SwgohService {
       canDoKessel: (units["Qi'ra"] || 0) >= 8 && (units["L3-37"] || 0) >= 8
     };
   }
-  aggregateGuildStats(members) {
+  aggregateGuildStats(members, rawData) {
     const stats = {
-      countCanDoCorellia: 0,
-      countCanDoBracca: 0,
-      countCanDoDathomir: 0,
-      countCanDoReva: 0,
-      countCanDoMandalor: 0,
-      countCanDoKashyyyk: 0,
-      countCanDoZeffo: 0,
-      countCanDoTatooine: 0,
-      countCanDoHaven: 0,
-      countCanDoKessel: 0,
       totalMembers: members.length,
-      members: members
+      members: members,
+      rote: {
+        specialMissions: {
+          canDoCorellia: 0,
+          canDoBracca: 0,
+          canDoDathomir: 0,
+          canDoReva: 0,
+          canDoMandalor: 0,
+          canDoKashyyyk: 0,
+          canDoZeffo: 0,
+          canDoTatooine: 0,
+          canDoHaven: 0,
+          canDoKessel: 0
+        },
+        characterCounts: {}
+      }
     };
 
     members.forEach(member => {
-      if (member.canDoCorellia) stats.countCanDoCorellia++;
-      if (member.canDoBracca) stats.countCanDoBracca++;
-      if (member.canDoDathomir) stats.countCanDoDathomir++;
-      if (member.canDoReva) stats.countCanDoReva++;
-      if (member.canDoMandalor) stats.countCanDoMandalor++;
-      if (member.canDoKashyyyk) stats.countCanDoKashyyyk++;
-      if (member.canDoZeffo) stats.countCanDoZeffo++;
-      if (member.canDoTatooine) stats.countCanDoTatooine++;
-      if (member.canDoHaven) stats.countCanDoHaven++;
-      if (member.canDoKessel) stats.countCanDoKessel++;
+      if (member.canDoCorellia) stats.rote.specialMissions.canDoCorellia++;
+      if (member.canDoBracca) stats.rote.specialMissions.canDoBracca++;
+      if (member.canDoDathomir) stats.rote.specialMissions.canDoDathomir++;
+      if (member.canDoReva) stats.rote.specialMissions.canDoReva++;
+      if (member.canDoMandalor) stats.rote.specialMissions.canDoMandalor++;
+      if (member.canDoKashyyyk) stats.rote.specialMissions.canDoKashyyyk++;
+      if (member.canDoZeffo) stats.rote.specialMissions.canDoZeffo++;
+      if (member.canDoTatooine) stats.rote.specialMissions.canDoTatooine++;
+      if (member.canDoHaven) stats.rote.specialMissions.canDoHaven++;
+      if (member.canDoKessel) stats.rote.specialMissions.canDoKessel++;
+    });
+
+    rawData.members.forEach(member => {
+      Object.entries(member.units).forEach(([unitName, relic]) => {
+            if (!stats.rote.characterCounts[unitName]) {
+              stats.rote.characterCounts[unitName] = {
+                r5plus: 0,
+                r6plus: 0,
+                r7plus: 0,
+                r8plus: 0
+    //              r9plus: 0
+              };
+            }
+            if (relic >= 5) {
+              stats.rote.characterCounts[unitName].r5plus++;
+            }
+            if (relic >= 6) {
+              stats.rote.characterCounts[unitName].r6plus++;
+            }
+            if (relic >= 7) {
+              stats.rote.characterCounts[unitName].r7plus++;
+            }
+            if (relic >= 8) {
+              stats.rote.characterCounts[unitName].r8plus++;
+            }
+    //          if (relic >= 9) {
+    //            stats.rote.characterCounts[unitName].r9plus++;
+    //          }
+          });
     });
 
     return stats;
