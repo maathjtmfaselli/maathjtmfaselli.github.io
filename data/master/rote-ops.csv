@@ -232,7 +232,7 @@ Sector,Planeta,Side,Op,Character
 1,Coruscant,Luminoso,4,General Skywalker
 1,Coruscant,Luminoso,4,The Mandalorian (Beskar Armor)
 1,Coruscant,Luminoso,4,Logray
-1,Coruscant,Luminoso,4,Plo Koon's Jedi Starfighter
+1,Coruscant,Luminoso,4,Plo Koon's Jedi Startfighter
 1,Coruscant,Luminoso,4,Visas Marr
 1,Coruscant,Luminoso,4,General Skywalker
 1,Coruscant,Luminoso,4,C-3PO
@@ -471,7 +471,7 @@ Sector,Planeta,Side,Op,Character
 2,Bracca,Luminoso,2,Mon Mothma
 2,Bracca,Luminoso,2,Aayla Secura
 2,Bracca,Luminoso,2,Ben Solo
-2,Bracca,Luminoso,2,Jedi Consular's Startfighter
+2,Bracca,Luminoso,2,Jedi Consular's Starfighter
 2,Bracca,Luminoso,2,BB-8
 2,Bracca,Luminoso,2,C-3PO
 2,Bracca,Luminoso,2,Profundidad
@@ -797,7 +797,7 @@ Sector,Planeta,Side,Op,Character
 3,Kashyyyk,Luminoso,6,Razor Crest
 3,Kashyyyk,Luminoso,6,Commander Luke Skywalker
 3,Kashyyyk,Luminoso,6,Han's Millennium Falcon
-3,Kashyyyk,Luminoso,6,Negotiador
+3,Kashyyyk,Luminoso,6,Negociador
 3,Kashyyyk,Luminoso,6,Han Solo
 3,Kashyyyk,Luminoso,6,Rey
 3,Kashyyyk,Luminoso,6,Jedi Knight Revan
@@ -1133,7 +1133,7 @@ Sector,Planeta,Side,Op,Character
 4,Kessel,Neutral,4,Rey
 4,Kessel,Neutral,4,Caballero Jedi Luke Skywalker
 4,Kessel,Neutral,4,Maul
-4,Kessel,Neutral,4,Hoth Rebel Soldier
+4,Kessel,Neutral,4,Soldado Rebelde de Hoth
 4,Kessel,Neutral,4,Scythe
 4,Kessel,Neutral,4,Rey
 4,Kessel,Neutral,4,Starkiller
@@ -1170,96 +1170,96 @@ Sector,Planeta,Side,Op,Character
 4,Kessel,Neutral,6,Commander Ahsoka Tano
 4,Kessel,Neutral,6,Dark Trooper
 4,Kessel,Neutral,6,Kylo Ren
-4,Mandalore,,,Doctor Aphra
-4,Mandalore,,,Doctor Aphra
-4,Mandalore,,,Doctor Aphra
-4,Mandalore,,,Doctor Aphra
-4,Mandalore,,,Leia Organa
-4,Mandalore,,,Leia Organa
-4,Mandalore,,,Leia Organa
-4,Mandalore,,,Leia Organa
-4,Mandalore,,,Leviathan
-4,Mandalore,,,Leviathan
-4,Mandalore,,,Leviathan
-4,Mandalore,,,Leviathan
-4,Mandalore,,,Admiral Trench
-4,Mandalore,,,Admiral Trench
-4,Mandalore,,,Admiral Trench
-4,Mandalore,,,Cere Junda
-4,Mandalore,,,Cere Junda
-4,Mandalore,,,Cere Junda
-4,Mandalore,,,Comeuppance
-4,Mandalore,,,Comeuppance
-4,Mandalore,,,Comeuppance
-4,Mandalore,,,Commander Ahsoka Tano
-4,Mandalore,,,Commander Ahsoka Tano
-4,Mandalore,,,Commander Ahsoka Tano
-4,Mandalore,,,Executor
-4,Mandalore,,,Executor
-4,Mandalore,,,Executor
-4,Mandalore,,,Fury-class Interceptor
-4,Mandalore,,,Fury-class Interceptor
-4,Mandalore,,,Fury-class Interceptor
-4,Mandalore,,,General Skywalker
-4,Mandalore,,,General Skywalker
-4,Mandalore,,,General Skywalker
-4,Mandalore,,,Lord Vader
-4,Mandalore,,,Lord Vader
-4,Mandalore,,,Lord Vader
-4,Mandalore,,,Sith Eternal Emperor
-4,Mandalore,,,Sith Eternal Emperor
-4,Mandalore,,,Sith Eternal Emperor
-4,Mandalore,,,Starkiller
-4,Mandalore,,,Starkiller
-4,Mandalore,,,Starkiller
-4,Mandalore,,,TIE Dagger
-4,Mandalore,,,TIE Dagger
-4,Mandalore,,,TIE Dagger
-4,Mandalore,,,Taron Malicos
-4,Mandalore,,,Taron Malicos
-4,Mandalore,,,Taron Malicos
-4,Mandalore,,,Wat Tambor
-4,Mandalore,,,Wat Tambor
-4,Mandalore,,,Wat Tambor
-4,Mandalore,,,Ben Solo
-4,Mandalore,,,Ben Solo
-4,Mandalore,,,Captain Drogan
-4,Mandalore,,,Captain Drogan
-4,Mandalore,,,Captain Rex
-4,Mandalore,,,Captain Rex
-4,Mandalore,,,Darth Bane
-4,Mandalore,,,Darth Bane
-4,Mandalore,,,Jedi Knight Luke Skywalker
-4,Mandalore,,,Jedi Knight Luke Skywalker
-4,Mandalore,,,Kelleran Beq
-4,Mandalore,,,Kelleran Beq
-4,Mandalore,,,Ki-Adi-Mundi
-4,Mandalore,,,Ki-Adi-Mundi
-4,Mandalore,,,Mark VI Interceptor
-4,Mandalore,,,Mark VI Interceptor
-4,Mandalore,,,Merrin
-4,Mandalore,,,Merrin
-4,Mandalore,,,Princess Kneesaa
-4,Mandalore,,,Princess Kneesaa
-4,Mandalore,,,Rey
-4,Mandalore,,,Rey
-4,Mandalore,,,STAP
-4,Mandalore,,,STAP
-4,Mandalore,,,Tarfful
-4,Mandalore,,,Tarfful
-4,Mandalore,,,Tusken Warrior
-4,Mandalore,,,Tusken Warrior
-4,Mandalore,,,Boba Fett, Scion of Jango
-4,Mandalore,,,Coruscant Underworld Police
-4,Mandalore,,,Darth Malak
-4,Mandalore,,,Darth Malgus
-4,Mandalore,,,Jedi Master Kenobi
-4,Mandalore,,,Profundity
-4,Mandalore,,,Razor Crest
-4,Mandalore,,,Scythe
-4,Mandalore,,,Supreme Leader Kylo Ren
-4,Mandalore,,,TIE/IN Interceptor Prototype
-4,Mandalore,,,Tusken Chieftain
+4,Mandalore,,1,Doctor Aphra
+4,Mandalore,,1,Leia Organa
+4,Mandalore,,1,Leviathan
+4,Mandalore,,1,Cere Junda
+4,Mandalore,,1,Comeuppance
+4,Mandalore,,1,Commander Ahsoka Tano
+4,Mandalore,,1,Commander Ahsoka Tano
+4,Mandalore,,1,Sith Eternal Emperor
+4,Mandalore,,1,Wat Tambor
+4,Mandalore,,1,Ben Solo
+4,Mandalore,,1,Captain Drogan
+4,Mandalore,,1,Kelleran Beq
+4,Mandalore,,1,Princess Kneesaa
+4,Mandalore,,1,Rey
+4,Mandalore,,1,Darth Malak
+4,Mandalore,,2,Doctor Aphra
+4,Mandalore,,2,Admiral Trench
+4,Mandalore,,2,Comeuppance
+4,Mandalore,,2,Comeuppance
+4,Mandalore,,2,Executor
+4,Mandalore,,2,Fury-class Interceptor
+4,Mandalore,,2,General Skywalker
+4,Mandalore,,2,Lord Vader
+4,Mandalore,,2,Sith Eternal Emperor
+4,Mandalore,,2,TIE Dagger
+4,Mandalore,,2,Taron Malicos
+4,Mandalore,,2,Captain Drogan
+4,Mandalore,,2,Jedi Knight Luke Skywalker
+4,Mandalore,,2,Tarfful
+4,Mandalore,,2,Boba Fett, Scion of Jango
+4,Mandalore,,3,Leia Organa
+4,Mandalore,,3,Admiral Trench
+4,Mandalore,,3,Commander Ahsoka Tano
+4,Mandalore,,3,General Skywalker
+4,Mandalore,,3,Lord Vader
+4,Mandalore,,3,Starkiller
+4,Mandalore,,3,Captain Rex
+4,Mandalore,,3,Darth Bane
+4,Mandalore,,3,Kelleran Beq
+4,Mandalore,,3,Ki-Adi-Mundi
+4,Mandalore,,3,Mark VI Interceptor
+4,Mandalore,,3,Rey
+4,Mandalore,,3,Tusken Warrior
+4,Mandalore,,3,Scythe
+4,Mandalore,,3,Tusken Chieftain
+4,Mandalore,,4,Doctor Aphra
+4,Mandalore,,4,Leia Organa
+4,Mandalore,,4,Leviathan
+4,Mandalore,,4,Leviathan
+4,Mandalore,,4,Fury-class Interceptor
+4,Mandalore,,4,Starkiller
+4,Mandalore,,4,Wat Tambor
+4,Mandalore,,4,Captain Rex
+4,Mandalore,,4,Merrin
+4,Mandalore,,4,Princess Kneesaa
+4,Mandalore,,4,Tarfful
+4,Mandalore,,4,Jedi Master Kenobi
+4,Mandalore,,4,Razor Crest
+4,Mandalore,,4,Supreme Leader Kylo Ren
+4,Mandalore,,4,TIE/IN Interceptor Prototype
+4,Mandalore,,5,Doctor Aphra
+4,Mandalore,,5,Leviathan
+4,Mandalore,,5,Cere Junda
+4,Mandalore,,5,Executor
+4,Mandalore,,5,Fury-class Interceptor
+4,Mandalore,,5,Sith Eternal Emperor
+4,Mandalore,,5,Starkiller
+4,Mandalore,,5,Taron Malicos
+4,Mandalore,,5,Ki-Adi-Mundi
+4,Mandalore,,5,Mark VI Interceptor
+4,Mandalore,,5,Merrin
+4,Mandalore,,5,STAP
+4,Mandalore,,5,Tusken Warrior
+4,Mandalore,,5,Darth Malgus
+4,Mandalore,,5,Profundity
+4,Mandalore,,6,Leia Organa
+4,Mandalore,,6,Admiral Trench
+4,Mandalore,,6,Cere Junda
+4,Mandalore,,6,Executor
+4,Mandalore,,6,General Skywalker
+4,Mandalore,,6,Lord Vader
+4,Mandalore,,6,TIE Dagger
+4,Mandalore,,6,TIE Dagger
+4,Mandalore,,6,Taron Malicos
+4,Mandalore,,6,Wat Tambor
+4,Mandalore,,6,Ben Solo
+4,Mandalore,,6,Darth Bane
+4,Mandalore,,6,Jedi Knight Luke Skywalker
+4,Mandalore,,6,STAP
+4,Mandalore,,6,Coruscant Underworld Police
 5,Anillo de Kafrene,Luminoso,1,Jedi Master Luke Skywalker
 5,Anillo de Kafrene,Luminoso,1,Grand Master Yoda
 5,Anillo de Kafrene,Luminoso,1,Caballero Jedi Luke Skywalker
