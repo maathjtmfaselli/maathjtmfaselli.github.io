@@ -2,6 +2,11 @@
   {
     "date": "2026-07-05",
     "category": "holocron",
+    "title": "Nuevos holocron: <a href=\"holocrones.html?open=rote/plan\">Alzamiento - Plan</a>",
+    "description": "Muestro plan para el siguiente Alzamiento"
+  },{
+    "date": "2026-07-05",
+    "category": "holocron",
     "title": "Nuevos holocron: <a href=\"holocrones.html?open=archive/order66\">Orden66 - Archivo</a>",
     "description": "Muestra los datos históricos del gremio en Orden66"
   },{

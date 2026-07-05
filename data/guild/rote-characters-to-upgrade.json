@@ -6,6 +6,11 @@
       "relic": "Reliquia 8",
       "assignedTo": ""
     },{
+      "name": "Dash Rendar",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_dashrendar.png",
+      "relic": "Reliquia 8",
+      "assignedTo": ""
+    },{
       "name": "Zaalbar",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_zaalbar.png",
       "relic": "Reliquia 8",
@@ -34,11 +39,6 @@
   ],
   "charactersToUpgrade": [
     {
-      "name": "Jawa Ingeniero",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_jawa_engineer.png",
-      "relic": "Reliquia 5",
-      "assignedTo": ""
-    },{
       "name": "Old Boba",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
       "relic": "Reliquia 6",
@@ -57,6 +57,16 @@
   ],
   "upgradedCharacters": [
     {
+      "name": "Princesa Kneesaa",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_princesskneesaa.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "R3C0"
+    },{
+      "name": "Old Boba",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "Viula"
+    },{
       "name": "Nightsister Initiate",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_nightsister_initiate.png",
       "relic": "Reliquia 5",
