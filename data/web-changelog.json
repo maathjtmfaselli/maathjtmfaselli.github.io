@@ -1,56 +1,41 @@
 [
   {
-    "date": "09-04-2026",
-    "category": "conquista",
-    "title": "Nuevos holocron",
-    "description": "<a href=\"holocrones.html?open=holocron__conquest-win-with-xy-alive\">Conquista - gana con xy vivos</a>"
+    "date": "2026-07-05",
+    "category": "holocron",
+    "title": "Nuevos holocron: <a href=\"holocrones.html?open=archive/order66\">Orden66 - Archivo</a>",
+    "description": "Muestra los datos históricos del gremio en Orden66"
   },{
-    "date": "09-04-2026",
-    "category": "alzamiento",
-    "title": "Nuevos holocrones: Misiones Alzamiento",
-    "description": "<ul><li><a href=\"holocrones.html?open=holocron__rote-bracca\">Sector 2 - Bracca</a></li><li><a href=\"holocrones.html?open=holocron__rote-felucia\">Sector 2 - Felucia</a></li><li><a href=\"holocrones.html?open=holocron__rote-geonosis\">Sector 2 - Geonosis</a></li></ul>"
+    "date": "2026-06-26",
+    "category": "holocron",
+    "title": "Nuevos holocron: <a href=\"holocrones.html?open=conquest/x-y-alive\">Alzameinto - Datos Maestros</a>",
+    "description": "Muestra datos maestros sobre alzamiento"
   },{
-    "date": "09-04-2026",
-    "category": "alzamiento",
-    "title": "Nuevos holocrones: Misiones Alzamiento",
-    "description": "<ul><li><a href=\"holocrones.html?open=holocron__rote-coruscant\">Sector 1 - Coruscant</a></li><li><a href=\"holocrones.html?open=holocron__rote-corellia\">Sector 1 - Corellia</a></li><li><a href=\"holocrones.html?open=holocron__rote-mustafar\">Sector 1 - Mustafar</a></li></ul>"
+    "date": "2026-04-09",
+    "category": "holocron",
+    "title": "Nuevos holocron: <a href=\"holocrones.html?open=conquest/x-y-alive\">Conquista - gana con xy vivos</a>",
+    "description": "Este nuevo holocrón ayuda a sacar en Conquista la misión Gana con x y personajes vivos"
   },{
-    "date": "28-03-2026",
-    "category": "gremio",
-    "title": "Expulsiones: Alvader, Ivix",
-    "description": "No participación en los eventos"
-  },{
-    "date": "06-04-2026",
-    "category": "orden66",
-    "title": "Actualización de datos",
-    "description": "Máximo posible = 222M con 3 compis que aportan 0 al máximo. Sin cambios de rangos."
-  },{
-    "date": "05-04-2026",
-    "category": "alzamiento",
-    "title": "31*",
-    "description": "No llegamos a objetivo de 33*. Zeffo y Mandalore más cerca."
-  },{
-    "date": "30-03-2026",
+    "date": "2026-03-30",
     "category": "web",
     "title": "Mejoras Holocrones",
     "description": "Mejoras visuales en la biblioteca de holocrones. Añadido filtrado. Colores holocrones. Holocrones Orden66."
   },{
-    "date": "28-03-2026",
+    "date": "2026-03-28",
     "category": "holocron",
     "title": "Nuevo holocron: '<a href=\"holocrones.html?open=web/changelog\">Web - Últimas Novedades</a>'",
     "description": "Este nuevo holocron informa de las últimas novedades en esta página web."
   },{
-    "date": "28-03-2026",
+    "date": "2026-03-28",
     "category": "holocron",
     "title": "Nuevo holocron: '<a href=\"holocrones.html?open=resources/r9\">Prioridad Reliquias 9</a>'",
     "description": "Este nuevo holocron informa de las últimas novedades en esta página web."
   },{
-    "date": "28-03-2026",
+    "date": "2026-03-28",
     "category": "holocron",
     "title": "Mejora holocrón: '<a href=\"holocrones.html?open=resources/mods\">Cómo mejoro mis MODS?</a>'",
     "description": "Se ha añadido nuevo contenido al holocrón dando ejemplos prácticos."
   },{
-    "date": "28-03-2026",
+    "date": "2026-03-28",
     "category": "gremio",
     "title": "Tarjetas amarillas: Darth Sion, Hill",
     "description": "Nuevas tarjetas amarillas a 2 miembros del gremio que cumplen con 0 objetivos del gremio"

@@ -29,13 +29,12 @@ class WebChangelogHolocron extends HTMLElement {
     try {
       const response = await fetch('../data/web-changelog.json');
       const data = await response.json();
+      data.sort((a, b) => new Date(b.date) - new Date(a.date));
 
       const container = document.getElementById('changelog-container');
       container.innerHTML = '';
 
       data.forEach(item => {
-          data.sort((a, b) => new Date(b.date) - new Date(a.date));
-
           const color = categoryColors[item.category.toLowerCase()] || categoryColors['otras'];
           const card = document.createElement('div');
           card.className = 'changelog-card';
