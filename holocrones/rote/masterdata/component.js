@@ -2,7 +2,7 @@ import { HolocronBase } from "../../../services/holocron.service.js";
 import { RoteService } from "../../../services/rote.service.js";
 await import("../../../js/components/data-table.js");
 
-class RotePlanningMasterDataHolocron extends HolocronBase {
+class RoteMasterDataHolocron extends HolocronBase {
 
   constructor() {
     super();
@@ -47,4 +47,4 @@ class RotePlanningMasterDataHolocron extends HolocronBase {
   }
 }
 
-customElements.define("holocron-rote-masterdata", RotePlanningMasterDataHolocron);
+customElements.define("holocron-rote-masterdata", RoteMasterDataHolocron);
