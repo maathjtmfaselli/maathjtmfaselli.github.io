@@ -15,10 +15,12 @@ export class GuildWarningsService {
     return processedGuildData.members
       .map(member => {
         const order66MaxScore = this.order66Service.getMaxScoreByMemberName(order66HistoricalData.find( row => row.Jugador === member.name ));
-        const warning =
-          order66MaxScore < 3000
-          && !member.canDoBracca
-          && !member.canDoTatooine;
+        const countCompletedObjectives = [
+          order66MaxScore >= 3000,
+          member.canDoBracca,
+          member.canDoTatooine
+        ].filter(Boolean).length;
+        const warning = countCompletedObjectives < 2;
 
         return {
           name: member.name,
@@ -30,6 +32,12 @@ export class GuildWarningsService {
       })
       .filter( p => p.warning )
       .sort((a, b) => a.order66MaxScore - b.order66MaxScore );
+//  .sort((a, b) => {
+//    if (a.completedObjectives !== b.completedObjectives) {
+//      return a.completedObjectives - b.completedObjectives;
+//    }
+//    return a.order66MaxScore - b.order66MaxScore;
+//  });
   }
 
 }
