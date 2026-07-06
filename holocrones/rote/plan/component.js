@@ -57,17 +57,17 @@ renderCharacterList(characters, listElementId) {
     let statusClass = "";
     switch (character.status) {
       case "TODO":
-        statusClass = "todo";
+        statusClass = "status--todo";
         break;
       case "IN_PROGRESS":
-        statusClass = "in-progress";
+        statusClass = "status--in_progress";
         break;
       case "DONE":
-        statusClass = "done";
+        statusClass = "status--done";
         break;
     }
 
-    listItem.classList.add("character-item", character.status.toLowerCase());
+    listItem.classList.add("character", statusClass);
     listItem.innerHTML = `
       <img src="${character.image}" alt="${character.name}">
       <span class="character-name">${character.name}</span>

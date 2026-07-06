@@ -490,6 +490,15 @@ ol {
     rgba(0, 0, 0, 0) 20%          /* Espaciado entre rayas */
   );
 }
+.status--todo {
+    background-color: #2a2a40;
+}
+.status--in_progress {
+    background-color: #aaaa66;
+}
+.status--done {
+    background-color: #3ba55d;
+}
 .best-score {
     border: 2px solid gold !important;
     font-weight: bold;

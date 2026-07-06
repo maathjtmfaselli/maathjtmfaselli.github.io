@@ -1,8 +1,28 @@
 {
   "topPriorityCharacters": [
     {
-      "name": "Dash Rendar",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_dashrendar.png",
+      "name": "Ki-Adi-Mundi",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_kiadimundi.png",
+      "relic": "Reliquia 7",
+      "assignedTo": ""
+    },{
+      "name": "Sargento Clon",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_trooperclonegreen.png",
+      "relic": "Reliquia 7",
+      "assignedTo": ""
+    },{
+      "name": "Admiral Trench",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_admiraltrench.png",
+      "relic": "Reliquia 8",
+      "assignedTo": ""
+    },{
+      "name": "STAP",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_stap.png",
+      "relic": "Reliquia 8",
+      "assignedTo": ""
+    },{
+      "name": "Tarfful",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_tarfful.png",
       "relic": "Reliquia 8",
       "assignedTo": ""
     },{
