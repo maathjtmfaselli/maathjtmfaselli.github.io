@@ -1,15 +1,15 @@
 {
   "topPriorityCharacters": [
     {
-      "name": "Ki-Adi-Mundi",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_kiadimundi.png",
+      "name": "Wrecker",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bb_wrecker.png",
       "relic": "Reliquia 7",
       "assignedTo": ""
     },{
       "name": "Sargento Clon",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_trooperclonegreen.png",
       "relic": "Reliquia 7",
-      "assignedTo": ""
+      "assignedTo": "Last Order"
     },{
       "name": "Admiral Trench",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_admiraltrench.png",

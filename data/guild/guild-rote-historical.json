@@ -5,27 +5,27 @@
       "status": "planned",
       "pg": "596M",
       "stars": "",
-      "noDesplegados": "/////",
+      "noDesplegados": "-/////",
       "pelotones": "/55",
       "dathomir": "x/x/8",
       "reva": "x/x/27",
-      "mandalor": "x/x/39",
+      "mandalor": "x/x/40",
       "kashyyyk": "x/x/4",
       "zeffo": "x/x/44",
-      "corellia": "x/x/14"
+      "corellia": "x/x/16"
     },{
       "date": "06/07/2026",
-      "status": "planned",
+      "status": "in progress",
       "pg": "596M",
       "stars": "",
-      "noDesplegados": "/////",
+      "noDesplegados": "-/70/57/79(-)//",
       "pelotones": "/55",
-      "dathomir": "x/x/8",
-      "reva": "x/x/27",
-      "mandalor": "x/x/39",
-      "kashyyyk": "x/x/4",
-      "zeffo": "x/x/44",
-      "corellia": "x/x/14"
+      "dathomir": "5/8/8",
+      "reva": "19/22/27",
+      "mandalor": "25/37/40",
+      "kashyyyk": "2/4/4",
+      "zeffo": "19/35/44",
+      "corellia": "12/16/16"
     },{
       "date": "22/06/2026",
       "status": "completed",
