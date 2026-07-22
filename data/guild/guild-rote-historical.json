@@ -11,20 +11,33 @@
       "reva": "x/x/27",
       "mandalor": "x/x/40",
       "kashyyyk": "x/x/4",
-      "zeffo": "x/x/44",
+      "zeffo": "x/x/43",
       "corellia": "x/x/16"
     },{
-      "date": "06/07/2026",
+      "date": "20/07/2026",
       "status": "in progress",
       "pg": "596M",
       "stars": "",
-      "noDesplegados": "-/70/57/79(-)/65/",
+      "noDesplegados": "-/////",
       "pelotones": "/55",
+      "dathomir": "x/x/8",
+      "reva": "x/x/27",
+      "mandalor": "x/x/40",
+      "kashyyyk": "x/x/4",
+      "zeffo": "x/x/43",
+      "corellia": "11/14/16"
+    },{
+      "date": "06/07/2026",
+      "status": "completed",
+      "pg": "596M",
+      "stars": "32",
+      "noDesplegados": "-/70/57/79(-)/65/75",
+      "pelotones": "54/55",
       "dathomir": "5/8/8",
       "reva": "19/22/27",
       "mandalor": "25/37/40",
       "kashyyyk": "2/4/4",
-      "zeffo": "19/35/44",
+      "zeffo": "19/35/43",
       "corellia": "12/16/16"
     },{
       "date": "22/06/2026",

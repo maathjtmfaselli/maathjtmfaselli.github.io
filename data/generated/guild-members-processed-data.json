@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06T10:53:07.118Z",
+  "updated": "2026-07-22T07:20:31.673Z",
   "totalMembers": 50,
   "members": [
     {
@@ -69,7 +69,7 @@
       "canDoBracca": true,
       "canDoDathomir": true,
       "canDoKashyyyk": false,
-      "canDoTatooine": false,
+      "canDoTatooine": true,
       "canDoReva": true,
       "canDoHaven": false,
       "canDoKessel": false
@@ -79,7 +79,7 @@
       "allyCode": "522319923",
       "canDoCorellia": false,
       "canDoBracca": true,
-      "canDoDathomir": false,
+      "canDoDathomir": true,
       "canDoKashyyyk": false,
       "canDoTatooine": true,
       "canDoReva": false,
@@ -105,7 +105,7 @@
       "canDoBracca": true,
       "canDoDathomir": false,
       "canDoKashyyyk": false,
-      "canDoTatooine": false,
+      "canDoTatooine": true,
       "canDoReva": false,
       "canDoHaven": false,
       "canDoKessel": false
@@ -161,9 +161,9 @@
     {
       "name": "R3CO",
       "allyCode": "715639263",
-      "canDoCorellia": false,
+      "canDoCorellia": true,
       "canDoBracca": true,
-      "canDoDathomir": false,
+      "canDoDathomir": true,
       "canDoKashyyyk": false,
       "canDoTatooine": true,
       "canDoReva": false,
@@ -233,7 +233,7 @@
     {
       "name": "YEPISTARS",
       "allyCode": "979175733",
-      "canDoCorellia": false,
+      "canDoCorellia": true,
       "canDoBracca": true,
       "canDoDathomir": false,
       "canDoKashyyyk": true,
@@ -525,7 +525,7 @@
       "canDoBracca": true,
       "canDoDathomir": false,
       "canDoKashyyyk": false,
-      "canDoTatooine": false,
+      "canDoTatooine": true,
       "canDoReva": false,
       "canDoHaven": false,
       "canDoKessel": false
@@ -605,29 +605,23 @@
   ],
   "rote": {
     "specialMissions": {
-      "canDoCorellia": 14,
+      "canDoCorellia": 16,
       "canDoBracca": 43,
-      "canDoDathomir": 8,
+      "canDoDathomir": 10,
       "canDoReva": 26,
       "canDoMandalor": 0,
       "canDoKashyyyk": 4,
       "canDoZeffo": 0,
-      "canDoTatooine": 40,
+      "canDoTatooine": 43,
       "canDoHaven": 9,
       "canDoKessel": 0
     },
     "characterCounts": {
       "Poggle the Lesser": {
-        "r5plus": 9,
+        "r5plus": 10,
         "r6plus": 1,
         "r7plus": 0,
         "r8plus": 0
-      },
-      "Veteran Smuggler Chewbacca": {
-        "r5plus": 25,
-        "r6plus": 18,
-        "r7plus": 16,
-        "r8plus": 1
       },
       "Biggs Darklighter": {
         "r5plus": 8,
@@ -640,12 +634,6 @@
         "r6plus": 0,
         "r7plus": 0,
         "r8plus": 0
-      },
-      "IG-12 & Grogu": {
-        "r5plus": 49,
-        "r6plus": 47,
-        "r7plus": 47,
-        "r8plus": 5
       },
       "Phantom II": {
         "r5plus": 0,
@@ -672,32 +660,32 @@
         "r8plus": 3
       },
       "Echo": {
-        "r5plus": 37,
+        "r5plus": 38,
         "r6plus": 1,
         "r7plus": 0,
         "r8plus": 0
       },
       "Savage Opress": {
-        "r5plus": 15,
+        "r5plus": 17,
         "r6plus": 7,
         "r7plus": 4,
         "r8plus": 0
       },
       "Ezra Bridger": {
-        "r5plus": 31,
-        "r6plus": 18,
+        "r5plus": 33,
+        "r6plus": 19,
         "r7plus": 2,
         "r8plus": 0
       },
       "General Syndulla": {
-        "r5plus": 32,
-        "r6plus": 10,
-        "r7plus": 7,
+        "r5plus": 33,
+        "r6plus": 11,
+        "r7plus": 8,
         "r8plus": 1
       },
       "KX Security Droid": {
         "r5plus": 3,
-        "r6plus": 1,
+        "r6plus": 2,
         "r7plus": 0,
         "r8plus": 0
       },
@@ -708,10 +696,10 @@
         "r8plus": 0
       },
       "Temple Guard": {
-        "r5plus": 43,
+        "r5plus": 44,
         "r6plus": 29,
         "r7plus": 21,
-        "r8plus": 7
+        "r8plus": 8
       },
       "First Order SF TIE Pilot": {
         "r5plus": 22,
@@ -720,19 +708,19 @@
         "r8plus": 0
       },
       "Jawa Scavenger": {
-        "r5plus": 4,
+        "r5plus": 5,
         "r6plus": 2,
         "r7plus": 2,
         "r8plus": 0
       },
       "Droideka": {
-        "r5plus": 18,
-        "r6plus": 6,
+        "r5plus": 21,
+        "r6plus": 8,
         "r7plus": 4,
         "r8plus": 0
       },
       "L3-37": {
-        "r5plus": 8,
+        "r5plus": 9,
         "r6plus": 5,
         "r7plus": 3,
         "r8plus": 0
@@ -744,13 +732,13 @@
         "r8plus": 0
       },
       "Sith Empire Trooper": {
-        "r5plus": 27,
-        "r6plus": 24,
-        "r7plus": 23,
+        "r5plus": 28,
+        "r6plus": 26,
+        "r7plus": 24,
         "r8plus": 1
       },
       "Hunter": {
-        "r5plus": 37,
+        "r5plus": 38,
         "r6plus": 1,
         "r7plus": 1,
         "r8plus": 0
@@ -762,7 +750,7 @@
         "r8plus": 0
       },
       "Dengar": {
-        "r5plus": 46,
+        "r5plus": 47,
         "r6plus": 5,
         "r7plus": 5,
         "r8plus": 1
@@ -786,19 +774,19 @@
         "r8plus": 2
       },
       "Talia": {
-        "r5plus": 7,
+        "r5plus": 8,
         "r6plus": 1,
         "r7plus": 1,
         "r8plus": 0
       },
       "Admiral Raddus": {
-        "r5plus": 34,
+        "r5plus": 35,
         "r6plus": 32,
         "r7plus": 31,
         "r8plus": 30
       },
       "Nightsister Zombie": {
-        "r5plus": 9,
+        "r5plus": 12,
         "r6plus": 4,
         "r7plus": 3,
         "r8plus": 0
@@ -829,9 +817,9 @@
       },
       "Admiral Piett": {
         "r5plus": 50,
-        "r6plus": 44,
-        "r7plus": 44,
-        "r8plus": 44
+        "r6plus": 46,
+        "r7plus": 46,
+        "r8plus": 45
       },
       "Imperial TIE Bomber": {
         "r5plus": 0,
@@ -840,9 +828,9 @@
         "r8plus": 0
       },
       "Disguised Clone Trooper": {
-        "r5plus": 43,
-        "r6plus": 27,
-        "r7plus": 20,
+        "r5plus": 45,
+        "r6plus": 29,
+        "r7plus": 22,
         "r8plus": 7
       },
       "Slave I": {
@@ -863,22 +851,10 @@
         "r7plus": 2,
         "r8plus": 0
       },
-      "Lando's Millennium Falcon": {
-        "r5plus": 0,
-        "r6plus": 0,
-        "r7plus": 0,
-        "r8plus": 0
-      },
       "Darth Nihilus": {
         "r5plus": 18,
         "r6plus": 7,
         "r7plus": 5,
-        "r8plus": 0
-      },
-      "Razor Crest": {
-        "r5plus": 0,
-        "r6plus": 0,
-        "r7plus": 0,
         "r8plus": 0
       },
       "Logray": {
@@ -917,12 +893,6 @@
         "r7plus": 30,
         "r8plus": 0
       },
-      "Clone Wars Chewbacca": {
-        "r5plus": 10,
-        "r6plus": 6,
-        "r7plus": 6,
-        "r8plus": 6
-      },
       "Commander Luke Skywalker": {
         "r5plus": 47,
         "r6plus": 45,
@@ -930,9 +900,9 @@
         "r8plus": 1
       },
       "Kylo Ren (Unmasked)": {
-        "r5plus": 46,
-        "r6plus": 45,
-        "r7plus": 45,
+        "r5plus": 47,
+        "r6plus": 46,
+        "r7plus": 46,
         "r8plus": 2
       },
       "Paz Vizsla": {
@@ -941,32 +911,26 @@
         "r7plus": 47,
         "r8plus": 6
       },
-      "Young Lando Calrissian": {
-        "r5plus": 14,
-        "r6plus": 9,
-        "r7plus": 3,
-        "r8plus": 0
-      },
       "Han Solo": {
         "r5plus": 48,
         "r6plus": 48,
-        "r7plus": 40,
-        "r8plus": 38
+        "r7plus": 41,
+        "r8plus": 40
       },
       "The Armorer": {
-        "r5plus": 7,
+        "r5plus": 8,
         "r6plus": 1,
         "r7plus": 0,
         "r8plus": 0
       },
       "Death Trooper (Peridea)": {
-        "r5plus": 35,
-        "r6plus": 26,
+        "r5plus": 37,
+        "r6plus": 27,
         "r7plus": 25,
         "r8plus": 3
       },
       "Wrecker": {
-        "r5plus": 38,
+        "r5plus": 41,
         "r6plus": 1,
         "r7plus": 0,
         "r8plus": 0
@@ -974,7 +938,7 @@
       "Sith Trooper": {
         "r5plus": 47,
         "r6plus": 33,
-        "r7plus": 29,
+        "r7plus": 30,
         "r8plus": 3
       },
       "Umbaran Starfighter": {
@@ -999,7 +963,7 @@
         "r5plus": 47,
         "r6plus": 47,
         "r7plus": 47,
-        "r8plus": 44
+        "r8plus": 45
       },
       "Coruscant Underworld Police": {
         "r5plus": 9,
@@ -1008,15 +972,15 @@
         "r8plus": 8
       },
       "Mother Talzin": {
-        "r5plus": 11,
+        "r5plus": 12,
         "r6plus": 4,
         "r7plus": 3,
         "r8plus": 0
       },
       "C-3PO": {
         "r5plus": 48,
-        "r6plus": 40,
-        "r7plus": 39,
+        "r6plus": 41,
+        "r7plus": 40,
         "r8plus": 2
       },
       "Jedi Knight Revan": {
@@ -1032,9 +996,9 @@
         "r8plus": 38
       },
       "CT-7567 \"Rex\"": {
-        "r5plus": 33,
-        "r6plus": 31,
-        "r7plus": 30,
+        "r5plus": 34,
+        "r6plus": 33,
+        "r7plus": 32,
         "r8plus": 0
       },
       "Emperor's Shuttle": {
@@ -1044,10 +1008,10 @@
         "r8plus": 0
       },
       "Dark Trooper Moff Gideon": {
-        "r5plus": 11,
-        "r6plus": 5,
-        "r7plus": 4,
-        "r8plus": 0
+        "r5plus": 15,
+        "r6plus": 8,
+        "r7plus": 6,
+        "r8plus": 1
       },
       "Zam Wesell": {
         "r5plus": 39,
@@ -1056,16 +1020,16 @@
         "r8plus": 0
       },
       "Taron Malicos": {
-        "r5plus": 15,
-        "r6plus": 12,
-        "r7plus": 11,
+        "r5plus": 20,
+        "r6plus": 16,
+        "r7plus": 14,
         "r8plus": 1
       },
       "Boss Nass": {
-        "r5plus": 31,
-        "r6plus": 14,
-        "r7plus": 9,
-        "r8plus": 0
+        "r5plus": 34,
+        "r6plus": 16,
+        "r7plus": 10,
+        "r8plus": 1
       },
       "Home One": {
         "r5plus": 0,
@@ -1086,7 +1050,7 @@
         "r8plus": 0
       },
       "Asajj Ventress": {
-        "r5plus": 34,
+        "r5plus": 35,
         "r6plus": 6,
         "r7plus": 5,
         "r8plus": 1
@@ -1104,9 +1068,9 @@
         "r8plus": 4
       },
       "Jar Jar Binks": {
-        "r5plus": 24,
-        "r6plus": 12,
-        "r7plus": 7,
+        "r5plus": 26,
+        "r6plus": 14,
+        "r7plus": 8,
         "r8plus": 0
       },
       "Count Dooku": {
@@ -1116,7 +1080,7 @@
         "r8plus": 38
       },
       "Mission Vao": {
-        "r5plus": 7,
+        "r5plus": 8,
         "r6plus": 4,
         "r7plus": 2,
         "r8plus": 0
@@ -1128,13 +1092,13 @@
         "r8plus": 0
       },
       "Jolee Bindo": {
-        "r5plus": 24,
+        "r5plus": 26,
         "r6plus": 12,
         "r7plus": 9,
         "r8plus": 0
       },
       "Chief Nebit": {
-        "r5plus": 4,
+        "r5plus": 5,
         "r6plus": 2,
         "r7plus": 2,
         "r8plus": 0
@@ -1146,8 +1110,8 @@
         "r8plus": 0
       },
       "Darth Sion": {
-        "r5plus": 16,
-        "r6plus": 5,
+        "r5plus": 18,
+        "r6plus": 6,
         "r7plus": 3,
         "r8plus": 0
       },
@@ -1158,20 +1122,20 @@
         "r8plus": 0
       },
       "Bodhi Rook": {
-        "r5plus": 9,
+        "r5plus": 10,
         "r6plus": 5,
         "r7plus": 5,
         "r8plus": 0
       },
       "Gungan Boomadier": {
-        "r5plus": 34,
+        "r5plus": 35,
         "r6plus": 13,
-        "r7plus": 7,
-        "r8plus": 1
+        "r7plus": 9,
+        "r8plus": 2
       },
       "Boba Fett": {
         "r5plus": 48,
-        "r6plus": 46,
+        "r6plus": 47,
         "r7plus": 46,
         "r8plus": 44
       },
@@ -1211,12 +1175,6 @@
         "r7plus": 11,
         "r8plus": 2
       },
-      "Mace Windu": {
-        "r5plus": 22,
-        "r6plus": 8,
-        "r7plus": 5,
-        "r8plus": 0
-      },
       "Master Qui-Gon": {
         "r5plus": 34,
         "r6plus": 18,
@@ -1230,21 +1188,21 @@
         "r8plus": 0
       },
       "Sith Assassin": {
-        "r5plus": 27,
-        "r6plus": 6,
-        "r7plus": 5,
+        "r5plus": 29,
+        "r6plus": 7,
+        "r7plus": 6,
         "r8plus": 1
       },
       "Darth Malak": {
-        "r5plus": 43,
+        "r5plus": 44,
         "r6plus": 36,
         "r7plus": 33,
         "r8plus": 28
       },
       "Skiff Guard (Lando Calrissian)": {
-        "r5plus": 41,
-        "r6plus": 8,
-        "r7plus": 4,
+        "r5plus": 43,
+        "r6plus": 9,
+        "r7plus": 6,
         "r8plus": 0
       },
       "Hyena Bomber": {
@@ -1285,14 +1243,14 @@
       },
       "Greef Karga": {
         "r5plus": 17,
-        "r6plus": 7,
-        "r7plus": 7,
+        "r6plus": 8,
+        "r7plus": 8,
         "r8plus": 0
       },
       "Garazeb \"Zeb\" Orrelios": {
-        "r5plus": 9,
+        "r5plus": 10,
         "r6plus": 1,
-        "r7plus": 0,
+        "r7plus": 1,
         "r8plus": 0
       },
       "TIE Echelon": {
@@ -1321,9 +1279,9 @@
       },
       "Cere Junda": {
         "r5plus": 47,
-        "r6plus": 43,
+        "r6plus": 44,
         "r7plus": 43,
-        "r8plus": 10
+        "r8plus": 11
       },
       "Han's Millennium Falcon": {
         "r5plus": 0,
@@ -1332,22 +1290,16 @@
         "r8plus": 0
       },
       "Captain Tarpals": {
-        "r5plus": 34,
+        "r5plus": 35,
         "r6plus": 16,
-        "r7plus": 7,
+        "r7plus": 8,
         "r8plus": 1
       },
       "Ewok Scout": {
-        "r5plus": 5,
+        "r5plus": 7,
         "r6plus": 5,
         "r7plus": 5,
         "r8plus": 2
-      },
-      "Nightsister Acolyte": {
-        "r5plus": 3,
-        "r6plus": 2,
-        "r7plus": 1,
-        "r8plus": 0
       },
       "50R-T": {
         "r5plus": 30,
@@ -1364,7 +1316,7 @@
       "Threepio & Chewie": {
         "r5plus": 47,
         "r6plus": 44,
-        "r7plus": 43,
+        "r7plus": 44,
         "r8plus": 0
       },
       "Rey (Jedi Training)": {
@@ -1374,15 +1326,15 @@
         "r8plus": 2
       },
       "Krrsantan": {
-        "r5plus": 44,
-        "r6plus": 20,
-        "r7plus": 10,
+        "r5plus": 45,
+        "r6plus": 21,
+        "r7plus": 13,
         "r8plus": 2
       },
       "Ki-Adi-Mundi": {
-        "r5plus": 18,
-        "r6plus": 4,
-        "r7plus": 4,
+        "r5plus": 19,
+        "r6plus": 5,
+        "r7plus": 5,
         "r8plus": 0
       },
       "Fifth Brother": {
@@ -1410,13 +1362,13 @@
         "r8plus": 0
       },
       "Bastila Shan": {
-        "r5plus": 35,
-        "r6plus": 31,
-        "r7plus": 30,
+        "r5plus": 37,
+        "r6plus": 33,
+        "r7plus": 33,
         "r8plus": 0
       },
       "BT-1": {
-        "r5plus": 32,
+        "r5plus": 33,
         "r6plus": 8,
         "r7plus": 4,
         "r8plus": 0
@@ -1434,9 +1386,9 @@
         "r8plus": 0
       },
       "Night Trooper": {
-        "r5plus": 38,
+        "r5plus": 39,
         "r6plus": 28,
-        "r7plus": 24,
+        "r7plus": 25,
         "r8plus": 3
       },
       "Mark VI Interceptor": {
@@ -1448,7 +1400,7 @@
       "Grand Admiral Thrawn": {
         "r5plus": 49,
         "r6plus": 49,
-        "r7plus": 33,
+        "r7plus": 35,
         "r8plus": 0
       },
       "Paploo": {
@@ -1476,9 +1428,9 @@
         "r8plus": 0
       },
       "CT-5555 \"Fives\"": {
-        "r5plus": 25,
+        "r5plus": 26,
         "r6plus": 16,
-        "r7plus": 12,
+        "r7plus": 13,
         "r8plus": 0
       },
       "Gamorrean Guard": {
@@ -1500,16 +1452,10 @@
         "r8plus": 0
       },
       "Clone Sergeant - Phase I": {
-        "r5plus": 45,
-        "r6plus": 5,
-        "r7plus": 3,
+        "r5plus": 46,
+        "r6plus": 6,
+        "r7plus": 4,
         "r8plus": 0
-      },
-      "Supreme Leader Kylo Ren": {
-        "r5plus": 45,
-        "r6plus": 45,
-        "r7plus": 44,
-        "r8plus": 23
       },
       "Admiral Ackbar": {
         "r5plus": 10,
@@ -1518,25 +1464,25 @@
         "r8plus": 0
       },
       "Stormtrooper": {
-        "r5plus": 11,
+        "r5plus": 12,
         "r6plus": 3,
         "r7plus": 3,
         "r8plus": 0
       },
       "RC-1262 \"Scorch\"": {
         "r5plus": 49,
-        "r6plus": 36,
+        "r6plus": 37,
         "r7plus": 32,
         "r8plus": 19
       },
       "Jango Fett": {
         "r5plus": 48,
-        "r6plus": 46,
-        "r7plus": 46,
+        "r6plus": 47,
+        "r7plus": 47,
         "r8plus": 2
       },
       "Hoth Rebel Scout": {
-        "r5plus": 4,
+        "r5plus": 5,
         "r6plus": 1,
         "r7plus": 1,
         "r8plus": 0
@@ -1548,7 +1494,7 @@
         "r8plus": 0
       },
       "Jedi Master Kenobi": {
-        "r5plus": 43,
+        "r5plus": 44,
         "r6plus": 43,
         "r7plus": 43,
         "r8plus": 24
@@ -1566,15 +1512,15 @@
         "r8plus": 1
       },
       "Cal Kestis": {
-        "r5plus": 24,
+        "r5plus": 25,
         "r6plus": 17,
         "r7plus": 12,
         "r8plus": 0
       },
       "Captain Rex": {
         "r5plus": 45,
-        "r6plus": 43,
-        "r7plus": 42,
+        "r6plus": 44,
+        "r7plus": 43,
         "r8plus": 1
       },
       "Scythe": {
@@ -1585,8 +1531,8 @@
       },
       "HK-47": {
         "r5plus": 31,
-        "r6plus": 29,
-        "r7plus": 27,
+        "r6plus": 30,
+        "r7plus": 28,
         "r8plus": 0
       },
       "Darth Traya": {
@@ -1602,8 +1548,8 @@
         "r8plus": 0
       },
       "B2 Super Battle Droid": {
-        "r5plus": 23,
-        "r6plus": 6,
+        "r5plus": 25,
+        "r6plus": 8,
         "r7plus": 5,
         "r8plus": 0
       },
@@ -1632,27 +1578,27 @@
         "r8plus": 0
       },
       "Ugnaught": {
-        "r5plus": 8,
-        "r6plus": 3,
+        "r5plus": 10,
+        "r6plus": 4,
         "r7plus": 3,
         "r8plus": 3
       },
       "CX-2": {
-        "r5plus": 44,
-        "r6plus": 32,
-        "r7plus": 27,
-        "r8plus": 8
+        "r5plus": 46,
+        "r6plus": 33,
+        "r7plus": 28,
+        "r8plus": 9
       },
       "Grand Inquisitor": {
-        "r5plus": 38,
-        "r6plus": 29,
+        "r5plus": 39,
+        "r6plus": 30,
         "r7plus": 26,
         "r8plus": 5
       },
       "Jabba the Hutt": {
-        "r5plus": 34,
-        "r6plus": 33,
-        "r7plus": 33,
+        "r5plus": 36,
+        "r6plus": 35,
+        "r7plus": 35,
         "r8plus": 18
       },
       "Mob Enforcer": {
@@ -1661,14 +1607,8 @@
         "r7plus": 1,
         "r8plus": 0
       },
-      "The Mandalorian (Beskar Armor)": {
-        "r5plus": 48,
-        "r6plus": 48,
-        "r7plus": 48,
-        "r8plus": 12
-      },
       "Enfys Nest": {
-        "r5plus": 28,
+        "r5plus": 29,
         "r6plus": 15,
         "r7plus": 11,
         "r8plus": 2
@@ -1680,15 +1620,15 @@
         "r8plus": 0
       },
       "Jawa Engineer": {
-        "r5plus": 5,
+        "r5plus": 7,
         "r6plus": 2,
         "r7plus": 2,
         "r8plus": 0
       },
       "Boushh (Leia Organa)": {
         "r5plus": 47,
-        "r6plus": 16,
-        "r7plus": 11,
+        "r6plus": 19,
+        "r7plus": 14,
         "r8plus": 2
       },
       "Jedi Knight Luke Skywalker": {
@@ -1716,8 +1656,8 @@
         "r8plus": 0
       },
       "Ima-Gun Di": {
-        "r5plus": 8,
-        "r6plus": 1,
+        "r5plus": 9,
+        "r6plus": 2,
         "r7plus": 0,
         "r8plus": 0
       },
@@ -1728,15 +1668,15 @@
         "r8plus": 0
       },
       "Padawan Obi-Wan": {
-        "r5plus": 36,
-        "r6plus": 23,
-        "r7plus": 17,
-        "r8plus": 7
+        "r5plus": 37,
+        "r6plus": 24,
+        "r7plus": 18,
+        "r8plus": 8
       },
       "Fennec Shand": {
-        "r5plus": 39,
-        "r6plus": 36,
-        "r7plus": 36,
+        "r5plus": 40,
+        "r6plus": 38,
+        "r7plus": 38,
         "r8plus": 0
       },
       "Wedge Antilles's X-wing": {
@@ -1746,8 +1686,8 @@
         "r8plus": 0
       },
       "Hoth Rebel Soldier": {
-        "r5plus": 3,
-        "r6plus": 2,
+        "r5plus": 6,
+        "r6plus": 4,
         "r7plus": 2,
         "r8plus": 0
       },
@@ -1782,7 +1722,7 @@
         "r8plus": 0
       },
       "Tarfful": {
-        "r5plus": 9,
+        "r5plus": 12,
         "r6plus": 5,
         "r7plus": 1,
         "r8plus": 0
@@ -1796,16 +1736,10 @@
       "Darth Maul": {
         "r5plus": 35,
         "r6plus": 30,
-        "r7plus": 28,
+        "r7plus": 29,
         "r8plus": 1
       },
       "TIE Dagger": {
-        "r5plus": 0,
-        "r6plus": 0,
-        "r7plus": 0,
-        "r8plus": 0
-      },
-      "Endurance": {
         "r5plus": 0,
         "r6plus": 0,
         "r7plus": 0,
@@ -1824,8 +1758,8 @@
         "r8plus": 0
       },
       "Wrecker (Mercenary)": {
-        "r5plus": 15,
-        "r6plus": 6,
+        "r5plus": 19,
+        "r6plus": 7,
         "r7plus": 5,
         "r8plus": 0
       },
@@ -1848,31 +1782,25 @@
         "r8plus": 0
       },
       "Dathcha": {
-        "r5plus": 2,
+        "r5plus": 3,
         "r6plus": 2,
         "r7plus": 2,
         "r8plus": 0
       },
       "Jyn Erso": {
         "r5plus": 35,
-        "r6plus": 8,
+        "r6plus": 10,
         "r7plus": 7,
-        "r8plus": 0
-      },
-      "Teebo": {
-        "r5plus": 5,
-        "r6plus": 5,
-        "r7plus": 5,
         "r8plus": 0
       },
       "Leia Organa": {
         "r5plus": 41,
-        "r6plus": 39,
+        "r6plus": 40,
         "r7plus": 39,
         "r8plus": 25
       },
       "URoRRuR'R'R": {
-        "r5plus": 16,
+        "r5plus": 17,
         "r6plus": 1,
         "r7plus": 1,
         "r8plus": 0
@@ -1902,7 +1830,7 @@
         "r8plus": 0
       },
       "Aayla Secura": {
-        "r5plus": 28,
+        "r5plus": 31,
         "r6plus": 14,
         "r7plus": 11,
         "r8plus": 0
@@ -1914,8 +1842,8 @@
         "r8plus": 0
       },
       "Aurra Sing": {
-        "r5plus": 40,
-        "r6plus": 38,
+        "r5plus": 41,
+        "r6plus": 40,
         "r7plus": 3,
         "r8plus": 0
       },
@@ -1932,7 +1860,7 @@
         "r8plus": 0
       },
       "Omega": {
-        "r5plus": 16,
+        "r5plus": 17,
         "r6plus": 3,
         "r7plus": 0,
         "r8plus": 0
@@ -1986,7 +1914,7 @@
         "r8plus": 0
       },
       "Saw Gerrera": {
-        "r5plus": 13,
+        "r5plus": 14,
         "r6plus": 6,
         "r7plus": 4,
         "r8plus": 0
@@ -1994,12 +1922,6 @@
       "Ghost": {
         "r5plus": 0,
         "r6plus": 0,
-        "r7plus": 0,
-        "r8plus": 0
-      },
-      "Vandor Chewbacca": {
-        "r5plus": 6,
-        "r6plus": 3,
         "r7plus": 0,
         "r8plus": 0
       },
@@ -2011,24 +1933,24 @@
       },
       "Embo": {
         "r5plus": 38,
-        "r6plus": 10,
-        "r7plus": 7,
+        "r6plus": 12,
+        "r7plus": 9,
         "r8plus": 0
       },
       "Princess Kneesaa": {
-        "r5plus": 45,
+        "r5plus": 46,
         "r6plus": 44,
         "r7plus": 42,
         "r8plus": 1
       },
       "Tech": {
-        "r5plus": 38,
+        "r5plus": 39,
         "r6plus": 0,
         "r7plus": 0,
         "r8plus": 0
       },
       "Pao": {
-        "r5plus": 13,
+        "r5plus": 14,
         "r6plus": 4,
         "r7plus": 3,
         "r8plus": 0
@@ -2047,73 +1969,49 @@
       },
       "The Mandalorian": {
         "r5plus": 18,
-        "r6plus": 3,
-        "r7plus": 2,
+        "r6plus": 4,
+        "r7plus": 3,
         "r8plus": 1
       },
-      "Commander Ahsoka Tano": {
-        "r5plus": 40,
-        "r6plus": 35,
-        "r7plus": 32,
-        "r8plus": 26
-      },
       "Rey (Dark Side Vision)": {
-        "r5plus": 31,
+        "r5plus": 33,
         "r6plus": 24,
         "r7plus": 23,
         "r8plus": 1
       },
       "Scout Trooper": {
-        "r5plus": 44,
+        "r5plus": 45,
         "r6plus": 43,
         "r7plus": 42,
         "r8plus": 0
       },
-      "Ben Solo": {
-        "r5plus": 31,
-        "r6plus": 26,
-        "r7plus": 19,
-        "r8plus": 1
-      },
       "Lord Vader": {
-        "r5plus": 35,
-        "r6plus": 34,
-        "r7plus": 34,
+        "r5plus": 36,
+        "r6plus": 36,
+        "r7plus": 36,
         "r8plus": 19
       },
       "Sana Starros": {
-        "r5plus": 36,
-        "r6plus": 15,
-        "r7plus": 4,
+        "r5plus": 37,
+        "r6plus": 16,
+        "r7plus": 5,
         "r8plus": 0
       },
       "Ahsoka Tano (Fulcrum)": {
-        "r5plus": 30,
+        "r5plus": 31,
         "r6plus": 26,
         "r7plus": 22,
         "r8plus": 21
       },
-      "Grand Moff Tarkin": {
-        "r5plus": 50,
-        "r6plus": 49,
-        "r7plus": 47,
-        "r8plus": 18
-      },
-      "Executrix": {
-        "r5plus": 0,
-        "r6plus": 0,
-        "r7plus": 0,
-        "r8plus": 0
-      },
       "Tusken Warrior": {
-        "r5plus": 18,
+        "r5plus": 20,
         "r6plus": 3,
         "r7plus": 1,
         "r8plus": 0
       },
       "Greedo": {
-        "r5plus": 39,
-        "r6plus": 36,
+        "r5plus": 40,
+        "r6plus": 37,
         "r7plus": 1,
         "r8plus": 1
       },
@@ -2125,7 +2023,7 @@
       },
       "Tusken Shaman": {
         "r5plus": 15,
-        "r6plus": 2,
+        "r6plus": 3,
         "r7plus": 1,
         "r8plus": 0
       },
@@ -2136,20 +2034,8 @@
         "r8plus": 0
       },
       "Major Partagaz": {
-        "r5plus": 1,
+        "r5plus": 3,
         "r6plus": 1,
-        "r7plus": 0,
-        "r8plus": 0
-      },
-      "Cassian Andor": {
-        "r5plus": 34,
-        "r6plus": 31,
-        "r7plus": 31,
-        "r8plus": 30
-      },
-      "Cassian's U-wing": {
-        "r5plus": 0,
-        "r6plus": 0,
         "r7plus": 0,
         "r8plus": 0
       },
@@ -2160,14 +2046,14 @@
         "r8plus": 0
       },
       "Huyang": {
-        "r5plus": 23,
-        "r6plus": 21,
-        "r7plus": 20,
+        "r5plus": 24,
+        "r6plus": 22,
+        "r7plus": 21,
         "r8plus": 0
       },
       "Asajj Ventress (Dark Disciple)": {
-        "r5plus": 6,
-        "r6plus": 4,
+        "r5plus": 8,
+        "r6plus": 6,
         "r7plus": 1,
         "r8plus": 0
       },
@@ -2178,9 +2064,9 @@
         "r8plus": 2
       },
       "Bossk": {
-        "r5plus": 48,
+        "r5plus": 49,
         "r6plus": 28,
-        "r7plus": 24,
+        "r7plus": 26,
         "r8plus": 17
       },
       "Hound's Tooth": {
@@ -2189,26 +2075,20 @@
         "r7plus": 0,
         "r8plus": 0
       },
-      "Kleya Marki": {
-        "r5plus": 2,
-        "r6plus": 0,
-        "r7plus": 0,
-        "r8plus": 0
-      },
       "Cinta Kaz": {
-        "r5plus": 2,
-        "r6plus": 0,
-        "r7plus": 0,
-        "r8plus": 0
-      },
-      "Vel Sartha": {
         "r5plus": 2,
         "r6plus": 1,
         "r7plus": 0,
         "r8plus": 0
       },
+      "Vel Sartha": {
+        "r5plus": 2,
+        "r6plus": 2,
+        "r7plus": 0,
+        "r8plus": 0
+      },
       "Satele Shan": {
-        "r5plus": 10,
+        "r5plus": 11,
         "r6plus": 9,
         "r7plus": 8,
         "r8plus": 2
@@ -2232,19 +2112,19 @@
         "r8plus": 0
       },
       "Ezra Bridger (Exile)": {
-        "r5plus": 19,
-        "r6plus": 17,
-        "r7plus": 14,
+        "r5plus": 20,
+        "r6plus": 18,
+        "r7plus": 15,
         "r8plus": 3
       },
       "Hondo Ohnaka": {
         "r5plus": 40,
-        "r6plus": 34,
+        "r6plus": 35,
         "r7plus": 32,
         "r8plus": 25
       },
       "Captain Ithano": {
-        "r5plus": 17,
+        "r5plus": 18,
         "r6plus": 10,
         "r7plus": 6,
         "r8plus": 1
@@ -2256,40 +2136,16 @@
         "r8plus": 0
       },
       "General Skywalker": {
-        "r5plus": 47,
-        "r6plus": 46,
+        "r5plus": 49,
+        "r6plus": 47,
         "r7plus": 44,
         "r8plus": 41
-      },
-      "Kix": {
-        "r5plus": 23,
-        "r6plus": 20,
-        "r7plus": 6,
-        "r8plus": 0
       },
       "Boba Fett, Scion of Jango": {
         "r5plus": 11,
         "r6plus": 11,
         "r7plus": 10,
         "r8plus": 1
-      },
-      "BB-8": {
-        "r5plus": 36,
-        "r6plus": 35,
-        "r7plus": 35,
-        "r8plus": 0
-      },
-      "Hunter (Mercenary)": {
-        "r5plus": 14,
-        "r6plus": 6,
-        "r7plus": 5,
-        "r8plus": 0
-      },
-      "Leviathan": {
-        "r5plus": 0,
-        "r6plus": 0,
-        "r7plus": 0,
-        "r8plus": 0
       },
       "MG-100 StarFortress SF-17": {
         "r5plus": 0,
@@ -2298,34 +2154,10 @@
         "r8plus": 0
       },
       "Rose Tico": {
-        "r5plus": 36,
+        "r5plus": 37,
         "r6plus": 3,
         "r7plus": 3,
         "r8plus": 0
-      },
-      "Batcher": {
-        "r5plus": 17,
-        "r6plus": 8,
-        "r7plus": 5,
-        "r8plus": 1
-      },
-      "Depa Billaba": {
-        "r5plus": 40,
-        "r6plus": 20,
-        "r7plus": 16,
-        "r8plus": 5
-      },
-      "Darth Revan": {
-        "r5plus": 42,
-        "r6plus": 38,
-        "r7plus": 33,
-        "r8plus": 24
-      },
-      "Quiggold": {
-        "r5plus": 21,
-        "r6plus": 6,
-        "r7plus": 5,
-        "r8plus": 1
       },
       "Zuckuss": {
         "r5plus": 2,
@@ -2339,35 +2171,17 @@
         "r7plus": 48,
         "r8plus": 46
       },
-      "Zeb Orrelios (New Republic Pilot)": {
-        "r5plus": 0,
-        "r6plus": 0,
-        "r7plus": 0,
-        "r8plus": 0
-      },
       "Captain Silvo": {
         "r5plus": 19,
         "r6plus": 18,
         "r7plus": 18,
         "r8plus": 1
       },
-      "Colonel Ward": {
-        "r5plus": 0,
-        "r6plus": 0,
-        "r7plus": 0,
-        "r8plus": 0
-      },
       "Negotiator": {
         "r5plus": 0,
         "r6plus": 0,
         "r7plus": 0,
         "r8plus": 0
-      },
-      "SM-33": {
-        "r5plus": 13,
-        "r6plus": 11,
-        "r7plus": 8,
-        "r8plus": 1
       },
       "First Order TIE Fighter": {
         "r5plus": 0,
@@ -2400,19 +2214,13 @@
         "r8plus": 1
       },
       "Seventh Sister": {
-        "r5plus": 44,
+        "r5plus": 46,
         "r6plus": 31,
         "r7plus": 25,
         "r8plus": 1
       },
-      "Maul": {
-        "r5plus": 24,
-        "r6plus": 17,
-        "r7plus": 16,
-        "r8plus": 2
-      },
       "TIE Fighter Pilot": {
-        "r5plus": 45,
+        "r5plus": 47,
         "r6plus": 1,
         "r7plus": 1,
         "r8plus": 0
@@ -2424,13 +2232,13 @@
         "r8plus": 0
       },
       "0-0-0": {
-        "r5plus": 32,
+        "r5plus": 34,
         "r6plus": 10,
-        "r7plus": 4,
+        "r7plus": 5,
         "r8plus": 0
       },
       "Jocasta Nu": {
-        "r5plus": 28,
+        "r5plus": 32,
         "r6plus": 25,
         "r7plus": 24,
         "r8plus": 5
@@ -2442,16 +2250,10 @@
         "r8plus": 0
       },
       "Bastila Shan (Fallen)": {
-        "r5plus": 25,
-        "r6plus": 12,
-        "r7plus": 7,
+        "r5plus": 26,
+        "r6plus": 13,
+        "r7plus": 8,
         "r8plus": 0
-      },
-      "Bo-Katan (Mand'alor)": {
-        "r5plus": 41,
-        "r6plus": 40,
-        "r7plus": 40,
-        "r8plus": 5
       },
       "Morgan Elsbeth": {
         "r5plus": 42,
@@ -2462,13 +2264,13 @@
       "Grand Master Yoda": {
         "r5plus": 49,
         "r6plus": 48,
-        "r7plus": 46,
-        "r8plus": 46
+        "r7plus": 47,
+        "r8plus": 47
       },
       "Crosshair (Scarred)": {
-        "r5plus": 15,
-        "r6plus": 6,
-        "r7plus": 4,
+        "r5plus": 20,
+        "r6plus": 8,
+        "r7plus": 5,
         "r8plus": 0
       },
       "Colonel Starck": {
@@ -2480,25 +2282,25 @@
       "Ahsoka Tano": {
         "r5plus": 20,
         "r6plus": 19,
-        "r7plus": 18,
-        "r8plus": 15
+        "r7plus": 19,
+        "r8plus": 16
       },
       "Gungan Phalanx": {
-        "r5plus": 32,
-        "r6plus": 14,
-        "r7plus": 5,
-        "r8plus": 1
+        "r5plus": 34,
+        "r6plus": 15,
+        "r7plus": 8,
+        "r8plus": 2
       },
       "Merrin": {
-        "r5plus": 18,
-        "r6plus": 10,
-        "r7plus": 8,
+        "r5plus": 20,
+        "r6plus": 12,
+        "r7plus": 10,
         "r8plus": 0
       },
       "Bo-Katan Kryze": {
         "r5plus": 48,
-        "r6plus": 6,
-        "r7plus": 6,
+        "r6plus": 8,
+        "r7plus": 7,
         "r8plus": 1
       },
       "Raddus": {
@@ -2544,15 +2346,15 @@
         "r8plus": 0
       },
       "Stormtrooper Luke": {
-        "r5plus": 5,
-        "r6plus": 5,
+        "r5plus": 6,
+        "r6plus": 6,
         "r7plus": 1,
         "r8plus": 0
       },
       "Shin Hati": {
         "r5plus": 37,
         "r6plus": 32,
-        "r7plus": 30,
+        "r7plus": 31,
         "r8plus": 1
       },
       "Resistance X-wing": {
@@ -2568,15 +2370,15 @@
         "r8plus": 0
       },
       "Jedi Knight Guardian": {
-        "r5plus": 4,
-        "r6plus": 2,
+        "r5plus": 5,
+        "r6plus": 3,
         "r7plus": 2,
         "r8plus": 0
       },
       "Padawan Sabine Wren": {
-        "r5plus": 27,
-        "r6plus": 21,
-        "r7plus": 20,
+        "r5plus": 29,
+        "r6plus": 23,
+        "r7plus": 21,
         "r8plus": 2
       },
       "Jedi Master Mace Windu": {
@@ -2586,15 +2388,15 @@
         "r8plus": 8
       },
       "The Stranger": {
-        "r5plus": 15,
+        "r5plus": 16,
         "r6plus": 13,
-        "r7plus": 10,
+        "r7plus": 11,
         "r8plus": 3
       },
       "Third Sister": {
-        "r5plus": 31,
-        "r6plus": 25,
-        "r7plus": 23,
+        "r5plus": 32,
+        "r6plus": 28,
+        "r7plus": 26,
         "r8plus": 9
       },
       "Admiral Trench": {
@@ -2664,26 +2466,26 @@
         "r8plus": 0
       },
       "Imperial Probe Droid": {
-        "r5plus": 6,
-        "r6plus": 4,
+        "r5plus": 7,
+        "r6plus": 5,
         "r7plus": 3,
         "r8plus": 0
       },
       "Dark Trooper": {
-        "r5plus": 16,
+        "r5plus": 19,
         "r6plus": 6,
         "r7plus": 4,
         "r8plus": 0
       },
       "Director Krennic": {
-        "r5plus": 7,
-        "r6plus": 3,
+        "r5plus": 8,
+        "r6plus": 4,
         "r7plus": 3,
         "r8plus": 0
       },
       "Inquisitor Barriss": {
         "r5plus": 6,
-        "r6plus": 5,
+        "r6plus": 6,
         "r7plus": 1,
         "r8plus": 0
       },
@@ -2699,15 +2501,9 @@
         "r7plus": 9,
         "r8plus": 1
       },
-      "Jedi Master Luke Skywalker": {
-        "r5plus": 46,
-        "r6plus": 46,
-        "r7plus": 46,
-        "r8plus": 22
-      },
       "Baylan Skoll": {
         "r5plus": 24,
-        "r6plus": 17,
+        "r6plus": 18,
         "r7plus": 15,
         "r8plus": 1
       },
@@ -2742,9 +2538,9 @@
         "r8plus": 0
       },
       "Old Daka": {
-        "r5plus": 14,
-        "r6plus": 5,
-        "r7plus": 3,
+        "r5plus": 16,
+        "r6plus": 6,
+        "r7plus": 4,
         "r8plus": 0
       },
       "First Order Stormtrooper": {
@@ -2766,14 +2562,14 @@
         "r8plus": 0
       },
       "Qi'ra": {
-        "r5plus": 17,
+        "r5plus": 18,
         "r6plus": 7,
         "r7plus": 4,
         "r8plus": 0
       },
       "Young Han Solo": {
-        "r5plus": 17,
-        "r6plus": 6,
+        "r5plus": 18,
+        "r6plus": 7,
         "r7plus": 2,
         "r8plus": 0
       },
@@ -2784,15 +2580,9 @@
         "r8plus": 0
       },
       "Darth Vader (Duel's End)": {
-        "r5plus": 9,
+        "r5plus": 10,
         "r6plus": 6,
         "r7plus": 2,
-        "r8plus": 0
-      },
-      "IG-90": {
-        "r5plus": 7,
-        "r6plus": 6,
-        "r7plus": 3,
         "r8plus": 0
       },
       "T3-M4": {
@@ -2814,15 +2604,15 @@
         "r8plus": 0
       },
       "Omega (Fugitive)": {
-        "r5plus": 17,
+        "r5plus": 19,
         "r6plus": 8,
         "r7plus": 6,
         "r8plus": 0
       },
       "IG-88": {
         "r5plus": 47,
-        "r6plus": 4,
-        "r7plus": 2,
+        "r6plus": 5,
+        "r7plus": 3,
         "r8plus": 0
       },
       "IG-2000": {
@@ -2832,26 +2622,20 @@
         "r8plus": 0
       },
       "Marrok": {
-        "r5plus": 40,
+        "r5plus": 42,
         "r6plus": 35,
         "r7plus": 33,
         "r8plus": 0
       },
       "IG-86 Sentinel Droid": {
-        "r5plus": 3,
+        "r5plus": 4,
         "r6plus": 0,
         "r7plus": 0,
         "r8plus": 0
       },
       "Moff Gideon": {
-        "r5plus": 19,
+        "r5plus": 21,
         "r6plus": 8,
-        "r7plus": 6,
-        "r8plus": 0
-      },
-      "Chirrut Îmwe": {
-        "r5plus": 24,
-        "r6plus": 6,
         "r7plus": 6,
         "r8plus": 0
       },
@@ -2868,7 +2652,7 @@
         "r8plus": 2
       },
       "Geonosian Spy": {
-        "r5plus": 13,
+        "r5plus": 14,
         "r6plus": 3,
         "r7plus": 2,
         "r8plus": 0
@@ -2879,21 +2663,15 @@
         "r7plus": 0,
         "r8plus": 0
       },
-      "Captain Carson Teva": {
-        "r5plus": 0,
-        "r6plus": 0,
-        "r7plus": 0,
-        "r8plus": 0
-      },
       "Vane": {
         "r5plus": 19,
-        "r6plus": 18,
-        "r7plus": 18,
+        "r6plus": 19,
+        "r7plus": 19,
         "r8plus": 1
       },
       "Dedra Meero": {
-        "r5plus": 1,
-        "r6plus": 0,
+        "r5plus": 2,
+        "r6plus": 1,
         "r7plus": 0,
         "r8plus": 0
       },
@@ -2922,16 +2700,16 @@
         "r8plus": 0
       },
       "Nightsister Spirit": {
-        "r5plus": 8,
+        "r5plus": 9,
         "r6plus": 4,
         "r7plus": 3,
         "r8plus": 0
       },
       "Captain Drogan": {
-        "r5plus": 44,
-        "r6plus": 42,
-        "r7plus": 42,
-        "r8plus": 2
+        "r5plus": 45,
+        "r6plus": 43,
+        "r7plus": 43,
+        "r8plus": 3
       },
       "Rebel B-wing": {
         "r5plus": 0,
@@ -2952,14 +2730,14 @@
         "r8plus": 0
       },
       "Doctor Aphra": {
-        "r5plus": 18,
+        "r5plus": 20,
         "r6plus": 12,
-        "r7plus": 10,
+        "r7plus": 11,
         "r8plus": 1
       },
       "CC-1119 \"Appo\"": {
-        "r5plus": 47,
-        "r6plus": 29,
+        "r5plus": 48,
+        "r6plus": 30,
         "r7plus": 28,
         "r8plus": 10
       },
@@ -2967,7 +2745,7 @@
         "r5plus": 44,
         "r6plus": 43,
         "r7plus": 41,
-        "r8plus": 14
+        "r8plus": 15
       },
       "Rotta the Hutt": {
         "r5plus": 0,
@@ -2975,7 +2753,7 @@
         "r7plus": 0,
         "r8plus": 0
       },
-      "Grogu & Anzellans": {
+      "Lando's Millennium Falcon": {
         "r5plus": 0,
         "r6plus": 0,
         "r7plus": 0,
@@ -2984,8 +2762,26 @@
       "Rey (Scavenger)": {
         "r5plus": 41,
         "r6plus": 39,
-        "r7plus": 37,
-        "r8plus": 16
+        "r7plus": 38,
+        "r8plus": 17
+      },
+      "Razor Crest": {
+        "r5plus": 0,
+        "r6plus": 0,
+        "r7plus": 0,
+        "r8plus": 0
+      },
+      "Young Lando Calrissian": {
+        "r5plus": 16,
+        "r6plus": 11,
+        "r7plus": 3,
+        "r8plus": 0
+      },
+      "Mace Windu": {
+        "r5plus": 22,
+        "r6plus": 8,
+        "r7plus": 5,
+        "r8plus": 0
       },
       "Rey's Millennium Falcon": {
         "r5plus": 0,
@@ -2993,28 +2789,232 @@
         "r7plus": 0,
         "r8plus": 0
       },
-      "Rey": {
-        "r5plus": 32,
-        "r6plus": 32,
-        "r7plus": 32,
-        "r8plus": 18
+      "Bo-Katan (Mand'alor)": {
+        "r5plus": 43,
+        "r6plus": 43,
+        "r7plus": 43,
+        "r8plus": 8
       },
-      "Pirate King Hondo Ohnaka": {
-        "r5plus": 13,
-        "r6plus": 13,
-        "r7plus": 11,
-        "r8plus": 9
-      },
-      "Maul (Hate-Fueled)": {
-        "r5plus": 3,
-        "r6plus": 3,
-        "r7plus": 2,
+      "SM-33": {
+        "r5plus": 14,
+        "r6plus": 12,
+        "r7plus": 9,
         "r8plus": 1
       },
-      "Cobb Vanth": {
+      "The Mandalorian (Beskar Armor)": {
+        "r5plus": 48,
+        "r6plus": 48,
+        "r7plus": 48,
+        "r8plus": 13
+      },
+      "Endurance": {
+        "r5plus": 0,
+        "r6plus": 0,
+        "r7plus": 0,
+        "r8plus": 0
+      },
+      "IG-12 & Grogu": {
+        "r5plus": 49,
+        "r6plus": 47,
+        "r7plus": 47,
+        "r8plus": 5
+      },
+      "Chirrut Îmwe": {
+        "r5plus": 27,
+        "r6plus": 6,
+        "r7plus": 6,
+        "r8plus": 0
+      },
+      "Captain Carson Teva": {
+        "r5plus": 0,
+        "r6plus": 0,
+        "r7plus": 0,
+        "r8plus": 0
+      },
+      "BB-8": {
+        "r5plus": 37,
+        "r6plus": 36,
+        "r7plus": 36,
+        "r8plus": 0
+      },
+      "Commander Ahsoka Tano": {
+        "r5plus": 40,
+        "r6plus": 35,
+        "r7plus": 32,
+        "r8plus": 26
+      },
+      "Jedi Master Luke Skywalker": {
+        "r5plus": 46,
+        "r6plus": 46,
+        "r7plus": 46,
+        "r8plus": 22
+      },
+      "Grogu & Anzellans": {
+        "r5plus": 0,
+        "r6plus": 0,
+        "r7plus": 0,
+        "r8plus": 0
+      },
+      "Supreme Leader Kylo Ren": {
+        "r5plus": 45,
+        "r6plus": 45,
+        "r7plus": 44,
+        "r8plus": 23
+      },
+      "Cassian Andor": {
+        "r5plus": 34,
+        "r6plus": 31,
+        "r7plus": 31,
+        "r8plus": 30
+      },
+      "Clone Wars Chewbacca": {
+        "r5plus": 11,
+        "r6plus": 6,
+        "r7plus": 6,
+        "r8plus": 6
+      },
+      "Cassian's U-wing": {
+        "r5plus": 0,
+        "r6plus": 0,
+        "r7plus": 0,
+        "r8plus": 0
+      },
+      "Veteran Smuggler Chewbacca": {
+        "r5plus": 25,
+        "r6plus": 18,
+        "r7plus": 16,
+        "r8plus": 1
+      },
+      "Quiggold": {
+        "r5plus": 23,
+        "r6plus": 6,
+        "r7plus": 5,
+        "r8plus": 1
+      },
+      "Grand Moff Tarkin": {
+        "r5plus": 50,
+        "r6plus": 49,
+        "r7plus": 48,
+        "r8plus": 18
+      },
+      "Vandor Chewbacca": {
+        "r5plus": 7,
+        "r6plus": 3,
+        "r7plus": 0,
+        "r8plus": 0
+      },
+      "Executrix": {
+        "r5plus": 0,
+        "r6plus": 0,
+        "r7plus": 0,
+        "r8plus": 0
+      },
+      "Teebo": {
+        "r5plus": 5,
+        "r6plus": 5,
+        "r7plus": 5,
+        "r8plus": 0
+      },
+      "Hunter (Mercenary)": {
+        "r5plus": 17,
+        "r6plus": 8,
+        "r7plus": 6,
+        "r8plus": 0
+      },
+      "Leviathan": {
+        "r5plus": 0,
+        "r6plus": 0,
+        "r7plus": 0,
+        "r8plus": 0
+      },
+      "Batcher": {
+        "r5plus": 17,
+        "r6plus": 8,
+        "r7plus": 5,
+        "r8plus": 1
+      },
+      "Depa Billaba": {
+        "r5plus": 43,
+        "r6plus": 21,
+        "r7plus": 17,
+        "r8plus": 6
+      },
+      "Darth Revan": {
+        "r5plus": 43,
+        "r6plus": 39,
+        "r7plus": 35,
+        "r8plus": 26
+      },
+      "IG-90": {
+        "r5plus": 7,
+        "r6plus": 6,
+        "r7plus": 3,
+        "r8plus": 0
+      },
+      "Kleya Marki": {
         "r5plus": 2,
         "r6plus": 1,
         "r7plus": 0,
+        "r8plus": 0
+      },
+      "Maul": {
+        "r5plus": 24,
+        "r6plus": 17,
+        "r7plus": 17,
+        "r8plus": 2
+      },
+      "Nightsister Acolyte": {
+        "r5plus": 3,
+        "r6plus": 2,
+        "r7plus": 1,
+        "r8plus": 0
+      },
+      "Ben Solo": {
+        "r5plus": 32,
+        "r6plus": 27,
+        "r7plus": 20,
+        "r8plus": 2
+      },
+      "Kix": {
+        "r5plus": 23,
+        "r6plus": 22,
+        "r7plus": 6,
+        "r8plus": 0
+      },
+      "Zeb Orrelios (New Republic Pilot)": {
+        "r5plus": 0,
+        "r6plus": 0,
+        "r7plus": 0,
+        "r8plus": 0
+      },
+      "Snowtrooper Commander": {
+        "r5plus": 0,
+        "r6plus": 0,
+        "r7plus": 0,
+        "r8plus": 0
+      },
+      "Rey": {
+        "r5plus": 34,
+        "r6plus": 34,
+        "r7plus": 33,
+        "r8plus": 18
+      },
+      "Colonel Ward": {
+        "r5plus": 0,
+        "r6plus": 0,
+        "r7plus": 0,
+        "r8plus": 0
+      },
+      "Pirate King Hondo Ohnaka": {
+        "r5plus": 14,
+        "r6plus": 14,
+        "r7plus": 13,
+        "r8plus": 9
+      },
+      "Cobb Vanth": {
+        "r5plus": 4,
+        "r6plus": 3,
+        "r7plus": 2,
         "r8plus": 0
       },
       "Cassian Andor (Undercover)": {
@@ -3022,6 +3022,12 @@
         "r6plus": 0,
         "r7plus": 0,
         "r8plus": 0
+      },
+      "Maul (Hate-Fueled)": {
+        "r5plus": 3,
+        "r6plus": 3,
+        "r7plus": 2,
+        "r8plus": 1
       }
     }
   }
