@@ -6,16 +6,6 @@
       "relic": "Reliquia 7",
       "assignedTo": ""
     },{
-      "name": "Sargento Clon",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_trooperclonegreen.png",
-      "relic": "Reliquia 7",
-      "assignedTo": "Last Order"
-    },{
-      "name": "Admiral Trench",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_admiraltrench.png",
-      "relic": "Reliquia 8",
-      "assignedTo": ""
-    },{
       "name": "STAP",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_stap.png",
       "relic": "Reliquia 8",
@@ -24,22 +14,22 @@
       "name": "Tarfful",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_tarfful.png",
       "relic": "Reliquia 8",
-      "assignedTo": ""
+      "assignedTo": "Linde Forklift"
     },{
-      "name": "Dash Rendar",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_dashrendar.png",
+      "name": "IG-88",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_ig88.png",
       "relic": "Reliquia 8",
       "assignedTo": ""
     },{
-      "name": "Zaalbar",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_zaalbar.png",
+      "name": "50R-T",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_50rt.png",
       "relic": "Reliquia 8",
       "assignedTo": ""
     },{
       "name": "Starkiller",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_starkiller.png",
       "relic": "Reliquia 8",
-      "assignedTo": ""
+      "assignedTo": "Temnyy"
     },{
       "name": "Starkiller",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_starkiller.png",
@@ -77,6 +67,31 @@
   ],
   "upgradedCharacters": [
     {
+      "name": "Admiral Trench",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_admiraltrench.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "Linde Forklift"
+    },{
+      "name": "Old Boba",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "Temnyy"
+    },{
+      "name": "Dash Rendar",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_dashrendar.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "Temnyy"
+    },{
+      "name": "Zaalbar",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_zaalbar.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "Mou topor"
+    },{
+      "name": "Sargento Clon",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_trooperclonegreen.png",
+      "relic": "Reliquia 7",
+      "assignedTo": "Last Order"
+    },{
       "name": "Princesa Kneesaa",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_princesskneesaa.png",
       "relic": "Reliquia 8",
