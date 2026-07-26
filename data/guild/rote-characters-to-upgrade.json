@@ -6,23 +6,23 @@
       "relic": "Reliquia 7",
       "assignedTo": ""
     },{
+      "name": "Merrin",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_merrin.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "Tito"
+    },{
       "name": "STAP",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_stap.png",
       "relic": "Reliquia 8",
       "assignedTo": ""
     },{
-      "name": "Tarfful",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_tarfful.png",
-      "relic": "Reliquia 8",
-      "assignedTo": "Linde Forklift"
-    },{
-      "name": "IG-88",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_ig88.png",
+      "name": "Chewbacca",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_chewbacca_ot.png",
       "relic": "Reliquia 8",
       "assignedTo": ""
     },{
-      "name": "50R-T",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_50rt.png",
+      "name": "BB-8",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bb8 .png",
       "relic": "Reliquia 8",
       "assignedTo": ""
     },{
@@ -34,12 +34,52 @@
       "name": "Starkiller",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_starkiller.png",
       "relic": "Reliquia 8",
-      "assignedTo": ""
+      "assignedTo": "Mou"
     },{
       "name": "Starkiller",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_starkiller.png",
       "relic": "Reliquia 8",
       "assignedTo": ""
+    },{
+      "name": "Starkiller",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_starkiller.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "maath"
+    },{
+      "name": "Tusken Warrior",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_tuskenhuntress.png",
+      "relic": "Reliquia 8",
+      "assignedTo": ""
+    },{
+      "name": "Tusken Warrior",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_tuskenhuntress.png",
+      "relic": "Reliquia 8",
+      "assignedTo": ""
+    },{
+      "name": "Tusken Chieftain",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_tuskenchieftain.png",
+      "relic": "Reliquia 8",
+      "assignedTo": ""
+    },{
+      "name": "Ki-Adi-Mundi",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_kiadimundi.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "maath"
+    },{
+      "name": "IG-88",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_ig88.png",
+      "relic": "Reliquia 8",
+      "assignedTo": ""
+    },{
+      "name": "50R-T",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_50rt.png",
+      "relic": "Reliquia 8",
+      "assignedTo": ""
+    },{
+      "name": "Aayla Secura",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_aaylasecura.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "maath"
     },{
       "name": "Old Boba",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
@@ -67,8 +107,18 @@
   ],
   "upgradedCharacters": [
     {
+      "name": "Doctora Aphra",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_doctoraphra.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "Dass Jenir"
+    },{
       "name": "Admiral Trench",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_admiraltrench.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "Linde Forklift"
+    },{
+      "name": "Tarfful",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_tarfful.png",
       "relic": "Reliquia 8",
       "assignedTo": "Linde Forklift"
     },{
