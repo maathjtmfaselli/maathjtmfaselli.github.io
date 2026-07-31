@@ -149,6 +149,13 @@ export class SwgohService {
           });
     });
 
+    // Ensure deterministic ordering of characterCounts by unit name
+    const sortedCharacterCounts = Object.fromEntries(
+      Object.entries(stats.rote.characterCounts)
+        .sort((a, b) => a[0].localeCompare(b[0]))
+    );
+    stats.rote.characterCounts = sortedCharacterCounts;
+
     return stats;
   }
 

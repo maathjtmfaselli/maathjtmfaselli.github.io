@@ -16,25 +16,10 @@
       "relic": "Reliquia 8",
       "assignedTo": ""
     },{
-      "name": "Chewbacca",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_chewbacca_ot.png",
-      "relic": "Reliquia 8",
-      "assignedTo": ""
-    },{
       "name": "BB-8",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bb8 .png",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bb8.png",
       "relic": "Reliquia 8",
       "assignedTo": ""
-    },{
-      "name": "Starkiller",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_starkiller.png",
-      "relic": "Reliquia 8",
-      "assignedTo": "Temnyy"
-    },{
-      "name": "Starkiller",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_starkiller.png",
-      "relic": "Reliquia 8",
-      "assignedTo": "Mou"
     },{
       "name": "Starkiller",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_starkiller.png",
@@ -64,11 +49,6 @@
       "name": "Ki-Adi-Mundi",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_kiadimundi.png",
       "relic": "Reliquia 8",
-      "assignedTo": "maath"
-    },{
-      "name": "IG-88",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_ig88.png",
-      "relic": "Reliquia 8",
       "assignedTo": ""
     },{
       "name": "50R-T",
@@ -80,25 +60,10 @@
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_aaylasecura.png",
       "relic": "Reliquia 8",
       "assignedTo": "maath"
-    },{
-      "name": "Old Boba",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
-      "relic": "Reliquia 8",
-      "assignedTo": ""
     }
   ],
   "charactersToUpgrade": [
     {
-      "name": "Old Boba",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
-      "relic": "Reliquia 6",
-      "assignedTo": ""
-    },{
-      "name": "Old Boba",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bobafettold.png",
-      "relic": "Reliquia 7",
-      "assignedTo": ""
-    },{
       "name": "Magmatrooper",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_trooperstorm_magma.png",
       "relic": "Reliquia 6",
@@ -107,6 +72,31 @@
   ],
   "upgradedCharacters": [
     {
+      "name": "Ki-Adi-Mundi",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_kiadimundi.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "maath"
+    },{
+      "name": "IG-88",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_ig88.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "Viula"
+    },{
+      "name": "Chewbacca",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_chewbacca_ot.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "Oldboy"
+    },{
+      "name": "Starkiller",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_starkiller.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "Temnyy"
+    },{
+      "name": "Starkiller",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_starkiller.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "Mou"
+    },{
       "name": "Doctora Aphra",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_doctoraphra.png",
       "relic": "Reliquia 8",
