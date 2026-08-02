@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-31T13:29:40.655Z",
+  "updated": "2026-08-02T21:39:49.113Z",
   "totalMembers": 50,
   "members": [
     {
@@ -855,7 +855,7 @@
         "r5plus": 49,
         "r6plus": 29,
         "r7plus": 27,
-        "r8plus": 18
+        "r8plus": 19
       },
       "Boushh (Leia Organa)": {
         "r5plus": 47,
@@ -866,7 +866,7 @@
       "Brutus": {
         "r5plus": 19,
         "r6plus": 18,
-        "r7plus": 17,
+        "r7plus": 18,
         "r8plus": 2
       },
       "BT-1": {
@@ -930,7 +930,7 @@
         "r8plus": 1
       },
       "Captain Ithano": {
-        "r5plus": 19,
+        "r5plus": 20,
         "r6plus": 11,
         "r7plus": 8,
         "r8plus": 1
@@ -943,7 +943,7 @@
       },
       "Captain Rex": {
         "r5plus": 46,
-        "r6plus": 44,
+        "r6plus": 45,
         "r7plus": 43,
         "r8plus": 1
       },
@@ -1248,7 +1248,7 @@
         "r8plus": 0
       },
       "Death Trooper (Peridea)": {
-        "r5plus": 39,
+        "r5plus": 40,
         "r6plus": 29,
         "r7plus": 26,
         "r8plus": 3
@@ -1268,7 +1268,7 @@
       "Depa Billaba": {
         "r5plus": 43,
         "r6plus": 22,
-        "r7plus": 17,
+        "r7plus": 18,
         "r8plus": 6
       },
       "Director Krennic": {
@@ -1321,7 +1321,7 @@
       },
       "Embo": {
         "r5plus": 39,
-        "r6plus": 12,
+        "r6plus": 13,
         "r7plus": 9,
         "r8plus": 0
       },
@@ -1580,7 +1580,7 @@
       "Great Mothers": {
         "r5plus": 42,
         "r6plus": 38,
-        "r7plus": 32,
+        "r7plus": 33,
         "r8plus": 0
       },
       "Greedo": {
@@ -1674,7 +1674,7 @@
         "r8plus": 0
       },
       "Hunter": {
-        "r5plus": 38,
+        "r5plus": 39,
         "r6plus": 1,
         "r7plus": 1,
         "r8plus": 0
@@ -1794,8 +1794,8 @@
         "r8plus": 2
       },
       "Jar Jar Binks": {
-        "r5plus": 26,
-        "r6plus": 14,
+        "r5plus": 27,
+        "r6plus": 15,
         "r7plus": 8,
         "r8plus": 0
       },
@@ -1872,15 +1872,15 @@
         "r8plus": 22
       },
       "Jedi Master Mace Windu": {
-        "r5plus": 33,
-        "r6plus": 27,
+        "r5plus": 34,
+        "r6plus": 28,
         "r7plus": 23,
         "r8plus": 8
       },
       "Jocasta Nu": {
-        "r5plus": 33,
+        "r5plus": 34,
         "r6plus": 26,
-        "r7plus": 24,
+        "r7plus": 25,
         "r8plus": 5
       },
       "Jolee Bindo": {
@@ -1923,7 +1923,7 @@
         "r5plus": 19,
         "r6plus": 5,
         "r7plus": 5,
-        "r8plus": 0
+        "r8plus": 1
       },
       "Kit Fisto": {
         "r5plus": 27,
@@ -2166,7 +2166,7 @@
         "r8plus": 0
       },
       "Morgan Elsbeth": {
-        "r5plus": 42,
+        "r5plus": 43,
         "r6plus": 35,
         "r7plus": 32,
         "r8plus": 1
@@ -2264,7 +2264,7 @@
       "Padawan Sabine Wren": {
         "r5plus": 32,
         "r6plus": 24,
-        "r7plus": 21,
+        "r7plus": 22,
         "r8plus": 2
       },
       "Padmé Amidala": {
@@ -2419,8 +2419,8 @@
       },
       "RC-1262 \"Scorch\"": {
         "r5plus": 49,
-        "r6plus": 37,
-        "r7plus": 33,
+        "r6plus": 38,
+        "r7plus": 34,
         "r8plus": 19
       },
       "Rebel B-wing": {
@@ -2604,7 +2604,7 @@
         "r8plus": 5
       },
       "Shin Hati": {
-        "r5plus": 37,
+        "r5plus": 38,
         "r6plus": 32,
         "r7plus": 31,
         "r8plus": 1
@@ -2689,7 +2689,7 @@
       },
       "Starkiller": {
         "r5plus": 35,
-        "r6plus": 19,
+        "r6plus": 20,
         "r7plus": 15,
         "r8plus": 2
       },
@@ -2748,13 +2748,13 @@
         "r8plus": 1
       },
       "Taron Malicos": {
-        "r5plus": 21,
+        "r5plus": 22,
         "r6plus": 16,
         "r7plus": 14,
         "r8plus": 1
       },
       "Tech": {
-        "r5plus": 39,
+        "r5plus": 40,
         "r6plus": 0,
         "r7plus": 0,
         "r8plus": 0
@@ -2833,7 +2833,7 @@
       },
       "TIE Fighter Pilot": {
         "r5plus": 47,
-        "r6plus": 2,
+        "r6plus": 3,
         "r7plus": 1,
         "r8plus": 0
       },
@@ -2874,7 +2874,7 @@
         "r8plus": 0
       },
       "Tusken Warrior": {
-        "r5plus": 20,
+        "r5plus": 21,
         "r6plus": 3,
         "r7plus": 1,
         "r8plus": 0
@@ -2910,8 +2910,8 @@
         "r8plus": 1
       },
       "Vel Sartha": {
-        "r5plus": 2,
-        "r6plus": 2,
+        "r5plus": 3,
+        "r6plus": 3,
         "r7plus": 0,
         "r8plus": 0
       },
@@ -2970,9 +2970,9 @@
         "r8plus": 0
       },
       "Wrecker": {
-        "r5plus": 41,
-        "r6plus": 1,
-        "r7plus": 0,
+        "r5plus": 42,
+        "r6plus": 2,
+        "r7plus": 1,
         "r8plus": 0
       },
       "Wrecker (Mercenary)": {
