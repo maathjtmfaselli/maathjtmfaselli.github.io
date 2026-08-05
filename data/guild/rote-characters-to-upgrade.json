@@ -1,11 +1,6 @@
 {
   "topPriorityCharacters": [
     {
-      "name": "Merrin",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_merrin.png",
-      "relic": "Reliquia 8",
-      "assignedTo": "Tito"
-    },{
       "name": "STAP",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_stap.png",
       "relic": "Reliquia 8",
@@ -25,11 +20,6 @@
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_starkiller.png",
       "relic": "Reliquia 8",
       "assignedTo": "maath"
-    },{
-      "name": "Tusken Warrior",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_tuskenhuntress.png",
-      "relic": "Reliquia 8",
-      "assignedTo": ""
     },{
       "name": "Tusken Warrior",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_tuskenhuntress.png",
@@ -67,6 +57,11 @@
   ],
   "upgradedCharacters": [
     {
+      "name": "Merrin",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_merrin.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "Tito"
+    },{
       "name": "Wrecker",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_bb_wrecker.png",
       "relic": "Reliquia 7",
