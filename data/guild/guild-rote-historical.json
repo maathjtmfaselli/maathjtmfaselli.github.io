@@ -6,8 +6,8 @@
       "pg": "601M",
       "stars": "",
       "noDesplegados": "-/////",
-      "pelotones": "/57",
-      "dathomir": "x/x/10",
+      "pelotones": "/59",
+      "dathomir": "x/x/11",
       "reva": "x/x/27",
       "mandalor": "x/x/40",
       "kashyyyk": "x/x/4",
@@ -15,17 +15,17 @@
       "corellia": "x/x/16"
     },{
       "date": "03/08/2026",
-      "status": "planned",
+      "status": "in progress",
       "pg": "601M",
       "stars": "",
-      "noDesplegados": "-/////",
-      "pelotones": "/57",
-      "dathomir": "x/x/10",
-      "reva": "x/x/27",
-      "mandalor": "x/x/40",
-      "kashyyyk": "x/x/4",
-      "zeffo": "x/x/44",
-      "corellia": "x/x/16"
+      "noDesplegados": "-/99/67/66/80/",
+      "pelotones": "/60",
+      "dathomir": "5/11/11",
+      "reva": "20/25/27",
+      "mandalor": "32/40/40",
+      "kashyyyk": "2/3/4",
+      "zeffo": "23/35/44",
+      "corellia": "7/12/16"
     },{
       "date": "20/07/2026",
       "status": "completed",
