@@ -40,11 +40,6 @@
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_kiadimundi.png",
       "relic": "Reliquia 8",
       "assignedTo": ""
-    },{
-      "name": "Aayla Secura",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_aaylasecura.png",
-      "relic": "Reliquia 8",
-      "assignedTo": "maath"
     }
   ],
   "charactersToUpgrade": [
@@ -57,6 +52,11 @@
   ],
   "upgradedCharacters": [
     {
+      "name": "Aayla Secura",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_aaylasecura.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "Was"
+    },{
       "name": "50R-T",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_50rt.png",
       "relic": "Reliquia 8",
