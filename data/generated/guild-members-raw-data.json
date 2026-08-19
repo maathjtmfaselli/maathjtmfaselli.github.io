@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-18T21:59:52.072Z",
+  "updated": "2026-08-19T13:23:22.654Z",
   "members": [
     {
       "name": "Maath JTM Faselli",
@@ -1360,7 +1360,7 @@
         "Resistance Hero Poe": 5,
         "Queen Amidala": 9,
         "Crosshair (Scarred)": 5,
-        "Ben Solo": 8,
+        "Ben Solo": 9,
         "Clone Sergeant - Phase I": 5,
         "Jango Fett": 7,
         "TIE Advanced x1": 0,
@@ -1613,7 +1613,7 @@
         "Jedi Master Luke Skywalker": 7,
         "Plo Koon's Jedi Starfighter": 0,
         "Plo Koon": 8,
-        "Darth Vader (Duel's End)": 4,
+        "Darth Vader (Duel's End)": 5,
         "Jedi Master Mace Windu": 7,
         "Supreme Leader Kylo Ren": 8,
         "Grogu & Anzellans": 1,
@@ -1716,7 +1716,7 @@
         "Geonosian Brood Alpha": 6,
         "Kylo Ren's Command Shuttle": 0,
         "ARC Trooper": 8,
-        "Luthen Rael": 3,
+        "Luthen Rael": 4,
         "CT-21-0408 \"Echo\"": 7,
         "Cal Kestis": 5,
         "Captain Drogan": 7,
@@ -2012,7 +2012,7 @@
         "Fennec Shand": 7,
         "Vel Sartha": 0,
         "Captain Carson Teva": 0,
-        "Ezra Bridger": 4,
+        "Ezra Bridger": 5,
         "MG-100 StarFortress SF-17": 0,
         "Rose Tico": 2,
         "Vane": 0,
@@ -2664,7 +2664,7 @@
         "Geonosian Spy's Starfighter": 0,
         "Boba Fett, Scion of Jango": 2,
         "IG-100 MagnaGuard": 5,
-        "Omega": 0,
+        "Omega": 1,
         "Darth Nihilus": 5,
         "Marrok": 7,
         "Sith Trooper": 7,
@@ -3242,7 +3242,7 @@
         "Hoth Rebel Scout": 0,
         "Asajj Ventress (Dark Disciple)": 4,
         "Captain Silvo": 7,
-        "Inquisitor Barriss": 5,
+        "Inquisitor Barriss": 6,
         "Greef Karga": 2,
         "Baylan Skoll": 3,
         "Bo-Katan (Mand'alor)": 7,
@@ -3310,7 +3310,7 @@
         "Commander Ahsoka Tano": 9,
         "Luke Skywalker (Farmboy)": 0,
         "Raddus": 0,
-        "Ben Solo": 1,
+        "Ben Solo": 3,
         "Gamorrean Guard": 3,
         "Hound's Tooth": 0,
         "Lando Calrissian": 5,
@@ -3516,7 +3516,7 @@
         "Ima-Gun Di": 0,
         "Admiral Trench": 0,
         "Jedi Knight Guardian": 0,
-        "Third Sister": 2,
+        "Third Sister": 3,
         "Dark Trooper Moff Gideon": 0,
         "Slave I": 0,
         "Jabba the Hutt": 8,
@@ -3680,7 +3680,7 @@
         "Scout Trooper": 7,
         "Rogue One": 0,
         "50R-T": 5,
-        "General Syndulla": 0,
+        "General Syndulla": 5,
         "Scimitar": 0,
         "Darth Maul": 7,
         "Zuckuss": 0,
@@ -3732,7 +3732,7 @@
         "Geonosian Spy": 0,
         "Qi'ra": 0,
         "Poe Dameron": 0,
-        "Eighth Brother": 5,
+        "Eighth Brother": 6,
         "Talia": 0,
         "Nightsister Zombie": 0,
         "STAP": 0,
@@ -3879,7 +3879,7 @@
         "First Order Executioner": 5,
         "Major Partagaz": 2,
         "Kuiil": 1,
-        "Gungan Phalanx": 0,
+        "Gungan Phalanx": 5,
         "Hyena Bomber": 0,
         "Emperor Palpatine": 7,
         "Grand Admiral Thrawn": 4,
@@ -3978,7 +3978,7 @@
         "Ezra Bridger": 4,
         "TIE Echelon": 0,
         "General Skywalker": 5,
-        "Gungan Boomadier": 0,
+        "Gungan Boomadier": 5,
         "Kylo Ren": 7,
         "Kylo Ren's Command Shuttle": 0,
         "Canderous Ordo": 0,
@@ -4208,7 +4208,7 @@
         "Darth Traya": 5,
         "Resistance Hero Finn": 7,
         "Captain Drogan": 7,
-        "Huyang": 5,
+        "Huyang": 6,
         "Depa Billaba": 7,
         "Darth Sidious": 7,
         "Outrider": 0,
@@ -4793,7 +4793,7 @@
         "Rey's Millennium Falcon": 0,
         "Vandor Chewbacca": 6,
         "Tarfful": 5,
-        "Kix": 0,
+        "Kix": 1,
         "Starkiller": 8,
         "Mission Vao": 5,
         "Supreme Leader Kylo Ren": 10,
@@ -4812,7 +4812,7 @@
         "Mara Jade Skywalker": 0,
         "Captain Carson Teva": 0,
         "Yoda (Dark Side Vision)": 0,
-        "Cobb Vanth": 0
+        "Cobb Vanth": 7
       }
     },
     {
@@ -7015,7 +7015,7 @@
         "Captain Ithano": 7,
         "Enfys Nest": 7,
         "Mother Talzin": 4,
-        "Morgan Elsbeth": 5,
+        "Morgan Elsbeth": 6,
         "Biggs Darklighter": 5,
         "CC-2224 \"Cody\"": 5,
         "Jedi Knight Revan": 7,
@@ -7635,7 +7635,8 @@
         "Captain Carson Teva": 0,
         "Mara Jade Skywalker": 0,
         "Yoda (Dark Side Vision)": 0,
-        "Maz Kanata": 0
+        "Maz Kanata": 0,
+        "Ahsoka Tano": 0
       }
     },
     {
@@ -8026,7 +8027,7 @@
         "Hoth Rebel Soldier": 0,
         "Grogu & Anzellans": 0,
         "Pirate King Hondo Ohnaka": 10,
-        "Rotta the Hutt": 3,
+        "Rotta the Hutt": 4,
         "R5-D4": 0,
         "Zeb Orrelios (New Republic Pilot)": 0,
         "Colonel Ward": 0,
@@ -9349,7 +9350,7 @@
         "Padawan Obi-Wan": 7,
         "Eeth Koth": 5,
         "Wedge Antilles's X-wing": 0,
-        "General Grievous": 5,
+        "General Grievous": 7,
         "Chirrut Îmwe": 5,
         "Shin Hati": 7,
         "Juhani": 3,
@@ -10038,7 +10039,7 @@
         "Mara Jade Skywalker": 0,
         "Jedi Knight Guardian": 0,
         "Yoda (Dark Side Vision)": 0,
-        "Jedi Master Mace Windu": 0
+        "Jedi Master Mace Windu": 6
       }
     },
     {
@@ -10440,7 +10441,7 @@
         "Yoda & Chewie": 1,
         "Inquisitor Barriss": 0,
         "Yoda (Dark Side Vision)": 0,
-        "Pirate King Hondo Ohnaka": 0
+        "Pirate King Hondo Ohnaka": 6
       }
     },
     {
@@ -10940,7 +10941,7 @@
         "Omega": 6,
         "Eighth Brother": 7,
         "Talia": 0,
-        "Admiral Raddus": 0,
+        "Admiral Raddus": 5,
         "Night Trooper": 9,
         "Nightsister Zombie": 0,
         "Mark VI Interceptor": 0,
@@ -11001,7 +11002,7 @@
         "Resistance Hero Finn": 5,
         "Zaalbar": 0,
         "Clone Wars Chewbacca": 0,
-        "Kix": 0,
+        "Kix": 1,
         "Huyang": 7,
         "B2 Super Battle Droid": 5,
         "Darth Sidious": 7,
@@ -11639,7 +11640,7 @@
         "Snowtrooper Commander": 0,
         "Captain Carson Teva": 0,
         "Yoda (Dark Side Vision)": 0,
-        "Baylan Skoll": 0,
+        "Baylan Skoll": 6,
         "SM-33": 0
       }
     },
@@ -12879,7 +12880,7 @@
         "Royal Guard": 3,
         "Bastila Shan": 2,
         "Geonosian Spy": 3,
-        "BT-1": 0,
+        "BT-1": 4,
         "Jawa": 3,
         "Sith Fighter": 0,
         "Resistance X-wing": 0,
@@ -16346,7 +16347,7 @@
         "Jedi Knight Cal Kestis": 6,
         "Satele Shan": 5,
         "Kelleran Beq": 9,
-        "Captain Tarpals": 5,
+        "Captain Tarpals": 6,
         "Umbaran Starfighter": 0,
         "Boss Nass": 6,
         "CT-5555 \"Fives\"": 1,
@@ -17174,7 +17175,7 @@
         "Rey (Jedi Training)": 0,
         "Kylo Ren": 0,
         "Bo-Katan Kryze": 5,
-        "Fifth Brother": 4,
+        "Fifth Brother": 5,
         "Range Trooper": 0,
         "BT-1": 0,
         "Sith Fighter": 0,
@@ -17887,7 +17888,8 @@
         "Captain Carson Teva": 0,
         "R5-D4": 0,
         "Mara Jade Skywalker": 0,
-        "Yoda (Dark Side Vision)": 0
+        "Yoda (Dark Side Vision)": 0,
+        "Ezra Bridger (Exile)": 0
       }
     },
     {
@@ -18036,7 +18038,7 @@
         "Captain Drogan": 7,
         "Zaalbar": 2,
         "Clone Wars Chewbacca": 0,
-        "Kix": 0,
+        "Kix": 1,
         "Commander Luke Skywalker": 7,
         "B2 Super Battle Droid": 4,
         "Cassian's U-wing": 0,
@@ -19585,7 +19587,7 @@
         "Phantom II": 0,
         "Bodhi Rook": 0,
         "Chopper": 1,
-        "Leia Organa": 6,
+        "Leia Organa": 7,
         "Ezra Bridger": 1,
         "Rey (Scavenger)": 5,
         "Clone Wars Chewbacca": 0,
@@ -19611,7 +19613,9 @@
         "Ahsoka Tano's Jedi Starfighter": 0,
         "Ahsoka Tano (Snips)": 5,
         "TIE Dagger": 0,
-        "IG-12 & Grogu": 5
+        "IG-12 & Grogu": 5,
+        "CX-2": 0,
+        "Finn": 5
       }
     }
   ]

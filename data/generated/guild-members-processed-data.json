@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-18T22:00:22.992Z",
+  "updated": "2026-08-19T13:23:44.309Z",
   "totalMembers": 50,
   "members": [
     {
@@ -570,7 +570,7 @@
       "name": "DarthMaster",
       "allyCode": "985686172",
       "canDoCorellia": false,
-      "canDoBracca": false,
+      "canDoBracca": true,
       "canDoDathomir": false,
       "canDoKashyyyk": false,
       "canDoTatooine": true,
