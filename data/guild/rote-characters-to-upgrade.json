@@ -1,11 +1,6 @@
 {
   "topPriorityCharacters": [
     {
-      "name": "Veterano Chew",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_tfa_chewbacca.png",
-      "relic": "Reliquia 8",
-      "assignedTo": ""
-    },{
       "name": "STAP",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_stap.png",
       "relic": "Reliquia 8",
@@ -13,16 +8,6 @@
     },{
       "name": "Tusken Warrior",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_tuskenhuntress.png",
-      "relic": "Reliquia 8",
-      "assignedTo": ""
-    },{
-      "name": "Dengar",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_dengar.png",
-      "relic": "Reliquia 8",
-      "assignedTo": ""
-    },{
-      "name": "Darth Maul",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_maul.png",
       "relic": "Reliquia 8",
       "assignedTo": ""
     },{
@@ -52,6 +37,21 @@
   ],
   "upgradedCharacters": [
     {
+      "name": "Veterano Chew",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_tfa_chewbacca.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "Garrick, josmartini"
+    },{
+      "name": "Darth Maul",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_maul.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "josmartini, Garrick"
+    },{
+      "name": "Dengar",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_maul.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "JediSevillano"
+    },{
       "name": "Aayla Secura",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_aaylasecura.png",
       "relic": "Reliquia 8",
