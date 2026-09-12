@@ -4,15 +4,35 @@
       "name": "STAP",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_stap.png",
       "relic": "Reliquia 8",
-      "assignedTo": ""
+      "assignedTo": "maath"
     },{
-      "name": "Tusken Warrior",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_tuskenhuntress.png",
+      "name": "Poggle",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_geonosian_poggle.png",
       "relic": "Reliquia 8",
       "assignedTo": ""
     },{
-      "name": "Tusken Chieftain",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_tuskenchieftain.png",
+      "name": "Nightsister Initiate",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_nightsister_initiate.png",
+      "relic": "Reliquia 8",
+      "assignedTo": ""
+    },{
+      "name": "Nightsister Initiate",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_nightsister_initiate.png",
+      "relic": "Reliquia 8",
+      "assignedTo": ""
+    },{
+      "name": "Echo",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bb_echo.png",
+      "relic": "Reliquia 8",
+      "assignedTo": ""
+    },{
+      "name": "Gamorrean Guard",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_gamorreanguard.png",
+      "relic": "Reliquia 8",
+      "assignedTo": ""
+    },{
+      "name": "Aurra Sing",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_aurrasing.png",
       "relic": "Reliquia 8",
       "assignedTo": ""
     },{
@@ -37,6 +57,16 @@
   ],
   "upgradedCharacters": [
     {
+      "name": "Tusken Warrior",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_tuskenhuntress.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "Kid Danger"
+    },{
+      "name": "Tusken Chieftain",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_tuskenchieftain.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "Mou"
+    },{
       "name": "Veterano Chew",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_tfa_chewbacca.png",
       "relic": "Reliquia 8",
