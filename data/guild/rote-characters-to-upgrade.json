@@ -16,11 +16,6 @@
       "relic": "Reliquia 8",
       "assignedTo": ""
     },{
-      "name": "Echo",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bb_echo.png",
-      "relic": "Reliquia 8",
-      "assignedTo": "Cente"
-    },{
       "name": "Gamorrean Guard",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_gamorreanguard.png",
       "relic": "Reliquia 8",
@@ -52,6 +47,21 @@
   ],
   "upgradedCharacters": [
     {
+      "name": "Finn",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_finnjakku.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "Was"
+    },{
+      "name": "Jefe Nebit",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_jawa_nebit.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "Linde"
+    },{
+      "name": "Echo",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bb_echo.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "Cente"
+    },{
       "name": "STAP",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_stap.png",
       "relic": "Reliquia 8",
