@@ -29,12 +29,12 @@
       "name": "Admiral Trench",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_admiraltrench.png",
       "relic": "Reliquia 8",
-      "assignedTo": ""
+      "assignedTo": "Gita"
     },{
-      "name": "Ki-Adi-Mundi",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_kiadimundi.png",
+      "name": "Wicket",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_ewok_wicket.png",
       "relic": "Reliquia 8",
-      "assignedTo": ""
+      "assignedTo": "Cente"
     }
   ],
   "charactersToUpgrade": [
@@ -47,6 +47,16 @@
   ],
   "upgradedCharacters": [
     {
+      "name": "Oficial Rebelde Leia",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_leiahoth.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "Tito"
+    },{
+      "name": "Sana Starros",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_sanastarros.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "Tito"
+    },{
       "name": "Finn",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_finnjakku.png",
       "relic": "Reliquia 8",
