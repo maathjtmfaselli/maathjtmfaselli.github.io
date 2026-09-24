@@ -4,37 +4,37 @@
       "name": "Poggle",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_geonosian_poggle.png",
       "relic": "Reliquia 8",
-      "assignedTo": ""
+      "assignedTo": "Temnyy"
     },{
       "name": "Nightsister Initiate",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_nightsister_initiate.png",
       "relic": "Reliquia 8",
-      "assignedTo": ""
-    },{
-      "name": "Nightsister Initiate",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_nightsister_initiate.png",
-      "relic": "Reliquia 8",
-      "assignedTo": ""
-    },{
-      "name": "Gamorrean Guard",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_gamorreanguard.png",
-      "relic": "Reliquia 8",
-      "assignedTo": ""
+      "assignedTo": "maath"
     },{
       "name": "Aurra Sing",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_aurrasing.png",
       "relic": "Reliquia 8",
-      "assignedTo": ""
+      "assignedTo": "josmartini"
     },{
       "name": "Admiral Trench",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_admiraltrench.png",
       "relic": "Reliquia 8",
       "assignedTo": "Gita"
     },{
-      "name": "Wicket",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_ewok_wicket.png",
+      "name": "Baze Malbus",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bazemalbus.png",
       "relic": "Reliquia 8",
-      "assignedTo": "Cente"
+      "assignedTo": ""
+    },{
+      "name": "Soldado Rebelde de Hoth",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_rebelhoth.png",
+      "relic": "Reliquia 8",
+      "assignedTo": ""
+    },{
+      "name": "Bistan",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bistan.png",
+      "relic": "Reliquia 8",
+      "assignedTo": ""
     }
   ],
   "charactersToUpgrade": [
@@ -47,6 +47,16 @@
   ],
   "upgradedCharacters": [
     {
+      "name": "Wicket",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_ewok_wicket.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "Cente"
+    },{
+      "name": "Gamorrean Guard",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_gamorreanguard.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "maath"
+    },{
       "name": "Oficial Rebelde Leia",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_leiahoth.png",
       "relic": "Reliquia 8",

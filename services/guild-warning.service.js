@@ -20,7 +20,8 @@ export class GuildWarningsService {
           member.canDoBracca,
           member.canDoTatooine
         ].filter(Boolean).length;
-        const warning = (!member.canDoBracca) || (countCompletedObjectives < 2);
+//        const warning = (!member.canDoBracca) || (countCompletedObjectives < 2);
+        const warning = !member.canDoBracca;
 //        console.log("Member [" + member.name + "] - Warning [" + warning + "] canDoBracca [" + member.canDoBracca + "] order66MaxScore [" + order66MaxScore + "] countCompletedObjectives [" + countCompletedObjectives + "]");
 
         return {
