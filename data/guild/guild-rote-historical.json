@@ -1,16 +1,29 @@
 {
   "historicalResults": [
     {
-      "date": "28/09/2026",
+      "date": "12/10/2026",
       "status": "planned",
-      "pg": "612M",
+      "pg": "615M",
       "stars": "",
       "noDesplegados": "-/////",
-      "pelotones": "x/69",
-      "dathomir": "x/x/11",
-      "reva": "x/x/28",
+      "pelotones": "x/71",
+      "dathomir": "x/x/12",
+      "reva": "x/x/30",
       "mandalor": "x/x/44",
-      "kashyyyk": "x/x/4",
+      "kashyyyk": "x/x/5",
+      "zeffo": "x/x/45",
+      "corellia": "x/x/16"
+    },{
+      "date": "28/09/2026",
+      "status": "planned",
+      "pg": "615M",
+      "stars": "",
+      "noDesplegados": "-/////",
+      "pelotones": "x/71",
+      "dathomir": "x/x/12",
+      "reva": "x/x/30",
+      "mandalor": "x/x/44",
+      "kashyyyk": "x/x/5",
       "zeffo": "x/x/45",
       "corellia": "x/x/16"
     },{
