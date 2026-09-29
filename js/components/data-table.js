@@ -60,12 +60,37 @@ class DataTable extends HTMLElement {
       return `<tr><td colspan="${this._columns.length}">No data available</td></tr>`;
     }
 
-    return rows.map(row => `<tr>
+    return rows.map(row => `
+      <tr>
         ${this._columns.map(col => {
           const cell = row[col.field];
-          return `<td>${this.getCellDisplayValue(cell)}</td>`;
+
+          if ( cell && typeof cell === "object" && "display" in cell ) {
+            const hover = Array.isArray(cell.value)
+              ? cell.value.join(", ")
+              : cell.value;
+
+            return `
+              <td data-hover="${this.escapeHtml(hover)}">
+                ${this.escapeHtml(cell.display)}
+              </td>
+            `;
+          }
+
+          return `
+            <td>${this.escapeHtml(cell ?? "")}</td>
+          `;
         }).join("")}
-      </tr>`).join("");
+      </tr>
+    `).join("");
+  }
+  escapeHtml(value) {
+    return String(value)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
   }
   getCellDisplayValue(cell) {
     if (cell && typeof cell === "object" && "display" in cell) {
