@@ -117,7 +117,12 @@ renderCharacterList(characters, listElementId) {
         { field: "planet", label: "Planeta" },
         { field: "op", label: "Op" },
         { field: "character", label: "Character" },
-        { field: "contributors", label: "Jugador" },
+        { field: "contributors", label: "Jugador",
+          options: playersRosterData.members.map(player => ({
+            value: player.name,
+            label: `${player.name} (${playerContributionCounts.get(player.name)})`
+          }))
+        },
         { field: "contributorsCount", label: "# Jugadores",
           options: [0, 1, 2, 3, 4]
               .map(count => ({
