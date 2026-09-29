@@ -460,8 +460,6 @@ ol {
 /* Colores */
 .bg--red, .bg--yellow, .bg--green, .bg--dark-blue, .bg--blue {
   border: 1px solid #ccc;
-  width: 40px;
-  height: 30px;
   position: relative;
   cursor: pointer;
 }
@@ -493,7 +491,7 @@ ol {
 .status--todo {
     background-color: #2a2a40;
 }
-.status--in_progress {
+.status--in-progress {
     background-color: #aaaa66;
 }
 .status--done {
@@ -524,6 +522,79 @@ ol {
   white-space: nowrap;
   z-index: 1000;
   pointer-events: none;
+}
+
+.priority-characters {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.priority-character {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 16px;
+
+  padding: 8px 12px;
+
+  border-radius: 6px;
+}
+
+.priority-character__identity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.priority-character__image {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 2px solid #673ab7;
+  flex-shrink: 0;
+}
+
+.priority-character__name {
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.priority-character__requirement {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.priority-character__assignment {
+  min-width: 120px;
+  white-space: nowrap;
+}
+
+/* Character needs action */
+.priority-character.status--todo {
+  border-left: 4px solid #d9534f;
+}
+
+.priority-character.status--todo .priority-character__assignment {
+  color: #d9534f;
+  font-weight: 600;
+}
+
+/* Character is already assigned */
+.priority-character.status--in-progress {
+  border-left: 4px solid #5cb85c;
+}
+
+.priority-character.status--in-progress .priority-character__assignment {
+  color: #4a4a4a;
 }
 
 

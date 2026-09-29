@@ -50,37 +50,56 @@ class RotePlanHolocron extends HolocronBase {
 //    tbody.appendChild(row);
   }
 
-renderCharacterList(characters, listElementId) {
-  const listElement = document.getElementById(listElementId);
-  listElement.innerHTML = "";
+  renderCharacterList(characters, listElementId) {
+    const listElement = document.getElementById(listElementId);
+    if (!listElement) return;
 
-  characters.forEach(character => {
-    const listItem = document.createElement("li");
+    listElement.innerHTML = "";
 
-    let statusClass = "";
-    switch (character.status) {
-      case "TODO":
-        statusClass = "status--todo";
-        break;
-      case "IN_PROGRESS":
-        statusClass = "status--in_progress";
-        break;
-      case "DONE":
-        statusClass = "status--done";
-        break;
-    }
+    characters.forEach(character => {
+      const listItem = document.createElement("li");
 
-    listItem.classList.add("character", statusClass);
-    listItem.innerHTML = `
-      <img src="${character.image}" alt="${character.name}">
-      <span class="character-name">${character.name}</span>
-      <span class="relic-upgraded-required">${character.relic}</span>
-      <span class="player-name">Asignado a: ${character.assignedTo || "Sin asignar"}</span>
-    `;
+      const statusClass = {
+        TODO: "status--todo",
+        IN_PROGRESS: "status--in-progress",
+        DONE: "status--done"
+      }[character.status] ?? "";
 
-    listElement.appendChild(listItem);
-  });
-}
+      listItem.classList.add("priority-character");
+
+      if (statusClass) {
+        listItem.classList.add(statusClass);
+      }
+
+      const assignment = character.assignedTo || "Sin asignar";
+      const assignmentClass = character.assignedTo
+        ? "assignment--assigned"
+        : "assignment--unassigned";
+
+      listItem.innerHTML = `
+        <div class="priority-character__identity">
+          <img
+            class="priority-character__image"
+            src="${character.image}"
+            alt="${character.name}"
+          >
+          <span class="priority-character__name">
+            ${character.name}
+          </span>
+        </div>
+
+        <span class="priority-character__requirement">
+          ${character.relic}
+        </span>
+
+        <span class="priority-character__assignment ${assignmentClass}">
+          ${assignment}
+        </span>
+      `;
+
+      listElement.appendChild(listItem);
+    });
+  }
 
   async loadOpsByGuildData() {
     const roteOpsTable = document.querySelector("#pnjs-ops-by-guild-table");
