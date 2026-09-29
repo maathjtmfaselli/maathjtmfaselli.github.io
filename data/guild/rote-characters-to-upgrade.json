@@ -6,11 +6,6 @@
       "relic": "Reliquia 8",
       "assignedTo": "Temnyy"
     },{
-      "name": "Nightsister Initiate",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_nightsister_initiate.png",
-      "relic": "Reliquia 8",
-      "assignedTo": "maath"
-    },{
       "name": "Aurra Sing",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_aurrasing.png",
       "relic": "Reliquia 8",
@@ -20,11 +15,6 @@
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_admiraltrench.png",
       "relic": "Reliquia 8",
       "assignedTo": "Gita"
-    },{
-      "name": "Baze Malbus",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bazemalbus.png",
-      "relic": "Reliquia 8",
-      "assignedTo": ""
     },{
       "name": "Soldado Rebelde de Hoth",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_rebelhoth.png",
@@ -47,6 +37,16 @@
   ],
   "upgradedCharacters": [
     {
+      "name": "Nightsister Initiate",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_nightsister_initiate.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "maath"
+    },{
+      "name": "Baze Malbus",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bazemalbus.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "Daimon Tlan"
+    },{
       "name": "Wicket",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_ewok_wicket.png",
       "relic": "Reliquia 8",
@@ -125,7 +125,7 @@
       "name": "BB-8",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_bb8.png",
       "relic": "Reliquia 8",
-      "assignedTo": "Daimon"
+      "assignedTo": "Daimon Tlan"
     },{
       "name": "Starkiller",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_starkiller.png",
