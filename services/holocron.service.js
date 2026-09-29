@@ -22,7 +22,6 @@ export class HolocronBase extends HTMLElement {
   async loadData() {
     throw new Error("loadData() debe implementarse");
   }
-
   afterRender() {
     throw new Error("afterRender() debe implementarse");
   }

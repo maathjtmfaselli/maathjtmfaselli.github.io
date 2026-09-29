@@ -1,10 +1,10 @@
 Sector,Planeta,Side,Op,Character
-1,Mustafar,Dark,1,Emperador Palpatine
+1,Mustafar,Dark,1,Emperor Palpatine
 1,Mustafar,Dark,1,BT-1
 1,Mustafar,Dark,1,General Grievous
 1,Mustafar,Dark,1,Darth Maul
 1,Mustafar,Dark,1,Darth Sion
-1,Mustafar,Dark,1,Emperador Palpatine
+1,Mustafar,Dark,1,Emperor Palpatine
 1,Mustafar,Dark,1,Geonosian Spy's Starfighter
 1,Mustafar,Dark,1,General Grievous
 1,Mustafar,Dark,1,Gamorrean Guard
@@ -24,7 +24,7 @@ Sector,Planeta,Side,Op,Character
 1,Mustafar,Dark,2,Wat Tambor
 1,Mustafar,Dark,2,Asajj Ventress
 1,Mustafar,Dark,2,Ugnaught
-1,Mustafar,Dark,2,Emperador Palpatine
+1,Mustafar,Dark,2,Emperor Palpatine
 1,Mustafar,Dark,2,Nute Gunray
 1,Mustafar,Dark,2,Darth Traya
 1,Mustafar,Dark,2,Hyena Bomber
@@ -33,7 +33,7 @@ Sector,Planeta,Side,Op,Character
 1,Mustafar,Dark,3,Darth Vader
 1,Mustafar,Dark,3,Darth Traya
 1,Mustafar,Dark,3,0-0-0
-1,Mustafar,Dark,3,Imperial Tie Bomber
+1,Mustafar,Dark,3,Imperial TIE Bomber
 1,Mustafar,Dark,3,Chimaera
 1,Mustafar,Dark,3,Ninth Sister
 1,Mustafar,Dark,3,Wat Tambor
@@ -64,10 +64,10 @@ Sector,Planeta,Side,Op,Character
 1,Mustafar,Dark,5,Darth Traya
 1,Mustafar,Dark,5,First Order SF TIE Pilot
 1,Mustafar,Dark,5,Nightsister Initiate
-1,Mustafar,Dark,5,Emperador Palpatine
+1,Mustafar,Dark,5,Emperor Palpatine
 1,Mustafar,Dark,5,Tusken Shaman
 1,Mustafar,Dark,5,Darth Traya
-1,Mustafar,Dark,5,Mara Jade
+1,Mustafar,Dark,5,"Mara Jade, The Emperor's Hand"
 1,Mustafar,Dark,5,0-0-0
 1,Mustafar,Dark,5,Chimaera
 1,Mustafar,Dark,5,IG-88
@@ -82,7 +82,7 @@ Sector,Planeta,Side,Op,Character
 1,Mustafar,Dark,6,Chimaera
 1,Mustafar,Dark,6,Darth Sidious
 1,Mustafar,Dark,6,Imperial Probe Droid
-1,Mustafar,Dark,6,Fith Brother
+1,Mustafar,Dark,6,Fifth Brother
 1,Mustafar,Dark,6,First Order Officer
 1,Mustafar,Dark,6,Darth Revan
 1,Mustafar,Dark,6,First Order SF TIE Pilot
@@ -147,7 +147,7 @@ Sector,Planeta,Side,Op,Character
 1,Corellia,Neutral,4,Commander Ahsoka Tano
 1,Corellia,Neutral,4,C-3PO
 1,Corellia,Neutral,4,Darth Traya
-1,Corellia,Neutral,4,Plo Koon's Jedi Startfighter
+1,Corellia,Neutral,4,Plo Koon's Jedi Starfighter
 1,Corellia,Neutral,4,T3-M4
 1,Corellia,Neutral,5,Razor Crest
 1,Corellia,Neutral,5,Chewbacca
@@ -170,7 +170,7 @@ Sector,Planeta,Side,Op,Character
 1,Corellia,Neutral,6,Talia
 1,Corellia,Neutral,6,Ki-Adi-Mundi
 1,Corellia,Neutral,6,TIE/IN Interceptor Prototype
-1,Corellia,Neutral,6,Emperador Palpatine
+1,Corellia,Neutral,6,Emperor Palpatine
 1,Corellia,Neutral,6,Hermit Yoda
 1,Corellia,Neutral,6,Admiral Piett
 1,Corellia,Neutral,6,Darth Sion
@@ -232,7 +232,7 @@ Sector,Planeta,Side,Op,Character
 1,Coruscant,Luminoso,4,General Skywalker
 1,Coruscant,Luminoso,4,The Mandalorian (Beskar Armor)
 1,Coruscant,Luminoso,4,Logray
-1,Coruscant,Luminoso,4,Plo Koon's Jedi Startfighter
+1,Coruscant,Luminoso,4,Plo Koon's Jedi Starfighter
 1,Coruscant,Luminoso,4,Visas Marr
 1,Coruscant,Luminoso,4,General Skywalker
 1,Coruscant,Luminoso,4,C-3PO
@@ -298,7 +298,7 @@ Sector,Planeta,Side,Op,Character
 2,Geonosis,Dark,2,Boba Fett, Scion of Jango
 2,Geonosis,Dark,2,Darth Malak
 2,Geonosis,Dark,2,Kylo Ren (Unmasked)
-2,Geonosis,Dark,2,B2
+2,Geonosis,Dark,2,B2 Super Battle Droid
 2,Geonosis,Dark,3,Darth Malgus
 2,Geonosis,Dark,3,Boba Fett, Scion of Jango
 2,Geonosis,Dark,3,Chimaera
@@ -306,7 +306,7 @@ Sector,Planeta,Side,Op,Character
 2,Geonosis,Dark,3,Asajj Ventress
 2,Geonosis,Dark,3,Scythe
 2,Geonosis,Dark,3,TIE/IN Interceptor Prototype
-2,Geonosis,Dark,3,Emperador Palpatine
+2,Geonosis,Dark,3,Emperor Palpatine
 2,Geonosis,Dark,3,Darth Revan
 2,Geonosis,Dark,3,First Order Officer
 2,Geonosis,Dark,3,Supreme Leader Kylo Ren
@@ -331,23 +331,23 @@ Sector,Planeta,Side,Op,Character
 2,Geonosis,Dark,4,Emperor's Shuttle
 2,Geonosis,Dark,5,Starkiller
 2,Geonosis,Dark,5,Boba Fett, Scion of Jango
-2,Geonosis,Dark,5,Emperador Palpatine
+2,Geonosis,Dark,5,Emperor Palpatine
 2,Geonosis,Dark,5,Colonel Starck
 2,Geonosis,Dark,5,Malevolence
 2,Geonosis,Dark,5,Starkiller
 2,Geonosis,Dark,5,Maul
 2,Geonosis,Dark,5,Grand Admiral Thrawn
-2,Geonosis,Dark,5,B2
+2,Geonosis,Dark,5,B2 Super Battle Droid
 2,Geonosis,Dark,5,Magmatrooper
 2,Geonosis,Dark,5,Sith Eternal Emperor
 2,Geonosis,Dark,5,Darth Malgus
-2,Geonosis,Dark,5,Emperador Palpatine
+2,Geonosis,Dark,5,Emperor Palpatine
 2,Geonosis,Dark,5,Kylo Ren (Unmasked)
 2,Geonosis,Dark,5,Cad Bane
 2,Geonosis,Dark,6,Grand Inquisitor
 2,Geonosis,Dark,6,Darth Malgus
 2,Geonosis,Dark,6,Scythe
-2,Geonosis,Dark,6,Emperador Palpatine
+2,Geonosis,Dark,6,Emperor Palpatine
 2,Geonosis,Dark,6,Death Trooper
 2,Geonosis,Dark,6,Darth Malak
 2,Geonosis,Dark,6,TIE/IN Interceptor Prototype
@@ -373,7 +373,7 @@ Sector,Planeta,Side,Op,Character
 2,Felucia,Neutral,1,Razor Crest
 2,Felucia,Neutral,1,Ben Solo
 2,Felucia,Neutral,1,Rebel Officer Leia Organa
-2,Felucia,Neutral,1,Plo Koon's Jedi Startfighter
+2,Felucia,Neutral,1,Plo Koon's Jedi Starfighter
 2,Felucia,Neutral,2,General Skywalker
 2,Felucia,Neutral,2,Darth Malgus
 2,Felucia,Neutral,2,Commander Ahsoka Tano
@@ -423,7 +423,7 @@ Sector,Planeta,Side,Op,Character
 2,Felucia,Neutral,5,Darth Malgus
 2,Felucia,Neutral,5,Scythe
 2,Felucia,Neutral,5,Embo
-2,Felucia,Neutral,5,Almirante Ackbar
+2,Felucia,Neutral,5,Admiral Ackbar
 2,Felucia,Neutral,5,General Skywalker
 2,Felucia,Neutral,5,Darth Malgus
 2,Felucia,Neutral,5,Boba Fett, Scion of Jango
@@ -438,7 +438,7 @@ Sector,Planeta,Side,Op,Character
 2,Felucia,Neutral,6,Boba Fett, Scion of Jango
 2,Felucia,Neutral,6,Darth Malgus
 2,Felucia,Neutral,6,Ki-Adi-Mundi
-2,Felucia,Neutral,6,Lando Carlrissian
+2,Felucia,Neutral,6,Lando Calrissian
 2,Felucia,Neutral,6,Darth Malak
 2,Felucia,Neutral,6,Ben Solo
 2,Felucia,Neutral,6,Boba Fett, Scion of Jango
@@ -449,7 +449,7 @@ Sector,Planeta,Side,Op,Character
 2,Felucia,Neutral,6,Scythe
 2,Felucia,Neutral,6,Han Solo
 2,Felucia,Neutral,6,L3-37
-2,Bracca,Luminoso,1,Boushh
+2,Bracca,Luminoso,1,Boushh (Leia Organa)
 2,Bracca,Luminoso,1,Razor Crest
 2,Bracca,Luminoso,1,Wedge Antilles
 2,Bracca,Luminoso,1,L3-37
@@ -461,7 +461,7 @@ Sector,Planeta,Side,Op,Character
 2,Bracca,Luminoso,1,R2-D2
 2,Bracca,Luminoso,1,Rey
 2,Bracca,Luminoso,1,Razor Crest
-2,Bracca,Luminoso,1,BTL-B Y-wing Startfighter
+2,Bracca,Luminoso,1,BTL-B Y-wing Starfighter
 2,Bracca,Luminoso,1,Juhani
 2,Bracca,Luminoso,1,Outrider
 2,Bracca,Luminoso,2,Young Han Solo
@@ -474,11 +474,11 @@ Sector,Planeta,Side,Op,Character
 2,Bracca,Luminoso,2,Jedi Consular's Starfighter
 2,Bracca,Luminoso,2,BB-8
 2,Bracca,Luminoso,2,C-3PO
-2,Bracca,Luminoso,2,Profundidad
+2,Bracca,Luminoso,2,Profundity
 2,Bracca,Luminoso,2,Razor Crest
 2,Bracca,Luminoso,2,ARC Trooper
 2,Bracca,Luminoso,2,Jedi Knight Revan
-2,Bracca,Luminoso,2,BTL-B Y-wing Startfighter
+2,Bracca,Luminoso,2,BTL-B Y-wing Starfighter
 2,Bracca,Luminoso,3,Endurance
 2,Bracca,Luminoso,3,Ben Solo
 2,Bracca,Luminoso,3,CT-21-0408 "Echo"
@@ -504,7 +504,7 @@ Sector,Planeta,Side,Op,Character
 2,Bracca,Luminoso,4,Commander Ahsoka Tano
 2,Bracca,Luminoso,4,Ghost
 2,Bracca,Luminoso,4,R2-D2
-2,Bracca,Luminoso,4,Profundidad
+2,Bracca,Luminoso,4,Profundity
 2,Bracca,Luminoso,4,Razor Crest
 2,Bracca,Luminoso,4,Ben Solo
 2,Bracca,Luminoso,4,Veteran Smuggler Chewbacca
@@ -638,7 +638,7 @@ Sector,Planeta,Side,Op,Character
 3,Tatooine,Neutral,1,Commander Ahsoka Tano
 3,Tatooine,Neutral,1,Darth Malgus
 3,Tatooine,Neutral,1,Geonosian Spy
-3,Tatooine,Neutral,1,Chirrut Imwe
+3,Tatooine,Neutral,1,Chirrut Îmwe
 3,Tatooine,Neutral,1,Sith Eternal Emperor
 3,Tatooine,Neutral,1,Maul
 3,Tatooine,Neutral,1,Boba Fett, Scion of Jango
@@ -672,8 +672,8 @@ Sector,Planeta,Side,Op,Character
 3,Tatooine,Neutral,3,Supreme Leader Kylo Ren
 3,Tatooine,Neutral,3,Ben Solo
 3,Tatooine,Neutral,3,Maul
-3,Tatooine,Neutral,3,Skiff Guard (Lando Carlissian)
-3,Tatooine,Neutral,3,Mara Jade
+3,Tatooine,Neutral,3,Skiff Guard (Lando Calrissian)
+3,Tatooine,Neutral,3,"Mara Jade, The Emperor's Hand"
 3,Tatooine,Neutral,4,Jedi Knight Luke Skywalker
 3,Tatooine,Neutral,4,Boba Fett, Scion of Jango
 3,Tatooine,Neutral,4,Commander Ahsoka Tano
@@ -763,7 +763,7 @@ Sector,Planeta,Side,Op,Character
 3,Kashyyyk,Luminoso,3,R2-D2
 3,Kashyyyk,Luminoso,3,Rebel Officer Leia Organa
 3,Kashyyyk,Luminoso,3,Razor Crest
-3,Kashyyyk,Luminoso,3,Skiff Guard (Lando Carlissian)
+3,Kashyyyk,Luminoso,3,Skiff Guard (Lando Calrissian)
 3,Kashyyyk,Luminoso,4,Commander Ahsoka Tano
 3,Kashyyyk,Luminoso,4,BB-8
 3,Kashyyyk,Luminoso,4,R2-D2
@@ -797,7 +797,7 @@ Sector,Planeta,Side,Op,Character
 3,Kashyyyk,Luminoso,6,Razor Crest
 3,Kashyyyk,Luminoso,6,Commander Luke Skywalker
 3,Kashyyyk,Luminoso,6,Han's Millennium Falcon
-3,Kashyyyk,Luminoso,6,Negociador
+3,Kashyyyk,Luminoso,6,Negotiator
 3,Kashyyyk,Luminoso,6,Han Solo
 3,Kashyyyk,Luminoso,6,Rey
 3,Kashyyyk,Luminoso,6,Jedi Knight Revan
@@ -845,9 +845,9 @@ Sector,Planeta,Side,Op,Character
 3,Zeffo,,,Han Solo
 3,Zeffo,,,Han Solo
 3,Zeffo,,,Han Solo
-3,Zeffo,,,Jedi Consul
-3,Zeffo,,,Jedi Consul
-3,Zeffo,,,Jedi Consul
+3,Zeffo,,,Jedi Consular
+3,Zeffo,,,Jedi Consular
+3,Zeffo,,,Jedi Consular
 3,Zeffo,,,Jedi Knight Guardian
 3,Zeffo,,,Jedi Knight Guardian
 3,Zeffo,,,Jedi Knight Guardian
@@ -865,8 +865,8 @@ Sector,Planeta,Side,Op,Character
 3,Zeffo,,,Rey (Jedi Training)
 3,Zeffo,,,Chief Chirpa
 3,Zeffo,,,Chief Chirpa
-3,Zeffo,,,Chirrut Imwe
-3,Zeffo,,,Chirrut Imwe
+3,Zeffo,,,Chirrut Îmwe
+3,Zeffo,,,Chirrut Îmwe
 3,Zeffo,,,Clone Sergeant - Phase I
 3,Zeffo,,,Clone Sergeant - Phase I
 3,Zeffo,,,General Kenobi
@@ -883,7 +883,7 @@ Sector,Planeta,Side,Op,Character
 3,Zeffo,,,Clone Sergeant's ARC-170
 3,Zeffo,,,Commander Ahsoka Tano
 3,Zeffo,,,Enfys Nest
-3,Zeffo,,,Garazeb Zeb Orrelios
+3,Zeffo,,,Garazeb "Zeb" Orrelios
 3,Zeffo,,,Hermit Yoda
 3,Zeffo,,,Home One
 3,Zeffo,,,Jedi Consular's Starfighter
@@ -909,7 +909,7 @@ Sector,Planeta,Side,Op,Character
 4,Haven-class,Dark,1,Maul
 4,Haven-class,Dark,1,Bastila Shan (Fallen)
 4,Haven-class,Dark,1,Darth Vader
-4,Haven-class,Dark,1,Ejecutor
+4,Haven-class,Dark,1,Executor
 4,Haven-class,Dark,1,Darth Malak
 4,Haven-class,Dark,1,Scythe
 4,Haven-class,Dark,1,Embo
@@ -939,7 +939,7 @@ Sector,Planeta,Side,Op,Character
 4,Haven-class,Dark,3,Darth Malgus
 4,Haven-class,Dark,3,Nightsister Initiate
 4,Haven-class,Dark,3,Darth Maul
-4,Haven-class,Dark,3,Ejecutor
+4,Haven-class,Dark,3,Executor
 4,Haven-class,Dark,3,Starkiller
 4,Haven-class,Dark,3,TIE/IN Interceptor Prototype
 4,Haven-class,Dark,3,TIE Silencer
@@ -959,7 +959,7 @@ Sector,Planeta,Side,Op,Character
 4,Haven-class,Dark,4,Krrsantan
 4,Haven-class,Dark,4,Asajj Ventress
 4,Haven-class,Dark,4,TIE/IN Interceptor Prototype
-4,Haven-class,Dark,5,Ejecutor
+4,Haven-class,Dark,5,Executor
 4,Haven-class,Dark,5,Maul
 4,Haven-class,Dark,5,Hyena Bomber
 4,Haven-class,Dark,5,Asajj Ventress
@@ -972,16 +972,16 @@ Sector,Planeta,Side,Op,Character
 4,Haven-class,Dark,5,Supreme Leader Kylo Ren
 4,Haven-class,Dark,5,Maul
 4,Haven-class,Dark,5,Aurra Sing
-4,Haven-class,Dark,5,Mara Jade
+4,Haven-class,Dark,5,"Mara Jade, The Emperor's Hand"
 4,Haven-class,Dark,5,Scythe
-4,Haven-class,Dark,6,Ejecutor
+4,Haven-class,Dark,6,Executor
 4,Haven-class,Dark,6,TIE/IN Interceptor Prototype
 4,Haven-class,Dark,6,Hondo Ohnaka
 4,Haven-class,Dark,6,Emperor's Shuttle
 4,Haven-class,Dark,6,TIE Fighter Pilot
 4,Haven-class,Dark,6,Lord Vader
 4,Haven-class,Dark,6,Scythe
-4,Haven-class,Dark,6,B2
+4,Haven-class,Dark,6,B2 Super Battle Droid
 4,Haven-class,Dark,6,Malevolence
 4,Haven-class,Dark,6,Emperor's Shuttle
 4,Haven-class,Dark,6,Supreme Leader Kylo Ren
@@ -999,17 +999,17 @@ Sector,Planeta,Side,Op,Character
 4,Lothal,Luminoso,1,Razor Crest
 4,Lothal,Luminoso,1,Zaalbar
 4,Lothal,Luminoso,1,Dash Rendar
-4,Lothal,Luminoso,1,Profundidad
+4,Lothal,Luminoso,1,Profundity
 4,Lothal,Luminoso,1,Han Solo
 4,Lothal,Luminoso,1,Razor Crest
 4,Lothal,Luminoso,1,Xanadu Blood
-4,Lothal,Luminoso,1,Y-Wing rebelde
-4,Lothal,Luminoso,2,Profundidad
+4,Lothal,Luminoso,1,Rebel Y-wing
+4,Lothal,Luminoso,2,Profundity
 4,Lothal,Luminoso,2,Ki-Adi-Mundi
 4,Lothal,Luminoso,2,Commander Ahsoka Tano
 4,Lothal,Luminoso,2,The Mandalorian (Beskar Armor)
 4,Lothal,Luminoso,2,Chewbacca
-4,Lothal,Luminoso,2,Profundidad
+4,Lothal,Luminoso,2,Profundity
 4,Lothal,Luminoso,2,Hermit Yoda
 4,Lothal,Luminoso,2,Commander Ahsoka Tano
 4,Lothal,Luminoso,2,BB-8
@@ -1019,7 +1019,7 @@ Sector,Planeta,Side,Op,Character
 4,Lothal,Luminoso,2,Commander Ahsoka Tano
 4,Lothal,Luminoso,2,Chewbacca
 4,Lothal,Luminoso,2,Xanadu Blood
-4,Lothal,Luminoso,3,Profundidad
+4,Lothal,Luminoso,3,Profundity
 4,Lothal,Luminoso,3,Hermit Yoda
 4,Lothal,Luminoso,3,Razor Crest
 4,Lothal,Luminoso,3,Finn
@@ -1029,12 +1029,12 @@ Sector,Planeta,Side,Op,Character
 4,Lothal,Luminoso,3,Commander Ahsoka Tano
 4,Lothal,Luminoso,3,50R-T
 4,Lothal,Luminoso,3,Raven's Claw
-4,Lothal,Luminoso,3,Profundidad
+4,Lothal,Luminoso,3,Profundity
 4,Lothal,Luminoso,3,Hermit Yoda
 4,Lothal,Luminoso,3,Ben Solo
 4,Lothal,Luminoso,3,Ebon Hawk
 4,Lothal,Luminoso,3,Chief Nebit
-4,Lothal,Luminoso,4,Profundidad
+4,Lothal,Luminoso,4,Profundity
 4,Lothal,Luminoso,4,Rebel Officer Leia Organa
 4,Lothal,Luminoso,4,Ghost
 4,Lothal,Luminoso,4,Kyle Katarn
@@ -1056,18 +1056,18 @@ Sector,Planeta,Side,Op,Character
 4,Lothal,Luminoso,5,Jedi Knight Revan
 4,Lothal,Luminoso,5,Jedi Master Kenobi
 4,Lothal,Luminoso,5,Logray
-4,Lothal,Luminoso,5,Jedi Consul
+4,Lothal,Luminoso,5,Jedi Consular
 4,Lothal,Luminoso,5,Grand Master Yoda
 4,Lothal,Luminoso,5,Razor Crest
-4,Lothal,Luminoso,5,Profundidad
+4,Lothal,Luminoso,5,Profundity
 4,Lothal,Luminoso,5,Logray
 4,Lothal,Luminoso,5,Bistan
 4,Lothal,Luminoso,5,Jedi Master Kenobi
 4,Lothal,Luminoso,5,Han's Millennium Falcon
-4,Lothal,Luminoso,5,Plo Koon's Jedi Startfighter
+4,Lothal,Luminoso,5,Plo Koon's Jedi Starfighter
 4,Lothal,Luminoso,6,Jedi Master Luke Skywalker
 4,Lothal,Luminoso,6,Rebel Officer Leia Organa
-4,Lothal,Luminoso,6,Wedge Antilles X-Wing
+4,Lothal,Luminoso,6,Wedge Antilles's X-wing
 4,Lothal,Luminoso,6,Sana Starros
 4,Lothal,Luminoso,6,Padmé Amidala
 4,Lothal,Luminoso,6,Jedi Master Luke Skywalker
@@ -1080,30 +1080,30 @@ Sector,Planeta,Side,Op,Character
 4,Lothal,Luminoso,6,Wicket
 4,Lothal,Luminoso,6,50R-T
 4,Lothal,Luminoso,6,Hondo Ohnaka
-4,Kessel,Neutral,1,Ejecutor
+4,Kessel,Neutral,1,Executor
 4,Kessel,Neutral,1,Starkiller
 4,Kessel,Neutral,1,TIE/IN Interceptor Prototype
 4,Kessel,Neutral,1,Coruscant Underworld Police
-4,Kessel,Neutral,1,Poggle
+4,Kessel,Neutral,1,Poggle the Lesser
 4,Kessel,Neutral,1,Lord Vader
 4,Kessel,Neutral,1,General Skywalker
 4,Kessel,Neutral,1,TIE/IN Interceptor Prototype
-4,Kessel,Neutral,1,Halcón de Ébano
+4,Kessel,Neutral,1,Ebon Hawk
 4,Kessel,Neutral,1,Boba Fett, Scion of Jango
 4,Kessel,Neutral,1,Rey
-4,Kessel,Neutral,1,Caballero Jedi Luke Skywalker
+4,Kessel,Neutral,1,Jedi Knight Luke Skywalker
 4,Kessel,Neutral,1,TIE/IN Interceptor Prototype
-4,Kessel,Neutral,1,Caza estelar del Jedi Consul
+4,Kessel,Neutral,1,Jedi Consular's Starfighter
 4,Kessel,Neutral,1,Outrider
 4,Kessel,Neutral,2,Jedi Master Kenobi
 4,Kessel,Neutral,2,Starkiller
 4,Kessel,Neutral,2,Maul
 4,Kessel,Neutral,2,Gamorrean Guard
-4,Kessel,Neutral,2,Caza Sith
+4,Kessel,Neutral,2,Sith Fighter
 4,Kessel,Neutral,2,Rey
 4,Kessel,Neutral,2,Darth Malak
 4,Kessel,Neutral,2,Razor Crest
-4,Kessel,Neutral,2,ARC-170 de Rex
+4,Kessel,Neutral,2,Rex's ARC-170
 4,Kessel,Neutral,2,Ben Solo
 4,Kessel,Neutral,2,Sith Eternal Emperor
 4,Kessel,Neutral,2,Starkiller
@@ -1123,7 +1123,7 @@ Sector,Planeta,Side,Op,Character
 4,Kessel,Neutral,3,Sith Eternal Emperor
 4,Kessel,Neutral,3,General Skywalker
 4,Kessel,Neutral,3,TIE/IN Interceptor Prototype
-4,Kessel,Neutral,3,Esclavo I
+4,Kessel,Neutral,3,Slave I
 4,Kessel,Neutral,3,The Mandalorian
 4,Kessel,Neutral,4,Lord Vader
 4,Kessel,Neutral,4,General Skywalker
@@ -1131,9 +1131,9 @@ Sector,Planeta,Side,Op,Character
 4,Kessel,Neutral,4,Baze Malbus
 4,Kessel,Neutral,4,General Veers
 4,Kessel,Neutral,4,Rey
-4,Kessel,Neutral,4,Caballero Jedi Luke Skywalker
+4,Kessel,Neutral,4,Jedi Knight Luke Skywalker
 4,Kessel,Neutral,4,Maul
-4,Kessel,Neutral,4,Soldado Rebelde de Hoth
+4,Kessel,Neutral,4,Hoth Rebel Soldier
 4,Kessel,Neutral,4,Scythe
 4,Kessel,Neutral,4,Rey
 4,Kessel,Neutral,4,Starkiller
@@ -1143,18 +1143,18 @@ Sector,Planeta,Side,Op,Character
 4,Kessel,Neutral,5,Sith Eternal Emperor
 4,Kessel,Neutral,5,General Skywalker
 4,Kessel,Neutral,5,Scythe
-4,Kessel,Neutral,5,Bombardero de Extinción B-28
+4,Kessel,Neutral,5,B-28 Extinction-class Bomber
 4,Kessel,Neutral,5,Asajj Ventress
-4,Kessel,Neutral,5,Ejecutor
-4,Kessel,Neutral,5,Caballero Jedi Luke Skywalker
+4,Kessel,Neutral,5,Executor
+4,Kessel,Neutral,5,Jedi Knight Luke Skywalker
 4,Kessel,Neutral,5,Maul
 4,Kessel,Neutral,5,IG-88
 4,Kessel,Neutral,5,Razor Crest
 4,Kessel,Neutral,5,Rey
-4,Kessel,Neutral,5,Caballero Jedi Luke Skywalker
+4,Kessel,Neutral,5,Jedi Knight Luke Skywalker
 4,Kessel,Neutral,5,Boba Fett, Scion of Jango
 4,Kessel,Neutral,5,50R-T
-4,Kessel,Neutral,5,Y-Wing rebelde
+4,Kessel,Neutral,5,Rebel Y-wing
 4,Kessel,Neutral,6,Sith Eternal Emperor
 4,Kessel,Neutral,6,Darth Malak
 4,Kessel,Neutral,6,Razor Crest
@@ -1163,7 +1163,7 @@ Sector,Planeta,Side,Op,Character
 4,Kessel,Neutral,6,Rey
 4,Kessel,Neutral,6,Darth Malak
 4,Kessel,Neutral,6,Ben Solo
-4,Kessel,Neutral,6,Almirante Ackbar
+4,Kessel,Neutral,6,Admiral Ackbar
 4,Kessel,Neutral,6,Commander Ahsoka Tano
 4,Kessel,Neutral,6,Supreme Leader Kylo Ren
 4,Kessel,Neutral,6,Starkiller
@@ -1262,14 +1262,14 @@ Sector,Planeta,Side,Op,Character
 4,Mandalore,,6,Coruscant Underworld Police
 5,Anillo de Kafrene,Luminoso,1,Jedi Master Luke Skywalker
 5,Anillo de Kafrene,Luminoso,1,Grand Master Yoda
-5,Anillo de Kafrene,Luminoso,1,Caballero Jedi Luke Skywalker
+5,Anillo de Kafrene,Luminoso,1,Jedi Knight Luke Skywalker
 5,Anillo de Kafrene,Luminoso,1,50R-T
 5,Anillo de Kafrene,Luminoso,1,Zaalbar
 5,Anillo de Kafrene,Luminoso,1,Jedi Master Luke Skywalker
 5,Anillo de Kafrene,Luminoso,1,Commander Luke Skywalker
-5,Anillo de Kafrene,Luminoso,1,Caballero Jedi Luke Skywalker
-5,Anillo de Kafrene,Luminoso,1,Wedge Antilles X-Wing
-5,Anillo de Kafrene,Luminoso,1,Boushh
+5,Anillo de Kafrene,Luminoso,1,Jedi Knight Luke Skywalker
+5,Anillo de Kafrene,Luminoso,1,Wedge Antilles's X-wing
+5,Anillo de Kafrene,Luminoso,1,Boushh (Leia Organa)
 5,Anillo de Kafrene,Luminoso,1,Jedi Master Kenobi
 5,Anillo de Kafrene,Luminoso,1,Jedi Knight Revan
 5,Anillo de Kafrene,Luminoso,1,General Skywalker
@@ -1277,7 +1277,7 @@ Sector,Planeta,Side,Op,Character
 5,Anillo de Kafrene,Luminoso,1,Eeth Koth
 5,Anillo de Kafrene,Luminoso,2,Rey
 5,Anillo de Kafrene,Luminoso,2,Padmé Amidala
-5,Anillo de Kafrene,Luminoso,2,Caballero Jedi Luke Skywalker
+5,Anillo de Kafrene,Luminoso,2,Jedi Knight Luke Skywalker
 5,Anillo de Kafrene,Luminoso,2,Grand Master Yoda
 5,Anillo de Kafrene,Luminoso,2,Lobot
 5,Anillo de Kafrene,Luminoso,2,Rey
@@ -1287,12 +1287,12 @@ Sector,Planeta,Side,Op,Character
 5,Anillo de Kafrene,Luminoso,2,CT-7567 "Rex"
 5,Anillo de Kafrene,Luminoso,2,Jedi Master Kenobi
 5,Anillo de Kafrene,Luminoso,2,Grand Master Yoda
-5,Anillo de Kafrene,Luminoso,2,Caballero Jedi Luke Skywalker
+5,Anillo de Kafrene,Luminoso,2,Jedi Knight Luke Skywalker
 5,Anillo de Kafrene,Luminoso,2,Commander Luke Skywalker
 5,Anillo de Kafrene,Luminoso,2,Eeth Koth
 5,Anillo de Kafrene,Luminoso,3,Jedi Master Kenobi
 5,Anillo de Kafrene,Luminoso,3,Jedi Knight Revan
-5,Anillo de Kafrene,Luminoso,3,Caballero Jedi Luke Skywalker
+5,Anillo de Kafrene,Luminoso,3,Jedi Knight Luke Skywalker
 5,Anillo de Kafrene,Luminoso,3,Clone Sergeant's ARC-170
 5,Anillo de Kafrene,Luminoso,3,T3-M4
 5,Anillo de Kafrene,Luminoso,3,Rey
@@ -1302,17 +1302,17 @@ Sector,Planeta,Side,Op,Character
 5,Anillo de Kafrene,Luminoso,3,Tech
 5,Anillo de Kafrene,Luminoso,3,Jedi Master Luke Skywalker
 5,Anillo de Kafrene,Luminoso,3,R2-D2
-5,Anillo de Kafrene,Luminoso,3,Caballero Jedi Luke Skywalker
-5,Anillo de Kafrene,Luminoso,3,Wedge Antilles X-Wing
+5,Anillo de Kafrene,Luminoso,3,Jedi Knight Luke Skywalker
+5,Anillo de Kafrene,Luminoso,3,Wedge Antilles's X-wing
 5,Anillo de Kafrene,Luminoso,3,Echo
 5,Anillo de Kafrene,Luminoso,4,Profundity
-5,Anillo de Kafrene,Luminoso,4,Caballero Jedi Luke Skywalker
+5,Anillo de Kafrene,Luminoso,4,Jedi Knight Luke Skywalker
 5,Anillo de Kafrene,Luminoso,4,Barriss Offee
 5,Anillo de Kafrene,Luminoso,4,Mon Mothma
 5,Anillo de Kafrene,Luminoso,4,Baze Malbus
 5,Anillo de Kafrene,Luminoso,4,Jedi Master Kenobi
 5,Anillo de Kafrene,Luminoso,4,General Skywalker
-5,Anillo de Kafrene,Luminoso,4,Negociador
+5,Anillo de Kafrene,Luminoso,4,Negotiator
 5,Anillo de Kafrene,Luminoso,4,Chopper
 5,Anillo de Kafrene,Luminoso,4,Chewbacca, guerra de los clones
 5,Anillo de Kafrene,Luminoso,4,Rey
@@ -1321,7 +1321,7 @@ Sector,Planeta,Side,Op,Character
 5,Anillo de Kafrene,Luminoso,4,Resistance Trooper
 5,Anillo de Kafrene,Luminoso,4,C-3PO
 5,Anillo de Kafrene,Luminoso,5,Jedi Master Kenobi
-5,Anillo de Kafrene,Luminoso,5,Caballero Jedi Luke Skywalker
+5,Anillo de Kafrene,Luminoso,5,Jedi Knight Luke Skywalker
 5,Anillo de Kafrene,Luminoso,5,Veteran Smuggler Chewbacca
 5,Anillo de Kafrene,Luminoso,5,Grand Master Yoda
 5,Anillo de Kafrene,Luminoso,5,50R-T
@@ -1331,22 +1331,22 @@ Sector,Planeta,Side,Op,Character
 5,Anillo de Kafrene,Luminoso,5,R2-D2
 5,Anillo de Kafrene,Luminoso,5,Bodhi Rook
 5,Anillo de Kafrene,Luminoso,5,Jedi Master Luke Skywalker
-5,Anillo de Kafrene,Luminoso,5,Caballero Jedi Luke Skywalker
+5,Anillo de Kafrene,Luminoso,5,Jedi Knight Luke Skywalker
 5,Anillo de Kafrene,Luminoso,5,Hoth Rebel Soldier
 5,Anillo de Kafrene,Luminoso,5,Jedi Knight Revan
 5,Anillo de Kafrene,Luminoso,5,Chewbacca
 5,Anillo de Kafrene,Luminoso,6,Jedi Master Luke Skywalker
-5,Anillo de Kafrene,Luminoso,6,Caballero Jedi Luke Skywalker
+5,Anillo de Kafrene,Luminoso,6,Jedi Knight Luke Skywalker
 5,Anillo de Kafrene,Luminoso,6,Omega
 5,Anillo de Kafrene,Luminoso,6,Ima-Gun Di
-5,Anillo de Kafrene,Luminoso,6,Chirrut Imwe
+5,Anillo de Kafrene,Luminoso,6,Chirrut Îmwe
 5,Anillo de Kafrene,Luminoso,6,Jedi Master Kenobi
 5,Anillo de Kafrene,Luminoso,6,General Skywalker
-5,Anillo de Kafrene,Luminoso,6,Lando Carlrissian
+5,Anillo de Kafrene,Luminoso,6,Lando Calrissian
 5,Anillo de Kafrene,Luminoso,6,Tech
 5,Anillo de Kafrene,Luminoso,6,Ghost
 5,Anillo de Kafrene,Luminoso,6,Jedi Master Luke Skywalker
-5,Anillo de Kafrene,Luminoso,6,Caballero Jedi Luke Skywalker
+5,Anillo de Kafrene,Luminoso,6,Jedi Knight Luke Skywalker
 5,Anillo de Kafrene,Luminoso,6,Umbaran Starfighter
 5,Anillo de Kafrene,Luminoso,6,Rose Tico
 5,Anillo de Kafrene,Luminoso,6,Commander Luke Skywalker

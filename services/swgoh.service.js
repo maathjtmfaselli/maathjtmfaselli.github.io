@@ -50,7 +50,13 @@ export class SwgohService {
     const units = {};
 
     for (const unit of memberData.units) {
-      units[unit.data.name] = Math.max(0, unit.data.relic_tier - 2);
+      if (unit.data.combat_type === 1) {
+        units[unit.data.name] = Math.max(0, unit.data.relic_tier - 2);
+      } else if (unit.data.combat_type === 2) {
+        units[unit.data.name] = unit.data.rarity == 7 ? 99 : 0;
+      } else {
+       units[unit.data.name] = -1;
+      }
     }
 
     return units;
@@ -122,31 +128,35 @@ export class SwgohService {
 
     rawData.members.forEach(member => {
       Object.entries(member.units).forEach(([unitName, relic]) => {
-            if (!stats.rote.characterCounts[unitName]) {
-              stats.rote.characterCounts[unitName] = {
-                r5plus: 0,
-                r6plus: 0,
-                r7plus: 0,
-                r8plus: 0
-    //              r9plus: 0
-              };
-            }
-            if (relic >= 5) {
-              stats.rote.characterCounts[unitName].r5plus++;
-            }
-            if (relic >= 6) {
-              stats.rote.characterCounts[unitName].r6plus++;
-            }
-            if (relic >= 7) {
-              stats.rote.characterCounts[unitName].r7plus++;
-            }
-            if (relic >= 8) {
-              stats.rote.characterCounts[unitName].r8plus++;
-            }
-    //          if (relic >= 9) {
-    //            stats.rote.characterCounts[unitName].r9plus++;
-    //          }
-          });
+        // Ignore unsupported combat types and 7-star ships
+        if (relic === -1 || relic === 99) {
+          return;
+        }
+        if (!stats.rote.characterCounts[unitName]) {
+          stats.rote.characterCounts[unitName] = {
+            r5plus: 0,
+            r6plus: 0,
+            r7plus: 0,
+            r8plus: 0
+//              r9plus: 0
+          };
+        }
+        if (relic >= 5) {
+          stats.rote.characterCounts[unitName].r5plus++;
+        }
+        if (relic >= 6) {
+          stats.rote.characterCounts[unitName].r6plus++;
+        }
+        if (relic >= 7) {
+          stats.rote.characterCounts[unitName].r7plus++;
+        }
+        if (relic >= 8) {
+          stats.rote.characterCounts[unitName].r8plus++;
+        }
+//          if (relic >= 9) {
+//            stats.rote.characterCounts[unitName].r9plus++;
+//          }
+      });
     });
 
     // Ensure deterministic ordering of characterCounts by unit name

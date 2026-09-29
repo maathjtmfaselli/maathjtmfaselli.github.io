@@ -1,4 +1,5 @@
 import { HolocronBase } from "../../../services/holocron.service.js";
+import { GuildMembersService } from "../../../services/guild-members.service.js";
 import { RoteService } from "../../../services/rote.service.js";
 await import("../../../js/components/data-table.js");
 
@@ -6,6 +7,7 @@ class RotePlanHolocron extends HolocronBase {
 
   constructor() {
     super();
+    this.guildMembersService = new GuildMembersService();
     this.roteService = new RoteService();
   }
 
@@ -18,7 +20,8 @@ class RotePlanHolocron extends HolocronBase {
 
   async loadData() {
 //    const ops = await this.roteService.getGuildOperations();
-    this.loadCharacterData();
+    this.loadOpsByGuildData();
+    this.loadCharacterUpgradeData();
   }
 
   afterRender() {
@@ -79,13 +82,102 @@ renderCharacterList(characters, listElementId) {
   });
 }
 
-async loadCharacterData() {
+  async loadOpsByGuildData() {
+    const roteOpsTable = document.querySelector("#pnjs-ops-by-guild-table");
+    if (!roteOpsTable) return;
 
-const CharacterStatus = Object.freeze({
-  TODO: "TODO",
-  IN_PROGRESS: "IN_PROGRESS",
-  DONE: "DONE"
-});
+    const opsMasterData = await this.roteService.getMasterDataPnjsByOps();
+    const playersRosterData = await this.guildMembersService.loadMembersRoster();
+    const playerContributionCounts = this.getPlayerContributionCounts( opsMasterData, playersRosterData.members );
+
+    roteOpsTable.initialize({
+      rows: opsMasterData.map(ops => {
+        const contributors = this.getPlayersWithRequiredRelic(ops.Sector, ops.Character, playersRosterData.members );
+        return {
+          sector: ops.Sector,
+          planet: ops.Planeta,
+          op: ops.Op,
+          character: ops.Character,
+          contributorsCount: `${contributors.length} jugadores`,
+          contributors: {
+            value: contributors,
+            display: `${contributors.length} jugadores`
+          },
+        };
+      }),
+      columns: [
+        { field: "sector", label: "Sector" },
+        { field: "planet", label: "Planeta" },
+        { field: "op", label: "Op" },
+        { field: "character", label: "Character" },
+        { field: "contributorsCount", label: "Jugadores" }
+      ],
+      filters: [
+        { field: "sector", label: "Sector" },
+        { field: "planet", label: "Planeta" },
+        { field: "op", label: "Op" },
+        { field: "character", label: "Character" },
+        { field: "contributors", label: "Jugador",
+          options: playersRosterData.members.map(player => ({
+            value: player.name,
+            label: `${player.name} (${playerContributionCounts.get(player.name)})`
+          }))
+        },
+        { field: "contributorsCount", label: "# Jugadores",
+          options: [0, 1, 2, 3, 4]
+              .map(count => ({
+                value: `${count} jugadores`,
+                label: `${count} jugadores`
+              }))
+        }
+      ]
+    });
+  }
+
+  getPlayersWithRequiredRelic(sector, character, playersRosterData) {
+    const requiredRelic = Number(sector) + 4;
+
+    return playersRosterData
+      .filter(player => (player.units?.[character] ?? 0) >= requiredRelic)
+      .map(player => player.name);
+  }
+
+  getPlayerContributionCounts(opsMasterData, playersRosterData) {
+    const playerCounts = new Map();
+
+    // Initialize every player with 0
+    playersRosterData.forEach(player => {
+      playerCounts.set(player.name, 0);
+    });
+
+    opsMasterData.forEach(ops => {
+      const players = this.getPlayersWithRequiredRelic(
+        ops.Sector,
+        ops.Character,
+        playersRosterData
+      );
+
+      // Only count PNJs contributed by 4 or fewer players
+      if (players.length > 4) return;
+
+      players.forEach(player => {
+        playerCounts.set(
+          player,
+          playerCounts.get(player) + 1
+        );
+      });
+    });
+
+    return playerCounts;
+  }
+
+async loadCharacterUpgradeData() {
+
+  const CharacterStatus = Object.freeze({
+    TODO: "TODO",
+    IN_PROGRESS: "IN_PROGRESS",
+    DONE: "DONE"
+  });
 
   try {
     const response = await fetch('../data/guild/rote-characters-to-upgrade.json');

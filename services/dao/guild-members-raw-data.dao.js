@@ -1,5 +1,4 @@
 import { BaseDao } from "./base.dao.js";
-//import { FileService } from "../file.service.js";
 
 export class GuildMembersRawDataDao extends BaseDao {
   constructor() {
@@ -10,15 +9,9 @@ export class GuildMembersRawDataDao extends BaseDao {
         return res.json();
       })
     );
-//    this.fileService = new FileService();
   }
 
   async loadGuildMembersRawData() {
     return this.loadData();
   }
-
-//  async saveFile() {
-//    await this.fileService.saveJson("/data/generated/guild-members-raw-data.json", rawOutput);
-//  }
-
 }

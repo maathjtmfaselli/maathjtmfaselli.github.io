@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-29T07:44:48.263Z",
+  "updated": "2026-09-29T13:20:00.779Z",
   "totalMembers": 50,
   "members": [
     {
@@ -683,12 +683,6 @@
         "r7plus": 36,
         "r8plus": 27
       },
-      "Ahsoka Tano's Jedi Starfighter": {
-        "r5plus": 0,
-        "r6plus": 0,
-        "r7plus": 0,
-        "r8plus": 0
-      },
       "Amilyn Holdo": {
         "r5plus": 38,
         "r6plus": 4,
@@ -795,12 +789,6 @@
         "r5plus": 10,
         "r6plus": 1,
         "r7plus": 1,
-        "r8plus": 0
-      },
-      "Biggs Darklighter's X-wing": {
-        "r5plus": 0,
-        "r6plus": 0,
-        "r7plus": 0,
         "r8plus": 0
       },
       "Bistan": {
@@ -1024,12 +1012,6 @@
         "r6plus": 3,
         "r7plus": 3,
         "r8plus": 1
-      },
-      "Chimaera": {
-        "r5plus": 0,
-        "r6plus": 0,
-        "r7plus": 0,
-        "r8plus": 0
       },
       "Chirrut Îmwe": {
         "r5plus": 33,
@@ -1343,12 +1325,6 @@
         "r7plus": 0,
         "r8plus": 0
       },
-      "Endurance": {
-        "r5plus": 0,
-        "r6plus": 0,
-        "r7plus": 0,
-        "r8plus": 0
-      },
       "Enfys Nest": {
         "r5plus": 33,
         "r6plus": 16,
@@ -1368,12 +1344,6 @@
         "r8plus": 2
       },
       "Executor": {
-        "r5plus": 0,
-        "r6plus": 0,
-        "r7plus": 0,
-        "r8plus": 0
-      },
-      "Executrix": {
         "r5plus": 0,
         "r6plus": 0,
         "r7plus": 0,
@@ -1401,12 +1371,6 @@
         "r5plus": 47,
         "r6plus": 32,
         "r7plus": 27,
-        "r8plus": 0
-      },
-      "Finalizer": {
-        "r5plus": 0,
-        "r6plus": 0,
-        "r7plus": 0,
         "r8plus": 0
       },
       "Finn": {
@@ -1445,22 +1409,10 @@
         "r7plus": 4,
         "r8plus": 0
       },
-      "First Order TIE Fighter": {
-        "r5plus": 0,
-        "r6plus": 0,
-        "r7plus": 0,
-        "r8plus": 0
-      },
       "First Order TIE Pilot": {
         "r5plus": 23,
         "r6plus": 4,
         "r7plus": 1,
-        "r8plus": 0
-      },
-      "Fury-class Interceptor": {
-        "r5plus": 0,
-        "r6plus": 0,
-        "r7plus": 0,
         "r8plus": 0
       },
       "Gamorrean Guard": {
@@ -1535,28 +1487,10 @@
         "r7plus": 0,
         "r8plus": 0
       },
-      "Geonosian Soldier's Starfighter": {
-        "r5plus": 0,
-        "r6plus": 0,
-        "r7plus": 0,
-        "r8plus": 0
-      },
       "Geonosian Spy": {
         "r5plus": 19,
         "r6plus": 4,
         "r7plus": 2,
-        "r8plus": 0
-      },
-      "Geonosian Spy's Starfighter": {
-        "r5plus": 0,
-        "r6plus": 0,
-        "r7plus": 0,
-        "r8plus": 0
-      },
-      "Ghost": {
-        "r5plus": 0,
-        "r6plus": 0,
-        "r7plus": 0,
         "r8plus": 0
       },
       "Grand Admiral Thrawn": {
@@ -1625,12 +1559,6 @@
         "r7plus": 45,
         "r8plus": 43
       },
-      "Han's Millennium Falcon": {
-        "r5plus": 0,
-        "r6plus": 0,
-        "r7plus": 0,
-        "r8plus": 0
-      },
       "Hera Syndulla": {
         "r5plus": 34,
         "r6plus": 7,
@@ -1649,12 +1577,6 @@
         "r7plus": 31,
         "r8plus": 0
       },
-      "Home One": {
-        "r5plus": 0,
-        "r6plus": 0,
-        "r7plus": 0,
-        "r8plus": 0
-      },
       "Hondo Ohnaka": {
         "r5plus": 42,
         "r6plus": 38,
@@ -1671,12 +1593,6 @@
         "r5plus": 6,
         "r6plus": 4,
         "r7plus": 2,
-        "r8plus": 0
-      },
-      "Hound's Tooth": {
-        "r5plus": 0,
-        "r6plus": 0,
-        "r7plus": 0,
         "r8plus": 0
       },
       "Hunter": {
@@ -1727,12 +1643,6 @@
         "r7plus": 48,
         "r8plus": 5
       },
-      "IG-2000": {
-        "r5plus": 0,
-        "r6plus": 0,
-        "r7plus": 0,
-        "r8plus": 0
-      },
       "IG-86 Sentinel Droid": {
         "r5plus": 4,
         "r6plus": 0,
@@ -1768,18 +1678,6 @@
         "r6plus": 2,
         "r7plus": 2,
         "r8plus": 2
-      },
-      "Imperial TIE Bomber": {
-        "r5plus": 0,
-        "r6plus": 0,
-        "r7plus": 0,
-        "r8plus": 0
-      },
-      "Imperial TIE Fighter": {
-        "r5plus": 0,
-        "r6plus": 0,
-        "r7plus": 0,
-        "r8plus": 0
       },
       "Inquisitor Barriss": {
         "r5plus": 11,
@@ -1833,12 +1731,6 @@
         "r5plus": 10,
         "r6plus": 5,
         "r7plus": 2,
-        "r8plus": 0
-      },
-      "Jedi Consular's Starfighter": {
-        "r5plus": 0,
-        "r6plus": 0,
-        "r7plus": 0,
         "r8plus": 0
       },
       "Jedi Knight Anakin": {
@@ -2216,7 +2108,7 @@
       "Nightsister Initiate": {
         "r5plus": 3,
         "r6plus": 1,
-        "r7plus": 0,
+        "r7plus": 1,
         "r8plus": 0
       },
       "Nightsister Spirit": {
@@ -2308,12 +2200,6 @@
         "r6plus": 49,
         "r7plus": 49,
         "r8plus": 8
-      },
-      "Phantom II": {
-        "r5plus": 0,
-        "r6plus": 0,
-        "r7plus": 0,
-        "r8plus": 0
       },
       "Pirate King Hondo Ohnaka": {
         "r5plus": 17,
@@ -2411,12 +2297,6 @@
         "r7plus": 1,
         "r8plus": 1
       },
-      "Raddus": {
-        "r5plus": 0,
-        "r6plus": 0,
-        "r7plus": 0,
-        "r8plus": 0
-      },
       "Range Trooper": {
         "r5plus": 15,
         "r6plus": 7,
@@ -2424,12 +2304,6 @@
         "r8plus": 0
       },
       "Raven's Claw": {
-        "r5plus": 0,
-        "r6plus": 0,
-        "r7plus": 0,
-        "r8plus": 0
-      },
-      "Razor Crest": {
         "r5plus": 0,
         "r6plus": 0,
         "r7plus": 0,
@@ -2597,12 +2471,6 @@
         "r7plus": 44,
         "r8plus": 0
       },
-      "Scythe": {
-        "r5plus": 0,
-        "r6plus": 0,
-        "r7plus": 0,
-        "r8plus": 0
-      },
       "Second Sister": {
         "r5plus": 47,
         "r6plus": 19,
@@ -2675,12 +2543,6 @@
         "r7plus": 8,
         "r8plus": 0
       },
-      "Slave I": {
-        "r5plus": 0,
-        "r6plus": 0,
-        "r7plus": 0,
-        "r8plus": 0
-      },
       "SM-33": {
         "r5plus": 16,
         "r6plus": 13,
@@ -2744,12 +2606,6 @@
       "Sun Fac": {
         "r5plus": 14,
         "r6plus": 3,
-        "r7plus": 0,
-        "r8plus": 0
-      },
-      "Sun Fac's Geonosian Starfighter": {
-        "r5plus": 0,
-        "r6plus": 0,
         "r7plus": 0,
         "r8plus": 0
       },
@@ -2835,12 +2691,6 @@
         "r5plus": 48,
         "r6plus": 44,
         "r7plus": 44,
-        "r8plus": 0
-      },
-      "TIE Advanced x1": {
-        "r5plus": 0,
-        "r6plus": 0,
-        "r7plus": 0,
         "r8plus": 0
       },
       "TIE Dagger": {
@@ -2987,12 +2837,6 @@
         "r7plus": 2,
         "r8plus": 1
       },
-      "Wedge Antilles's X-wing": {
-        "r5plus": 0,
-        "r6plus": 0,
-        "r7plus": 0,
-        "r8plus": 0
-      },
       "Wicket": {
         "r5plus": 6,
         "r6plus": 5,
@@ -3009,12 +2853,6 @@
         "r5plus": 22,
         "r6plus": 8,
         "r7plus": 6,
-        "r8plus": 0
-      },
-      "Xanadu Blood": {
-        "r5plus": 0,
-        "r6plus": 0,
-        "r7plus": 0,
         "r8plus": 0
       },
       "Yoda (Dark Side Vision)": {

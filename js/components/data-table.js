@@ -57,21 +57,21 @@ class DataTable extends HTMLElement {
   }
   renderRows(rows) {
     if (!rows.length) {
-      return `
-        <tr>
-          <td colspan="${this._columns.length}">
-            No data available
-          </td>
-        </tr>
-      `;
+      return `<tr><td colspan="${this._columns.length}">No data available</td></tr>`;
     }
-    return rows.map(row => `
-      <tr>
-        ${this._columns.map(col =>
-          `<td>${row[col.field] ?? ""}</td>`
-        ).join("")}
-      </tr>
-    `).join("");
+
+    return rows.map(row => `<tr>
+        ${this._columns.map(col => {
+          const cell = row[col.field];
+          return `<td>${this.getCellDisplayValue(cell)}</td>`;
+        }).join("")}
+      </tr>`).join("");
+  }
+  getCellDisplayValue(cell) {
+    if (cell && typeof cell === "object" && "display" in cell) {
+      return cell.display;
+    }
+    return cell ?? "";
   }
   renderFilters() {
     if (!this._filters.length) {
@@ -92,19 +92,28 @@ class DataTable extends HTMLElement {
               data-filter="${filter.field}"
             >
               <option value="">Todos</option>
-
-              ${this.getFilterValues(filter.field)
-                .map(value => `
-                  <option value="${value}">
-                    ${value}
-                  </option>
-                `)
-                .join("")}
+          ${this.getFilterOptions(filter)
+            .map(option => `
+              <option value="${option.value}">
+                ${option.label}
+              </option>
+            `)
+            .join("")}
             </select>
           </div>
         `).join("")}
       </div>
     `;
+  }
+  getFilterOptions(filter) {
+    if (filter.options) {
+      return filter.options;
+    }
+
+    return this.getFilterValues(filter.field).map(value => ({
+      value,
+      label: value
+    }));
   }
   getFilteredRows() {
     return this._rows.filter(row => {
@@ -113,9 +122,29 @@ class DataTable extends HTMLElement {
           if (!value) {
             return true;
           }
-          return row[field] === value;
+
+          const cell = row[field];
+
+          if (
+            cell &&
+            typeof cell === "object" &&
+            "value" in cell
+          ) {
+            return Array.isArray(cell.value)
+              ? cell.value.includes(value)
+              : cell.value === value;
+          }
+
+          return cell === value;
         });
     });
+  }
+  matchesFilter(cellValue, filterValue) {
+    if (Array.isArray(cellValue)) {
+      return cellValue.includes(filterValue);
+    }
+
+    return cellValue === filterValue;
   }
   getFilterValues(field) {
     return [...new Set(
