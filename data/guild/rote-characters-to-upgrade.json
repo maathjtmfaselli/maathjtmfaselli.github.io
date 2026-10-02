@@ -1,6 +1,30 @@
 {
   "topPriorityCharacters": [
     {
+      "name": "Snow Trooper",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_troopersnow.png",
+      "relic": "Reliquia 8",
+      "assignedTo": ""
+    },{
+      "name": "Soldado Rebelde de Hoth",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_rebelhoth.png",
+      "relic": "Reliquia 8",
+      "assignedTo": ""
+    },{
+      "name": "Bistan",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bistan.png",
+      "relic": "Reliquia 8",
+      "assignedTo": ""
+    }
+  ],
+  "charactersToUpgrade": [],
+  "upgradedCharacters": [
+    {
+      "name": "Savage Opress",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_savageopress.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "maath"
+    },{
       "name": "Poggle",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_geonosian_poggle.png",
       "relic": "Reliquia 8",
@@ -16,27 +40,6 @@
       "relic": "Reliquia 8",
       "assignedTo": "Gita"
     },{
-      "name": "Soldado Rebelde de Hoth",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_rebelhoth.png",
-      "relic": "Reliquia 8",
-      "assignedTo": ""
-    },{
-      "name": "Bistan",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bistan.png",
-      "relic": "Reliquia 8",
-      "assignedTo": ""
-    }
-  ],
-  "charactersToUpgrade": [
-    {
-      "name": "Magmatrooper",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_trooperstorm_magma.png",
-      "relic": "Reliquia 6",
-      "assignedTo": ""
-    }
-  ],
-  "upgradedCharacters": [
-    {
       "name": "Nightsister Initiate",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_nightsister_initiate.png",
       "relic": "Reliquia 8",
