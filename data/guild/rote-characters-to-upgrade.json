@@ -1,6 +1,36 @@
 {
   "topPriorityCharacters": [
     {
+      "name": "Maul",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_maul.png",
+      "relic": "Reliquia 8",
+      "assignedTo": ""
+    },{
+      "name": "Maul",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_maul.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "josmartini"
+    },{
+      "name": "Starkiller",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_starkiller.png",
+      "relic": "Reliquia 8",
+      "assignedTo": ""
+    },{
+      "name": "Starkiller",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_starkiller.png",
+      "relic": "Reliquia 8",
+      "assignedTo": ""
+    },{
+      "name": "Starkiller",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_starkiller.png",
+      "relic": "Reliquia 8",
+      "assignedTo": ""
+    },{
+      "name": "Starkiller",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_starkiller.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "josmartini"
+    },{
       "name": "Snow Trooper",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_troopersnow.png",
       "relic": "Reliquia 8",
@@ -20,6 +50,11 @@
   "charactersToUpgrade": [],
   "upgradedCharacters": [
     {
+      "name": "Taron Malicos",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_taronmalicos.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "Linde Forklift"
+    },{
       "name": "Savage Opress",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_savageopress.png",
       "relic": "Reliquia 8",
