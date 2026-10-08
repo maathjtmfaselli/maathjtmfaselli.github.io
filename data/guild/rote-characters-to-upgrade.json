@@ -2,19 +2,19 @@
   "topPriorityCharacters": [
     {
       "name": "Maul",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_maul.png",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_maul_cyborg.png",
       "relic": "Reliquia 8",
-      "assignedTo": ""
+      "assignedTo": "Gita"
     },{
       "name": "Maul",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_maul.png",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_maul_cyborg.png",
       "relic": "Reliquia 8",
       "assignedTo": "josmartini"
     },{
       "name": "Starkiller",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_starkiller.png",
       "relic": "Reliquia 8",
-      "assignedTo": ""
+      "assignedTo": "Gita"
     },{
       "name": "Starkiller",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_starkiller.png",
