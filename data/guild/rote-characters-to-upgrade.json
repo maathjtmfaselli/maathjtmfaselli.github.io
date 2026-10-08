@@ -6,11 +6,6 @@
       "relic": "Reliquia 8",
       "assignedTo": "Gita"
     },{
-      "name": "Maul",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_maul_cyborg.png",
-      "relic": "Reliquia 8",
-      "assignedTo": "josmartini"
-    },{
       "name": "Starkiller",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_starkiller.png",
       "relic": "Reliquia 8",
@@ -19,17 +14,27 @@
       "name": "Starkiller",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_starkiller.png",
       "relic": "Reliquia 8",
-      "assignedTo": ""
-    },{
-      "name": "Starkiller",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_starkiller.png",
-      "relic": "Reliquia 8",
-      "assignedTo": ""
-    },{
-      "name": "Starkiller",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_starkiller.png",
-      "relic": "Reliquia 8",
       "assignedTo": "josmartini"
+    },{
+      "name": "Starkiller",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_starkiller.png",
+      "relic": "Reliquia 8",
+      "assignedTo": ""
+    },{
+      "name": "Starkiller",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_starkiller.png",
+      "relic": "Reliquia 8",
+      "assignedTo": ""
+    },{
+      "name": "Starkiller",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_starkiller.png",
+      "relic": "Reliquia 8",
+      "assignedTo": ""
+    },{
+      "name": "Starkiller",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_starkiller.png",
+      "relic": "Reliquia 8",
+      "assignedTo": ""
     },{
       "name": "Snow Trooper",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_troopersnow.png",
@@ -50,6 +55,11 @@
   "charactersToUpgrade": [],
   "upgradedCharacters": [
     {
+      "name": "Maul",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_maul_cyborg.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "josmartini"
+    },{
       "name": "Taron Malicos",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_taronmalicos.png",
       "relic": "Reliquia 8",
