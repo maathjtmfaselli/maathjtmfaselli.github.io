@@ -1,16 +1,6 @@
 {
   "topPriorityCharacters": [
     {
-      "name": "Maul",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_maul_cyborg.png",
-      "relic": "Reliquia 8",
-      "assignedTo": "Gita"
-    },{
-      "name": "Starkiller",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_starkiller.png",
-      "relic": "Reliquia 8",
-      "assignedTo": "Gita"
-    },{
       "name": "Starkiller",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_starkiller.png",
       "relic": "Reliquia 8",
@@ -26,18 +16,13 @@
       "relic": "Reliquia 8",
       "assignedTo": ""
     },{
-      "name": "Starkiller",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_starkiller.png",
-      "relic": "Reliquia 8",
-      "assignedTo": ""
-    },{
-      "name": "Starkiller",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_starkiller.png",
-      "relic": "Reliquia 8",
-      "assignedTo": ""
-    },{
       "name": "Snow Trooper",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_troopersnow.png",
+      "relic": "Reliquia 8",
+      "assignedTo": ""
+    },{
+      "name": "General Veers",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_veers.png",
       "relic": "Reliquia 8",
       "assignedTo": ""
     },{
@@ -55,6 +40,31 @@
   "charactersToUpgrade": [],
   "upgradedCharacters": [
     {
+      "name": "Starkiller",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_starkiller.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "Linde Forklift"
+    },{
+      "name": "Starkiller",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_starkiller.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "Cente"
+    },{
+      "name": "Maul",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_maul_cyborg.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "Gita"
+    },{
+      "name": "Maul",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_maul_cyborg.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "Linde Forklift"
+    },{
+      "name": "Starkiller",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_starkiller.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "Gita"
+    },{
       "name": "Maul",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_maul_cyborg.png",
       "relic": "Reliquia 8",
@@ -156,7 +166,7 @@
       "assignedTo": "josmartini, Garrick"
     },{
       "name": "Dengar",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_maul.png",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_dengar.png",
       "relic": "Reliquia 8",
       "assignedTo": "JediSevillano"
     },{
@@ -264,11 +274,6 @@
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_nightsister_initiate.png",
       "relic": "Reliquia 5",
       "assignedTo": "Garrick"
-    },{
-      "name": "Maul",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_maul_cyborg.png",
-      "relic": "Reliquia 8",
-      "assignedTo": "Hill"
     },{
       "name": "Visas Marr",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_visas.png",
