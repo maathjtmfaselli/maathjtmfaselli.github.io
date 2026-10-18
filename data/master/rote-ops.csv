@@ -254,7 +254,7 @@ Sector,Planeta,Side,Op,Character
 1,Coruscant,Luminoso,5,General Kenobi
 1,Coruscant,Luminoso,5,Threepio & Chewie
 1,Coruscant,Luminoso,5,Phantom II
-1,Coruscant,Luminoso,5,General Skywalker
+1,Coruscant,Luminoso,6,General Skywalker
 1,Coruscant,Luminoso,6,C-3PO
 1,Coruscant,Luminoso,6,Ki-Adi-Mundi
 1,Coruscant,Luminoso,6,Sabine Wren
@@ -1350,3 +1350,182 @@ Sector,Planeta,Side,Op,Character
 5,Anillo de Kafrene,Luminoso,6,Umbaran Starfighter
 5,Anillo de Kafrene,Luminoso,6,Rose Tico
 5,Anillo de Kafrene,Luminoso,6,Commander Luke Skywalker
+5,Vandor,Neutral,1,Profundity
+5,Vandor,Neutral,1,Scythe
+5,Vandor,Neutral,1,Ahsoka Tano (Fulcrum)
+5,Vandor,Neutral,1,Resistance Hero Finn
+5,Vandor,Neutral,1,Wedge Antilles's X-wing
+5,Vandor,Neutral,1,Sith Eternal Emperor
+5,Vandor,Neutral,1,Ben Solo
+5,Vandor,Neutral,1,Gauntlet Starfighter
+5,Vandor,Neutral,1,Hound's Tooth
+5,Vandor,Neutral,1,Jedi Consular's Starfighter
+5,Vandor,Neutral,1,Executor
+5,Vandor,Neutral,1,Commander Ahsoka Tano
+5,Vandor,Neutral,1,Imperial TIE Bomber
+5,Vandor,Neutral,1,Wicket
+5,Vandor,Neutral,1,Starkiller
+5,Vandor,Neutral,2,Profundity
+5,Vandor,Neutral,2,Commander Ahsoka Tano
+5,Vandor,Neutral,2,50R-T
+5,Vandor,Neutral,2,Starkiller
+5,Vandor,Neutral,2,Hunter
+5,Vandor,Neutral,2,Jedi Master Luke Skywalker
+5,Vandor,Neutral,2,Boba Fett, Scion of Jango
+5,Vandor,Neutral,2,Jolee Bindo
+5,Vandor,Neutral,2,Malak
+5,Vandor,Neutral,2,Darth Sidious
+5,Vandor,Neutral,2,Profundity
+5,Vandor,Neutral,2,Darth Malgus
+5,Vandor,Neutral,2,Hondo Ohnaka
+5,Vandor,Neutral,2,Grand Inquisitor
+5,Vandor,Neutral,2,Malak
+5,Vandor,Neutral,3,Profundity
+5,Vandor,Neutral,3,Scythe
+5,Vandor,Neutral,3,IG-100 MagnaGuard
+5,Vandor,Neutral,3,Bistan
+5,Vandor,Neutral,3,Tusken Shaman
+5,Vandor,Neutral,3,Sith Eternal Emperor
+5,Vandor,Neutral,3,Commander Ahsoka Tano
+5,Vandor,Neutral,3,Old Daka
+5,Vandor,Neutral,3,Bastila Shan
+5,Vandor,Neutral,3,Kylo Ren
+5,Vandor,Neutral,3,Rey
+5,Vandor,Neutral,3,Commander Ahsoka Tano
+5,Vandor,Neutral,3,Bodhi Rook
+5,Vandor,Neutral,3,Barriss Offee
+5,Vandor,Neutral,3,Starkiller
+5,Vandor,Neutral,4,Supreme Leader Kylo Ren
+5,Vandor,Neutral,4,Boba Fett, Scion of Jango
+5,Vandor,Neutral,4,Malak
+5,Vandor,Neutral,4,Mace Windu
+5,Vandor,Neutral,4,Hyena Bomber
+5,Vandor,Neutral,4,Profundity
+5,Vandor,Neutral,4,Scythe
+5,Vandor,Neutral,4,Jedi Knight Luke Skywalker
+5,Vandor,Neutral,4,Anakin's Eta-2 Starfighter
+5,Vandor,Neutral,4,Raven's Claw
+5,Vandor,Neutral,4,Supreme Leader Kylo Ren
+5,Vandor,Neutral,4,Razor Crest
+5,Vandor,Neutral,4,Grand Inquisitor
+5,Vandor,Neutral,4,Jedi Consular's Starfighter
+5,Vandor,Neutral,4,Padme Amidala
+5,Vandor,Neutral,5,Jedi Master Kenobi
+5,Vandor,Neutral,5,Maul
+5,Vandor,Neutral,5,General Skywalker
+5,Vandor,Neutral,5,Starkiller
+5,Vandor,Neutral,5,Talia
+5,Vandor,Neutral,5,Jedi Master Kenobi
+5,Vandor,Neutral,5,Commander Ahsoka Tano
+5,Vandor,Neutral,5,General Skywalker
+5,Vandor,Neutral,5,Grand Inquisitor
+5,Vandor,Neutral,5,First Order Executioner
+5,Vandor,Neutral,5,Jedi Master Kenobi
+5,Vandor,Neutral,5,Ben Solo
+5,Vandor,Neutral,5,General Skywalker
+5,Vandor,Neutral,5,Grand Inquisitor
+5,Vandor,Neutral,5,Emperor Palpatine
+5,Vandor,Neutral,6,Executor
+5,Vandor,Neutral,6,Commander Ahsoka Tano
+5,Vandor,Neutral,6,Grand Inquisitor
+5,Vandor,Neutral,6,Echo
+5,Vandor,Neutral,6,TIE Echelon
+5,Vandor,Neutral,6,Jedi Master Luke Skywalker
+5,Vandor,Neutral,6,Razor Crest
+5,Vandor,Neutral,6,Grand Inquisitor
+5,Vandor,Neutral,6,Hyena Bomber
+5,Vandor,Neutral,6,Nightsister Initiate
+5,Vandor,Neutral,6,Lord Vader
+5,Vandor,Neutral,6,Darth Malgus
+5,Vandor,Neutral,6,Grand Inquisitor
+5,Vandor,Neutral,6,Old Daka
+5,Vandor,Neutral,6,Chewbacca
+5,Malachor,Dark,,Starkiller
+5,Malachor,Dark,,Starkiller
+5,Malachor,Dark,,Starkiller
+5,Malachor,Dark,,Starkiller
+5,Malachor,Dark,,Starkiller
+5,Malachor,Dark,,Starkiller
+5,Malachor,Dark,,Starkiller
+5,Malachor,Dark,,Starkiller
+5,Malachor,Dark,,Starkiller
+5,Malachor,Dark,,Boba Fett, Scion of Jango
+5,Malachor,Dark,,Boba Fett, Scion of Jango
+5,Malachor,Dark,,Boba Fett, Scion of Jango
+5,Malachor,Dark,,Boba Fett, Scion of Jango
+5,Malachor,Dark,,Boba Fett, Scion of Jango
+5,Malachor,Dark,,Boba Fett, Scion of Jango
+5,Malachor,Dark,,Boba Fett, Scion of Jango
+5,Malachor,Dark,,Darth Malak
+5,Malachor,Dark,,Darth Malak
+5,Malachor,Dark,,Darth Malak
+5,Malachor,Dark,,Darth Malak
+5,Malachor,Dark,,Darth Malak
+5,Malachor,Dark,,Darth Malak
+5,Malachor,Dark,,Scythe
+5,Malachor,Dark,,Scythe
+5,Malachor,Dark,,Scythe
+5,Malachor,Dark,,Scythe
+5,Malachor,Dark,,Scythe
+5,Malachor,Dark,,Scythe
+5,Malachor,Dark,,Executor
+5,Malachor,Dark,,Executor
+5,Malachor,Dark,,Executor
+5,Malachor,Dark,,Executor
+5,Malachor,Dark,,Executor
+5,Malachor,Dark,,Sith Eternal Emperor
+5,Malachor,Dark,,Sith Eternal Emperor
+5,Malachor,Dark,,Sith Eternal Emperor
+5,Malachor,Dark,,Sith Eternal Emperor
+5,Malachor,Dark,,Sith Eternal Emperor
+5,Malachor,Dark,,Sith Eternal Emperor
+5,Malachor,Dark,,Darth Malgus
+5,Malachor,Dark,,Darth Malgus
+5,Malachor,Dark,,Darth Malgus
+5,Malachor,Dark,,Darth Malgus
+5,Malachor,Dark,,Darth Malgus
+5,Malachor,Dark,,Lord Vader
+5,Malachor,Dark,,Lord Vader
+5,Malachor,Dark,,Lord Vader
+5,Malachor,Dark,,Lord Vader
+5,Malachor,Dark,,IG-88
+5,Malachor,Dark,,IG-88
+5,Malachor,Dark,,IG-88
+5,Malachor,Dark,,Grand Inquisitor
+5,Malachor,Dark,,Grand Inquisitor
+5,Malachor,Dark,,Grand Inquisitor
+5,Malachor,Dark,,Maul
+5,Malachor,Dark,,Maul
+5,Malachor,Dark,,Maul
+5,Malachor,Dark,,Supreme Leader Kylo Ren
+5,Malachor,Dark,,Supreme Leader Kylo Ren
+5,Malachor,Dark,,Supreme Leader Kylo Ren
+5,Malachor,Dark,,Sith Empire Trooper
+5,Malachor,Dark,,Sith Empire Trooper
+5,Malachor,Dark,,Boba Fett
+5,Malachor,Dark,,B-28 Extinction-class Bomber
+5,Malachor,Dark,,Colonel Starck
+5,Malachor,Dark,,Count Dooku
+5,Malachor,Dark,,Executrix
+5,Malachor,Dark,,First Order Officer
+5,Malachor,Dark,,First Order TIE Fighter
+5,Malachor,Dark,,First Order TIE Pilot
+5,Malachor,Dark,,First Order SF TIE Pilot
+5,Malachor,Dark,,Gauntlet Starfighter
+5,Malachor,Dark,,Geonosian Soldier
+5,Malachor,Dark,,Geonosian Soldier's Starfighter
+5,Malachor,Dark,,Hyena Bomber
+5,Malachor,Dark,,Iden Versio
+5,Malachor,Dark,,IG-2000
+5,Malachor,Dark,,Jango Fett
+5,Malachor,Dark,,Kylo Ren
+5,Malachor,Dark,,Kylo Ren (Unmasked)
+5,Malachor,Dark,,Magmatrooper
+5,Malachor,Dark,,Moff Gideon
+5,Malachor,Dark,,Nightsister Zombie
+5,Malachor,Dark,,Sith Assassin
+5,Malachor,Dark,,Snowtrooper
+5,Malachor,Dark,,Talia
+5,Malachor,Dark,,Tusken Shaman
+5,Malachor,Dark,,Vulture Droid
+5,Malachor,Dark,,Wampa
