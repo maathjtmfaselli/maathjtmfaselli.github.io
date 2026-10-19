@@ -549,9 +549,8 @@ ol {
   grid-template-columns: minmax(0, 1fr) auto auto;
   align-items: center;
   gap: 16px;
-
-  padding: 8px 12px;
-
+  padding: 16px 12px;
+  margin-top: 8px;
   border-radius: 6px;
 }
 
