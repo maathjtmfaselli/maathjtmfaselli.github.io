@@ -184,6 +184,16 @@ footer {
   background-color: #1e1e2e;
   color: #e0e0e0;
 }
+.data-table td.is--available {
+  background-color: #183b2b;
+  color: #7ee2a8;
+  font-weight: 600;
+}
+.data-table td.is--unavailable {
+  background-color: #482329;
+  color: #ff9299;
+  font-weight: 700;
+}
 
 .data-table-filters {
   display: flex;

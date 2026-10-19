@@ -17,11 +17,13 @@ class DataTable extends HTMLElement {
   initialize({
     rows = [],
     columns = [],
-    filters = []
+    filters = [],
+    onRenderComplete = null
   }) {
     this._rows = rows;
     this._columns = columns;
     this._filters = filters;
+    this._onRenderComplete = onRenderComplete;
 
     this.render();
   }
@@ -43,6 +45,10 @@ class DataTable extends HTMLElement {
     tbody.innerHTML = this.renderRows(
       this.getFilteredRows()
     );
+
+    if (typeof this._onRenderComplete === "function") {
+      this._onRenderComplete();
+    }
   }
   renderHeader() {
     return `

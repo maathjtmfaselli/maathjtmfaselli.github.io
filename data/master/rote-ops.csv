@@ -989,6 +989,96 @@ Sector,Planeta,Side,Op,Character
 4,Haven-class,Dark,6,First Order TIE pilot
 4,Haven-class,Dark,6,Dathcha
 4,Haven-class,Dark,6,Boba Fett, Scion of Jango
+4,Kessel,Neutral,1,Executor
+4,Kessel,Neutral,1,Starkiller
+4,Kessel,Neutral,1,TIE/IN Interceptor Prototype
+4,Kessel,Neutral,1,Coruscant Underworld Police
+4,Kessel,Neutral,1,Poggle the Lesser
+4,Kessel,Neutral,1,Lord Vader
+4,Kessel,Neutral,1,General Skywalker
+4,Kessel,Neutral,1,TIE/IN Interceptor Prototype
+4,Kessel,Neutral,1,Ebon Hawk
+4,Kessel,Neutral,1,Boba Fett, Scion of Jango
+4,Kessel,Neutral,1,Rey
+4,Kessel,Neutral,1,Jedi Knight Luke Skywalker
+4,Kessel,Neutral,1,TIE/IN Interceptor Prototype
+4,Kessel,Neutral,1,Jedi Consular's Starfighter
+4,Kessel,Neutral,1,Outrider
+4,Kessel,Neutral,2,Jedi Master Kenobi
+4,Kessel,Neutral,2,Starkiller
+4,Kessel,Neutral,2,Maul
+4,Kessel,Neutral,2,Gamorrean Guard
+4,Kessel,Neutral,2,Sith Fighter
+4,Kessel,Neutral,2,Rey
+4,Kessel,Neutral,2,Darth Malak
+4,Kessel,Neutral,2,Razor Crest
+4,Kessel,Neutral,2,Rex's ARC-170
+4,Kessel,Neutral,2,Ben Solo
+4,Kessel,Neutral,2,Sith Eternal Emperor
+4,Kessel,Neutral,2,Starkiller
+4,Kessel,Neutral,2,Darth Malgus
+4,Kessel,Neutral,2,Echo
+4,Kessel,Neutral,2,Aurra Sing
+4,Kessel,Neutral,3,Sith Eternal Emperor
+4,Kessel,Neutral,3,Starkiller
+4,Kessel,Neutral,3,Scythe
+4,Kessel,Neutral,3,Seventh Sister
+4,Kessel,Neutral,3,Nightsister Initiate
+4,Kessel,Neutral,3,Supreme Leader Kylo Ren
+4,Kessel,Neutral,3,Starkiller
+4,Kessel,Neutral,3,Razor Crest
+4,Kessel,Neutral,3,Nightsister Initiate
+4,Kessel,Neutral,3,TIE/IN Interceptor Prototype
+4,Kessel,Neutral,3,Sith Eternal Emperor
+4,Kessel,Neutral,3,General Skywalker
+4,Kessel,Neutral,3,TIE/IN Interceptor Prototype
+4,Kessel,Neutral,3,Slave I
+4,Kessel,Neutral,3,The Mandalorian
+4,Kessel,Neutral,4,Lord Vader
+4,Kessel,Neutral,4,General Skywalker
+4,Kessel,Neutral,4,Ben Solo
+4,Kessel,Neutral,4,Baze Malbus
+4,Kessel,Neutral,4,General Veers
+4,Kessel,Neutral,4,Rey
+4,Kessel,Neutral,4,Jedi Knight Luke Skywalker
+4,Kessel,Neutral,4,Maul
+4,Kessel,Neutral,4,Hoth Rebel Soldier
+4,Kessel,Neutral,4,Scythe
+4,Kessel,Neutral,4,Rey
+4,Kessel,Neutral,4,Starkiller
+4,Kessel,Neutral,4,Darth Malgus
+4,Kessel,Neutral,4,Bo-Katan Kryze
+4,Kessel,Neutral,4,Bistan
+4,Kessel,Neutral,5,Sith Eternal Emperor
+4,Kessel,Neutral,5,General Skywalker
+4,Kessel,Neutral,5,Scythe
+4,Kessel,Neutral,5,B-28 Extinction-class Bomber
+4,Kessel,Neutral,5,Asajj Ventress
+4,Kessel,Neutral,5,Executor
+4,Kessel,Neutral,5,Jedi Knight Luke Skywalker
+4,Kessel,Neutral,5,Maul
+4,Kessel,Neutral,5,IG-88
+4,Kessel,Neutral,5,Razor Crest
+4,Kessel,Neutral,5,Rey
+4,Kessel,Neutral,5,Jedi Knight Luke Skywalker
+4,Kessel,Neutral,5,Boba Fett, Scion of Jango
+4,Kessel,Neutral,5,50R-T
+4,Kessel,Neutral,5,Rebel Y-wing
+4,Kessel,Neutral,6,Sith Eternal Emperor
+4,Kessel,Neutral,6,Darth Malak
+4,Kessel,Neutral,6,Razor Crest
+4,Kessel,Neutral,6,Sith Trooper
+4,Kessel,Neutral,6,TIE Silencer
+4,Kessel,Neutral,6,Rey
+4,Kessel,Neutral,6,Darth Malak
+4,Kessel,Neutral,6,Ben Solo
+4,Kessel,Neutral,6,Admiral Ackbar
+4,Kessel,Neutral,6,Commander Ahsoka Tano
+4,Kessel,Neutral,6,Supreme Leader Kylo Ren
+4,Kessel,Neutral,6,Starkiller
+4,Kessel,Neutral,6,Commander Ahsoka Tano
+4,Kessel,Neutral,6,Dark Trooper
+4,Kessel,Neutral,6,Kylo Ren
 4,Lothal,Luminoso,1,Jedi Master Luke Skywalker
 4,Lothal,Luminoso,1,Hermit Yoda
 4,Lothal,Luminoso,1,Ben Solo
@@ -1080,96 +1170,6 @@ Sector,Planeta,Side,Op,Character
 4,Lothal,Luminoso,6,Wicket
 4,Lothal,Luminoso,6,50R-T
 4,Lothal,Luminoso,6,Hondo Ohnaka
-4,Kessel,Neutral,1,Executor
-4,Kessel,Neutral,1,Starkiller
-4,Kessel,Neutral,1,TIE/IN Interceptor Prototype
-4,Kessel,Neutral,1,Coruscant Underworld Police
-4,Kessel,Neutral,1,Poggle the Lesser
-4,Kessel,Neutral,1,Lord Vader
-4,Kessel,Neutral,1,General Skywalker
-4,Kessel,Neutral,1,TIE/IN Interceptor Prototype
-4,Kessel,Neutral,1,Ebon Hawk
-4,Kessel,Neutral,1,Boba Fett, Scion of Jango
-4,Kessel,Neutral,1,Rey
-4,Kessel,Neutral,1,Jedi Knight Luke Skywalker
-4,Kessel,Neutral,1,TIE/IN Interceptor Prototype
-4,Kessel,Neutral,1,Jedi Consular's Starfighter
-4,Kessel,Neutral,1,Outrider
-4,Kessel,Neutral,2,Jedi Master Kenobi
-4,Kessel,Neutral,2,Starkiller
-4,Kessel,Neutral,2,Maul
-4,Kessel,Neutral,2,Gamorrean Guard
-4,Kessel,Neutral,2,Sith Fighter
-4,Kessel,Neutral,2,Rey
-4,Kessel,Neutral,2,Darth Malak
-4,Kessel,Neutral,2,Razor Crest
-4,Kessel,Neutral,2,Rex's ARC-170
-4,Kessel,Neutral,2,Ben Solo
-4,Kessel,Neutral,2,Sith Eternal Emperor
-4,Kessel,Neutral,2,Starkiller
-4,Kessel,Neutral,2,Darth Malgus
-4,Kessel,Neutral,2,Echo
-4,Kessel,Neutral,2,Aurra Sing
-4,Kessel,Neutral,3,Sith Eternal Emperor
-4,Kessel,Neutral,3,Starkiller
-4,Kessel,Neutral,3,Scythe
-4,Kessel,Neutral,3,Seventh Sister
-4,Kessel,Neutral,3,Nightsister Initiate
-4,Kessel,Neutral,3,Supreme Leader Kylo Ren
-4,Kessel,Neutral,3,Starkiller
-4,Kessel,Neutral,3,Razor Crest
-4,Kessel,Neutral,3,Nightsister Initiate
-4,Kessel,Neutral,3,TIE/IN Interceptor Prototype
-4,Kessel,Neutral,3,Sith Eternal Emperor
-4,Kessel,Neutral,3,General Skywalker
-4,Kessel,Neutral,3,TIE/IN Interceptor Prototype
-4,Kessel,Neutral,3,Slave I
-4,Kessel,Neutral,3,The Mandalorian
-4,Kessel,Neutral,4,Lord Vader
-4,Kessel,Neutral,4,General Skywalker
-4,Kessel,Neutral,4,Ben Solo
-4,Kessel,Neutral,4,Baze Malbus
-4,Kessel,Neutral,4,General Veers
-4,Kessel,Neutral,4,Rey
-4,Kessel,Neutral,4,Jedi Knight Luke Skywalker
-4,Kessel,Neutral,4,Maul
-4,Kessel,Neutral,4,Hoth Rebel Soldier
-4,Kessel,Neutral,4,Scythe
-4,Kessel,Neutral,4,Rey
-4,Kessel,Neutral,4,Starkiller
-4,Kessel,Neutral,4,Darth Malgus
-4,Kessel,Neutral,4,Bo-Katan Kryze
-4,Kessel,Neutral,4,Bistan
-4,Kessel,Neutral,5,Sith Eternal Emperor
-4,Kessel,Neutral,5,General Skywalker
-4,Kessel,Neutral,5,Scythe
-4,Kessel,Neutral,5,B-28 Extinction-class Bomber
-4,Kessel,Neutral,5,Asajj Ventress
-4,Kessel,Neutral,5,Executor
-4,Kessel,Neutral,5,Jedi Knight Luke Skywalker
-4,Kessel,Neutral,5,Maul
-4,Kessel,Neutral,5,IG-88
-4,Kessel,Neutral,5,Razor Crest
-4,Kessel,Neutral,5,Rey
-4,Kessel,Neutral,5,Jedi Knight Luke Skywalker
-4,Kessel,Neutral,5,Boba Fett, Scion of Jango
-4,Kessel,Neutral,5,50R-T
-4,Kessel,Neutral,5,Rebel Y-wing
-4,Kessel,Neutral,6,Sith Eternal Emperor
-4,Kessel,Neutral,6,Darth Malak
-4,Kessel,Neutral,6,Razor Crest
-4,Kessel,Neutral,6,Sith Trooper
-4,Kessel,Neutral,6,TIE Silencer
-4,Kessel,Neutral,6,Rey
-4,Kessel,Neutral,6,Darth Malak
-4,Kessel,Neutral,6,Ben Solo
-4,Kessel,Neutral,6,Admiral Ackbar
-4,Kessel,Neutral,6,Commander Ahsoka Tano
-4,Kessel,Neutral,6,Supreme Leader Kylo Ren
-4,Kessel,Neutral,6,Starkiller
-4,Kessel,Neutral,6,Commander Ahsoka Tano
-4,Kessel,Neutral,6,Dark Trooper
-4,Kessel,Neutral,6,Kylo Ren
 4,Mandalore,,1,Doctor Aphra
 4,Mandalore,,1,Leia Organa
 4,Mandalore,,1,Leviathan

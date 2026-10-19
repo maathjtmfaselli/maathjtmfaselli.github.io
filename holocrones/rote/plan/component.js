@@ -19,35 +19,17 @@ class RotePlanHolocron extends HolocronBase {
   }
 
   async loadData() {
-//    const ops = await this.roteService.getGuildOperations();
-    this.loadOpsByGuildData();
-    this.loadCharacterUpgradeData();
+    await Promise.all([
+      this.loadOpsByGuildData(),
+      this.loadCharacterUpgradeData()
+    ]);
   }
 
   afterRender() {
+    this.decorateRoteOpsTable();
   }
 
   renderData() {
-//    await this.roteService.getMasterDataPnjsByOps());
-//    const tbody = document.querySelector("#rote-guild-ops-table tbody");
-
-//    tbody.innerHTML = "";
-//    const row = document.createElement("tr");
-//    ops.forEach(op => {
-//      const td = document.createElement("td");
-//
-//      td.className = getCellClass(op);
-//
-//      const tooltip = getTooltip(op);
-//
-//      if (tooltip) {
-//        td.dataset.hover = tooltip;
-//      }
-//
-//      row.appendChild(td);
-//    });
-//
-//    tbody.appendChild(row);
   }
 
   renderCharacterList(characters, listElementId) {
@@ -149,7 +131,10 @@ class RotePlanHolocron extends HolocronBase {
                 label: `${count} jugadores`
               }))
         }
-      ]
+      ],
+      onRenderComplete: () => {
+        this.afterRender();
+      }
     });
   }
 
@@ -190,70 +175,58 @@ class RotePlanHolocron extends HolocronBase {
     return playerCounts;
   }
 
-async loadCharacterUpgradeData() {
+  async loadCharacterUpgradeData() {
+    const CharacterStatus = Object.freeze({
+      TODO: "TODO",
+      IN_PROGRESS: "IN_PROGRESS",
+      DONE: "DONE"
+    });
 
-  const CharacterStatus = Object.freeze({
-    TODO: "TODO",
-    IN_PROGRESS: "IN_PROGRESS",
-    DONE: "DONE"
-  });
+    try {
+      const response = await fetch('../data/guild/rote-characters-to-upgrade.json');
+      const data = await response.json();
 
-  try {
-    const response = await fetch('../data/guild/rote-characters-to-upgrade.json');
-    const data = await response.json();
+      // Asignar estado a cada personaje según su categoría
+      const topPriorityCharacters = data.topPriorityCharacters.map(character => ({
+        ...character,
+          status: character.assignedTo && character.assignedTo.trim() !== ""
+            ? CharacterStatus.IN_PROGRESS
+            : CharacterStatus.TODO
+      }));
 
-    // Asignar estado a cada personaje según su categoría
-    const topPriorityCharacters = data.topPriorityCharacters.map(character => ({
-      ...character,
-        status: character.assignedTo && character.assignedTo.trim() !== ""
-          ? CharacterStatus.IN_PROGRESS
-          : CharacterStatus.TODO
-    }));
+  //    const charactersToUpgrade = data.charactersToUpgrade.map(character => ({
+  //      ...character,
+  //        status: character.assignedTo && character.assignedTo.trim() !== ""
+  //          ? CharacterStatus.IN_PROGRESS
+  //          : CharacterStatus.TODO
+  //    }));
+  //
+  //    const upgradedCharacters = data.upgradedCharacters.map(character => ({
+  //      ...character,
+  //      status: CharacterStatus.DONE
+  //    }));
 
-//    const charactersToUpgrade = data.charactersToUpgrade.map(character => ({
-//      ...character,
-//        status: character.assignedTo && character.assignedTo.trim() !== ""
-//          ? CharacterStatus.IN_PROGRESS
-//          : CharacterStatus.TODO
-//    }));
-//
-//    const upgradedCharacters = data.upgradedCharacters.map(character => ({
-//      ...character,
-//      status: CharacterStatus.DONE
-//    }));
-
-    this.renderCharacterList(topPriorityCharacters, "top-priority-characters-list");
-//    renderCharacterList(charactersToUpgrade, "characters-to-upgrade-list");
-//    renderCharacterList(upgradedCharacters, "upgraded-characters-list");
-  } catch (error) {
-    console.error("Error cargando los datos del JSON:", error);
+      this.renderCharacterList(topPriorityCharacters, "top-priority-characters-list");
+  //    renderCharacterList(charactersToUpgrade, "characters-to-upgrade-list");
+  //    renderCharacterList(upgradedCharacters, "upgraded-characters-list");
+    } catch (error) {
+      console.error("Error cargando los datos del JSON:", error);
+    }
   }
-}
 
-//  function getCellClass(op) {
-//    const canComplete = op.required.every(
-//      req => req.available >= req.needed
-//    );
-//
-//    if (!canComplete) {
-//      return "bg--red";
-//    }
-//
-//    const isJustEnough = op.required.some(
-//      req => req.available === req.needed
-//    );
-//
-//    return isJustEnough
-//      ? "bg--green bg--special"
-//      : "bg--green";
-//  }
-//  function getTooltip(op) {
-//    return op.required
-//      .map(req => {
-//        return `Se necesitan ${req.needed} ${req.unit} R${req.relic} y tenemos ${req.available}`;
-//      })
-//      .join("\n");
-//  }
+  decorateRoteOpsTable() {
+    const roteOpsTable = document.querySelector("#pnjs-ops-by-guild-table");
+    if (!roteOpsTable) return;
+
+    const rows = roteOpsTable.querySelectorAll("tbody tr");
+    rows.forEach((row, index) => {
+      const availabilityCell = row.querySelectorAll("td")[4];
+      if (!availabilityCell) return;
+      const isCompletable = availabilityCell.textContent.trim() !== "0 jugadores";
+      availabilityCell.classList.toggle("is--available", isCompletable);
+      availabilityCell.classList.toggle("is--unavailable", !isCompletable);
+    });
+  }
 }
 
 customElements.define("holocron-rote-plan", RotePlanHolocron);
