@@ -9,7 +9,7 @@
 }
 
 .holocron-library {
-    min-width: 450px;
+    width: 450px;
     padding: 1rem;
     overflow-y: auto;
 }
