@@ -39,7 +39,6 @@ const HOLOCRON_ICONS_BY_CATEGORY = {
   archive: "img/holocron-blue-light.png",
   default: "img/holocron-blue-light.png"
 };
-
 async function renderHolocron(target, holocronPath) {
   if (!target) return;
 
@@ -74,6 +73,149 @@ async function renderHolocron(target, holocronPath) {
   }
 }
 
+const HOLOCRON_CATEGORIES = {
+  guild: "Gremio",
+  web: "Web",
+  resources: "Recursos",
+  "raid-grandmaster": "Asalto · Gran Maestro",
+  "raid-knight": "Asalto · Caballero",
+  "raid-padawan": "Asalto · Padawan",
+  rote: "RotE",
+  conquest: "Conquista",
+  journey: "Viajes",
+  archive: "Archivo"
+};
+
+async function renderLibrarySection(listContainer, holocronViewer) {
+  const categoriesContainer = document.getElementById(
+    "holocron-categories"
+  );
+
+  const registry = await fetch(
+    "../holocrones/holocron-registry.json"
+  ).then(response => {
+    if (!response.ok) {
+      throw new Error("Cannot load holocron registry");
+    }
+    return response.json();
+  });
+
+  const manifests = await Promise.all(
+    registry.holocrons.map(async ({ path }) => {
+      const response = await fetch(`/${path}/manifest.json`);
+
+      if (!response.ok) {
+        throw new Error(`Cannot load manifest: ${path}`);
+      }
+
+      return {
+        ...await response.json(),
+        path
+      };
+    })
+  );
+
+  let selectedCategory = "all";
+
+  // Render category navigation.
+  const categories = [
+    {
+      id: "all",
+      label: "Todos",
+      count: manifests.length
+    },
+    ...Object.entries(HOLOCRON_CATEGORIES)
+      .map(([id, label]) => ({
+        id,
+        label,
+        count: manifests.filter(
+          holocron => holocron.category === id
+        ).length
+      }))
+      .filter(category => category.count > 0)
+  ];
+
+  function renderCategories() {
+    categoriesContainer.replaceChildren();
+
+    categories.forEach(({ id, label, count }) => {
+      const button = document.createElement("button");
+
+      button.type = "button";
+      button.className = "holocron-category";
+      button.dataset.category = id;
+      button.setAttribute(
+        "aria-pressed",
+        String(selectedCategory === id)
+      );
+
+      const name = document.createElement("span");
+      name.textContent = label;
+
+      const badge = document.createElement("span");
+      badge.className = "holocron-category__count";
+      badge.textContent = count;
+      badge.setAttribute("aria-label", `${count} holocrones`);
+
+      button.append(name, badge);
+
+      button.addEventListener("click", () => {
+        selectedCategory = id;
+        renderCategories();
+        filterHolocrons();
+      });
+
+      categoriesContainer.append(button);
+    });
+  }
+
+  // Render every holocron card once.
+  listContainer.replaceChildren(
+    ...manifests.map(createHolocronCard)
+  );
+
+  const cards = [...listContainer.querySelectorAll(".holocron")];
+  const searchInput = document.getElementById("holocron-search");
+
+  // Apply category and search filters together.
+  function filterHolocrons() {
+    const search = searchInput.value.trim().toLocaleLowerCase();
+
+    cards.forEach(card => {
+      const category = [...card.classList]
+        .find(className => className.startsWith("holocron--"))
+        ?.slice("holocron--".length);
+
+      const matchesCategory =
+        selectedCategory === "all" ||
+        category === selectedCategory;
+
+      const matchesSearch = card.textContent
+        .toLocaleLowerCase()
+        .includes(search);
+
+      card.hidden = !(matchesCategory && matchesSearch);
+    });
+  }
+
+  renderCategories();
+  filterHolocrons();
+
+  searchInput.addEventListener("input", filterHolocrons);
+
+  // Preserve the existing viewer interaction.
+  listContainer.addEventListener("click", async event => {
+    const button = event.target.closest(".holocron__action");
+
+    if (!button || !listContainer.contains(button)) return;
+
+    await renderHolocron(
+      holocronViewer,
+      button.dataset.holocron
+    );
+  });
+}
+
 async function loadHolocron(slot) {
   const holocronPath = slot.dataset.holocron;
   if (!holocronPath) {
@@ -92,29 +234,6 @@ async function renderHolocrons(root = document) {
   for (const slot of slots) {
     await loadHolocron(slot);
   }
-}
-
-async function renderLibrarySection(listContainer, holocronViewer) {
-  const registry = await fetch("../holocrones/holocron-registry.json").
-    then(r => r.json());
-
-  const manifests = await Promise.all(
-    registry.holocrons.map(async ({ path }) => {
-      const response = await fetch(`${path}/manifest.json`);
-      return response.json();
-    })
-  );
-
-  listContainer.replaceChildren(
-    ...manifests.map(createHolocronCard)
-  );
-
-  listContainer.addEventListener("click", async (e) => {
-    const btn = e.target.closest(".holocron__action");
-    if (!btn) return;
-
-    await renderHolocron(holocronViewer, btn.dataset.holocron);
-  });
 }
 
 function createHolocronCard(holocron) {

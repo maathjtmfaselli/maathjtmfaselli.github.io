@@ -38,7 +38,7 @@
 
 .jocasta img {
     width: 100%;
-    max-width: 420px;
+    max-width: 210px;
     height: auto;
     border-radius: 12px;
     display: block;
@@ -208,7 +208,7 @@
     }
 
     .jocasta img {
-        max-width: 300px;
+        max-width: 120px;
     }
 
     .holocrones-grid {

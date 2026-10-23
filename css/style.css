@@ -607,6 +607,57 @@ ol {
 }
 
 
+.holocron-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-block: 1.5rem;
+}
+
+.holocron-category {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 44px;
+  padding: 0.65rem 1rem;
+  border: 1px solid #3d5268;
+  border-radius: 999px;
+  background: #101c2a;
+  color: #e6edf5;
+  font: inherit;
+  cursor: pointer;
+}
+
+.holocron-category:hover {
+  border-color: #8cb8e8;
+}
+
+.holocron-category[aria-pressed="true"] {
+  border-color: #a5cfff;
+  background: #294968;
+  color: #fff;
+}
+
+.holocron-category__count {
+  display: inline-grid;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+  place-items: center;
+  padding-inline: 0.25rem;
+  border-radius: 999px;
+  background: rgb(255 255 255 / 12%);
+  font-size: 0.8rem;
+}
+
+.holocron-category:focus-visible {
+  outline: 3px solid #8fc5ff;
+  outline-offset: 3px;
+}
+
+.holocron[hidden] {
+  display: none !important;
+}
+
 @media (max-width: 768px) {
   .site-header {
     display: flex;
