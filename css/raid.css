@@ -3,10 +3,6 @@
   color: #b0e0e6;
 }
 
-.squad-list {
-
-}
-
 .squad {
   margin-bottom: 20px;
   text-align: left;
@@ -32,7 +28,7 @@
 
 .squad-characters-list {
   display: grid;
-  grid-template-columns: repeat(5, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 140px), 1fr));
   gap: 10px;
   justify-content: center;
 }
