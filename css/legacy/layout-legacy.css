@@ -1,3 +1,4 @@
+
 .section-collapsable {
   margin-bottom: 20px;
 }
@@ -15,11 +16,13 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .section-collapsable h3::after {
   content: "▼"; /* Arrow down by default */
   font-size: 14px;
   transition: transform 0.2s ease;
 }
+
 .section-collapsable.collapsed h3::after {
   content: "▶"; /* Arrow pointing right when collapsed */
   transform: rotate(0);
@@ -67,80 +70,6 @@
   border: 2px solid #00bcd4;
 }
 
-.mission-card-title {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #ffcc80;
-}
-
-.relic-upgraded-required {
-  color: #ffab40;
-  text-align: center;
-}
-
-.character-item {
-    padding: 10px;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.character-item.in_progress {
-    background-color: #aaaa66;
-}
-
-.character-item.done {
-    background-color: #3ba55d;
-}
-
-.character-name {
-  color: rgb(255, 204, 128);
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
-#operations-guild-table {
-  width: 100%;
-}
-
-#operations-guild-table tr {
-  border: 1px solid #ccc;
-}
-
-td {
-  text-align: center;
-  padding: 8px;
-}
-
-.gold {
-  background-color: #FFD700; !important; /* Color oro */
-}
-
-.silver {
-  background-color: #C0C0C0; !important; /* Color plata */
-}
-
-.bronze {
-  background-color: #CD7F32; !important; /* Color bronce */
-}
-
-.editable-input {
-    width: 100%; /* Ajusta el ancho al de la celda */
-    box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
-    border: none; /* Quita el borde por defecto */
-    text-align: center; /* Centra el texto */
-    font-size: 16px; /* Tamaño de fuente similar al resto de la tabla */
-    appearance: none; /* Elimina los botones up/down */
-    -moz-appearance: textfield; /* Compatible con Firefox */
-}
-
-/* Para bordes visibles al interactuar */
-.editable-input:focus {
-    outline: none; /* Sin contorno adicional */
-    border: 1px solid #ccc; /* Agrega un borde tenue al enfoque */
-    background-color: #f9f9f9; /* Fondo claro al interactuar */
-}
-
 #missions-list {
     list-style-type: none;
     padding: 0;
@@ -156,12 +85,6 @@ td {
     flex-direction: row;
 }
 
-.mission-name {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #ffcc80;
-}
-
 .mission-character {
     display: flex;
     align-items: center;
@@ -173,15 +96,6 @@ td {
     width: 50px; / Ajusta el tamaño de la imagen /
     height: auto;
     margin-right: 10px;
-}
-
-.mission-players {
-    font-size: 1em;
-    color: #ffcc80;
-}
-
-.mission-rewards {
-
 }
 
 .reward-list {

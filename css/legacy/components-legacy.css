@@ -1,0 +1,41 @@
+#operations-guild-table {
+  width: 100%;
+}
+
+#operations-guild-table tr {
+  border: 1px solid #ccc;
+}
+
+td {
+  text-align: center;
+  padding: 8px;
+}
+
+.gold {
+  background-color: #FFD700; !important; /* Color oro */
+}
+
+.silver {
+  background-color: #C0C0C0; !important; /* Color plata */
+}
+
+.bronze {
+  background-color: #CD7F32; !important; /* Color bronce */
+}
+
+.editable-input {
+    width: 100%; /* Ajusta el ancho al de la celda */
+    box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
+    border: none; /* Quita el borde por defecto */
+    text-align: center; /* Centra el texto */
+    font-size: 16px; /* Tamaño de fuente similar al resto de la tabla */
+    appearance: none; /* Elimina los botones up/down */
+    -moz-appearance: textfield; /* Compatible con Firefox */
+}
+
+/* Para bordes visibles al interactuar */
+.editable-input:focus {
+    outline: none; /* Sin contorno adicional */
+    border: 1px solid #ccc; /* Agrega un borde tenue al enfoque */
+    background-color: #f9f9f9; /* Fondo claro al interactuar */
+}
