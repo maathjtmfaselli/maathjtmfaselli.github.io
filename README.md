@@ -78,15 +78,15 @@ Este proyecto [sigue una filosofía](#-principios-del-proyecto)
 Cómo lo conseguimos?
 
 1. **[ADR-0001: Hosting en GitHub Pages (Datos Estáticos)](/docs/adr/0001-static-github-pages.md)** - Arquitectura frontend-only sin infraestructura backend
-2. **[ADR-0002: Vanilla Web Stack (No Framework Policy)](/docs/adr/0002-vanilla-web-stack.md)** - Tecnologías web nativas (HTML, CSS, JavaScript). Sin frameworks pesados ni librerías externas
-3. **[ADR-0003: Presentation Layer - Responsive Design](/docs/adr/0003-presentation-layer-responsive-design.md)** - Diseño responsive para todos los dispositivos
+2. **[ADR-0002: Vanilla Web Stack (No Framework Policy)](/docs/adr/0101-vanilla-web-stack.md)** - Tecnologías web nativas (HTML, CSS, JavaScript). Sin frameworks pesados ni librerías externas
+3. **[ADR-0003: Presentation Layer - Responsive Design](/docs/adr/0102-presentation-layer-responsive-design.md)** - Diseño responsive para todos los dispositivos
 4. **[ADR-0004: Holocron module as reusable Component](/docs/adr/0004-holocron-as-module.md)** - Componentes autocontenidos reutilizables
 5. **[ADR-0005: Data Layer - Static data](/docs/adr/0005-data-layer-static.md)** - Toda la información consumida por la aplicación debe obtenerse desde una capa de datos estática servida por GitHub Pages.
 6. **[ADR-0006: Data Layer - DAO con Cache](/docs/adr/0006-data-layer-dao-cache.md)** - Acceso a Datos a través de un DAO y Cacheo de datos
 
 ### Stack Tecnológico
 
-Utilizamos solo tecnologías web fundamentales, tal como se define en [ADR-0002](/docs/adr/0002-vanilla-web-stack.md):
+Utilizamos solo tecnologías web fundamentales, tal como se define en [ADR-0002](/docs/adr/0101-vanilla-web-stack.md):
 
 - **HTML** - Marcado semántico
 - **JavaScript** - Lógica interactiva nativa

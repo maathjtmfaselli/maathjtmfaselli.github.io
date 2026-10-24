@@ -1,0 +1,270 @@
+
+/* ==== Resources ==== */
+.resource-list {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0;
+  list-style: none;
+}
+
+.priority-item, .resource-item {
+  border: 1px solid #ccc;
+  margin-bottom: 1.5rem;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.goal-completed {
+    border: 2px solid #34c759;
+    background: linear-gradient(
+        135deg,
+        rgba(52,199,89,0.18),
+        rgba(52,199,89,0.05)
+    );
+    box-shadow:
+        0 0 12px rgba(52,199,89,0.4),
+        0 0 24px rgba(52,199,89,0.2);
+}
+
+.guild-warning {
+    border: 2px solid #ffcc00;
+    background: linear-gradient(
+        135deg,
+        rgba(255,204,0,0.18),
+        rgba(255,204,0,0.05)
+    );
+    box-shadow:
+        0 0 12px rgba(255,204,0,0.4),
+        0 0 24px rgba(255,204,0,0.2);
+}
+
+.priority-item a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.priority-item a:hover {
+    color: #005fa3;
+}
+
+.priority-metric {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffcc80;
+  flex: 1 1 150px;
+}
+
+.priority-target {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffcc80;
+  flex: 1 1 150px;
+  text-align: center;
+}
+
+.priority-item::before {
+  content: "# " counter(item) " ";
+  counter-increment: item;
+  font-size: 1.5rem;
+  color: #0077cc;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+ol {
+  counter-reset: item;
+}
+
+.priority-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 20px);
+  gap: 4px;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.player-box {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+}
+
+.target-box {
+  border: 2px solid red;
+  box-shadow: 0 0 4px red;
+}
+
+.grand-master { background-color: #3b82f6 !important; }
+.complete     { background-color: #4caf50 !important; }
+.failed       { background-color: #ff9800 !important; }
+.not-played   { background-color: #ffeb3b; }
+.not-eligible { background-color: #777; }
+
+.legend {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+.player-priority-progress {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.player-badges {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.pnj-portrait {
+  border-radius:50%;
+  border:2px solid #00bcd4;
+}
+
+/* Personajes y prioridades */
+.priority-characters {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.priority-character {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 12px;
+  margin-top: 8px;
+  border-radius: 6px;
+}
+
+.priority-character__identity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.priority-character__image {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 2px solid #673ab7;
+  flex-shrink: 0;
+}
+
+.priority-character__name {
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.priority-character__requirement {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.priority-character__assignment {
+  min-width: 120px;
+  white-space: nowrap;
+}
+
+/* Character needs action */
+.priority-character.status--todo {
+  border-left: 4px solid #d9534f;
+}
+
+.priority-character.status--todo .priority-character__assignment {
+  color: #d9534f;
+  font-weight: 600;
+}
+
+/* Character is already assigned */
+.priority-character.status--in-progress {
+  border-left: 4px solid #5cb85c;
+}
+
+.priority-character.status--in-progress .priority-character__assignment {
+  color: #4a4a4a;
+}
+
+/* Categorías del holocrón */
+.holocron-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-block: 1.5rem;
+}
+
+.holocron-category {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 44px;
+  padding: 0.65rem 1rem;
+  border: 1px solid #3d5268;
+  border-radius: 999px;
+  background: #101c2a;
+  color: #e6edf5;
+  font: inherit;
+  cursor: pointer;
+}
+
+.holocron-category:hover {
+  border-color: #8cb8e8;
+}
+
+.holocron-category[aria-pressed="true"] {
+  border-color: #a5cfff;
+  background: #294968;
+  color: #fff;
+}
+
+.holocron-category__count {
+  display: inline-grid;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+  place-items: center;
+  padding-inline: 0.25rem;
+  border-radius: 999px;
+  background: rgb(255 255 255 / 12%);
+  font-size: 0.8rem;
+}
+
+.holocron-category:focus-visible {
+  outline: 3px solid #8fc5ff;
+  outline-offset: 3px;
+}
+
+.holocron[hidden] {
+  display: none !important;
+}

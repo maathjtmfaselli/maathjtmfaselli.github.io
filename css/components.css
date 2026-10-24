@@ -1,0 +1,269 @@
+
+.fix-width-data-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: 75vh;
+}
+
+.sticky-data-table-wrapper th:first-child,
+.sticky-data-table-wrapper td:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 20;
+
+    background: #1e1e2e;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.data-table th, .data-table td {
+  border: 1px solid #00bcd4;
+  text-align: center;
+  padding: 8px;
+}
+
+.data-table th {
+  background-color: #2a2a40;
+  color: #00e5ff;
+  font-size: 18px;
+}
+
+.data-table td {
+  background-color: #1e1e2e;
+  color: #e0e0e0;
+}
+
+.data-table td.is--available {
+  background-color: #183b2b;
+  color: #7ee2a8;
+  font-weight: 600;
+}
+
+.data-table td.is--unavailable {
+  background-color: #482329;
+  color: #ff9299;
+  font-weight: 700;
+}
+
+.data-table-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-end;
+
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+
+  background: #15181f;
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+
+  box-shadow:
+    inset 0 0 10px rgba(0, 229, 255, 0.05),
+    0 0 10px rgba(0, 229, 255, 0.08);
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-width: 180px;
+}
+
+.filter-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--txt-accent);
+}
+
+.filter-select {
+  height: 42px;
+  padding: 0 12px;
+
+  background: var(--bg-primary);
+  color: var(--txt-primary);
+
+  border: 1px solid #00bcd4;
+  border-radius: 8px;
+
+  font-size: 0.95rem;
+  cursor: pointer;
+
+  transition:
+    border-color .2s ease,
+    box-shadow .2s ease,
+    transform .15s ease;
+}
+
+.filter-select:hover {
+  border-color: #00e5ff;
+  box-shadow: 0 0 8px rgba(0,229,255,.35);
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: #00e5ff;
+
+  box-shadow:
+    0 0 0 2px rgba(0,229,255,.15),
+    0 0 12px rgba(0,229,255,.45);
+}
+
+.filter-select option {
+  background: #15181f;
+  color: var(--txt-primary);
+}
+
+/* ==== Barra de progreso ==== */
+progress::-webkit-progress-value { background:#27ae60; }
+progress::-moz-progress-bar     { background:#27ae60; }
+
+.progress-wrapper {
+  position: relative;
+  font-size: 1.5em;
+/*  flex: 1 1 150px; */
+}
+
+.progress-wrapper .progress-bar {
+  width: 100%;
+  height: 1.6rem;
+  background: #2c2c2c;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress-wrapper .progress-label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  background: #282838; /* Un tono más claro que el fondo general de las pestañas */
+  border-radius: 8px;
+}
+
+.tab-button {
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  background: #2e2e4e;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px 6px 0 0;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.tab-button:hover {
+  background: #3a3a5a;
+  transform: translateY(-2px);
+}
+
+.tab-button.active {
+  background: #1e1e2e;
+  border-bottom: 3px solid #7dd87d;
+}
+
+.tab-content {
+  display: none;
+  padding: 20px;
+  background: #2e2e3e;
+  color: white;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Colores */
+.bg--red, .bg--yellow, .bg--green, .bg--dark-blue, .bg--blue {
+  border: 1px solid #ccc;
+  position: relative;
+  cursor: pointer;
+}
+
+.bg--red {
+  background-color: red !important;
+}
+
+.bg--yellow {
+  background-color: yellow !important;
+}
+
+.bg--green {
+  background-color: green !important;
+}
+
+.bg--dark-blue {
+  background-color: darkblue !important;
+}
+
+.bg--blue {
+  background-color: blue !important;
+}
+
+.bg--special {
+  position: relative;
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0.5) 10%,
+    rgba(0, 0, 0, 0) 10%,
+    rgba(0, 0, 0, 0) 20%
+  );
+}
+
+.status--todo {
+    background-color: #2a2a40;
+}
+
+.status--in-progress {
+    background-color: #aaaa66;
+}
+
+.status--done {
+    background-color: #3ba55d;
+}
+
+.best-score {
+    border: 2px solid gold !important;
+    font-weight: bold;
+}
+
+[data-hover] {
+  position: relative;
+  cursor: help;
+}
+
+[data-hover]:hover::after {
+  content: attr(data-hover);
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 8px);
+  transform: translateX(-50%);
+
+  background: #222;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+
+  white-space: nowrap;
+  z-index: 1000;
+  pointer-events: none;
+}
