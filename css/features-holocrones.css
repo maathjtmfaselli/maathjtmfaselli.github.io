@@ -1,19 +1,16 @@
 /* =========================
    Layout principal
 ========================= */
-
 .holocron-library-layout {
     display: flex;
     align-items: stretch;
     gap: 2rem;
 }
-
 .holocron-library {
     width: 450px;
     padding: 1rem;
     overflow-y: auto;
 }
-
 .holocron-viewer {
     min-width: 450px;
     padding: 1rem;
@@ -23,7 +20,6 @@
 /* =========================
    Librarian
 ========================= */
-
 .librarian-section {
     flex: 1;
     display: flex;
@@ -35,7 +31,6 @@
     max-width: 100%;
     text-align: center;
 }
-
 .jocasta img {
     width: 100%;
     max-width: 210px;
@@ -44,7 +39,6 @@
     display: block;
     margin: 0 auto;
 }
-
 .jocasta__frase {
     margin-top: 1rem;
     font-size: 1.1rem;
