@@ -1,40 +1,7 @@
-.reward-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 1rem;
-}
+@import url("./features-priorities.css");
 
-/* ==== Resources ==== */
-.resource-list {
-  max-width: 960px;
-  margin: 2rem auto;
-  padding: 0;
-  list-style: none;
-}
 
-.priority-item, .resource-item {
-  border: 1px solid #ccc;
-  margin-bottom: 1.5rem;
-  padding: 15px;
-  border-radius: 8px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 1rem;
-}
 
-.goal-completed {
-    border: 2px solid #34c759;
-    background: linear-gradient(
-        135deg,
-        rgba(52,199,89,0.18),
-        rgba(52,199,89,0.05)
-    );
-    box-shadow:
-        0 0 12px rgba(52,199,89,0.4),
-        0 0 24px rgba(52,199,89,0.2);
-}
 
 .guild-warning {
     border: 2px solid #ffcc00;
@@ -46,53 +13,6 @@
     box-shadow:
         0 0 12px rgba(255,204,0,0.4),
         0 0 24px rgba(255,204,0,0.2);
-}
-
-.priority-item a {
-  text-decoration: none;
-  color: #0077cc;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.priority-item a:hover {
-    color: #005fa3;
-}
-
-.priority-metric {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #ffcc80;
-  flex: 1 1 150px;
-}
-
-.priority-target {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #ffcc80;
-  flex: 1 1 150px;
-  text-align: center;
-}
-
-.priority-item::before {
-  content: "# " counter(item) " ";
-  counter-increment: item;
-  font-size: 1.5rem;
-  color: #0077cc;
-  font-weight: bold;
-  margin-right: 10px;
-}
-
-ol {
-  counter-reset: item;
-}
-
-.priority-grid {
-  display: grid;
-  grid-template-columns: repeat(10, 20px);
-  gap: 4px;
-  margin-bottom: 0.5rem;
-  position: relative;
 }
 
 .player-box {
