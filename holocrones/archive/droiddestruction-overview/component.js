@@ -3,7 +3,7 @@ import { HolocronBase } from "../../../services/holocron.service.js";
 class DroidDestructionOverviewHolocron extends HolocronBase {
 
   getHolocronCategory() {
-    return "raid-padawan";
+    return "archive";
   }
   getHolocronId() {
     return "droiddestruction-overview";
@@ -16,4 +16,4 @@ class DroidDestructionOverviewHolocron extends HolocronBase {
   }
 }
 
-customElements.define("holocron-raid-padawan-droiddestruction-overview", DroidDestructionOverviewHolocron);
+customElements.define("holocron-archive-droiddestruction-overview", DroidDestructionOverviewHolocron);
