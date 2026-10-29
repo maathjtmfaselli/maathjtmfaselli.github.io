@@ -15,43 +15,6 @@
         0 0 24px rgba(255,204,0,0.2);
 }
 
-.player-box {
-  width: 20px;
-  height: 20px;
-  border-radius: 6px;
-}
-
-.target-box {
-  border: 2px solid red;
-  box-shadow: 0 0 4px red;
-}
-
-.grand-master { background-color: #3b82f6 !important; }
-.complete     { background-color: #4caf50 !important; }
-.failed       { background-color: #ff9800 !important; }
-.not-played   { background-color: #ffeb3b; }
-.not-eligible { background-color: #777; }
-
-.legend {
-  display: flex;
-  gap: 1rem;
-  font-size: 0.8rem;
-  margin-top: 0.5rem;
-  flex-wrap: wrap;
-}
-
-.legend-item {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-}
-
-.legend-color {
-  width: 12px;
-  height: 12px;
-  border-radius: 2px;
-}
-
 .player-priority-progress {
   display: flex;
   justify-content: space-between;

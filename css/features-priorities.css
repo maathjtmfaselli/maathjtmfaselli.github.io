@@ -26,16 +26,22 @@ ol {
   align-items: center;
   gap: 1rem;
 }
-
 .priority-item a {
   text-decoration: none;
   color: #0077cc;
   font-weight: bold;
   transition: color 0.3s ease;
 }
-
 .priority-item a:hover {
     color: #005fa3;
+}
+.priority-item::before {
+  content: "# " counter(item) " ";
+  counter-increment: item;
+  font-size: 1.5rem;
+  color: #0077cc;
+  font-weight: bold;
+  margin-right: 10px;
 }
 
 .priority-metric {
@@ -53,21 +59,49 @@ ol {
   text-align: center;
 }
 
-.priority-item::before {
-  content: "# " counter(item) " ";
-  counter-increment: item;
-  font-size: 1.5rem;
-  color: #0077cc;
-  font-weight: bold;
-  margin-right: 10px;
-}
-
-.priority-grid {
+.guild-priority-progress-grid {
   display: grid;
   grid-template-columns: repeat(10, 20px);
   gap: 4px;
   margin-bottom: 0.5rem;
   position: relative;
+}
+
+.player-box {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+}
+
+.target-box {
+  border: 2px solid red;
+  box-shadow: 0 0 4px red;
+}
+
+.grand-master { background-color: #3b82f6 !important; }
+.complete     { background-color: #4caf50 !important; }
+.failed       { background-color: #ff9800 !important; }
+.not-played   { background-color: #ffeb3b; }
+.not-eligible { background-color: #777; }
+
+.legend {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
 }
 
 .goal-completed {

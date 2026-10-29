@@ -11,7 +11,7 @@ export function initGridPriorityProgress(root = document) {
     const total = parseInt(progress.dataset.total) || 50;
 
     const grid = document.createElement('div');
-    grid.classList.add('priority-grid');
+    grid.classList.add('guild-priority-progress-grid');
 
     for (let i = 0; i < total; i++) {
       const box = document.createElement('div');
@@ -52,7 +52,7 @@ export function initGridGuildRanksProgress(root = document) {
     const total = Number(container.dataset.total || 50);
 
     const grid = document.createElement('div');
-    grid.classList.add('priority-grid');
+    grid.classList.add('guild-priority-progress-grid');
 
     for (let i = 0; i < total; i++) {
       const box = document.createElement('div');
