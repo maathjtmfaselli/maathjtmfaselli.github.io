@@ -1,18 +1,8 @@
 {
   "topPriorityCharacters": [
     {
-      "name": "Snow Trooper",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_troopersnow.png",
-      "relic": "Reliquia 8",
-      "assignedTo": ""
-    },{
       "name": "Soldado Rebelde de Hoth",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_rebelhoth.png",
-      "relic": "Reliquia 8",
-      "assignedTo": ""
-    },{
-      "name": "Bistan",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bistan.png",
       "relic": "Reliquia 8",
       "assignedTo": ""
     }
@@ -20,6 +10,16 @@
   "charactersToUpgrade": [],
   "upgradedCharacters": [
     {
+      "name": "Snow Trooper",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_troopersnow.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "Gita"
+    },{
+      "name": "Bistan",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_bistan.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "Virus"
+    },{
       "name": "General Veers",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_veers.png",
       "relic": "Reliquia 8",
