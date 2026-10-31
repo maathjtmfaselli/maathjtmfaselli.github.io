@@ -1,8 +1,33 @@
 {
   "topPriorityCharacters": [
     {
+      "name": "Mara Jade, The Emperor's Hand",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_marajade.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "Temnyy"
+    },{
+      "name": "Dark Trooper",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_darktrooper.png",
+      "relic": "Reliquia 8",
+      "assignedTo": ""
+    },{
+      "name": "Admiral Ackbar",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_ackbaradmiral.png",
+      "relic": "Reliquia 8",
+      "assignedTo": ""
+    },{
+      "name": "Kylo Ren",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_kyloren.png",
+      "relic": "Reliquia 8",
+      "assignedTo": ""
+    },{
       "name": "Soldado Rebelde de Hoth",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_rebelhoth.png",
+      "relic": "Reliquia 8",
+      "assignedTo": ""
+    },{
+      "name": "Logray",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_ewok_logray.png",
       "relic": "Reliquia 8",
       "assignedTo": ""
     }
