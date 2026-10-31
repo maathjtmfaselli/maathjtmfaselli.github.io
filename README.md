@@ -43,7 +43,7 @@ Se actualizan cuando hay cambios importantes en SWGOH.
 Datos dinámicos que reflejan el estado actual y presente del gremio:
 
 - Información de miembros activos (`/data/guild/guild-members.csv`)
-- Puntuación en Raid: Orden66 (`/data/guild/guild-raid-order66-historical.csv`), Naboo (`/data/guild/guild-raid-naboo-historical.csv`).
+- Puntuación en Raid: Orden66 (`/data/guild/guild-raid-order66-historical.csv`), Naboo (`/data/_archive/guild-raid-naboo-historical.csv`).
 - Objetivos y logros en Alzamiento (`guild-rote-historical.json`)
 
 ### Datos generados (`/data/generated/`)
