@@ -1,7 +1,7 @@
 {
   "historicalResults": [
     {
-      "date": "26/10/2026",
+      "date": "09/11/2026",
       "status": "planned",
       "pg": "618M",
       "stars": "",
@@ -13,6 +13,19 @@
       "kashyyyk": "x/x/6",
       "zeffo": "x/x/49",
       "corellia": "x/x/17"
+    },{
+      "date": "26/10/2026",
+      "status": "in progress",
+      "pg": "618M",
+      "stars": "",
+      "noDesplegados": "132/125/71/25//",
+      "pelotones": "x/74",
+      "dathomir": "8/9/12",
+      "reva": "16/20/31",
+      "mandalor": "30/35/44",
+      "kashyyyk": "2/2/6",
+      "zeffo": "26/39/49",
+      "corellia": "10/13/17"
     },{
       "date": "12/10/2026",
       "status": "completed",
