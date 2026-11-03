@@ -14,7 +14,7 @@
       "name": "Admiral Ackbar",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_ackbaradmiral.png",
       "relic": "Reliquia 8",
-      "assignedTo": ""
+      "assignedTo": "josmartini"
     },{
       "name": "Kylo Ren",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_kyloren.png",
@@ -29,12 +29,17 @@
       "name": "Logray",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_ewok_logray.png",
       "relic": "Reliquia 8",
-      "assignedTo": ""
+      "assignedTo": "josmartini"
     }
   ],
   "charactersToUpgrade": [],
   "upgradedCharacters": [
     {
+      "name": "Asajj Ventress",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_ventress.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "Tito"
+    },{
       "name": "Snow Trooper",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_troopersnow.png",
       "relic": "Reliquia 8",
