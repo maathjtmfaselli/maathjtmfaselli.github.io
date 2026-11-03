@@ -1,0 +1,86 @@
+/* =========================================
+   CHARACTER PORTRAITS
+========================================= */
+.pnj-portrait {
+  border: 2px solid #00bcd4;
+  border-radius: 50%;
+}
+
+/* =========================================
+   PRIORITY CHARACTERS
+========================================= */
+.priority-characters {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.priority-character {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 16px;
+  margin-top: 8px;
+  padding: 16px 12px;
+  border-radius: 6px;
+}
+
+/* Identity */
+.priority-character__identity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.priority-character__image {
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  border: 2px solid #673ab7;
+  border-radius: 50%;
+}
+
+.priority-character__name {
+  overflow: hidden;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Requirements & assignment */
+.priority-character__requirement {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.priority-character__assignment {
+  min-width: 120px;
+  white-space: nowrap;
+}
+
+/* =========================================
+   CHARACTER STATUS
+========================================= */
+/* To do */
+.priority-character.status--todo {
+  border-left: 4px solid #d9534f;
+}
+
+.priority-character.status--todo .priority-character__assignment {
+  color: #d9534f;
+  font-weight: 600;
+}
+
+/* In progress */
+.priority-character.status--in-progress {
+  border-left: 4px solid #5cb85c;
+}
+
+.priority-character.status--in-progress .priority-character__assignment {
+  color: #4a4a4a;
+}

@@ -1,68 +1,73 @@
-
+/* =========================================
+   DATA TABLE
+========================================= */
 .fix-width-data-table-wrapper {
   width: 100%;
+  max-height: 75vh;
   overflow-x: auto;
   overflow-y: auto;
-  max-height: 75vh;
 }
 
 .sticky-data-table-wrapper th:first-child,
 .sticky-data-table-wrapper td:first-child {
-    position: sticky;
-    left: 0;
-    z-index: 20;
-
-    background: #1e1e2e;
+  position: sticky;
+  left: 0;
+  z-index: 20;
+  background: var(--color-section);
 }
 
 .data-table {
   width: 100%;
-  border-collapse: collapse;
   margin-bottom: 20px;
+  border-collapse: collapse;
 }
 
-.data-table th, .data-table td {
-  border: 1px solid #00bcd4;
-  text-align: center;
+.data-table th,
+.data-table td {
   padding: 8px;
+  border: 1px solid var(--color-border-accent);
+  text-align: center;
 }
 
 .data-table th {
-  background-color: #2a2a40;
-  color: #00e5ff;
+  background: var(--color-heading);
+  color: var(--color-primary);
   font-size: 18px;
 }
 
 .data-table td {
-  background-color: #1e1e2e;
-  color: #e0e0e0;
+  background: var(--color-section);
+  color: var(--color-text);
 }
 
+/* =========================================
+   AVAILABILITY STATES
+========================================= */
 .data-table td.is--available {
-  background-color: #183b2b;
+  background: #183b2b;
   color: #7ee2a8;
   font-weight: 600;
 }
 
 .data-table td.is--unavailable {
-  background-color: #482329;
+  background: #482329;
   color: #ff9299;
   font-weight: 700;
 }
 
+/* =========================================
+   TABLE FILTERS
+========================================= */
 .data-table-filters {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
   align-items: flex-end;
-
+  gap: 1rem;
   padding: 1rem;
   margin-bottom: 1.5rem;
-
-  background: #15181f;
-  border: 1px solid var(--border-light);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
   border-radius: 12px;
-
   box-shadow:
     inset 0 0 10px rgba(0, 229, 255, 0.05),
     0 0 10px rgba(0, 229, 255, 0.08);
@@ -76,55 +81,56 @@
 }
 
 .filter-label {
+  color: var(--color-accent);
   font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: .08em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--txt-accent);
 }
 
 .filter-select {
   height: 42px;
   padding: 0 12px;
-
-  background: var(--bg-primary);
-  color: var(--txt-primary);
-
-  border: 1px solid #00bcd4;
+  color: var(--color-text);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border-accent);
   border-radius: 8px;
-
   font-size: 0.95rem;
   cursor: pointer;
-
   transition:
-    border-color .2s ease,
-    box-shadow .2s ease,
-    transform .15s ease;
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.15s ease;
 }
 
 .filter-select:hover {
-  border-color: #00e5ff;
-  box-shadow: 0 0 8px rgba(0,229,255,.35);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 8px rgba(0, 229, 255, 0.35);
 }
 
 .filter-select:focus {
   outline: none;
-  border-color: #00e5ff;
-
+  border-color: var(--color-primary);
   box-shadow:
-    0 0 0 2px rgba(0,229,255,.15),
-    0 0 12px rgba(0,229,255,.45);
+    0 0 0 2px rgba(0, 229, 255, 0.15),
+    0 0 12px rgba(0, 229, 255, 0.45);
 }
 
 .filter-select option {
-  background: #15181f;
-  color: var(--txt-primary);
+  color: var(--color-text);
+  background: var(--color-surface);
 }
 
-/* Colores */
-.bg--red, .bg--yellow, .bg--green, .bg--dark-blue, .bg--blue {
-  border: 1px solid #ccc;
+/* =========================================
+   CELL COLORS
+========================================= */
+.bg--red,
+.bg--yellow,
+.bg--green,
+.bg--dark-blue,
+.bg--blue {
   position: relative;
+  border: 1px solid #ccc;
   cursor: pointer;
 }
 
@@ -148,35 +154,38 @@
   background-color: blue !important;
 }
 
+/* Diagonal pattern */
 .bg--special {
-  position: relative;
+  position: relative !important;
+
   background-image: repeating-linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.5) 0%,
     rgba(255, 255, 255, 0.5) 10%,
-    rgba(0, 0, 0, 0) 10%,
-    rgba(0, 0, 0, 0) 20%
-  );
+    transparent 10%,
+    transparent 20%
+  ) !important;
 }
 
+/* =========================================
+   DATA HOVER
+========================================= */
 [data-hover] {
   position: relative;
   cursor: help;
 }
 
 [data-hover]:hover::after {
-  content: attr(data-hover);
   position: absolute;
   left: 50%;
   bottom: calc(100% + 8px);
-  transform: translateX(-50%);
-
-  background: #222;
-  color: white;
-  padding: 6px 10px;
-  border-radius: 4px;
-
-  white-space: nowrap;
   z-index: 1000;
+  padding: 6px 10px;
+  color: white;
+  background: #222;
+  border-radius: 4px;
+  content: attr(data-hover);
+  white-space: nowrap;
+  transform: translateX(-50%);
   pointer-events: none;
 }

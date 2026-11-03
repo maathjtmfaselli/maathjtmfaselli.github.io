@@ -1,0 +1,250 @@
+/* =========================================
+   MAIN LAYOUT
+========================================= */
+.holocron-library-layout {
+  display: flex;
+  align-items: stretch;
+  gap: 2rem;
+}
+.holocron-library {
+  width: 450px;
+  padding: 1rem;
+  overflow-y: auto;
+}
+.holocron-viewer {
+  min-width: 450px;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+/* =========================================
+   LIBRARIAN
+========================================= */
+.librarian-section {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.jocasta {
+  max-width: 100%;
+  text-align: center;
+}
+
+.jocasta img {
+  display: block;
+  width: 100%;
+  max-width: 210px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.jocasta__frase {
+  margin-top: 1rem;
+  color: #e6e6e6;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+#holocron-search {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+/* =========================================
+   HOLOCRONS
+========================================= */
+#holocron-viewer-content {
+  display: block;
+  container-type: inline-size;
+  flex: 1;
+  min-width: 450px;
+  overflow-y: auto;
+  background: rgba(10, 10, 20, 0.95);
+}
+
+.holocrones-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.holocron {
+  background: rgba(20, 20, 30, 0.9);
+  border-radius: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.holocron a,
+.holocron button {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  color: inherit;
+  text-decoration: none;
+  background: none;
+  border: none;
+  border-radius: 0;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.holocron button {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.holocron a:focus-visible,
+.holocron button:focus-visible {
+  outline: 2px solid #4aa3ff;
+  outline-offset: 2px;
+}
+
+.holocron a:hover,
+.holocron button:hover {
+  text-decoration: none;
+}
+
+.holocron:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Holocron icon */
+.holocron__icono {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.3));
+}
+
+.holocron__action {
+  width: 100%;
+}
+
+.holocron__titulo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  font-size: 1rem;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* =========================================
+   HOLOCRON CATEGORIES - COLORS
+========================================= */
+.holocron--guild,
+.holocron--raid-padawan {
+  border-left: 4px solid #ffcc4a;
+}
+
+.holocron--journey,
+.holocron--raid-knight {
+  border-left: 4px solid #34c759;
+}
+
+.holocron--raid-grandmaster,
+.holocron--archive {
+  border-left: 4px solid #4aa3ff;
+}
+
+.holocron--rote {
+  border-left: 4px solid #ff6b6b;
+}
+
+.holocron--conquest,
+.holocron--resources {
+  border-left: 4px solid #a34aff;
+}
+
+/* =========================================
+   CATEGORY FILTERS
+========================================= */
+.holocron-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-block: 1.5rem;
+}
+
+.holocron-category {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 44px;
+  padding: 0.65rem 1rem;
+  color: #e6edf5;
+  background: #101c2a;
+  border: 1px solid #3d5268;
+  border-radius: 999px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.holocron-category:hover {
+  border-color: #8cb8e8;
+}
+
+.holocron-category[aria-pressed="true"] {
+  color: #fff;
+  background: #294968;
+  border-color: #a5cfff;
+}
+
+.holocron-category__count {
+  display: inline-grid;
+  place-items: center;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+  padding-inline: 0.25rem;
+  background: rgb(255 255 255 / 12%);
+  border-radius: 999px;
+  font-size: 0.8rem;
+}
+
+.holocron-category:focus-visible {
+  outline: 3px solid #8fc5ff;
+  outline-offset: 3px;
+}
+
+.holocron[hidden] {
+  display: none !important;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+@media (max-width: 900px) {
+  .holocron-library-layout {
+    flex-direction: column;
+  }
+
+  .holocron-library,
+  .holocron-viewer {
+    min-width: 300px;
+  }
+
+  .librarian-section {
+    flex: unset;
+  }
+
+  .jocasta img {
+    max-width: 120px;
+  }
+
+  .holocrones-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,11 +1,14 @@
-/* ==== Barra de progreso ==== */
-progress::-webkit-progress-value { background:#27ae60; }
-progress::-moz-progress-bar     { background:#27ae60; }
+
+/* =========================================
+   PROGRESS BAR
+========================================= */
+
+progress::-webkit-progress-value { background: #27ae60; }
+progress::-moz-progress-bar { background: #27ae60; }
 
 .progress-wrapper {
   position: relative;
   font-size: 1.5em;
-/*  flex: 1 1 150px; */
 }
 
 .progress-wrapper .progress-bar {
@@ -28,19 +31,165 @@ progress::-moz-progress-bar     { background:#27ae60; }
   box-sizing: border-box;
 }
 
+/* =========================================
+   GOAL STATUS
+========================================= */
+
 .status--todo {
-    background-color: #2a2a40;
+  background-color: #2a2a40;
 }
 
 .status--in-progress {
-    background-color: #aaaa66;
+  background-color: #aaaa66;
 }
 
 .status--done {
-    background-color: #3ba55d;
+  background-color: #3ba55d;
 }
 
 .best-score {
-    border: 2px solid gold !important;
-    font-weight: bold;
+  border: 2px solid gold !important;
+  font-weight: bold;
+}
+
+/* =========================================
+   PRIORITIES & REWARDS
+========================================= */
+
+.priority-list {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0;
+  list-style: none;
+}
+
+.reward-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+
+ol {
+  counter-reset: item;
+}
+
+.priority-item,
+.reward-item {
+  border: 1px solid #ccc;
+  margin-bottom: 1.5rem;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.priority-item a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.priority-item a:hover {
+  color: #005fa3;
+}
+
+.priority-item::before {
+  content: "# " counter(item) " ";
+  counter-increment: item;
+  font-size: 1.5rem;
+  color: #0077cc;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* =========================================
+   PRIORITY METRICS
+========================================= */
+
+.priority-metric {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffcc80;
+  flex: 1 1 150px;
+}
+
+.priority-target {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffcc80;
+  flex: 1 1 150px;
+  text-align: center;
+}
+
+/* =========================================
+   GUILD PROGRESS GRID
+========================================= */
+
+.guild-priority-progress-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 20px);
+  gap: 4px;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.player-box {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+}
+
+.target-box {
+  border: 2px solid red;
+  box-shadow: 0 0 4px red;
+}
+
+.grand-master { background-color: #3b82f6 !important; }
+.complete     { background-color: #4caf50 !important; }
+.failed       { background-color: #ff9800 !important; }
+.not-played   { background-color: #ffeb3b; }
+.not-eligible { background-color: #777; }
+
+/* =========================================
+   LEGEND
+========================================= */
+
+.legend {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+/* =========================================
+   COMPLETED GOALS
+========================================= */
+
+.goal-completed {
+  border: 2px solid #34c759;
+  background: linear-gradient(
+    135deg,
+    rgba(52,199,89,0.18),
+    rgba(52,199,89,0.05)
+  );
+  box-shadow:
+    0 0 12px rgba(52,199,89,0.4),
+    0 0 24px rgba(52,199,89,0.2);
 }

@@ -1,0 +1,33 @@
+/* =========================================
+   GUILD WARNINGS
+========================================= */
+.guild-warning {
+  border: 2px solid #ffcc00;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 204, 0, 0.18),
+    rgba(255, 204, 0, 0.05)
+  );
+  box-shadow:
+    0 0 12px rgba(255, 204, 0, 0.4),
+    0 0 24px rgba(255, 204, 0, 0.2);
+}
+
+/* =========================================
+   PLAYER PROGRESS
+========================================= */
+.player-priority-progress {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+/* =========================================
+   PLAYER BADGES
+========================================= */
+.player-badges {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}

@@ -2,93 +2,109 @@
    DESIGN TOKENS
 ========================================= */
 :root {
-  /* Fondos */
-  --bg-primary: #0b0d12;
-  --bg-header: #15181f;
-  --bg-section: #1e1e2e;
-  --bg-heading: #2a2a40;
+  /* Colors */
+  --color-bg: #0b0d12;
+  --color-surface: #15181f;
+  --color-section: #1e1e2e;
+  --color-heading: #2a2a40;
 
-  /* Texto */
-  --txt-primary: #e0e0e0;
-  --txt-secondary: #81d4fa;
-  --txt-accent: #ffd700;
-  --txt-heading: #00e5ff;
-  --txt-inverse: #ffffff;
+  --color-text: #e0e0e0;
+  --color-text-muted: #81d4fa;
+  --color-accent: #ffd700;
+  --color-primary: #00e5ff;
+  --color-white: #fff;
 
-  /* Bordes */
-  --border-light: #262c34;
-  --border-accent: #00bcd4;
+  --color-border: #262c34;
+  --color-border-accent: #00bcd4;
 
-  /* Tipografía */
-  --font-primary: 'Inter', system-ui, sans-serif;
-  --font-display: 'Orbitron', sans-serif;
+  /* Typography */
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-brand: 'Orbitron', system-ui, sans-serif;
 
-  --font-size-sm: 1rem;
-  --font-size-md: 1.15rem;
-  --font-size-lg: 20px;
-  --font-size-xl: 28px;
+  --text-sm: 1rem;
+  --text-md: 1.15rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.75rem;
 
-  /* Espaciado */
-  --space-xs: 0.25rem;
-  --space-sm: 0.5rem;
-  --space-md: 0.75rem;
-  --space-lg: 1rem;
-  --space-xl: 1.5rem;
-  --space-2xl: 2rem;
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
 
-  /* Bordes y dimensiones */
+  /* Dimensions */
   --radius-sm: 4px;
   --radius-md: 10px;
   --border-width: 2px;
-  --header-height: 72px;
-  --footer-height: 64px;
-  --content-width: 1200px;
 
-  /* Efectos */
-  --shadow-accent: 0 0 4px rgba(255, 215, 0, 0.6);
+  --header-height: 4.5rem;
+  --footer-height: 4rem;
+  --content-width: 75rem;
+
+  /* Effects */
+  --shadow-accent: 0 0 4px rgb(255 215 0 / 60%);
   --transition-fast: 0.2s ease;
   --transition-normal: 0.3s ease;
 }
 
 /* =========================================
-   BASE
+   GLOBAL RESET & BASE
 ========================================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
+  min-width: 320px;
   margin: 0;
-  padding: 0;
-  font-family: var(--font-primary);
-  background-color: var(--bg-primary);
-  color: var(--txt-primary);
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
 }
 
 h2 {
-  color: var(--txt-heading);
-  font-size: var(--font-size-xl);
+  color: var(--color-primary);
+  font-size: var(--text-xl);
 }
 
 h3 {
-  margin: 0 0 var(--space-sm);
-  padding: var(--space-lg);
-  font-size: var(--font-size-lg);
-  color: var(--txt-secondary);
-  background-color: var(--bg-heading);
+  margin: 0 0 var(--space-2);
+  padding: var(--space-4);
+  color: var(--color-text-muted);
+  background: var(--color-heading);
+  font-size: var(--text-lg);
 }
 
 main {
   width: 100%;
-  box-sizing: border-box;
-  padding: var(--space-xl);
+  padding: var(--space-6);
 }
 
 section {
+  width: 100%;
   max-width: var(--content-width);
-  margin: var(--space-xl) auto;
-  padding: var(--space-xl);
-  color: var(--txt-inverse);
-  background-color: var(--bg-section);
-  border: var(--border-width) solid var(--border-accent);
+  margin: var(--space-6) auto;
+  padding: var(--space-6);
+  color: var(--color-white);
+  background: var(--color-section);
+  border: var(--border-width) solid var(--color-border-accent);
   border-radius: var(--radius-md);
-  box-sizing: border-box;
 }
 
 /* =========================================
@@ -97,17 +113,17 @@ section {
 .site-header {
   display: flex;
   align-items: center;
+  gap: var(--space-8);
   min-height: var(--header-height);
-  padding: 0 var(--space-xl);
-  gap: var(--space-2xl);
-  background-color: var(--bg-header);
+  padding-inline: var(--space-6);
+  background: var(--color-surface);
 }
 
 .guild-brand {
   display: flex;
   align-items: center;
   flex-shrink: 0;
-  gap: var(--space-md);
+  gap: var(--space-3);
 }
 
 .guild-brand-logo {
@@ -118,17 +134,17 @@ section {
 }
 
 .guild-brand-name {
-  font-family: var(--font-display);
-  font-size: var(--font-size-md);
+  color: var(--color-accent);
+  font-family: var(--font-brand);
+  font-size: var(--text-md);
   font-weight: 600;
-  color: var(--txt-accent);
   white-space: nowrap;
 }
 
 .header-nav-list {
   display: flex;
   align-items: center;
-  gap: var(--space-2xl);
+  gap: var(--space-8);
   margin: 0;
   padding: 0;
   list-style: none;
@@ -137,82 +153,90 @@ section {
 .header-nav-link {
   position: relative;
   display: inline-block;
-  padding: var(--space-xs) 0;
-  color: var(--txt-primary);
-  font-size: var(--font-size-sm);
+  padding-block: var(--space-1);
+  color: var(--color-text);
+  font-size: var(--text-sm);
   font-weight: 500;
   text-decoration: none;
-  transition:
-    color var(--transition-normal),
-    transform var(--transition-normal);
+  transition: color var(--transition-normal),
+              transform var(--transition-normal);
 }
 
 .header-nav-link:hover,
 .header-nav-link:focus-visible {
-  color: var(--txt-accent);
+  color: var(--color-accent);
   transform: translateY(-2px);
 }
 
 .header-nav-link::after {
-  content: "";
   position: absolute;
-  left: 0;
+  right: 0;
   bottom: -4px;
-  width: 0;
+  left: 0;
   height: var(--border-width);
-  background-color: var(--txt-accent);
-  transition: width var(--transition-fast);
+  background: var(--color-accent);
+  content: "";
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition-fast);
 }
 
 .header-nav-link:hover::after,
 .header-nav-link:focus-visible::after,
 .header-nav-link.active::after {
-  width: 100%;
+  transform: scaleX(1);
 }
 
 .header-nav-link.active {
-  color: var(--txt-accent);
+  color: var(--color-accent);
 }
 
 .header-nav-link:focus-visible {
-  outline: 2px solid var(--txt-accent);
+  outline: 2px solid var(--color-accent);
   outline-offset: 4px;
 }
 
 /* =========================================
-   FOOTER
+   SITE FOOTER
 ========================================= */
 footer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  gap: var(--space-lg);
+  gap: var(--space-4);
   min-height: var(--footer-height);
-  padding: var(--space-xs);
+  padding: var(--space-2);
+  color: var(--color-white);
   text-align: center;
-  color: var(--txt-inverse);
-  background-color: var(--bg-header);
+  background: var(--color-surface);
 }
 
 /* =========================================
    RESPONSIVE
 ========================================= */
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .site-header {
     flex-direction: column;
-    align-items: center;
-    gap: var(--space-sm);
-    padding: var(--space-lg);
+    gap: var(--space-2);
+    padding: var(--space-4);
   }
 
   .header-nav-list {
     flex-wrap: wrap;
     justify-content: center;
-    gap: var(--space-lg);
+    gap: var(--space-4);
   }
 
   .guild-brand-name {
-    font-size: var(--font-size-sm);
+    font-size: var(--text-sm);
+  }
+
+  main {
+    padding: var(--space-4);
+  }
+
+  section {
+    padding: var(--space-4);
   }
 }
