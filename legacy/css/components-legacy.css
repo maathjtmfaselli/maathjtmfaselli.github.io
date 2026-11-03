@@ -1,3 +1,44 @@
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  background: #282838; /* Un tono más claro que el fondo general de las pestañas */
+  border-radius: 8px;
+}
+
+.tab-button {
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  background: #2e2e4e;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px 6px 0 0;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.tab-button:hover {
+  background: #3a3a5a;
+  transform: translateY(-2px);
+}
+
+.tab-button.active {
+  background: #1e1e2e;
+  border-bottom: 3px solid #7dd87d;
+}
+
+.tab-content {
+  display: none;
+  padding: 20px;
+  background: #2e2e3e;
+  color: white;
+}
+
+.tab-content.active {
+  display: block;
+}
+
 #operations-guild-table {
   width: 100%;
 }
