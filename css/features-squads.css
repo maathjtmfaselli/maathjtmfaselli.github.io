@@ -2,7 +2,7 @@
    CHARACTER PORTRAITS
 ========================================= */
 .pnj-portrait {
-  border: 2px solid #00bcd4;
+  border: 2px solid var(--color-border-accent);
   border-radius: 50%;
 }
 
@@ -68,7 +68,7 @@
 ========================================= */
 /* To do */
 .priority-character.status--todo {
-  border-left: 4px solid #d9534f;
+  border-left: 4px solid var(--color-danger);
 }
 
 .priority-character.status--todo .priority-character__assignment {

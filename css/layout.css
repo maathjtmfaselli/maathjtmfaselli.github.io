@@ -7,15 +7,39 @@
   --color-surface: #15181f;
   --color-section: #1e1e2e;
   --color-heading: #2a2a40;
+  --color-surface-alt: #101c2a;
 
   --color-text: #e0e0e0;
   --color-text-muted: #81d4fa;
+  --color-text-subtle: #555;
+  --color-text-heading: #2c3e50;
+  --color-text-date: #7f8c8d;
   --color-accent: #ffd700;
   --color-primary: #00e5ff;
   --color-white: #fff;
+  --color-link: #0077cc;
+  --color-link-hover: #005fa3;
+  --color-info: #3498db;
 
   --color-border: #262c34;
   --color-border-accent: #00bcd4;
+  --color-border-neutral: #ccc;
+  --color-overlay-soft: rgb(255 255 255 / 12%);
+
+  /* Semantic colors: keep visually distinct states distinct. */
+  --color-success: #27ae60;
+  --color-success-strong: #3ba55d;
+  --color-warning: #ffcc00;
+  --color-warning-soft: rgba(255, 204, 0, 0.18);
+  --color-warning-faint: rgba(255, 204, 0, 0.05);
+  --color-danger: #d9534f;
+  --color-available-bg: #183b2b;
+  --color-available-text: #7ee2a8;
+  --color-unavailable-bg: #482329;
+  --color-unavailable-text: #ff9299;
+  --color-category-update: #e67e22;
+  --color-category-security: #e74c3c;
+  --color-category-resource: #9b59b6;
 
   /* Typography */
   --font-body: 'Inter', system-ui, sans-serif;
@@ -31,12 +55,16 @@
   --space-2: 0.5rem;
   --space-3: 0.75rem;
   --space-4: 1rem;
+  --space-5: 1.25rem;
   --space-6: 1.5rem;
   --space-8: 2rem;
 
   /* Dimensions */
   --radius-sm: 4px;
   --radius-md: 10px;
+  --radius-card: 8px;
+  --radius-lg: 12px;
+  --radius-pill: 999px;
   --border-width: 2px;
 
   --header-height: 4.5rem;
@@ -44,6 +72,11 @@
   --content-width: 75rem;
 
   /* Effects */
+  --shadow-soft: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-card-hover: 0 6px 12px rgba(0, 0, 0, 0.15);
+  --shadow-warning:
+    0 0 12px rgba(255, 204, 0, 0.4),
+    0 0 24px rgba(255, 204, 0, 0.2);
   --shadow-accent: 0 0 4px rgb(255 215 0 / 60%);
   --transition-fast: 0.2s ease;
   --transition-normal: 0.3s ease;
