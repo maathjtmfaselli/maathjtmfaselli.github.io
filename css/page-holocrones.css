@@ -243,8 +243,4 @@
   .jocasta img {
     max-width: 120px;
   }
-
-  .holocrones-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }

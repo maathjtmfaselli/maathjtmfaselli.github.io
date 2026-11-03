@@ -28,7 +28,6 @@ progress::-moz-progress-bar { background: #27ae60; }
   font-size: 0.9rem;
   font-weight: 600;
   color: #fff;
-  box-sizing: border-box;
 }
 
 /* =========================================

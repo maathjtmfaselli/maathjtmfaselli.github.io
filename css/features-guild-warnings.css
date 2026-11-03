@@ -14,15 +14,6 @@
 }
 
 /* =========================================
-   PLAYER PROGRESS
-========================================= */
-.player-priority-progress {
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-}
-
-/* =========================================
    PLAYER BADGES
 ========================================= */
 .player-badges {
