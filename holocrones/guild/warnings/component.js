@@ -18,7 +18,7 @@ class GuildWarningsHolocron extends HTMLElement {
 
   async loadData() {
     const warnings = await this.warningsService.getWarnings();
-    console.log(warnings);
+    //console.log(warnings);
     this.renderWarnings(warnings);
   }
 
@@ -43,56 +43,30 @@ class GuildWarningsHolocron extends HTMLElement {
   renderWarningItem(warning) {
     return `
       <li class="priority-item guild-warning">
-        <div class="priority-progress-player">
-          <div class="priority-metric">
-            ${warning.name}
-          </div>
-        </div>
-
-        <div class="priority-target">
-          <div class="player-badges">
-            ${this.renderCanDoZeffoBadge(warning)}
-            ${this.renderCanDoMandalorBadge(warning)}
-          </div>
-        </div>
-
-        <div class="progress-wrapper">
-          <progress
-            class="progress-bar"
-            value="${warning.order66MaxScore}"
-            max="3000">
-          </progress>
-
-          <span class="progress-label">
-            ${warning.order66MaxScore}k / 3000k
-          </span>
-        </div>
+        <span class="priority-metric">${warning.member.name}</span>
+        ${this.renderCanDoBraccaBadge(warning)}
+        ${this.renderSuccessOnBraccaBadge(warning)}
+        ${this.renderCanDoMandalorBadge(warning)}
+        ${this.renderCompliesRaidBadge(warning)}
       </li>
     `;
   }
 
-  renderCanDoZeffoBadge(warning) {
-    const color = warning.canDoBracca
-      ? "green"
-      : "red";
-
-    return `
-      <img
-        src="https://img.shields.io/badge/zeffo-${color}"
-        />
-    `;
+  renderCanDoBraccaBadge(warning) {
+    const color = warning.canDoBracca ? "green" : "red";
+    return `<img src="https://img.shields.io/badge/canDoBracca-${color}" />`;
   }
-
+  renderSuccessOnBraccaBadge(warning) {
+    const color = warning.successOnBracca ? "green" : "red";
+    return `<img src="https://img.shields.io/badge/successOnBracca-${color}" />`;
+  }
   renderCanDoMandalorBadge(warning) {
-    const color = warning.canDoTatooine
-      ? "green"
-      : "red";
-
-    return `
-      <img
-        src="https://img.shields.io/badge/mandalor-${color}"
-        />
-    `;
+    const color = warning.canDoTatooine ? "green" : "red";
+    return `<img src="https://img.shields.io/badge/mandalor-${color}" />`;
+  }
+  renderCompliesRaidBadge(warning) {
+    const color = warning.raidCompliant ? "green" : "red";
+    return `<img src="https://img.shields.io/badge/order66-${warning.order66MaxScore}k / 3000k-${color}" />`;
   }
 }
 

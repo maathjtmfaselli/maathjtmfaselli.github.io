@@ -1,8 +1,6 @@
-
 /* =========================================
    PROGRESS BAR
 ========================================= */
-
 progress::-webkit-progress-value { background: var(--color-success); }
 progress::-moz-progress-bar { background: var(--color-success); }
 
@@ -33,7 +31,6 @@ progress::-moz-progress-bar { background: var(--color-success); }
 /* =========================================
    GOAL STATUS
 ========================================= */
-
 .status--todo {
   background-color: var(--color-heading);
 }
@@ -54,7 +51,6 @@ progress::-moz-progress-bar { background: var(--color-success); }
 /* =========================================
    PRIORITIES & REWARDS
 ========================================= */
-
 .priority-list {
   max-width: 960px;
   margin: 2rem auto;
@@ -108,8 +104,8 @@ ol {
 /* =========================================
    PRIORITY METRICS
 ========================================= */
-
-.priority-metric {
+.priority-metric,
+.priority-target {
   font-size: 1.5em;
   font-weight: bold;
   color: #ffcc80;
@@ -117,17 +113,12 @@ ol {
 }
 
 .priority-target {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #ffcc80;
-  flex: 1 1 150px;
   text-align: center;
 }
 
 /* =========================================
    GUILD PROGRESS GRID
 ========================================= */
-
 .guild-priority-progress-grid {
   display: grid;
   grid-template-columns: repeat(10, 20px);
@@ -156,7 +147,6 @@ ol {
 /* =========================================
    LEGEND
 ========================================= */
-
 .legend {
   display: flex;
   gap: 1rem;
@@ -180,7 +170,6 @@ ol {
 /* =========================================
    COMPLETED GOALS
 ========================================= */
-
 .goal-completed {
   border: 2px solid #34c759;
   background: linear-gradient(

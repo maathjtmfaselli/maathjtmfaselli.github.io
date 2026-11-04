@@ -9,6 +9,8 @@
     var(--color-warning-faint)
   );
   box-shadow: var(--shadow-warning);
+  display: flex;
+  flex-direction: row;
 }
 
 /* =========================================
