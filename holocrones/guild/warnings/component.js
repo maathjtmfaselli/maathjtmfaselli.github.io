@@ -54,15 +54,15 @@ class GuildWarningsHolocron extends HTMLElement {
 
   renderCanDoBraccaBadge(warning) {
     const color = warning.canDoBracca ? "green" : "red";
-    return `<img src="https://img.shields.io/badge/canDoBracca-${color}" />`;
+    return `<img src="https://img.shields.io/badge/RequisitosZeffo-${color}" />`;
   }
   renderSuccessOnBraccaBadge(warning) {
     const color = warning.successOnBracca ? "green" : "red";
-    return `<img src="https://img.shields.io/badge/successOnBracca-${color}" />`;
+    return `<img src="https://img.shields.io/badge/CompletadoBracca-${color}" />`;
   }
   renderCanDoMandalorBadge(warning) {
     const color = warning.canDoTatooine ? "green" : "red";
-    return `<img src="https://img.shields.io/badge/mandalor-${color}" />`;
+    return `<img src="https://img.shields.io/badge/RequisitosMandalor-${color}" />`;
   }
   renderCompliesRaidBadge(warning) {
     const color = warning.raidCompliant ? "green" : "red";
