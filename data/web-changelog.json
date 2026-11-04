@@ -1,6 +1,11 @@
 [
   {
-    "date": "2026-07-05",
+    "date": "2026-11-01",
+    "category": "holocron",
+    "title": "Nuevos holocron: <a href=\"holocrones.html?open=archive/droiddestruction-overview\">Droid Destruction</a>",
+    "description": "En progreso, holocron sobre nueva raid."
+  },{
+  "date": "2026-07-05",
     "category": "holocron",
     "title": "Nuevos holocron: <a href=\"holocrones.html?open=rote/plan\">Alzamiento - Plan</a>",
     "description": "Muestro plan para el siguiente Alzamiento"
@@ -12,18 +17,13 @@
   },{
     "date": "2026-06-26",
     "category": "holocron",
-    "title": "Nuevos holocron: <a href=\"holocrones.html?open=conquest/x-y-alive\">Alzameinto - Datos Maestros</a>",
+    "title": "Nuevos holocron: <a href=\"holocrones.html?open=conquest/x-y-alive\">Alzamiento - Datos Maestros</a>",
     "description": "Muestra datos maestros sobre alzamiento"
   },{
     "date": "2026-04-09",
     "category": "holocron",
     "title": "Nuevos holocron: <a href=\"holocrones.html?open=conquest/x-y-alive\">Conquista - gana con xy vivos</a>",
     "description": "Este nuevo holocrón ayuda a sacar en Conquista la misión Gana con x y personajes vivos"
-  },{
-    "date": "2026-03-30",
-    "category": "web",
-    "title": "Mejoras Holocrones",
-    "description": "Mejoras visuales en la biblioteca de holocrones. Añadido filtrado. Colores holocrones. Holocrones Orden66."
   },{
     "date": "2026-03-28",
     "category": "holocron",
@@ -39,10 +39,5 @@
     "category": "holocron",
     "title": "Mejora holocrón: '<a href=\"holocrones.html?open=resources/mods\">Cómo mejoro mis MODS?</a>'",
     "description": "Se ha añadido nuevo contenido al holocrón dando ejemplos prácticos."
-  },{
-    "date": "2026-03-28",
-    "category": "gremio",
-    "title": "Tarjetas amarillas: Darth Sion, Hill",
-    "description": "Nuevas tarjetas amarillas a 2 miembros del gremio que cumplen con 0 objetivos del gremio"
   }
 ]
