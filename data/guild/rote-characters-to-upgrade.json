@@ -15,11 +15,6 @@
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_rebelhoth.png",
       "relic": "Reliquia 8",
       "assignedTo": ""
-    },{
-      "name": "Logray",
-      "image": "https://game-assets.swgoh.gg/textures/tex.charui_ewok_logray.png",
-      "relic": "Reliquia 8",
-      "assignedTo": "josmartini"
     }
   ],
   "charactersToUpgrade": [],
@@ -29,6 +24,11 @@
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_marajade.png",
       "relic": "Reliquia 8",
       "assignedTo": "Temnyy"
+    },{
+      "name": "Logray",
+      "image": "https://game-assets.swgoh.gg/textures/tex.charui_ewok_logray.png",
+      "relic": "Reliquia 8",
+      "assignedTo": "josmartini"
     },{
       "name": "Asajj Ventress",
       "image": "https://game-assets.swgoh.gg/textures/tex.charui_ventress.png",
