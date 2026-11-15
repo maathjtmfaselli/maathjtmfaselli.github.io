@@ -14,7 +14,8 @@ const MEMBERS_NEVER_SUCCEEDED_ON_BRACCA = new Set([
      'Tantema RayGarnik',
      'JokerVerde',
      'Kairas',
-     'Ansem8'
+     'Dende',
+     'Sirkix'
    ]);
 
 export class GuildWarningsService {
