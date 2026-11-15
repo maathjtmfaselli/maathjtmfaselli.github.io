@@ -87,18 +87,15 @@ const HOLOCRON_CATEGORIES = {
 };
 
 async function renderLibrarySection(listContainer, holocronViewer) {
-  const categoriesContainer = document.getElementById(
-    "holocron-categories"
-  );
+  const categoriesContainer = document.getElementById("holocron-categories");
 
-  const registry = await fetch(
-    "../holocrones/holocron-registry.json"
-  ).then(response => {
-    if (!response.ok) {
-      throw new Error("Cannot load holocron registry");
-    }
-    return response.json();
-  });
+  const registry = await fetch("../holocrones/holocron-registry.json")
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Cannot load holocron registry");
+      }
+      return response.json();
+    });
 
   const manifests = await Promise.all(
     registry.holocrons.map(async ({ path }) => {
@@ -144,10 +141,7 @@ async function renderLibrarySection(listContainer, holocronViewer) {
       button.type = "button";
       button.className = "holocron-category";
       button.dataset.category = id;
-      button.setAttribute(
-        "aria-pressed",
-        String(selectedCategory === id)
-      );
+      button.setAttribute("aria-pressed", String(selectedCategory === id));
 
       const name = document.createElement("span");
       name.textContent = label;
@@ -206,13 +200,9 @@ async function renderLibrarySection(listContainer, holocronViewer) {
   // Preserve the existing viewer interaction.
   listContainer.addEventListener("click", async event => {
     const button = event.target.closest(".holocron__action");
-
     if (!button || !listContainer.contains(button)) return;
 
-    await renderHolocron(
-      holocronViewer,
-      button.dataset.holocron
-    );
+    await renderHolocron(holocronViewer, button.dataset.holocron);
   });
 }
 

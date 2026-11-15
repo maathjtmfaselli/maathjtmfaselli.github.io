@@ -6,7 +6,7 @@
       "pg": "633M",
       "stars": "",
       "noDesplegados": "-/////",
-      "pelotones": "x/78",
+      "pelotones": "x/72",
       "dathomir": "x/x/13",
       "reva": "x/x/32",
       "mandalor": "x/x/43",
@@ -15,11 +15,11 @@
       "corellia": "x/x/18"
     },{
       "date": "09/11/2026",
-      "status": "in progress",
+      "status": "completed",
       "pg": "633M",
       "stars": "35",
-      "noDesplegados": "147(-)/83/82/97/73/",
-      "pelotones": "72/78",
+      "noDesplegados": "147(-)/83/82/97/73/55",
+      "pelotones": "72/72",
       "dathomir": "7/10/13",
       "reva": "20/24/32",
       "mandalor": "26/36/43",
