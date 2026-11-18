@@ -66,7 +66,7 @@ class GuildWarningsHolocron extends HTMLElement {
   }
   renderCompliesRaidBadge(warning) {
     const color = warning.raidCompliant ? "green" : "red";
-    return `<img src="https://img.shields.io/badge/order66-${warning.order66MaxScore}k / 3000k-${color}" />`;
+    return `<img src="https://img.shields.io/badge/droidDestruction-${warning.order66MaxScore}k / 3000k-${color}" />`;
   }
 }
 
