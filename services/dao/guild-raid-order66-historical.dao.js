@@ -4,7 +4,7 @@ import { loadCsv } from "../csv.service.js";
 export class GuildOrder66HistoricalDao extends BaseDao {
   constructor() {
     super(
-      "/data/guild/guild-raid-order66-historical.csv",
+      "/data/_archive/guild-raid-order66-historical.csv",
       (url) => loadCsv(url)
     );
   }

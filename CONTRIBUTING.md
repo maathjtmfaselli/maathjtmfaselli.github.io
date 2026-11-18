@@ -16,7 +16,7 @@ Los datos del gremio se encuentran en la carpeta `/data/guild/`.
 
 ### Puntuación en Raid
 - Dónde?
-  - Orden66 (`/data/guild/guild-raid-order66-historical.csv`)
+  - Orden66 (`/data/_archive/guild-raid-order66-historical.csv`)
   - Naboo (`/data/_archive/guild-raid-naboo-historical.csv`)
 - Cuándo actualizarlo?
   - Nuevo intento de Raid se ha terminado
