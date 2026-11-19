@@ -18,7 +18,7 @@ class GuildWarningsHolocron extends HTMLElement {
 
   async loadData() {
     const warnings = await this.warningsService.getWarnings();
-    //console.log(warnings);
+//  console.log(warnings);
     this.renderWarnings(warnings);
   }
 
@@ -66,7 +66,7 @@ class GuildWarningsHolocron extends HTMLElement {
   }
   renderCompliesRaidBadge(warning) {
     const color = warning.raidCompliant ? "green" : "red";
-    return `<img src="https://img.shields.io/badge/droidDestruction-${warning.order66MaxScore}k / 3000k-${color}" />`;
+    return `<img src="https://img.shields.io/badge/droidDestruction-${warning.raidMaxScore}k / 3000k-${color}" />`;
   }
 }
 
