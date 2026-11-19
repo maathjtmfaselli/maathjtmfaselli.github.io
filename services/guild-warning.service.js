@@ -49,9 +49,9 @@ export class GuildWarningsService {
 
   hasWarning({ canDoBracca, canDoTatooine, successOnBracca, raidCompliant }) {
         return !canDoBracca
-          || !successOnBracca
-          || !canDoTatooine
-          || !raidCompliant;
+          || !successOnBracca;
+//          || !canDoTatooine
+//          || !raidCompliant;
   }
 
   compareExpulsionPriority(a, b) {
