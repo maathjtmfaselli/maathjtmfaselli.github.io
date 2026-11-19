@@ -13,4 +13,7 @@ export class GuildMembersService {
   async loadMembersRoster() {
     return this.getMembersRawDataDao.loadGuildMembersRawData();
   }
+  async getMemberComplianceData() {
+    return [];
+  }
 }

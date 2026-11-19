@@ -5,6 +5,8 @@
     },{
       "path": "holocrones/guild/goals"
     },{
+      "path": "holocrones/guild/member-compliance"
+    },{
       "path": "holocrones/guild/warnings"
     },{
       "path": "holocrones/web/changelog"
